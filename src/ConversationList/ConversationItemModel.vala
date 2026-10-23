@@ -1,0 +1,340 @@
+// -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
+/*-
+ * Copyright (c) 2017 elementary LLC. (https://elementary.io)
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 3 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the
+ * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+ * Boston, MA 02111-1307, USA.
+ *
+ * Authored by: David Hewitt <davidmhewitt@gmail.com>
+ */
+
+public class Mail.ConversationItemModel : GLib.Object {
+    public string service_uid { get; construct; }
+    public unowned Camel.FolderThreadNode? node { get; construct; }
+    public Camel.FolderThread thread { get; construct; }
+    public int64 timestamp { get; construct; }
+    public Camel.FolderInfoFlags folder_info_flags { get; construct; }
+    public bool hidden { get; set; default = false; }
+
+    public string formatted_date {
+        owned get {
+            return Granite.DateTime.get_relative_datetime (new DateTime.from_unix_local (timestamp));
+        }
+    }
+
+    public uint num_messages {
+        get {
+            return count_thread_messages (node);
+        }
+    }
+
+    public string from {
+        owned get {
+            string[] senders = {};
+
+            unowned Camel.FolderThreadNode? current_node = node;
+            while (current_node != null) {
+#if HAS_CAMEL_3_58
+                weak Camel.MessageInfo? message = (Camel.MessageInfo?) current_node.get_item ();
+#else
+                weak Camel.MessageInfo? message = current_node.message;
+#endif /* HAS_CAMEL_3_58 */
+                if (message != null) {
+                    var address = new Camel.InternetAddress ();
+                    if (address.decode (message.from) > 0) {
+                        unowned string? ia_name;
+                        unowned string? ia_address;
+
+                        string sender;
+                        address.get (0, out ia_name, out ia_address);
+                        if (ia_name != null && ia_name != "") {
+                            sender = ia_name;
+                        } else {
+                            sender = ia_address;
+                        }
+
+                        if (!(sender in senders)) {
+                            senders += sender;
+                        }
+                    }
+                }
+
+#if HAS_CAMEL_3_58
+                current_node = (Camel.FolderThreadNode?) current_node.get_child ();
+#else
+                current_node = (Camel.FolderThreadNode?) current_node.child;
+#endif /* HAS_CAMEL_3_58 */
+            }
+
+            if (senders.length > 0) {
+                return string.joinv (_(", "), senders);
+            }
+
+            return _("Unknown");
+        }
+    }
+
+    public string to {
+        owned get {
+            string[] recipients = {};
+
+            unowned Camel.FolderThreadNode? current_node = node;
+            while (current_node != null) {
+#if HAS_CAMEL_3_58
+                weak Camel.MessageInfo? message = (Camel.MessageInfo?) current_node.get_item ();
+#else
+                weak Camel.MessageInfo? message = current_node.message;
+#endif /* HAS_CAMEL_3_58 */
+                if (message != null) {
+                    var address = new Camel.InternetAddress ();
+                    if (address.decode (message.to) > 0) {
+                        unowned string? ia_name;
+                        unowned string? ia_address;
+
+                        string recipient;
+                        address.get (0, out ia_name, out ia_address);
+                        if (ia_name != null && ia_name != "") {
+                            recipient = ia_name;
+                        } else {
+                            recipient = ia_address;
+                        }
+
+                        if (!(recipient in recipients)) {
+                            recipients += recipient;
+                        }
+                    }
+                }
+
+#if HAS_CAMEL_3_58
+                current_node = (Camel.FolderThreadNode?) current_node.get_child ();
+#else
+                current_node = (Camel.FolderThreadNode?) current_node.child;
+#endif /* HAS_CAMEL_3_58 */
+            }
+
+            if (recipients.length > 0) {
+                return string.joinv (_(", "), recipients);
+            }
+
+            return _("Unknown");
+        }
+    }
+
+    public string? avatar_address {
+        owned get {
+#if HAS_CAMEL_3_58
+            weak Camel.MessageInfo? message = (Camel.MessageInfo?) node.get_item ();
+#else
+            weak Camel.MessageInfo? message = node.message;
+#endif
+            if (message == null) {
+                return null;
+            }
+            var address = new Camel.InternetAddress ();
+            bool sent = (folder_info_flags & Camel.FOLDER_TYPE_MASK) == Camel.FolderInfoFlags.TYPE_SENT;
+            if (address.decode (sent ? message.to : message.from) > 0) {
+                unowned string? name;
+                unowned string? email;
+                if (address.get (0, out name, out email)) {
+                    return email;
+                }
+            }
+            return null;
+        }
+    }
+
+    public string subject {
+        get {
+#if HAS_CAMEL_3_58
+            weak Camel.MessageInfo? message = (Camel.MessageInfo?) node.get_item ();
+#else
+            weak Camel.MessageInfo? message = node.message;
+#endif /* HAS_CAMEL_3_58 */
+            if (message == null) {
+                return _("Unknown");
+            }
+
+            return message.subject;
+        }
+    }
+
+    public bool flagged {
+        get {
+#if HAS_CAMEL_3_58
+            weak Camel.MessageInfo? message = (Camel.MessageInfo?) node.get_item ();
+#else
+            weak Camel.MessageInfo? message = node.message;
+#endif /* HAS_CAMEL_3_58 */
+            if (message == null) {
+                return false;
+            }
+
+            return Camel.MessageFlags.FLAGGED in (int)message.flags;
+        }
+    }
+
+    public bool forwarded {
+        get {
+#if HAS_CAMEL_3_58
+            weak Camel.MessageInfo? message = (Camel.MessageInfo?) node.get_item ();
+#else
+            weak Camel.MessageInfo? message = node.message;
+#endif /* HAS_CAMEL_3_58 */
+            if (message == null) {
+                return false;
+            }
+
+            return Camel.MessageFlags.FORWARDED in (int)message.flags;
+        }
+    }
+
+    public bool replied {
+        get {
+#if HAS_CAMEL_3_58
+            weak Camel.MessageInfo? message = (Camel.MessageInfo?) node.get_item ();
+#else
+            weak Camel.MessageInfo? message = node.message;
+#endif /* HAS_CAMEL_3_58 */
+            if (message == null) {
+                return false;
+            }
+
+            return Camel.MessageFlags.ANSWERED in (int)message.flags;
+        }
+    }
+
+    public bool replied_all {
+        get {
+#if HAS_CAMEL_3_58
+            weak Camel.MessageInfo? message = (Camel.MessageInfo?) node.get_item ();
+#else
+            weak Camel.MessageInfo? message = node.message;
+#endif /* HAS_CAMEL_3_58 */
+            if (message == null) {
+                return false;
+            }
+
+            return Camel.MessageFlags.ANSWERED_ALL in (int)message.flags;
+        }
+    }
+
+    public bool unread {
+        get {
+            return has_thread_flag (node, Camel.MessageFlags.SEEN);
+        }
+    }
+
+    public bool deleted {
+        get {
+#if HAS_CAMEL_3_58
+            weak Camel.MessageInfo? message = (Camel.MessageInfo?) node.get_item ();
+#else
+            weak Camel.MessageInfo? message = node.message;
+#endif /* HAS_CAMEL_3_58 */
+            if (message == null) {
+                return false;
+            }
+
+            return Camel.MessageFlags.DELETED in (int)message.flags;
+        }
+    }
+
+    public ConversationItemModel (Camel.FolderInfoFlags folder_info_flags, Camel.FolderThreadNode node, Camel.FolderThread thread, string service_uid) {
+        Object (service_uid: service_uid, node: node, thread: thread, folder_info_flags: folder_info_flags);
+    }
+
+    construct {
+        timestamp = get_newest_timestamp (node, -1);
+    }
+
+    public bool is_older_than (Camel.FolderThreadNode other_node) {
+        var other_timestamp = get_newest_timestamp (other_node, -1);
+
+        return (timestamp < other_timestamp);
+    }
+
+    private static uint count_thread_messages (Camel.FolderThreadNode node) {
+        uint i = 1;
+#if HAS_CAMEL_3_58
+        for (unowned Camel.FolderThreadNode? child = node.get_child (); child != null; child = child.get_next ()) {
+#else
+        for (unowned Camel.FolderThreadNode? child = node.child; child != null; child = child.next) {
+#endif /* HAS_CAMEL_3_58 */
+            i += count_thread_messages (child);
+        }
+
+        return i;
+    }
+
+    private static int64 get_newest_timestamp (Camel.FolderThreadNode? node, int64 highest = -1) {
+        int64 time = highest;
+        if (node == null) {
+            return time;
+        }
+
+#if HAS_CAMEL_3_58
+        weak Camel.MessageInfo? message = (Camel.MessageInfo?) node.get_item ();
+#else
+        weak Camel.MessageInfo? message = node.message;
+#endif /* HAS_CAMEL_3_58 */
+        if (message != null) {
+            time = int64.max (time, message.date_received);
+            time = int64.max (time, message.date_sent);
+        }
+
+#if HAS_CAMEL_3_58
+        for (unowned Camel.FolderThreadNode? child = node.get_child (); child != null; child = child.get_next ()) {
+#else
+        for (unowned Camel.FolderThreadNode? child = node.child; child != null; child = child.next) {
+#endif /* HAS_CAMEL_3_58 */
+            time = get_newest_timestamp (child, time);
+        }
+
+        return time;
+    }
+
+    private static bool has_thread_flag (Camel.FolderThreadNode? node, Camel.MessageFlags flag) {
+        if (node == null) {
+            return false;
+        }
+
+#if HAS_CAMEL_3_58
+        var has_flag = !(flag in (int)((Camel.MessageInfo?) node.get_item ()).flags);
+#else
+        var has_flag = !(flag in (int)node.message.flags);
+#endif /* HAS_CAMEL_3_58 */
+
+        if (!has_flag) {
+#if HAS_CAMEL_3_58
+            for (unowned Camel.FolderThreadNode? child = node.get_child (); child != null; child = child.get_next ()) {
+#else
+            for (unowned Camel.FolderThreadNode? child = node.child; child != null; child = child.next) {
+#endif /* HAS_CAMEL_3_58 */
+                has_flag = has_thread_flag (child, flag);
+                if (has_flag) {
+                    break;
+                }
+            }
+        }
+
+        return has_flag;
+    }
+
+    public static int compare_func (Object a, Object b) {
+        var item1 = (ConversationItemModel) a;
+        var item2 = (ConversationItemModel) b;
+        return (int)(item2.timestamp - item1.timestamp);
+    }
+}

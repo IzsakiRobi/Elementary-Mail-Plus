@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+%:
+	dh $@ --buildsystem=meson
+
+override_dh_auto_configure:
+	dh_auto_configure -- -Ddocumentation=false
+
+override_dh_auto_test:
+
+override_dh_install:
+	dh_install
+	dh_apparmor --profile-name=io.elementary.mail -pelementary-mail-plus

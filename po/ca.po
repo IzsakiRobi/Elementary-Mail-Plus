@@ -1,0 +1,2262 @@
+# po/geary.pot
+# PO message string template file for Geary email client
+# Copyright 2012-2013 Yorba Foundation
+# This file is distributed under the GNU LGPL, version 2.1.
+#
+# Translators:
+# Alfredo Hernández <aldomann.designs@gmail.com>, 2012
+# martin.steghoefer <martin@steghoefer.de>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: geary-0.4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-08 16:46+0000\n"
+"PO-Revision-Date: 2023-11-14 18:10+0000\n"
+"Last-Translator: David M <rbndavid@gmail.com>\n"
+"Language-Team: Catalan <https://l10n.elementary.io/projects/mail/mail/ca/>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.0.2\n"
+"X-Launchpad-Export-Date: 2017-03-09 05:59+0000\n"
+
+#: src/Application.vala:145
+msgid "Unable to open System Settings"
+msgstr "No es pot obrir la configuració del sistema."
+
+#: src/Application.vala:146
+msgid ""
+"Open System Settings manually or install Evolution to set up online accounts."
+msgstr ""
+"Obriu la configuració del sistema manualment o instal·leu l'Evolution per "
+"configurar comptes en línia."
+
+#: src/Application.vala:217
+msgid ""
+"Mail will automatically start when this device turns on and run when its "
+"window is closed so that it can send notifications when new mail arrives."
+msgstr ""
+"El Correu s'iniciarà automàticament quan aquest dispositiu s'engegui i "
+"s'executarà quan se'n tanqui la finestra perquè pugui enviar notificacions "
+"quan arribi correu nou."
+
+#: src/Composer.vala:94 src/MessageList/MessageListItem.vala:102
+msgid "From:"
+msgstr "De:"
+
+#: src/Composer.vala:114 src/MessageList/MessageListItem.vala:108
+msgid "To:"
+msgstr "Per a:"
+
+#: src/Composer.vala:120
+msgid "Cc"
+msgstr "A/c"
+
+#: src/Composer.vala:122
+msgid "Bcc"
+msgstr "C/o"
+
+#: src/Composer.vala:133 src/MessageList/MessageListItem.vala:148
+msgid "Cc:"
+msgstr "A/c:"
+
+#: src/Composer.vala:152
+msgid "Bcc:"
+msgstr "C/o:"
+
+#: src/Composer.vala:171 src/MessageList/MessageListItem.vala:114
+msgid "Subject:"
+msgstr "Assumpte:"
+
+#: src/Composer.vala:205
+msgid "Insert Image"
+msgstr "Insereix una imatge"
+
+#: src/Composer.vala:232
+msgid "Delete draft"
+msgstr "Suprimeix l'esborrany"
+
+#: src/Composer.vala:240
+msgid "Attach file"
+msgstr "Adjunta-hi un fitxer"
+
+#: src/Composer.vala:251
+msgid "Insert Signature…"
+msgstr "Insereix-hi una signatura…"
+
+#: src/Composer.vala:256
+msgid "Send"
+msgstr "Envia"
+
+#: src/Composer.vala:299
+msgid "New Message"
+msgstr "Missatge nou"
+
+#: src/Composer.vala:445
+msgid "Choose a file"
+msgstr "Escolliu un fitxer"
+
+#: src/Composer.vala:448
+msgid "Attach"
+msgstr "Adjunta"
+
+#: src/Composer.vala:449 src/Composer.vala:472 src/Composer.vala:763
+#: src/Dialogs/InsertLinkDialog.vala:66
+#: src/MessageList/AttachmentButton.vala:144
+msgid "Cancel"
+msgstr "Canceŀla"
+
+#: src/Composer.vala:464
+msgid "Images"
+msgstr "Imatges"
+
+#: src/Composer.vala:468
+msgid "Choose an image"
+msgstr "Trieu una imatge"
+
+#: src/Composer.vala:471
+msgid "Insert"
+msgstr "Insereix"
+
+#: src/Composer.vala:500
+msgid "Unable to insert image"
+msgstr "No es pot inserir la imatge."
+
+#: src/Composer.vala:501
+msgid "There was an unexpected error while trying to insert the image."
+msgstr "Hi ha hagut un error inesperat a l'hora d'inserir la imatge."
+
+#: src/Composer.vala:665
+msgid "%a, %b %-e, %Y at %-l:%M %p"
+msgstr "%a, %-e %b de %Y a les %-H.%M"
+
+#: src/Composer.vala:695
+#, c-format
+msgid "On %1$s, %2$s wrote:"
+msgstr "%1$s, %2$s va escriure el següent:"
+
+#: src/Composer.vala:699
+msgid "---------- Forwarded message ----------"
+msgstr "---------- Missatge reenviat ----------"
+
+#: src/Composer.vala:701
+#, c-format
+msgid "From: %s<br/>"
+msgstr "De: %s<br/>"
+
+#: src/Composer.vala:702
+#, c-format
+msgid "Subject: %s<br/>"
+msgstr "Assumpte: %s<br/>"
+
+#: src/Composer.vala:703
+#, c-format
+msgid "Date: %s<br/>"
+msgstr "Data: %s<br/>"
+
+#: src/Composer.vala:704
+#, c-format
+msgid "To: %s<br/>"
+msgstr "Per a: %s<br/>"
+
+#: src/Composer.vala:706
+#, c-format
+msgid "Cc: %s<br/>"
+msgstr "A/c: %s<br/>"
+
+#: src/Composer.vala:754
+msgid "Permanently delete this draft?"
+msgstr "Voleu suprimir permanentment aquest esborrany?"
+
+#: src/Composer.vala:755
+msgid ""
+"You cannot undo this action, nor recover your draft once it has been deleted."
+msgstr ""
+"No podreu desfer aquesta acció ni recuperar l'esborrany un cop suprimit."
+
+#: src/Composer.vala:765
+msgid "Delete Draft"
+msgstr "Suprimeix l'esborrany"
+
+#: src/Composer.vala:789
+msgid "Send without subject?"
+msgstr "Voleu enviar-lo sense assumpte?"
+
+#: src/Composer.vala:790
+msgid ""
+"This message has an empty subject field. The recipient may be unable to "
+"infer its scope or importance."
+msgstr ""
+"Aquest missatge té un camp d'assumpte buit. És possible que el destinatari "
+"no pugui inferir-ne l’abast o la importància."
+
+#: src/Composer.vala:797
+msgid "Don't Send"
+msgstr "No l'enviïs"
+
+#: src/Composer.vala:799
+msgid "Send Anyway"
+msgstr "Envia'l tanmateix"
+
+#: src/Composer.vala:830
+msgid "Sent message was not saved"
+msgstr "No s'ha desat el missatge enviat."
+
+#: src/Composer.vala:831
+msgid ""
+"The message was sent, however a copy was not saved to the Sent message "
+"folder."
+msgstr ""
+"El missatge s'ha enviat, però no se n'ha desat una còpia a la carpeta "
+"d'enviats."
+
+#: src/Composer.vala:846
+msgid "Unable to send message"
+msgstr "No es pot enviar el missatge."
+
+#: src/Composer.vala:847
+msgid "There was an unexpected error while sending your message."
+msgstr "Hi ha hagut un error inesperat a l'hora de d'enviar el missatge."
+
+#: src/Composer.vala:945 src/FolderList/FolderList.vala:55
+msgid "Edit Signatures…"
+msgstr "Edita les signatures…"
+
+#: src/Composer.vala:949
+msgid "None"
+msgstr "Cap"
+
+#: src/Composer.vala:1140
+msgid "Unable to save draft"
+msgstr "No es pot desar l'esborrany."
+
+#: src/Composer.vala:1141
+msgid "There was an unexpected error while saving your draft."
+msgstr "Hi ha hagut un error inesperat a l'hora de desar l'esborrany."
+
+#: src/EditorToolbar.vala:55
+msgid "Bold"
+msgstr "Negreta"
+
+#: src/EditorToolbar.vala:62
+msgid "Italic"
+msgstr "Cursiva"
+
+#: src/EditorToolbar.vala:73
+msgid "Underline"
+msgstr "Subratllat"
+
+#: src/EditorToolbar.vala:85
+msgid "Strikethrough"
+msgstr "Ratllat"
+
+#: src/EditorToolbar.vala:100
+msgid "Remove formatting"
+msgstr "Suprimeix-ne la formatació"
+
+#: src/EditorToolbar.vala:108 src/Dialogs/InsertLinkDialog.vala:68
+msgid "Insert Link"
+msgstr "Insereix un enllaç"
+
+#: src/InboxMonitor.vala:158 src/InboxMonitor.vala:170
+#, c-format
+msgid "%s to %s"
+msgstr "%s a %s"
+
+#. /TRANSLATORS: The %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#: src/InboxMonitor.vala:165
+#, c-format
+msgid "%u new message"
+msgid_plural "%u new messages"
+msgstr[0] "%u missatge nou"
+msgstr[1] "%u missatges nous"
+
+#. /TRANSLATORS: The first %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#. /The next %s represents the number of senders
+#: src/InboxMonitor.vala:177
+#, c-format
+msgid "%s from %u sender"
+msgid_plural "%s from %u senders"
+msgstr[0] "%s d'%u remitent"
+msgstr[1] "%s de %u remitents"
+
+#: src/MainWindow.vala:80
+msgid "Mail"
+msgstr "Correu"
+
+#: src/MainWindow.vala:123 src/Dialogs/AliasDialog/AliasDialog.vala:96
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:172
+msgid "Undo"
+msgstr "Desfés-ho"
+
+#: src/MainWindow.vala:281
+msgid "Message Archived"
+msgid_plural "Messages Archived"
+msgstr[0] "Missatge arxivat"
+msgstr[1] "Missatges arxivats"
+
+#: src/MainWindow.vala:285
+msgid "Couldn't archive message"
+msgstr "No s'ha pogut arxivar el missatge."
+
+#: src/MainWindow.vala:298
+msgid "Message Moved"
+msgid_plural "Messages Moved"
+msgstr[0] "Missatge mogut"
+msgstr[1] "Missatges moguts"
+
+#: src/MainWindow.vala:302
+msgid "Couldn't move message"
+msgstr "No s'ha pogut moure el missatge."
+
+#: src/MainWindow.vala:315
+msgid "Message Deleted"
+msgid_plural "Messages Deleted"
+msgstr[0] "Missatge suprimit"
+msgstr[1] "Missatges suprimits"
+
+#: src/MainWindow.vala:319
+msgid "Couldn't delete message"
+msgstr "No s'ha pogut suprimir el missatge."
+
+#: src/WelcomeView.vala:45
+msgid "Connect an Account"
+msgstr "Connecteu un compte"
+
+#: src/WelcomeView.vala:52
+msgid "Mail uses email accounts configured in System Settings."
+msgstr ""
+"El Correu usa comptes de correu configurats als paràmetres del sistema."
+
+#: src/WelcomeView.vala:59
+msgid "Online Accounts…"
+msgstr "Comptes en línia…"
+
+#: src/Backend/Account.vala:48
+msgid "Unable to connect"
+msgstr "No es pot connectar"
+
+#: src/Backend/Account.vala:49
+msgid "There was an unexpected error while trying to connect to the server."
+msgstr "Hi ha hagut un error inesperat a l'hora de connectar amb el servidor."
+
+#: src/Backend/MoveOperation.vala:65
+#, c-format
+msgid "Moving messages… (%u remaining)"
+msgstr "Es mouen missatges... (%u restant)"
+
+#: src/Backend/MoveOperation.vala:98
+msgid "No Archive folder is configured."
+msgstr "No hi ha cap carpeta d'arxiu configurada."
+
+#: src/Backend/MoveOperation.vala:126
+msgid "The destination folder was not found."
+msgstr "No s'ha trobat la carpeta de destinació."
+
+#: src/Backend/MoveOperation.vala:130
+msgid "The source folder is the destination folder."
+msgstr "La carpeta d'origen és la carpeta de destinació."
+
+#: src/Backend/Session.vala:642
+msgid "New Signature"
+msgstr "Signatura nova"
+
+#: src/Backend/ContactManager.vala:88 src/Backend/ContactManager.vala:122
+#, c-format
+msgid "Couldn't add “%s” to addressbook"
+msgstr "No s'ha pogut afegir %s a la llibreta d'adreces."
+
+#: src/Backend/ContactManager.vala:89
+msgid "No addressbook available."
+msgstr "No hi ha cap llibreta d'adreces disponible."
+
+#: src/Backend/ContactManager.vala:123
+msgid "Operation failed."
+msgstr "Ha fallat l'operació."
+
+#: src/ConversationList/ConversationItemModel.vala:74
+#: src/ConversationList/ConversationItemModel.vala:112
+msgid ", "
+msgstr ", "
+
+#: src/ConversationList/ConversationItemModel.vala:77
+#: src/ConversationList/ConversationItemModel.vala:115
+#: src/ConversationList/ConversationItemModel.vala:123
+#: src/MessageList/AttachmentButton.vala:100
+msgid "Unknown"
+msgstr "No es coneix"
+
+#: src/ConversationList/ConversationList.vala:85
+msgid "Search Mail"
+msgstr "Cerca correu"
+
+#: src/ConversationList/ConversationList.vala:89
+msgid "Hide read conversations"
+msgstr "Amaga les converses llegides"
+
+#: src/ConversationList/ConversationList.vala:90
+msgid "Hide unstarred conversations"
+msgstr "Amaga les converses no destacades"
+
+#: src/ConversationList/ConversationList.vala:107
+msgid "Filter Conversations"
+msgstr "Filtra les converses"
+
+#: src/ConversationList/ConversationList.vala:130
+msgid "Fetch new messages"
+msgstr "Obtén missatges nous"
+
+#: src/ConversationList/ConversationList.vala:137
+msgid "Fetching new messages…"
+msgstr "S'obtenen missatges nous…"
+
+#: src/ConversationList/ConversationListItem.vala:94
+msgid "Archive"
+msgstr "Arxiu"
+
+#: src/ConversationList/ConversationListItem.vala:99
+msgid "Trash"
+msgstr "Paperera"
+
+#: src/ConversationList/ConversationListItem.vala:181
+msgid "Unread"
+msgstr "Sense llegir"
+
+#: src/ConversationList/ConversationListItem.vala:194
+msgid "Replied"
+msgstr "Respost"
+
+#: src/ConversationList/ConversationListItem.vala:198
+msgid "Forwarded"
+msgstr "Reenviat"
+
+#: src/ConversationList/ConversationListItem.vala:212
+msgid "Move To Trash"
+msgstr "Mou a la paperera"
+
+#: src/ConversationList/ConversationListItem.vala:215
+msgid "Mark As Unread"
+msgstr "Marca com a no llegit"
+
+#: src/ConversationList/ConversationListItem.vala:217
+#: src/MessageList/MessageList.vala:51
+msgid "Mark as Read"
+msgstr "Marca com a llegit"
+
+#: src/ConversationList/ConversationListItem.vala:221
+#: src/MessageList/MessageList.vala:52
+msgid "Star"
+msgstr "Destaca"
+
+#: src/ConversationList/ConversationListItem.vala:223
+#: src/MessageList/MessageList.vala:53
+msgid "Unstar"
+msgstr "No ho destaquis"
+
+#: src/Dialogs/InsertLinkDialog.vala:29
+msgid "URL:"
+msgstr "URL:"
+
+#: src/Dialogs/InsertLinkDialog.vala:39
+msgid "Link Text:"
+msgstr "Text de l'enllaç:"
+
+#: src/Dialogs/InsertLinkDialog.vala:45
+msgid "Example Website"
+msgstr "Lloc web d'exemple"
+
+#: src/Dialogs/AliasDialog/Alias.vala:52
+msgid "John Doe"
+msgstr "Jordi Puig"
+
+#: src/Dialogs/AliasDialog/Alias.vala:56
+msgid "Name"
+msgstr "Nom"
+
+#: src/Dialogs/AliasDialog/Alias.vala:75
+msgid "E-mail Address"
+msgstr "Adreça electrònica"
+
+#: src/Dialogs/AliasDialog/Alias.vala:80
+msgid "Delete alias"
+msgstr "Suprimeix l'àlies"
+
+#: src/Dialogs/AliasDialog/Alias.vala:100
+msgid "Edit alias"
+msgstr "Edita l'àlies"
+
+#: src/Dialogs/AliasDialog/Alias.vala:175
+msgid "Name not set"
+msgstr "Nom no establert"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:33
+msgid "No Aliases"
+msgstr "Sense àlies"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:37
+msgid "Add aliases using the button in the toolbar below"
+msgstr "Afegiu àlies amb el botó de la barra d'eines de sota."
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:67
+msgid "Add Alias…"
+msgstr "Afegeix un àlies…"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:104
+msgid "Aliases"
+msgstr "Àlies"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:108
+msgid "Close"
+msgstr "Tanca"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:178
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:330
+#, c-format
+msgid "'%s' deleted"
+msgstr "'%s' s'ha suprimit"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:39
+msgid "No Signatures"
+msgstr "Sense signatures"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:43
+msgid "Add signatures using the button in the toolbar below"
+msgstr "Afegiu signatures mitjançant el botó de la barra d'eines de sota."
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:67
+msgid "Create Signature"
+msgstr "Crea una signatura"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:86
+msgid "Title"
+msgstr "Títol"
+
+#. Work around a styling issue
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:99
+msgid "For example “Work” or “Personal”"
+msgstr "Per exemple, \"Feina\" o \"Personal\""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:122
+msgid "Delete"
+msgstr "Esborra"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:131
+msgid "Set Default For…"
+msgstr "Valor per defecte per a…"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:156
+msgid "Signature"
+msgstr "Signatura"
+
+#: src/FolderList/AccountItemModel.vala:155
+msgid "Edit Aliases…"
+msgstr "Edita els àlies…"
+
+#: src/FolderList/FolderItemModel.vala:48
+msgid "Refresh folder"
+msgstr "Refresca la carpeta"
+
+#: src/FolderList/FolderItemModel.vala:53
+msgid "Rename folder"
+msgstr "Canvia de nom la carpeta"
+
+#: src/FolderList/FolderItemModel.vala:146
+#: src/FolderList/FolderItemModel.vala:175
+#: src/FolderList/FolderItemModel.vala:193
+#, c-format
+msgid "Couldn't rename “%s”"
+msgstr "No s'ha pogut canviar el nom de %s."
+
+#: src/FolderList/FolderItemModel.vala:147
+msgid "Folder names cannot contain “/”"
+msgstr "Els noms de les carpetes no poden contenir /."
+
+#: src/FolderList/FolderItemModel.vala:176
+#, c-format
+msgid "A folder named “%s” already exists"
+msgstr "Ja existeix una carpeta anomenada %s."
+
+#: src/FolderList/FolderList.vala:34
+msgid "Compose new message"
+msgstr "Redacta un missatge nou"
+
+#: src/FolderList/FolderList.vala:56
+msgid "Account Settings…"
+msgstr "Paràmetres del compte…"
+
+#: src/FolderList/FolderList.vala:59
+msgid "Always Show Remote Images"
+msgstr "Mostra sempre les imatges remotes"
+
+#: src/FolderList/FolderList.vala:65
+msgid "Menu"
+msgstr "Menú"
+
+#: src/FolderList/GroupedFolderItemModel.vala:38
+msgctxt "Inbox Folder"
+msgid "Inbox"
+msgstr "Safata d'entrada"
+
+#: src/FolderList/GroupedFolderItemModel.vala:42
+msgctxt "Archive Folder"
+msgid "Archive"
+msgstr "Arxiu"
+
+#: src/FolderList/GroupedFolderItemModel.vala:46
+msgctxt "Sent Folder"
+msgid "Sent"
+msgstr "Enviats"
+
+#: src/FolderList/SessionItemModel.vala:28
+msgid "All Mailboxes"
+msgstr "Totes les bústies"
+
+#: src/MessageList/MessageList.vala:28 src/MessageList/MessageListItem.vala:210
+msgid "Reply"
+msgstr "Respon"
+
+#: src/MessageList/MessageList.vala:37 src/MessageList/MessageListItem.vala:213
+msgid "Reply All"
+msgstr "Respon a tothom"
+
+#: src/MessageList/MessageList.vala:46 src/MessageList/MessageListItem.vala:216
+msgid "Forward"
+msgstr "Reenvia"
+
+#: src/MessageList/MessageList.vala:50
+msgid "Mark as Unread"
+msgstr "Marca com a no llegit"
+
+#: src/MessageList/MessageList.vala:60
+msgid "Mark Conversation"
+msgstr "Marca la conversa"
+
+#: src/MessageList/MessageList.vala:68
+msgid "Move Conversation to…"
+msgstr "Mou la conversa a…"
+
+#: src/MessageList/MessageList.vala:77
+msgid "Move conversations to archive"
+msgstr "Mou les converses a l'arxiu"
+
+#: src/MessageList/MessageList.vala:85
+msgid "Move conversations to Trash"
+msgstr "Mou les converses a la paperera"
+
+#: src/MessageList/MessageList.vala:100
+msgid "No Message Selected"
+msgstr "No hi ha cap missatge seleccionat."
+
+#. /TRANSLATORS: The first %s represents the date and the second %s the time of the message (either when it was received or sent)
+#: src/MessageList/MessageListItem.vala:190
+#, c-format
+msgid "%s at %s"
+msgstr "%s a les %s"
+
+#: src/MessageList/MessageListItem.vala:198
+#: src/MessageList/MessageListItem.vala:397
+msgid "Unstar message"
+msgstr "Desmarca'n l'estrella"
+
+#: src/MessageList/MessageListItem.vala:201
+#: src/MessageList/MessageListItem.vala:393
+msgid "Star message"
+msgstr "Marca amb una estrella"
+
+#: src/MessageList/MessageListItem.vala:221
+msgid "Print…"
+msgstr "Imprimeix…"
+
+#: src/MessageList/MessageListItem.vala:231
+msgid "More"
+msgstr "Més"
+
+#: src/MessageList/MessageListItem.vala:281
+msgid "Open in Calendar"
+msgstr "Obre-ho al Calendari"
+
+#: src/MessageList/MessageListItem.vala:286
+msgid "This message contains a Calendar Event."
+msgstr "Aquest missatge conté un esdeveniment del Calendari."
+
+#: src/MessageList/MessageListItem.vala:297
+msgid "Show Images"
+msgstr "Mostra les imatges"
+
+#: src/MessageList/MessageListItem.vala:298
+msgid "Always Show from Sender"
+msgstr "Mostra sempre el remitent"
+
+#: src/MessageList/MessageListItem.vala:302
+msgid "This message contains remote images."
+msgstr "Aquest missatge conté imatges remotes."
+
+#: src/MessageList/MessageListItem.vala:341
+msgid "This message contains one or more attachments"
+msgstr "Aquest missatge conté un o més adjunts"
+
+#. / Translators: This is the default file name of a printed email
+#: src/MessageList/MessageListItem.vala:417
+msgid "Email Message"
+msgstr "Missatge de correu"
+
+#: src/MessageList/MessageListItem.vala:439
+msgid "Unable to print email"
+msgstr "No s'ha pogut imprimir el missatge."
+
+#: src/MessageList/MessageListItem.vala:691
+#, c-format
+msgid "Trust and open “%s”?"
+msgstr "Voleu que confiï en %s i que l'obri?"
+
+#: src/MessageList/MessageListItem.vala:692
+msgid ""
+"Attachments may cause damage to your system if opened. Only open files from "
+"trusted sources."
+msgstr ""
+"Els adjunts poden causar danys al sistema si s'obren. Obriu només els "
+"fitxers de fonts de confiança."
+
+#: src/MessageList/MessageListItem.vala:699
+msgid "Open Anyway"
+msgstr "Obre-ho de tota manera"
+
+#: src/MessageList/AttachmentButton.vala:57
+msgid "Open"
+msgstr "Obre"
+
+#: src/MessageList/AttachmentButton.vala:58
+msgid "Save As…"
+msgstr "Anomena i desa…"
+
+#: src/MessageList/AttachmentButton.vala:143
+msgid "Save"
+msgstr "Desa"
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:22
+msgid "No mailboxes found"
+msgstr "No s'ha trobat cap bústia de correu."
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:26
+msgid "Try changing search terms"
+msgstr "Proveu de canviar els termes de cerca."
+
+#~ msgid "Email@example.com"
+#~ msgstr "adreça@exemple.com"
+
+#~ msgid "Enter name…"
+#~ msgstr "Introduïu un nom…"
+
+#~ msgid "Address:"
+#~ msgstr "Adreça:"
+
+#~ msgid "Enter e-mail address…"
+#~ msgstr "Introduïu una adreça electrònica…"
+
+#, c-format
+#~ msgid "Unable to rename folder “%s”': %s"
+#~ msgstr "No es pot canviar el nom de la carpeta %s: %s"
+
+#~ msgid "Reply to All"
+#~ msgstr "Respon a tots"
+
+#, c-format
+#~ msgid "Are you sure you want to open %s?"
+#~ msgstr "Segur que voleu obrir %s?"
+
+#~ msgid "Quote text"
+#~ msgstr "Citació del text"
+
+#~ msgid "Unquote text"
+#~ msgstr "Sense citació del text"
+
+#~ msgid "Drafts | Draft"
+#~ msgstr "Esborranys | Esborrany"
+
+#~ msgid "Sent | Sent Mail | Sent Email | Sent E-Mail"
+#~ msgstr "Enviat | Correu enviat | Missatge enviat | Missatge enviat"
+
+#~ msgid ""
+#~ "Junk | Spam | Junk Mail | Junk Email | Junk E-Mail | Bulk Mail | Bulk "
+#~ "Email | Bulk E-Mail"
+#~ msgstr ""
+#~ "Brossa | Brossa | Correu brossa | Correu brossa | Missatge brossa | "
+#~ "Correu massiu | Correu massiu | Missatge massiu"
+
+#~ msgid "Trash | Rubbish | Rubbish Bin"
+#~ msgstr "Paperera | Paperera | Paperera"
+
+#~ msgid "Archive | Archives"
+#~ msgstr "Arxiu | Arxius"
+
+#~ msgid "Drafts"
+#~ msgstr "Esborranys"
+
+#~ msgid "Starred"
+#~ msgstr "Destacats"
+
+#~ msgid "Important"
+#~ msgstr "Important"
+
+#~ msgid "Spam"
+#~ msgstr "Correu brossa"
+
+#~ msgid "Outbox"
+#~ msgstr "Safata de sortida"
+
+#~ msgid "Search"
+#~ msgstr "Cerca"
+
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgid "SMTP"
+#~ msgstr "SMTP"
+
+#~ msgid "Gmail"
+#~ msgstr "Gmail"
+
+#~ msgid "Yahoo! Mail"
+#~ msgstr "Correu del Yahoo!"
+
+#~ msgid "Outlook.com"
+#~ msgstr "Outlook.com"
+
+#~ msgid "Other"
+#~ msgstr "Altres"
+
+#~ msgid "attachment"
+#~ msgstr "adjunt"
+
+#~ msgid "bcc"
+#~ msgstr "bcc"
+
+#~ msgid "body"
+#~ msgstr "cos"
+
+#~ msgid "cc"
+#~ msgstr "cc"
+
+#~ msgid "from"
+#~ msgstr "de"
+
+#~ msgid "subject"
+#~ msgstr "assumpte"
+
+#~ msgid "to"
+#~ msgstr "per a"
+
+#~ msgid "me"
+#~ msgstr "jo"
+
+#~ msgid "(no subject)"
+#~ msgstr "(sense assumpte)"
+
+#~ msgid "%s wrote:"
+#~ msgstr "%s va escriure el següent:"
+
+#~ msgid "On %s:"
+#~ msgstr "%s:"
+
+#~ msgid "none"
+#~ msgstr "cap"
+
+#~ msgid "Mail Client"
+#~ msgstr "Client de correu"
+
+#~ msgid "Copyright 2011-2015 Yorba Foundation"
+#~ msgstr "Copyright 2011-2015. Yorba Foundation"
+
+#~ msgid "Visit the Yorba web site"
+#~ msgstr "Visiteu el lloc web de Yorba"
+
+#~ msgid "Delete conversation"
+#~ msgstr "Esborra la conversa"
+
+#~ msgid "Delete conversation (Shift+Delete)"
+#~ msgstr "Esborra la conversa (Maj. + Supr.)"
+
+#~ msgid "Delete conversations (Shift+Delete)"
+#~ msgstr "Esborra les converses (Maj. + Supr.)"
+
+#~ msgid "Move conversation to Trash (Delete, Backspace)"
+#~ msgid_plural "Move conversations to Trash (Delete, Backspace)"
+#~ msgstr[0] "Desplaça la conversa a la paperera (Supr., Retrocés)"
+#~ msgstr[1] "Desplaça les converses a la paperera (Supr., Retrocés)"
+
+#~ msgid "Move conversations to Trash (Delete, Backspace)"
+#~ msgstr "Desplaça les converses a la paperera (Supr., Retrocés)"
+
+#~ msgid "_Archive"
+#~ msgstr "_Arxiva"
+
+#~ msgid "Archive conversation (A)"
+#~ msgid_plural "Archive conversations (A)"
+#~ msgstr[0] "Arxiva la conversa"
+#~ msgstr[1] "Arxiva les converses"
+
+#~ msgid "Archive conversations (A)"
+#~ msgstr "Arxiva les converses (A)"
+
+#~ msgid "Mark as S_pam"
+#~ msgstr "Marca com a b_rossa"
+
+#~ msgid "Mark as not S_pam"
+#~ msgstr "Marca com a no b_rossa"
+
+#~ msgid "Add label to conversation"
+#~ msgid_plural "Add label to conversations"
+#~ msgstr[0] "Afegeix una etiqueta a la conversa"
+#~ msgstr[1] "Afegeix una etiqueta a les converses"
+
+#~ msgid "Add label to conversations"
+#~ msgstr "Afegeix una etiqueta a les converses"
+
+#~ msgid "A_ccounts"
+#~ msgstr "_Comptes"
+
+#~ msgid "_Preferences"
+#~ msgstr "_Preferències"
+
+#~ msgid "_Help"
+#~ msgstr "A_juda"
+
+#~ msgid "_About"
+#~ msgstr "_Quant a"
+
+#~ msgid "_Quit"
+#~ msgstr "_Surt"
+
+#~ msgid "_Mark as..."
+#~ msgstr "_Marca com a..."
+
+#~ msgid "Mark as _Read"
+#~ msgstr "Marca com a _llegit"
+
+#~ msgid "Mark as _Unread"
+#~ msgstr "Marca com a _no llegit"
+
+#~ msgid "Add label"
+#~ msgstr "Afegeix una etiqueta"
+
+#~ msgid "_Label"
+#~ msgstr "_Etiqueta"
+
+#~ msgid "_Move"
+#~ msgstr "_Mou"
+
+#~ msgid "Compose new message (Ctrl+N, N)"
+#~ msgstr "Escriu un missatge nou (Ctrl+N, N)"
+
+#~ msgid "_Reply"
+#~ msgstr "_Respon"
+
+#~ msgid "Reply (Ctrl+R, R)"
+#~ msgstr "Respon (Ctrl+R, R)"
+
+#~ msgid "Reply all (Ctrl+Shift+R, Shift+R)"
+#~ msgstr "Respon a tots (Ctrl+Shift+R, Shift+R)"
+
+#~ msgid "_Forward"
+#~ msgstr "_Reenvia"
+
+#~ msgid "Forward (Ctrl+L, F)"
+#~ msgstr "Reenvia (Ctrl+L, F)"
+
+#~ msgid "Empty"
+#~ msgstr "Buida"
+
+#~ msgid "Empty Spam or Trash folders"
+#~ msgstr "Buida les carpetes de correu brossa o la paperera"
+
+#~ msgid "Empty _Spam…"
+#~ msgstr "Buida el correu bro_ssa…"
+
+#~ msgid "Empty _Trash…"
+#~ msgstr "Buida la _paperera…"
+
+#~ msgid "Toggle search bar"
+#~ msgstr "Commuta la barra de cerca"
+
+#~ msgid "Unable to store server trust exception"
+#~ msgstr "No es pot emmagatzemar l'excepció de confiança del servidor"
+
+#~ msgid "Your settings are insecure"
+#~ msgstr "La vostra configuració no és segura"
+
+#~ msgid ""
+#~ "Your IMAP and/or SMTP settings do not specify SSL or TLS.  This means "
+#~ "your username and password could be read by another person on the "
+#~ "network.  Are you sure you want to do this?"
+#~ msgstr ""
+#~ "Els paràmetres IMAP i/o SMTP no especifiquen SSL o TSL. Això vol dir que "
+#~ "el vostre nom d'usuari i contrasenya podrien ser llegits per una altra "
+#~ "persona de la xarxa. Esteu segur que voleu fer això?"
+
+#~ msgid "Co_ntinue"
+#~ msgstr "Co_ntinua"
+
+#~ msgid "Error sending email"
+#~ msgstr "Error en enviar el missatge"
+
+#~ msgid ""
+#~ "Geary encountered an error sending an email.  If the problem persists, "
+#~ "please manually delete the email from your Outbox folder."
+#~ msgstr ""
+#~ "El Geary ha detectat un error enviant un correu electrònic. Si el "
+#~ "problema persisteix, si us plau, elimineu manualment el missatge "
+#~ "electrònic de la safata de sortida."
+
+#~ msgid "Error saving sent mail"
+#~ msgstr "Error en desar el missatge enviat"
+
+#~ msgid ""
+#~ "Geary encountered an error saving a sent message to Sent Mail.  The "
+#~ "message will stay in your Outbox folder until you delete it."
+#~ msgstr ""
+#~ "El Geary ha detectat un error en desar un missatge enviat al correu "
+#~ "enviat. El missatge romandrà a la carpeta de sortida fins que l'elimineu."
+
+#~ msgid "Labels"
+#~ msgstr "Etiquetes"
+
+#~ msgid "Unable to open the database for %s"
+#~ msgstr "No es pot obrir la base de dades per a %s"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to corruption of the database file in this directory:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Geary can rebuild the database and re-synchronize with the server or "
+#~ "exit.\n"
+#~ "\n"
+#~ "Rebuilding the database will destroy all local email and its attachments. "
+#~ "<b>The mail on the your server will not be affected.</b>"
+#~ msgstr ""
+#~ "S'ha produït un error en obrir la base de dades de correu local per a "
+#~ "aquest compte. Això és possiblement degut a la corrupció del fitxer de la "
+#~ "base de dades en aquest directori:\n"
+#~ "\n"
+#~ "% s\n"
+#~ "\n"
+#~ "El Geary pot reconstruir la base de dades i tornar a sincronitzar-se amb "
+#~ "el servidor o sortir.\n"
+#~ "\n"
+#~ "La reconstrucció de la base de dades destruirà tot el correu local i els "
+#~ "seus adjunts. <b>Això no afectarà el correu al servidor. </b>"
+
+#~ msgid "_Rebuild"
+#~ msgstr "_Reconstrueix"
+
+#~ msgid "E_xit"
+#~ msgstr "_Surt"
+
+#~ msgid "Unable to rebuild database for \"%s\""
+#~ msgstr "No es pot reconstruir la base de dades per a \"%s\""
+
+#~ msgid ""
+#~ "Error during rebuild:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Error durant la reconstrucció:\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid "Unable to open local mailbox for %s"
+#~ msgstr "No es pot obrir la bústia local per a %s"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to a file permissions problem.\n"
+#~ "\n"
+#~ "Please check that you have read/write permissions for all files in this "
+#~ "directory:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "S'ha produït un error en obrir la base de dades de correu local per a "
+#~ "aquest compte. Això és possiblement degut a un problema de permisos de "
+#~ "fitxer.\n"
+#~ "\n"
+#~ "Si us plau, comproveu que tingueu els permisos de lectura / escriptura "
+#~ "per a tots els fitxers d'aquest directori:\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid ""
+#~ "The version number of the local mail database is formatted for a newer "
+#~ "version of Geary. Unfortunately, the database cannot be \"rolled back\" "
+#~ "to work with this version of Geary.\n"
+#~ "\n"
+#~ "Please install the latest version of Geary and try again."
+#~ msgstr ""
+#~ "El número de versió de la base de dades de correu local està formatat per "
+#~ "a una nova versió del Geary. Per desgràcia, la base de dades no pot ser "
+#~ "desactualitzada per treballar amb aquesta versió del Geary.\n"
+#~ "\n"
+#~ "Si us plau, instal·leu l'última versió del Geary i torneu a intentar-ho."
+
+#~ msgid ""
+#~ "There was an error opening the local account. This is probably due to "
+#~ "connectivity issues.\n"
+#~ "\n"
+#~ "Please check your network connection and restart Geary."
+#~ msgstr ""
+#~ "S'ha produït un error en obrir el compte local. Això és probablement "
+#~ "degut a problemes de connectivitat.\n"
+#~ "\n"
+#~ "Si us plau, comproveu la connexió de xarxa i reinicieu el Geary."
+
+#~ msgid "About %s"
+#~ msgstr "Quant al %s"
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Martin Steghöfer <martin@steghoefer.de>, 2013\n"
+#~ "\n"
+#~ "Launchpad Contributions:\n"
+#~ "  Davidmp https://launchpad.net/~davidmp\n"
+#~ "  Jim Nelson https://launchpad.net/~yorba-jim\n"
+#~ "  Marc https://launchpad.net/~noviluni\n"
+#~ "  Mario Rodrigo https://launchpad.net/~capitantrueno\n"
+#~ "  jordi https://launchpad.net/~13degener-gmail"
+
+#~ msgid "Undo move (Ctrl+Z)"
+#~ msgstr "Desfés el desplaçament (Ctrl+Z)"
+
+#~ msgid "Are you sure you want to open \"%s\"?"
+#~ msgstr "Esteu segur que voleu obrir «%s»?"
+
+#~ msgid ""
+#~ "Attachments may cause damage to your system if opened.  Only open files "
+#~ "from trusted sources."
+#~ msgstr ""
+#~ "Els fitxers adjunts podrien danyar el vostre sistema. Obriu només fitxers "
+#~ "de fonts fiables."
+
+#~ msgid "Don't _ask me again"
+#~ msgstr "No m'ho _tornis a preguntar"
+
+#~ msgid "A file named \"%s\" already exists.  Do you want to replace it?"
+#~ msgstr "Ja existeix un fitxer anomenat «%s». Voleu reemplaçar-lo?"
+
+#~ msgid ""
+#~ "The file already exists in \"%s\".  Replacing it will overwrite its "
+#~ "contents."
+#~ msgstr ""
+#~ "El fitxer ja existeix a «%s». Reemplaçant-lo sobreescriureu el seu "
+#~ "contingut."
+
+#~ msgid "_Replace"
+#~ msgstr "_Reemplaça"
+
+#~ msgid "Close open draft messages?"
+#~ msgstr "Tanco els esborranys oberts?"
+
+#~ msgid "Empty all email from your %s folder?"
+#~ msgstr "Buido tot els missatges de la carpeta %s?"
+
+#~ msgid "This removes the email from Geary and your email server."
+#~ msgstr ""
+#~ "Això elimina el correu electrònic del Geary i del servidor de correu "
+#~ "electrònic."
+
+#~ msgid "This cannot be undone."
+#~ msgstr "Això no es podrà desfer."
+
+#~ msgid "Empty %s"
+#~ msgstr "Buida %s"
+
+#~ msgid "Error emptying %s"
+#~ msgstr "Error en buidar %s"
+
+#~ msgid "Undo archive (Ctrl+Z)"
+#~ msgstr "Desfés l'arxivament (Ctrl+Z)"
+
+#~ msgid "Undo trash (Ctrl+Z)"
+#~ msgstr "Desfés l'eliminació (Ctrl+Z)"
+
+#~ msgid "Undo (Ctrl+Z)"
+#~ msgstr "Desfés-ho (Ctrl+Z)"
+
+#~ msgid "Start Geary with hidden main window"
+#~ msgstr "Inicia el Geary amb la finestra principal oculta"
+
+#~ msgid "Output debugging information"
+#~ msgstr "Sortida de la informació de depuració"
+
+#~ msgid "Log conversation monitoring"
+#~ msgstr "Registra el seguiment de les converses"
+
+#~ msgid "Log network deserialization"
+#~ msgstr "Registra la xarxa deserialització"
+
+#~ msgid "Log network activity"
+#~ msgstr "Registra l'activitat de xarxa"
+
+#~ msgid "Log IMAP replay queue"
+#~ msgstr "Registra la cua de reproducció IMAP"
+
+#~ msgid "Log network serialization"
+#~ msgstr "Registra la serialització de xarxa"
+
+#~ msgid "Log periodic activity"
+#~ msgstr "Registra l'activitat periòdica"
+
+#~ msgid "Log database queries (generates lots of messages)"
+#~ msgstr "Registra les consultes a la base de dades (genera molts missatges)"
+
+#~ msgid "Log folder normalization"
+#~ msgstr "Registra la normalització de carpetes"
+
+#~ msgid "Allow inspection of WebView"
+#~ msgstr "Permet la inspecció del WebView"
+
+#~ msgid "Revoke all server certificates with TLS warnings"
+#~ msgstr "Revoca tots els certificats de servidor amb advertències de TLS"
+
+#~ msgid "Display program version"
+#~ msgstr "Mostra la versió del programa"
+
+#~ msgid "Use %s to open a new composer window"
+#~ msgstr "Useu %s per obrir una finestra d'edició nova"
+
+#~ msgid "Please report comments, suggestions and bugs to:"
+#~ msgstr "Envieu comentaris, suggerències i errors a:"
+
+#~ msgid "Failed to parse command line options: %s\n"
+#~ msgstr "No s'han pogut interpretar les opcions de la línia d'ordres: %s\n"
+
+#~ msgid "Unrecognized command line option \"%s\"\n"
+#~ msgstr "Opció de la línia d'ordres no reconeguda «%s»\n"
+
+#~ msgid "%s - New Messages"
+#~ msgstr "%s - Missatges Nous"
+
+#~ msgid "%s, %d new message total"
+#~ msgid_plural "%s, %d new messages total"
+#~ msgstr[0] "%s, %d missatge nou en total"
+#~ msgstr[1] "%s, %d missatges nous en total"
+
+#~ msgid ""
+#~ "%s\n"
+#~ "(%d other new message for %s)"
+#~ msgid_plural ""
+#~ "%s\n"
+#~ "(%d other new messages for %s)"
+#~ msgstr[0] ""
+#~ "%s\n"
+#~ "(%d altre missatge nou per a %s)"
+#~ msgstr[1] ""
+#~ "%s\n"
+#~ "(%d altres missatges nous per a %s)"
+
+#~ msgid "Me"
+#~ msgstr "Jo"
+
+#~ msgid "Untrusted Connection: %s"
+#~ msgstr "Connexió no fiable: %s"
+
+#~ msgid "The identity of the %s mail server at %s:%u could not be verified."
+#~ msgstr ""
+#~ "La identitat del servidor de correu %s a %s:%u no s'ha pogut verificar."
+
+#~ msgid ""
+#~ "Selecting \"Trust This Server\" or \"Always Trust This Server\" may cause "
+#~ "your username and password to be transmitted insecurely."
+#~ msgstr ""
+#~ "Seleccionar \"Confia en aquest servidor\" o \"Confia sempre en aquest "
+#~ "servidor\" pot causar que el vostre nom d'usuari i la contrasenya es "
+#~ "transmetin de forma insegura."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Geary not to access this "
+#~ "server."
+#~ msgstr ""
+#~ "Seleccionar \"No confiïs en aquest servidor\" farà que el Geary no "
+#~ "accedeixi a aquest servidor."
+
+#~ msgid "Geary will not add or update this email account."
+#~ msgstr ""
+#~ "El Geary no afegirà o actualitzarà aquest compte de correu electrònic."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Geary to stop accessing "
+#~ "this account."
+#~ msgstr ""
+#~ "Seleccionar \"No confiïs en aquest servidor\" farà que el Geary deixi "
+#~ "d'accedir a aquest compte."
+
+#~ msgid "Geary will exit if you have no other open email accounts."
+#~ msgstr ""
+#~ "El Geary sortirà si no teniu altres comptes de correu electrònic oberts."
+
+#~ msgid ""
+#~ "Contact your system administrator or email service provider if you have "
+#~ "any question about these issues."
+#~ msgstr ""
+#~ "Poseu-vos en contacte amb l'administrador del sistema o el proveïdor de "
+#~ "serveis de correu electrònic si teniu alguna pregunta sobre aquests temes."
+
+#~ msgid "The server's certificate is not signed by a known authority"
+#~ msgstr ""
+#~ "El certificat del servidor no està signat per una autoritat coneguda"
+
+#~ msgid "The server's identity does not match the identity in the certificate"
+#~ msgstr ""
+#~ "La identitat del servidor no coincideix amb la identitat del certificat"
+
+#~ msgid "The server's certificate has expired"
+#~ msgstr "El certificat del servidor ha caducat"
+
+#~ msgid "The server's certificate has not been activated"
+#~ msgstr "El certificat del servidor no s'ha activat"
+
+#~ msgid "The server's certificate has been revoked and is now invalid"
+#~ msgstr "El certificat del servidor s'ha revocat i ara no és vàlid"
+
+#~ msgid "The server's certificate is considered insecure"
+#~ msgstr "El certificat del servidor es considera insegur"
+
+#~ msgid "An error has occurred processing the server's certificate"
+#~ msgstr "Hi ha hagut un error processant el certificat del servidor"
+
+#~ msgid "Geary requires your email password to continue"
+#~ msgstr ""
+#~ "El Geary requereix la contrasenya de correu electrònic per continuar"
+
+#~ msgid "Additional addresses for %s"
+#~ msgstr "Adreces addicionals per a %s"
+
+#~ msgid "First Last"
+#~ msgstr "Nom i cognoms"
+
+#~ msgid "Welcome to Geary."
+#~ msgstr "Benvingut al Geary."
+
+#~ msgid "Enter your account information to get started."
+#~ msgstr "Introduïu la informació del vostre compte per començar."
+
+#~ msgid "2 weeks back"
+#~ msgstr "Fa 2 setmanes"
+
+#~ msgid "1 month back"
+#~ msgstr "Fa 1 mes"
+
+#~ msgid "3 months back"
+#~ msgstr "Fa 3 mesos"
+
+#~ msgid "6 months back"
+#~ msgstr "Fa 6 mesos"
+
+#~ msgid "1 year back"
+#~ msgstr "Fa 1 any"
+
+#~ msgid "2 years back"
+#~ msgstr "fa 2 anys"
+
+#~ msgid "4 years back"
+#~ msgstr "fa 4 anys"
+
+#~ msgid "Everything"
+#~ msgstr "Tot"
+
+#~ msgid "Edit"
+#~ msgstr "Edita"
+
+#~ msgid "Preview"
+#~ msgstr "Vista prèvia"
+
+#~ msgid "Remem_ber passwords"
+#~ msgstr "_Recorda les contrasenyes"
+
+#~ msgid "Remem_ber password"
+#~ msgstr "_Recorda la contrasenya"
+
+#~ msgid "        &#8226; Invalid account nickname.\n"
+#~ msgstr "        &#8226; Sobrenom del compte invàlid.\n"
+
+#~ msgid "        &#8226; Email address already added to Geary.\n"
+#~ msgstr "        &#8226; adreça electrònica afegida al Geary.\n"
+
+#~ msgid "        &#8226; IMAP connection error.\n"
+#~ msgstr "        &#8226; Error de connexió IMAP.\n"
+
+#~ msgid "        &#8226; IMAP username or password incorrect.\n"
+#~ msgstr "        &#8226; Nom d'usuari o contrasenya d'IMAP incorrecte(s).\n"
+
+#~ msgid "        &#8226; SMTP connection error.\n"
+#~ msgstr "        &#8226; Error de connexió SMTP.\n"
+
+#~ msgid "        &#8226; SMTP username or password incorrect.\n"
+#~ msgstr "        &#8226; Nom d'usuari o contrasenya d'SMTP incorrecte(s).\n"
+
+#~ msgid "        &#8226; Connection error.\n"
+#~ msgstr "        &#8226; Error de connexió.\n"
+
+#~ msgid "        &#8226; Username or password incorrect.\n"
+#~ msgstr "        &#8226; Nom d'usuari o contrasenya incorrecte(s).\n"
+
+#~ msgid "_Add"
+#~ msgstr "_Afegeix"
+
+#~ msgid "%l:%M %P"
+#~ msgstr "%l:%M %P"
+
+#~ msgid "%H:%M"
+#~ msgstr "%H:%M"
+
+#~ msgctxt "Default clock format"
+#~ msgid "%l:%M %P"
+#~ msgstr "%l:%M %P"
+
+#~ msgid "%b %-e"
+#~ msgstr "%-e %b"
+
+#~ msgid "%x"
+#~ msgstr "%x"
+
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%-e de %B del %Y a les %-l:%M %P"
+
+#~ msgid "%B %-e, %Y %-H:%M"
+#~ msgstr "%-e de %B del %Y a les %-H:%M"
+
+#~ msgctxt "Default full date"
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%-e de %B del %Y a les %-l:%M %P"
+
+#~ msgid "Now"
+#~ msgstr "Ara"
+
+#~ msgid "%dm ago"
+#~ msgid_plural "%dm ago"
+#~ msgstr[0] "fa %dm"
+#~ msgstr[1] "fa %dm"
+
+#~ msgid "%dh ago"
+#~ msgid_plural "%dh ago"
+#~ msgstr[0] "fa %dh"
+#~ msgstr[1] "fa %dh"
+
+#~ msgid "Yesterday"
+#~ msgstr "Ahir"
+
+#~ msgid "%A"
+#~ msgstr "%A"
+
+#~ msgid "bytes"
+#~ msgstr "bytes"
+
+#~ msgctxt "Abbreviation for terabyte"
+#~ msgid "TB"
+#~ msgstr "TB"
+
+#~ msgctxt "Abbreviation for gigabyte"
+#~ msgid "GB"
+#~ msgstr "GB"
+
+#~ msgctxt "Abbreviation for megabyte"
+#~ msgid "MB"
+#~ msgstr "MB"
+
+#~ msgctxt "Abbreviation for kilobyte"
+#~ msgid "KB"
+#~ msgstr "KB"
+
+#~ msgid "%d message"
+#~ msgid_plural "%d messages"
+#~ msgstr[0] "%d missatge"
+#~ msgstr[1] "%d missatges"
+
+#~ msgid "%s, %s"
+#~ msgstr "%s, %s"
+
+#~ msgid "Inboxes"
+#~ msgstr "Safates d'entrada"
+
+#~ msgid "Search %s account"
+#~ msgstr "Cerca al compte %s"
+
+#~ msgid "%d result"
+#~ msgid_plural "%d results"
+#~ msgstr[0] "%d resultat"
+#~ msgstr[1] "%d resultats"
+
+#~ msgid "%u conversation selected."
+#~ msgid_plural "%u conversations selected."
+#~ msgstr[0] "%u conversa seleccionada."
+#~ msgstr[1] "%u converses seleccionades."
+
+#~ msgid "No search results found."
+#~ msgstr "No s'han trobat resultats de cerca."
+
+#~ msgid "No conversations in folder."
+#~ msgstr "No hi ha cap conversa a la carpeta."
+
+#~ msgid "Always Show From Sender"
+#~ msgstr "Mostra sempre el remitent"
+
+#~ msgid "Edit Draft"
+#~ msgstr "Edita l'esborrany"
+
+#~ msgid "Date:"
+#~ msgstr "Data:"
+
+#~ msgid "%u read message"
+#~ msgid_plural "%u read messages"
+#~ msgstr[0] "%u missatge llegit"
+#~ msgstr[1] "%u missatges llegits"
+
+#~ msgid "This message was sent successfully, but could not be saved to %s."
+#~ msgstr ""
+#~ "Aquest missatge s'ha enviat correctament, però no s'ha pogut desar a %s."
+
+#~ msgid "_Copy"
+#~ msgstr "_Copia"
+
+#~ msgid "Copy _Email Address"
+#~ msgstr "Copia l'adreça _electrònica"
+
+#~ msgid "Copy _Link"
+#~ msgstr "Copia l'en_llaç"
+
+#~ msgid "Select _Message"
+#~ msgstr "Selecciona el _missatge"
+
+#~ msgid "Select _All"
+#~ msgstr "Selecciona-ho _tot"
+
+#~ msgid "_Inspect"
+#~ msgstr "_Inspecciona"
+
+#~ msgid "This link appears to go to"
+#~ msgstr "Sembla que aquest enllaç va a"
+
+#~ msgid "but actually goes to"
+#~ msgstr "però de fet va a"
+
+#~ msgid " (Invalid?)"
+#~ msgstr " (No vàlid?)"
+
+#~ msgid "_Save Image As..."
+#~ msgstr "_Anomena i desa la imatge..."
+
+#~ msgid "_Save As..."
+#~ msgstr "_Desa i anomena..."
+
+#~ msgid "Save All A_ttachments..."
+#~ msgstr "Desa tots els fitxers ad_junts..."
+
+#~ msgid "Save A_ttachment..."
+#~ msgid_plural "Save All A_ttachments..."
+#~ msgstr[0] "Desa el fitxer ad_junt..."
+#~ msgstr[1] "Desa tots els fitxers ad_junts..."
+
+#~ msgid "Reply to _All"
+#~ msgstr "Respon a _tots"
+
+#~ msgid "_Mark as Read"
+#~ msgstr "_Marca com a llegit"
+
+#~ msgid "_Mark as Unread"
+#~ msgstr "_Marca com a no llegit"
+
+#~ msgid "Mark Unread From _Here"
+#~ msgstr "Marca sense llegir des d'a_quí"
+
+#~ msgid "_View Source"
+#~ msgstr "_Visualitza la font"
+
+#~ msgid "Failed to open default text editor."
+#~ msgstr "No s'ha pogut obrir l'editor de textos predeterminat."
+
+#~ msgid "%s - Conversation Inspector"
+#~ msgstr "%s - Inspector de converses"
+
+#~ msgid "Saved"
+#~ msgstr "Desat"
+
+#~ msgid "Saving"
+#~ msgstr "Desant"
+
+#~ msgid "Error saving"
+#~ msgstr "Error en desar"
+
+#~ msgid "Press Backspace to delete quote"
+#~ msgstr "Premeu la tecla de retrocés per eliminar la cita"
+
+#~ msgid ""
+#~ "attach|attaching|attaches|attachment|attachments|attached|enclose|"
+#~ "enclosed|enclosing|encloses|enclosure|enclosures"
+#~ msgstr ""
+#~ "adjunt|adnuntant|adjunts|adjunt|adjunts|adjuntat|adjunta|adjuntat|"
+#~ "adjuntant|adjunta|adjunció|adjuncions"
+
+#~ msgid "Do you want to discard this message?"
+#~ msgstr "Voleu descartar aquest missatge?"
+
+#~ msgid "Send message with an empty subject and body?"
+#~ msgstr "Voleu enviar el missatge amb l'assupte i el cos en blanc?"
+
+#~ msgid "Send message without an attachment?"
+#~ msgstr "Voleu enviar el missatge sense un adjunt?"
+
+#~ msgid "Cannot add attachment"
+#~ msgstr "No s'ha pogut adjuntar el fitxer"
+
+#~ msgid "\"%s\" could not be found."
+#~ msgstr "No s'ha trobat \"%s\"."
+
+#~ msgid "\"%s\" is a folder."
+#~ msgstr "\"%s\" és un directori."
+
+#~ msgid "\"%s\" is an empty file."
+#~ msgstr "\"%s\" és un fitxer buit."
+
+#~ msgid "\"%s\" could not be opened for reading."
+#~ msgstr "No s'ha pogut obrir \"%s\" per llegir."
+
+#~ msgid "\"%s\" already attached for delivery."
+#~ msgstr "\"%s\" ja està seleccionat com a fitxer adjunt."
+
+#~ msgid "%s (%s)"
+#~ msgstr "%s (%s)"
+
+#~ msgid "To: "
+#~ msgstr "Per a: "
+
+#~ msgid "Cc: "
+#~ msgstr "Cc: "
+
+#~ msgid "Bcc: "
+#~ msgstr "Bcc: "
+
+#~ msgid "Reply-To: "
+#~ msgstr "Respon a: "
+
+#~ msgid "Select Color"
+#~ msgstr "Selecciona el color"
+
+#~ msgid "%1$s via %2$s"
+#~ msgstr "%1$s mitjançant %2$s"
+
+#~ msgid "_From:"
+#~ msgstr "_De:"
+
+#~ msgid "%s (%d)"
+#~ msgstr "%s (%d)"
+
+#~ msgid "Sending..."
+#~ msgstr "Enviant..."
+
+#~ msgid "%i match"
+#~ msgid_plural "%i matches"
+#~ msgstr[0] "%i coincidència"
+#~ msgstr[1] "%i coincidències"
+
+#~ msgid "%i match (wrapped)"
+#~ msgid_plural "%i matches (wrapped)"
+#~ msgstr[0] "%i coincidència (ajustada)"
+#~ msgstr[1] "%i coincidències (ajustades)"
+
+#~ msgid "not found"
+#~ msgstr "no s'ha trobat"
+
+#~ msgid "_OK"
+#~ msgstr "D'ac_ord"
+
+#~ msgid "_Cancel"
+#~ msgstr "_Cancel·la"
+
+#~ msgid "_Discard"
+#~ msgstr "_Descarta"
+
+#~ msgid "_Open"
+#~ msgstr "_Obre"
+
+#~ msgid "_Print..."
+#~ msgstr "Im_primeix..."
+
+#~ msgid "_Remove"
+#~ msgstr "_Eliminar"
+
+#~ msgid "_Keep"
+#~ msgstr "_Mantén"
+
+#~ msgid "Search all mail in account for keywords (Ctrl+S)"
+#~ msgstr "Cerca en tots el missatges del compte les paraules clau (Ctrl + S)"
+
+#~ msgid "Indexing %s account"
+#~ msgstr "Indexant el comtpe %s"
+
+#~ msgid "Send by Email"
+#~ msgstr "Envia per correu"
+
+#~ msgid "Send files using Mail"
+#~ msgstr "Envia fitxers usant el Correu"
+
+#~ msgid "Welcome to Mail"
+#~ msgstr "Benvingut al Correu"
+
+#~ msgid "More options"
+#~ msgstr "Més opcions"
+
+#~ msgid "Search %s"
+#~ msgstr "Cerca %s"
+
+#~ msgid "Reading"
+#~ msgstr "Lectura"
+
+#~ msgid "Automatically select next message:"
+#~ msgstr "Selecciona el text del missatge automàticament:"
+
+#~ msgid "Conversation previews:"
+#~ msgstr "Vistes prèvies de conversió:"
+
+#~ msgid "Three-pane layout:"
+#~ msgstr "Disposició de tres plafons:"
+
+#~ msgid "Composer"
+#~ msgstr "Editor"
+
+#~ msgid "Spell check:"
+#~ msgstr "Comprovació d'ortografia:"
+
+#~ msgid "Notifications"
+#~ msgstr "Notificacions"
+
+#~ msgid "Always watch for new mail:"
+#~ msgstr "Mira sempre si hi ha missatges nous:"
+
+#~ msgid "Delete Conversation (Shift+Delete)"
+#~ msgid_plural "Delete Conversations (Shift+Delete)"
+#~ msgstr[0] "Esborra la conversa (Maj. + Supr.)"
+#~ msgstr[1] "Esborra les converses (Maj. + Supr.)"
+
+#~ msgid "Delete Conversations (Shift+Delete)"
+#~ msgstr "Esborra les converses (Maj. + Supr.)"
+
+#~ msgid ""
+#~ "<span weight=\"bold\" size=\"larger\">Are you sure you want to remove "
+#~ "this account?</span> "
+#~ msgstr ""
+#~ "<span weight=\"bold\" size=\"larger\">Segur que voleu eliminar aquest "
+#~ "compte?</span> "
+
+#~ msgid ""
+#~ "All email associated with this account will be removed from your "
+#~ "computer. This will not affect email on the server."
+#~ msgstr ""
+#~ "Tot el correu electrònic associat a aquest compte s'eliminarà de "
+#~ "l'ordinador. Això no afectarà de correu electrònic del servidor."
+
+#~ msgid "Nickname:"
+#~ msgstr "Sobrenom:"
+
+#~ msgid "Find"
+#~ msgstr "Cerca"
+
+#~ msgid "Previous Result"
+#~ msgstr "Resultat anterior"
+
+#~ msgid "Next result"
+#~ msgstr "Resultat següent"
+
+#~ msgid "_Case sensitive"
+#~ msgstr "_Diferencia entre majúscules i minúscules"
+
+#~ msgid "label"
+#~ msgstr "etiqueta"
+
+#~ msgid "Geary update in progress…"
+#~ msgstr "Actualització del Geary en curs…"
+
+#~ msgid "Remove email address"
+#~ msgstr "Elimina l'adreça electrònica"
+
+#~ msgid ""
+#~ "Some email services require additional addresses be configured on the "
+#~ "server.  Contact your email provider for more information."
+#~ msgstr ""
+#~ "Alguns serveis de correu electrònic requereixen adreces addicionals "
+#~ "configurades al servidor. Poseu-vos en contacte amb el proveïdor de "
+#~ "correu electrònic per obtenir-ne més informació."
+
+#~ msgid "_Update"
+#~ msgstr "Act_ualitza"
+
+#~ msgid "Please wait while Geary validates your account."
+#~ msgstr "Si us plau, espereu mentre el Geary valida el compte."
+
+#~ msgid "_Redo"
+#~ msgstr "_Refés"
+
+#~ msgid "Cu_t"
+#~ msgstr "Re_talla"
+
+#~ msgid "_Paste"
+#~ msgstr "Engan_xa"
+
+#~ msgid "_Left"
+#~ msgstr "_Esquerra"
+
+#~ msgid "_Right"
+#~ msgstr "_Dreta"
+
+#~ msgid "_Center"
+#~ msgstr "_Centrat"
+
+#~ msgid "_Justify"
+#~ msgstr "A_justa"
+
+#~ msgid "Link (Ctrl+L)"
+#~ msgstr "Enllaça (Ctrl+L)"
+
+#~ msgid "C_olor"
+#~ msgstr "C_olor"
+
+#~ msgid "Quote text  (Ctrl+])"
+#~ msgstr "Cita el text  (Ctrl+])"
+
+#~ msgctxt "Clipboard paste with rich text"
+#~ msgid "Paste _With Formatting"
+#~ msgstr "Enganxa a_mb el format"
+
+#~ msgid "Bold (Ctrl+B)"
+#~ msgstr "Negreta (Ctrl+B)"
+
+#~ msgid "Italic (Ctrl+I)"
+#~ msgstr "Cursiva (Ctrl+I)"
+
+#~ msgid "Show Extended Fields"
+#~ msgstr "Mostra els camps ampliats"
+
+#~ msgctxt "Label"
+#~ msgid "Close and Save"
+#~ msgstr "Tanca i desa"
+
+#~ msgctxt "Short Label"
+#~ msgid "Close and Save"
+#~ msgstr "Tanca i desa"
+
+#~ msgctxt "Tooltip"
+#~ msgid "Close and Save"
+#~ msgstr "Tanca i desa"
+
+#~ msgctxt "Label"
+#~ msgid "Close and Discard"
+#~ msgstr "Tanca i descarta"
+
+#~ msgctxt "Short Label"
+#~ msgid "Close and Discard"
+#~ msgstr "Tanca i descarta"
+
+#~ msgctxt "Tooltip"
+#~ msgid "Close and Discard"
+#~ msgstr "Tanca i descarta"
+
+#~ msgid "Lar_ge"
+#~ msgstr "Gr_ossa"
+
+#~ msgid "Large"
+#~ msgstr "Grossa"
+
+#~ msgid "_Medium"
+#~ msgstr "_Mitjana"
+
+#~ msgid "Medium"
+#~ msgstr "Mitjana"
+
+#~ msgid "_Small"
+#~ msgstr "_Petita"
+
+#~ msgid "Small"
+#~ msgstr "Petita"
+
+#~ msgid "S_ans Serif"
+#~ msgstr "S_ans Serif"
+
+#~ msgid "Sans Serif"
+#~ msgstr "Sans Serif"
+
+#~ msgid "S_erif"
+#~ msgstr "S_erif"
+
+#~ msgid "Serif"
+#~ msgstr "Serif"
+
+#~ msgid "_Fixed Width"
+#~ msgstr "Amplada _fixa"
+
+#~ msgid "Fixed Width"
+#~ msgstr "Amplada fixa"
+
+#~ msgid "Detach"
+#~ msgstr "Desacobla"
+
+#~ msgid "Detach (Ctrl+D)"
+#~ msgstr "Desacobla (Ctrl+D)"
+
+#~ msgid "_Send"
+#~ msgstr "_Envia"
+
+#~ msgid "Send (Ctrl+Enter)"
+#~ msgstr "Envia (Ctrl+Retorn)"
+
+#~ msgid "_Attach File"
+#~ msgstr "_Adjunta-hi un fitxer"
+
+#~ msgid "Attach File"
+#~ msgstr "Adjunta-hi un fitxer"
+
+#~ msgid "_Include Original Attachments"
+#~ msgstr "_Inclou els adjunts originals"
+
+#~ msgid "Include Original Attachments"
+#~ msgstr "Inclou els adjunts originals"
+
+#~ msgid "Application Menu"
+#~ msgstr "Menú d'aplicacions"
+
+#~ msgid "_To"
+#~ msgstr "_Per a"
+
+#~ msgid "_Cc"
+#~ msgstr "_Cc"
+
+#~ msgid "_Subject"
+#~ msgstr "A_ssumpte"
+
+#~ msgid "_Bcc"
+#~ msgstr "_Bcc"
+
+#~ msgid "_Reply-To"
+#~ msgstr "_Respon a"
+
+#~ msgid "From"
+#~ msgstr "De"
+
+#~ msgid "Drop files here"
+#~ msgstr "Deixeu anar els fitxers aquí"
+
+#~ msgid "To add them as attachments"
+#~ msgstr "Per afegir-los com a adjunts"
+
+#~ msgid "<span weight=\"bold\" size=\"larger\">Cannot remove account</span> "
+#~ msgstr ""
+#~ "<span weight=\"bold\" size=\"larger\">No es pot eliminar el compte</span> "
+
+#~ msgid ""
+#~ "A composer window associated with this account is currently open. Send or "
+#~ "discard the message and try again."
+#~ msgstr ""
+#~ "Hi ha una finestra de l'editor associat a aquest compte actualment "
+#~ "oberta. Envieu o descarteu el missatge i torneu a intentar-ho."
+
+#~ msgid "Addi_tional email addresses…"
+#~ msgstr "Adreces elec_tròniques addicionals…"
+
+#~ msgid "_Save sent mail"
+#~ msgstr "De_sa el correu enviat"
+
+#~ msgid "Password"
+#~ msgstr "Contrasenya"
+
+#~ msgid "_Password:"
+#~ msgstr "_Contrasenya:"
+
+#~ msgid "Work, Home, etc."
+#~ msgstr "Feina, casa, etc."
+
+#~ msgid "N_ickname:"
+#~ msgstr "So_brenom:"
+
+#~ msgid "S_ervice:"
+#~ msgstr "S_ervei:"
+
+#~ msgid "IMAP settings"
+#~ msgstr "Paràmetres d'IMAP"
+
+#~ msgid "Se_rver:"
+#~ msgstr "Se_rvidor:"
+
+#~ msgid "P_ort"
+#~ msgstr "P_ort"
+
+#~ msgid "Ser_ver:"
+#~ msgstr "Ser_vidor:"
+
+#~ msgid "Por_t"
+#~ msgstr "Por_t"
+
+#~ msgid "SMTP settings"
+#~ msgstr "Paràmetres d'SMTP"
+
+#~ msgid "User_name:"
+#~ msgstr "_Nom d'usuari:"
+
+#~ msgid "Pass_word:"
+#~ msgstr "Contrasen_ya:"
+
+#~ msgid "SMTP username"
+#~ msgstr "Nom d'usuari de l'SMTP"
+
+#~ msgid "SMTP password"
+#~ msgstr "Contrasenya de l'SMTP"
+
+#~ msgid "_Username:"
+#~ msgstr "Nom d'_usuari:"
+
+#~ msgid "IMAP username"
+#~ msgstr "Nom d'usuari de l'IMAP"
+
+#~ msgid "IMAP password"
+#~ msgstr "Contrasenya de l'IMAP"
+
+#~ msgid "Encr_yption:"
+#~ msgstr "Encri_ptació:"
+
+#~ msgid "Encrypt_ion:"
+#~ msgstr "Encr_iptació:"
+
+#~ msgid "SSL/TLS"
+#~ msgstr "SSL/TLS"
+
+#~ msgid "STARTTLS"
+#~ msgstr "STARTTLS"
+
+#~ msgid "No authentication re_quired"
+#~ msgstr "No cal autenticació"
+
+#~ msgid "Use IMAP cre_dentials"
+#~ msgstr "Usa les cre_dencials d'IMAP"
+
+#~ msgid "Storage"
+#~ msgstr "Emmagatzematge"
+
+#~ msgid "_Download mail"
+#~ msgstr "_Baixa el correu"
+
+#~ msgid "Save dra_fts on server"
+#~ msgstr "Desa els esborran_ys al servidor"
+
+#~ msgid "Si_gn emails (HTML allowed):"
+#~ msgstr "Si_gna els missatges (HTML permès):"
+
+#~ msgid "Add account"
+#~ msgstr "Afegeix un compte"
+
+#~ msgid "Edit account"
+#~ msgstr "Edita el compte"
+
+#~ msgid "Remove account"
+#~ msgstr "Elimina el compte"
+
+#~ msgid "Untrusted Connection"
+#~ msgstr "Connexió no fiable"
+
+#~ msgid "_Always Trust This Server"
+#~ msgstr "Confi_a sempre en aquest servidor"
+
+#~ msgid "_Trust This Server"
+#~ msgstr "Con_fia en aquest servidor"
+
+#~ msgid "_Don't Trust This Server"
+#~ msgstr "_No confiïs en aquest servidor"
+
+#~ msgid "SMTP Credentials"
+#~ msgstr "Credencials d'SMTP"
+
+#~ msgid "Username"
+#~ msgstr "Nom d'usuari"
+
+#~ msgid "_Remember password"
+#~ msgstr "_Recorda la contrasenya"
+
+#~ msgid "_Authenticate"
+#~ msgstr "_Autentica"
+
+#~ msgid "© 2011-2015 Yorba Foundation, © 2016 elementary LLC."
+#~ msgstr "© 2011-2015 Yorba Foundation, © 2016 elementary LLC."
+
+#~ msgid ""
+#~ "Mail encountered an error sending an email.  If the problem persists, "
+#~ "please manually delete the email from your Outbox folder."
+#~ msgstr ""
+#~ "El Correu ha detectat un error enviant un missatge electrònic. Si el "
+#~ "problema persisteix, si us plau, elimineu manualment el missatge de la "
+#~ "safata de sortida."
+
+#~ msgid ""
+#~ "Mail encountered an error saving a sent message to Sent Mail.  The "
+#~ "message will stay in your Outbox folder until you delete it."
+#~ msgstr ""
+#~ "El Correu ha detectat un error en desar un missatge enviat al correu "
+#~ "enviat. El missatge romandrà a la bústia de sortida fins que l'elimineu."
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to corruption of the database file in this directory:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Mail can rebuild the database and re-synchronize with the server or "
+#~ "exit.\n"
+#~ "\n"
+#~ "Rebuilding the database will destroy all local email and its attachments. "
+#~ "<b>The mail on the your server will not be affected.</b>"
+#~ msgstr ""
+#~ "S'ha produït un error en obrir la base de dades de correu local per a "
+#~ "aquest compte. Això és possiblement degut a la corrupció del fitxer de la "
+#~ "base de dades en aquest directori:\n"
+#~ "\n"
+#~ "% s\n"
+#~ "\n"
+#~ "El Correu pot reconstruir la base de dades i tornar-se a sincronitzar amb "
+#~ "el servidor o sortir.\n"
+#~ "\n"
+#~ "La reconstrucció de la base de dades destruirà tot el correu local i els "
+#~ "adjunts. <b> Això no afectarà el correu del servidor. </b>"
+
+#~ msgid ""
+#~ "The version number of the local mail database is formatted for a newer "
+#~ "version of Mail. Unfortunately, the database cannot be \"rolled back\" to "
+#~ "work with this version of Mail.\n"
+#~ "\n"
+#~ "Please install the latest version of Mail and try again."
+#~ msgstr ""
+#~ "El número de versió de la base de dades del correu local està formatada "
+#~ "per a una nova versió del Correu. Per desgràcia, la base de dades no pot "
+#~ "es pot desactualitzar per treballar amb aquesta versió del Correu.\n"
+#~ "\n"
+#~ "Instal·leu l'última versió del Correu i torneu a intentar-ho."
+
+#~ msgid ""
+#~ "There was an error opening the local account. This is probably due to "
+#~ "connectivity issues.\n"
+#~ "\n"
+#~ "Please check your network connection and restart Mail."
+#~ msgstr ""
+#~ "S'ha produït un error en obrir el compte local. Això és probablement "
+#~ "degut a problemes de connectivitat.\n"
+#~ "\n"
+#~ "Si us plau, comproveu la connexió de xarxa i reinicieu el Correu."
+
+#~ msgid "This removes the email from Mail and your email server."
+#~ msgstr ""
+#~ "Això elimina el correu electrònic del programa i del servidor de correu "
+#~ "electrònic."
+
+#~ msgid "        &#8226; Email address already added to Mail.\n"
+#~ msgstr "        &#8226; Adreça electrònica ja afegida al Correu.\n"
+
+#~ msgid "Mail requires your email password to continue"
+#~ msgstr ""
+#~ "El programa necessita la contrasenya del vostre correu per continuar"
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Mail not to access this "
+#~ "server."
+#~ msgstr ""
+#~ "Seleccionar \"No confiïs en aquest servidor\" farà que el Correu no "
+#~ "accedeixi a aquest servidor."
+
+#~ msgid "Mail will not add or update this email account."
+#~ msgstr "El Correu no afegirà ni actualitzarà aquest compte de correu."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Mail to stop accessing "
+#~ "this account."
+#~ msgstr ""
+#~ "Seleccionar de \"No confiïs en aquest servidor\" farà que el Correu deixi "
+#~ "d'accedir a aquest compte."
+
+#~ msgid "Mail will exit if you have no other open email accounts."
+#~ msgstr ""
+#~ "El Correu sortirà si no teniu altres comptes de correu electrònic oberts."
+
+#~ msgid "Please wait while Mail validates your account."
+#~ msgstr "Si us plau, espereu mentre el Correu valida el compte."
+
+#~ msgid "Mail update in progress…"
+#~ msgstr "Actualització del Correu en curs…"
+
+#~ msgid ""
+#~ "2011-2015 Yorba Foundation\n"
+#~ "© 2016 elementary LLC."
+#~ msgstr ""
+#~ "2011-2015 Yorba Foundation\n"
+#~ "© 2016 elementary LLC."
+
+#~ msgid "Show About dialog"
+#~ msgstr "Mostra el diàleg Quant a"
+
+#~ msgid "Save Attachment…"
+#~ msgstr "Desa l'adjunt…"
+
+#~ msgid "Save All Attachments…"
+#~ msgstr "Desa tots els adjunts…"
+
+#~ msgid "View Source"
+#~ msgstr "Mostra'n el codi font"
+
+#~ msgid "View message"
+#~ msgstr "Mostra el missatge"
+
+#~ msgid "Copy Email Address"
+#~ msgstr "Copia l'adreça electrònica"
+
+#~ msgid "Hide message"
+#~ msgstr "Amaga el missatge"
+
+#~ msgid "Case sensitive"
+#~ msgstr "Diferencia les majúscules"
+
+#~ msgid "%u match"
+#~ msgid_plural "%u matches"
+#~ msgstr[0] "%u coincidència"
+#~ msgstr[1] "%u coincidències"
+
+#~ msgid "no-reply;no_reply;noreply;do-not-reply;do_not_reply;donotreply"
+#~ msgstr ""
+#~ "no_responguis;no_reponguis;sense_ "
+#~ "resposta;no_responguis;no_responguis;noresponguis"
+
+#~ msgid "Include original attachments"
+#~ msgstr "Inclou els adjunts originals"
+
+#~ msgid "Don't ask me again"
+#~ msgstr "No m'ho tornis a preguntar"
+
+#~ msgid "Are you sure you want to remove this account?"
+#~ msgstr "Segur que voleu eliminar aquest compte?"
+
+#~ msgid "Username:"
+#~ msgstr "Nom d'usuari:"
+
+#~ msgid "Password:"
+#~ msgstr "Contrasenya:"
+
+#~ msgid "SMTP Credentials:"
+#~ msgstr "Credentials SMTP:"
+
+#~ msgid "Remember password"
+#~ msgstr "Recorda la contrasenya"
+
+#~ msgid "Authenticate"
+#~ msgstr "Autentica"
+
+#~ msgid "Strikethrough (Ctrl+%)"
+#~ msgstr "Ratlla (Ctrl+%)"
+
+#~ msgid "Link (Ctrl+K)"
+#~ msgstr "Enllaça (Ctrl+K)"
+
+#~ msgid "Forward (Ctrl+Shift+F)"
+#~ msgstr "Reenvia (Ctrl+Shift+F)"

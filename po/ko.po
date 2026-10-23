@@ -1,0 +1,2254 @@
+# Korean translation for pantheon-mail
+# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
+# This file is distributed under the same license as the pantheon-mail package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pantheon-mail\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-08 16:46+0000\n"
+"PO-Revision-Date: 2022-08-07 12:22+0000\n"
+"Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
+"Language-Team: Korean <https://l10n.elementary.io/projects/mail/mail/ko/>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.4.2\n"
+"X-Launchpad-Export-Date: 2017-03-09 05:59+0000\n"
+
+#: src/Application.vala:145
+#, fuzzy
+#| msgid "Unable to print email"
+msgid "Unable to open System Settings"
+msgstr "이메일을 인쇄할 수 없습니다"
+
+#: src/Application.vala:146
+msgid ""
+"Open System Settings manually or install Evolution to set up online accounts."
+msgstr ""
+
+#: src/Application.vala:217
+msgid ""
+"Mail will automatically start when this device turns on and run when its "
+"window is closed so that it can send notifications when new mail arrives."
+msgstr ""
+
+#: src/Composer.vala:94 src/MessageList/MessageListItem.vala:102
+msgid "From:"
+msgstr "보내는 사람:"
+
+#: src/Composer.vala:114 src/MessageList/MessageListItem.vala:108
+msgid "To:"
+msgstr "받는 사람:"
+
+#: src/Composer.vala:120
+msgid "Cc"
+msgstr "함께 받는 사람"
+
+#: src/Composer.vala:122
+msgid "Bcc"
+msgstr "숨겨 받는 사람"
+
+#: src/Composer.vala:133 src/MessageList/MessageListItem.vala:148
+msgid "Cc:"
+msgstr "함께 받는 사람:"
+
+#: src/Composer.vala:152
+msgid "Bcc:"
+msgstr "숨겨 받는 사람:"
+
+#: src/Composer.vala:171 src/MessageList/MessageListItem.vala:114
+msgid "Subject:"
+msgstr "제목:"
+
+#: src/Composer.vala:205
+msgid "Insert Image"
+msgstr "이미지 삽입"
+
+#: src/Composer.vala:232
+msgid "Delete draft"
+msgstr "쓰던 편지 지우기"
+
+#: src/Composer.vala:240
+msgid "Attach file"
+msgstr "파일 첨부"
+
+#: src/Composer.vala:251
+#, fuzzy
+#| msgid "Insert Link"
+msgid "Insert Signature…"
+msgstr "링크 삽입"
+
+#: src/Composer.vala:256
+msgid "Send"
+msgstr "보내기"
+
+#: src/Composer.vala:299
+msgid "New Message"
+msgstr "새 편지"
+
+#: src/Composer.vala:445
+msgid "Choose a file"
+msgstr "파일을 선택하세요"
+
+#: src/Composer.vala:448
+msgid "Attach"
+msgstr "첨부"
+
+#: src/Composer.vala:449 src/Composer.vala:472 src/Composer.vala:763
+#: src/Dialogs/InsertLinkDialog.vala:66
+#: src/MessageList/AttachmentButton.vala:144
+msgid "Cancel"
+msgstr "취소"
+
+#: src/Composer.vala:464
+#, fuzzy
+#| msgid "Show Images"
+msgid "Images"
+msgstr "이미지 표시"
+
+#: src/Composer.vala:468
+#, fuzzy
+#| msgid "Choose a file"
+msgid "Choose an image"
+msgstr "파일을 선택하세요"
+
+#: src/Composer.vala:471
+#, fuzzy
+#| msgid "Insert Link"
+msgid "Insert"
+msgstr "링크 삽입"
+
+#: src/Composer.vala:500
+#, fuzzy
+#| msgid "Unable to send message"
+msgid "Unable to insert image"
+msgstr "편지를 보낼 수 없습니다"
+
+#: src/Composer.vala:501
+#, fuzzy
+#| msgid "There was an unexpected error while sending your message."
+msgid "There was an unexpected error while trying to insert the image."
+msgstr "메시지를 보내는 동안 예기치 않은 오류가 생겼습니다."
+
+#: src/Composer.vala:665
+msgid "%a, %b %-e, %Y at %-l:%M %p"
+msgstr "%Y년 %a, %b %-e일, %p %-l:%M"
+
+#: src/Composer.vala:695
+#, c-format
+msgid "On %1$s, %2$s wrote:"
+msgstr "%1$s 에, %2$s 작성:"
+
+#: src/Composer.vala:699
+msgid "---------- Forwarded message ----------"
+msgstr "전달 내용"
+
+#: src/Composer.vala:701
+#, c-format
+msgid "From: %s<br/>"
+msgstr "보내는 사람: %s<br/>"
+
+#: src/Composer.vala:702
+#, c-format
+msgid "Subject: %s<br/>"
+msgstr "제목: %s<br/>"
+
+#: src/Composer.vala:703
+#, c-format
+msgid "Date: %s<br/>"
+msgstr "날짜: %s<br/>"
+
+#: src/Composer.vala:704
+#, c-format
+msgid "To: %s<br/>"
+msgstr "받는 사람: %s<br/>"
+
+#: src/Composer.vala:706
+#, c-format
+msgid "Cc: %s<br/>"
+msgstr "함께 받는 사람: %s<br/>"
+
+#: src/Composer.vala:754
+msgid "Permanently delete this draft?"
+msgstr "이 편지를 완전히 지우시겠습니까?"
+
+#: src/Composer.vala:755
+msgid ""
+"You cannot undo this action, nor recover your draft once it has been deleted."
+msgstr "이 작업은 실행 취소할 수 없으며 삭제된 후에는 복구할 수 없습니다."
+
+#: src/Composer.vala:765
+msgid "Delete Draft"
+msgstr "쓰던 편지 지우기"
+
+#: src/Composer.vala:789
+msgid "Send without subject?"
+msgstr "제목 없이 편지를 보낼까요?"
+
+#: src/Composer.vala:790
+msgid ""
+"This message has an empty subject field. The recipient may be unable to "
+"infer its scope or importance."
+msgstr ""
+"제목 없이 보내는 메일입니다. 받는 사람은 메시지의 범위 또는 중요성을 가늠할 "
+"수 없습니다."
+
+#: src/Composer.vala:797
+msgid "Don't Send"
+msgstr "보내지 마세요"
+
+#: src/Composer.vala:799
+msgid "Send Anyway"
+msgstr "그래도 보내기"
+
+#: src/Composer.vala:830
+msgid "Sent message was not saved"
+msgstr "보낸 메시지가 저장되지 않았습니다"
+
+#: src/Composer.vala:831
+msgid ""
+"The message was sent, however a copy was not saved to the Sent message "
+"folder."
+msgstr "메시지가 전송되었지만 사본이 보낸 메시지 폴더에 저장되지 않았습니다."
+
+#: src/Composer.vala:846
+msgid "Unable to send message"
+msgstr "편지를 보낼 수 없습니다"
+
+#: src/Composer.vala:847
+msgid "There was an unexpected error while sending your message."
+msgstr "메시지를 보내는 동안 예기치 않은 오류가 생겼습니다."
+
+#: src/Composer.vala:945 src/FolderList/FolderList.vala:55
+msgid "Edit Signatures…"
+msgstr ""
+
+#: src/Composer.vala:949
+msgid "None"
+msgstr "없음"
+
+#: src/Composer.vala:1140
+msgid "Unable to save draft"
+msgstr "쓰던 편지를 저장할 수 없음"
+
+#: src/Composer.vala:1141
+msgid "There was an unexpected error while saving your draft."
+msgstr "편지를 저장하는 동안 예기치 않은 오류가 생겼습니다."
+
+#: src/EditorToolbar.vala:55
+msgid "Bold"
+msgstr "볼드"
+
+#: src/EditorToolbar.vala:62
+msgid "Italic"
+msgstr "이탤릭"
+
+#: src/EditorToolbar.vala:73
+msgid "Underline"
+msgstr "밑줄"
+
+#: src/EditorToolbar.vala:85
+msgid "Strikethrough"
+msgstr "가운데 줄긋기"
+
+#: src/EditorToolbar.vala:100
+msgid "Remove formatting"
+msgstr "서식 제거"
+
+#: src/EditorToolbar.vala:108 src/Dialogs/InsertLinkDialog.vala:68
+msgid "Insert Link"
+msgstr "링크 삽입"
+
+#: src/InboxMonitor.vala:158 src/InboxMonitor.vala:170
+#, c-format
+msgid "%s to %s"
+msgstr "%s에서 %s로"
+
+#. /TRANSLATORS: The %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#: src/InboxMonitor.vala:165
+#, c-format
+msgid "%u new message"
+msgid_plural "%u new messages"
+msgstr[0] "새 메시지 %u개"
+
+#. /TRANSLATORS: The first %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#. /The next %s represents the number of senders
+#: src/InboxMonitor.vala:177
+#, c-format
+msgid "%s from %u sender"
+msgid_plural "%s from %u senders"
+msgstr[0] "%u에서 보낸 %s개의 메시지"
+
+#: src/MainWindow.vala:80
+msgid "Mail"
+msgstr "메일"
+
+#: src/MainWindow.vala:123 src/Dialogs/AliasDialog/AliasDialog.vala:96
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:172
+msgid "Undo"
+msgstr "실행 취소"
+
+#: src/MainWindow.vala:281
+#, fuzzy
+#| msgid "Message Deleted"
+#| msgid_plural "Messages Deleted"
+msgid "Message Archived"
+msgid_plural "Messages Archived"
+msgstr[0] "지워진 메시지"
+
+#: src/MainWindow.vala:285
+#, fuzzy
+#| msgid "Unstar message"
+msgid "Couldn't archive message"
+msgstr "별표 취소"
+
+#: src/MainWindow.vala:298
+#, fuzzy
+#| msgid "Message Deleted"
+#| msgid_plural "Messages Deleted"
+msgid "Message Moved"
+msgid_plural "Messages Moved"
+msgstr[0] "지워진 메시지"
+
+#: src/MainWindow.vala:302
+#, fuzzy
+#| msgid "Unable to send message"
+msgid "Couldn't move message"
+msgstr "편지를 보낼 수 없습니다"
+
+#: src/MainWindow.vala:315
+msgid "Message Deleted"
+msgid_plural "Messages Deleted"
+msgstr[0] "지워진 메시지"
+
+#: src/MainWindow.vala:319
+msgid "Couldn't delete message"
+msgstr ""
+
+#: src/WelcomeView.vala:45
+msgid "Connect an Account"
+msgstr "계정 연결"
+
+#: src/WelcomeView.vala:52
+msgid "Mail uses email accounts configured in System Settings."
+msgstr "메일은 시스템 설정에 있는 이메일 계정을 사용합니다."
+
+#: src/WelcomeView.vala:59
+msgid "Online Accounts…"
+msgstr "온라인 계정…"
+
+#: src/Backend/Account.vala:48
+#, fuzzy
+#| msgid "Unable to save draft"
+msgid "Unable to connect"
+msgstr "쓰던 편지를 저장할 수 없음"
+
+#: src/Backend/Account.vala:49
+#, fuzzy
+#| msgid "There was an unexpected error while sending your message."
+msgid "There was an unexpected error while trying to connect to the server."
+msgstr "메시지를 보내는 동안 예기치 않은 오류가 생겼습니다."
+
+#: src/Backend/MoveOperation.vala:65
+#, c-format
+msgid "Moving messages… (%u remaining)"
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:98
+msgid "No Archive folder is configured."
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:126
+msgid "The destination folder was not found."
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:130
+msgid "The source folder is the destination folder."
+msgstr ""
+
+#: src/Backend/Session.vala:642
+msgid "New Signature"
+msgstr ""
+
+#: src/Backend/ContactManager.vala:88 src/Backend/ContactManager.vala:122
+#, c-format
+msgid "Couldn't add “%s” to addressbook"
+msgstr ""
+
+#: src/Backend/ContactManager.vala:89
+msgid "No addressbook available."
+msgstr ""
+
+#: src/Backend/ContactManager.vala:123
+msgid "Operation failed."
+msgstr ""
+
+#: src/ConversationList/ConversationItemModel.vala:74
+#: src/ConversationList/ConversationItemModel.vala:112
+msgid ", "
+msgstr ", "
+
+#: src/ConversationList/ConversationItemModel.vala:77
+#: src/ConversationList/ConversationItemModel.vala:115
+#: src/ConversationList/ConversationItemModel.vala:123
+#: src/MessageList/AttachmentButton.vala:100
+msgid "Unknown"
+msgstr "모름"
+
+#: src/ConversationList/ConversationList.vala:85
+msgid "Search Mail"
+msgstr "편지 검색"
+
+#: src/ConversationList/ConversationList.vala:89
+msgid "Hide read conversations"
+msgstr "읽은 대화 숨기기"
+
+#: src/ConversationList/ConversationList.vala:90
+msgid "Hide unstarred conversations"
+msgstr "별표 없는 대화 숨기기"
+
+#: src/ConversationList/ConversationList.vala:107
+msgid "Filter Conversations"
+msgstr "대화 필터링"
+
+#: src/ConversationList/ConversationList.vala:130
+msgid "Fetch new messages"
+msgstr "새 메시지 가져오기"
+
+#: src/ConversationList/ConversationList.vala:137
+msgid "Fetching new messages…"
+msgstr "새 메시지 가져오는 중…"
+
+#: src/ConversationList/ConversationListItem.vala:94
+msgid "Archive"
+msgstr "편지 보관함"
+
+#: src/ConversationList/ConversationListItem.vala:99
+msgid "Trash"
+msgstr "휴지통"
+
+#: src/ConversationList/ConversationListItem.vala:181
+msgid "Unread"
+msgstr "읽지 않음"
+
+#: src/ConversationList/ConversationListItem.vala:194
+msgid "Replied"
+msgstr "답장함"
+
+#: src/ConversationList/ConversationListItem.vala:198
+msgid "Forwarded"
+msgstr "전달함"
+
+#: src/ConversationList/ConversationListItem.vala:212
+msgid "Move To Trash"
+msgstr "휴지통으로 보내기"
+
+#: src/ConversationList/ConversationListItem.vala:215
+msgid "Mark As Unread"
+msgstr "읽지 않음으로 표시"
+
+#: src/ConversationList/ConversationListItem.vala:217
+#: src/MessageList/MessageList.vala:51
+msgid "Mark as Read"
+msgstr "읽음으로 표시"
+
+#: src/ConversationList/ConversationListItem.vala:221
+#: src/MessageList/MessageList.vala:52
+msgid "Star"
+msgstr "별표 표시"
+
+#: src/ConversationList/ConversationListItem.vala:223
+#: src/MessageList/MessageList.vala:53
+msgid "Unstar"
+msgstr "별표 취소"
+
+#: src/Dialogs/InsertLinkDialog.vala:29
+msgid "URL:"
+msgstr "URL:"
+
+#: src/Dialogs/InsertLinkDialog.vala:39
+msgid "Link Text:"
+msgstr "링크 텍스트:"
+
+#: src/Dialogs/InsertLinkDialog.vala:45
+msgid "Example Website"
+msgstr "예제 웹 사이트"
+
+#: src/Dialogs/AliasDialog/Alias.vala:52
+msgid "John Doe"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/Alias.vala:56
+#, fuzzy
+#| msgid "N_ame:"
+msgid "Name"
+msgstr "이름(_A):"
+
+#: src/Dialogs/AliasDialog/Alias.vala:75
+#, fuzzy
+#| msgid "E_mail address:"
+msgid "E-mail Address"
+msgstr "이메일 주소(_M):"
+
+#: src/Dialogs/AliasDialog/Alias.vala:80
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Delete alias"
+msgstr "쓰던 편지 지우기"
+
+#: src/Dialogs/AliasDialog/Alias.vala:100
+#, fuzzy
+#| msgid "Edit Draft"
+msgid "Edit alias"
+msgstr "쓰던 편지 계속 쓰기"
+
+#: src/Dialogs/AliasDialog/Alias.vala:175
+msgid "Name not set"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:33
+msgid "No Aliases"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:37
+msgid "Add aliases using the button in the toolbar below"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:67
+msgid "Add Alias…"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:104
+msgid "Aliases"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:108
+#, fuzzy
+#| msgid "_Close"
+msgid "Close"
+msgstr "닫기(_C)"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:178
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:330
+#, c-format
+msgid "'%s' deleted"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:39
+#, fuzzy
+#| msgid "Insert Link"
+msgid "No Signatures"
+msgstr "링크 삽입"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:43
+msgid "Add signatures using the button in the toolbar below"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:67
+#, fuzzy
+#| msgid "Insert Link"
+msgid "Create Signature"
+msgstr "링크 삽입"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:86
+msgid "Title"
+msgstr ""
+
+#. Work around a styling issue
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:99
+msgid "For example “Work” or “Personal”"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:122
+msgid "Delete"
+msgstr "지우기"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:131
+msgid "Set Default For…"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:156
+#, fuzzy
+#| msgid "Insert Link"
+msgid "Signature"
+msgstr "링크 삽입"
+
+#: src/FolderList/AccountItemModel.vala:155
+msgid "Edit Aliases…"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:48
+msgid "Refresh folder"
+msgstr "폴더 새로 고침"
+
+#: src/FolderList/FolderItemModel.vala:53
+#, fuzzy
+#| msgid "Refresh folder"
+msgid "Rename folder"
+msgstr "폴더 새로 고침"
+
+#: src/FolderList/FolderItemModel.vala:146
+#: src/FolderList/FolderItemModel.vala:175
+#: src/FolderList/FolderItemModel.vala:193
+#, c-format
+msgid "Couldn't rename “%s”"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:147
+msgid "Folder names cannot contain “/”"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:176
+#, c-format
+msgid "A folder named “%s” already exists"
+msgstr ""
+
+#: src/FolderList/FolderList.vala:34
+msgid "Compose new message"
+msgstr "새 편지 쓰기"
+
+#: src/FolderList/FolderList.vala:56
+msgid "Account Settings…"
+msgstr "계정 설정…"
+
+#: src/FolderList/FolderList.vala:59
+msgid "Always Show Remote Images"
+msgstr "원격 이미지 항상 표시"
+
+#: src/FolderList/FolderList.vala:65
+msgid "Menu"
+msgstr "메뉴"
+
+#: src/FolderList/GroupedFolderItemModel.vala:38
+#, fuzzy
+#| msgid "Inbox"
+msgctxt "Inbox Folder"
+msgid "Inbox"
+msgstr "받은 편지함"
+
+#: src/FolderList/GroupedFolderItemModel.vala:42
+#, fuzzy
+#| msgid "Archive"
+msgctxt "Archive Folder"
+msgid "Archive"
+msgstr "편지 보관함"
+
+#: src/FolderList/GroupedFolderItemModel.vala:46
+#, fuzzy
+#| msgid "Sent"
+msgctxt "Sent Folder"
+msgid "Sent"
+msgstr "보낸 편지함"
+
+#: src/FolderList/SessionItemModel.vala:28
+msgid "All Mailboxes"
+msgstr "모든 편지함"
+
+#: src/MessageList/MessageList.vala:28 src/MessageList/MessageListItem.vala:210
+msgid "Reply"
+msgstr "답장"
+
+#: src/MessageList/MessageList.vala:37 src/MessageList/MessageListItem.vala:213
+msgid "Reply All"
+msgstr "전체 답장"
+
+#: src/MessageList/MessageList.vala:46 src/MessageList/MessageListItem.vala:216
+msgid "Forward"
+msgstr "전달"
+
+#: src/MessageList/MessageList.vala:50
+msgid "Mark as Unread"
+msgstr "읽지 않음으로 표시"
+
+#: src/MessageList/MessageList.vala:60
+msgid "Mark Conversation"
+msgstr "표시하기"
+
+#: src/MessageList/MessageList.vala:68
+#, fuzzy
+#| msgid "Move conversation"
+#| msgid_plural "Move conversations"
+msgid "Move Conversation to…"
+msgstr "편지 이동"
+
+#: src/MessageList/MessageList.vala:77
+msgid "Move conversations to archive"
+msgstr "대화를 보관함으로 이동"
+
+#: src/MessageList/MessageList.vala:85
+msgid "Move conversations to Trash"
+msgstr "휴지통으로 보내기"
+
+#: src/MessageList/MessageList.vala:100
+msgid "No Message Selected"
+msgstr "선택한 메시지 없음"
+
+#. /TRANSLATORS: The first %s represents the date and the second %s the time of the message (either when it was received or sent)
+#: src/MessageList/MessageListItem.vala:190
+#, c-format
+msgid "%s at %s"
+msgstr "%s %s"
+
+#: src/MessageList/MessageListItem.vala:198
+#: src/MessageList/MessageListItem.vala:397
+msgid "Unstar message"
+msgstr "별표 취소"
+
+#: src/MessageList/MessageListItem.vala:201
+#: src/MessageList/MessageListItem.vala:393
+msgid "Star message"
+msgstr "별표 표시"
+
+#: src/MessageList/MessageListItem.vala:221
+msgid "Print…"
+msgstr "인쇄…"
+
+#: src/MessageList/MessageListItem.vala:231
+msgid "More"
+msgstr "더 보기"
+
+#: src/MessageList/MessageListItem.vala:281
+msgid "Open in Calendar"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:286
+#, fuzzy
+#| msgid "This message contains remote images."
+msgid "This message contains a Calendar Event."
+msgstr "이 편지는 원격 이미지를 포함하고 있습니다."
+
+#: src/MessageList/MessageListItem.vala:297
+msgid "Show Images"
+msgstr "이미지 표시"
+
+#: src/MessageList/MessageListItem.vala:298
+msgid "Always Show from Sender"
+msgstr "보낸 사람 항상 표시"
+
+#: src/MessageList/MessageListItem.vala:302
+msgid "This message contains remote images."
+msgstr "이 편지는 원격 이미지를 포함하고 있습니다."
+
+#: src/MessageList/MessageListItem.vala:341
+msgid "This message contains one or more attachments"
+msgstr "이 편지에는 첨부파일이 포함되어 있습니다"
+
+#. / Translators: This is the default file name of a printed email
+#: src/MessageList/MessageListItem.vala:417
+msgid "Email Message"
+msgstr "이메일"
+
+#: src/MessageList/MessageListItem.vala:439
+msgid "Unable to print email"
+msgstr "이메일을 인쇄할 수 없습니다"
+
+#: src/MessageList/MessageListItem.vala:691
+#, c-format
+msgid "Trust and open “%s”?"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:692
+msgid ""
+"Attachments may cause damage to your system if opened. Only open files from "
+"trusted sources."
+msgstr ""
+"열린 첨부 파일은 시스템에 손상을 입힐 수 있습니다. 믿을 만한 곳에서 온 것만 "
+"여시길 바랍니다."
+
+#: src/MessageList/MessageListItem.vala:699
+msgid "Open Anyway"
+msgstr "그래도 열기"
+
+#: src/MessageList/AttachmentButton.vala:57
+msgid "Open"
+msgstr "열기"
+
+#: src/MessageList/AttachmentButton.vala:58
+msgid "Save As…"
+msgstr "다른 이름으로 저장…"
+
+#: src/MessageList/AttachmentButton.vala:143
+msgid "Save"
+msgstr "저장"
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:22
+msgid "No mailboxes found"
+msgstr ""
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:26
+msgid "Try changing search terms"
+msgstr ""
+
+#, fuzzy
+#~| msgid "https://example.com"
+#~ msgid "Email@example.com"
+#~ msgstr "https://example.com"
+
+#, fuzzy
+#~| msgid "Email Address:"
+#~ msgid "Address:"
+#~ msgstr "이메일 주소:"
+
+#, fuzzy
+#~| msgid "Email address:"
+#~ msgid "Enter e-mail address…"
+#~ msgstr "이메일 주소:"
+
+#~ msgid "Reply to All"
+#~ msgstr "모두에게 답장"
+
+#, c-format
+#~ msgid "Are you sure you want to open %s?"
+#~ msgstr "정말 %s를 여시겠습니까?"
+
+#~ msgid "Quote text"
+#~ msgstr "텍스트 인용"
+
+#~ msgid "Unquote text"
+#~ msgstr "텍스트 인용 끝"
+
+#~ msgid "Drafts | Draft"
+#~ msgstr "임시 보관함 | 임시 보관함"
+
+#~ msgid "Sent | Sent Mail | Sent Email | Sent E-Mail"
+#~ msgstr "보냄 | 보낸 편지 | 보낸 이메일 | 보낸-이메일"
+
+#~ msgid ""
+#~ "Junk | Spam | Junk Mail | Junk Email | Junk E-Mail | Bulk Mail | Bulk "
+#~ "Email | Bulk E-Mail"
+#~ msgstr ""
+#~ "정크 | 스팸 | 정크 메일 | 정크 이메일 | 정크-이메일 | 벌크 메일 | 벌크 이"
+#~ "메일 | 벌크-이메일"
+
+#~ msgid "Trash | Rubbish | Rubbish Bin"
+#~ msgstr "휴지통 | 휴지통 | 휴지통"
+
+#~ msgid "Archive | Archives"
+#~ msgstr "편지 보관함 | 편지 보관함"
+
+#~ msgid "Drafts"
+#~ msgstr "임시 보관함"
+
+#~ msgid "Starred"
+#~ msgstr "별표 편지함"
+
+#~ msgid "Important"
+#~ msgstr "중요 편지함"
+
+#~ msgid "Spam"
+#~ msgstr "스팸 메일함"
+
+#~ msgid "Outbox"
+#~ msgstr "보내는 편지함"
+
+#~ msgid "Search"
+#~ msgstr "검색"
+
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgid "SMTP"
+#~ msgstr "SMTP"
+
+#~ msgid "Gmail"
+#~ msgstr "Gmail"
+
+#~ msgid "Yahoo! Mail"
+#~ msgstr "Yahoo! Mail"
+
+#~ msgid "Outlook.com"
+#~ msgstr "Outlook.com"
+
+#~ msgid "Other"
+#~ msgstr "기타"
+
+#~ msgid "attachment"
+#~ msgstr "첨부 파일"
+
+#~ msgid "bcc"
+#~ msgstr "숨겨 받는 사람"
+
+#~ msgid "body"
+#~ msgstr "본문"
+
+#~ msgid "cc"
+#~ msgstr "함께 받는 사람"
+
+#~ msgid "from"
+#~ msgstr "보내는 사람"
+
+#~ msgid "subject"
+#~ msgstr "제목"
+
+#~ msgid "to"
+#~ msgstr "받는 사람"
+
+#~ msgid "me"
+#~ msgstr "나에게"
+
+#~ msgid "(no subject)"
+#~ msgstr "(제목 없음)"
+
+#~ msgid "%s wrote:"
+#~ msgstr "%s 작성함:"
+
+#~ msgid "On %s:"
+#~ msgstr "%s 작성 됨:"
+
+#~ msgid "none"
+#~ msgstr "없음"
+
+#~ msgid "Mail Client"
+#~ msgstr "메일 클라이언트"
+
+#~ msgid "Copyright 2011-2015 Yorba Foundation"
+#~ msgstr "Copyright 2011-2015 Yorba Foundation"
+
+#~ msgid "Visit the Yorba web site"
+#~ msgstr "Yorba 웹사이트 가보기"
+
+#~ msgid "Delete conversation"
+#~ msgstr "지우기"
+
+#~ msgid "Delete conversation (Shift+Delete)"
+#~ msgstr "지우기 (Shift+Delete)"
+
+#~ msgid "Delete conversations (Shift+Delete)"
+#~ msgstr "지우기 (Shift+Delete)"
+
+#~ msgid "Move conversation to Trash (Delete, Backspace)"
+#~ msgid_plural "Move conversations to Trash (Delete, Backspace)"
+#~ msgstr[0] "휴지통으로 (Delete, Backspace)"
+
+#~ msgid "Move conversations to Trash (Delete, Backspace)"
+#~ msgstr "휴지통으로 (Delete, Backspace)"
+
+#~ msgid "_Archive"
+#~ msgstr "편지 저장(_A)"
+
+#~ msgid "Archive conversation (A)"
+#~ msgid_plural "Archive conversations (A)"
+#~ msgstr[0] "편지 저장 (A)"
+
+#~ msgid "Archive conversations (A)"
+#~ msgstr "편지 저장 (A)"
+
+#~ msgid "Mark as S_pam"
+#~ msgstr "스팸으로 표시(_P)"
+
+#~ msgid "Mark as not S_pam"
+#~ msgstr "스팸 아님으로  표시(_P)"
+
+#~ msgid "Add label to conversation"
+#~ msgid_plural "Add label to conversations"
+#~ msgstr[0] "라벨 표시"
+
+#~ msgid "Add label to conversations"
+#~ msgstr "라벨 표시"
+
+#~ msgid "A_ccounts"
+#~ msgstr "계정(_C)"
+
+#~ msgid "_Preferences"
+#~ msgstr "설정(_P)"
+
+#~ msgid "_Help"
+#~ msgstr "도움말(_H)"
+
+#~ msgid "_About"
+#~ msgstr "소개(_A)"
+
+#~ msgid "_Quit"
+#~ msgstr "끝내기(_Q)"
+
+#~ msgid "_Mark as..."
+#~ msgstr "표시하기(_M)..."
+
+#~ msgid "Mark as _Read"
+#~ msgstr "읽음으로 표시(_R)"
+
+#~ msgid "Mark as _Unread"
+#~ msgstr "읽지 않음으로 표시(_R)"
+
+#~ msgid "Add label"
+#~ msgstr "라벨 추가"
+
+#~ msgid "_Label"
+#~ msgstr "라벨(_L)"
+
+#~ msgid "_Move"
+#~ msgstr "옮기기(_M)"
+
+#~ msgid "Compose new message (Ctrl+N, N)"
+#~ msgstr "새 편지 쓰기 (Ctrl+N, N)"
+
+#~ msgid "_Reply"
+#~ msgstr "답장(_R)"
+
+#~ msgid "Reply (Ctrl+R, R)"
+#~ msgstr "답장 (Ctrl+R, R)"
+
+#~ msgid "Reply all (Ctrl+Shift+R, Shift+R)"
+#~ msgstr "전체 답장 (Ctrl+Shift+R, Shift+R)"
+
+#~ msgid "_Forward"
+#~ msgstr "전달(_F)"
+
+#~ msgid "Forward (Ctrl+L, F)"
+#~ msgstr "전달 (Ctrl+L, F)"
+
+#~ msgid "Empty"
+#~ msgstr "비우기"
+
+#~ msgid "Empty Spam or Trash folders"
+#~ msgstr "스팸 편지함이나 휴지통 비우기"
+
+#~ msgid "Empty _Spam…"
+#~ msgstr "스팸 편지함 비우기(_S)…"
+
+#~ msgid "Empty _Trash…"
+#~ msgstr "휴지통 비우기(_T)…"
+
+#~ msgid "Toggle search bar"
+#~ msgstr "검색"
+
+#~ msgid "Unable to store server trust exception"
+#~ msgstr "서버 신뢰 예외를 저장할 수 없습니다"
+
+#~ msgid "Your settings are insecure"
+#~ msgstr "설정이 안전하지 않습니다"
+
+#~ msgid ""
+#~ "Your IMAP and/or SMTP settings do not specify SSL or TLS.  This means "
+#~ "your username and password could be read by another person on the "
+#~ "network.  Are you sure you want to do this?"
+#~ msgstr ""
+#~ "여러분의 IMAP 과/또는 SMTP 설정이 SSL이나 TLS에 미달합니다. 여러분의 사용"
+#~ "자 계정이나 비밀번호를 네트워크에서 다른 사람이 읽을 수 있다는 이야기입니"
+#~ "다. 정말 이대로 하시겠습니까?"
+
+#~ msgid "Co_ntinue"
+#~ msgstr "계속(_N)"
+
+#~ msgid "Error sending email"
+#~ msgstr "이메일 보내기 오류"
+
+#~ msgid ""
+#~ "Geary encountered an error sending an email.  If the problem persists, "
+#~ "please manually delete the email from your Outbox folder."
+#~ msgstr ""
+#~ "기어리(Geary)가 이메일을 보내는 도중 오류가 생겼습니다. 문제가 지속되면, "
+#~ "보낸 편지함 폴더에서 이메일을 직접 지워주세요."
+
+#~ msgid "Error saving sent mail"
+#~ msgstr "보낸 편지 저장하기 오류"
+
+#~ msgid ""
+#~ "Geary encountered an error saving a sent message to Sent Mail.  The "
+#~ "message will stay in your Outbox folder until you delete it."
+#~ msgstr ""
+#~ "기어리(Geary)가 보낸 편지를 저장하는 도중 오류가 생겼습니다. 편지는 지우"
+#~ "지 않으면 보낸 편지함 폴더에 있습니다."
+
+#~ msgid "Labels"
+#~ msgstr "라벨"
+
+#~ msgid "Unable to open the database for %s"
+#~ msgstr "%s 용 데이터 베이스를 열 수 없습니다"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to corruption of the database file in this directory:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Geary can rebuild the database and re-synchronize with the server or "
+#~ "exit.\n"
+#~ "\n"
+#~ "Rebuilding the database will destroy all local email and its attachments. "
+#~ "<b>The mail on the your server will not be affected.</b>"
+#~ msgstr ""
+#~ "이 계정의 메일 데이터 베이스를 여는 동안 오류가 생겼습니다. 이 디렉토리의 "
+#~ "데이터 베이스 파일에 문제가 생겨서 그런 것이 아닌가 합니다:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "기어리는 데이터 베이스를 재구성하고 서버와 다시 동기화 시키거나 나갈 수 있"
+#~ "습니다.\n"
+#~ "\n"
+#~ "데이터 베이스를 재구성하게 되면 로컬 메일과 첨부파일들이 모두 사라지게 됩"
+#~ "니다. <b>서버에 있는 편지는 영향 받지 않습니다.</b>"
+
+#~ msgid "_Rebuild"
+#~ msgstr "재구성하기(_R)"
+
+#~ msgid "E_xit"
+#~ msgstr "나가기(_X)"
+
+#~ msgid "Unable to rebuild database for \"%s\""
+#~ msgstr "\"%s\"용 데이터 베이스를 재구성할 수 없습니다"
+
+#~ msgid ""
+#~ "Error during rebuild:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "재구성 도중 에러:\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid "Unable to open local mailbox for %s"
+#~ msgstr "%s 용 로컬 메일 박스를 열 수 없습니다"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to a file permissions problem.\n"
+#~ "\n"
+#~ "Please check that you have read/write permissions for all files in this "
+#~ "directory:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "이 계정의 메일 데이터 베이스를 여는 동안 오류가 생겼습니다. 파일 퍼미션 문"
+#~ "제가 아닌가 합니다.\n"
+#~ "\n"
+#~ "이 디렉토리를 읽고 쓸 수 있는 권한이 있는지 확인해보시길 바랍니다:\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid ""
+#~ "The version number of the local mail database is formatted for a newer "
+#~ "version of Geary. Unfortunately, the database cannot be \"rolled back\" "
+#~ "to work with this version of Geary.\n"
+#~ "\n"
+#~ "Please install the latest version of Geary and try again."
+#~ msgstr ""
+#~ "로컬 메일 데이터 베이스의 버전 번호가 새 버전의 기어리를 위해서 포맷되었습"
+#~ "니다. 안타깝게도, 현재 버전의 기어리 사용을 위해 데이터 베이스를 \"되돌릴"
+#~ "\" 수 없습니다.\n"
+#~ "\n"
+#~ "최신 버전의 기어리를 설치하시고 다시 실행해 보세요."
+
+#~ msgid ""
+#~ "There was an error opening the local account. This is probably due to "
+#~ "connectivity issues.\n"
+#~ "\n"
+#~ "Please check your network connection and restart Geary."
+#~ msgstr ""
+#~ "로컬 계정을 여는 동안 오류가 생겼습니다. 인터넷 연결 문제가 아닌가 합니"
+#~ "다.\n"
+#~ "\n"
+#~ "네트워크 연결을 확인하시고 기어리를 다시 시작해주세요."
+
+#~ msgid "About %s"
+#~ msgstr "%s 소개"
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Launchpad Contributions:\n"
+#~ "  Jung-Kyu Park https://launchpad.net/~bagjunggyu"
+
+#~ msgid "Undo move (Ctrl+Z)"
+#~ msgstr "이동 취소 (Ctrl+Z)"
+
+#~ msgid "Are you sure you want to open \"%s\"?"
+#~ msgstr "정말 \"%s\"를 여시겠습니까?"
+
+#~ msgid ""
+#~ "Attachments may cause damage to your system if opened.  Only open files "
+#~ "from trusted sources."
+#~ msgstr ""
+#~ "열린 첨부 파일은 시스템에 손상을 입힐 수 있습니다. 믿을 만한 곳에서 온 것"
+#~ "만 여시 길 바랍니다."
+
+#~ msgid "Don't _ask me again"
+#~ msgstr "이제 묻지 않아도 좋습니다(_A)"
+
+#~ msgid "A file named \"%s\" already exists.  Do you want to replace it?"
+#~ msgstr "이름이 \"%s\"인 파일이 이미 있습니다.  이 파일과 바꾸시겠습니까?"
+
+#~ msgid ""
+#~ "The file already exists in \"%s\".  Replacing it will overwrite its "
+#~ "contents."
+#~ msgstr ""
+#~ "\"%s\" 안에 파일이 이미 있습니다.  파일을 바꾸면 그 내용을 덮어 쓰게 됩니"
+#~ "다."
+
+#~ msgid "_Replace"
+#~ msgstr "바꾸기(_R)"
+
+#~ msgid "Close open draft messages?"
+#~ msgstr "쓰고 있는 편지를 닫을까요?"
+
+#~ msgid "Empty all email from your %s folder?"
+#~ msgstr "%s 폴더의 모든 이메일을 비울까요?"
+
+#~ msgid "This removes the email from Geary and your email server."
+#~ msgstr "기어리와 이메일 서버 안의 모든 메일을 지우게 됩니다."
+
+#~ msgid "This cannot be undone."
+#~ msgstr "이 작업은 취소할 수 없습니다."
+
+#~ msgid "Empty %s"
+#~ msgstr "%s 비우기"
+
+#~ msgid "Error emptying %s"
+#~ msgstr "%s 비우기 오류 발생"
+
+#~ msgid "Undo archive (Ctrl+Z)"
+#~ msgstr "편지 저장 취소 (Ctrl+Z)"
+
+#~ msgid "Undo trash (Ctrl+Z)"
+#~ msgstr "휴지통 취소"
+
+#~ msgid "Undo (Ctrl+Z)"
+#~ msgstr "되돌리기 (Ctrl+Z)"
+
+#~ msgid "Start Geary with hidden main window"
+#~ msgstr "기어리의 창을 숨긴 채로 시작하기"
+
+#~ msgid "Output debugging information"
+#~ msgstr "디버깅 정보 출력하기"
+
+#~ msgid "Log conversation monitoring"
+#~ msgstr "대화 모니터링 로그"
+
+#~ msgid "Log network deserialization"
+#~ msgstr "네트워크 역 직렬화 로그"
+
+#~ msgid "Log network activity"
+#~ msgstr "네트워크 활동 로그"
+
+#~ msgid "Log IMAP replay queue"
+#~ msgstr "IMAP 응답 대기 로그"
+
+#~ msgid "Log network serialization"
+#~ msgstr "네트워크 직렬화 로그"
+
+#~ msgid "Log periodic activity"
+#~ msgstr "정기 활동 로그"
+
+#~ msgid "Log database queries (generates lots of messages)"
+#~ msgstr "데이터 베이스 질의 로그 (많은 메시지를 만듭니다)"
+
+#~ msgid "Log folder normalization"
+#~ msgstr "폴더 정상화 로그"
+
+#~ msgid "Allow inspection of WebView"
+#~ msgstr "웹 보기 검사 로그"
+
+#~ msgid "Revoke all server certificates with TLS warnings"
+#~ msgstr "TLS 경고와 함께 모든 서버 인증 취소"
+
+#~ msgid "Display program version"
+#~ msgstr "프로그램 버전 표시"
+
+#~ msgid "Use %s to open a new composer window"
+#~ msgstr "%s로 새 편지를 쓸 창 열기"
+
+#~ msgid "Please report comments, suggestions and bugs to:"
+#~ msgstr "코멘트, 제안, 버그 리포트 등을 이곳에 해주세요:"
+
+#~ msgid "Failed to parse command line options: %s\n"
+#~ msgstr "명령 줄 옵션 구문을 분석하지 못했습니다: %s\n"
+
+#~ msgid "Unrecognized command line option \"%s\"\n"
+#~ msgstr "알 수 없는 명령 줄 옵션 \"%s\"\n"
+
+#~ msgid "%s - New Messages"
+#~ msgstr "%s - 새 편지"
+
+#~ msgid "%s, %d new message total"
+#~ msgid_plural "%s, %d new messages total"
+#~ msgstr[0] "%s, 총 %d개의 새 편지"
+
+#~ msgid ""
+#~ "%s\n"
+#~ "(%d other new message for %s)"
+#~ msgid_plural ""
+#~ "%s\n"
+#~ "(%d other new messages for %s)"
+#~ msgstr[0] ""
+#~ "%s\n"
+#~ "(%s의 다른 편지 %d개)"
+
+#~ msgid "Me"
+#~ msgstr "나"
+
+#~ msgid "Untrusted Connection: %s"
+#~ msgstr "신뢰할 수 없는 연결: %s"
+
+#~ msgid "The identity of the %s mail server at %s:%u could not be verified."
+#~ msgstr "%s:%u에서 메일 서버 %s의 신원을 확인할 수 없습니다."
+
+#~ msgid ""
+#~ "Selecting \"Trust This Server\" or \"Always Trust This Server\" may cause "
+#~ "your username and password to be transmitted insecurely."
+#~ msgstr ""
+#~ "\"이 서버를 신뢰합니다\"를 선택하거나 \"언제나 이 서버를 신뢰합니다\"를 선"
+#~ "택하게 되면 사용자 이름(계정)과 비밀번호를 암호화되지 않은 채로 전송할 수 "
+#~ "있습니다."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Geary not to access this "
+#~ "server."
+#~ msgstr ""
+#~ "\"이 서버를 신뢰하지 않습니다\"를 선택하게 되면 기어리가 이 서버에 접근하"
+#~ "지 못하게 될 수 있습니다."
+
+#~ msgid "Geary will not add or update this email account."
+#~ msgstr "기어리는 이 이메일 계정을 업데이트하거나 추가하지 않습니다."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Geary to stop accessing "
+#~ "this account."
+#~ msgstr ""
+#~ "\"이 서버를 신뢰하지 않습니다\"를 선택하게 되면 기어리가 이 계정의 접근을 "
+#~ "중단할 수 있습니다."
+
+#~ msgid "Geary will exit if you have no other open email accounts."
+#~ msgstr "열려 있는 다른 이메일 계정이 없다면 기어리를 끝내겠습니다."
+
+#~ msgid ""
+#~ "Contact your system administrator or email service provider if you have "
+#~ "any question about these issues."
+#~ msgstr ""
+#~ "이 문제에 관해서 궁금한 게 있으시면 이메일 서비스 제공업체나 시스템 관리자"
+#~ "에게 문의하세요."
+
+#~ msgid "The server's certificate is not signed by a known authority"
+#~ msgstr "서버의 인증서가 알려진 권한에 의해 서명되지 않았습니다"
+
+#~ msgid "The server's identity does not match the identity in the certificate"
+#~ msgstr "서버의 신원이 인증서의 신원과 일치하지 않습니다"
+
+#~ msgid "The server's certificate has expired"
+#~ msgstr "서버 인증서가 만료되었습니다"
+
+#~ msgid "The server's certificate has not been activated"
+#~ msgstr "서버의 인증서가 활성화되지 않았습니다"
+
+#~ msgid "The server's certificate has been revoked and is now invalid"
+#~ msgstr "서버의 인증서가 폐지되어서 이제 유효하지 않습니다"
+
+#~ msgid "The server's certificate is considered insecure"
+#~ msgstr "서버의 인증서가 안전하지 않은 것으로 여겨집니다"
+
+#~ msgid "An error has occurred processing the server's certificate"
+#~ msgstr "서버의 인증을 하던 중 오류가 생겼습니다"
+
+#~ msgid "Geary requires your email password to continue"
+#~ msgstr "계속하려면 기어리에 여러분의 이메일 비밀번호가 필요합니다"
+
+#~ msgid "Additional addresses for %s"
+#~ msgstr "%s용 추가 주소"
+
+#~ msgid "First Last"
+#~ msgstr "처음 마지막"
+
+#~ msgid "Welcome to Geary."
+#~ msgstr "기어리 사용을 환영합니다."
+
+#~ msgid "Enter your account information to get started."
+#~ msgstr "시작하려면 계정 정보를 입력하세요."
+
+#~ msgid "2 weeks back"
+#~ msgstr "2 주 전"
+
+#~ msgid "1 month back"
+#~ msgstr "1 개월 전"
+
+#~ msgid "3 months back"
+#~ msgstr "3 개월 전"
+
+#~ msgid "6 months back"
+#~ msgstr "6 개월 전"
+
+#~ msgid "1 year back"
+#~ msgstr "1 년 전"
+
+#~ msgid "2 years back"
+#~ msgstr "2 년 전"
+
+#~ msgid "4 years back"
+#~ msgstr "4 년 전"
+
+#~ msgid "Everything"
+#~ msgstr "모두"
+
+#~ msgid "Edit"
+#~ msgstr "수정"
+
+#~ msgid "Preview"
+#~ msgstr "미리 보기"
+
+#~ msgid "Remem_ber passwords"
+#~ msgstr "비밀 번호 저장(_B)"
+
+#~ msgid "Remem_ber password"
+#~ msgstr "비밀 번호 저장(_B)"
+
+#~ msgid "        &#8226; Invalid account nickname.\n"
+#~ msgstr "        &#8226; 사용자 계정 닉네임이 다릅니다.\n"
+
+#~ msgid "        &#8226; Email address already added to Geary.\n"
+#~ msgstr "        &#8226; 기어리에 이미 등록된 이메일 주소입니다.\n"
+
+#~ msgid "        &#8226; IMAP connection error.\n"
+#~ msgstr "        &#8226; IMAP 연결 오류.\n"
+
+#~ msgid "        &#8226; IMAP username or password incorrect.\n"
+#~ msgstr "        &#8226; IMAP 사용자 계정이나 비밀번호가 다릅니다.\n"
+
+#~ msgid "        &#8226; SMTP connection error.\n"
+#~ msgstr "        &#8226; SMTP 연결 오류.\n"
+
+#~ msgid "        &#8226; SMTP username or password incorrect.\n"
+#~ msgstr "        &#8226; SMTP 사용자 계정이나 비밀번호가 다릅니다.\n"
+
+#~ msgid "        &#8226; Connection error.\n"
+#~ msgstr "        &#8226; 연결 오류.\n"
+
+#~ msgid "        &#8226; Username or password incorrect.\n"
+#~ msgstr "        &#8226; 사용자 계정이나 비밀번호가 다릅니다.\n"
+
+#~ msgid "_Add"
+#~ msgstr "추가(_A)"
+
+#~ msgid "%l:%M %P"
+#~ msgstr "%p %l:%M"
+
+#~ msgid "%H:%M"
+#~ msgstr "%H:%M"
+
+#~ msgctxt "Default clock format"
+#~ msgid "%l:%M %P"
+#~ msgstr "%p %l:%M"
+
+#~ msgid "%b %-e"
+#~ msgstr "%b %-e일"
+
+#~ msgid "%x"
+#~ msgstr "%x"
+
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%Y년 %B %-e일, %P %-l:%M"
+
+#~ msgid "%B %-e, %Y %-H:%M"
+#~ msgstr "%Y년 %B %-e일, %-H:%M"
+
+#~ msgctxt "Default full date"
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%Y년 %B %-e일, %P %-l:%M"
+
+#~ msgid "Now"
+#~ msgstr "지금"
+
+#~ msgid "%dm ago"
+#~ msgid_plural "%dm ago"
+#~ msgstr[0] "%d분 전"
+
+#~ msgid "%dh ago"
+#~ msgid_plural "%dh ago"
+#~ msgstr[0] "%d시간 전"
+
+#~ msgid "Yesterday"
+#~ msgstr "어제"
+
+#~ msgid "%A"
+#~ msgstr "%A"
+
+#~ msgid "bytes"
+#~ msgstr "bytes"
+
+#~ msgctxt "Abbreviation for terabyte"
+#~ msgid "TB"
+#~ msgstr "TB"
+
+#~ msgctxt "Abbreviation for gigabyte"
+#~ msgid "GB"
+#~ msgstr "GB"
+
+#~ msgctxt "Abbreviation for megabyte"
+#~ msgid "MB"
+#~ msgstr "MB"
+
+#~ msgctxt "Abbreviation for kilobyte"
+#~ msgid "KB"
+#~ msgstr "KB"
+
+#~ msgid "%d message"
+#~ msgid_plural "%d messages"
+#~ msgstr[0] "%d개의 편지"
+
+#~ msgid "%s, %s"
+#~ msgstr "%s, %s"
+
+#~ msgid "Inboxes"
+#~ msgstr "받은 편지함"
+
+#~ msgid "Search %s account"
+#~ msgstr "%s 계정 검색"
+
+#~ msgid "%d result"
+#~ msgid_plural "%d results"
+#~ msgstr[0] "검색 결과 %d개"
+
+#~ msgid "%u conversation selected."
+#~ msgid_plural "%u conversations selected."
+#~ msgstr[0] "%u개 대화 선택함."
+
+#~ msgid "No search results found."
+#~ msgstr "검색 결과가 없습니다."
+
+#~ msgid "No conversations in folder."
+#~ msgstr "폴더에 편지가 없습니다."
+
+#~ msgid "Always Show From Sender"
+#~ msgstr "보내는 사람 언제나 표시"
+
+#~ msgid "Date:"
+#~ msgstr "날짜:"
+
+#~ msgid "%u read message"
+#~ msgid_plural "%u read messages"
+#~ msgstr[0] "읽은 편지 %u"
+
+#~ msgid "This message was sent successfully, but could not be saved to %s."
+#~ msgstr "편지는 제대로 보내졌지만, %s에 저장할 수 없습니다."
+
+#~ msgid "_Copy"
+#~ msgstr "복사(_C)"
+
+#~ msgid "Copy _Email Address"
+#~ msgstr "이메일 주소 복사(_E)"
+
+#~ msgid "Copy _Link"
+#~ msgstr "링크 복사(_L)"
+
+#~ msgid "Select _Message"
+#~ msgstr "편지 선택(_M)"
+
+#~ msgid "Select _All"
+#~ msgstr "모두 선택(_A)"
+
+#~ msgid "_Inspect"
+#~ msgstr "검사(_I)"
+
+#~ msgid "This link appears to go to"
+#~ msgstr "이 링크는  이곳으로 가게 된 것으로 보입니다"
+
+#~ msgid "but actually goes to"
+#~ msgstr "하지만 실제로는  이곳으로 갑니다"
+
+#~ msgid " (Invalid?)"
+#~ msgstr " (무효?)"
+
+#~ msgid "_Save Image As..."
+#~ msgstr "다른 이름으로 그림 저장(_S)..."
+
+#~ msgid "_Save As..."
+#~ msgstr "다른 이름으로 저장(_S)..."
+
+#~ msgid "Save All A_ttachments..."
+#~ msgstr "모든 첨부 파일 저장(_T)..."
+
+#~ msgid "Save A_ttachment..."
+#~ msgid_plural "Save All A_ttachments..."
+#~ msgstr[0] "첨부 파일 저장(_T)..."
+
+#~ msgid "Reply to _All"
+#~ msgstr "모두에게 답장(_A)"
+
+#~ msgid "_Mark as Read"
+#~ msgstr "읽음으로 표시(_M)"
+
+#~ msgid "_Mark as Unread"
+#~ msgstr "안 읽음으로 표시(_M)"
+
+#~ msgid "Mark Unread From _Here"
+#~ msgstr "여기부터 읽지 않음으로 표시(_H)"
+
+#~ msgid "_View Source"
+#~ msgstr "소스 보기(_V)"
+
+#~ msgid "Failed to open default text editor."
+#~ msgstr "기본 텍스트 편집기를 열지 못 했습니다."
+
+#~ msgid "%s - Conversation Inspector"
+#~ msgstr "%s - 대화 검사기"
+
+#~ msgid "Saved"
+#~ msgstr "저장됨"
+
+#~ msgid "Saving"
+#~ msgstr "저장 중"
+
+#~ msgid "Error saving"
+#~ msgstr "저장 중 오류"
+
+#~ msgid "Press Backspace to delete quote"
+#~ msgstr "백스페이스를 눌러서 인용부호를 지웁니다"
+
+#~ msgid ""
+#~ "attach|attaching|attaches|attachment|attachments|attached|enclose|"
+#~ "enclosed|enclosing|encloses|enclosure|enclosures"
+#~ msgstr ""
+#~ "첨부|첨부하기|첨부파일|첨부|첨부파일|첨부한|동봉|동봉한|동봉|동봉|동봉함|"
+#~ "동봉물"
+
+#~ msgid "Do you want to discard this message?"
+#~ msgstr "이 편지를 버릴까요?"
+
+#~ msgid "Send message with an empty subject and body?"
+#~ msgstr "제목과 내용 없이 편지를 보낼까요?"
+
+#~ msgid "Send message without an attachment?"
+#~ msgstr "첨부 파일 없이 편지를 보낼까요?"
+
+#~ msgid "Cannot add attachment"
+#~ msgstr "첨부할 수 없습니다"
+
+#~ msgid "\"%s\" could not be found."
+#~ msgstr "\"%s\"를 찾을 수 없습니다."
+
+#~ msgid "\"%s\" is a folder."
+#~ msgstr "\"%s\"는 폴더 입니다."
+
+#~ msgid "\"%s\" is an empty file."
+#~ msgstr "\"%s\"는 빈 파일입니다."
+
+#~ msgid "\"%s\" could not be opened for reading."
+#~ msgstr "\"%s\"읽어 볼 수 있게 열리지 않습니다."
+
+#~ msgid "\"%s\" already attached for delivery."
+#~ msgstr "\"%s\"에 이미 전달할 내용이 첨부되어있습니다."
+
+#~ msgid "%s (%s)"
+#~ msgstr "%s (%s)"
+
+#~ msgid "To: "
+#~ msgstr "받는 사람: "
+
+#~ msgid "Cc: "
+#~ msgstr "함께 받는 사람: "
+
+#~ msgid "Bcc: "
+#~ msgstr "숨겨 받는 사람: "
+
+#~ msgid "Reply-To: "
+#~ msgstr "답장 하기: "
+
+#~ msgid "Select Color"
+#~ msgstr "색상 선택"
+
+#~ msgid "%1$s via %2$s"
+#~ msgstr "%2$s 를 경유해서 %1$s"
+
+#~ msgid "_From:"
+#~ msgstr "보내는 사람(_F):"
+
+#~ msgid "%s (%d)"
+#~ msgstr "%s (%d)"
+
+#~ msgid "Sending..."
+#~ msgstr "보내는 중..."
+
+#~ msgid "%i match"
+#~ msgid_plural "%i matches"
+#~ msgstr[0] "%i개 일치"
+
+#~ msgid "%i match (wrapped)"
+#~ msgid_plural "%i matches (wrapped)"
+#~ msgstr[0] "%i개 일치 (다해서)"
+
+#~ msgid "not found"
+#~ msgstr "찾을 수 없음"
+
+#~ msgid "_OK"
+#~ msgstr "확인(_O)"
+
+#~ msgid "_Cancel"
+#~ msgstr "취소(_C)"
+
+#~ msgid "_Discard"
+#~ msgstr "버리기(_D)"
+
+#~ msgid "_Open"
+#~ msgstr "열기(_O)"
+
+#~ msgid "_Print..."
+#~ msgstr "인쇄(_P)..."
+
+#~ msgid "_Remove"
+#~ msgstr "제거(_R)"
+
+#~ msgid "_Keep"
+#~ msgstr "보관(_K)"
+
+#~ msgid "Search all mail in account for keywords (Ctrl+S)"
+#~ msgstr "계정의 모든 편지에서 키워드 검색 (Ctrl+S)"
+
+#~ msgid "Indexing %s account"
+#~ msgstr "%s 계정 정돈"
+
+#~ msgid "Send by Email"
+#~ msgstr "이메일로 보내기"
+
+#~ msgid "Send files using Mail"
+#~ msgstr "메일로 파일 보내기"
+
+#~ msgid "Welcome to Mail"
+#~ msgstr "메일 사용을 환영합니다"
+
+#~ msgid "More options"
+#~ msgstr "추가 옵션"
+
+#~ msgid "Search %s"
+#~ msgstr "%s 찾기"
+
+#~ msgid "Reading"
+#~ msgstr "읽기"
+
+#~ msgid "Automatically select next message:"
+#~ msgstr "자동으로 다음 편지 선택:"
+
+#~ msgid "Conversation previews:"
+#~ msgstr "대화 미리 보기:"
+
+#~ msgid "Three-pane layout:"
+#~ msgstr "세 줄로 보기:"
+
+#~ msgid "Composer"
+#~ msgstr "새 편지"
+
+#~ msgid "Spell check:"
+#~ msgstr "맞춤법 검사:"
+
+#~ msgid "Notifications"
+#~ msgstr "알림"
+
+#~ msgid "Always watch for new mail:"
+#~ msgstr "항상 새 편지 확인:"
+
+#~ msgid "Delete Conversation (Shift+Delete)"
+#~ msgid_plural "Delete Conversations (Shift+Delete)"
+#~ msgstr[0] "지우기 (Shift+Delete)"
+
+#~ msgid "Delete Conversations (Shift+Delete)"
+#~ msgstr "지우기 (Shift+Delete)"
+
+#~ msgid ""
+#~ "<span weight=\"bold\" size=\"larger\">Are you sure you want to remove "
+#~ "this account?</span> "
+#~ msgstr ""
+#~ "<span weight=\"bold\" size=\"larger\">이 계정을 정말 제거하시겠습니까?</"
+#~ "span> "
+
+#~ msgid ""
+#~ "All email associated with this account will be removed from your "
+#~ "computer. This will not affect email on the server."
+#~ msgstr ""
+#~ "컴퓨터에서 이 계정과 연관된 모든 이메일이 지워지게 됩니다. 서버에 있는 이"
+#~ "메일에는 영향을 주지 않습니다."
+
+#~ msgid "Nickname:"
+#~ msgstr "닉네임:"
+
+#~ msgid "Find"
+#~ msgstr "찾기"
+
+#~ msgid "Previous Result"
+#~ msgstr "이전 결과"
+
+#~ msgid "Next result"
+#~ msgstr "다음 결과"
+
+#~ msgid "_Case sensitive"
+#~ msgstr "대소문자 구별(_C)"
+
+#~ msgid "label"
+#~ msgstr "이름표"
+
+#~ msgid "Geary update in progress…"
+#~ msgstr "기어리 업데이트 중…"
+
+#~ msgid "Remove email address"
+#~ msgstr "이메일 주소 지우기"
+
+#~ msgid ""
+#~ "Some email services require additional addresses be configured on the "
+#~ "server.  Contact your email provider for more information."
+#~ msgstr ""
+#~ "이메일 서비스 중에 더러 서버를 확인하기 위해 추가 주소들을 요구하기도 합니"
+#~ "다. 더 많은 정보는 이메일 서비스 제공 업체에 문의해보세요."
+
+#~ msgid "_Update"
+#~ msgstr "업데이트(_U)"
+
+#~ msgid "Please wait while Geary validates your account."
+#~ msgstr "기어리가 계정을 확인하는 동안 기다려 주세요."
+
+#~ msgid "_Redo"
+#~ msgstr "다시 실행(_R)"
+
+#~ msgid "Cu_t"
+#~ msgstr "잘라내기(_T)"
+
+#~ msgid "_Paste"
+#~ msgstr "붙여넣기(_P)"
+
+#~ msgid "_Left"
+#~ msgstr "왼쪽(_L)"
+
+#~ msgid "_Right"
+#~ msgstr "오른쪽(_R)"
+
+#~ msgid "_Center"
+#~ msgstr "가운데(_C)"
+
+#~ msgid "_Justify"
+#~ msgstr "균등(_J)"
+
+#~ msgid "Link (Ctrl+L)"
+#~ msgstr "링크 (Ctrl+L)"
+
+#~ msgid "C_olor"
+#~ msgstr "색상(_O)"
+
+#~ msgid "Quote text  (Ctrl+])"
+#~ msgstr "들여 쓰기  (Ctrl+])"
+
+#~ msgctxt "Clipboard paste with rich text"
+#~ msgid "Paste _With Formatting"
+#~ msgstr "서식을 유지한 채 붙이기(_W)"
+
+#~ msgid "Bold (Ctrl+B)"
+#~ msgstr "굵게 (Ctrl+B)"
+
+#~ msgid "Italic (Ctrl+I)"
+#~ msgstr "이탤릭 (Ctrl+I)"
+
+#~ msgid "Show Extended Fields"
+#~ msgstr "확장 필드 보기"
+
+#~ msgctxt "Label"
+#~ msgid "Close and Save"
+#~ msgstr "닫고 저장하기"
+
+#~ msgctxt "Short Label"
+#~ msgid "Close and Save"
+#~ msgstr "닫고 저장하기"
+
+#~ msgctxt "Tooltip"
+#~ msgid "Close and Save"
+#~ msgstr "닫고 저장하기"
+
+#~ msgctxt "Label"
+#~ msgid "Close and Discard"
+#~ msgstr "닫고 버리기"
+
+#~ msgctxt "Short Label"
+#~ msgid "Close and Discard"
+#~ msgstr "닫고 버리기"
+
+#~ msgctxt "Tooltip"
+#~ msgid "Close and Discard"
+#~ msgstr "닫고 버리기"
+
+#~ msgid "Lar_ge"
+#~ msgstr "크게(_G)"
+
+#~ msgid "Large"
+#~ msgstr "크게"
+
+#~ msgid "_Medium"
+#~ msgstr "중간(_M)"
+
+#~ msgid "Medium"
+#~ msgstr "중간"
+
+#~ msgid "_Small"
+#~ msgstr "작게(_S)"
+
+#~ msgid "Small"
+#~ msgstr "작게"
+
+#~ msgid "S_ans Serif"
+#~ msgstr "S_ans Serif"
+
+#~ msgid "Sans Serif"
+#~ msgstr "Sans Serif"
+
+#~ msgid "S_erif"
+#~ msgstr "S_erif"
+
+#~ msgid "Serif"
+#~ msgstr "Serif"
+
+#~ msgid "_Fixed Width"
+#~ msgstr "고정 폭(_F)"
+
+#~ msgid "Fixed Width"
+#~ msgstr "너비 고정"
+
+#~ msgid "Detach"
+#~ msgstr "분리"
+
+#~ msgid "Detach (Ctrl+D)"
+#~ msgstr "분리 (Ctrl+D)"
+
+#~ msgid "_Send"
+#~ msgstr "보내기(_S)"
+
+#~ msgid "Send (Ctrl+Enter)"
+#~ msgstr "보내기 (Ctrl+Enter)"
+
+#~ msgid "_Attach File"
+#~ msgstr "파일 첨부(_A)"
+
+#~ msgid "Attach File"
+#~ msgstr "파일 첨부"
+
+#~ msgid "_Include Original Attachments"
+#~ msgstr "첨부파일 원본 포함(_I)"
+
+#~ msgid "Include Original Attachments"
+#~ msgstr "첨부파일 원본 포함"
+
+#~ msgid "Application Menu"
+#~ msgstr "애플리케이션 메뉴"
+
+#~ msgid "_To"
+#~ msgstr "받는 사람(_T)"
+
+#~ msgid "_Cc"
+#~ msgstr "함께 받는 사람(_C)"
+
+#~ msgid "_Subject"
+#~ msgstr "제목(_S)"
+
+#~ msgid "_Bcc"
+#~ msgstr "숨겨 받는 사람(_B)"
+
+#~ msgid "_Reply-To"
+#~ msgstr "답장(_R)"
+
+#~ msgid "From"
+#~ msgstr "보내는 사람"
+
+#~ msgid "Drop files here"
+#~ msgstr "파일을 이곳에 두시오"
+
+#~ msgid "To add them as attachments"
+#~ msgstr "첨부 파일로 추가하기"
+
+#~ msgid "<span weight=\"bold\" size=\"larger\">Cannot remove account</span> "
+#~ msgstr ""
+#~ "<span weight=\"bold\" size=\"larger\">계정을 제거할 수 없습니다</span> "
+
+#~ msgid ""
+#~ "A composer window associated with this account is currently open. Send or "
+#~ "discard the message and try again."
+#~ msgstr ""
+#~ "이 계정과 연관된 새 편지 창을 지금 열었습니다. 편지를 보내거나 버리고 다"
+#~ "시 시도해 보세요."
+
+#~ msgid "Addi_tional email addresses…"
+#~ msgstr "추가 이메일 주소(_T)…"
+
+#~ msgid "_Save sent mail"
+#~ msgstr "보낸 편지 저장(_S)"
+
+#~ msgid "Password"
+#~ msgstr "비밀번호"
+
+#~ msgid "_Password:"
+#~ msgstr "비밀번호(_P):"
+
+#~ msgid "Work, Home, etc."
+#~ msgstr "작업, 홈, 기타."
+
+#~ msgid "N_ickname:"
+#~ msgstr "닉네임(_N):"
+
+#~ msgid "S_ervice:"
+#~ msgstr "서비스(_E):"
+
+#~ msgid "IMAP settings"
+#~ msgstr "IMAP 설정"
+
+#~ msgid "Se_rver:"
+#~ msgstr "서버(_R):"
+
+#~ msgid "P_ort"
+#~ msgstr "포트(_O)"
+
+#~ msgid "Ser_ver:"
+#~ msgstr "서버(_V):"
+
+#~ msgid "Por_t"
+#~ msgstr "포트(_T)"
+
+#~ msgid "SMTP settings"
+#~ msgstr "SMTP 설정"
+
+#~ msgid "User_name:"
+#~ msgstr "사용자이름(_N):"
+
+#~ msgid "Pass_word:"
+#~ msgstr "비밀번호(_W):"
+
+#~ msgid "SMTP username"
+#~ msgstr "SMTP 사용자 이름"
+
+#~ msgid "SMTP password"
+#~ msgstr "SMTP 비밀번호"
+
+#~ msgid "_Username:"
+#~ msgstr "사용자 이름(_U):"
+
+#~ msgid "IMAP username"
+#~ msgstr "IMAP 사용자 이름"
+
+#~ msgid "IMAP password"
+#~ msgstr "IMAP 비밀번호"
+
+#~ msgid "Encr_yption:"
+#~ msgstr "암호화(_Y):"
+
+#~ msgid "Encrypt_ion:"
+#~ msgstr "암호화(_I):"
+
+#~ msgid "SSL/TLS"
+#~ msgstr "SSL/TLS"
+
+#~ msgid "STARTTLS"
+#~ msgstr "STARTTLS"
+
+#~ msgid "No authentication re_quired"
+#~ msgstr "인증 필요 없음(_Q)"
+
+#~ msgid "Use IMAP cre_dentials"
+#~ msgstr "IMAP 인증서 사용하기(_C)"
+
+#~ msgid "Storage"
+#~ msgstr "보관함"
+
+#~ msgid "_Download mail"
+#~ msgstr "편지 다운로드(_D)"
+
+#~ msgid "Save dra_fts on server"
+#~ msgstr "임시 보관함 서버에 저장하기(_F)"
+
+#~ msgid "Si_gn emails (HTML allowed):"
+#~ msgstr "이메일 싸인(_G) (HTML 가능):"
+
+#~ msgid "Add account"
+#~ msgstr "계정 추가"
+
+#~ msgid "Edit account"
+#~ msgstr "계정 편집"
+
+#~ msgid "Remove account"
+#~ msgstr "계정 제거"
+
+#~ msgid "Untrusted Connection"
+#~ msgstr "신뢰할 수 없는 연결"
+
+#~ msgid "_Always Trust This Server"
+#~ msgstr "언제나 이 서버를 신뢰합니다(_A)"
+
+#~ msgid "_Trust This Server"
+#~ msgstr "이 서버를 신뢰합니다(_T)"
+
+#~ msgid "_Don't Trust This Server"
+#~ msgstr "이 서버를 신뢰하지 않습니다(_D)"
+
+#~ msgid "SMTP Credentials"
+#~ msgstr "SMTP 인증"
+
+#~ msgid "Username"
+#~ msgstr "사용자 이름"
+
+#~ msgid "_Remember password"
+#~ msgstr "비밀번호 저장(_R)"
+
+#~ msgid "_Authenticate"
+#~ msgstr "인증(_A)"
+
+#~ msgid "© 2011-2015 Yorba Foundation, © 2016 elementary LLC."
+#~ msgstr "© 2011-2015 Yorba Foundation, © 2016 elementary LLC."
+
+#~ msgid ""
+#~ "Mail encountered an error sending an email.  If the problem persists, "
+#~ "please manually delete the email from your Outbox folder."
+#~ msgstr ""
+#~ "메일이 이메일을 보내는 도중 오류가 생겼습니다. 문제가 지속되면, 보낸 편지"
+#~ "함 폴더에서 이메일을 직접 지워주세요."
+
+#~ msgid ""
+#~ "Mail encountered an error saving a sent message to Sent Mail.  The "
+#~ "message will stay in your Outbox folder until you delete it."
+#~ msgstr ""
+#~ "메일이 보낸 편지를 저장하는 도중 오류가 생겼습니다. 편지는 지우지 않으면 "
+#~ "보낸 편지함 폴더에 있습니다."
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to corruption of the database file in this directory:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Mail can rebuild the database and re-synchronize with the server or "
+#~ "exit.\n"
+#~ "\n"
+#~ "Rebuilding the database will destroy all local email and its attachments. "
+#~ "<b>The mail on the your server will not be affected.</b>"
+#~ msgstr ""
+#~ "이 계정의 메일 데이터 베이스를 여는 동안 오류가 생겼습니다.  이 디렉토리"
+#~ "의 데이터 베이스 파일에 문제가 생겨서 그런 것이 아닌가 합니다:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "기어리는 데이터 베이스를 재구성하고 서버와 다시 동기화 시키거나 나갈 수 있"
+#~ "습니다.\n"
+#~ "\n"
+#~ "데이터 베이스를 재구성하게 되면 로컬 메일과 첨부파일들이 모두 사라지게 됩"
+#~ "니다. <b>서버에 있는 메일은 영향 받지 않습니다.</b>"
+
+#~ msgid ""
+#~ "The version number of the local mail database is formatted for a newer "
+#~ "version of Mail. Unfortunately, the database cannot be \"rolled back\" to "
+#~ "work with this version of Mail.\n"
+#~ "\n"
+#~ "Please install the latest version of Mail and try again."
+#~ msgstr ""
+#~ "로컬 메일 데이터 베이스의 버전 번호가 새 버전의 메일을 위해서 포맷되었습니"
+#~ "다. 안타깝게도, 현재 버전의 메일 사용을 위해 데이터 베이스를 \"되돌릴\" "
+#~ "수 없습니다.\n"
+#~ "\n"
+#~ "최신 버전의 메일을 설치하시고 다시 실행해 보세요."
+
+#~ msgid ""
+#~ "There was an error opening the local account. This is probably due to "
+#~ "connectivity issues.\n"
+#~ "\n"
+#~ "Please check your network connection and restart Mail."
+#~ msgstr ""
+#~ "로컬 계정을 여는 동안 오류가 생겼습니다. 인터넷 연결 문제가 아닌가 합니"
+#~ "다.\n"
+#~ "\n"
+#~ "네트워크 연결을 확인하시고 메일을 다시 시작해주세요."
+
+#~ msgid "This removes the email from Mail and your email server."
+#~ msgstr "메일과 이메일 서버 안의 모든 편지를 지우게 됩니다."
+
+#~ msgid "        &#8226; Email address already added to Mail.\n"
+#~ msgstr "        &#8226; 메일에 이미 등록된 이메일 주소입니다.\n"
+
+#~ msgid "Mail requires your email password to continue"
+#~ msgstr "계속하려면 메일에 여러분의 이메일 비밀번호가 필요합니다"
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Mail not to access this "
+#~ "server."
+#~ msgstr ""
+#~ "\"이 서버를 신뢰하지 않습니다\"를 선택하게 되면 메일이 이 서버에 접근하지 "
+#~ "못하게 될 수 있습니다."
+
+#~ msgid "Mail will not add or update this email account."
+#~ msgstr "메일은 이메일 계정을 업데이트하거나 추가하지 않습니다."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Mail to stop accessing "
+#~ "this account."
+#~ msgstr ""
+#~ "\"이 서버를 신뢰하지 않습니다\"를 선택하게 되면 메일이 이 계정의 접근을 중"
+#~ "단할 수 있습니다."
+
+#~ msgid "Mail will exit if you have no other open email accounts."
+#~ msgstr "열려 있는 다른 이메일 계정이 없다면 메일을 끝내겠습니다."
+
+#~ msgid "Please wait while Mail validates your account."
+#~ msgstr "메일이 계정을 확인하는 동안 기다려 주세요."
+
+#~ msgid "Mail update in progress…"
+#~ msgstr "메일 업데이트 중…"
+
+#~ msgid ""
+#~ "2011-2015 Yorba Foundation\n"
+#~ "© 2016 elementary LLC."
+#~ msgstr ""
+#~ "2011-2015 Yorba Foundation\n"
+#~ "© 2016 elementary LLC."
+
+#~ msgid "Show About dialog"
+#~ msgstr "정보 대화상자 보이기"
+
+#~ msgid "Save Attachment…"
+#~ msgstr "첨부 파일 저장…"
+
+#~ msgid "Save All Attachments…"
+#~ msgstr "모든 첨부 파일 저장…"
+
+#~ msgid "View Source"
+#~ msgstr "소스 보기"
+
+#~ msgid "View message"
+#~ msgstr "편지 보기"
+
+#~ msgid "Copy Email Address"
+#~ msgstr "이메일 주소 복사"
+
+#~ msgid "Hide message"
+#~ msgstr "편지 숨김"
+
+#~ msgid "Case sensitive"
+#~ msgstr "대/소문자 구별"
+
+#~ msgid "%u match"
+#~ msgid_plural "%u matches"
+#~ msgstr[0] "%u개 일치"
+
+#~ msgid "no-reply;no_reply;noreply;do-not-reply;do_not_reply;donotreply"
+#~ msgstr ""
+#~ "답장-하지마시오;답장_하지마시오;답장하지마시오;답장-하지-마시오;답장_하지_"
+#~ "마시오;답장하지마시오"
+
+#~ msgid "Include original attachments"
+#~ msgstr "원본 파일 포함"
+
+#~ msgid "Don't ask me again"
+#~ msgstr "다시 묻지 않음"
+
+#~ msgid "Are you sure you want to remove this account?"
+#~ msgstr "정말 이 계정을 없애시겠습니까?"
+
+#~ msgid "Username:"
+#~ msgstr "사용자 이름:"
+
+#~ msgid "Password:"
+#~ msgstr "비밀번호:"
+
+#~ msgid "SMTP Credentials:"
+#~ msgstr "SMTP 인증:"
+
+#~ msgid "Remember password"
+#~ msgstr "비밀번호 저장"
+
+#~ msgid "Authenticate"
+#~ msgstr "인증"
+
+#~ msgid "Strikethrough (Ctrl+%)"
+#~ msgstr "가운데 줄 긋기 (Ctrl+%)"
+
+#~ msgid "Link (Ctrl+K)"
+#~ msgstr "링크 (Ctrl+K)"
+
+#~ msgid "Forward (Ctrl+Shift+F)"
+#~ msgstr "전달 (Ctrl+Shift+F)"

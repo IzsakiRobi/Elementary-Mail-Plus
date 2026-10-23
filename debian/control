@@ -1,0 +1,18 @@
+Source: elementary-mail-plus
+Section: mail
+Priority: optional
+Maintainer: IzsakiRobi <IzsakiRobi@users.noreply.github.com>
+Build-Depends: debhelper-compat (= 13), dh-apparmor, meson, ninja-build, valac, gettext, libgranite-dev (>= 6.0), libgee-0.8-dev, libhandy-1-dev, libcamel1.2-dev, libedataserver1.2-dev, libedataserverui1.2-dev, libwebkit2gtk-4.1-dev, libportal-dev, libportal-gtk3-dev, libfolks-dev, libsoup-3.0-dev, libsecret-1-dev
+Standards-Version: 4.6.2
+Rules-Requires-Root: no
+Homepage: https://github.com/IzsakiRobi/Elementary-Mail-Plus
+
+Package: elementary-mail-plus
+Architecture: any
+Depends: io.elementary.portals (>= 7.1.0), ${shlibs:Depends}, ${misc:Depends}, dconf-gsettings-backend | gsettings-backend, evolution-data-server, gnome-keyring
+Conflicts: io.elementary.mail, pantheon-mail
+Replaces: io.elementary.mail, pantheon-mail
+Provides: io.elementary.mail
+Description: Enhanced elementary Mail
+ Elementary Mail with sender avatars, company logos, unread badges,
+ trash management, preferences and bounded message caching.

@@ -1,0 +1,343 @@
+# Ukrainian translation for pantheon-mail
+# Copyright (c) 2016 Rosetta Contributors and Canonical Ltd 2016
+# This file is distributed under the same license as the pantheon-mail package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pantheon-mail\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-08 16:46+0000\n"
+"PO-Revision-Date: 2024-09-02 20:05+0000\n"
+"Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
+"Language-Team: Ukrainian <https://l10n.elementary.io/projects/mail/extra/uk/"
+">\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.6.2\n"
+"X-Launchpad-Export-Date: 2017-03-09 06:00+0000\n"
+
+#: data/mail.metainfo.xml.in:10 data/io.elementary.mail.desktop.in:2
+msgid "Mail"
+msgstr "Пошта"
+
+#: data/mail.metainfo.xml.in:11 data/io.elementary.mail.desktop.in:3
+msgid "Send and receive mail"
+msgstr "Надсилайте та отримуйте пошту"
+
+#: data/mail.metainfo.xml.in:13
+msgid ""
+"Mail is designed to let you manage your email quickly and effortlessly. Its "
+"interface is based on conversations, so you can read an entire discussion "
+"without having to click from message to message."
+msgstr ""
+"Пошта призначена для швидкого та легкого керування електронною поштою. Її "
+"інтерфейс засновано на розмовах, тому ви можете прочитати цілу дискусію, не "
+"натискаючи повідомлення за повідомленням."
+
+#: data/mail.metainfo.xml.in:15
+msgid "Lightweight mail client with full IMAP support"
+msgstr "Легкий поштовий клієнт, що повністю підтримує IMAP"
+
+#: data/mail.metainfo.xml.in:16
+msgid "Mail grouped into conversations, not a tree of threads"
+msgstr "Пошту згруповано в розмови, а не дерево ланцюжків"
+
+#: data/mail.metainfo.xml.in:17
+msgid "As-you-type searching"
+msgstr "Пошук під час введення"
+
+#: data/mail.metainfo.xml.in:18
+msgid "Multiple account support"
+msgstr "Підтримка кількох облікових записів"
+
+#: data/mail.metainfo.xml.in:19
+msgid "Powerful HTML composer that saves drafts to the server"
+msgstr "Потужний редактор HTML, що зберігає чернетки на сервері"
+
+#: data/mail.metainfo.xml.in:20
+msgid "Works with Gmail, Yahoo! Mail, and other popular IMAP servers"
+msgstr "Працює з Gmail, Yahoo! Mail та іншими популярними серверами IMAP"
+
+#: data/mail.metainfo.xml.in:66
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/mail.metainfo.xml.in:74 data/mail.metainfo.xml.in:83
+#: data/mail.metainfo.xml.in:100 data/mail.metainfo.xml.in:133
+#: data/mail.metainfo.xml.in:154 data/mail.metainfo.xml.in:173
+#: data/mail.metainfo.xml.in:195
+msgid "Improvements:"
+msgstr "Поліпшення:"
+
+#: data/mail.metainfo.xml.in:76 data/mail.metainfo.xml.in:86
+#: data/mail.metainfo.xml.in:111 data/mail.metainfo.xml.in:142
+#: data/mail.metainfo.xml.in:156 data/mail.metainfo.xml.in:177
+#: data/mail.metainfo.xml.in:198
+msgid "Updated translations"
+msgstr "Оновлено переклади"
+
+#: data/mail.metainfo.xml.in:85
+msgid ""
+"Use the actual recipients of a message as sender when replying or forwarding"
+msgstr ""
+"Фактичні одержувачі повідомлень вказуються відправниками під час відповіді "
+"або пересилання"
+
+#: data/mail.metainfo.xml.in:102
+msgid "Ability to create multiple signatures and set defaults per account"
+msgstr ""
+"Можливість створювати кілька підписів і налаштовувати типове значення для "
+"кожного облікового запису"
+
+#: data/mail.metainfo.xml.in:103
+msgid "Add support for inline images in the composer"
+msgstr "Додано підтримку вбудованих зображень у редакторі"
+
+#: data/mail.metainfo.xml.in:104
+msgid "Add support for renaming folders"
+msgstr "Додано підтримку тек, які залишились"
+
+#: data/mail.metainfo.xml.in:105
+msgid "Move settings menu to the mailboxes pane"
+msgstr "Меню налаштувань перенесено на панель поштових скриньок"
+
+#: data/mail.metainfo.xml.in:106
+msgid "Use the FileChooser portal"
+msgstr "Використовується портал FileChooser"
+
+#: data/mail.metainfo.xml.in:107
+msgid "Improve network availability handling"
+msgstr "Поліпшено обробку доступності мережі"
+
+#: data/mail.metainfo.xml.in:108
+msgid "Fix issues with fetching e-mail when Mail is not autostarted"
+msgstr ""
+"Усунено проблеми з отриманням е-пошти, коли Пошта не запускається автоматично"
+
+#: data/mail.metainfo.xml.in:109
+msgid "Notify the user when a calendar event is included in a message"
+msgstr "Сповіщати користувача, коли подію календаря включено до повідомлення"
+
+#: data/mail.metainfo.xml.in:110
+msgid "Improve performance when switching between folders"
+msgstr "Поліпшення швидкодії під час перемикання між теками"
+
+#: data/mail.metainfo.xml.in:135
+msgid ""
+"The welcome view is removed when an account is added in Online Accounts "
+"without having to restart Mail"
+msgstr ""
+"Вітальне вікно прибирається, коли обліковий запис додається до Онлайнових "
+"облікових записів без необхідності перезапуску Пошти"
+
+#: data/mail.metainfo.xml.in:136
+msgid ""
+"The composer is always presented as a new window and includes more keyboard "
+"shortcuts"
+msgstr ""
+"Редактор завжди відкривається у новому вікні та містить більше комбінацій "
+"клавіш"
+
+#: data/mail.metainfo.xml.in:137
+msgid "The search filter menu now appears next to the search bar"
+msgstr "Меню фільтрів пошуку тепер з'являється поруч із панеллю пошуку"
+
+#: data/mail.metainfo.xml.in:138
+msgid "HeaderBars appear to float above content when scrolled"
+msgstr "Панелі заголовків під час гортання з'являються над вмістом"
+
+#: data/mail.metainfo.xml.in:139
+msgid "Fix a potential crash with empty messages"
+msgstr "Усунуто ймовірність збою через порожні повідомлення"
+
+#: data/mail.metainfo.xml.in:140
+msgid "Stop resizing from cutting off the message list"
+msgstr "Припинено зміну розміру від обрізання списку повідомлень"
+
+#: data/mail.metainfo.xml.in:141
+msgid "Performance improvements"
+msgstr "Поліпшення швидкодії"
+
+#: data/mail.metainfo.xml.in:167 data/mail.metainfo.xml.in:189
+msgid "Fixes:"
+msgstr "Виправлення:"
+
+#: data/mail.metainfo.xml.in:169
+msgid "Fixed an error which caused mail accounts to be loaded multiple times"
+msgstr ""
+"Усунута помилка, яка спричиняла завантаження облікових записів електронної "
+"пошти кілька разів"
+
+#: data/mail.metainfo.xml.in:170
+msgid "Fixed a bug which caused Mail to crash occasionally"
+msgstr "Виправлена помилка, яка спричиняла збої пошти"
+
+#: data/mail.metainfo.xml.in:171
+msgid "Display recipient in Sent folder instead of sender"
+msgstr "Показ одержувача в теці Надіслані замість відправника"
+
+#: data/mail.metainfo.xml.in:175
+msgid "Updated app icon"
+msgstr "Оновлено піктограму застосунку"
+
+#: data/mail.metainfo.xml.in:176
+msgid "New design"
+msgstr "Новий дизайн"
+
+#: data/mail.metainfo.xml.in:184
+msgid "New features:"
+msgstr "Нові можливості:"
+
+#: data/mail.metainfo.xml.in:186
+msgid "Use message subject for composer window title"
+msgstr "Тема повідомлення відтепер буде назвою вікна редактора"
+
+#: data/mail.metainfo.xml.in:187
+msgid "Added support for Unified Inbox for Microsoft 365 accounts"
+msgstr "Додано підтримку Unified Inbox для облікових записів Microsoft 365"
+
+#: data/mail.metainfo.xml.in:191
+msgid ""
+"Fixed an error which caused the inbox monitoring in the background to crash"
+msgstr ""
+"Виправлена помилка, яка призводила до збою моніторингу вхідних у фоновому "
+"режимі"
+
+#: data/mail.metainfo.xml.in:192
+msgid "Removed duplicate sender addresses when composing a message"
+msgstr "Прибрано дублювання адреси відправника під час створення повідомлення"
+
+#: data/mail.metainfo.xml.in:193
+msgid "Fix a freeze when archiving the last message in a folder"
+msgstr ""
+"Виправлено заморожування під час архівування останнього повідомлення у теці"
+
+#: data/mail.metainfo.xml.in:197
+msgid ""
+"Renamed Office 365 to Microsoft 365 to follow suite on Microsoft's rebranding"
+msgstr ""
+"Office 365 перейменовано на Microsoft 365, щоб згідно з ребрендингом "
+"Microsoft"
+
+#: data/io.elementary.mail.desktop.in:6
+msgid "Email;E-mail;Mail;"
+msgstr "Email;E-mail;Mail;Пошта;Лист;"
+
+#: data/io.elementary.mail.desktop.in:16
+msgid "Compose Message"
+msgstr "Нове повідомлення"
+
+#~ msgid "Fix a potential crash while loading messages"
+#~ msgstr "Усунуто ймовірність збою під час завантаження повідомлень"
+
+#~ msgid "Secondary-click menu on the conversations list"
+#~ msgstr "Меню правої кнопки миші на списку бесід"
+
+#~ msgid "Ensure conversations are re-sorted by date when new messages appear"
+#~ msgstr ""
+#~ "Коли з’являться нові повідомлення, розмови повторно впорядковуються за "
+#~ "датою"
+
+#~ msgid "Fixed sender combobox after opening a mailto link"
+#~ msgstr "Виправлено редактор відправника після відкриття посилання mailto"
+
+#~ msgid "Mark sent messages as read"
+#~ msgstr "Надіслані повідомлення позначаються прочитаними"
+
+#~ msgid "Fix a hang when deleting the last message in a mailbox"
+#~ msgstr ""
+#~ "Виправлено зависання під час видалення останнього повідомлення в поштовій "
+#~ "скриньці"
+
+#~ msgid "Fix an issue where some mail fails to be deleted"
+#~ msgstr "Виправлено проблему, через яку інколи не видалялася пошта"
+
+#~ msgid "Use accent color for unread message titles"
+#~ msgstr "Основний колір застосовується до непрочитаних повідомлень"
+
+#~ msgid "Autoselect the next message after archiving"
+#~ msgstr "Автовибір наступного повідомлення після архівування"
+
+#~ msgid "Use local time in message headers"
+#~ msgstr "Використовувати місцевий час у заголовках повідомлень"
+
+#~ msgid "Send a notification when new messages arrive"
+#~ msgstr "Надсилання сповіщень, коли надходять нові повідомлення"
+
+#~ msgid "Add a button to manually fetch new messages"
+#~ msgstr "Додано кнопку отримання нових повідомлень вручну"
+
+#~ msgid "Automatically select the next message after deleting"
+#~ msgstr "Автовибір наступного повідомлення після видалення попереднього"
+
+#~ msgid "Filter unread or starred conversations"
+#~ msgstr "Фільтр прочитаних бесід та тих, з яких прибрано позначку зіркою"
+
+#~ msgid "Make sure we don't save sent messages twice for outlook.com accounts"
+#~ msgstr ""
+#~ "Виправлено ваду подвійного збереження надісланих повідомлень для "
+#~ "облікових записів outlook.com"
+
+#~ msgid "Fix a potential crash when changing folders"
+#~ msgstr "Усунуто ймовірність збою під час зміни тек"
+
+#~ msgid "Improve search performance"
+#~ msgstr "Пришвидшено пошук"
+
+#~ msgid "Fix an issue that prevented some messaging from rendering at all"
+#~ msgstr ""
+#~ "Виправлено проблему, яка взагалі не давала змоги показувати деякі "
+#~ "повідомлення"
+
+#~ msgid ""
+#~ "Set the correct \"From\" address when replying and multiple accounts are "
+#~ "set up"
+#~ msgstr ""
+#~ "Встановлення правильної адреси «Від» під час відповіді та якщо "
+#~ "налаштовано кілька облікових записів"
+
+#~ msgid "Fix a crash on startup for some conversations"
+#~ msgstr "Виправлено збої під час запуску для деяких бесід"
+
+#~ msgid "Only save drafts when there are new changes"
+#~ msgstr "Чернетки зберігаються лише за наявності змін"
+
+#~ msgid "Move Undo notification to the message view"
+#~ msgstr "Відхилення сповіщення переміщено до панелі повідомлень"
+
+#~ msgid "Preserve conversation subjects when replying or forwarding"
+#~ msgstr "Збереження теми бесіди під час відповіді або пересилання"
+
+#~ msgid "Disable the composer while messages are being sent"
+#~ msgstr "Закриття редактора написання під час надсилання повідомлень"
+
+#~ msgid "Edit saved draft messages"
+#~ msgstr "Редагування збережених чернеток"
+
+#~ msgid "Make sure we don't save sent messages twice for some account types"
+#~ msgstr ""
+#~ "Виправлено ваду подвійного збереження надісланих повідомлень для деяких "
+#~ "типів облікових записів"
+
+#~ msgid "Complete rewrite from scratch"
+#~ msgstr "Застосунок переписано з нуля"
+
+#~ msgid "io.elementary.mail"
+#~ msgstr "io.elementary.mail"
+
+#~ msgid "Desktop notifications"
+#~ msgstr "Стільничні сповіщення"
+
+#~ msgid "Minor bug fixes"
+#~ msgstr "Виправлено незначні помилки"
+
+#~ msgid "Translation updates"
+#~ msgstr "Оновлено переклади"
+
+#~ msgid "internet-mail"
+#~ msgstr "internet-mail"

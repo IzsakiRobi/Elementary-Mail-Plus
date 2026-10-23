@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema path="/io/elementary/mail/"
+  id="io.elementary.mail">
+    <key name="window-maximized" type="b">
+      <default>false</default>
+      <summary>Whether the window was maximized on last run</summary>
+      <description>Whether the window was maximized on last run</description>
+    </key>
+    <key name="window-size" type="(ii)">
+      <default>(1024, 750)</default>
+      <summary>Most recent window size</summary>
+      <description>Most recent window size (width, height)</description>
+    </key>
+    <key name="paned-start-position" type="i">
+      <default>190</default>
+      <summary>Most recent position of the folders pane</summary>
+      <description>Most recent position of the folders pane</description>
+    </key>
+    <key name="paned-end-position" type="i">
+      <default>400</default>
+      <summary>Most recent position of the conversation list pane</summary>
+      <description>Most recent position of the conversation list pane</description>
+    </key>
+    <key name="selected-folder" type="(ss)">
+      <default>("", "")</default>
+      <summary>The account UID and folder name of the last selected folder</summary>
+      <description>The account UID and folder name of the last selected folder</description>
+    </key>
+    <key name="selected-folder-flags" type="u">
+      <default>0</default>
+      <summary>Cached flags of the last selected folder</summary>
+    </key>
+    <key name="always-load-remote-images" type="b">
+      <default>true</default>
+      <summary>Whether to always load remote images without prompting</summary>
+      <description>Whether to always load remote images without prompting</description>
+    </key>
+    <key name="run-in-background" type="b">
+      <default>true</default>
+      <summary>Start at login and keep running when the window is closed</summary>
+    </key>
+    <key name="show-avatars" type="b">
+      <default>true</default>
+      <summary>Show avatars in the message list and message headers</summary>
+    </key>
+    <key name="mark-read-delay" type="i">
+      <range min="0" max="5"/>
+      <default>5</default>
+      <summary>Seconds before an opened conversation is marked as read</summary>
+    </key>
+    <key name="undo-time" type="i">
+      <range min="0" max="5"/>
+      <default>5</default>
+      <summary>Seconds available to undo sending or deleting</summary>
+    </key>
+    <key name="undo-send" type="b">
+      <default>true</default>
+      <summary>Delay sending to allow Undo</summary>
+    </key>
+    <key name="undo-delete" type="b">
+      <default>true</default>
+      <summary>Delay deletion to allow Undo</summary>
+    </key>
+    <key name="load-remote-avatars" type="b">
+      <default>true</default>
+      <summary>Load sender avatars and company logos</summary>
+      <description>Use system address book photos, then Logo.dev and Gravatar. Disabling remote lookups keeps local contact photos and initials.</description>
+    </key>
+    <key name="hide-read-conversations" type="b">
+      <default>false</default>
+      <summary>Whether to hide read conversations in the list</summary>
+      <description>Stores the last used state of the “Hide read conversations” filter</description>
+    </key>
+    <key name="hide-unstarred-conversations" type="b">
+      <default>false</default>
+      <summary>Whether to hide unstarred conversations in the list</summary>
+      <description>Stores the last used state of the “Hide unstarred conversations” filter</description>
+    </key>
+    <key name="remote-images-whitelist" type="as">
+      <default>[]</default>
+      <summary>A list of sender addresses for which remote images will be automatically loaded</summary>
+      <description>A list of sender addresses for which remote images will be automatically loaded</description>
+    </key>
+  </schema>
+  <schema id="io.elementary.mail.accounts">
+    <key name="cached-folders" type="a(sssuii)">
+      <default>[]</default>
+      <summary>Cached folder paths, names, parents, flags and message counts</summary>
+    </key>
+    <key name="expanded-folders" type="as">
+      <default>[]</default>
+      <summary>The list of all the expanded folders</summary>
+      <description>The list of all the expanded folders</description>
+    </key>
+    <key name="expanded" type="b">
+      <default>true</default>
+      <summary>Whether the account itself is expanded</summary>
+      <description>Whether the account itself is expanded</description>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,984 @@
+# po/geary.pot
+# PO message string template file for Geary email client
+# Copyright 2012-2013 Yorba Foundation
+# This file is distributed under the GNU LGPL, version 2.1.
+#
+# Translators:
+# preahkumpii <gospeltocambodia@gmail.com>, 2012
+msgid ""
+msgstr ""
+"Project-Id-Version: geary-0.4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-08 16:46+0000\n"
+"PO-Revision-Date: 2017-04-15 20:37+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"Language-Team: km (generated) <https://l10n.elementary.io/projects/mail/mail/"
+"km/>\n"
+"Language: km\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.13-dev\n"
+"X-Launchpad-Export-Date: 2017-03-09 05:59+0000\n"
+
+#: src/Application.vala:145
+msgid "Unable to open System Settings"
+msgstr ""
+
+#: src/Application.vala:146
+msgid ""
+"Open System Settings manually or install Evolution to set up online accounts."
+msgstr ""
+
+#: src/Application.vala:217
+msgid ""
+"Mail will automatically start when this device turns on and run when its "
+"window is closed so that it can send notifications when new mail arrives."
+msgstr ""
+
+#: src/Composer.vala:94 src/MessageList/MessageListItem.vala:102
+msgid "From:"
+msgstr "មក​ពី ៖"
+
+#: src/Composer.vala:114 src/MessageList/MessageListItem.vala:108
+msgid "To:"
+msgstr "ផ្ញើ​ទៅ ៖"
+
+#: src/Composer.vala:120
+#, fuzzy
+msgid "Cc"
+msgstr "ចម្លង ៖"
+
+#: src/Composer.vala:122
+#, fuzzy
+msgid "Bcc"
+msgstr "លាក់ ៖"
+
+#: src/Composer.vala:133 src/MessageList/MessageListItem.vala:148
+msgid "Cc:"
+msgstr "ចម្លង ៖"
+
+#: src/Composer.vala:152
+msgid "Bcc:"
+msgstr "លាក់ ៖"
+
+#: src/Composer.vala:171 src/MessageList/MessageListItem.vala:114
+msgid "Subject:"
+msgstr "ប្រធាន​បទ ៖"
+
+#: src/Composer.vala:205
+msgid "Insert Image"
+msgstr ""
+
+#: src/Composer.vala:232
+msgid "Delete draft"
+msgstr ""
+
+#: src/Composer.vala:240
+msgid "Attach file"
+msgstr ""
+
+#: src/Composer.vala:251
+msgid "Insert Signature…"
+msgstr ""
+
+#: src/Composer.vala:256
+msgid "Send"
+msgstr ""
+
+#: src/Composer.vala:299
+msgid "New Message"
+msgstr "សារ​ថ្មី"
+
+#: src/Composer.vala:445
+msgid "Choose a file"
+msgstr "សូម​ជ្រើស​រើស​ឯកសារ​មួយ"
+
+#: src/Composer.vala:448
+#, fuzzy
+#| msgid "_Attach"
+msgid "Attach"
+msgstr "_ភ្ជាប់"
+
+#: src/Composer.vala:449 src/Composer.vala:472 src/Composer.vala:763
+#: src/Dialogs/InsertLinkDialog.vala:66
+#: src/MessageList/AttachmentButton.vala:144
+msgid "Cancel"
+msgstr ""
+
+#: src/Composer.vala:464
+msgid "Images"
+msgstr ""
+
+#: src/Composer.vala:468
+#, fuzzy
+#| msgid "Choose a file"
+msgid "Choose an image"
+msgstr "សូម​ជ្រើស​រើស​ឯកសារ​មួយ"
+
+#: src/Composer.vala:471
+msgid "Insert"
+msgstr ""
+
+#: src/Composer.vala:500
+msgid "Unable to insert image"
+msgstr ""
+
+#: src/Composer.vala:501
+msgid "There was an unexpected error while trying to insert the image."
+msgstr ""
+
+#: src/Composer.vala:665
+msgid "%a, %b %-e, %Y at %-l:%M %p"
+msgstr "%a, %-e %b, %Y នៅ​ម៉ោង %-l:%M %p"
+
+#: src/Composer.vala:695
+#, c-format
+msgid "On %1$s, %2$s wrote:"
+msgstr ""
+
+#: src/Composer.vala:699
+msgid "---------- Forwarded message ----------"
+msgstr "---------- សារ​ដែល​បាន​បញ្ជូន​បន្ត ----------"
+
+#: src/Composer.vala:701
+#, fuzzy, c-format
+msgid "From: %s<br/>"
+msgstr "មក​ពី ៖ %s\n"
+
+#: src/Composer.vala:702
+#, fuzzy, c-format
+msgid "Subject: %s<br/>"
+msgstr "ប្រធាន​បទ ៖"
+
+#: src/Composer.vala:703
+#, fuzzy, c-format
+msgid "Date: %s<br/>"
+msgstr "កាលបរិច្ឆេទ ៖ %s\n"
+
+#: src/Composer.vala:704
+#, fuzzy, c-format
+msgid "To: %s<br/>"
+msgstr "ផ្ញើ​ទៅ ៖ %s\n"
+
+#: src/Composer.vala:706
+#, c-format
+msgid "Cc: %s<br/>"
+msgstr ""
+
+#: src/Composer.vala:754
+msgid "Permanently delete this draft?"
+msgstr ""
+
+#: src/Composer.vala:755
+msgid ""
+"You cannot undo this action, nor recover your draft once it has been deleted."
+msgstr ""
+
+#: src/Composer.vala:765
+msgid "Delete Draft"
+msgstr ""
+
+#: src/Composer.vala:789
+#, fuzzy
+#| msgid "(no subject)"
+msgid "Send without subject?"
+msgstr "(គ្មាន​ប្រធានបទ)"
+
+#: src/Composer.vala:790
+msgid ""
+"This message has an empty subject field. The recipient may be unable to "
+"infer its scope or importance."
+msgstr ""
+
+#: src/Composer.vala:797
+msgid "Don't Send"
+msgstr ""
+
+#: src/Composer.vala:799
+msgid "Send Anyway"
+msgstr ""
+
+#: src/Composer.vala:830
+msgid "Sent message was not saved"
+msgstr ""
+
+#: src/Composer.vala:831
+msgid ""
+"The message was sent, however a copy was not saved to the Sent message "
+"folder."
+msgstr ""
+
+#: src/Composer.vala:846
+msgid "Unable to send message"
+msgstr ""
+
+#: src/Composer.vala:847
+msgid "There was an unexpected error while sending your message."
+msgstr ""
+
+#: src/Composer.vala:945 src/FolderList/FolderList.vala:55
+msgid "Edit Signatures…"
+msgstr ""
+
+#: src/Composer.vala:949
+msgid "None"
+msgstr "គ្មាន​សោះ"
+
+#: src/Composer.vala:1140
+msgid "Unable to save draft"
+msgstr ""
+
+#: src/Composer.vala:1141
+msgid "There was an unexpected error while saving your draft."
+msgstr ""
+
+#: src/EditorToolbar.vala:55
+msgid "Bold"
+msgstr ""
+
+#: src/EditorToolbar.vala:62
+msgid "Italic"
+msgstr ""
+
+#: src/EditorToolbar.vala:73
+msgid "Underline"
+msgstr ""
+
+#: src/EditorToolbar.vala:85
+msgid "Strikethrough"
+msgstr ""
+
+#: src/EditorToolbar.vala:100
+msgid "Remove formatting"
+msgstr ""
+
+#: src/EditorToolbar.vala:108 src/Dialogs/InsertLinkDialog.vala:68
+msgid "Insert Link"
+msgstr ""
+
+#: src/InboxMonitor.vala:158 src/InboxMonitor.vala:170
+#, c-format
+msgid "%s to %s"
+msgstr ""
+
+#. /TRANSLATORS: The %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#: src/InboxMonitor.vala:165
+#, fuzzy, c-format
+msgid "%u new message"
+msgid_plural "%u new messages"
+msgstr[0] "%d សារ​ថ្មី"
+msgstr[1] "%d សារ​ថ្មី"
+
+#. /TRANSLATORS: The first %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#. /The next %s represents the number of senders
+#: src/InboxMonitor.vala:177
+#, c-format
+msgid "%s from %u sender"
+msgid_plural "%s from %u senders"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/MainWindow.vala:80
+#, fuzzy
+#| msgid "All Mail"
+msgid "Mail"
+msgstr "អ៊ីមែល​ទាំង​អស់"
+
+#: src/MainWindow.vala:123 src/Dialogs/AliasDialog/AliasDialog.vala:96
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:172
+msgid "Undo"
+msgstr ""
+
+#: src/MainWindow.vala:281
+#, fuzzy
+msgid "Message Archived"
+msgid_plural "Messages Archived"
+msgstr[0] "គ្មាន​ជ្រើស​ការ​សន្ទនា."
+msgstr[1] "គ្មាន​ជ្រើស​ការ​សន្ទនា."
+
+#: src/MainWindow.vala:285
+#, fuzzy
+msgid "Couldn't archive message"
+msgstr "សារ​ថ្មី"
+
+#: src/MainWindow.vala:298
+#, fuzzy
+msgid "Message Moved"
+msgid_plural "Messages Moved"
+msgstr[0] "គ្មាន​ជ្រើស​ការ​សន្ទនា."
+msgstr[1] "គ្មាន​ជ្រើស​ការ​សន្ទនា."
+
+#: src/MainWindow.vala:302
+#, fuzzy
+msgid "Couldn't move message"
+msgstr "%d សារ​ថ្មី"
+
+#: src/MainWindow.vala:315
+#, fuzzy
+msgid "Message Deleted"
+msgid_plural "Messages Deleted"
+msgstr[0] "គ្មាន​ជ្រើស​ការ​សន្ទនា."
+msgstr[1] "គ្មាន​ជ្រើស​ការ​សន្ទនា."
+
+#: src/MainWindow.vala:319
+msgid "Couldn't delete message"
+msgstr ""
+
+#: src/WelcomeView.vala:45
+msgid "Connect an Account"
+msgstr ""
+
+#: src/WelcomeView.vala:52
+msgid "Mail uses email accounts configured in System Settings."
+msgstr ""
+
+#: src/WelcomeView.vala:59
+msgid "Online Accounts…"
+msgstr ""
+
+#: src/Backend/Account.vala:48
+msgid "Unable to connect"
+msgstr ""
+
+#: src/Backend/Account.vala:49
+msgid "There was an unexpected error while trying to connect to the server."
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:65
+#, c-format
+msgid "Moving messages… (%u remaining)"
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:98
+msgid "No Archive folder is configured."
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:126
+msgid "The destination folder was not found."
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:130
+msgid "The source folder is the destination folder."
+msgstr ""
+
+#: src/Backend/Session.vala:642
+msgid "New Signature"
+msgstr ""
+
+#: src/Backend/ContactManager.vala:88 src/Backend/ContactManager.vala:122
+#, c-format
+msgid "Couldn't add “%s” to addressbook"
+msgstr ""
+
+#: src/Backend/ContactManager.vala:89
+msgid "No addressbook available."
+msgstr ""
+
+#: src/Backend/ContactManager.vala:123
+msgid "Operation failed."
+msgstr ""
+
+#: src/ConversationList/ConversationItemModel.vala:74
+#: src/ConversationList/ConversationItemModel.vala:112
+msgid ", "
+msgstr ""
+
+#: src/ConversationList/ConversationItemModel.vala:77
+#: src/ConversationList/ConversationItemModel.vala:115
+#: src/ConversationList/ConversationItemModel.vala:123
+#: src/MessageList/AttachmentButton.vala:100
+msgid "Unknown"
+msgstr ""
+
+#: src/ConversationList/ConversationList.vala:85
+msgid "Search Mail"
+msgstr ""
+
+#: src/ConversationList/ConversationList.vala:89
+#, fuzzy
+msgid "Hide read conversations"
+msgstr "ចុះ​កំណត់​ហេតុ​ការ​ត្រួត​ពិនិត្យ​របស់​ការ​សន្ទនា"
+
+#: src/ConversationList/ConversationList.vala:90
+msgid "Hide unstarred conversations"
+msgstr ""
+
+#: src/ConversationList/ConversationList.vala:107
+msgid "Filter Conversations"
+msgstr ""
+
+#: src/ConversationList/ConversationList.vala:130
+#, fuzzy
+msgid "Fetch new messages"
+msgstr "%d សារ​ថ្មី"
+
+#: src/ConversationList/ConversationList.vala:137
+#, fuzzy
+msgid "Fetching new messages…"
+msgstr "%d សារ​ថ្មី"
+
+#: src/ConversationList/ConversationListItem.vala:94
+#, fuzzy
+#| msgid "_Archive"
+msgid "Archive"
+msgstr "_ទុក​ក្នុង​ប័ណ្ណសារ"
+
+#: src/ConversationList/ConversationListItem.vala:99
+msgid "Trash"
+msgstr "សំរាម"
+
+#: src/ConversationList/ConversationListItem.vala:181
+msgid "Unread"
+msgstr ""
+
+#: src/ConversationList/ConversationListItem.vala:194
+#, fuzzy
+msgid "Replied"
+msgstr "_ជំនួស"
+
+#: src/ConversationList/ConversationListItem.vala:198
+#, fuzzy
+msgid "Forwarded"
+msgstr "_បញ្ចូន​បន្ត"
+
+#: src/ConversationList/ConversationListItem.vala:212
+#, fuzzy
+msgid "Move To Trash"
+msgstr "ចុះ​កំណត់​ហេតុ​ការ​ត្រួត​ពិនិត្យ​របស់​ការ​សន្ទនា"
+
+#: src/ConversationList/ConversationListItem.vala:215
+#, fuzzy
+msgid "Mark As Unread"
+msgstr "_សម្គាល់​ជា​មិន​ទាន់​អាន"
+
+#: src/ConversationList/ConversationListItem.vala:217
+#: src/MessageList/MessageList.vala:51
+#, fuzzy
+msgid "Mark as Read"
+msgstr "_សម្គាល់​ជា​បាន​អាន​ហើយ"
+
+#: src/ConversationList/ConversationListItem.vala:221
+#: src/MessageList/MessageList.vala:52
+#, fuzzy
+msgid "Star"
+msgstr "_ដាក់​ផ្កាយ"
+
+#: src/ConversationList/ConversationListItem.vala:223
+#: src/MessageList/MessageList.vala:53
+msgid "Unstar"
+msgstr ""
+
+#: src/Dialogs/InsertLinkDialog.vala:29
+msgid "URL:"
+msgstr ""
+
+#: src/Dialogs/InsertLinkDialog.vala:39
+msgid "Link Text:"
+msgstr ""
+
+#: src/Dialogs/InsertLinkDialog.vala:45
+msgid "Example Website"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/Alias.vala:52
+msgid "John Doe"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/Alias.vala:56
+msgid "Name"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/Alias.vala:75
+#, fuzzy
+#| msgid "New Message"
+msgid "E-mail Address"
+msgstr "សារ​ថ្មី"
+
+#: src/Dialogs/AliasDialog/Alias.vala:80
+msgid "Delete alias"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/Alias.vala:100
+msgid "Edit alias"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/Alias.vala:175
+msgid "Name not set"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:33
+msgid "No Aliases"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:37
+msgid "Add aliases using the button in the toolbar below"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:67
+msgid "Add Alias…"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:104
+msgid "Aliases"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:108
+msgid "Close"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:178
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:330
+#, c-format
+msgid "'%s' deleted"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:39
+msgid "No Signatures"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:43
+msgid "Add signatures using the button in the toolbar below"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:67
+msgid "Create Signature"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:86
+msgid "Title"
+msgstr ""
+
+#. Work around a styling issue
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:99
+msgid "For example “Work” or “Personal”"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:122
+msgid "Delete"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:131
+msgid "Set Default For…"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:156
+msgid "Signature"
+msgstr ""
+
+#: src/FolderList/AccountItemModel.vala:155
+msgid "Edit Aliases…"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:48
+msgid "Refresh folder"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:53
+msgid "Rename folder"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:146
+#: src/FolderList/FolderItemModel.vala:175
+#: src/FolderList/FolderItemModel.vala:193
+#, c-format
+msgid "Couldn't rename “%s”"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:147
+msgid "Folder names cannot contain “/”"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:176
+#, c-format
+msgid "A folder named “%s” already exists"
+msgstr ""
+
+#: src/FolderList/FolderList.vala:34
+#, fuzzy
+msgid "Compose new message"
+msgstr "%d សារ​ថ្មី"
+
+#: src/FolderList/FolderList.vala:56
+msgid "Account Settings…"
+msgstr ""
+
+#: src/FolderList/FolderList.vala:59
+msgid "Always Show Remote Images"
+msgstr ""
+
+#: src/FolderList/FolderList.vala:65
+msgid "Menu"
+msgstr ""
+
+#: src/FolderList/GroupedFolderItemModel.vala:38
+#, fuzzy
+#| msgid "Inbox"
+msgctxt "Inbox Folder"
+msgid "Inbox"
+msgstr "ប្រអប់​ទទួល"
+
+#: src/FolderList/GroupedFolderItemModel.vala:42
+#, fuzzy
+#| msgid "_Archive"
+msgctxt "Archive Folder"
+msgid "Archive"
+msgstr "_ទុក​ក្នុង​ប័ណ្ណសារ"
+
+#: src/FolderList/GroupedFolderItemModel.vala:46
+#, fuzzy
+#| msgid "Sent Mail"
+msgctxt "Sent Folder"
+msgid "Sent"
+msgstr "អ៊ីមែលផ្ញើ​ហើយ"
+
+#: src/FolderList/SessionItemModel.vala:28
+msgid "All Mailboxes"
+msgstr ""
+
+#: src/MessageList/MessageList.vala:28 src/MessageList/MessageListItem.vala:210
+msgid "Reply"
+msgstr ""
+
+#: src/MessageList/MessageList.vala:37 src/MessageList/MessageListItem.vala:213
+#, fuzzy
+msgid "Reply All"
+msgstr "_ឆ្លើយ​តប"
+
+#: src/MessageList/MessageList.vala:46 src/MessageList/MessageListItem.vala:216
+msgid "Forward"
+msgstr ""
+
+#: src/MessageList/MessageList.vala:50
+#, fuzzy
+msgid "Mark as Unread"
+msgstr "_សម្គាល់​ជា​មិន​ទាន់​អាន"
+
+#: src/MessageList/MessageList.vala:60
+msgid "Mark Conversation"
+msgstr ""
+
+#: src/MessageList/MessageList.vala:68
+#, fuzzy
+msgid "Move Conversation to…"
+msgstr "ចុះ​កំណត់​ហេតុ​ការ​ត្រួត​ពិនិត្យ​របស់​ការ​សន្ទនា"
+
+#: src/MessageList/MessageList.vala:77
+#, fuzzy
+msgid "Move conversations to archive"
+msgstr "ចុះ​កំណត់​ហេតុ​ការ​ត្រួត​ពិនិត្យ​របស់​ការ​សន្ទនា"
+
+#: src/MessageList/MessageList.vala:85
+#, fuzzy
+msgid "Move conversations to Trash"
+msgstr "ចុះ​កំណត់​ហេតុ​ការ​ត្រួត​ពិនិត្យ​របស់​ការ​សន្ទនា"
+
+#: src/MessageList/MessageList.vala:100
+#, fuzzy
+msgid "No Message Selected"
+msgstr "គ្មាន​ជ្រើស​ការ​សន្ទនា."
+
+#. /TRANSLATORS: The first %s represents the date and the second %s the time of the message (either when it was received or sent)
+#: src/MessageList/MessageListItem.vala:190
+#, c-format
+msgid "%s at %s"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:198
+#: src/MessageList/MessageListItem.vala:397
+msgid "Unstar message"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:201
+#: src/MessageList/MessageListItem.vala:393
+#, fuzzy
+msgid "Star message"
+msgstr "សារ​ថ្មី"
+
+#: src/MessageList/MessageListItem.vala:221
+msgid "Print…"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:231
+msgid "More"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:281
+msgid "Open in Calendar"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:286
+msgid "This message contains a Calendar Event."
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:297
+msgid "Show Images"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:298
+msgid "Always Show from Sender"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:302
+msgid "This message contains remote images."
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:341
+msgid "This message contains one or more attachments"
+msgstr ""
+
+#. / Translators: This is the default file name of a printed email
+#: src/MessageList/MessageListItem.vala:417
+#, fuzzy
+#| msgid "New Message"
+msgid "Email Message"
+msgstr "សារ​ថ្មី"
+
+#: src/MessageList/MessageListItem.vala:439
+msgid "Unable to print email"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:691
+#, c-format
+msgid "Trust and open “%s”?"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:692
+msgid ""
+"Attachments may cause damage to your system if opened. Only open files from "
+"trusted sources."
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:699
+msgid "Open Anyway"
+msgstr ""
+
+#: src/MessageList/AttachmentButton.vala:57
+msgid "Open"
+msgstr "បើក"
+
+#: src/MessageList/AttachmentButton.vala:58
+msgid "Save As…"
+msgstr ""
+
+#: src/MessageList/AttachmentButton.vala:143
+msgid "Save"
+msgstr ""
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:22
+msgid "No mailboxes found"
+msgstr ""
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:26
+msgid "Try changing search terms"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Reply to All"
+#~ msgstr "_ឆ្លើយ​តប"
+
+#~ msgid "Drafts"
+#~ msgstr "សេចក្ដី​ព្រាង"
+
+#~ msgid "Starred"
+#~ msgstr "កត់​ផ្កាយ"
+
+#~ msgid "Spam"
+#~ msgstr "សារ​ឥត​បាន​ការ"
+
+#~ msgid "Outbox"
+#~ msgstr "ប្រអប់​ចេញ"
+
+#~ msgid "Gmail"
+#~ msgstr "Gmail"
+
+#~ msgid "Yahoo! Mail"
+#~ msgstr "Yahoo! Mail"
+
+#~ msgid "Other"
+#~ msgstr "ទៀត"
+
+#~ msgid "%s wrote:"
+#~ msgstr "%s បាន​សរសេរ​ថា ៖"
+
+#~ msgid "none"
+#~ msgstr "គ្មាន"
+
+#~ msgid "Mail Client"
+#~ msgstr "កម្ម​វិធី​ផ្ញើ​អ៊ីមែល"
+
+#~ msgid "Visit the Yorba web site"
+#~ msgstr "ទៅ​ទស្សនា​តំបន់​បណ្ដាញ​របស់ Yorba"
+
+#~ msgid "_Preferences"
+#~ msgstr "_ចំណង់​ចំណូល​ចិត្ត"
+
+#~ msgid "_Help"
+#~ msgstr "_ជំនួយ"
+
+#~ msgid "_About"
+#~ msgstr "_អំពី"
+
+#~ msgid "_Quit"
+#~ msgstr "_បោះ​បង់"
+
+#~ msgid "_Mark as..."
+#~ msgstr "_សម្គាល់​ជា..."
+
+#~ msgid "_Label"
+#~ msgstr "_ដាក់​ស្លាក"
+
+#~ msgid "_Move"
+#~ msgstr "_ផ្លាស់​ទី"
+
+#~ msgid "Your settings are insecure"
+#~ msgstr "ការ​កំណត់​របស់​អ្នក​គ្មាន​សុវត្ថិភាព​ទេ"
+
+#~ msgid ""
+#~ "Your IMAP and/or SMTP settings do not specify SSL or TLS.  This means "
+#~ "your username and password could be read by another person on the "
+#~ "network.  Are you sure you want to do this?"
+#~ msgstr ""
+#~ "ការ​កំណត់​របស់​អ្នក​សំរាប់ IMAP និង/ឬ SMTP មិន​បញ្ជាក់​លម្អិត SSL ឬ TLS ទេ ។ នេះ​មាន​ន័យ​ថា អ្នក​"
+#~ "ដទៃ​នៅ​ក្នុង​បណ្ដាញ​នេះ​អាច​អាន​ ឈ្មោះ​អ្នក​ប្រើ និង​ពាក្យ​សម្ងាត់ របស់​អ្នក​បាន តើ​អ្នក​ប្រាកដ​ថា ចង់​ធ្វើ​"
+#~ "នេះ​ឬ​ទេ ?"
+
+#~ msgid "Labels"
+#~ msgstr "ស្លាក"
+
+#~ msgid "About %s"
+#~ msgstr "អំពី %s"
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "ទទួល​ស្គាល់​អ្នក​បក​ប្រែ\n"
+#~ "\n"
+#~ "Launchpad Contributions:\n"
+#~ "  Jim Nelson https://launchpad.net/~yorba-jim"
+
+#~ msgid "Are you sure you want to open \"%s\"?"
+#~ msgstr "តើ​អ្នក​ប្រាកដ​ថា​ចង់​បើក \"%s\" ?"
+
+#~ msgid ""
+#~ "Attachments may cause damage to your system if opened.  Only open files "
+#~ "from trusted sources."
+#~ msgstr ""
+#~ "ឯកសារ​ភ្ជាប់​អាច​បង្ខូច​ប្រព័ន្ធ​អ្នក​បាន បើ​សិន​ជា​អ្នក​បើក​វា​ឡើង ចូរ​បើក​តែ​ឯកសារ​ដែល​មាន​ប្រភព​ "
+#~ "ដែលអ្នក​ទុក​ចិត្ត​​បុណ្ណោះ ។"
+
+#~ msgid "A file named \"%s\" already exists.  Do you want to replace it?"
+#~ msgstr "ឯកសារ​មួយ​ ឈ្មោះ​ថា \\\"%s\\\" មាន​នៅ​ហើយ ។ តើ​អ្នក​ចង់​ជំនួស​វា​ឬ​ទេ ?"
+
+#~ msgid ""
+#~ "The file already exists in \"%s\".  Replacing it will overwrite its "
+#~ "contents."
+#~ msgstr "ឯកសារ​នេះ​មាន​នៅ​ហើយ​ក្នុង \"%s\" ។ បើ​សិន​ជំនួស​វា នោះ​នឹង​សរសេរ​ជាន់​លើ​មាតិកា​របស់​វា ។"
+
+#~ msgid "Output debugging information"
+#~ msgstr "ចេញ​ពត៌មាន​ពី​ការ​បំបាត់​កំហុស"
+
+#~ msgid "Log network activity"
+#~ msgstr "ចុះ​កំណត់​ហេតុ​សកម្មភាព​របស់​បណ្ដាញ"
+
+#~ msgid "Log IMAP replay queue"
+#~ msgstr "ចុះ​កំណត់​ហេតុ​របស់​ជួរ IMAP replay"
+
+#~ msgid "Log network serialization"
+#~ msgstr "ចុះ​កំណត់​ហេតុ​ការ​សៀរៀល​របស់​បណ្ដាញ"
+
+#~ msgid "Log periodic activity"
+#~ msgstr "ចុះ​កំណត់​ហេតុ​សកម្មភាព​តាម​ពេល​កំណត់"
+
+#~ msgid "Log database queries (generates lots of messages)"
+#~ msgstr "ចុះ​កំណត់​ហេតុ​សំនួរ​របស់​មូលដ្ឋាន​ទិន្នន័យ (បង្កើត​សារ​ជា​ច្រើន)"
+
+#~ msgid "Log folder normalization"
+#~ msgstr "ចុះ​កំណត់​ហេតុ​ការ​ធ្វើ​ឲ្យ​ថត​ទៅ​ជា​ធម្មតា"
+
+#~ msgid "Display program version"
+#~ msgstr "បង្ហាញ​កំណែ​កម្ម​វិធី"
+
+#~ msgid "Please report comments, suggestions and bugs to:"
+#~ msgstr "សូម​របាយការណ៍​យោបល់ សំណូម ហើយ​និង​កំហុស ដល់ ៖"
+
+#~ msgid "Failed to parse command line options: %s\n"
+#~ msgstr "បរាជ័យ​ញែក​ជម្រើស​របស់​បន្ទាត់​ពាក្យ​បញ្ជា ៖ %s\n"
+
+#~ msgid "Unrecognized command line option \"%s\"\n"
+#~ msgstr "មិន​ស្គាល់​ជម្រើស​ក្នុង​បន្ទាត់​ពាក្យ​បញ្ជា \"%s\"\n"
+
+#~ msgid "Me"
+#~ msgstr "ខ្ញុំ"
+
+#~ msgid "Welcome to Geary."
+#~ msgstr "សូម​ស្វាគមន៍ Geary."
+
+#~ msgid "Enter your account information to get started."
+#~ msgstr "សូម​បញ្ចូល​ពត៌មាន​របស់​គណនី​អ្នក​ដើម្បី​ចាប់​ផ្ដើម ។"
+
+#~ msgid "%l:%M %P"
+#~ msgstr "%l:%M %P"
+
+#~ msgid "%H:%M"
+#~ msgstr "%H:%M"
+
+#~ msgctxt "Default clock format"
+#~ msgid "%l:%M %P"
+#~ msgstr "%l:%M %P"
+
+#~ msgid "%b %-e"
+#~ msgstr "%-e %b"
+
+#~ msgid "%x"
+#~ msgstr "%x"
+
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%-e %B, %Y %-l:%M  %P"
+
+#~ msgid "%B %-e, %Y %-H:%M"
+#~ msgstr "%-e %B, %Y %-H:%M"
+
+#~ msgctxt "Default full date"
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%-e %B, %Y %-l:%M  %P"
+
+#~ msgid "bytes"
+#~ msgstr "បៃ"
+
+#~ msgctxt "Abbreviation for terabyte"
+#~ msgid "TB"
+#~ msgstr "តេរ៉ាបៃ"
+
+#~ msgctxt "Abbreviation for gigabyte"
+#~ msgid "GB"
+#~ msgstr "ជីកាបៃ"
+
+#~ msgctxt "Abbreviation for megabyte"
+#~ msgid "MB"
+#~ msgstr "មេកាបៃ"
+
+#~ msgctxt "Abbreviation for kilobyte"
+#~ msgid "KB"
+#~ msgstr "គីឡូបៃ"
+
+#~ msgid "Date:"
+#~ msgstr "កាលបរិច្ឆេទ ៖"
+
+#~ msgid "_Copy"
+#~ msgstr "_ចម្លង"
+
+#~ msgid "_Save As..."
+#~ msgstr "_រក្សាទុក​ជា…"
+
+#~ msgid "_View Source"
+#~ msgstr "_មើល​ប្រភព"
+
+#~ msgid "Failed to open default text editor."
+#~ msgstr "បរាជ័យ​បើក​កម្ម​វិធី​និពន្ធ​អត្ថបទ​ដ៏​លំនាំ​ដើម ។"
+
+#~ msgid "Cannot add attachment"
+#~ msgstr "មិន​អាច​បន្ថែម​ឯកសារ​ភ្ជាប់​បាន​ទេ"
+
+#~ msgid "_Cancel"
+#~ msgstr "_បោះ​បង់"

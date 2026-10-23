@@ -1,0 +1,294 @@
+/*
+ * SPDX-License-Identifier: LGPL-3.0-or-later
+ * SPDX-FileCopyrightText: 2017-2026 elementary, Inc. (https://elementary.io)
+ *
+ * Authored by: Corentin Noël <corentin@elementary.io>
+ */
+
+public class Mail.ConversationListItem : VirtualizingListBoxRow {
+    public signal void select ();
+
+    private Gtk.Overlay avatar_overlay;
+    private SenderAvatar avatar;
+    private Gtk.Image status_icon;
+    private Gtk.Label date;
+    private Gtk.Label messages;
+    private Gtk.Label source;
+    private Gtk.Label topic;
+    private Gtk.Revealer message_count_revealer;
+    private Gtk.Revealer flagged_icon_revealer;
+    private Gtk.Revealer status_revealer;
+    private Gtk.Grid grid;
+    private Hdy.Carousel carousel;
+    private Gtk.GestureMultiPress gesture_controller;
+    private Gtk.EventControllerKey key_controller;
+    private Gtk.Menu menu;
+
+    construct {
+        status_icon = new Gtk.Image.from_icon_name ("mail-unread-symbolic", Gtk.IconSize.MENU);
+
+        status_revealer = new Gtk.Revealer () {
+            child = status_icon
+        };
+
+        var flagged_icon = new Gtk.Image.from_icon_name ("starred-symbolic", Gtk.IconSize.MENU) {
+            pixel_size = 16
+        };
+        flagged_icon.get_style_context ().add_class ("avatar-star");
+        flagged_icon_revealer = new Gtk.Revealer () {
+            child = flagged_icon,
+            halign = END,
+            valign = END,
+            transition_type = CROSSFADE
+        };
+        status_revealer.halign = END;
+        status_revealer.valign = START;
+        status_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
+        status_icon.pixel_size = 12;
+
+        source = new Gtk.Label (null) {
+            hexpand = true,
+            ellipsize = Pango.EllipsizeMode.END,
+            use_markup = true,
+            xalign = 0
+        };
+        source.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+
+        messages = new Gtk.Label (null) {
+            halign = Gtk.Align.END
+        };
+        messages.get_style_context ().add_class (Granite.STYLE_CLASS_BADGE);
+        messages.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+
+        message_count_revealer = new Gtk.Revealer () {
+            child = messages
+        };
+
+        topic = new Gtk.Label (null) {
+            hexpand = true,
+            ellipsize = Pango.EllipsizeMode.END,
+            xalign = 0
+        };
+
+        date = new Gtk.Label (null) {
+            halign = Gtk.Align.END
+        };
+        date.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+
+        grid = new Gtk.Grid () {
+            margin_top = 12,
+            margin_bottom = 12,
+            margin_start = 12,
+            margin_end = 12,
+            column_spacing = 8,
+            row_spacing = 6,
+            hexpand = true
+        };
+
+        avatar = new SenderAvatar (40) { valign = CENTER };
+        avatar_overlay = new Gtk.Overlay ();
+        avatar_overlay.add (avatar);
+        avatar_overlay.add_overlay (status_revealer);
+        avatar_overlay.add_overlay (flagged_icon_revealer);
+        avatar_overlay.set_overlay_pass_through (status_revealer, true);
+        avatar_overlay.set_overlay_pass_through (flagged_icon_revealer, true);
+        avatar_overlay.valign = CENTER;
+        update_avatar_layout ();
+        ulong avatar_visibility_handler = Application.settings.changed["show-avatars"].connect (update_avatar_layout);
+        destroy.connect (() => Application.settings.disconnect (avatar_visibility_handler));
+
+        grid.attach (avatar_overlay, 0, 0, 1, 2);
+        grid.attach (source, 1, 0, 1, 1);
+        grid.attach (date, 2, 0, 2, 1);
+        grid.attach (topic, 1, 1, 2, 1);
+        grid.attach (message_count_revealer, 3, 1);
+
+        var archive_affordance = new SwipeAffordance (
+            _("Archive"), "mail-archive-symbolic", END
+        );
+        archive_affordance.get_style_context ().add_class ("archive");
+
+        var trash_affordance = new SwipeAffordance (
+            _("Trash"), "edit-delete-symbolic", START
+        );
+        trash_affordance.get_style_context ().add_class ("trash");
+
+        carousel = new Hdy.Carousel () {
+            allow_scroll_wheel = false
+        };
+        carousel.add (grid);
+        carousel.prepend (archive_affordance);
+        carousel.add (trash_affordance);
+        carousel.scroll_to (grid);
+
+        get_style_context ().add_class ("conversation-list-item");
+        child = carousel;
+
+        show_all ();
+
+        gesture_controller = new Gtk.GestureMultiPress (this) {
+            button = Gdk.BUTTON_SECONDARY,
+            propagation_phase = BUBBLE
+        };
+
+        gesture_controller.released.connect ((n_press, x, y) => {
+            select ();
+            menu.popup_at_pointer (null);
+        });
+
+        key_controller = new Gtk.EventControllerKey (this);
+
+        key_controller.key_released.connect ((keyval) => {
+            if (keyval != Gdk.Key.Menu) {
+                return;
+            }
+
+            menu.popup_at_widget (this, Gdk.Gravity.EAST, Gdk.Gravity.CENTER, null);
+        });
+
+        carousel.page_changed.connect ((index) => {
+            if (index == 1) {
+                return;
+            }
+
+            select ();
+
+            var main_window = (MainWindow)get_toplevel ();
+            if (index == 2) {
+                main_window.activate_action (MainWindow.ACTION_MOVE_TO_TRASH, null);
+            } else if (index == 0) {
+                main_window.activate_action (MainWindow.ACTION_ARCHIVE, null);
+            }
+
+            Idle.add (() => {
+                carousel.scroll_to_full (grid, 0);
+                return Source.REMOVE;
+            });
+        });
+    }
+
+    private void update_avatar_layout () {
+        bool show = Application.settings.get_boolean ("show-avatars");
+        avatar_overlay.width_request = show ? -1 : 16;
+        avatar_overlay.height_request = show ? -1 : 36;
+    }
+
+    public void bind_model (ConversationItemModel item_model) {
+        date.label = item_model.formatted_date;
+        topic.label = item_model.subject;
+
+        var source_label_text = "";
+        if (Camel.FolderInfoFlags.TYPE_SENT == (item_model.folder_info_flags & Camel.FOLDER_TYPE_MASK)) {
+            source_label_text = item_model.to;
+        } else {
+            source_label_text = item_model.from;
+        }
+        avatar.bind_sender (source_label_text, item_model.avatar_address);
+        source.label = GLib.Markup.escape_text (source_label_text);
+        var tooltip = GLib.Markup.printf_escaped ("<b>%s</b>\n%s", source_label_text, item_model.subject);
+        if (tooltip_markup != tooltip) {
+            tooltip_markup = tooltip;
+        }
+
+        uint num_messages = item_model.num_messages;
+        messages.label = num_messages > 1 ? "%u".printf (num_messages) : null;
+        message_count_revealer.reveal_child = num_messages > 1;
+
+        if (item_model.unread) {
+            grid.get_style_context ().add_class ("unread-message");
+
+            status_icon.icon_name = "mail-unread-symbolic";
+            if (status_icon.tooltip_text != _("Unread")) {
+                status_icon.tooltip_text = _("Unread");
+            }
+            status_icon.get_style_context ().add_class (Granite.STYLE_CLASS_ACCENT);
+
+            status_revealer.reveal_child = true;
+
+            source.get_style_context ().add_class (Granite.STYLE_CLASS_ACCENT);
+        } else {
+            grid.get_style_context ().remove_class ("unread-message");
+            status_icon.get_style_context ().remove_class (Granite.STYLE_CLASS_ACCENT);
+            source.get_style_context ().remove_class (Granite.STYLE_CLASS_ACCENT);
+
+            if (item_model.replied_all || item_model.replied) {
+                status_icon.icon_name = "mail-replied-symbolic";
+                if (status_icon.tooltip_text != _("Replied")) {
+                    status_icon.tooltip_text = _("Replied");
+                }
+                status_revealer.reveal_child = true;
+            } else if (item_model.forwarded) {
+                status_icon.icon_name = "mail-forwarded-symbolic";
+                if (status_icon.tooltip_text != _("Forwarded")) {
+                    status_icon.tooltip_text = _("Forwarded");
+                }
+                status_revealer.reveal_child = true;
+            } else {
+                status_revealer.reveal_child = false;
+            }
+        }
+
+        flagged_icon_revealer.reveal_child = item_model.flagged;
+
+        var menu_model = new Menu ();
+        menu_model.append ((item_model.folder_info_flags & Camel.FOLDER_TYPE_MASK) == Camel.FolderInfoFlags.TYPE_TRASH ? _("Delete Permanently") : _("Move To Trash"), MainWindow.ACTION_PREFIX + MainWindow.ACTION_MOVE_TO_TRASH);
+
+        if (!item_model.unread) {
+            menu_model.append (_("Mark As Unread"), MainWindow.ACTION_PREFIX + MainWindow.ACTION_MARK_UNREAD);
+        } else {
+            menu_model.append (_("Mark as Read"), MainWindow.ACTION_PREFIX + MainWindow.ACTION_MARK_READ);
+        }
+
+        if (!item_model.flagged) {
+            menu_model.append (_("Star"), MainWindow.ACTION_PREFIX + MainWindow.ACTION_MARK_STAR);
+        } else {
+            menu_model.append (_("Unstar"), MainWindow.ACTION_PREFIX + MainWindow.ACTION_MARK_UNSTAR);
+        }
+
+        menu = new Gtk.Menu.from_model (menu_model) {
+            attach_widget = this
+        };
+    }
+
+    private class SwipeAffordance : Gtk.Box {
+        public Gtk.Align alignment { get; construct; }
+        public string icon_name { get; construct; }
+        public string label { get; construct; }
+
+        class construct {
+            set_css_name ("affordance");
+        }
+
+        public SwipeAffordance (string label, string icon_name, Gtk.Align alignment) {
+            Object (
+                alignment: alignment,
+                icon_name: icon_name,
+                label: label
+            );
+        }
+
+        construct {
+            var image = new Gtk.Image.from_icon_name (icon_name, MENU);
+
+            var label = new Gtk.Label (label);
+            label.get_style_context ().add_class (Granite.STYLE_CLASS_SMALL_LABEL);
+
+            var box = new Gtk.Box (VERTICAL, 3) {
+                halign = alignment,
+                hexpand = true,
+                valign = CENTER,
+                vexpand = false
+            };
+            box.add (image);
+            box.add (label);
+
+            add (box);
+
+            if (alignment == Gtk.Align.START) {
+                get_style_context ().add_class ("start");
+            } else if (alignment == Gtk.Align.END) {
+                get_style_context ().add_class ("end");
+            }
+        }
+    }
+}

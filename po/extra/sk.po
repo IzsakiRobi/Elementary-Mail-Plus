@@ -1,0 +1,326 @@
+# Slovak translation for pantheon-mail
+# Copyright (c) 2016 Rosetta Contributors and Canonical Ltd 2016
+# This file is distributed under the same license as the pantheon-mail package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+# Martin Korpala <korpyk@gmail.com>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pantheon-mail\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-08 16:46+0000\n"
+"PO-Revision-Date: 2022-09-30 22:24+0000\n"
+"Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
+"Language-Team: Slovak <https://l10n.elementary.io/projects/mail/extra/sk/>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 4.4.2\n"
+"X-Launchpad-Export-Date: 2017-03-09 06:00+0000\n"
+
+#: data/mail.metainfo.xml.in:10 data/io.elementary.mail.desktop.in:2
+msgid "Mail"
+msgstr "Pošta"
+
+#: data/mail.metainfo.xml.in:11 data/io.elementary.mail.desktop.in:3
+msgid "Send and receive mail"
+msgstr "Odosielajte a prijímajte poštu"
+
+#: data/mail.metainfo.xml.in:13
+msgid ""
+"Mail is designed to let you manage your email quickly and effortlessly. Its "
+"interface is based on conversations, so you can read an entire discussion "
+"without having to click from message to message."
+msgstr ""
+"Pošta je navrhnutá tak, aby vám pomohla spravovať vaše e-maily rýchlo a bez "
+"námahy. Jej prostredie je založené na konverzáciách, takže si môžete "
+"prečítať celú diskusiu bez toho, aby ste sa preklikávali medzi jednotlivými "
+"správami."
+
+#: data/mail.metainfo.xml.in:15
+msgid "Lightweight mail client with full IMAP support"
+msgstr "Jednoduchý e-mailový klient s plnou podporou IMAP"
+
+#: data/mail.metainfo.xml.in:16
+msgid "Mail grouped into conversations, not a tree of threads"
+msgstr "Pošta zoskupená do konverzácií, nie do stromu vlákien"
+
+#: data/mail.metainfo.xml.in:17
+msgid "As-you-type searching"
+msgstr "Bleskové vyhľadávanie"
+
+#: data/mail.metainfo.xml.in:18
+msgid "Multiple account support"
+msgstr "Podpora viacerých účtov"
+
+#: data/mail.metainfo.xml.in:19
+#, fuzzy
+#| msgid "Inline HTML composer that saves drafts to the server"
+msgid "Powerful HTML composer that saves drafts to the server"
+msgstr "Integrovaný HTML editor, ktorý ukladá koncepty na server"
+
+#: data/mail.metainfo.xml.in:20
+msgid "Works with Gmail, Yahoo! Mail, and other popular IMAP servers"
+msgstr "Funguje s Gmail, Yahoo! Mail a s inými populárnymi IMAP servermi"
+
+#: data/mail.metainfo.xml.in:66
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/mail.metainfo.xml.in:74 data/mail.metainfo.xml.in:83
+#: data/mail.metainfo.xml.in:100 data/mail.metainfo.xml.in:133
+#: data/mail.metainfo.xml.in:154 data/mail.metainfo.xml.in:173
+#: data/mail.metainfo.xml.in:195
+msgid "Improvements:"
+msgstr "Vylepšenia:"
+
+#: data/mail.metainfo.xml.in:76 data/mail.metainfo.xml.in:86
+#: data/mail.metainfo.xml.in:111 data/mail.metainfo.xml.in:142
+#: data/mail.metainfo.xml.in:156 data/mail.metainfo.xml.in:177
+#: data/mail.metainfo.xml.in:198
+msgid "Updated translations"
+msgstr "Aktualizované preklady"
+
+#: data/mail.metainfo.xml.in:85
+msgid ""
+"Use the actual recipients of a message as sender when replying or forwarding"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:102
+msgid "Ability to create multiple signatures and set defaults per account"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:103
+msgid "Add support for inline images in the composer"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:104
+msgid "Add support for renaming folders"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:105
+msgid "Move settings menu to the mailboxes pane"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:106
+msgid "Use the FileChooser portal"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:107
+msgid "Improve network availability handling"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:108
+msgid "Fix issues with fetching e-mail when Mail is not autostarted"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:109
+msgid "Notify the user when a calendar event is included in a message"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:110
+msgid "Improve performance when switching between folders"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:135
+msgid ""
+"The welcome view is removed when an account is added in Online Accounts "
+"without having to restart Mail"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:136
+msgid ""
+"The composer is always presented as a new window and includes more keyboard "
+"shortcuts"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:137
+msgid "The search filter menu now appears next to the search bar"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:138
+msgid "HeaderBars appear to float above content when scrolled"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:139
+#, fuzzy
+#| msgid "Fix a potential crash while loading messages"
+msgid "Fix a potential crash with empty messages"
+msgstr "Opravený potenciálny pád pri načítaní správ"
+
+#: data/mail.metainfo.xml.in:140
+msgid "Stop resizing from cutting off the message list"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:141
+#, fuzzy
+#| msgid "Stability improvements"
+msgid "Performance improvements"
+msgstr "Zlepšenia stability"
+
+#: data/mail.metainfo.xml.in:167 data/mail.metainfo.xml.in:189
+msgid "Fixes:"
+msgstr "Opravy:"
+
+#: data/mail.metainfo.xml.in:169
+msgid "Fixed an error which caused mail accounts to be loaded multiple times"
+msgstr ""
+"Opravená chyba, ktorá zapríčiňovala opakované načítanie e-mailových účtov"
+
+#: data/mail.metainfo.xml.in:170
+msgid "Fixed a bug which caused Mail to crash occasionally"
+msgstr "Opravená chyba, ktorá občas spôsobovala pád aplikácie Pošta"
+
+#: data/mail.metainfo.xml.in:171
+msgid "Display recipient in Sent folder instead of sender"
+msgstr "Zobrazovať príjemcu v priečinku Odoslané namiesto odosielateľa"
+
+#: data/mail.metainfo.xml.in:175
+msgid "Updated app icon"
+msgstr "Aktualizovaná ikonka aplikácie"
+
+#: data/mail.metainfo.xml.in:176
+msgid "New design"
+msgstr "Nový vzhľad"
+
+#: data/mail.metainfo.xml.in:184
+msgid "New features:"
+msgstr "Nové funkcie:"
+
+#: data/mail.metainfo.xml.in:186
+msgid "Use message subject for composer window title"
+msgstr "Zobrazovať predmet správy v záhlaví okna editora"
+
+#: data/mail.metainfo.xml.in:187
+msgid "Added support for Unified Inbox for Microsoft 365 accounts"
+msgstr ""
+"Pridaná podpora zjednotenej schránky doručenej pošty pre účty Microsoft 365"
+
+#: data/mail.metainfo.xml.in:191
+msgid ""
+"Fixed an error which caused the inbox monitoring in the background to crash"
+msgstr ""
+"Opravená chyba, ktorá spôsobovala pád služby zisťovania novej pošty na pozadí"
+
+#: data/mail.metainfo.xml.in:192
+msgid "Removed duplicate sender addresses when composing a message"
+msgstr "Odstránené duplicitné adresy odosielateľa pri písaní správy"
+
+#: data/mail.metainfo.xml.in:193
+msgid "Fix a freeze when archiving the last message in a folder"
+msgstr "Opravené zamrznutie pri archivácii poslednej správy v priečinku"
+
+#: data/mail.metainfo.xml.in:197
+msgid ""
+"Renamed Office 365 to Microsoft 365 to follow suite on Microsoft's rebranding"
+msgstr ""
+"Office 365 premenované na Microsoft 365 v súlade s premenovaním služby "
+"Microsoftu"
+
+#: data/io.elementary.mail.desktop.in:6
+msgid "Email;E-mail;Mail;"
+msgstr "Email;E-mail;Pošta;"
+
+#: data/io.elementary.mail.desktop.in:16
+msgid "Compose Message"
+msgstr "Napísať správu"
+
+#~ msgid "Fix a potential crash while loading messages"
+#~ msgstr "Opravený potenciálny pád pri načítaní správ"
+
+#~ msgid "Secondary-click menu on the conversations list"
+#~ msgstr "Menu po kliknutí sekundárnym tlačidlom myši na zoznam konverzácií"
+
+#~ msgid "Ensure conversations are re-sorted by date when new messages appear"
+#~ msgstr ""
+#~ "Zabezpečené, že konverzácie sa znovu roztriedia po prijatí nových správ"
+
+#~ msgid "Fixed sender combobox after opening a mailto link"
+#~ msgstr "Opravený kombobox odosielateľa po otvorení odkazu typu mailto"
+
+#~ msgid "Mark sent messages as read"
+#~ msgstr "Označovať odoslané správy ako prečítané"
+
+#~ msgid "Fix a hang when deleting the last message in a mailbox"
+#~ msgstr "Opravené zamrznutie po odstránení poslednej správy v schránke"
+
+#~ msgid "Fix an issue where some mail fails to be deleted"
+#~ msgstr "Opravený problém, keď sa nepodarí odstrániť niektoré správy"
+
+#~ msgid "Use accent color for unread message titles"
+#~ msgstr "Používať farebný odtieň na názvoch neprečítaných správ"
+
+#~ msgid "Autoselect the next message after archiving"
+#~ msgstr "Automaticky označovať nasledujúcu správu po archivovaní"
+
+#~ msgid "Use local time in message headers"
+#~ msgstr "Používať miestny čas v hlavičkách správ"
+
+#~ msgid "Send a notification when new messages arrive"
+#~ msgstr "Odoslať oznámenie o novej správe"
+
+#~ msgid "Add a button to manually fetch new messages"
+#~ msgstr "Pridané tlačidlo na ručné načítanie nových správ"
+
+#~ msgid "Automatically select the next message after deleting"
+#~ msgstr "Automaticky vybrať nasledujúcu správu po odstránení"
+
+#~ msgid "Filter unread or starred conversations"
+#~ msgstr "Triediť neprečítané konverzácie alebo konverzácie s hviezdičkou"
+
+#~ msgid "Make sure we don't save sent messages twice for outlook.com accounts"
+#~ msgstr ""
+#~ "Zabezpečené, aby sa odoslaná správa neuložila dvakrát pre účty outlook.com"
+
+#~ msgid "Fix a potential crash when changing folders"
+#~ msgstr "Opravený potenciálny pád pri zmene priečinkov"
+
+#~ msgid "Improve search performance"
+#~ msgstr "Vylepšená rýchlosť vyhľadávania"
+
+#~ msgid "Fix an issue that prevented some messaging from rendering at all"
+#~ msgstr "Opravený problém so zobrazovaním niektorých správ"
+
+#~ msgid ""
+#~ "Set the correct \"From\" address when replying and multiple accounts are "
+#~ "set up"
+#~ msgstr ""
+#~ "Nastavovať správnu adresu odosielateľa pri odpovedaní a pri používaní "
+#~ "viacerých účtov"
+
+#~ msgid "Fix a crash on startup for some conversations"
+#~ msgstr "Opravený pád pri spustení pre niektoré konverzácie"
+
+#~ msgid "Only save drafts when there are new changes"
+#~ msgstr "Koncepty ukladať iba vtedy, keď sú v nich nové neuložené zmeny"
+
+#~ msgid "Move Undo notification to the message view"
+#~ msgstr "Oznámenie Späť presunuté do zobrazenia správ"
+
+#~ msgid "Preserve conversation subjects when replying or forwarding"
+#~ msgstr "Zachovať predmety konverzácií pri odpovedaní či preposielaní"
+
+#~ msgid "Disable the composer while messages are being sent"
+#~ msgstr "Deaktivovať nástroje úpravy textu pri odosielaní správ"
+
+#~ msgid "Edit saved draft messages"
+#~ msgstr "Možnosť úpravy uložených koncepty"
+
+#~ msgid "Make sure we don't save sent messages twice for some account types"
+#~ msgstr ""
+#~ "Zabezpečené, aby sa rovnaká správa neodoslala dvakrát pri niektorých "
+#~ "typoch účtov"
+
+#~ msgid "Complete rewrite from scratch"
+#~ msgstr "Kompletne prerobený zdrojový kód"
+
+#~ msgid "Desktop notifications"
+#~ msgstr "Upozornenia na ploche"
+
+#~ msgid "About Mail"
+#~ msgstr "O Pošte"
+
+#~ msgid "Lightweight mail client"
+#~ msgstr "Jednoduchý poštpvý klient"

@@ -1,0 +1,2332 @@
+# po/geary.pot
+# PO message string template file for Geary email client
+# Copyright 2012-2013 Yorba Foundation
+# This file is distributed under the GNU LGPL, version 2.1.
+#
+# Translators:
+# Nikolaj64 <nikolajholmquist@gmail.com>, 2013
+# Nikolaj64 <nikolajholmquist@gmail.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: geary-0.4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-08 16:46+0000\n"
+"PO-Revision-Date: 2020-05-27 12:11+0000\n"
+"Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
+"Language-Team: Danish <https://l10n.elementary.io/projects/mail/mail/da/>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.9.1\n"
+"X-Launchpad-Export-Date: 2017-03-24 06:34+0000\n"
+
+#: src/Application.vala:145
+#, fuzzy
+#| msgid "Unable to validate:\n"
+msgid "Unable to open System Settings"
+msgstr "Kunne ikke validere:\n"
+
+#: src/Application.vala:146
+msgid ""
+"Open System Settings manually or install Evolution to set up online accounts."
+msgstr ""
+
+#: src/Application.vala:217
+msgid ""
+"Mail will automatically start when this device turns on and run when its "
+"window is closed so that it can send notifications when new mail arrives."
+msgstr ""
+
+#: src/Composer.vala:94 src/MessageList/MessageListItem.vala:102
+msgid "From:"
+msgstr "Fra:"
+
+#: src/Composer.vala:114 src/MessageList/MessageListItem.vala:108
+msgid "To:"
+msgstr "Til:"
+
+#: src/Composer.vala:120
+msgid "Cc"
+msgstr "Cc"
+
+#: src/Composer.vala:122
+msgid "Bcc"
+msgstr "Bcc"
+
+#: src/Composer.vala:133 src/MessageList/MessageListItem.vala:148
+msgid "Cc:"
+msgstr "Cc:"
+
+#: src/Composer.vala:152
+msgid "Bcc:"
+msgstr "Bcc:"
+
+#: src/Composer.vala:171 src/MessageList/MessageListItem.vala:114
+msgid "Subject:"
+msgstr "Emne:"
+
+#: src/Composer.vala:205
+msgid "Insert Image"
+msgstr "Indsæt Billede"
+
+#: src/Composer.vala:232
+msgid "Delete draft"
+msgstr "Slet kladde"
+
+#: src/Composer.vala:240
+msgid "Attach file"
+msgstr "Vedhæft fil"
+
+#: src/Composer.vala:251
+#, fuzzy
+#| msgid "Insert Link"
+msgid "Insert Signature…"
+msgstr "Indsæt Link"
+
+#: src/Composer.vala:256
+msgid "Send"
+msgstr "Send"
+
+#: src/Composer.vala:299
+msgid "New Message"
+msgstr "Ny besked"
+
+#: src/Composer.vala:445
+msgid "Choose a file"
+msgstr "Vælg en fil"
+
+#: src/Composer.vala:448
+#, fuzzy
+#| msgid "_Attach"
+msgid "Attach"
+msgstr "_Vedhæft"
+
+#: src/Composer.vala:449 src/Composer.vala:472 src/Composer.vala:763
+#: src/Dialogs/InsertLinkDialog.vala:66
+#: src/MessageList/AttachmentButton.vala:144
+msgid "Cancel"
+msgstr "Annuller"
+
+#: src/Composer.vala:464
+#, fuzzy
+#| msgid "Show Images"
+msgid "Images"
+msgstr "Vis billeder"
+
+#: src/Composer.vala:468
+#, fuzzy
+#| msgid "Choose a file"
+msgid "Choose an image"
+msgstr "Vælg en fil"
+
+#: src/Composer.vala:471
+#, fuzzy
+#| msgid "Insert Link"
+msgid "Insert"
+msgstr "Indsæt Link"
+
+#: src/Composer.vala:500
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Unable to insert image"
+msgstr "Slet kladde"
+
+#: src/Composer.vala:501
+msgid "There was an unexpected error while trying to insert the image."
+msgstr ""
+
+#: src/Composer.vala:665
+msgid "%a, %b %-e, %Y at %-l:%M %p"
+msgstr "%a den %-e. %b %Y, klokken %H:%M %p"
+
+#: src/Composer.vala:695
+#, c-format
+msgid "On %1$s, %2$s wrote:"
+msgstr "%2$s skrev den %1$s:"
+
+#: src/Composer.vala:699
+msgid "---------- Forwarded message ----------"
+msgstr "---------- Videresendt besked ----------"
+
+#: src/Composer.vala:701
+#, c-format
+msgid "From: %s<br/>"
+msgstr "Fra: %s<br/>"
+
+#: src/Composer.vala:702
+#, c-format
+msgid "Subject: %s<br/>"
+msgstr "Emne: %s<br/>"
+
+#: src/Composer.vala:703
+#, c-format
+msgid "Date: %s<br/>"
+msgstr "Dato: %s<br/>"
+
+#: src/Composer.vala:704
+#, c-format
+msgid "To: %s<br/>"
+msgstr "Til: %s<br/>"
+
+#: src/Composer.vala:706
+#, c-format
+msgid "Cc: %s<br/>"
+msgstr "Cc: %s<br/>"
+
+#: src/Composer.vala:754
+#, fuzzy
+#| msgid "Do you want to permanently delete this message?"
+#| msgid_plural "Do you want to permanently delete these messages?"
+msgid "Permanently delete this draft?"
+msgstr "Vil du slette denne besked permanent?"
+
+#: src/Composer.vala:755
+msgid ""
+"You cannot undo this action, nor recover your draft once it has been deleted."
+msgstr ""
+
+#: src/Composer.vala:765
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Delete Draft"
+msgstr "Slet kladde"
+
+#: src/Composer.vala:789
+#, fuzzy
+#| msgid "Send Message With an Empty Subject?"
+msgid "Send without subject?"
+msgstr "Send beskeden med tomt emne felt?"
+
+#: src/Composer.vala:790
+#, fuzzy
+#| msgid ""
+#| "This message has an empty subject field. The recipient may not be able to "
+#| "infer the scope or importance of the message."
+msgid ""
+"This message has an empty subject field. The recipient may be unable to "
+"infer its scope or importance."
+msgstr ""
+"Denne besked har et tomt emnefelt. Modtageren er måske ude af stand til, at "
+"udlede størrelssen eller vigtigheden af beskeden."
+
+#: src/Composer.vala:797
+msgid "Don't Send"
+msgstr "Send Ikke"
+
+#: src/Composer.vala:799
+msgid "Send Anyway"
+msgstr "Send Alligevel"
+
+#: src/Composer.vala:830
+#, fuzzy
+#| msgid "Send message with an empty body?"
+msgid "Sent message was not saved"
+msgstr "Send beskeden uden indhold?"
+
+#: src/Composer.vala:831
+msgid ""
+"The message was sent, however a copy was not saved to the Sent message "
+"folder."
+msgstr ""
+
+#: src/Composer.vala:846
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Unable to send message"
+msgstr "Slet kladde"
+
+#: src/Composer.vala:847
+msgid "There was an unexpected error while sending your message."
+msgstr ""
+
+#: src/Composer.vala:945 src/FolderList/FolderList.vala:55
+msgid "Edit Signatures…"
+msgstr ""
+
+#: src/Composer.vala:949
+msgid "None"
+msgstr "Ingen"
+
+#: src/Composer.vala:1140
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Unable to save draft"
+msgstr "Slet kladde"
+
+#: src/Composer.vala:1141
+msgid "There was an unexpected error while saving your draft."
+msgstr ""
+
+#: src/EditorToolbar.vala:55
+msgid "Bold"
+msgstr "Fed"
+
+#: src/EditorToolbar.vala:62
+msgid "Italic"
+msgstr "Kursiv"
+
+#: src/EditorToolbar.vala:73
+msgid "Underline"
+msgstr "Understreget"
+
+#: src/EditorToolbar.vala:85
+msgid "Strikethrough"
+msgstr "Overstreget"
+
+#: src/EditorToolbar.vala:100
+msgid "Remove formatting"
+msgstr "Fjern formatering"
+
+#: src/EditorToolbar.vala:108 src/Dialogs/InsertLinkDialog.vala:68
+msgid "Insert Link"
+msgstr "Indsæt Link"
+
+#: src/InboxMonitor.vala:158 src/InboxMonitor.vala:170
+#, c-format
+msgid "%s to %s"
+msgstr ""
+
+#. /TRANSLATORS: The %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#: src/InboxMonitor.vala:165
+#, fuzzy, c-format
+#| msgid "%d new message"
+#| msgid_plural "%d new messages"
+msgid "%u new message"
+msgid_plural "%u new messages"
+msgstr[0] "%d ny besked"
+msgstr[1] "%d nye beskeder"
+
+#. /TRANSLATORS: The first %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#. /The next %s represents the number of senders
+#: src/InboxMonitor.vala:177
+#, fuzzy, c-format
+#| msgid "Always Show from Sender"
+msgid "%s from %u sender"
+msgid_plural "%s from %u senders"
+msgstr[0] "Vis altid afsender"
+msgstr[1] "Vis altid afsender"
+
+#: src/MainWindow.vala:80
+msgid "Mail"
+msgstr "Mail"
+
+#: src/MainWindow.vala:123 src/Dialogs/AliasDialog/AliasDialog.vala:96
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:172
+msgid "Undo"
+msgstr "Fortryd"
+
+#: src/MainWindow.vala:281
+#, fuzzy
+#| msgid "Message Deleted"
+#| msgid_plural "Messages Deleted"
+msgid "Message Archived"
+msgid_plural "Messages Archived"
+msgstr[0] "Besked Slettet"
+msgstr[1] "Beskeder Slettet"
+
+#: src/MainWindow.vala:285
+#, fuzzy
+#| msgid "Unstar message"
+msgid "Couldn't archive message"
+msgstr "Fjern stjerne fra meddelelse"
+
+#: src/MainWindow.vala:298
+#, fuzzy
+#| msgid "Message Deleted"
+#| msgid_plural "Messages Deleted"
+msgid "Message Moved"
+msgid_plural "Messages Moved"
+msgstr[0] "Besked Slettet"
+msgstr[1] "Beskeder Slettet"
+
+#: src/MainWindow.vala:302
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Couldn't move message"
+msgstr "Slet kladde"
+
+#: src/MainWindow.vala:315
+msgid "Message Deleted"
+msgid_plural "Messages Deleted"
+msgstr[0] "Besked Slettet"
+msgstr[1] "Beskeder Slettet"
+
+#: src/MainWindow.vala:319
+msgid "Couldn't delete message"
+msgstr ""
+
+#: src/WelcomeView.vala:45
+msgid "Connect an Account"
+msgstr "Tilslut en Konto"
+
+#: src/WelcomeView.vala:52
+msgid "Mail uses email accounts configured in System Settings."
+msgstr "Mail bruger e-mail-kontoer konfigureret i Systemindstillinger."
+
+#: src/WelcomeView.vala:59
+msgid "Online Accounts…"
+msgstr "Online Kontoer…"
+
+#: src/Backend/Account.vala:48
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Unable to connect"
+msgstr "Slet kladde"
+
+#: src/Backend/Account.vala:49
+msgid "There was an unexpected error while trying to connect to the server."
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:65
+#, c-format
+msgid "Moving messages… (%u remaining)"
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:98
+msgid "No Archive folder is configured."
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:126
+msgid "The destination folder was not found."
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:130
+msgid "The source folder is the destination folder."
+msgstr ""
+
+#: src/Backend/Session.vala:642
+msgid "New Signature"
+msgstr ""
+
+#: src/Backend/ContactManager.vala:88 src/Backend/ContactManager.vala:122
+#, c-format
+msgid "Couldn't add “%s” to addressbook"
+msgstr ""
+
+#: src/Backend/ContactManager.vala:89
+msgid "No addressbook available."
+msgstr ""
+
+#: src/Backend/ContactManager.vala:123
+msgid "Operation failed."
+msgstr ""
+
+#: src/ConversationList/ConversationItemModel.vala:74
+#: src/ConversationList/ConversationItemModel.vala:112
+msgid ", "
+msgstr ", "
+
+#: src/ConversationList/ConversationItemModel.vala:77
+#: src/ConversationList/ConversationItemModel.vala:115
+#: src/ConversationList/ConversationItemModel.vala:123
+#: src/MessageList/AttachmentButton.vala:100
+msgid "Unknown"
+msgstr "Ukendt"
+
+#: src/ConversationList/ConversationList.vala:85
+msgid "Search Mail"
+msgstr "Søger i Mail"
+
+#: src/ConversationList/ConversationList.vala:89
+#, fuzzy
+#| msgid "Mark conversations"
+msgid "Hide read conversations"
+msgstr "Markér samtaler"
+
+#: src/ConversationList/ConversationList.vala:90
+#, fuzzy
+#| msgid "Mark conversations"
+msgid "Hide unstarred conversations"
+msgstr "Markér samtaler"
+
+#: src/ConversationList/ConversationList.vala:107
+#, fuzzy
+#| msgid "Delete Conversation"
+msgid "Filter Conversations"
+msgstr "Slet samtale"
+
+#: src/ConversationList/ConversationList.vala:130
+#, fuzzy
+#| msgid "%d new message"
+#| msgid_plural "%d new messages"
+msgid "Fetch new messages"
+msgstr "%d ny besked"
+
+#: src/ConversationList/ConversationList.vala:137
+#, fuzzy
+#| msgid "%d new message"
+#| msgid_plural "%d new messages"
+msgid "Fetching new messages…"
+msgstr "%d ny besked"
+
+#: src/ConversationList/ConversationListItem.vala:94
+msgid "Archive"
+msgstr "Arkiv"
+
+#: src/ConversationList/ConversationListItem.vala:99
+msgid "Trash"
+msgstr "Papirkurv"
+
+#: src/ConversationList/ConversationListItem.vala:181
+msgid "Unread"
+msgstr "Ulæst"
+
+#: src/ConversationList/ConversationListItem.vala:194
+msgid "Replied"
+msgstr "Svaret"
+
+#: src/ConversationList/ConversationListItem.vala:198
+msgid "Forwarded"
+msgstr "Videresendt"
+
+#: src/ConversationList/ConversationListItem.vala:212
+#, fuzzy
+#| msgid "Move conversations to Trash"
+msgid "Move To Trash"
+msgstr "Flyt samtaler til udsmidningskurv"
+
+#: src/ConversationList/ConversationListItem.vala:215
+#, fuzzy
+#| msgid "Mark as Unread"
+msgid "Mark As Unread"
+msgstr "Mærk som ulæst"
+
+#: src/ConversationList/ConversationListItem.vala:217
+#: src/MessageList/MessageList.vala:51
+msgid "Mark as Read"
+msgstr "Mærk som læst"
+
+#: src/ConversationList/ConversationListItem.vala:221
+#: src/MessageList/MessageList.vala:52
+msgid "Star"
+msgstr "Stjerne"
+
+#: src/ConversationList/ConversationListItem.vala:223
+#: src/MessageList/MessageList.vala:53
+msgid "Unstar"
+msgstr "Stjern ikke"
+
+#: src/Dialogs/InsertLinkDialog.vala:29
+msgid "URL:"
+msgstr "URL:"
+
+#: src/Dialogs/InsertLinkDialog.vala:39
+msgid "Link Text:"
+msgstr "Link Tekst:"
+
+#: src/Dialogs/InsertLinkDialog.vala:45
+msgid "Example Website"
+msgstr "Eksempel Websted"
+
+#: src/Dialogs/AliasDialog/Alias.vala:52
+msgid "John Doe"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/Alias.vala:56
+#, fuzzy
+#| msgid "N_ame:"
+msgid "Name"
+msgstr "_Navn:"
+
+#: src/Dialogs/AliasDialog/Alias.vala:75
+#, fuzzy
+#| msgid "E_mail address:"
+msgid "E-mail Address"
+msgstr "E_-mailaddresse:"
+
+#: src/Dialogs/AliasDialog/Alias.vala:80
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Delete alias"
+msgstr "Slet kladde"
+
+#: src/Dialogs/AliasDialog/Alias.vala:100
+#, fuzzy
+#| msgid "Edit Draft"
+msgid "Edit alias"
+msgstr "Redigér kladde"
+
+#: src/Dialogs/AliasDialog/Alias.vala:175
+msgid "Name not set"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:33
+msgid "No Aliases"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:37
+msgid "Add aliases using the button in the toolbar below"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:67
+msgid "Add Alias…"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:104
+msgid "Aliases"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:108
+#, fuzzy
+#| msgid "_Close"
+msgid "Close"
+msgstr "_Luk"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:178
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:330
+#, c-format
+msgid "'%s' deleted"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:39
+#, fuzzy
+#| msgid "Insert Link"
+msgid "No Signatures"
+msgstr "Indsæt Link"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:43
+msgid "Add signatures using the button in the toolbar below"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:67
+#, fuzzy
+#| msgid "Insert Link"
+msgid "Create Signature"
+msgstr "Indsæt Link"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:86
+msgid "Title"
+msgstr ""
+
+#. Work around a styling issue
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:99
+msgid "For example “Work” or “Personal”"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:122
+msgid "Delete"
+msgstr "Slet"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:131
+msgid "Set Default For…"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:156
+#, fuzzy
+#| msgid "Insert Link"
+msgid "Signature"
+msgstr "Indsæt Link"
+
+#: src/FolderList/AccountItemModel.vala:155
+msgid "Edit Aliases…"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:48
+msgid "Refresh folder"
+msgstr "Opdater mappe"
+
+#: src/FolderList/FolderItemModel.vala:53
+#, fuzzy
+#| msgid "Refresh folder"
+msgid "Rename folder"
+msgstr "Opdater mappe"
+
+#: src/FolderList/FolderItemModel.vala:146
+#: src/FolderList/FolderItemModel.vala:175
+#: src/FolderList/FolderItemModel.vala:193
+#, c-format
+msgid "Couldn't rename “%s”"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:147
+msgid "Folder names cannot contain “/”"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:176
+#, c-format
+msgid "A folder named “%s” already exists"
+msgstr ""
+
+#: src/FolderList/FolderList.vala:34
+msgid "Compose new message"
+msgstr "Opret ny meddelelse"
+
+#: src/FolderList/FolderList.vala:56
+msgid "Account Settings…"
+msgstr "Bruger Indstillinger…"
+
+#: src/FolderList/FolderList.vala:59
+msgid "Always Show Remote Images"
+msgstr "Vis altid fjern-billeder"
+
+#: src/FolderList/FolderList.vala:65
+msgid "Menu"
+msgstr "Menu"
+
+#: src/FolderList/GroupedFolderItemModel.vala:38
+#, fuzzy
+#| msgid "Inbox"
+msgctxt "Inbox Folder"
+msgid "Inbox"
+msgstr "Indbakke"
+
+#: src/FolderList/GroupedFolderItemModel.vala:42
+#, fuzzy
+#| msgid "Archive"
+msgctxt "Archive Folder"
+msgid "Archive"
+msgstr "Arkiv"
+
+#: src/FolderList/GroupedFolderItemModel.vala:46
+#, fuzzy
+#| msgid "Sent Mail"
+msgctxt "Sent Folder"
+msgid "Sent"
+msgstr "Sendt mail"
+
+#: src/FolderList/SessionItemModel.vala:28
+#, fuzzy
+#| msgid "All Mail"
+msgid "All Mailboxes"
+msgstr "Al mail"
+
+#: src/MessageList/MessageList.vala:28 src/MessageList/MessageListItem.vala:210
+msgid "Reply"
+msgstr "Svar"
+
+#: src/MessageList/MessageList.vala:37 src/MessageList/MessageListItem.vala:213
+msgid "Reply All"
+msgstr "Besvar Alle"
+
+#: src/MessageList/MessageList.vala:46 src/MessageList/MessageListItem.vala:216
+msgid "Forward"
+msgstr "Fremad"
+
+#: src/MessageList/MessageList.vala:50
+msgid "Mark as Unread"
+msgstr "Mærk som ulæst"
+
+#: src/MessageList/MessageList.vala:60
+msgid "Mark Conversation"
+msgstr "Mærk samtale"
+
+#: src/MessageList/MessageList.vala:68
+#, fuzzy
+#| msgid "Move conversation"
+#| msgid_plural "Move conversations"
+msgid "Move Conversation to…"
+msgstr "Flyt samtale"
+
+#: src/MessageList/MessageList.vala:77
+#, fuzzy
+#| msgid "Move conversations to Trash"
+msgid "Move conversations to archive"
+msgstr "Flyt samtaler til udsmidningskurv"
+
+#: src/MessageList/MessageList.vala:85
+msgid "Move conversations to Trash"
+msgstr "Flyt samtaler til udsmidningskurv"
+
+#: src/MessageList/MessageList.vala:100
+msgid "No Message Selected"
+msgstr "Ingen Besked Valgt"
+
+#. /TRANSLATORS: The first %s represents the date and the second %s the time of the message (either when it was received or sent)
+#: src/MessageList/MessageListItem.vala:190
+#, c-format
+msgid "%s at %s"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:198
+#: src/MessageList/MessageListItem.vala:397
+msgid "Unstar message"
+msgstr "Fjern stjerne fra meddelelse"
+
+#: src/MessageList/MessageListItem.vala:201
+#: src/MessageList/MessageListItem.vala:393
+msgid "Star message"
+msgstr "Sæt stjerne på meddelelse"
+
+#: src/MessageList/MessageListItem.vala:221
+msgid "Print…"
+msgstr "Udskriv…"
+
+#: src/MessageList/MessageListItem.vala:231
+msgid "More"
+msgstr "Flere"
+
+#: src/MessageList/MessageListItem.vala:281
+msgid "Open in Calendar"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:286
+#, fuzzy
+#| msgid "This message contains remote images."
+msgid "This message contains a Calendar Event."
+msgstr "Denne besked indeholder billeder."
+
+#: src/MessageList/MessageListItem.vala:297
+msgid "Show Images"
+msgstr "Vis billeder"
+
+#: src/MessageList/MessageListItem.vala:298
+msgid "Always Show from Sender"
+msgstr "Vis altid afsender"
+
+#: src/MessageList/MessageListItem.vala:302
+msgid "This message contains remote images."
+msgstr "Denne besked indeholder billeder."
+
+#: src/MessageList/MessageListItem.vala:341
+msgid "This message contains one or more attachments"
+msgstr "Denne meddelelse indeholder en eller flere vedhæftninger"
+
+#. / Translators: This is the default file name of a printed email
+#: src/MessageList/MessageListItem.vala:417
+#, fuzzy
+#| msgid "New Message"
+msgid "Email Message"
+msgstr "Ny besked"
+
+#: src/MessageList/MessageListItem.vala:439
+#, fuzzy
+#| msgid "Unable to validate:\n"
+msgid "Unable to print email"
+msgstr "Kunne ikke validere:\n"
+
+#: src/MessageList/MessageListItem.vala:691
+#, c-format
+msgid "Trust and open “%s”?"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:692
+msgid ""
+"Attachments may cause damage to your system if opened. Only open files from "
+"trusted sources."
+msgstr ""
+"Vedhæftninger kan gøre skade på dit system hvis de åbnes. Åbn kun filer fra "
+"kilder du stoler på."
+
+#: src/MessageList/MessageListItem.vala:699
+msgid "Open Anyway"
+msgstr "Åbn alligevel"
+
+#: src/MessageList/AttachmentButton.vala:57
+msgid "Open"
+msgstr "Åbn"
+
+#: src/MessageList/AttachmentButton.vala:58
+msgid "Save As…"
+msgstr "Gem som…"
+
+#: src/MessageList/AttachmentButton.vala:143
+msgid "Save"
+msgstr "Gem"
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:22
+msgid "No mailboxes found"
+msgstr ""
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:26
+msgid "Try changing search terms"
+msgstr ""
+
+#, fuzzy
+#~| msgid "https://example.com"
+#~ msgid "Email@example.com"
+#~ msgstr "https://eksempel.com"
+
+#, fuzzy
+#~| msgid "Email Address:"
+#~ msgid "Address:"
+#~ msgstr "E-mailadresse:"
+
+#, fuzzy
+#~| msgid "Email address:"
+#~ msgid "Enter e-mail address…"
+#~ msgstr "E-mailadresse:"
+
+#~ msgid "Reply to All"
+#~ msgstr "Svar til alle"
+
+#, c-format
+#~ msgid "Are you sure you want to open %s?"
+#~ msgstr "Er du sikker på, at du vil åbne %s?"
+
+#~ msgid "Quote text"
+#~ msgstr "Citér tekst"
+
+#~ msgid "Unquote text"
+#~ msgstr "Afcitér tekst"
+
+#~ msgid "Drafts | Draft"
+#~ msgstr "Kladder | Kladde"
+
+#~ msgid "Sent | Sent Mail | Sent Email | Sent E-Mail"
+#~ msgstr "Sendt | Sendt mail | Sendt email | Sendt e-mail"
+
+#~ msgid ""
+#~ "Junk | Spam | Junk Mail | Junk Email | Junk E-Mail | Bulk Mail | Bulk "
+#~ "Email | Bulk E-Mail"
+#~ msgstr ""
+#~ "Junk | Spam | Junk-mail | Junk-email | Junk-e-mail | Masse-mail | Masse-"
+#~ "email | Masse-e-mail"
+
+#~ msgid "Trash | Rubbish | Rubbish Bin"
+#~ msgstr "Affald | Papirkurv | Skraldespand"
+
+#~ msgid "Archive | Archives"
+#~ msgstr "Arkiv | Arkiver"
+
+#~ msgid "Drafts"
+#~ msgstr "Kladder"
+
+#~ msgid "Starred"
+#~ msgstr "Stjernet"
+
+#~ msgid "Important"
+#~ msgstr "Vigtig"
+
+#~ msgid "Spam"
+#~ msgstr "Spam"
+
+#~ msgid "Outbox"
+#~ msgstr "Udbakke"
+
+#~ msgid "Search"
+#~ msgstr "Søg"
+
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgid "SMTP"
+#~ msgstr "SMTP"
+
+#~ msgid "Gmail"
+#~ msgstr "Gmail"
+
+#~ msgid "Yahoo! Mail"
+#~ msgstr "Yahoo! Mail"
+
+#~ msgid "Outlook.com"
+#~ msgstr "Outlook.com"
+
+#~ msgid "Other"
+#~ msgstr "Andet"
+
+#~ msgid "attachment"
+#~ msgstr "vedhæftning"
+
+#~ msgid "bcc"
+#~ msgstr "bcc"
+
+#~ msgid "body"
+#~ msgstr "indhold"
+
+#~ msgid "cc"
+#~ msgstr "cc"
+
+#~ msgid "from"
+#~ msgstr "fra"
+
+#~ msgid "subject"
+#~ msgstr "emne"
+
+#~ msgid "to"
+#~ msgstr "til"
+
+#~ msgid "me"
+#~ msgstr "mig"
+
+#~ msgid "(no subject)"
+#~ msgstr "(intet emne)"
+
+#~ msgid "%s wrote:"
+#~ msgstr "%s skrev:"
+
+#~ msgid "On %s:"
+#~ msgstr "Den %s:"
+
+#~ msgid "none"
+#~ msgstr "intet"
+
+#~ msgid "Mail Client"
+#~ msgstr "Mailklient"
+
+#~ msgid "Copyright 2011-2015 Yorba Foundation"
+#~ msgstr "Ophavsret 2011-2015 Yorba Foundation"
+
+#~ msgid "Visit the Yorba web site"
+#~ msgstr "Besøg Yorbas hjemmeside"
+
+#~ msgid "Delete conversation"
+#~ msgstr "Slet samtale"
+
+#~ msgid "Delete conversation (Shift+Delete)"
+#~ msgstr "Slet samtale (Shift+Delete)"
+
+#~ msgid "Delete conversations (Shift+Delete)"
+#~ msgstr "Slet samtaler (Shift+Delete)"
+
+#~ msgid "Move conversation to Trash (Delete, Backspace)"
+#~ msgid_plural "Move conversations to Trash (Delete, Backspace)"
+#~ msgstr[0] "Flyt samtale til papirkurv (Delete, Backspace)"
+#~ msgstr[1] "Flyt samtaler til papirkurv (Delete, Backspace)"
+
+#~ msgid "Move conversations to Trash (Delete, Backspace)"
+#~ msgstr "Flyt samtaler til papirkurven (Delete eller Backspace)"
+
+#~ msgid "_Archive"
+#~ msgstr "_Arkivér"
+
+#~ msgid "Archive conversation (A)"
+#~ msgid_plural "Archive conversations (A)"
+#~ msgstr[0] "Arkivér samtale (A)"
+#~ msgstr[1] "Arkivér samtaler (A)"
+
+#~ msgid "Archive conversations (A)"
+#~ msgstr "Arkivér samtaler (A)"
+
+#~ msgid "Mark as S_pam"
+#~ msgstr "Markér som s_pam"
+
+#~ msgid "Mark as not S_pam"
+#~ msgstr "Marker som ikke s_pam"
+
+#~ msgid "Add label to conversation"
+#~ msgid_plural "Add label to conversations"
+#~ msgstr[0] "Tilføj etiket til samtale"
+#~ msgstr[1] "Tilføj etiket til samtaler"
+
+#~ msgid "Add label to conversations"
+#~ msgstr "Tilføj etiket til samtaler"
+
+#~ msgid "A_ccounts"
+#~ msgstr "_Konti"
+
+#~ msgid "_Preferences"
+#~ msgstr "_Indstillinger"
+
+#~ msgid "_Help"
+#~ msgstr "_Hjælp"
+
+#~ msgid "_About"
+#~ msgstr "_Om"
+
+#~ msgid "_Quit"
+#~ msgstr "Af_slut"
+
+#~ msgid "_Mark as..."
+#~ msgstr "_Markér som..."
+
+#~ msgid "Mark as _Read"
+#~ msgstr "Markér som _læst"
+
+#~ msgid "Mark as _Unread"
+#~ msgstr "Markér som _ulæst"
+
+#~ msgid "Add label"
+#~ msgstr "Tilføj etiket"
+
+#~ msgid "_Label"
+#~ msgstr "_Etiket"
+
+#~ msgid "_Move"
+#~ msgstr "_Flyt"
+
+#~ msgid "Compose new message (Ctrl+N, N)"
+#~ msgstr "Skriv ny besked (Ctrl+N, N)"
+
+#~ msgid "_Reply"
+#~ msgstr "_Svar"
+
+#~ msgid "Reply (Ctrl+R, R)"
+#~ msgstr "Svar (Ctrl+R, R)"
+
+#~ msgid "Reply all (Ctrl+Shift+R, Shift+R)"
+#~ msgstr "Svar til alle (Ctrl+Skift+R, Skift+R)"
+
+#~ msgid "_Forward"
+#~ msgstr "_Videresend"
+
+#~ msgid "Forward (Ctrl+L, F)"
+#~ msgstr "Videresend (Ctrl+L, F)"
+
+#~ msgid "Empty"
+#~ msgstr "Tom"
+
+#~ msgid "Empty Spam or Trash folders"
+#~ msgstr "Tøm spam-mappen eller papirkurven"
+
+#~ msgid "Empty _Spam…"
+#~ msgstr "Tøm _spam…"
+
+#~ msgid "Empty _Trash…"
+#~ msgstr "Tøm _papirkurven…"
+
+#~ msgid "Toggle search bar"
+#~ msgstr "Vis/skjul søgefelt"
+
+#~ msgid "Unable to store server trust exception"
+#~ msgstr "Kan ikke lagre undtagelse for server der er tillid til"
+
+#~ msgid "Your settings are insecure"
+#~ msgstr "Dine indstillinger er usikre"
+
+#~ msgid ""
+#~ "Your IMAP and/or SMTP settings do not specify SSL or TLS.  This means "
+#~ "your username and password could be read by another person on the "
+#~ "network.  Are you sure you want to do this?"
+#~ msgstr ""
+#~ "Dine IMAP- og/eller SMTP-indstillinger anvender ikke SSL eller TLS. Dette "
+#~ "betyder, at dit brugernavn og din adgangskode kan læses af andre på "
+#~ "netværket. Er du sikker på, at du vil gære dette?"
+
+#~ msgid "Co_ntinue"
+#~ msgstr "F_ortsæt"
+
+#~ msgid "Error sending email"
+#~ msgstr "Der opstod en fejl ved afsendelse af email"
+
+#~ msgid ""
+#~ "Geary encountered an error sending an email.  If the problem persists, "
+#~ "please manually delete the email from your Outbox folder."
+#~ msgstr ""
+#~ "Geary stødte ind i en fejl under afsendelse af en email. Hvis dette "
+#~ "problem fortsætter, bør du manuelt slette beskeden fra din \"Udbakke\"-"
+#~ "mappe."
+
+#~ msgid "Error saving sent mail"
+#~ msgstr "Fejl ved lagring af sendt mail"
+
+#~ msgid ""
+#~ "Geary encountered an error saving a sent message to Sent Mail.  The "
+#~ "message will stay in your Outbox folder until you delete it."
+#~ msgstr ""
+#~ "Geary oplevede en fejl under lagring af en sendt besked i mappen til "
+#~ "sendt mail. Denne meddelelse vil forblive i din udbakke indtil du fjerner "
+#~ "den."
+
+#~ msgid "Labels"
+#~ msgstr "Etiketter"
+
+#~ msgid "Unable to open the database for %s"
+#~ msgstr "Kunne ikke åbne databasen for %s"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to corruption of the database file in this directory:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Geary can rebuild the database and re-synchronize with the server or "
+#~ "exit.\n"
+#~ "\n"
+#~ "Rebuilding the database will destroy all local email and its attachments. "
+#~ "<b>The mail on the your server will not be affected.</b>"
+#~ msgstr ""
+#~ "Der opstod en felj under åbningen af den lokale maildatabase til denne "
+#~ "konto. Dette sker sikkert på grund af, at databasefilen er beskadiget\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Geary kan genopbygge databasefilen og synkronisére med serveren igen "
+#~ "eller afslutte.\n"
+#~ "\n"
+#~ "Genopbygning af databasen vil slette al lokal email og dets vedhæftede "
+#~ "filer. <b>Mail'en på serveren vil ikke blive rørt.</b>"
+
+#~ msgid "_Rebuild"
+#~ msgstr "_Genopbyg"
+
+#~ msgid "E_xit"
+#~ msgstr "_Afslut"
+
+#~ msgid "Unable to rebuild database for \"%s\""
+#~ msgstr "Kunne ikke genopbygge databasen for \"%s\""
+
+#~ msgid ""
+#~ "Error during rebuild:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Der opstod en fejl under genopbygning:\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid "Unable to open local mailbox for %s"
+#~ msgstr "Kunne ikke åbne den lokale postkasse for %s"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to a file permissions problem.\n"
+#~ "\n"
+#~ "Please check that you have read/write permissions for all files in this "
+#~ "directory:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Der opstod en fejl under åbningen af den lokale maildatabase til denne "
+#~ "konto. Dette sker sikkert på grund af problemer med filtilladelser.\n"
+#~ "\n"
+#~ "Tjek, at du har læsnings- og skrivningstilladelser for alle filer i denne "
+#~ "mappe:\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid ""
+#~ "The version number of the local mail database is formatted for a newer "
+#~ "version of Geary. Unfortunately, the database cannot be \"rolled back\" "
+#~ "to work with this version of Geary.\n"
+#~ "\n"
+#~ "Please install the latest version of Geary and try again."
+#~ msgstr ""
+#~ "Den lokale maildatabases versionsnummer er til en nyere version af Geary. "
+#~ "Desværre kan databasen ikke blive \"rullet tilbage\", så den virker med "
+#~ "denne version of Geary.\n"
+#~ "\n"
+#~ "Installér venligst den nyeste version af Geary og prøv igen."
+
+#~ msgid ""
+#~ "There was an error opening the local account. This is probably due to "
+#~ "connectivity issues.\n"
+#~ "\n"
+#~ "Please check your network connection and restart Geary."
+#~ msgstr ""
+#~ "Der opstod en felj under åbning af den lokele konto. Dette sker sikkert "
+#~ "på grund af forbindelsesproblemer.\n"
+#~ "\n"
+#~ "Tjek, at din internetforbindelse virker og genstart derefter Geary."
+
+#~ msgid "About %s"
+#~ msgstr "Om %s"
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Nikolaj Holmquist Pedersen <nikolajholmquist@gmail.com>\n"
+#~ "\n"
+#~ "Launchpad Contributions:\n"
+#~ "  Iason DeRulou https://launchpad.net/~iasonasmg\n"
+#~ "  Jimmy Merrild Krag https://launchpad.net/~beruic\n"
+#~ "  Nikolaj64 https://launchpad.net/~nikolajholmquist\n"
+#~ "  elementary Apps team https://launchpad.net/~elementary-apps\n"
+#~ "  scootergrisen https://launchpad.net/~scootergrisen"
+
+#~ msgid "Undo move (Ctrl+Z)"
+#~ msgstr "Fortryd flytning (Ctrl+Z)"
+
+#~ msgid "Are you sure you want to open \"%s\"?"
+#~ msgstr "Er du sikker på, at du vil åbne \"%s\"?"
+
+#~ msgid ""
+#~ "Attachments may cause damage to your system if opened.  Only open files "
+#~ "from trusted sources."
+#~ msgstr ""
+#~ "Vedhæftede filer kan skade dit system, når de åbnes.  Åbn kun filer fra "
+#~ "folk, du stoler på."
+
+#~ msgid "Don't _ask me again"
+#~ msgstr "S_pørg mig ikke igen"
+
+#~ msgid "A file named \"%s\" already exists.  Do you want to replace it?"
+#~ msgstr "Filen \"%s\" findes allerede. Vil du erstatte den?"
+
+#~ msgid ""
+#~ "The file already exists in \"%s\".  Replacing it will overwrite its "
+#~ "contents."
+#~ msgstr ""
+#~ "Filen findes allerede i \"%s\". Hvis du erstatter den, overskrives dens "
+#~ "indhold."
+
+#~ msgid "_Replace"
+#~ msgstr "_Erstat"
+
+#~ msgid "Close open draft messages?"
+#~ msgstr "Luk åbne kladder?"
+
+#~ msgid "Empty all email from your %s folder?"
+#~ msgstr "Tøm al e-mail fra din %s-mappe?"
+
+#~ msgid "This removes the email from Geary and your email server."
+#~ msgstr "Dette fjerner e-mailen fra Geary og din e-mailserver."
+
+#~ msgid "This cannot be undone."
+#~ msgstr "Dette kan ikke fortrydes."
+
+#~ msgid "Empty %s"
+#~ msgstr "Tøm %s"
+
+#~ msgid "Error emptying %s"
+#~ msgstr "Fejl ved tømning af %s"
+
+#~ msgid "Undo archive (Ctrl+Z)"
+#~ msgstr "Fortryd arkivéring (Ctrl+Z)"
+
+#~ msgid "Undo trash (Ctrl+Z)"
+#~ msgstr "Fortryd flytning til papirkurven (Ctrl+Z)"
+
+#~ msgid "Undo (Ctrl+Z)"
+#~ msgstr "Fortryd (Ctrl+Z)"
+
+#~ msgid "Start Geary with hidden main window"
+#~ msgstr "Start Geary med skjult hovedvindue"
+
+#~ msgid "Output debugging information"
+#~ msgstr "Vis fejlretningsinformation"
+
+#~ msgid "Log conversation monitoring"
+#~ msgstr "Logfør samtaleovervågning"
+
+#~ msgid "Log network deserialization"
+#~ msgstr "Logfør netværksdeserialisering"
+
+#~ msgid "Log network activity"
+#~ msgstr "Logfør netværksaktivitet"
+
+#~ msgid "Log IMAP replay queue"
+#~ msgstr "Logfør køen af IMAP-svar"
+
+#~ msgid "Log network serialization"
+#~ msgstr "Logfør netværksserialisering"
+
+#~ msgid "Log periodic activity"
+#~ msgstr "Logfør periodisk aktivitet"
+
+#~ msgid "Log database queries (generates lots of messages)"
+#~ msgstr "Logfør databaseforespørgsler (generérer mange meddelelser)"
+
+#~ msgid "Log folder normalization"
+#~ msgstr "Logfør mappenormalisering"
+
+#~ msgid "Allow inspection of WebView"
+#~ msgstr "Aktiver undersøgelse af web-visning"
+
+#~ msgid "Revoke all server certificates with TLS warnings"
+#~ msgstr "Ophæv alle servercertifikater med TLS-advarsler"
+
+#~ msgid "Display program version"
+#~ msgstr "Vis programversion"
+
+#~ msgid "Use %s to open a new composer window"
+#~ msgstr "Brug %s til at åbne et nyt skrivevindue"
+
+#~ msgid "Please report comments, suggestions and bugs to:"
+#~ msgstr "Send kommentarer, idéer og fejlrapporter til:"
+
+#~ msgid "Failed to parse command line options: %s\n"
+#~ msgstr "Kunne ikke genkende indstillingerne på kommandolinjen: %s\n"
+
+#~ msgid "Unrecognized command line option \"%s\"\n"
+#~ msgstr "Ukendt kommandolinje-indstilling \"%s\"\n"
+
+#~ msgid "%s - New Messages"
+#~ msgstr "%s - Nye beskeder"
+
+#~ msgid "%s, %d new message total"
+#~ msgid_plural "%s, %d new messages total"
+#~ msgstr[0] "%s, %d ny besked i alt"
+#~ msgstr[1] "%s, %d nye beskeder i alt"
+
+#~ msgid ""
+#~ "%s\n"
+#~ "(%d other new message for %s)"
+#~ msgid_plural ""
+#~ "%s\n"
+#~ "(%d other new messages for %s)"
+#~ msgstr[0] ""
+#~ "%s\n"
+#~ "(%d anden ny besked for %s)"
+#~ msgstr[1] ""
+#~ "%s\n"
+#~ "(%d andre nye beskeder for %s)"
+
+#~ msgid "Me"
+#~ msgstr "Mig"
+
+#~ msgid "Untrusted Connection: %s"
+#~ msgstr "Upålidelig forbindelse: %s"
+
+#~ msgid "The identity of the %s mail server at %s:%u could not be verified."
+#~ msgstr "Identiteten på %s mail-serveren på %s:%u kunne ikke verificeres."
+
+#~ msgid ""
+#~ "Selecting \"Trust This Server\" or \"Always Trust This Server\" may cause "
+#~ "your username and password to be transmitted insecurely."
+#~ msgstr ""
+#~ "Hvis du vælger \"Stol på denne server\" eller \"Stol altid på denne "
+#~ "server\" risikerer du at dit brugernavn og adgangskode bliver overført "
+#~ "usikkert."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Geary not to access this "
+#~ "server."
+#~ msgstr ""
+#~ "Hvis \"Stol ikke på denne server\" vælges, vil Geary ikke tilgå denne "
+#~ "server."
+
+#~ msgid "Geary will not add or update this email account."
+#~ msgstr "Geary vil ikke tilføje eller opdatere denne e-mailkonto."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Geary to stop accessing "
+#~ "this account."
+#~ msgstr ""
+#~ "Hvis \"Stol ikke på denne server\" vælges, vil Geary holde op med at "
+#~ "tilgå denne konto."
+
+#~ msgid "Geary will exit if you have no other open email accounts."
+#~ msgstr "Geary vil lukke ned hvis du ikke har nogen åbne e-mailkonti."
+
+#~ msgid ""
+#~ "Contact your system administrator or email service provider if you have "
+#~ "any question about these issues."
+#~ msgstr ""
+#~ "Kontakt din systemadministrator eller e-mail-serviceudbyder hvis du har "
+#~ "spørgsmål om disse problemer."
+
+#~ msgid "The server's certificate is not signed by a known authority"
+#~ msgstr "Serverens certifikat er ikke signeret af en kendt autoritet"
+
+#~ msgid "The server's identity does not match the identity in the certificate"
+#~ msgstr "Serverens identitet passer ikke med identiteten på certifikatet"
+
+#~ msgid "The server's certificate has expired"
+#~ msgstr "Serverens certifikat er udløbet"
+
+#~ msgid "The server's certificate has not been activated"
+#~ msgstr "Serverens certifikat er ikke blevet aktiveret"
+
+#~ msgid "The server's certificate has been revoked and is now invalid"
+#~ msgstr ""
+#~ "Serverens certifikat er blevet tilbagekaldt og er ikke længere gyldigt"
+
+#~ msgid "The server's certificate is considered insecure"
+#~ msgstr "Serverens certifikat betragtes som usikkert"
+
+#~ msgid "An error has occurred processing the server's certificate"
+#~ msgstr "En fejl opstod i forbindelse med behandling af serverens certifikat"
+
+#~ msgid "Geary requires your email password to continue"
+#~ msgstr "Geary har brug for koden til din e-mail for at kunne fortsætte"
+
+#~ msgid "Additional addresses for %s"
+#~ msgstr "Yderligere adresser for %s"
+
+#~ msgid "First Last"
+#~ msgstr "Først Sidst"
+
+#~ msgid "Welcome to Geary."
+#~ msgstr "Velkommen til Geary."
+
+#~ msgid "Enter your account information to get started."
+#~ msgstr "Indtast kontoinformation for at starte."
+
+#~ msgid "2 weeks back"
+#~ msgstr "2 uger siden"
+
+#~ msgid "1 month back"
+#~ msgstr "1 måned siden"
+
+#~ msgid "3 months back"
+#~ msgstr "3 måneder siden"
+
+#~ msgid "6 months back"
+#~ msgstr "6 måneder siden"
+
+#~ msgid "1 year back"
+#~ msgstr "1 år siden"
+
+#~ msgid "2 years back"
+#~ msgstr "2 år tilbage"
+
+#~ msgid "4 years back"
+#~ msgstr "4 år tilbage"
+
+#~ msgid "Everything"
+#~ msgstr "Alt"
+
+#~ msgid "Edit"
+#~ msgstr "Redigér"
+
+#~ msgid "Preview"
+#~ msgstr "Forhåndsvisning"
+
+#~ msgid "Remem_ber passwords"
+#~ msgstr "Hus_k adgangskoder"
+
+#~ msgid "Remem_ber password"
+#~ msgstr "Hu_sk adgangskode"
+
+#~ msgid "        &#8226; Invalid account nickname.\n"
+#~ msgstr "        &#8226; Ugyldigt kaldenavn til bruger.\n"
+
+#~ msgid "        &#8226; Email address already added to Geary.\n"
+#~ msgstr "        &#8226; E-mailadressen er allerede tilføjet til Geary\n"
+
+#~ msgid "        &#8226; IMAP connection error.\n"
+#~ msgstr "        &#8226; IMAP-forbindelsesfejl.\n"
+
+#~ msgid "        &#8226; IMAP username or password incorrect.\n"
+#~ msgstr "        &#8226; Forkert brugernavn eller adgangskode til IMAP.\n"
+
+#~ msgid "        &#8226; SMTP connection error.\n"
+#~ msgstr "        &#8226; SMTP-forbindelsesfejl.\n"
+
+#~ msgid "        &#8226; SMTP username or password incorrect.\n"
+#~ msgstr "        &#8226; Forkert brugernavn eller adgangskode til SMTP.\n"
+
+#~ msgid "        &#8226; Connection error.\n"
+#~ msgstr "        &#8226; Forbindelsesfejl.\n"
+
+#~ msgid "        &#8226; Username or password incorrect.\n"
+#~ msgstr "        &#8226; Forkert brugernavn eller adgangskode.\n"
+
+#~ msgid "_Add"
+#~ msgstr "_Tilføj"
+
+#~ msgid "%l:%M %P"
+#~ msgstr "%l:%M %P"
+
+#~ msgid "%H:%M"
+#~ msgstr "%H:%M"
+
+#~ msgctxt "Default clock format"
+#~ msgid "%l:%M %P"
+#~ msgstr "%l:%M %P"
+
+#~ msgid "%b %-e"
+#~ msgstr "%-e. %b"
+
+#~ msgid "%x"
+#~ msgstr "%x"
+
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%-e. %B %Y %-l:%M %P"
+
+#~ msgid "%B %-e, %Y %-H:%M"
+#~ msgstr "%-e. %B %Y %-H:%M"
+
+#~ msgctxt "Default full date"
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%-e. %B %Y %-l:%M %P"
+
+#~ msgid "Now"
+#~ msgstr "Nu"
+
+#~ msgid "%dm ago"
+#~ msgid_plural "%dm ago"
+#~ msgstr[0] "%dm siden"
+#~ msgstr[1] "%dm siden"
+
+#~ msgid "%dh ago"
+#~ msgid_plural "%dh ago"
+#~ msgstr[0] "%dh siden"
+#~ msgstr[1] "%dh siden"
+
+#~ msgid "Yesterday"
+#~ msgstr "I går"
+
+#~ msgid "%A"
+#~ msgstr "%A"
+
+#~ msgid "bytes"
+#~ msgstr "bytes"
+
+#~ msgctxt "Abbreviation for terabyte"
+#~ msgid "TB"
+#~ msgstr "TB"
+
+#~ msgctxt "Abbreviation for gigabyte"
+#~ msgid "GB"
+#~ msgstr "GB"
+
+#~ msgctxt "Abbreviation for megabyte"
+#~ msgid "MB"
+#~ msgstr "MB"
+
+#~ msgctxt "Abbreviation for kilobyte"
+#~ msgid "KB"
+#~ msgstr "KB"
+
+#~ msgid "%d message"
+#~ msgid_plural "%d messages"
+#~ msgstr[0] "%d besked"
+#~ msgstr[1] "%d beskeder"
+
+#~ msgid "%s, %s"
+#~ msgstr "%s, %s"
+
+#~ msgid "Inboxes"
+#~ msgstr "Indbakker"
+
+#~ msgid "Search %s account"
+#~ msgstr "Søg %s-konto"
+
+#~ msgid "%d result"
+#~ msgid_plural "%d results"
+#~ msgstr[0] "%d resultat"
+#~ msgstr[1] "%d resultater"
+
+#~ msgid "%u conversation selected."
+#~ msgid_plural "%u conversations selected."
+#~ msgstr[0] "%u samtale markeret."
+#~ msgstr[1] "%u samtaler markeret."
+
+#~ msgid "No search results found."
+#~ msgstr "Ingen søgeresultater blev fundet."
+
+#~ msgid "No conversations in folder."
+#~ msgstr "Ingen samtaler i denne mappe."
+
+#~ msgid "Always Show From Sender"
+#~ msgstr "Vis altid fra denne afsender"
+
+#~ msgid "Date:"
+#~ msgstr "Dato:"
+
+#~ msgid "%u read message"
+#~ msgid_plural "%u read messages"
+#~ msgstr[0] "%u læst besked"
+#~ msgstr[1] "%u læste beskeder"
+
+#~ msgid "This message was sent successfully, but could not be saved to %s."
+#~ msgstr ""
+#~ "Denne besked blev sendt uden problemer, men kunne ikke gemmes til %s."
+
+#~ msgid "_Copy"
+#~ msgstr "_Kopiér"
+
+#~ msgid "Copy _Email Address"
+#~ msgstr "Kopiér _e-mailadresse"
+
+#~ msgid "Copy _Link"
+#~ msgstr "Kopiér _link"
+
+#~ msgid "Select _Message"
+#~ msgstr "Vælg _besked"
+
+#~ msgid "Select _All"
+#~ msgstr "Markér _alt"
+
+#~ msgid "_Inspect"
+#~ msgstr "_Undersøg"
+
+#~ msgid "This link appears to go to"
+#~ msgstr "Dette link ser ud til at føre til"
+
+#~ msgid "but actually goes to"
+#~ msgstr "men går faktisk til"
+
+#~ msgid " (Invalid?)"
+#~ msgstr " (Ugyldig?)"
+
+#~ msgid "_Save Image As..."
+#~ msgstr "_Gem billede som..."
+
+#~ msgid "_Save As..."
+#~ msgstr "Gem _som..."
+
+#~ msgid "Save All A_ttachments..."
+#~ msgstr "Gem alle v_edhæftede filer..."
+
+#~ msgid "Save A_ttachment..."
+#~ msgid_plural "Save All A_ttachments..."
+#~ msgstr[0] "Gem v_edhæftet fil..."
+#~ msgstr[1] "Gem alle v_edhæftede filer..."
+
+#~ msgid "Reply to _All"
+#~ msgstr "Svar til _alle"
+
+#~ msgid "_Mark as Read"
+#~ msgstr "_Markér som læst"
+
+#~ msgid "_Mark as Unread"
+#~ msgstr "_Markér som ulæst"
+
+#~ msgid "Mark Unread From _Here"
+#~ msgstr "Markér som ulæst _herfra"
+
+#~ msgid "_View Source"
+#~ msgstr "Vis _kilde"
+
+#~ msgid "Failed to open default text editor."
+#~ msgstr "Kunne ikke åbne standardprogrammet til tekstredigéring."
+
+#~ msgid "%s - Conversation Inspector"
+#~ msgstr "%s - Samtaleundersøger"
+
+#~ msgid "Saved"
+#~ msgstr "Gemt"
+
+#~ msgid "Saving"
+#~ msgstr "Gemmer"
+
+#~ msgid "Error saving"
+#~ msgstr "Der opstod en fejl under lagring"
+
+#~ msgid "Press Backspace to delete quote"
+#~ msgstr "Tryk på Backspace for at slette citat"
+
+#~ msgid ""
+#~ "attach|attaching|attaches|attachment|attachments|attached|enclose|"
+#~ "enclosed|enclosing|encloses|enclosure|enclosures"
+#~ msgstr ""
+#~ "vedhæft|vedhæftning|vedhæfter|vedhæftelse|vedhæftelser|vedhæftet|vedlægge|"
+#~ "vedlagt|vedlægger|vedlæggelse|vedlæggelse"
+
+#~ msgid "Do you want to discard this message?"
+#~ msgstr "Ønsker du at kassére denne besked?"
+
+#~ msgid "Send message with an empty subject and body?"
+#~ msgstr "Send beskeden uden emne og indhold?"
+
+#~ msgid "Send message without an attachment?"
+#~ msgstr "Send beskeden uden en vedhæftet fil?"
+
+#~ msgid "Cannot add attachment"
+#~ msgstr "Kan ikke tilføje filen"
+
+#~ msgid "\"%s\" could not be found."
+#~ msgstr "\"%s\" blev ikke fundet."
+
+#~ msgid "\"%s\" is a folder."
+#~ msgstr "\"%s\" er en mappe."
+
+#~ msgid "\"%s\" is an empty file."
+#~ msgstr "\"%s\" er en tom fil."
+
+#~ msgid "\"%s\" could not be opened for reading."
+#~ msgstr "\"%s\" kunne ikke åbnes til læsning."
+
+#~ msgid "\"%s\" already attached for delivery."
+#~ msgstr "\"%s\" er allerede vedhæftet."
+
+#~ msgid "%s (%s)"
+#~ msgstr "%s (%s)"
+
+#~ msgid "To: "
+#~ msgstr "Til: "
+
+#~ msgid "Cc: "
+#~ msgstr "Cc: "
+
+#~ msgid "Bcc: "
+#~ msgstr "Bcc: "
+
+#~ msgid "Reply-To: "
+#~ msgstr "Svar-til: "
+
+#~ msgid "Select Color"
+#~ msgstr "Vælg farve"
+
+#~ msgid "%1$s via %2$s"
+#~ msgstr "%1$s via %2$s"
+
+#~ msgid "_From:"
+#~ msgstr "_Fra:"
+
+#~ msgid "%s (%d)"
+#~ msgstr "%s (%d)"
+
+#~ msgid "Sending..."
+#~ msgstr "Sender..."
+
+#~ msgid "%i match"
+#~ msgid_plural "%i matches"
+#~ msgstr[0] "%i fundet"
+#~ msgstr[1] "%i fundet"
+
+#~ msgid "%i match (wrapped)"
+#~ msgid_plural "%i matches (wrapped)"
+#~ msgstr[0] "%i fundet (ombrudt)"
+#~ msgstr[1] "%i fundet (ombrudt)"
+
+#~ msgid "not found"
+#~ msgstr "ikke fundet"
+
+#~ msgid "_OK"
+#~ msgstr "_OK"
+
+#~ msgid "_Cancel"
+#~ msgstr "_Annuller"
+
+#~ msgid "_Discard"
+#~ msgstr "_Kassér"
+
+#~ msgid "_Open"
+#~ msgstr "_Åbn"
+
+#~ msgid "_Print..."
+#~ msgstr "_Udskriv..."
+
+#~ msgid "_Remove"
+#~ msgstr "_Fjern"
+
+#~ msgid "_Keep"
+#~ msgstr "_Behold"
+
+#~ msgid "Search all mail in account for keywords (Ctrl+S)"
+#~ msgstr "Søg efter ord i al mail tilhørende kontoen (Ctrl+S)"
+
+#~ msgid "Indexing %s account"
+#~ msgstr "Indeksérer %s konto"
+
+#~ msgid "Send by Email"
+#~ msgstr "Send med e-mail"
+
+#~ msgid "Send files using Mail"
+#~ msgstr "Send filer med Mail"
+
+#~ msgid "Welcome to Mail"
+#~ msgstr "Velkommen til Mail"
+
+#~ msgid "More options"
+#~ msgstr "Flere valgmuligheder"
+
+#~ msgid "Search %s"
+#~ msgstr "Søg i %s"
+
+#~ msgid "Reading"
+#~ msgstr "Læsning"
+
+#~ msgid "Automatically select next message:"
+#~ msgstr "Vælg automatisk næste meddelelse:"
+
+#~ msgid "Conversation previews:"
+#~ msgstr "Forhåndsvisninger af samtale:"
+
+#~ msgid "Three-pane layout:"
+#~ msgstr "Layout med tre ruder:"
+
+#~ msgid "Composer"
+#~ msgstr "Skriver"
+
+#~ msgid "Spell check:"
+#~ msgstr "Stavekontrol:"
+
+#~ msgid "Notifications"
+#~ msgstr "Notifikationer"
+
+#~ msgid "Always watch for new mail:"
+#~ msgstr "Hold altid øje med nye e-mail:"
+
+#~ msgid "Delete Conversation (Shift+Delete)"
+#~ msgid_plural "Delete Conversations (Shift+Delete)"
+#~ msgstr[0] "Slet samtale (Skift+Delete)"
+#~ msgstr[1] "Slet samtaler (Skift+Delete)"
+
+#~ msgid "Delete Conversations (Shift+Delete)"
+#~ msgstr "Slet samtaler (Skift+Delete)"
+
+#~ msgid ""
+#~ "<span weight=\"bold\" size=\"larger\">Are you sure you want to remove "
+#~ "this account?</span> "
+#~ msgstr ""
+#~ "<span weight=\"bold\" size=\"larger\">Er du sikker på, at du vil slette "
+#~ "denne konto?</span> "
+
+#~ msgid ""
+#~ "All email associated with this account will be removed from your "
+#~ "computer. This will not affect email on the server."
+#~ msgstr ""
+#~ "Alle e-mails som er tilknyttet denne konto vil blive fjernet fra din "
+#~ "computer. Det vil ikke påvirke e-mail på serveren."
+
+#~ msgid "Nickname:"
+#~ msgstr "Kaldenavn:"
+
+#~ msgid "Find"
+#~ msgstr "Find"
+
+#~ msgid "Previous Result"
+#~ msgstr "Forrige resultat"
+
+#~ msgid "Next result"
+#~ msgstr "Næste resultat"
+
+#~ msgid "_Case sensitive"
+#~ msgstr "_Forskel på store og små bogstaver"
+
+#~ msgid "label"
+#~ msgstr "etiket"
+
+#~ msgid "Geary update in progress…"
+#~ msgstr "Geary er ved at opdatere…"
+
+#~ msgid "Remove email address"
+#~ msgstr "Fjern e-mailadresse"
+
+#~ msgid ""
+#~ "Some email services require additional addresses be configured on the "
+#~ "server.  Contact your email provider for more information."
+#~ msgstr ""
+#~ "Nogle e-mailtjenester kræver at serveren har konfigureret yderligere "
+#~ "adresser. Kontakt din e-mailudbyder for mere information."
+
+#~ msgid "_Update"
+#~ msgstr "_Opdater"
+
+#~ msgid "Please wait while Geary validates your account."
+#~ msgstr "Vent venligst mens Geary validerer din konto."
+
+#~ msgid "_Redo"
+#~ msgstr "_Omgør"
+
+#~ msgid "Cu_t"
+#~ msgstr "K_lip"
+
+#~ msgid "_Paste"
+#~ msgstr "_Indsæt"
+
+#~ msgid "_Left"
+#~ msgstr "_Venstre"
+
+#~ msgid "_Right"
+#~ msgstr "_Højre"
+
+#~ msgid "_Center"
+#~ msgstr "_Centrér"
+
+#~ msgid "_Justify"
+#~ msgstr "_Lige margener"
+
+#~ msgid "Link (Ctrl+L)"
+#~ msgstr "Link (Ctrl+L)"
+
+#~ msgid "C_olor"
+#~ msgstr "_Farve"
+
+#~ msgid "Quote text  (Ctrl+])"
+#~ msgstr "Citér tekst (Ctrl+])"
+
+#~ msgctxt "Clipboard paste with rich text"
+#~ msgid "Paste _With Formatting"
+#~ msgstr "Indsæt _med formatering"
+
+#~ msgid "Bold (Ctrl+B)"
+#~ msgstr "Fed (Ctrl+B)"
+
+#~ msgid "Italic (Ctrl+I)"
+#~ msgstr "Kursiv (Ctrl+i)"
+
+#~ msgid "Show Extended Fields"
+#~ msgstr "Vis udvidede felter"
+
+#~ msgctxt "Label"
+#~ msgid "Close and Save"
+#~ msgstr "Luk og gem"
+
+#~ msgctxt "Short Label"
+#~ msgid "Close and Save"
+#~ msgstr "Luk og gem"
+
+#~ msgctxt "Tooltip"
+#~ msgid "Close and Save"
+#~ msgstr "Luk og gem"
+
+#~ msgctxt "Label"
+#~ msgid "Close and Discard"
+#~ msgstr "Luk og forkast"
+
+#~ msgctxt "Short Label"
+#~ msgid "Close and Discard"
+#~ msgstr "Luk og forkast"
+
+#~ msgctxt "Tooltip"
+#~ msgid "Close and Discard"
+#~ msgstr "Luk og forkast"
+
+#~ msgid "Lar_ge"
+#~ msgstr "_Stor"
+
+#~ msgid "Large"
+#~ msgstr "Stor"
+
+#~ msgid "_Medium"
+#~ msgstr "_Medium"
+
+#~ msgid "Medium"
+#~ msgstr "Medium"
+
+#~ msgid "_Small"
+#~ msgstr "_Lille"
+
+#~ msgid "Small"
+#~ msgstr "Lille"
+
+#~ msgid "S_ans Serif"
+#~ msgstr "S_ans Serif"
+
+#~ msgid "Sans Serif"
+#~ msgstr "Sans Serif"
+
+#~ msgid "S_erif"
+#~ msgstr "S_erif"
+
+#~ msgid "Serif"
+#~ msgstr "Serif"
+
+#~ msgid "_Fixed Width"
+#~ msgstr "_Fast bredde"
+
+#~ msgid "Fixed Width"
+#~ msgstr "Fast bredde"
+
+#~ msgid "Detach"
+#~ msgstr "Løsriv"
+
+#~ msgid "Detach (Ctrl+D)"
+#~ msgstr "Løsriv (Ctrl+D)"
+
+#~ msgid "_Send"
+#~ msgstr "_Send"
+
+#~ msgid "Send (Ctrl+Enter)"
+#~ msgstr "Send (Ctrl+Enter)"
+
+#~ msgid "_Attach File"
+#~ msgstr "_Vedhæft fil"
+
+#~ msgid "Attach File"
+#~ msgstr "Vedhæft fil"
+
+#~ msgid "_Include Original Attachments"
+#~ msgstr "_Medtag originale vedhæftninger"
+
+#~ msgid "Include Original Attachments"
+#~ msgstr "Medtag originale vedhæftninger"
+
+#~ msgid "Application Menu"
+#~ msgstr "Programmenu"
+
+#~ msgid "_To"
+#~ msgstr "_Til"
+
+#~ msgid "_Cc"
+#~ msgstr "_Cc"
+
+#~ msgid "_Subject"
+#~ msgstr "_Emne"
+
+#~ msgid "_Bcc"
+#~ msgstr "_Bcc"
+
+#~ msgid "_Reply-To"
+#~ msgstr "_Reply-To"
+
+#~ msgid "From"
+#~ msgstr "Fra"
+
+#~ msgid "Drop files here"
+#~ msgstr "Slip filer her"
+
+#~ msgid "To add them as attachments"
+#~ msgstr "For at tilføje dem som vedhæftninger"
+
+#~ msgid "<span weight=\"bold\" size=\"larger\">Cannot remove account</span> "
+#~ msgstr "<span weight=\"bold\" size=\"larger\">Kan ikke fjerne konto</span> "
+
+#~ msgid ""
+#~ "A composer window associated with this account is currently open. Send or "
+#~ "discard the message and try again."
+#~ msgstr ""
+#~ "Der er allerede tilknyttet et åbent skrivevindue til denne konto. Send "
+#~ "eller forkast meddelelsen og prøv igen."
+
+#~ msgid "Addi_tional email addresses…"
+#~ msgstr "Yderligere _e-mailadresser…"
+
+#~ msgid "_Save sent mail"
+#~ msgstr "_Gem sendte mail"
+
+#~ msgid "Password"
+#~ msgstr "Adgangskode"
+
+#~ msgid "_Password:"
+#~ msgstr "_Adgangskode:"
+
+#~ msgid "Work, Home, etc."
+#~ msgstr "Arbejde, Hjemme osv."
+
+#~ msgid "N_ickname:"
+#~ msgstr "_Kaldenavn:"
+
+#~ msgid "S_ervice:"
+#~ msgstr "_Tjeneste:"
+
+#~ msgid "IMAP settings"
+#~ msgstr "IMAP-indstillinger"
+
+#~ msgid "Se_rver:"
+#~ msgstr "Se_rver:"
+
+#~ msgid "P_ort"
+#~ msgstr "P_ort"
+
+#~ msgid "Ser_ver:"
+#~ msgstr "Ser_ver:"
+
+#~ msgid "Por_t"
+#~ msgstr "Por_t"
+
+#~ msgid "SMTP settings"
+#~ msgstr "SMTP-indstillinger"
+
+#~ msgid "User_name:"
+#~ msgstr "Bruger_navn:"
+
+#~ msgid "Pass_word:"
+#~ msgstr "_Adgangskode:"
+
+#~ msgid "SMTP username"
+#~ msgstr "SMTP-brugernavn"
+
+#~ msgid "SMTP password"
+#~ msgstr "SMTP-adgangskode"
+
+#~ msgid "_Username:"
+#~ msgstr "_Brugernavn:"
+
+#~ msgid "IMAP username"
+#~ msgstr "IMAP-brugernavn"
+
+#~ msgid "IMAP password"
+#~ msgstr "IMAP-adgangskode"
+
+#~ msgid "Encr_yption:"
+#~ msgstr "_Kryptering:"
+
+#~ msgid "Encrypt_ion:"
+#~ msgstr "K_ryptering:"
+
+#~ msgid "SSL/TLS"
+#~ msgstr "SSL/TLS"
+
+#~ msgid "STARTTLS"
+#~ msgstr "STARTTLS"
+
+#~ msgid "No authentication re_quired"
+#~ msgstr "Ingen godkendelse krævet"
+
+#~ msgid "Use IMAP cre_dentials"
+#~ msgstr "_Brug IMAP-loginoplysninger"
+
+#~ msgid "Storage"
+#~ msgstr "Lager"
+
+#~ msgid "_Download mail"
+#~ msgstr "_Download mail"
+
+#~ msgid "Save dra_fts on server"
+#~ msgstr "Gem _kladde på server"
+
+#~ msgid "Si_gn emails (HTML allowed):"
+#~ msgstr "_Signér e-mails (HTML er tilladt):"
+
+#~ msgid "Add account"
+#~ msgstr "Tilføj konto"
+
+#~ msgid "Edit account"
+#~ msgstr "Rediger konto"
+
+#~ msgid "Remove account"
+#~ msgstr "Fjern konto"
+
+#~ msgid "Untrusted Connection"
+#~ msgstr "Ubetroet forbindelse"
+
+#~ msgid "_Always Trust This Server"
+#~ msgstr "_Stol altid på denne server"
+
+#~ msgid "_Trust This Server"
+#~ msgstr "_Stol på denne server"
+
+#~ msgid "_Don't Trust This Server"
+#~ msgstr "_Stol ikke på denne server"
+
+#~ msgid "SMTP Credentials"
+#~ msgstr "SMTP-loginoplysninger"
+
+#~ msgid "Username"
+#~ msgstr "Brugernavn"
+
+#~ msgid "_Remember password"
+#~ msgstr "_Husk adgangskode"
+
+#~ msgid "_Authenticate"
+#~ msgstr "_Godkend"
+
+#~ msgid "© 2011-2015 Yorba Foundation, © 2016 elementary LLC."
+#~ msgstr "© 2011-2015 Yorba Foundation, © 2016 elementary LLC."
+
+#~ msgid ""
+#~ "Mail encountered an error sending an email.  If the problem persists, "
+#~ "please manually delete the email from your Outbox folder."
+#~ msgstr ""
+#~ "Mail stødte på en fejl ved afsendelse af e-mail. Hvis problemet "
+#~ "fortsætter, så slet venligst manuelt e-mailen fra din Udbakke-mappe."
+
+#~ msgid ""
+#~ "Mail encountered an error saving a sent message to Sent Mail.  The "
+#~ "message will stay in your Outbox folder until you delete it."
+#~ msgstr ""
+#~ "Mail stødte på en fejl ved forsøg på at gemme e-mail til Sendte mail. "
+#~ "Meddelelsen bliver i din Udbakke-mappe indtil du sletter den."
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to corruption of the database file in this directory:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Mail can rebuild the database and re-synchronize with the server or "
+#~ "exit.\n"
+#~ "\n"
+#~ "Rebuilding the database will destroy all local email and its attachments. "
+#~ "<b>The mail on the your server will not be affected.</b>"
+#~ msgstr ""
+#~ "Der opstod en fejl ved åbning af den lokale post-database for denne "
+#~ "konto. Det er sandsynligvis på grund af at databasefilen i denne mappe er "
+#~ "ødelagt:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Mail kan genbygge databasen og gensynkronisere med serveren og afslutte.\n"
+#~ "\n"
+#~ "Genbygning af databasen vil destruere alle lokale e-mails og deres "
+#~ "vedhæftninger. <b>Posten på din server vil ikke blive påvirket.</b>"
+
+#~ msgid ""
+#~ "The version number of the local mail database is formatted for a newer "
+#~ "version of Mail. Unfortunately, the database cannot be \"rolled back\" to "
+#~ "work with this version of Mail.\n"
+#~ "\n"
+#~ "Please install the latest version of Mail and try again."
+#~ msgstr ""
+#~ "Versionen af den lokale post-database er formateret til en nyere version "
+#~ "af Mail. Desværre kan databasen ikke \"rulles tilbage\" så den kan komme "
+#~ "til at virke med denne version af Mail.\n"
+#~ "\n"
+#~ "Installer venligst den seneste version af Mail og prøv igen."
+
+#~ msgid ""
+#~ "There was an error opening the local account. This is probably due to "
+#~ "connectivity issues.\n"
+#~ "\n"
+#~ "Please check your network connection and restart Mail."
+#~ msgstr ""
+#~ "Der opstod en fejl ved åbning af den lokal konto. Det er sandsynligvis på "
+#~ "grund af forbindelsesproblemer.\n"
+#~ "\n"
+#~ "Tjek venligst din netværksforbindelse og genstart Mail."
+
+#~ msgid "This removes the email from Mail and your email server."
+#~ msgstr "Dette fjerner e-mailen fra Mail og din e-mailserver."
+
+#~ msgid "        &#8226; Email address already added to Mail.\n"
+#~ msgstr "        &#8226; E-mailadresse er allerede tilføjet til Mail.\n"
+
+#~ msgid "Mail requires your email password to continue"
+#~ msgstr "Mail har brug for adgangskoden til din e-mail for at fortsætte"
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Mail not to access this "
+#~ "server."
+#~ msgstr ""
+#~ "Hvis \"Stol ikke på denne server\" vælges så tilgår Mail ikke denne "
+#~ "server."
+
+#~ msgid "Mail will not add or update this email account."
+#~ msgstr "Mail vil ikke tilføje eller opdatere denne e-mailkonto."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Mail to stop accessing "
+#~ "this account."
+#~ msgstr ""
+#~ "Hvis \"Stol ikke på denne server\" vælges vil Mail stoppe med at tilgå "
+#~ "denne konto."
+
+#~ msgid "Mail will exit if you have no other open email accounts."
+#~ msgstr "Mail vil afslutte hvis du ikke har andre åbne e-mailkonti."
+
+#~ msgid "Please wait while Mail validates your account."
+#~ msgstr "Vent venligst mens Mail validere din konto."
+
+#~ msgid "Mail update in progress…"
+#~ msgstr "Mail er ved at blive opdateret…"
+
+#~ msgid ""
+#~ "2011-2015 Yorba Foundation\n"
+#~ "© 2016 elementary LLC."
+#~ msgstr ""
+#~ "2011-2015 Yorba Foundation\n"
+#~ "© 2016 elementary LLC."
+
+#~ msgid "Show About dialog"
+#~ msgstr "Vis Om-dialog"
+
+#~ msgid "Save Attachment…"
+#~ msgstr "Gem vedhæftning…"
+
+#~ msgid "Save All Attachments…"
+#~ msgstr "Gem alle vedhæftninger…"
+
+#~ msgid "View Source"
+#~ msgstr "Vis kilde"
+
+#~ msgid "View message"
+#~ msgstr "Vis meddelelse"
+
+#~ msgid "Copy Email Address"
+#~ msgstr "Kopiér e-mailadresse"
+
+#~ msgid "Hide message"
+#~ msgstr "Skjul meddelelse"
+
+#~ msgid "Case sensitive"
+#~ msgstr "Forskel på store og små bogstaver"
+
+#~ msgid "%u match"
+#~ msgid_plural "%u matches"
+#~ msgstr[0] "%u fundet"
+#~ msgstr[1] "%u fundet"
+
+#~ msgid "no-reply;no_reply;noreply;do-not-reply;do_not_reply;donotreply"
+#~ msgstr ""
+#~ "no-reply;no_reply;noreply;do-not-reply;do_not_reply;donotreply;intet "
+#~ "svar;ingen svar;svar ikke;"
+
+#~ msgid "Include original attachments"
+#~ msgstr "Inkludér originale vedhæftninger"
+
+#~ msgid "Don't ask me again"
+#~ msgstr "Spørg mig ikke igen"
+
+#~ msgid "Are you sure you want to remove this account?"
+#~ msgstr "Er du sikker på, at du vil fjerne denne konto?"
+
+#~ msgid "Username:"
+#~ msgstr "Brugernavn:"
+
+#~ msgid "Password:"
+#~ msgstr "Adgangskode:"
+
+#~ msgid "SMTP Credentials:"
+#~ msgstr "SMTP-loginoplysninger:"
+
+#~ msgid "Remember password"
+#~ msgstr "Husk adgangskode"
+
+#~ msgid "Authenticate"
+#~ msgstr "Godkend"
+
+#~ msgid "Strikethrough (Ctrl+%)"
+#~ msgstr "Gennemstreget (Ctrl+%)"
+
+#~ msgid "Link (Ctrl+K)"
+#~ msgstr "Link (Ctrl+K)"
+
+#~ msgid "Forward (Ctrl+Shift+F)"
+#~ msgstr "Videresend (Ctrl+Skift+F)"

@@ -1,0 +1,253 @@
+msgid ""
+msgstr ""
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-08 16:46+0000\n"
+"PO-Revision-Date: 2023-02-04 10:25+0000\n"
+"Last-Translator: Martin Myrvold <myrvold.martin@gmail.com>\n"
+"Language-Team: Norwegian Nynorsk <https://l10n.elementary.io/projects/mail/"
+"extra/nn/>\n"
+"Language: nn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.2\n"
+
+#: data/mail.metainfo.xml.in:10 data/io.elementary.mail.desktop.in:2
+msgid "Mail"
+msgstr "E-post"
+
+#: data/mail.metainfo.xml.in:11 data/io.elementary.mail.desktop.in:3
+msgid "Send and receive mail"
+msgstr "Send og motta e-post"
+
+#: data/mail.metainfo.xml.in:13
+msgid ""
+"Mail is designed to let you manage your email quickly and effortlessly. Its "
+"interface is based on conversations, so you can read an entire discussion "
+"without having to click from message to message."
+msgstr ""
+"Mail er laga for å la deg handsame e-post raskt og enkelt. Grensesnittet er "
+"samtaleorientert, og lèt deg lese heile emnetrådar utan å måtte trykke deg "
+"fram og tilbake mellom enkeltmeldingar."
+
+#: data/mail.metainfo.xml.in:15
+msgid "Lightweight mail client with full IMAP support"
+msgstr "Lettdriven e-postklient med full IMAP-støtte"
+
+#: data/mail.metainfo.xml.in:16
+msgid "Mail grouped into conversations, not a tree of threads"
+msgstr "E-post vert gruppert som samtalar, ikkje som eit tre av trådar"
+
+#: data/mail.metainfo.xml.in:17
+msgid "As-you-type searching"
+msgstr "Sanntidssøk"
+
+#: data/mail.metainfo.xml.in:18
+msgid "Multiple account support"
+msgstr "Støttar fleire kontoar"
+
+#: data/mail.metainfo.xml.in:19
+#, fuzzy
+#| msgid "Inline HTML composer that saves drafts to the server"
+msgid "Powerful HTML composer that saves drafts to the server"
+msgstr "Inline HTML-assistent som lagrar utkasta hos tenaren"
+
+#: data/mail.metainfo.xml.in:20
+msgid "Works with Gmail, Yahoo! Mail, and other popular IMAP servers"
+msgstr "Fungerar med Gmail, Yahoo! Mail og andre populære IMAP-tenarar"
+
+#: data/mail.metainfo.xml.in:66
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/mail.metainfo.xml.in:74 data/mail.metainfo.xml.in:83
+#: data/mail.metainfo.xml.in:100 data/mail.metainfo.xml.in:133
+#: data/mail.metainfo.xml.in:154 data/mail.metainfo.xml.in:173
+#: data/mail.metainfo.xml.in:195
+msgid "Improvements:"
+msgstr "Forbetringar:"
+
+#: data/mail.metainfo.xml.in:76 data/mail.metainfo.xml.in:86
+#: data/mail.metainfo.xml.in:111 data/mail.metainfo.xml.in:142
+#: data/mail.metainfo.xml.in:156 data/mail.metainfo.xml.in:177
+#: data/mail.metainfo.xml.in:198
+msgid "Updated translations"
+msgstr "Oppdaterte oversetjingar"
+
+#: data/mail.metainfo.xml.in:85
+msgid ""
+"Use the actual recipients of a message as sender when replying or forwarding"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:102
+msgid "Ability to create multiple signatures and set defaults per account"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:103
+msgid "Add support for inline images in the composer"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:104
+msgid "Add support for renaming folders"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:105
+msgid "Move settings menu to the mailboxes pane"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:106
+msgid "Use the FileChooser portal"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:107
+msgid "Improve network availability handling"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:108
+msgid "Fix issues with fetching e-mail when Mail is not autostarted"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:109
+msgid "Notify the user when a calendar event is included in a message"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:110
+msgid "Improve performance when switching between folders"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:135
+msgid ""
+"The welcome view is removed when an account is added in Online Accounts "
+"without having to restart Mail"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:136
+msgid ""
+"The composer is always presented as a new window and includes more keyboard "
+"shortcuts"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:137
+msgid "The search filter menu now appears next to the search bar"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:138
+msgid "HeaderBars appear to float above content when scrolled"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:139
+msgid "Fix a potential crash with empty messages"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:140
+msgid "Stop resizing from cutting off the message list"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:141
+#, fuzzy
+#| msgid "Stability improvements"
+msgid "Performance improvements"
+msgstr "Forbetringar på stabiliteten"
+
+#: data/mail.metainfo.xml.in:167 data/mail.metainfo.xml.in:189
+msgid "Fixes:"
+msgstr "Løyste feil:"
+
+#: data/mail.metainfo.xml.in:169
+msgid "Fixed an error which caused mail accounts to be loaded multiple times"
+msgstr ""
+"Fiksa ein feil som førte til at e-postkontoar vart lasta inn fleire gonger"
+
+#: data/mail.metainfo.xml.in:170
+msgid "Fixed a bug which caused Mail to crash occasionally"
+msgstr "Fiksa ein feil som gjorde at E-post krasja plutseleg"
+
+#: data/mail.metainfo.xml.in:171
+msgid "Display recipient in Sent folder instead of sender"
+msgstr "Visar mottaker i Sendt-mappa istadenfor avsender"
+
+#: data/mail.metainfo.xml.in:175
+msgid "Updated app icon"
+msgstr "Oppdatert app-ikon"
+
+#: data/mail.metainfo.xml.in:176
+msgid "New design"
+msgstr "Nytt design"
+
+#: data/mail.metainfo.xml.in:184
+msgid "New features:"
+msgstr "Nye funksjonar:"
+
+#: data/mail.metainfo.xml.in:186
+msgid "Use message subject for composer window title"
+msgstr "Brukar emnetittel som tittel på Send melding-vindauge"
+
+#: data/mail.metainfo.xml.in:187
+msgid "Added support for Unified Inbox for Microsoft 365 accounts"
+msgstr "Lagt til støtte for samla innboks på Microsoft 365-kontoar"
+
+#: data/mail.metainfo.xml.in:191
+msgid ""
+"Fixed an error which caused the inbox monitoring in the background to crash"
+msgstr ""
+"Fiksa ein feil som gjorde at oppfølging av innboksen i bakgrunnen krasja"
+
+#: data/mail.metainfo.xml.in:192
+msgid "Removed duplicate sender addresses when composing a message"
+msgstr "Fjerna dobbel avsendaradressa når du skriv ny melding"
+
+#: data/mail.metainfo.xml.in:193
+msgid "Fix a freeze when archiving the last message in a folder"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:197
+msgid ""
+"Renamed Office 365 to Microsoft 365 to follow suite on Microsoft's rebranding"
+msgstr ""
+
+#: data/io.elementary.mail.desktop.in:6
+msgid "Email;E-mail;Mail;"
+msgstr "Epost;E-post;Post;"
+
+#: data/io.elementary.mail.desktop.in:16
+msgid "Compose Message"
+msgstr "Skriv ny melding"
+
+#~ msgid "Mark sent messages as read"
+#~ msgstr "Merk dei sendte meldingane som lest"
+
+#~ msgid "Use accent color for unread message titles"
+#~ msgstr "Bruk aksentfarge for meldingar som ikkje er lest"
+
+#~ msgid "Use local time in message headers"
+#~ msgstr "Bruk lokal tid i tittelen på meldingar"
+
+#~ msgid "Improve search performance"
+#~ msgstr "Forbetra søkefunksjonalitet"
+
+#~ msgid "Fix an issue that prevented some messaging from rendering at all"
+#~ msgstr ""
+#~ "Løyste ein feil som førte til at nokre meldingar ikkje vart vist i det "
+#~ "heile tatt"
+
+#~ msgid "Fix a crash on startup for some conversations"
+#~ msgstr "Løyste ein feil under oppstart for nokre dialogar"
+
+#~ msgid "Only save drafts when there are new changes"
+#~ msgstr "Kun lagra utkast når det er nye endringar"
+
+#~ msgid "io.elementary.mail"
+#~ msgstr "io.elementary.mail"
+
+#~ msgid "Desktop notifications"
+#~ msgstr "Skrivebordsvarsel"
+
+#~ msgid "Minor bug fixes"
+#~ msgstr "Mindre feilfiksingar"
+
+#~ msgid "Translation updates"
+#~ msgstr "Oppdaterte oversettingar"
+
+#~ msgid "internet-mail"
+#~ msgstr "internet-mail"

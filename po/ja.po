@@ -1,0 +1,2191 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Japanese (Mail)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-08 16:46+0000\n"
+"PO-Revision-Date: 2026-10-12 08:03+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
+"Language-Team: Japanese <https://l10n.elementaryos.org/projects/mail/mail/"
+"ja/>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.5\n"
+"X-Launchpad-Export-Date: 2017-03-09 05:59+0000\n"
+
+#: src/Application.vala:145
+msgid "Unable to open System Settings"
+msgstr "“システム設定”を開けません"
+
+#: src/Application.vala:146
+msgid ""
+"Open System Settings manually or install Evolution to set up online accounts."
+msgstr ""
+"オンラインアカウントをセットアップするには、“システム設定”を直接開くか、"
+"Evolution をインストールしてください。"
+
+#: src/Application.vala:217
+msgid ""
+"Mail will automatically start when this device turns on and run when its "
+"window is closed so that it can send notifications when new mail arrives."
+msgstr ""
+"メール受信時に通知できるよう、“メール”はデバイス起動時に自動的にバックグラウ"
+"ンドで起動し、ウィンドウを閉じても常駐します。"
+
+#: src/Composer.vala:94 src/MessageList/MessageListItem.vala:102
+msgid "From:"
+msgstr "差出人:"
+
+#: src/Composer.vala:114 src/MessageList/MessageListItem.vala:108
+msgid "To:"
+msgstr "To:"
+
+#: src/Composer.vala:120
+msgid "Cc"
+msgstr "Cc"
+
+#: src/Composer.vala:122
+msgid "Bcc"
+msgstr "Bcc"
+
+#: src/Composer.vala:133 src/MessageList/MessageListItem.vala:148
+msgid "Cc:"
+msgstr "Cc:"
+
+#: src/Composer.vala:152
+msgid "Bcc:"
+msgstr "Bcc:"
+
+#: src/Composer.vala:171 src/MessageList/MessageListItem.vala:114
+msgid "Subject:"
+msgstr "件名:"
+
+#: src/Composer.vala:205
+msgid "Insert Image"
+msgstr "画像を挿入"
+
+#: src/Composer.vala:232
+msgid "Delete draft"
+msgstr "下書きを削除"
+
+#: src/Composer.vala:240
+msgid "Attach file"
+msgstr "ファイルを添付"
+
+#: src/Composer.vala:251
+msgid "Insert Signature…"
+msgstr "署名を挿入…"
+
+#: src/Composer.vala:256
+msgid "Send"
+msgstr "送信"
+
+#: src/Composer.vala:299
+msgid "New Message"
+msgstr "新しいメッセージ"
+
+#: src/Composer.vala:445
+msgid "Choose a file"
+msgstr "ファイルを選択"
+
+#: src/Composer.vala:448
+msgid "Attach"
+msgstr "添付"
+
+#: src/Composer.vala:449 src/Composer.vala:472 src/Composer.vala:763
+#: src/Dialogs/InsertLinkDialog.vala:66
+#: src/MessageList/AttachmentButton.vala:144
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: src/Composer.vala:464
+msgid "Images"
+msgstr "画像"
+
+#: src/Composer.vala:468
+msgid "Choose an image"
+msgstr "画像を選択"
+
+#: src/Composer.vala:471
+msgid "Insert"
+msgstr "挿入"
+
+#: src/Composer.vala:500
+msgid "Unable to insert image"
+msgstr "画像を挿入できません"
+
+#: src/Composer.vala:501
+msgid "There was an unexpected error while trying to insert the image."
+msgstr "画像の挿入試行中に予期しないエラーが発生しました。"
+
+#: src/Composer.vala:665
+msgid "%a, %b %-e, %Y at %-l:%M %p"
+msgstr "%Y年%b%-e日 %a %p %-l:%M"
+
+#: src/Composer.vala:695
+#, c-format
+msgid "On %1$s, %2$s wrote:"
+msgstr "%1$s、%2$s さんのメッセージ:"
+
+#: src/Composer.vala:699
+msgid "---------- Forwarded message ----------"
+msgstr "---------- 転送されたメッセージ ----------"
+
+#: src/Composer.vala:701
+#, c-format
+msgid "From: %s<br/>"
+msgstr "差出人: %s<br/>"
+
+#: src/Composer.vala:702
+#, c-format
+msgid "Subject: %s<br/>"
+msgstr "件名: %s<br/>"
+
+#: src/Composer.vala:703
+#, c-format
+msgid "Date: %s<br/>"
+msgstr "日付: %s<br/>"
+
+#: src/Composer.vala:704
+#, c-format
+msgid "To: %s<br/>"
+msgstr "宛先: %s<br/>"
+
+#: src/Composer.vala:706
+#, c-format
+msgid "Cc: %s<br/>"
+msgstr "Cc: %s<br/>"
+
+#: src/Composer.vala:754
+msgid "Permanently delete this draft?"
+msgstr "この下書きを完全に削除しますか?"
+
+#: src/Composer.vala:755
+msgid ""
+"You cannot undo this action, nor recover your draft once it has been deleted."
+msgstr "この操作はやり直せません。下書きを削除すると復元できなくなります。"
+
+#: src/Composer.vala:765
+msgid "Delete Draft"
+msgstr "下書きを削除"
+
+#: src/Composer.vala:789
+msgid "Send without subject?"
+msgstr "件名なしで送信しますか?"
+
+#: src/Composer.vala:790
+msgid ""
+"This message has an empty subject field. The recipient may be unable to "
+"infer its scope or importance."
+msgstr ""
+"このメッセージには件名がありません。受信者が話題や重要性を推測できない可能性"
+"があります。"
+
+#: src/Composer.vala:797
+msgid "Don't Send"
+msgstr "送信しない"
+
+#: src/Composer.vala:799
+msgid "Send Anyway"
+msgstr "了解して送信"
+
+#: src/Composer.vala:830
+msgid "Sent message was not saved"
+msgstr "送信したメッセージは保存されませんでした"
+
+#: src/Composer.vala:831
+msgid ""
+"The message was sent, however a copy was not saved to the Sent message "
+"folder."
+msgstr ""
+"メッセージは送信されましたが、そのコピーは送信済みフォルダーに保存されません"
+"でした。"
+
+#: src/Composer.vala:846
+msgid "Unable to send message"
+msgstr "メッセージを送信できません"
+
+#: src/Composer.vala:847
+msgid "There was an unexpected error while sending your message."
+msgstr "メッセージの送信中に予期しないエラーが発生しました。"
+
+#: src/Composer.vala:945 src/FolderList/FolderList.vala:55
+msgid "Edit Signatures…"
+msgstr "署名を編集…"
+
+#: src/Composer.vala:949
+msgid "None"
+msgstr "なし"
+
+#: src/Composer.vala:1140
+msgid "Unable to save draft"
+msgstr "下書きを保存できません"
+
+#: src/Composer.vala:1141
+msgid "There was an unexpected error while saving your draft."
+msgstr "下書きの保存中に予期しないエラーが発生しました。"
+
+#: src/EditorToolbar.vala:55
+msgid "Bold"
+msgstr "太字"
+
+#: src/EditorToolbar.vala:62
+msgid "Italic"
+msgstr "斜体"
+
+#: src/EditorToolbar.vala:73
+msgid "Underline"
+msgstr "下線"
+
+#: src/EditorToolbar.vala:85
+msgid "Strikethrough"
+msgstr "取り消し線"
+
+#: src/EditorToolbar.vala:100
+msgid "Remove formatting"
+msgstr "書式を解除"
+
+#: src/EditorToolbar.vala:108 src/Dialogs/InsertLinkDialog.vala:68
+msgid "Insert Link"
+msgstr "リンクを挿入"
+
+#: src/InboxMonitor.vala:158 src/InboxMonitor.vala:170
+#, c-format
+msgid "%s to %s"
+msgstr "%s から %s"
+
+#. /TRANSLATORS: The %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#: src/InboxMonitor.vala:165
+#, c-format
+msgid "%u new message"
+msgid_plural "%u new messages"
+msgstr[0] "%u 件の新着メッセージ"
+
+#. /TRANSLATORS: The first %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#. /The next %s represents the number of senders
+#: src/InboxMonitor.vala:177
+#, c-format
+msgid "%s from %u sender"
+msgid_plural "%s from %u senders"
+msgstr[0] "%2$u 人から %1$s"
+
+#: src/MainWindow.vala:80
+msgid "Mail"
+msgstr "メール"
+
+#: src/MainWindow.vala:123 src/Dialogs/AliasDialog/AliasDialog.vala:96
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:172
+msgid "Undo"
+msgstr "元に戻す"
+
+#: src/MainWindow.vala:281
+msgid "Message Archived"
+msgid_plural "Messages Archived"
+msgstr[0] "メッセージをアーカイブしました"
+
+#: src/MainWindow.vala:285
+msgid "Couldn't archive message"
+msgstr "メッセージをアーカイブできませんでした"
+
+#: src/MainWindow.vala:298
+msgid "Message Moved"
+msgid_plural "Messages Moved"
+msgstr[0] "メッセージを移動しました"
+
+#: src/MainWindow.vala:302
+msgid "Couldn't move message"
+msgstr "メッセージを移動できませんでした"
+
+#: src/MainWindow.vala:315
+msgid "Message Deleted"
+msgid_plural "Messages Deleted"
+msgstr[0] "メッセージを削除しました"
+
+#: src/MainWindow.vala:319
+msgid "Couldn't delete message"
+msgstr "メッセージを削除できませんでした"
+
+#: src/WelcomeView.vala:45
+msgid "Connect an Account"
+msgstr "アカウントを接続しましょう"
+
+#: src/WelcomeView.vala:52
+msgid "Mail uses email accounts configured in System Settings."
+msgstr "“メール”は、“システム設定”で設定されたメールアカウントを使用します。"
+
+#: src/WelcomeView.vala:59
+msgid "Online Accounts…"
+msgstr "オンラインアカウント…"
+
+#: src/Backend/Account.vala:48
+msgid "Unable to connect"
+msgstr "接続できません"
+
+#: src/Backend/Account.vala:49
+msgid "There was an unexpected error while trying to connect to the server."
+msgstr "サーバーへの接続試行中に予期しないエラーが発生しました。"
+
+#: src/Backend/MoveOperation.vala:65
+#, c-format
+msgid "Moving messages… (%u remaining)"
+msgstr "メッセージを移動しています… (残り %u 件)"
+
+#: src/Backend/MoveOperation.vala:98
+msgid "No Archive folder is configured."
+msgstr "アーカイブフォルダーが未設定です。"
+
+#: src/Backend/MoveOperation.vala:126
+msgid "The destination folder was not found."
+msgstr "移動先フォルダーが見つかりませんでした。"
+
+#: src/Backend/MoveOperation.vala:130
+msgid "The source folder is the destination folder."
+msgstr "移動元フォルダーが移動先です。"
+
+#: src/Backend/Session.vala:642
+msgid "New Signature"
+msgstr "新しい署名"
+
+#: src/Backend/ContactManager.vala:88 src/Backend/ContactManager.vala:122
+#, c-format
+msgid "Couldn't add “%s” to addressbook"
+msgstr "“%s”をアドレス帳に追加できませんでした"
+
+#: src/Backend/ContactManager.vala:89
+msgid "No addressbook available."
+msgstr "利用可能なアドレス帳がありません。"
+
+#: src/Backend/ContactManager.vala:123
+msgid "Operation failed."
+msgstr "操作に失敗しました。"
+
+#: src/ConversationList/ConversationItemModel.vala:74
+#: src/ConversationList/ConversationItemModel.vala:112
+msgid ", "
+msgstr ", "
+
+#: src/ConversationList/ConversationItemModel.vala:77
+#: src/ConversationList/ConversationItemModel.vala:115
+#: src/ConversationList/ConversationItemModel.vala:123
+#: src/MessageList/AttachmentButton.vala:100
+msgid "Unknown"
+msgstr "不明"
+
+#: src/ConversationList/ConversationList.vala:85
+msgid "Search Mail"
+msgstr "メールを検索"
+
+#: src/ConversationList/ConversationList.vala:89
+msgid "Hide read conversations"
+msgstr "開封済みのスレッドを非表示"
+
+#: src/ConversationList/ConversationList.vala:90
+msgid "Hide unstarred conversations"
+msgstr "スターなしのスレッドを非表示"
+
+#: src/ConversationList/ConversationList.vala:107
+msgid "Filter Conversations"
+msgstr "スレッドをフィルター"
+
+#: src/ConversationList/ConversationList.vala:130
+msgid "Fetch new messages"
+msgstr "新着メッセージを取得"
+
+#: src/ConversationList/ConversationList.vala:137
+msgid "Fetching new messages…"
+msgstr "新着メッセージを取得しています…"
+
+#: src/ConversationList/ConversationListItem.vala:94
+msgid "Archive"
+msgstr "アーカイブ"
+
+#: src/ConversationList/ConversationListItem.vala:99
+msgid "Trash"
+msgstr "ゴミ箱"
+
+#: src/ConversationList/ConversationListItem.vala:181
+msgid "Unread"
+msgstr "未読"
+
+#: src/ConversationList/ConversationListItem.vala:194
+msgid "Replied"
+msgstr "返信済み"
+
+#: src/ConversationList/ConversationListItem.vala:198
+msgid "Forwarded"
+msgstr "転送済み"
+
+#: src/ConversationList/ConversationListItem.vala:212
+msgid "Move To Trash"
+msgstr "ゴミ箱に移動"
+
+#: src/ConversationList/ConversationListItem.vala:215
+msgid "Mark As Unread"
+msgstr "未読としてマーク"
+
+#: src/ConversationList/ConversationListItem.vala:217
+#: src/MessageList/MessageList.vala:51
+msgid "Mark as Read"
+msgstr "既読としてマーク"
+
+#: src/ConversationList/ConversationListItem.vala:221
+#: src/MessageList/MessageList.vala:52
+msgid "Star"
+msgstr "スターを付ける"
+
+#: src/ConversationList/ConversationListItem.vala:223
+#: src/MessageList/MessageList.vala:53
+msgid "Unstar"
+msgstr "スターを外す"
+
+#: src/Dialogs/InsertLinkDialog.vala:29
+msgid "URL:"
+msgstr "URL:"
+
+#: src/Dialogs/InsertLinkDialog.vala:39
+msgid "Link Text:"
+msgstr "リンクテキスト:"
+
+#: src/Dialogs/InsertLinkDialog.vala:45
+msgid "Example Website"
+msgstr "ウェブサイト名を入力"
+
+#: src/Dialogs/AliasDialog/Alias.vala:52
+msgid "John Doe"
+msgstr "山田 太郎"
+
+#: src/Dialogs/AliasDialog/Alias.vala:56
+msgid "Name"
+msgstr "名前"
+
+#: src/Dialogs/AliasDialog/Alias.vala:75
+msgid "E-mail Address"
+msgstr "メールアドレス"
+
+#: src/Dialogs/AliasDialog/Alias.vala:80
+msgid "Delete alias"
+msgstr "エイリアスを削除"
+
+#: src/Dialogs/AliasDialog/Alias.vala:100
+msgid "Edit alias"
+msgstr "エイリアスを編集"
+
+#: src/Dialogs/AliasDialog/Alias.vala:175
+msgid "Name not set"
+msgstr "名前未設定"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:33
+msgid "No Aliases"
+msgstr "エイリアスなし"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:37
+msgid "Add aliases using the button in the toolbar below"
+msgstr "以下のツールバー内のボタンを使って、エイリアスを追加してください"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:67
+msgid "Add Alias…"
+msgstr "エイリアスを追加…"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:104
+msgid "Aliases"
+msgstr "エイリアス"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:108
+msgid "Close"
+msgstr "閉じる"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:178
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:330
+#, c-format
+msgid "'%s' deleted"
+msgstr "'%s' を削除しました"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:39
+msgid "No Signatures"
+msgstr "署名なし"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:43
+msgid "Add signatures using the button in the toolbar below"
+msgstr "以下のツールバー内のボタンを使って、署名を追加してください"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:67
+msgid "Create Signature"
+msgstr "署名を作成"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:86
+msgid "Title"
+msgstr "タイトル"
+
+#. Work around a styling issue
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:99
+msgid "For example “Work” or “Personal”"
+msgstr "“仕事用”や“個人用”など"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:122
+msgid "Delete"
+msgstr "削除"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:131
+msgid "Set Default For…"
+msgstr "デフォルトに設定…"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:156
+msgid "Signature"
+msgstr "署名"
+
+#: src/FolderList/AccountItemModel.vala:155
+msgid "Edit Aliases…"
+msgstr "エイリアスを編集…"
+
+#: src/FolderList/FolderItemModel.vala:48
+msgid "Refresh folder"
+msgstr "フォルダーを更新"
+
+#: src/FolderList/FolderItemModel.vala:53
+msgid "Rename folder"
+msgstr "フォルダー名を変更"
+
+#: src/FolderList/FolderItemModel.vala:146
+#: src/FolderList/FolderItemModel.vala:175
+#: src/FolderList/FolderItemModel.vala:193
+#, c-format
+msgid "Couldn't rename “%s”"
+msgstr "“%s”の名前を変更できませんでした"
+
+#: src/FolderList/FolderItemModel.vala:147
+msgid "Folder names cannot contain “/”"
+msgstr "フォルダー名には“/”を使えません"
+
+#: src/FolderList/FolderItemModel.vala:176
+#, c-format
+msgid "A folder named “%s” already exists"
+msgstr "“%s”というフォルダーはすでに存在します"
+
+#: src/FolderList/FolderList.vala:34
+msgid "Compose new message"
+msgstr "新しいメッセージを作成"
+
+#: src/FolderList/FolderList.vala:56
+msgid "Account Settings…"
+msgstr "アカウント設定…"
+
+#: src/FolderList/FolderList.vala:59
+msgid "Always Show Remote Images"
+msgstr "常にリモートの画像を表示"
+
+#: src/FolderList/FolderList.vala:65
+msgid "Menu"
+msgstr "メニュー"
+
+#: src/FolderList/GroupedFolderItemModel.vala:38
+msgctxt "Inbox Folder"
+msgid "Inbox"
+msgstr "受信トレイ"
+
+#: src/FolderList/GroupedFolderItemModel.vala:42
+msgctxt "Archive Folder"
+msgid "Archive"
+msgstr "アーカイブ"
+
+#: src/FolderList/GroupedFolderItemModel.vala:46
+msgctxt "Sent Folder"
+msgid "Sent"
+msgstr "送信済み"
+
+#: src/FolderList/SessionItemModel.vala:28
+msgid "All Mailboxes"
+msgstr "すべての受信箱"
+
+#: src/MessageList/MessageList.vala:28 src/MessageList/MessageListItem.vala:210
+msgid "Reply"
+msgstr "返信"
+
+#: src/MessageList/MessageList.vala:37 src/MessageList/MessageListItem.vala:213
+msgid "Reply All"
+msgstr "全員に返信"
+
+#: src/MessageList/MessageList.vala:46 src/MessageList/MessageListItem.vala:216
+msgid "Forward"
+msgstr "転送"
+
+#: src/MessageList/MessageList.vala:50
+msgid "Mark as Unread"
+msgstr "未読としてマーク"
+
+#: src/MessageList/MessageList.vala:60
+msgid "Mark Conversation"
+msgstr "スレッドにマークをつける"
+
+#: src/MessageList/MessageList.vala:68
+msgid "Move Conversation to…"
+msgstr "メッセージの移動先を選択…"
+
+#: src/MessageList/MessageList.vala:77
+msgid "Move conversations to archive"
+msgstr "スレッドをアーカイブ"
+
+#: src/MessageList/MessageList.vala:85
+msgid "Move conversations to Trash"
+msgstr "スレッドをゴミ箱に移動"
+
+#: src/MessageList/MessageList.vala:100
+msgid "No Message Selected"
+msgstr "メッセージ未選択"
+
+#. /TRANSLATORS: The first %s represents the date and the second %s the time of the message (either when it was received or sent)
+#: src/MessageList/MessageListItem.vala:190
+#, c-format
+msgid "%s at %s"
+msgstr "%s %s"
+
+#: src/MessageList/MessageListItem.vala:198
+#: src/MessageList/MessageListItem.vala:397
+msgid "Unstar message"
+msgstr "スターなしメッセージ"
+
+#: src/MessageList/MessageListItem.vala:201
+#: src/MessageList/MessageListItem.vala:393
+msgid "Star message"
+msgstr "スター付きメッセージ"
+
+#: src/MessageList/MessageListItem.vala:221
+msgid "Print…"
+msgstr "印刷…"
+
+#: src/MessageList/MessageListItem.vala:231
+msgid "More"
+msgstr "詳細"
+
+#: src/MessageList/MessageListItem.vala:281
+msgid "Open in Calendar"
+msgstr "“カレンダー”で開く"
+
+#: src/MessageList/MessageListItem.vala:286
+msgid "This message contains a Calendar Event."
+msgstr "このメッセージは、カレンダーの予定を含んでいます。"
+
+#: src/MessageList/MessageListItem.vala:297
+msgid "Show Images"
+msgstr "画像を表示"
+
+#: src/MessageList/MessageListItem.vala:298
+msgid "Always Show from Sender"
+msgstr "常に送信者から表示"
+
+#: src/MessageList/MessageListItem.vala:302
+msgid "This message contains remote images."
+msgstr "このメッセージは、リモートイメージを含んでいます。"
+
+#: src/MessageList/MessageListItem.vala:341
+msgid "This message contains one or more attachments"
+msgstr "このメッセージは、何らかの添付ファイルを含んでいます"
+
+#. / Translators: This is the default file name of a printed email
+#: src/MessageList/MessageListItem.vala:417
+msgid "Email Message"
+msgstr "メールのメッセージ"
+
+#: src/MessageList/MessageListItem.vala:439
+msgid "Unable to print email"
+msgstr "メールを印刷できません"
+
+#: src/MessageList/MessageListItem.vala:691
+#, c-format
+msgid "Trust and open “%s”?"
+msgstr "“%s”を信頼して開きますか?"
+
+#: src/MessageList/MessageListItem.vala:692
+msgid ""
+"Attachments may cause damage to your system if opened. Only open files from "
+"trusted sources."
+msgstr ""
+"添付ファイルは、システムにダメージを与える恐れがあります。信頼できる送信元の"
+"ファイルのみを開くようにしてください。"
+
+#: src/MessageList/MessageListItem.vala:699
+msgid "Open Anyway"
+msgstr "了解して開く"
+
+#: src/MessageList/AttachmentButton.vala:57
+msgid "Open"
+msgstr "開く"
+
+#: src/MessageList/AttachmentButton.vala:58
+msgid "Save As…"
+msgstr "名前を付けて保存…"
+
+#: src/MessageList/AttachmentButton.vala:143
+msgid "Save"
+msgstr "保存"
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:22
+msgid "No mailboxes found"
+msgstr "メールボックスが見つかりません"
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:26
+msgid "Try changing search terms"
+msgstr "他のキーワードを試してください"
+
+#~ msgid "Email@example.com"
+#~ msgstr "Email@example.com"
+
+#~ msgid "Enter name…"
+#~ msgstr "名前を入力…"
+
+#~ msgid "Address:"
+#~ msgstr "アドレス:"
+
+#~ msgid "Enter e-mail address…"
+#~ msgstr "メールアドレスを入力…"
+
+#, c-format
+#~ msgid "Unable to rename folder “%s”': %s"
+#~ msgstr "フォルダー “%s” の名前を変更できません: %s"
+
+#~ msgid "Reply to All"
+#~ msgstr "全員へ返信"
+
+#, c-format
+#~ msgid "Are you sure you want to open %s?"
+#~ msgstr "%s を開いてもよろしいですか？"
+
+#~ msgid "Quote text"
+#~ msgstr "テキストを引用します"
+
+#~ msgid "Unquote text"
+#~ msgstr "テキストの引用を解除します"
+
+#~ msgid "Drafts | Draft"
+#~ msgstr "下書き | 下書き"
+
+#~ msgid "Sent | Sent Mail | Sent Email | Sent E-Mail"
+#~ msgstr "送信 | メール送信 | メール送信 | メール送信"
+
+#~ msgid ""
+#~ "Junk | Spam | Junk Mail | Junk Email | Junk E-Mail | Bulk Mail | Bulk "
+#~ "Email | Bulk E-Mail"
+#~ msgstr ""
+#~ "迷惑メール | 迷惑メール | 迷惑メール | 迷惑メール | 迷惑メール | 迷惑メー"
+#~ "ル | 迷惑メール | 迷惑メール"
+
+#~ msgid "Trash | Rubbish | Rubbish Bin"
+#~ msgstr "ゴミ箱 | 削除済み | 削除済みメール"
+
+#~ msgid "Archive | Archives"
+#~ msgstr "アーカイブ | アーカイブ"
+
+#~ msgid "Drafts"
+#~ msgstr "下書き"
+
+#~ msgid "Starred"
+#~ msgstr "スター"
+
+#~ msgid "Important"
+#~ msgstr "重要"
+
+#~ msgid "Spam"
+#~ msgstr "迷惑メール"
+
+#~ msgid "Outbox"
+#~ msgstr "送信トレイ"
+
+#~ msgid "Search"
+#~ msgstr "検索"
+
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgid "SMTP"
+#~ msgstr "SMTP"
+
+#~ msgid "Gmail"
+#~ msgstr "Gmail"
+
+#~ msgid "Yahoo! Mail"
+#~ msgstr "Yahoo! メール"
+
+#~ msgid "Outlook.com"
+#~ msgstr "Outlook.com"
+
+#~ msgid "Other"
+#~ msgstr "その他"
+
+#~ msgid "attachment"
+#~ msgstr "添付ファイル"
+
+#~ msgid "bcc"
+#~ msgstr "bcc"
+
+#~ msgid "body"
+#~ msgstr "body"
+
+#~ msgid "cc"
+#~ msgstr "cc"
+
+#~ msgid "from"
+#~ msgstr "差出人"
+
+#~ msgid "subject"
+#~ msgstr "件名"
+
+#~ msgid "to"
+#~ msgstr "宛先"
+
+#~ msgid "me"
+#~ msgstr "自分"
+
+#~ msgid "(no subject)"
+#~ msgstr "(件名なし)"
+
+#~ msgid "%s wrote:"
+#~ msgstr "%s さんより:"
+
+#~ msgid "On %s:"
+#~ msgstr "On %s:"
+
+#~ msgid "none"
+#~ msgstr "無題"
+
+#~ msgid "Mail Client"
+#~ msgstr "メールクライアント"
+
+#~ msgid "Copyright 2011-2015 Yorba Foundation"
+#~ msgstr "Copyright 2011-2015 Yorba Foundation"
+
+#~ msgid "Visit the Yorba web site"
+#~ msgstr "Yorba の Web サイトを参照"
+
+#~ msgid "Delete conversation"
+#~ msgstr "メッセージを削除"
+
+#~ msgid "Delete conversation (Shift+Delete)"
+#~ msgstr "メッセージを削除 (Shift+Delete)"
+
+#~ msgid "Delete conversations (Shift+Delete)"
+#~ msgstr "メッセージを削除 (Shift+Delete)"
+
+#~ msgid "Move conversation to Trash (Delete, Backspace)"
+#~ msgid_plural "Move conversations to Trash (Delete, Backspace)"
+#~ msgstr[0] "メッセージをゴミ箱に移動する (Delete, Backspace)"
+
+#~ msgid "Move conversations to Trash (Delete, Backspace)"
+#~ msgstr "メッセージをゴミ箱に移動する (Delete, Backspace)"
+
+#~ msgid "_Archive"
+#~ msgstr "アーカイブ(_A)"
+
+#~ msgid "Archive conversation (A)"
+#~ msgid_plural "Archive conversations (A)"
+#~ msgstr[0] "メッセージをアーカイブする (A)"
+
+#~ msgid "Archive conversations (A)"
+#~ msgstr "メッセージをアーカイブ (_A)"
+
+#~ msgid "Mark as S_pam"
+#~ msgstr "迷惑メッセージとしてマーク (_P)"
+
+#~ msgid "Mark as not S_pam"
+#~ msgstr "迷惑マークをはずす (_P)"
+
+#~ msgid "Add label to conversation"
+#~ msgid_plural "Add label to conversations"
+#~ msgstr[0] "メッセージにラベルを付ける"
+
+#~ msgid "Add label to conversations"
+#~ msgstr "メッセージにラベルを付ける"
+
+#~ msgid "A_ccounts"
+#~ msgstr "アカウント(_C)"
+
+#~ msgid "_Preferences"
+#~ msgstr "設定(_P)"
+
+#~ msgid "_Help"
+#~ msgstr "ヘルプ (_H)"
+
+#~ msgid "_About"
+#~ msgstr "画面定規について"
+
+#~ msgid "_Quit"
+#~ msgstr "終了 (_Q)"
+
+#~ msgid "_Mark as..."
+#~ msgstr "名前を付けてマーク (_M) …"
+
+#~ msgid "Mark as _Read"
+#~ msgstr "既読にする (_R)"
+
+#~ msgid "Mark as _Unread"
+#~ msgstr "未読にする (_U)"
+
+#~ msgid "Add label"
+#~ msgstr "ラベルを追加"
+
+#~ msgid "_Label"
+#~ msgstr "ラベル (_L)"
+
+#~ msgid "_Move"
+#~ msgstr "移動 (_M)"
+
+#~ msgid "Compose new message (Ctrl+N, N)"
+#~ msgstr "新しいメッセージを作成 (Ctrl+N, N)"
+
+#~ msgid "_Reply"
+#~ msgstr "返信 (_R)"
+
+#~ msgid "Reply (Ctrl+R, R)"
+#~ msgstr "返信 (Ctrl+R, R)"
+
+#~ msgid "Reply all (Ctrl+Shift+R, Shift+R)"
+#~ msgstr "全員に返信 (Ctrl+Shift+R, Shift+R)"
+
+#~ msgid "_Forward"
+#~ msgstr "転送 (_F)"
+
+#~ msgid "Forward (Ctrl+L, F)"
+#~ msgstr "転送 (Ctrl+L, F)"
+
+#~ msgid "Empty"
+#~ msgstr "空"
+
+#~ msgid "Empty Spam or Trash folders"
+#~ msgstr "迷惑メールフォルダーとゴミ箱を空にする"
+
+#~ msgid "Empty _Spam…"
+#~ msgstr "迷惑メールフォルダーを空にする (_S) …"
+
+#~ msgid "Empty _Trash…"
+#~ msgstr "ゴミ箱を空にする (_T) …"
+
+#~ msgid "Toggle search bar"
+#~ msgstr "検索バーの表示・非表示"
+
+#~ msgid "Unable to store server trust exception"
+#~ msgstr "サーバーの信頼の例外を保存することができません"
+
+#~ msgid "Your settings are insecure"
+#~ msgstr "設定がセキュアでありません"
+
+#~ msgid ""
+#~ "Your IMAP and/or SMTP settings do not specify SSL or TLS.  This means "
+#~ "your username and password could be read by another person on the "
+#~ "network.  Are you sure you want to do this?"
+#~ msgstr ""
+#~ "IMAP/SMTP の通信に SSL/TLS が指定されていません。ユーザー名とパスワードは"
+#~ "ネットワーク上の他人に読み取られる可能性があります。よろしいですか？"
+
+#~ msgid "Co_ntinue"
+#~ msgstr "続行する(_N)"
+
+#~ msgid "Error sending email"
+#~ msgstr "メール送信エラー"
+
+#~ msgid ""
+#~ "Geary encountered an error sending an email.  If the problem persists, "
+#~ "please manually delete the email from your Outbox folder."
+#~ msgstr ""
+#~ "メールの送信中に Geary にエラーが発生しました。もしこの問題が続く場合、送"
+#~ "信トレイからメールを手動で削除してください。"
+
+#~ msgid "Error saving sent mail"
+#~ msgstr "送信メールの保存でエラーが発生しました"
+
+#~ msgid ""
+#~ "Geary encountered an error saving a sent message to Sent Mail.  The "
+#~ "message will stay in your Outbox folder until you delete it."
+#~ msgstr ""
+#~ "送信フォルダへの送信メールの保存中に Geary にエラーが発生しました。送信ト"
+#~ "レイからメールを削除するまで、メッセージは送信トレイに残ります。"
+
+#~ msgid "Labels"
+#~ msgstr "ラベル"
+
+#~ msgid "Unable to open the database for %s"
+#~ msgstr "データーベース %s を開けませんでした"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to corruption of the database file in this directory:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Geary can rebuild the database and re-synchronize with the server or "
+#~ "exit.\n"
+#~ "\n"
+#~ "Rebuilding the database will destroy all local email and its attachments. "
+#~ "<b>The mail on the your server will not be affected.</b>"
+#~ msgstr ""
+#~ "このアカウントのローカル メール データーベースを開く途中でエラーが発生しま"
+#~ "した。これは、このディレクトリ内のデーターベース ファイルの欠落に起因して"
+#~ "いる可能性があります。\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "サーバーと接続するか、 Geary を終了することによって、 Geary はデーターベー"
+#~ "スを再読み込みし、再同期することができます。\n"
+#~ "\n"
+#~ "データーベースの再読み込みはローカルにあるすべてのメールと添付ファイルを削"
+#~ "除します。<b>サーバー上のメールは影響を受けません。</b>"
+
+#~ msgid "_Rebuild"
+#~ msgstr "並べ替え"
+
+#~ msgid "E_xit"
+#~ msgstr "終了 (_X)"
+
+#~ msgid "Unable to rebuild database for \"%s\""
+#~ msgstr "%s のデーターベースの再読み込みができませんでした"
+
+#~ msgid ""
+#~ "Error during rebuild:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "再読み込みの途中でエラーが発生しました。\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid "Unable to open local mailbox for %s"
+#~ msgstr "ローカルメールボックス %s を開く事ができませんでした"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to a file permissions problem.\n"
+#~ "\n"
+#~ "Please check that you have read/write permissions for all files in this "
+#~ "directory:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "このアカウントのローカル メール データーベースを開く途中でエラーが発生しま"
+#~ "した。これは、ファイルのアクセス権の問題に起因している可能性があります。\n"
+#~ "\n"
+#~ "このディレクトリにおいてファイルのアクセス権があるか確認してください。\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid ""
+#~ "The version number of the local mail database is formatted for a newer "
+#~ "version of Geary. Unfortunately, the database cannot be \"rolled back\" "
+#~ "to work with this version of Geary.\n"
+#~ "\n"
+#~ "Please install the latest version of Geary and try again."
+#~ msgstr ""
+#~ "ローカル  データーベースのバージョン番号は新しいバージョンの Geary のもの"
+#~ "です。残念ですが、データーベースはこのバージョンの Geary で動作するように"
+#~ "ロールバックできません。\n"
+#~ "最新のバージョンの Geary をインストールしてもう一度試してください。"
+
+#~ msgid ""
+#~ "There was an error opening the local account. This is probably due to "
+#~ "connectivity issues.\n"
+#~ "\n"
+#~ "Please check your network connection and restart Geary."
+#~ msgstr ""
+#~ "ローカルアカウントを開く時にエラーが発生しました。これは接続の問題によるも"
+#~ "のと予測されます。\n"
+#~ "\n"
+#~ "ネットワーク接続を確認し Geary を再起動してください。"
+
+#~ msgid "About %s"
+#~ msgstr "%s について"
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Minato Kanzaki <pikadcolon@gmail.com>\n"
+#~ "\n"
+#~ "Launchpad Contributions:\n"
+#~ "  BALLOON a.k.a. Fu-sen. (Keiichi SHIGA) https://launchpad.net/~balloon\n"
+#~ "  Jim Nelson https://launchpad.net/~yorba-jim\n"
+#~ "  Jun Takeda https://launchpad.net/~takeda-jun\n"
+#~ "  Masayuki Sugahara https://launchpad.net/~brindflontia\n"
+#~ "  Ryo Nakano https://launchpad.net/~uq3-him13de-9spzka7\n"
+#~ "  elementary Apps team https://launchpad.net/~elementary-apps"
+
+#~ msgid "Undo move (Ctrl+Z)"
+#~ msgstr "移動のやり直し (Ctrl+Z)"
+
+#~ msgid "Are you sure you want to open \"%s\"?"
+#~ msgstr "\"%s\" を開きますか？"
+
+#~ msgid ""
+#~ "Attachments may cause damage to your system if opened.  Only open files "
+#~ "from trusted sources."
+#~ msgstr ""
+#~ "添付ファイルはシステムにダメージを与える恐れがあります。信頼できる送信元か"
+#~ "らのみ開くようにして下さい。"
+
+#~ msgid "Don't _ask me again"
+#~ msgstr "次回から表示しない (_A)"
+
+#~ msgid "A file named \"%s\" already exists.  Do you want to replace it?"
+#~ msgstr "ファイル \"%s\" はすでに存在します。上書きしますか？"
+
+#~ msgid ""
+#~ "The file already exists in \"%s\".  Replacing it will overwrite its "
+#~ "contents."
+#~ msgstr ""
+#~ "ファイル \"%s\" はすでに存在します。置き換えると内容を上書きします。"
+
+#~ msgid "_Replace"
+#~ msgstr "上書きする (_R)"
+
+#~ msgid "Close open draft messages?"
+#~ msgstr "開いている下書きを閉じますか？"
+
+#~ msgid "Empty all email from your %s folder?"
+#~ msgstr "フォルダー %s のメールをすべて空にしてよろしいですか？"
+
+#~ msgid "This removes the email from Geary and your email server."
+#~ msgstr "この操作は Geary とメールサーバーからメールを削除します。"
+
+#~ msgid "This cannot be undone."
+#~ msgstr "この操作は元に戻せません。"
+
+#~ msgid "Empty %s"
+#~ msgstr "%s を空にする"
+
+#~ msgid "Error emptying %s"
+#~ msgstr "%s を空にする時にエラーが発生しました"
+
+#~ msgid "Undo archive (Ctrl+Z)"
+#~ msgstr "アーカイブを元に戻す (Ctrl+Z)"
+
+#~ msgid "Undo trash (Ctrl+Z)"
+#~ msgstr "ゴミ箱から戻す (Ctrl+Z)"
+
+#~ msgid "Undo (Ctrl+Z)"
+#~ msgstr "元に戻す(Ctrl+Z)"
+
+#~ msgid "Start Geary with hidden main window"
+#~ msgstr "メインウィンドウを隠してGearyを起動する"
+
+#~ msgid "Output debugging information"
+#~ msgstr "デバッグ情報を出力"
+
+#~ msgid "Log conversation monitoring"
+#~ msgstr "会話の監視を記録"
+
+#~ msgid "Log network deserialization"
+#~ msgstr "ネットワークのデシリアライゼーションを記録する"
+
+#~ msgid "Log network activity"
+#~ msgstr "ネットワーク情報を記録"
+
+#~ msgid "Log IMAP replay queue"
+#~ msgstr "IMAP のイベントキューを記録"
+
+#~ msgid "Log network serialization"
+#~ msgstr "ネットワークのストリームを記録"
+
+#~ msgid "Log periodic activity"
+#~ msgstr "定期的な行動を記録"
+
+#~ msgid "Log database queries (generates lots of messages)"
+#~ msgstr "データベースクエリを記録 (多くのメッセージを生成します)"
+
+#~ msgid "Log folder normalization"
+#~ msgstr "フォルダーの同期を記録"
+
+#~ msgid "Allow inspection of WebView"
+#~ msgstr "WebView での検証を有効にする"
+
+#~ msgid "Revoke all server certificates with TLS warnings"
+#~ msgstr "すべてのサーバー証明書の TLS 警告を取り消す"
+
+#~ msgid "Display program version"
+#~ msgstr "プログラムのバージョンを表示"
+
+#~ msgid "Use %s to open a new composer window"
+#~ msgstr "新規作成ウィンドウを開くのに %s を使用する"
+
+#~ msgid "Please report comments, suggestions and bugs to:"
+#~ msgstr "コメント、提案、バグ報告はこちらへ:"
+
+#~ msgid "Failed to parse command line options: %s\n"
+#~ msgstr "不明なコマンドラインオプション: %s\n"
+
+#~ msgid "Unrecognized command line option \"%s\"\n"
+#~ msgstr "不明なオプション \"%s\"\n"
+
+#~ msgid "%s - New Messages"
+#~ msgstr "%s - 新着メッセージ"
+
+#~ msgid "Me"
+#~ msgstr "自分"
+
+#~ msgid "Untrusted Connection: %s"
+#~ msgstr "%s は信頼できない接続です"
+
+#~ msgid "The identity of the %s mail server at %s:%u could not be verified."
+#~ msgstr ""
+#~ "%s のポート %u における %s メール サーバーのの身元を立証できませんでした。"
+
+#~ msgid ""
+#~ "Selecting \"Trust This Server\" or \"Always Trust This Server\" may cause "
+#~ "your username and password to be transmitted insecurely."
+#~ msgstr ""
+#~ "\"このサーバーを信頼しない\" や\"常にこのサーバーを信頼しない\" を選択する"
+#~ "ことにより、あなたのユーザー名とパスワードは安全でない方法で送信されます。"
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Geary not to access this "
+#~ "server."
+#~ msgstr ""
+#~ "\"このサーバーを信頼しない\" を選択することにより、 Geary はこのアカウント"
+#~ "へのアクセスを停止します。"
+
+#~ msgid "Geary will not add or update this email account."
+#~ msgstr "Geary はこのメールアカウントを追加または更新できません。"
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Geary to stop accessing "
+#~ "this account."
+#~ msgstr ""
+#~ "\"このサーバーを信頼しない\" を選択することにより、 Geary はこのアカウント"
+#~ "へのアクセスを停止します。"
+
+#~ msgid "Geary will exit if you have no other open email accounts."
+#~ msgstr "ほかに開くメールアカウントがなければ、 Geary は終了します。"
+
+#~ msgid ""
+#~ "Contact your system administrator or email service provider if you have "
+#~ "any question about these issues."
+#~ msgstr ""
+#~ "これらの問題について疑問があればシステムの管理者かメールサービスのプロバイ"
+#~ "ダーに連絡してください。"
+
+#~ msgid "The server's certificate is not signed by a known authority"
+#~ msgstr "サーバ証明書は既知の認証局によって署名されていません"
+
+#~ msgid "The server's identity does not match the identity in the certificate"
+#~ msgstr "サーバーの身元が証明書内の身元と一致しません"
+
+#~ msgid "The server's certificate has expired"
+#~ msgstr "サーバーの証明書が期限切れです"
+
+#~ msgid "The server's certificate has not been activated"
+#~ msgstr "サーバーの証明書は認証されていません"
+
+#~ msgid "The server's certificate has been revoked and is now invalid"
+#~ msgstr "サーバーの証明書は取り消され、現在無効です"
+
+#~ msgid "The server's certificate is considered insecure"
+#~ msgstr "サーバーの証明書は安全でないと考えられます"
+
+#~ msgid "An error has occurred processing the server's certificate"
+#~ msgstr "サーバー証明書を読み込み中にエラーが発生しました"
+
+#~ msgid "Geary requires your email password to continue"
+#~ msgstr "続行するには、メールのパスワードが必要です"
+
+#~ msgid "Additional addresses for %s"
+#~ msgstr "%s の追加のアドレス"
+
+#~ msgid "First Last"
+#~ msgstr "姓名"
+
+#~ msgid "Welcome to Geary."
+#~ msgstr "Geary へようこそ。"
+
+#~ msgid "Enter your account information to get started."
+#~ msgstr "開始するにはアカウント情報を入力してください。"
+
+#~ msgid "2 weeks back"
+#~ msgstr "2 週間前"
+
+#~ msgid "1 month back"
+#~ msgstr "1 ヶ月前"
+
+#~ msgid "3 months back"
+#~ msgstr "3 ヶ月前"
+
+#~ msgid "6 months back"
+#~ msgstr "6 ヶ月前"
+
+#~ msgid "1 year back"
+#~ msgstr "1 年前"
+
+#~ msgid "2 years back"
+#~ msgstr "2 年前"
+
+#~ msgid "4 years back"
+#~ msgstr "4 年前"
+
+#~ msgid "Everything"
+#~ msgstr "すべて"
+
+#~ msgid "Edit"
+#~ msgstr "編集"
+
+#~ msgid "Preview"
+#~ msgstr "プレビュー"
+
+#~ msgid "Remem_ber passwords"
+#~ msgstr "パスワードを記憶する (_B)"
+
+#~ msgid "Remem_ber password"
+#~ msgstr "パスワードを記憶する (_B)"
+
+#~ msgid "        &#8226; Invalid account nickname.\n"
+#~ msgstr "        &#8226; アカウントのニックネームが不正です。\n"
+
+#~ msgid "        &#8226; Email address already added to Geary.\n"
+#~ msgstr "        &#8226; メールアドレスはすでに Geary へ追加されています。\n"
+
+#~ msgid "        &#8226; IMAP connection error.\n"
+#~ msgstr "        &#8226; IMAP の接続エラーが発生しました。\n"
+
+#~ msgid "        &#8226; IMAP username or password incorrect.\n"
+#~ msgstr "        &#8226; IMAP ユーザー名またはパスワードが不正です。\n"
+
+#~ msgid "        &#8226; SMTP connection error.\n"
+#~ msgstr "        &#8226; SMTP 接続にエラーが発生しました。\n"
+
+#~ msgid "        &#8226; SMTP username or password incorrect.\n"
+#~ msgstr "        &#8226; SMTP ユーザー名もまたはパスワードが不正です。\n"
+
+#~ msgid "        &#8226; Connection error.\n"
+#~ msgstr "        &#8226; 接続エラー。\n"
+
+#~ msgid "        &#8226; Username or password incorrect.\n"
+#~ msgstr "        &#8226; ユーザー名またはパスワードが不正です。\n"
+
+#~ msgid "_Add"
+#~ msgstr "追加 (_A)"
+
+#~ msgid "%l:%M %P"
+#~ msgstr "%P %l:%M"
+
+#~ msgid "%H:%M"
+#~ msgstr "%H:%M"
+
+#~ msgctxt "Default clock format"
+#~ msgid "%l:%M %P"
+#~ msgstr "%P %l:%M"
+
+#~ msgid "%b %-e"
+#~ msgstr "%b%e日"
+
+#~ msgid "%x"
+#~ msgstr "%x"
+
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%Y年%B%-e日 %P %-l:%M"
+
+#~ msgid "%B %-e, %Y %-H:%M"
+#~ msgstr "%Y年%B%-e日 %-H:%M"
+
+#~ msgctxt "Default full date"
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%Y年%B%-e日 %P %-l:%M"
+
+#~ msgid "Now"
+#~ msgstr "ちょうど今"
+
+#~ msgid "%dm ago"
+#~ msgid_plural "%dm ago"
+#~ msgstr[0] "%d 分前"
+
+#~ msgid "%dh ago"
+#~ msgid_plural "%dh ago"
+#~ msgstr[0] "%d 時間前"
+
+#~ msgid "Yesterday"
+#~ msgstr "昨日"
+
+#~ msgid "%A"
+#~ msgstr "%A"
+
+#~ msgid "bytes"
+#~ msgstr "bytes"
+
+#~ msgctxt "Abbreviation for terabyte"
+#~ msgid "TB"
+#~ msgstr "TB"
+
+#~ msgctxt "Abbreviation for gigabyte"
+#~ msgid "GB"
+#~ msgstr "GB"
+
+#~ msgctxt "Abbreviation for megabyte"
+#~ msgid "MB"
+#~ msgstr "MB"
+
+#~ msgctxt "Abbreviation for kilobyte"
+#~ msgid "KB"
+#~ msgstr "KB"
+
+#~ msgid "%d message"
+#~ msgid_plural "%d messages"
+#~ msgstr[0] "%d 件のメッセージ"
+
+#~ msgid "%s, %s"
+#~ msgstr "%s %s"
+
+#~ msgid "Inboxes"
+#~ msgstr "受信トレイ"
+
+#~ msgid "Search %s account"
+#~ msgstr "%s アカウント検索"
+
+#~ msgid "%d result"
+#~ msgid_plural "%d results"
+#~ msgstr[0] "結果 %d"
+
+#~ msgid "%u conversation selected."
+#~ msgid_plural "%u conversations selected."
+#~ msgstr[0] "%u 件のメッセージが選択されています。"
+
+#~ msgid "No search results found."
+#~ msgstr "検索の結果、お探しのものは見つかりませんでした。"
+
+#~ msgid "No conversations in folder."
+#~ msgstr "フォルダーにメッセージがありません。"
+
+#~ msgid "Always Show From Sender"
+#~ msgstr "常に送信者から表示する"
+
+#~ msgid "Edit Draft"
+#~ msgstr "下書きの編集"
+
+#~ msgid "Date:"
+#~ msgstr "日時:"
+
+#~ msgid "%u read message"
+#~ msgid_plural "%u read messages"
+#~ msgstr[0] "%u 件の既読メッセージ"
+
+#~ msgid "This message was sent successfully, but could not be saved to %s."
+#~ msgstr ""
+#~ "このメッセージは正しく送信されましたが、%sに保存することができませんでし"
+#~ "た。"
+
+#~ msgid "_Copy"
+#~ msgstr "コピー (_C)"
+
+#~ msgid "Copy _Email Address"
+#~ msgstr "アドレスをコピー (_E)"
+
+#~ msgid "Copy _Link"
+#~ msgstr "リンクのアドレスをコピー (_L)"
+
+#~ msgid "Select _Message"
+#~ msgstr "メッセージの選択 (_M)"
+
+#~ msgid "Select _All"
+#~ msgstr "すべて選択 (_A)"
+
+#~ msgid "_Inspect"
+#~ msgstr "検証 (_I)"
+
+#~ msgid "This link appears to go to"
+#~ msgstr "このリンクは次のページに飛ぶようです。"
+
+#~ msgid "but actually goes to"
+#~ msgstr "しかし実際には次のページに飛んでいます。"
+
+#~ msgid " (Invalid?)"
+#~ msgstr " (無効？)"
+
+#~ msgid "_Save Image As..."
+#~ msgstr "名前を付けて画像を保存 (_S) …"
+
+#~ msgid "_Save As..."
+#~ msgstr "名前を付けて保存 (_S) …"
+
+#~ msgid "Save All A_ttachments..."
+#~ msgstr "全ての添付ファイルを保存 (_T) …"
+
+#~ msgid "Save A_ttachment..."
+#~ msgid_plural "Save All A_ttachments..."
+#~ msgstr[0] "全ての添付ファイルを保存 (_T) …"
+
+#~ msgid "Reply to _All"
+#~ msgstr "全員へ返信 (_A)"
+
+#~ msgid "_Mark as Read"
+#~ msgstr "既読としてマーク (_M)"
+
+#~ msgid "_Mark as Unread"
+#~ msgstr "未読としてマーク (_M)"
+
+#~ msgid "Mark Unread From _Here"
+#~ msgstr "ここから未読マークを付ける (_H)"
+
+#~ msgid "_View Source"
+#~ msgstr "ソースを表示 (_V)"
+
+#~ msgid "Failed to open default text editor."
+#~ msgstr "デフォルトのテキストエディターの起動に失敗しました。"
+
+#~ msgid "%s - Conversation Inspector"
+#~ msgstr "%s - スレッド検証"
+
+#~ msgid "Saved"
+#~ msgstr "保存済"
+
+#~ msgid "Saving"
+#~ msgstr "保存中"
+
+#~ msgid "Error saving"
+#~ msgstr "保存エラー"
+
+#~ msgid "Press Backspace to delete quote"
+#~ msgstr "引用文を削除するには Backspace キーを押してください"
+
+#~ msgid ""
+#~ "attach|attaching|attaches|attachment|attachments|attached|enclose|"
+#~ "enclosed|enclosing|encloses|enclosure|enclosures"
+#~ msgstr ""
+#~ "attach|attaching|attaches|attachment|attachments|attached|enclose|"
+#~ "enclosed|enclosing|encloses|enclosure|enclosures"
+
+#~ msgid "Do you want to discard this message?"
+#~ msgstr "このメッセージを破棄しますか？"
+
+#~ msgid "Send message with an empty subject and body?"
+#~ msgstr "空の件名および本文のままメッセージを送信しますか？"
+
+#~ msgid "Send message without an attachment?"
+#~ msgstr "添付ファイルなしにメッセージを送信しますか？"
+
+#~ msgid "Cannot add attachment"
+#~ msgstr "添付できません"
+
+#~ msgid "\"%s\" could not be found."
+#~ msgstr "\"%s\" は見つかりませんでした。"
+
+#~ msgid "\"%s\" is a folder."
+#~ msgstr "\"%s\" はフォルダーです。"
+
+#~ msgid "\"%s\" is an empty file."
+#~ msgstr "\"%s\" は空のファイルです。"
+
+#~ msgid "\"%s\" could not be opened for reading."
+#~ msgstr "\"%s\" を開くことができませんでした。"
+
+#~ msgid "\"%s\" already attached for delivery."
+#~ msgstr "\"%s\" は既に添付されています。"
+
+#~ msgid "%s (%s)"
+#~ msgstr "%s (%s)"
+
+#~ msgid "To: "
+#~ msgstr "To: "
+
+#~ msgid "Cc: "
+#~ msgstr "Cc: "
+
+#~ msgid "Bcc: "
+#~ msgstr "Bcc: "
+
+#~ msgid "Reply-To: "
+#~ msgstr "Reply-To: "
+
+#~ msgid "Select Color"
+#~ msgstr "色を選択"
+
+#~ msgid "%1$s via %2$s"
+#~ msgstr "%1$s via %2$s"
+
+#~ msgid "_From:"
+#~ msgstr "差出人 (_F):"
+
+#~ msgid "%s (%d)"
+#~ msgstr "%s (%d)"
+
+#~ msgid "Sending..."
+#~ msgstr "送信中..."
+
+#~ msgid "%i match"
+#~ msgid_plural "%i matches"
+#~ msgstr[0] "%i 件一致"
+
+#~ msgid "not found"
+#~ msgstr "見つかりません"
+
+#~ msgid "_OK"
+#~ msgstr "OK (_O)"
+
+#~ msgid "_Cancel"
+#~ msgstr "キャンセル (_C)"
+
+#~ msgid "_Discard"
+#~ msgstr "破棄 (_D)"
+
+#~ msgid "_Open"
+#~ msgstr "開く (_O)"
+
+#~ msgid "_Print..."
+#~ msgstr "印刷 (_P) …"
+
+#~ msgid "_Remove"
+#~ msgstr "削除 (_R)"
+
+#~ msgid "_Keep"
+#~ msgstr "保持する (_K)"
+
+#~ msgid "Search all mail in account for keywords (Ctrl+S)"
+#~ msgstr "キーワードでアカウント内のすべてのメールを検索する (Ctrl+S)"
+
+#~ msgid "Indexing %s account"
+#~ msgstr "%s のアカウントをインデックスしています"
+
+#~ msgid "Send by Email"
+#~ msgstr "E メールで送信"
+
+#~ msgid "Send files using Mail"
+#~ msgstr "Mail を使ってファイルを送信する"
+
+#~ msgid "Welcome to Mail"
+#~ msgstr "Mail へようこそ"
+
+#~ msgid "More options"
+#~ msgstr "詳細オプション"
+
+#~ msgid "Search %s"
+#~ msgstr "%s を検索"
+
+#~ msgid "Reading"
+#~ msgstr "メールの読み込み"
+
+#~ msgid "Automatically select next message:"
+#~ msgstr "新しいメッセージを自動的に選択する："
+
+#~ msgid "Conversation previews:"
+#~ msgstr "メッセージのプレビューを表示する："
+
+#~ msgid "Three-pane layout:"
+#~ msgstr "3 ペインレイアウト:"
+
+#~ msgid "Composer"
+#~ msgstr "作成者"
+
+#~ msgid "Spell check:"
+#~ msgstr "スペルチェック:"
+
+#~ msgid "Notifications"
+#~ msgstr "通知"
+
+#~ msgid "Always watch for new mail:"
+#~ msgstr "常に新しいメールを確認する："
+
+#~ msgid "Delete Conversation (Shift+Delete)"
+#~ msgid_plural "Delete Conversations (Shift+Delete)"
+#~ msgstr[0] "メッセージを削除する (Shift+Delete)"
+
+#~ msgid "Delete Conversations (Shift+Delete)"
+#~ msgstr "メッセージを削除する (Shift+Delete)"
+
+#~ msgid ""
+#~ "<span weight=\"bold\" size=\"larger\">Are you sure you want to remove "
+#~ "this account?</span> "
+#~ msgstr ""
+#~ "<span weight=\"bold\" size=\"larger\">本当にこのアカウントを削除しますか？"
+#~ "</span> "
+
+#~ msgid ""
+#~ "All email associated with this account will be removed from your "
+#~ "computer. This will not affect email on the server."
+#~ msgstr ""
+#~ "このアカウントに関連付けられたすべてのメールがお使いのコンピューターから削"
+#~ "除されます。サーバー上のメールは影響を受けません。"
+
+#~ msgid "Nickname:"
+#~ msgstr "ニックネーム:"
+
+#~ msgid "Find"
+#~ msgstr "検索"
+
+#~ msgid "Previous Result"
+#~ msgstr "前の結果"
+
+#~ msgid "Next result"
+#~ msgstr "次の結果"
+
+#~ msgid "_Case sensitive"
+#~ msgstr "大文字と小文字を区別する (_C)"
+
+#~ msgid "label"
+#~ msgstr "ラベル"
+
+#~ msgid "Geary update in progress…"
+#~ msgstr "Geary のアップデートが進行しています…"
+
+#~ msgid "Remove email address"
+#~ msgstr "メールアドレスを削除する"
+
+#~ msgid ""
+#~ "Some email services require additional addresses be configured on the "
+#~ "server.  Contact your email provider for more information."
+#~ msgstr ""
+#~ "このサーバー上で設定するには追加のアドレスを必要とするメールアドレス サー"
+#~ "ビスがあります。詳しい情報を知るには、メールサービスのプロバイダーに連絡し"
+#~ "てください。"
+
+#~ msgid "_Update"
+#~ msgstr "更新 (_U)"
+
+#~ msgid "Please wait while Geary validates your account."
+#~ msgstr "Geary がメールアカウントを検証する間お待ちください。"
+
+#~ msgid "_Redo"
+#~ msgstr "やり直し (_R)"
+
+#~ msgid "Cu_t"
+#~ msgstr "切り取り (_T)"
+
+#~ msgid "_Paste"
+#~ msgstr "貼り付け (_P)"
+
+#~ msgid "_Left"
+#~ msgstr "左寄せ (_L)"
+
+#~ msgid "_Right"
+#~ msgstr "右寄せ (_R)"
+
+#~ msgid "_Center"
+#~ msgstr "中央寄せ (_C)"
+
+#~ msgid "_Justify"
+#~ msgstr "両端揃え (_J)"
+
+#~ msgid "Link (Ctrl+L)"
+#~ msgstr "リンク (Ctrl+L)"
+
+#~ msgid "C_olor"
+#~ msgstr "カラー (_O)"
+
+#~ msgid "Quote text  (Ctrl+])"
+#~ msgstr "引用テキスト  (Ctrl+])"
+
+#~ msgctxt "Clipboard paste with rich text"
+#~ msgid "Paste _With Formatting"
+#~ msgstr "フォーマットなしで貼り付け (_W)"
+
+#~ msgid "Bold (Ctrl+B)"
+#~ msgstr "強調 (Ctrl+B)"
+
+#~ msgid "Italic (Ctrl+I)"
+#~ msgstr "斜体 (Ctrl+I)"
+
+#~ msgid "Show Extended Fields"
+#~ msgstr "拡張画面を表示する"
+
+#~ msgctxt "Label"
+#~ msgid "Close and Save"
+#~ msgstr "保存して閉じる"
+
+#~ msgctxt "Short Label"
+#~ msgid "Close and Save"
+#~ msgstr "保存して閉じる"
+
+#~ msgctxt "Tooltip"
+#~ msgid "Close and Save"
+#~ msgstr "保存して閉じる"
+
+#~ msgctxt "Label"
+#~ msgid "Close and Discard"
+#~ msgstr "破棄して閉じる"
+
+#~ msgctxt "Short Label"
+#~ msgid "Close and Discard"
+#~ msgstr "破棄して閉じる"
+
+#~ msgctxt "Tooltip"
+#~ msgid "Close and Discard"
+#~ msgstr "破棄して閉じる"
+
+#~ msgid "Lar_ge"
+#~ msgstr "大 (_G)"
+
+#~ msgid "Large"
+#~ msgstr "大"
+
+#~ msgid "_Medium"
+#~ msgstr "中 (_M)"
+
+#~ msgid "Medium"
+#~ msgstr "中"
+
+#~ msgid "_Small"
+#~ msgstr "小 (_S)"
+
+#~ msgid "Small"
+#~ msgstr "小"
+
+#~ msgid "S_ans Serif"
+#~ msgstr "サンサリフ (_A)"
+
+#~ msgid "Sans Serif"
+#~ msgstr "サンセリフ"
+
+#~ msgid "S_erif"
+#~ msgstr "セリフ (_E)"
+
+#~ msgid "Serif"
+#~ msgstr "セリフ"
+
+#~ msgid "_Fixed Width"
+#~ msgstr "固定幅 (_F)"
+
+#~ msgid "Fixed Width"
+#~ msgstr "固定幅"
+
+#~ msgid "Detach"
+#~ msgstr "切断"
+
+#~ msgid "Detach (Ctrl+D)"
+#~ msgstr "切断 (Ctrl+D)"
+
+#~ msgid "_Send"
+#~ msgstr "送信 (_S)"
+
+#~ msgid "Send (Ctrl+Enter)"
+#~ msgstr "送信 (Ctrl+Enter)"
+
+#~ msgid "_Attach File"
+#~ msgstr "添付ファイル (_A)"
+
+#~ msgid "Attach File"
+#~ msgstr "添付ファイル"
+
+#~ msgid "_Include Original Attachments"
+#~ msgstr "元の添付ファイルを含む (_I)"
+
+#~ msgid "Include Original Attachments"
+#~ msgstr "元の添付ファイルを含む"
+
+#~ msgid "Application Menu"
+#~ msgstr "アプリケーションメニュー"
+
+#~ msgid "_To"
+#~ msgstr "To (_T)"
+
+#~ msgid "_Cc"
+#~ msgstr "Cc (_C)"
+
+#~ msgid "_Subject"
+#~ msgstr "件名 (_S)"
+
+#~ msgid "_Bcc"
+#~ msgstr "Bcc (_B)"
+
+#~ msgid "_Reply-To"
+#~ msgstr "Reply-To (_R)"
+
+#~ msgid "From"
+#~ msgstr "差出人"
+
+#~ msgid "Drop files here"
+#~ msgstr "ここにファイルをドロップして下さい"
+
+#~ msgid "To add them as attachments"
+#~ msgstr "これらを添付ファイルとして追加する"
+
+#~ msgid "<span weight=\"bold\" size=\"larger\">Cannot remove account</span> "
+#~ msgstr ""
+#~ "<span weight=\"bold\" size=\"larger\">アカウントを削除できません</span> "
+
+#~ msgid ""
+#~ "A composer window associated with this account is currently open. Send or "
+#~ "discard the message and try again."
+#~ msgstr ""
+#~ "現在、このアカウントに関連付けられた作成ウィンドウが開かれています。メッ"
+#~ "セージを送信するか破棄してもう一度お試しください。"
+
+#~ msgid "Addi_tional email addresses…"
+#~ msgstr "追加のメールアドレス (_T) …"
+
+#~ msgid "_Save sent mail"
+#~ msgstr "送信したメールを保存する (_S)"
+
+#~ msgid "Password"
+#~ msgstr "パスワード"
+
+#~ msgid "_Password:"
+#~ msgstr "パスワード (_P):"
+
+#~ msgid "Work, Home, etc."
+#~ msgstr "仕事用、自宅用など"
+
+#~ msgid "N_ickname:"
+#~ msgstr "ニックネーム (_I):"
+
+#~ msgid "S_ervice:"
+#~ msgstr "サービス (_E):"
+
+#~ msgid "IMAP settings"
+#~ msgstr "IMAP 設定"
+
+#~ msgid "Se_rver:"
+#~ msgstr "サーバー (_R):"
+
+#~ msgid "P_ort"
+#~ msgstr "ポート番号 (_O)"
+
+#~ msgid "Ser_ver:"
+#~ msgstr "サーバー (_V)："
+
+#~ msgid "Por_t"
+#~ msgstr "ポート番号 (_T)"
+
+#~ msgid "SMTP settings"
+#~ msgstr "SMTP 設定"
+
+#~ msgid "User_name:"
+#~ msgstr "ユーザー名 (_N):"
+
+#~ msgid "Pass_word:"
+#~ msgstr "パスワード (_W):"
+
+#~ msgid "SMTP username"
+#~ msgstr "SMTP ユーザー名"
+
+#~ msgid "SMTP password"
+#~ msgstr "SMTP パスワード"
+
+#~ msgid "_Username:"
+#~ msgstr "ユーザー名 (_U):"
+
+#~ msgid "IMAP username"
+#~ msgstr "IMAP ユーザー名"
+
+#~ msgid "IMAP password"
+#~ msgstr "IMAP パスワード"
+
+#~ msgid "Encr_yption:"
+#~ msgstr "暗号化 (_Y):"
+
+#~ msgid "Encrypt_ion:"
+#~ msgstr "暗号化 (_I):"
+
+#~ msgid "SSL/TLS"
+#~ msgstr "SSL/TLS"
+
+#~ msgid "STARTTLS"
+#~ msgstr "STARTTLS"
+
+#~ msgid "No authentication re_quired"
+#~ msgstr "認証は不要 (_Q)"
+
+#~ msgid "Use IMAP cre_dentials"
+#~ msgstr "IMAPの資格情報を使用する (_D)"
+
+#~ msgid "Storage"
+#~ msgstr "ストレージ"
+
+#~ msgid "_Download mail"
+#~ msgstr "次の日時より後のメールをダウンロード (_D)"
+
+#~ msgid "Save dra_fts on server"
+#~ msgstr "サーバーに下書きを保存する (_F)"
+
+#~ msgid "Si_gn emails (HTML allowed):"
+#~ msgstr "メールに署名する (HTML も可) (_G)："
+
+#~ msgid "Add account"
+#~ msgstr "アカウントの追加"
+
+#~ msgid "Edit account"
+#~ msgstr "アカウントの編集"
+
+#~ msgid "Remove account"
+#~ msgstr "アカウントの削除"
+
+#~ msgid "Untrusted Connection"
+#~ msgstr "信頼されていない接続"
+
+#~ msgid "_Always Trust This Server"
+#~ msgstr "_常にこのサーバーを信用する"
+
+#~ msgid "_Trust This Server"
+#~ msgstr "このサーバーを信頼する (_T)"
+
+#~ msgid "_Don't Trust This Server"
+#~ msgstr "このサーバーを信頼しない (_D)"
+
+#~ msgid "SMTP Credentials"
+#~ msgstr "SMTP の資格情報"
+
+#~ msgid "Username"
+#~ msgstr "ユーザー名"
+
+#~ msgid "_Remember password"
+#~ msgstr "パスワードを記憶する (_R)"
+
+#~ msgid "_Authenticate"
+#~ msgstr "認証する (_A)"
+
+#~ msgid "© 2011-2015 Yorba Foundation, © 2016 elementary LLC."
+#~ msgstr "© 2011-2015 Yorba Foundation, © 2016 elementary LLC."
+
+#~ msgid ""
+#~ "Mail encountered an error sending an email.  If the problem persists, "
+#~ "please manually delete the email from your Outbox folder."
+#~ msgstr ""
+#~ "メールの送信中に Mail にエラーが発生しました。もしこの問題が続く場合、送信"
+#~ "トレイからメールを手動で削除してください。"
+
+#~ msgid ""
+#~ "Mail encountered an error saving a sent message to Sent Mail.  The "
+#~ "message will stay in your Outbox folder until you delete it."
+#~ msgstr ""
+#~ "送信フォルダへの送信メールの保存中に Mail にエラーが発生しました。送信トレ"
+#~ "イからメールを削除するまで、メッセージは送信トレイに残ります。"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to corruption of the database file in this directory:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Mail can rebuild the database and re-synchronize with the server or "
+#~ "exit.\n"
+#~ "\n"
+#~ "Rebuilding the database will destroy all local email and its attachments. "
+#~ "<b>The mail on the your server will not be affected.</b>"
+#~ msgstr ""
+#~ "このアカウントのローカル メール データーベースを開く途中でエラーが発生しま"
+#~ "した。これは、このディレクトリ内のデーターベース ファイルの欠落に起因して"
+#~ "いる可能性があります。\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "サーバーと接続するか、 Mail を終了することによって、 Mail はデーターベース"
+#~ "を再読み込みし、再同期することができます。\n"
+#~ "\n"
+#~ "データーベースの再読み込みはローカルにあるすべてのメールと添付ファイルを削"
+#~ "除します。<b>サーバー上のメールは影響を受けません。</b>"
+
+#~ msgid ""
+#~ "The version number of the local mail database is formatted for a newer "
+#~ "version of Mail. Unfortunately, the database cannot be \"rolled back\" to "
+#~ "work with this version of Mail.\n"
+#~ "\n"
+#~ "Please install the latest version of Mail and try again."
+#~ msgstr ""
+#~ "ローカル  データーベースのバージョン番号は新しいバージョンの Mail のもので"
+#~ "す。残念ですが、データーベースはこのバージョンの Mail で動作するようにロー"
+#~ "ルバックできません。\n"
+#~ "最新のバージョンの Mail をインストールしてもう一度試してください。"
+
+#~ msgid ""
+#~ "There was an error opening the local account. This is probably due to "
+#~ "connectivity issues.\n"
+#~ "\n"
+#~ "Please check your network connection and restart Mail."
+#~ msgstr ""
+#~ "ローカルアカウントを開く時にエラーが発生しました。これは接続の問題によるも"
+#~ "のと予測されます。\n"
+#~ "\n"
+#~ "ネットワーク接続を確認し Mail を再起動してください。"
+
+#~ msgid "This removes the email from Mail and your email server."
+#~ msgstr "この操作は Mail とメールサーバーからメールを削除します。"
+
+#~ msgid "        &#8226; Email address already added to Mail.\n"
+#~ msgstr "        &#8226; メールアドレスはすでに Mail へ追加されています。\n"
+
+#~ msgid "Mail requires your email password to continue"
+#~ msgstr "続行するには、メールのパスワードが必要です"
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Mail not to access this "
+#~ "server."
+#~ msgstr ""
+#~ "\"このサーバーを信頼しない\" を選択することにより、 Mail はこのアカウント"
+#~ "へのアクセスを停止します。"
+
+#~ msgid "Mail will not add or update this email account."
+#~ msgstr "Mail はこのメールアカウントを追加または更新できません。"
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Mail to stop accessing "
+#~ "this account."
+#~ msgstr ""
+#~ "\"このサーバーを信頼しない\" を選択することにより、 Mail はこのアカウント"
+#~ "へのアクセスを停止します。"
+
+#~ msgid "Mail will exit if you have no other open email accounts."
+#~ msgstr "ほかに開くメールアカウントがなければ、 Mail は終了します。"
+
+#~ msgid "Please wait while Mail validates your account."
+#~ msgstr "Mail がメールアカウントを検証する間お待ちください。"
+
+#~ msgid "Mail update in progress…"
+#~ msgstr "Mail のアップデートが進行しています…"
+
+#~ msgid ""
+#~ "2011-2015 Yorba Foundation\n"
+#~ "© 2016 elementary LLC."
+#~ msgstr ""
+#~ "2011-2015 Yorba Foundation\n"
+#~ "© 2016 elementary LLC."
+
+#~ msgid "Show About dialog"
+#~ msgstr "情報ダイアログを表示する"
+
+#~ msgid "Save Attachment…"
+#~ msgstr "添付ファイルを保存…"
+
+#~ msgid "Save All Attachments…"
+#~ msgstr "すべての添付ファイルを保存…"
+
+#~ msgid "View Source"
+#~ msgstr "ソースを表示"
+
+#~ msgid "View message"
+#~ msgstr "メッセージを表示する"
+
+#~ msgid "Copy Email Address"
+#~ msgstr "メールアドレスをコピー"
+
+#~ msgid "Hide message"
+#~ msgstr "メッセージを隠す"
+
+#~ msgid "Case sensitive"
+#~ msgstr "大文字と小文字を区別する"
+
+#~ msgid "%u match"
+#~ msgid_plural "%u matches"
+#~ msgstr[0] "%u が一致"
+
+#~ msgid "no-reply;no_reply;noreply;do-not-reply;do_not_reply;donotreply"
+#~ msgstr "no-reply;no_reply;noreply;do-not-reply;do_not_reply;donotreply"
+
+#~ msgid "Include original attachments"
+#~ msgstr "元の添付ファイルを含む"
+
+#~ msgid "Don't ask me again"
+#~ msgstr "次回から確認しない"
+
+#~ msgid "Are you sure you want to remove this account?"
+#~ msgstr "本当にこのアカウントを削除しますか？"
+
+#~ msgid "Username:"
+#~ msgstr "ユーザー名:"
+
+#~ msgid "Password:"
+#~ msgstr "パスワード:"
+
+#~ msgid "SMTP Credentials:"
+#~ msgstr "SMTP の資格情報："
+
+#~ msgid "Remember password"
+#~ msgstr "パスワードを保存する"
+
+#~ msgid "Authenticate"
+#~ msgstr "認証"
+
+#~ msgid "Strikethrough (Ctrl+%)"
+#~ msgstr "削除 (Ctrl+%)"
+
+#~ msgid "Link (Ctrl+K)"
+#~ msgstr "リンク (Ctrl+K)"
+
+#~ msgid "Forward (Ctrl+Shift+F)"
+#~ msgstr "次へ (Ctrl+Shift+F)"

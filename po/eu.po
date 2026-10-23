@@ -1,0 +1,1544 @@
+# po/geary.pot
+# PO message string template file for Geary email client
+# Copyright 2012-2013 Yorba Foundation
+# This file is distributed under the GNU LGPL, version 2.1.
+#
+# Translators:
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: geary-0.4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-08 16:46+0000\n"
+"PO-Revision-Date: 2015-12-01 22:33+0000\n"
+"Last-Translator: Félix Brezo <felixbrezo@gmail.com>\n"
+"Language-Team: Basque <librezale@librezale.org>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2017-03-09 05:58+0000\n"
+"X-Generator: Launchpad (build 18330)\n"
+
+#: src/Application.vala:145
+#, fuzzy
+#| msgid "Unable to validate:\n"
+msgid "Unable to open System Settings"
+msgstr "Ezin da balidatu:\n"
+
+#: src/Application.vala:146
+msgid ""
+"Open System Settings manually or install Evolution to set up online accounts."
+msgstr ""
+
+#: src/Application.vala:217
+msgid ""
+"Mail will automatically start when this device turns on and run when its "
+"window is closed so that it can send notifications when new mail arrives."
+msgstr ""
+
+#: src/Composer.vala:94 src/MessageList/MessageListItem.vala:102
+msgid "From:"
+msgstr "Nork:"
+
+#: src/Composer.vala:114 src/MessageList/MessageListItem.vala:108
+msgid "To:"
+msgstr "Nori:"
+
+#: src/Composer.vala:120
+#, fuzzy
+msgid "Cc"
+msgstr "Cc:"
+
+#: src/Composer.vala:122
+#, fuzzy
+msgid "Bcc"
+msgstr "Bcc:"
+
+#: src/Composer.vala:133 src/MessageList/MessageListItem.vala:148
+msgid "Cc:"
+msgstr "Cc:"
+
+#: src/Composer.vala:152
+msgid "Bcc:"
+msgstr "Bcc:"
+
+#: src/Composer.vala:171 src/MessageList/MessageListItem.vala:114
+msgid "Subject:"
+msgstr "Gaia:"
+
+#: src/Composer.vala:205
+msgid "Insert Image"
+msgstr ""
+
+#: src/Composer.vala:232
+msgid "Delete draft"
+msgstr ""
+
+#: src/Composer.vala:240
+msgid "Attach file"
+msgstr ""
+
+#: src/Composer.vala:251
+msgid "Insert Signature…"
+msgstr ""
+
+#: src/Composer.vala:256
+msgid "Send"
+msgstr ""
+
+#: src/Composer.vala:299
+msgid "New Message"
+msgstr "Mezu berria"
+
+#: src/Composer.vala:445
+msgid "Choose a file"
+msgstr "Aukeratu fitxategia"
+
+#: src/Composer.vala:448
+#, fuzzy
+#| msgid "_Attach"
+msgid "Attach"
+msgstr "_Erantsi"
+
+#: src/Composer.vala:449 src/Composer.vala:472 src/Composer.vala:763
+#: src/Dialogs/InsertLinkDialog.vala:66
+#: src/MessageList/AttachmentButton.vala:144
+msgid "Cancel"
+msgstr ""
+
+#: src/Composer.vala:464
+#, fuzzy
+#| msgid "Show Images"
+msgid "Images"
+msgstr "Erakutsi irudiak"
+
+#: src/Composer.vala:468
+#, fuzzy
+#| msgid "Choose a file"
+msgid "Choose an image"
+msgstr "Aukeratu fitxategia"
+
+#: src/Composer.vala:471
+msgid "Insert"
+msgstr ""
+
+#: src/Composer.vala:500
+#, fuzzy
+#| msgid "Unable to validate:\n"
+msgid "Unable to insert image"
+msgstr "Ezin da balidatu:\n"
+
+#: src/Composer.vala:501
+msgid "There was an unexpected error while trying to insert the image."
+msgstr ""
+
+#: src/Composer.vala:665
+msgid "%a, %b %-e, %Y at %-l:%M %p"
+msgstr "%a, %Y %b %e, %l:%M %p"
+
+#: src/Composer.vala:695
+#, c-format
+msgid "On %1$s, %2$s wrote:"
+msgstr "%2$s(e)k %1$s(e)an idatzita:"
+
+#: src/Composer.vala:699
+msgid "---------- Forwarded message ----------"
+msgstr "---------- Birbidalitako mezua ----------"
+
+#: src/Composer.vala:701
+#, fuzzy, c-format
+msgid "From: %s<br/>"
+msgstr "Nork: %s\n"
+
+#: src/Composer.vala:702
+#, fuzzy, c-format
+msgid "Subject: %s<br/>"
+msgstr "Gaia: %s\n"
+
+#: src/Composer.vala:703
+#, fuzzy, c-format
+msgid "Date: %s<br/>"
+msgstr "Data: %s\n"
+
+#: src/Composer.vala:704
+#, fuzzy, c-format
+msgid "To: %s<br/>"
+msgstr "Nori: %s\n"
+
+#: src/Composer.vala:706
+#, fuzzy, c-format
+msgid "Cc: %s<br/>"
+msgstr "Cc: %s\n"
+
+#: src/Composer.vala:754
+#, fuzzy
+#| msgid "Do you want to permanently delete this message?"
+#| msgid_plural "Do you want to permanently delete these messages?"
+msgid "Permanently delete this draft?"
+msgstr "Mezu hau betirako ezabatzea nahi duzu?"
+
+#: src/Composer.vala:755
+msgid ""
+"You cannot undo this action, nor recover your draft once it has been deleted."
+msgstr ""
+
+#: src/Composer.vala:765
+#, fuzzy
+#| msgid "Delete"
+msgid "Delete Draft"
+msgstr "Ezabatu"
+
+#: src/Composer.vala:789
+#, fuzzy
+msgid "Send without subject?"
+msgstr "Bidali gairik gabeko mezua?"
+
+#: src/Composer.vala:790
+msgid ""
+"This message has an empty subject field. The recipient may be unable to "
+"infer its scope or importance."
+msgstr ""
+
+#: src/Composer.vala:797
+msgid "Don't Send"
+msgstr ""
+
+#: src/Composer.vala:799
+msgid "Send Anyway"
+msgstr ""
+
+#: src/Composer.vala:830
+#, fuzzy
+#| msgid "Send message with an empty body?"
+msgid "Sent message was not saved"
+msgstr "Bidali gorputzik gabeko mezua?"
+
+#: src/Composer.vala:831
+msgid ""
+"The message was sent, however a copy was not saved to the Sent message "
+"folder."
+msgstr ""
+
+#: src/Composer.vala:846
+#, fuzzy
+#| msgid "Unable to validate:\n"
+msgid "Unable to send message"
+msgstr "Ezin da balidatu:\n"
+
+#: src/Composer.vala:847
+msgid "There was an unexpected error while sending your message."
+msgstr ""
+
+#: src/Composer.vala:945 src/FolderList/FolderList.vala:55
+msgid "Edit Signatures…"
+msgstr ""
+
+#: src/Composer.vala:949
+msgid "None"
+msgstr "Bat ere ez"
+
+#: src/Composer.vala:1140
+msgid "Unable to save draft"
+msgstr ""
+
+#: src/Composer.vala:1141
+msgid "There was an unexpected error while saving your draft."
+msgstr ""
+
+#: src/EditorToolbar.vala:55
+msgid "Bold"
+msgstr ""
+
+#: src/EditorToolbar.vala:62
+msgid "Italic"
+msgstr ""
+
+#: src/EditorToolbar.vala:73
+msgid "Underline"
+msgstr ""
+
+#: src/EditorToolbar.vala:85
+msgid "Strikethrough"
+msgstr ""
+
+#: src/EditorToolbar.vala:100
+msgid "Remove formatting"
+msgstr ""
+
+#: src/EditorToolbar.vala:108 src/Dialogs/InsertLinkDialog.vala:68
+msgid "Insert Link"
+msgstr ""
+
+#: src/InboxMonitor.vala:158 src/InboxMonitor.vala:170
+#, c-format
+msgid "%s to %s"
+msgstr ""
+
+#. /TRANSLATORS: The %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#: src/InboxMonitor.vala:165
+#, fuzzy, c-format
+#| msgid "%d new message"
+#| msgid_plural "%d new messages"
+msgid "%u new message"
+msgid_plural "%u new messages"
+msgstr[0] "Mezu berri %d"
+msgstr[1] "%d mezu berri"
+
+#. /TRANSLATORS: The first %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#. /The next %s represents the number of senders
+#: src/InboxMonitor.vala:177
+#, c-format
+msgid "%s from %u sender"
+msgid_plural "%s from %u senders"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/MainWindow.vala:80
+#, fuzzy
+#| msgid "All Mail"
+msgid "Mail"
+msgstr "Posta guztiak"
+
+#: src/MainWindow.vala:123 src/Dialogs/AliasDialog/AliasDialog.vala:96
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:172
+msgid "Undo"
+msgstr ""
+
+#: src/MainWindow.vala:281
+#, fuzzy
+msgid "Message Archived"
+msgid_plural "Messages Archived"
+msgstr[0] "Ez da berriketarik hautatu."
+msgstr[1] "Ez da berriketarik hautatu."
+
+#: src/MainWindow.vala:285
+#, fuzzy
+msgid "Couldn't archive message"
+msgstr "mezu %d"
+
+#: src/MainWindow.vala:298
+#, fuzzy
+msgid "Message Moved"
+msgid_plural "Messages Moved"
+msgstr[0] "Ez da berriketarik hautatu."
+msgstr[1] "Ez da berriketarik hautatu."
+
+#: src/MainWindow.vala:302
+#, fuzzy
+#| msgid "Unable to validate:\n"
+msgid "Couldn't move message"
+msgstr "Ezin da balidatu:\n"
+
+#: src/MainWindow.vala:315
+#, fuzzy
+msgid "Message Deleted"
+msgid_plural "Messages Deleted"
+msgstr[0] "Ez da berriketarik hautatu."
+msgstr[1] "Ez da berriketarik hautatu."
+
+#: src/MainWindow.vala:319
+msgid "Couldn't delete message"
+msgstr ""
+
+#: src/WelcomeView.vala:45
+msgid "Connect an Account"
+msgstr ""
+
+#: src/WelcomeView.vala:52
+msgid "Mail uses email accounts configured in System Settings."
+msgstr ""
+
+#: src/WelcomeView.vala:59
+#, fuzzy
+msgid "Online Accounts…"
+msgstr "Kontuak"
+
+#: src/Backend/Account.vala:48
+#, fuzzy
+#| msgid "Unable to validate:\n"
+msgid "Unable to connect"
+msgstr "Ezin da balidatu:\n"
+
+#: src/Backend/Account.vala:49
+msgid "There was an unexpected error while trying to connect to the server."
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:65
+#, c-format
+msgid "Moving messages… (%u remaining)"
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:98
+msgid "No Archive folder is configured."
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:126
+msgid "The destination folder was not found."
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:130
+msgid "The source folder is the destination folder."
+msgstr ""
+
+#: src/Backend/Session.vala:642
+msgid "New Signature"
+msgstr ""
+
+#: src/Backend/ContactManager.vala:88 src/Backend/ContactManager.vala:122
+#, c-format
+msgid "Couldn't add “%s” to addressbook"
+msgstr ""
+
+#: src/Backend/ContactManager.vala:89
+msgid "No addressbook available."
+msgstr ""
+
+#: src/Backend/ContactManager.vala:123
+msgid "Operation failed."
+msgstr ""
+
+#: src/ConversationList/ConversationItemModel.vala:74
+#: src/ConversationList/ConversationItemModel.vala:112
+msgid ", "
+msgstr ""
+
+#: src/ConversationList/ConversationItemModel.vala:77
+#: src/ConversationList/ConversationItemModel.vala:115
+#: src/ConversationList/ConversationItemModel.vala:123
+#: src/MessageList/AttachmentButton.vala:100
+msgid "Unknown"
+msgstr ""
+
+#: src/ConversationList/ConversationList.vala:85
+msgid "Search Mail"
+msgstr ""
+
+#: src/ConversationList/ConversationList.vala:89
+#, fuzzy
+#| msgid "Delete conversation"
+msgid "Hide read conversations"
+msgstr "Ezabatu berriketa"
+
+#: src/ConversationList/ConversationList.vala:90
+#, fuzzy
+#| msgid "Delete conversation"
+msgid "Hide unstarred conversations"
+msgstr "Ezabatu berriketa"
+
+#: src/ConversationList/ConversationList.vala:107
+#, fuzzy
+#| msgid "Delete conversation"
+msgid "Filter Conversations"
+msgstr "Ezabatu berriketa"
+
+#: src/ConversationList/ConversationList.vala:130
+#, fuzzy
+#| msgid "%d new message"
+#| msgid_plural "%d new messages"
+msgid "Fetch new messages"
+msgstr "Mezu berri %d"
+
+#: src/ConversationList/ConversationList.vala:137
+#, fuzzy
+#| msgid "%d new message"
+#| msgid_plural "%d new messages"
+msgid "Fetching new messages…"
+msgstr "Mezu berri %d"
+
+#: src/ConversationList/ConversationListItem.vala:94
+msgid "Archive"
+msgstr "Artxiboa"
+
+#: src/ConversationList/ConversationListItem.vala:99
+msgid "Trash"
+msgstr "Zakarrontzia"
+
+#: src/ConversationList/ConversationListItem.vala:181
+#, fuzzy
+msgid "Unread"
+msgstr "%d irakurri gabe"
+
+#: src/ConversationList/ConversationListItem.vala:194
+#, fuzzy
+msgid "Replied"
+msgstr "_Ordeztu"
+
+#: src/ConversationList/ConversationListItem.vala:198
+#, fuzzy
+msgid "Forwarded"
+msgstr "A_urrera"
+
+#: src/ConversationList/ConversationListItem.vala:212
+#, fuzzy
+msgid "Move To Trash"
+msgstr "Aldatu berriketak lekuz"
+
+#: src/ConversationList/ConversationListItem.vala:215
+#, fuzzy
+msgid "Mark As Unread"
+msgstr "_Markatu 'Irakurri gabea'"
+
+#: src/ConversationList/ConversationListItem.vala:217
+#: src/MessageList/MessageList.vala:51
+#, fuzzy
+msgid "Mark as Read"
+msgstr "_Markatu irakurritako gisa"
+
+#: src/ConversationList/ConversationListItem.vala:221
+#: src/MessageList/MessageList.vala:52
+#, fuzzy
+msgid "Star"
+msgstr "_Izarra"
+
+#: src/ConversationList/ConversationListItem.vala:223
+#: src/MessageList/MessageList.vala:53
+#, fuzzy
+msgid "Unstar"
+msgstr "Ke_ndu izarra"
+
+#: src/Dialogs/InsertLinkDialog.vala:29
+msgid "URL:"
+msgstr ""
+
+#: src/Dialogs/InsertLinkDialog.vala:39
+msgid "Link Text:"
+msgstr ""
+
+#: src/Dialogs/InsertLinkDialog.vala:45
+msgid "Example Website"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/Alias.vala:52
+msgid "John Doe"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/Alias.vala:56
+msgid "Name"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/Alias.vala:75
+#, fuzzy
+#| msgid "Copy _Email Address"
+msgid "E-mail Address"
+msgstr "Kopiatu _helbide elektronikoa"
+
+#: src/Dialogs/AliasDialog/Alias.vala:80
+#, fuzzy
+#| msgid "Delete"
+msgid "Delete alias"
+msgstr "Ezabatu"
+
+#: src/Dialogs/AliasDialog/Alias.vala:100
+#, fuzzy
+#| msgid "Edit Draft"
+msgid "Edit alias"
+msgstr "Editatu zirriborroa"
+
+#: src/Dialogs/AliasDialog/Alias.vala:175
+msgid "Name not set"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:33
+msgid "No Aliases"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:37
+msgid "Add aliases using the button in the toolbar below"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:67
+msgid "Add Alias…"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:104
+msgid "Aliases"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:108
+#, fuzzy
+#| msgid "_Close"
+msgid "Close"
+msgstr "It_xi"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:178
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:330
+#, c-format
+msgid "'%s' deleted"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:39
+msgid "No Signatures"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:43
+msgid "Add signatures using the button in the toolbar below"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:67
+msgid "Create Signature"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:86
+msgid "Title"
+msgstr ""
+
+#. Work around a styling issue
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:99
+msgid "For example “Work” or “Personal”"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:122
+#, fuzzy
+#| msgid "Delete"
+msgid "Delete"
+msgstr "Ezabatu"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:131
+msgid "Set Default For…"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:156
+msgid "Signature"
+msgstr ""
+
+#: src/FolderList/AccountItemModel.vala:155
+msgid "Edit Aliases…"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:48
+msgid "Refresh folder"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:53
+msgid "Rename folder"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:146
+#: src/FolderList/FolderItemModel.vala:175
+#: src/FolderList/FolderItemModel.vala:193
+#, c-format
+msgid "Couldn't rename “%s”"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:147
+msgid "Folder names cannot contain “/”"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:176
+#, c-format
+msgid "A folder named “%s” already exists"
+msgstr ""
+
+#: src/FolderList/FolderList.vala:34
+#, fuzzy
+msgid "Compose new message"
+msgstr "Prestatu mezu berria (Ktrl+N, N)"
+
+#: src/FolderList/FolderList.vala:56
+msgid "Account Settings…"
+msgstr ""
+
+#: src/FolderList/FolderList.vala:59
+#, fuzzy
+msgid "Always Show Remote Images"
+msgstr "Erakutsi beti bidaltzailetik"
+
+#: src/FolderList/FolderList.vala:65
+msgid "Menu"
+msgstr ""
+
+#: src/FolderList/GroupedFolderItemModel.vala:38
+#, fuzzy
+#| msgid "Inbox"
+msgctxt "Inbox Folder"
+msgid "Inbox"
+msgstr "Sarrerako ontzia"
+
+#: src/FolderList/GroupedFolderItemModel.vala:42
+#, fuzzy
+#| msgid "Archive"
+msgctxt "Archive Folder"
+msgid "Archive"
+msgstr "Artxiboa"
+
+#: src/FolderList/GroupedFolderItemModel.vala:46
+#, fuzzy
+#| msgid "Sent Mail"
+msgctxt "Sent Folder"
+msgid "Sent"
+msgstr "Bidalita"
+
+#: src/FolderList/SessionItemModel.vala:28
+msgid "All Mailboxes"
+msgstr ""
+
+#: src/MessageList/MessageList.vala:28 src/MessageList/MessageListItem.vala:210
+msgid "Reply"
+msgstr ""
+
+#: src/MessageList/MessageList.vala:37 src/MessageList/MessageListItem.vala:213
+#, fuzzy
+msgid "Reply All"
+msgstr "Erantzun _denei"
+
+#: src/MessageList/MessageList.vala:46 src/MessageList/MessageListItem.vala:216
+msgid "Forward"
+msgstr ""
+
+#: src/MessageList/MessageList.vala:50
+#, fuzzy
+msgid "Mark as Unread"
+msgstr "_Markatu 'Irakurri gabea'"
+
+#: src/MessageList/MessageList.vala:60
+#, fuzzy
+msgid "Mark Conversation"
+msgstr "Markatu berriketak"
+
+#: src/MessageList/MessageList.vala:68
+#, fuzzy
+msgid "Move Conversation to…"
+msgstr "Aldatu berriketak lekuz"
+
+#: src/MessageList/MessageList.vala:77
+#, fuzzy
+msgid "Move conversations to archive"
+msgstr "Aldatu berriketak lekuz"
+
+#: src/MessageList/MessageList.vala:85
+#, fuzzy
+msgid "Move conversations to Trash"
+msgstr "Aldatu berriketak lekuz"
+
+#: src/MessageList/MessageList.vala:100
+#, fuzzy
+msgid "No Message Selected"
+msgstr "Ez da berriketarik hautatu."
+
+#. /TRANSLATORS: The first %s represents the date and the second %s the time of the message (either when it was received or sent)
+#: src/MessageList/MessageListItem.vala:190
+#, c-format
+msgid "%s at %s"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:198
+#: src/MessageList/MessageListItem.vala:397
+#, fuzzy
+msgid "Unstar message"
+msgstr "mezu %d"
+
+#: src/MessageList/MessageListItem.vala:201
+#: src/MessageList/MessageListItem.vala:393
+#, fuzzy
+msgid "Star message"
+msgstr "mezu %d"
+
+#: src/MessageList/MessageListItem.vala:221
+msgid "Print…"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:231
+msgid "More"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:281
+msgid "Open in Calendar"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:286
+#, fuzzy
+#| msgid "This message contains remote images."
+msgid "This message contains a Calendar Event."
+msgstr "Mezu honek urruneko irudiak ditu."
+
+#: src/MessageList/MessageListItem.vala:297
+msgid "Show Images"
+msgstr "Erakutsi irudiak"
+
+#: src/MessageList/MessageListItem.vala:298
+msgid "Always Show from Sender"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:302
+msgid "This message contains remote images."
+msgstr "Mezu honek urruneko irudiak ditu."
+
+#: src/MessageList/MessageListItem.vala:341
+msgid "This message contains one or more attachments"
+msgstr ""
+
+#. / Translators: This is the default file name of a printed email
+#: src/MessageList/MessageListItem.vala:417
+#, fuzzy
+#| msgid "New Message"
+msgid "Email Message"
+msgstr "Mezu berria"
+
+#: src/MessageList/MessageListItem.vala:439
+#, fuzzy
+#| msgid "Unable to validate:\n"
+msgid "Unable to print email"
+msgstr "Ezin da balidatu:\n"
+
+#: src/MessageList/MessageListItem.vala:691
+#, c-format
+msgid "Trust and open “%s”?"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:692
+msgid ""
+"Attachments may cause damage to your system if opened. Only open files from "
+"trusted sources."
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:699
+msgid "Open Anyway"
+msgstr ""
+
+#: src/MessageList/AttachmentButton.vala:57
+msgid "Open"
+msgstr "Ireki"
+
+#: src/MessageList/AttachmentButton.vala:58
+msgid "Save As…"
+msgstr ""
+
+#: src/MessageList/AttachmentButton.vala:143
+#, fuzzy
+msgid "Save"
+msgstr "_Gorde"
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:22
+msgid "No mailboxes found"
+msgstr ""
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:26
+msgid "Try changing search terms"
+msgstr ""
+
+#, fuzzy
+#~| msgid "Reply to _All"
+#~ msgid "Reply to All"
+#~ msgstr "Erantzun g_uztiei"
+
+#~ msgid "Drafts | Draft"
+#~ msgstr "Zirriborroak | Zirriborroa | Drafts | Draft"
+
+#~ msgid "Sent | Sent Mail | Sent Email | Sent E-Mail"
+#~ msgstr ""
+#~ "Bidalita | Posta bidalita | Mezua bidalita | Sent | Sent Mail | Sent "
+#~ "Email | Sent E-Mail"
+
+#~ msgid ""
+#~ "Junk | Spam | Junk Mail | Junk Email | Junk E-Mail | Bulk Mail | Bulk "
+#~ "Email | Bulk E-Mail"
+#~ msgstr ""
+#~ "Baztergarria | Baztergarriak | Posta baztergarria | Mezu baztergarria | "
+#~ "Junk | Spam | Junk Mail | Junk Email | Junk E-Mail | Bulk Mail | Bulk "
+#~ "Email | Bulk E-Mail"
+
+#~ msgid "Trash | Rubbish | Rubbish Bin"
+#~ msgstr "Zakarrontzia | Trash | Rubbish | Rubbish Bin"
+
+#~ msgid "Archive | Archives"
+#~ msgstr "Artxiboa | Artxiboak"
+
+#~ msgid "Drafts"
+#~ msgstr "Zirriborroak"
+
+#~ msgid "Starred"
+#~ msgstr "Puntuatuta"
+
+#~ msgid "Important"
+#~ msgstr "Garrantzitsua"
+
+#~ msgid "Spam"
+#~ msgstr "Baztergarriak"
+
+#~ msgid "Outbox"
+#~ msgstr "Irteera"
+
+#~ msgid "Search"
+#~ msgstr "Bilatu"
+
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgid "SMTP"
+#~ msgstr "SMTP"
+
+#~ msgid "Gmail"
+#~ msgstr "Gmail"
+
+#~ msgid "Yahoo! Mail"
+#~ msgstr "Yahoo! Mail"
+
+#~ msgid "Outlook.com"
+#~ msgstr "Outlook.com"
+
+#~ msgid "Other"
+#~ msgstr "Bestelakoa"
+
+#~ msgid "attachment"
+#~ msgstr "eranskina"
+
+#~ msgid "bcc"
+#~ msgstr "bcc"
+
+#~ msgid "body"
+#~ msgstr "gorputza"
+
+#~ msgid "cc"
+#~ msgstr "cc"
+
+#~ msgid "from"
+#~ msgstr "nork"
+
+#~ msgid "subject"
+#~ msgstr "gaia"
+
+#~ msgid "to"
+#~ msgstr "nori"
+
+#~ msgid "me"
+#~ msgstr "ni"
+
+#~ msgid "(no subject)"
+#~ msgstr "(gairik ez)"
+
+#~ msgid "%s wrote:"
+#~ msgstr "'%s'(e)k idatzita:"
+
+#~ msgid "On %s:"
+#~ msgstr "%s(e)an:"
+
+#~ msgid "none"
+#~ msgstr "bat ere ez"
+
+#~ msgid "Mail Client"
+#~ msgstr "Posta-bezeroa"
+
+#~ msgid "Copyright 2011-2015 Yorba Foundation"
+#~ msgstr "Copyright 2011-2015 Yorba Foundation"
+
+#~ msgid "Visit the Yorba web site"
+#~ msgstr "Bisitatu Yorba-ren webgunea"
+
+#~ msgid "Delete conversation (Shift+Delete)"
+#~ msgstr "Ezabatu berriketa (Maius+Ezabatu)"
+
+#~ msgid "Delete conversations (Shift+Delete)"
+#~ msgstr "Ezabatu berriketak (Maius+Ezabatu)"
+
+#~ msgid "_Archive"
+#~ msgstr "_Artxiboa"
+
+#~ msgid "Archive conversations (A)"
+#~ msgstr "Artxibatu berriketak (A)"
+
+#~ msgid "Mark as S_pam"
+#~ msgstr "Markatu _baztergarri gisa"
+
+#~ msgid "Mark as not S_pam"
+#~ msgstr "Markatu e_z-baztergarri gisa"
+
+#~ msgid "Add label to conversations"
+#~ msgstr "Gehitu etiketa berriketei"
+
+#~ msgid "A_ccounts"
+#~ msgstr "K_ontuak"
+
+#~ msgid "_Preferences"
+#~ msgstr "_Hobespenak"
+
+#~ msgid "_Help"
+#~ msgstr "_Laguntza"
+
+#~ msgid "_About"
+#~ msgstr "Honi _buruz"
+
+#~ msgid "_Quit"
+#~ msgstr "I_rten"
+
+#~ msgid "_Mark as..."
+#~ msgstr "_Markatu honela..."
+
+#~ msgid "Mark as _Read"
+#~ msgstr "Markatu '_Irakurrita' gisa"
+
+#~ msgid "Mark as _Unread"
+#~ msgstr "Markatu i_rakurri gabeko gisa"
+
+#~ msgid "Add label"
+#~ msgstr "Gehitu etiketa"
+
+#~ msgid "_Label"
+#~ msgstr "_Etiketa"
+
+#~ msgid "_Move"
+#~ msgstr "Aldatu _lekuz"
+
+#~ msgid "_Reply"
+#~ msgstr "_Erantzun"
+
+#~ msgid "Reply (Ctrl+R, R)"
+#~ msgstr "Erantzun (Ktrl+R, R)"
+
+#~ msgid "Reply all (Ctrl+Shift+R, Shift+R)"
+#~ msgstr "Erantzun _denei (Ktrl+Maius+R, Maius+R)"
+
+#~ msgid "Forward (Ctrl+L, F)"
+#~ msgstr "Aurrera (Ktrl+L, F)"
+
+#~ msgid "Empty"
+#~ msgstr "Hutsik"
+
+#~ msgid "Your settings are insecure"
+#~ msgstr "Zure ezarpenak ez dira seguruak"
+
+#~ msgid ""
+#~ "Your IMAP and/or SMTP settings do not specify SSL or TLS.  This means "
+#~ "your username and password could be read by another person on the "
+#~ "network.  Are you sure you want to do this?"
+#~ msgstr ""
+#~ "IMAP eta/edo SMTP ezarpenek ez dute SSL edo TLS zehazten. Zure "
+#~ "erabiltzaile-izena eta pasahitza sareko beste pertsona batek irakur "
+#~ "ditzakeela adierazten du honek. Ziur zaude hau nahi duzula?"
+
+#~ msgid "Co_ntinue"
+#~ msgstr "_Jarraitu"
+
+#~ msgid "Error sending email"
+#~ msgstr "Errorea mezua bidaltzean"
+
+#~ msgid ""
+#~ "Geary encountered an error sending an email.  If the problem persists, "
+#~ "please manually delete the email from your Outbox folder."
+#~ msgstr ""
+#~ "Errorea gertatu da mezu bat bidaltzean. Arazoak jarraitzen badu, ezabatu "
+#~ "eskuz mezua zure Irteera karpetatik."
+
+#~ msgid "Error saving sent mail"
+#~ msgstr "Errorea bidalitako mezua gordetzean"
+
+#~ msgid ""
+#~ "Geary encountered an error saving a sent message to Sent Mail.  The "
+#~ "message will stay in your Outbox folder until you delete it."
+#~ msgstr ""
+#~ "Errorea gertatu da bidalitako mezua Bidalita karpetan gordetzean. Arazoak "
+#~ "jarraitzen badu, ezabatu eskuz mezua zure Irteera karpetatik."
+
+#~ msgid "Labels"
+#~ msgstr "Etiketak"
+
+#~ msgid "Unable to open the database for %s"
+#~ msgstr "Ezin da '%s'(r)en datu-basea ireki"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to corruption of the database file in this directory:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Geary can rebuild the database and re-synchronize with the server or "
+#~ "exit.\n"
+#~ "\n"
+#~ "Rebuilding the database will destroy all local email and its attachments. "
+#~ "<b>The mail on the your server will not be affected.</b>"
+#~ msgstr ""
+#~ "Errorea gertatu da kontu honen lokaleko postaren datu-basea irekitzean. "
+#~ "Baliteke datu-basearen fitxategia hondatuta egotea direktorio honetan:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Geary-k datu-basea berreraiki eta zerbitzariarekin berriro sinkroniza "
+#~ "dezake, edo irten.\n"
+#~ "\n"
+#~ "Datu-basea berreraikitzean lokaleko mezu guztiak (beraien eranskinekin) "
+#~ "ezabatzea dakar. <b>Zerbitzariko zure mezuak ez dute eraginik jasoko.</b>"
+
+#~ msgid "_Rebuild"
+#~ msgstr "_Berreraiki"
+
+#~ msgid "E_xit"
+#~ msgstr "I_rten"
+
+#~ msgid "Unable to rebuild database for \"%s\""
+#~ msgstr "Ezin da '%s'(r)en datu-basea berreraiki"
+
+#~ msgid ""
+#~ "Error during rebuild:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Errorea berreraikitzean:\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid "Unable to open local mailbox for %s"
+#~ msgstr "Ezin da '%s'(r)en lokaleko postontzia ireki"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to a file permissions problem.\n"
+#~ "\n"
+#~ "Please check that you have read/write permissions for all files in this "
+#~ "directory:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Errorea gertatu da kontu honen lokaleko postaren datu-basea irekitzean. "
+#~ "Fitxategiaren baimenean arazoren bat egon daiteke.\n"
+#~ "\n"
+#~ "Egiaztatu direktorio honetako fitxategi guztietan irakurtzeko/idazteko "
+#~ "baimenak dituzula:\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid ""
+#~ "The version number of the local mail database is formatted for a newer "
+#~ "version of Geary. Unfortunately, the database cannot be \"rolled back\" "
+#~ "to work with this version of Geary.\n"
+#~ "\n"
+#~ "Please install the latest version of Geary and try again."
+#~ msgstr ""
+#~ "Lokaleko postaren datu-basearen bertsio zenbakia Geary-ren bertsio "
+#~ "berriago batentzako formateatu da. Zoritxarrez, datu-basea ezin da "
+#~ "desegin Geary-ren bertsio honekin funtzionatzeko.\n"
+#~ "\n"
+#~ "Instalatu Geary-ren azken bertsioa eta saiatu berriro."
+
+#~ msgid ""
+#~ "There was an error opening the local account. This is probably due to "
+#~ "connectivity issues.\n"
+#~ "\n"
+#~ "Please check your network connection and restart Geary."
+#~ msgstr ""
+#~ "Errorea gertatu da lokaleko kontua irekitzean. Baliteke konektibitatean "
+#~ "arazoak egotea.\n"
+#~ "\n"
+#~ "Egiaztatu sareko konexioa eta berrabiarazi Geary."
+
+#~ msgid "About %s"
+#~ msgstr "%s(r)i buruz"
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
+#~ "\n"
+#~ "Launchpad Contributions:\n"
+#~ "  Félix Brezo https://launchpad.net/~febrezo\n"
+#~ "  Iñaki Larrañaga Murgoitio https://launchpad.net/~dooteo-zundan"
+
+#~ msgid "Are you sure you want to open \"%s\"?"
+#~ msgstr "Ziur zaude '%s' ireki nahi duzula?"
+
+#~ msgid ""
+#~ "Attachments may cause damage to your system if opened.  Only open files "
+#~ "from trusted sources."
+#~ msgstr ""
+#~ "Eranskinek kalteak sor ditzakete sisteman irekitzen badira. Iturburu "
+#~ "fidagarrietako fitxategiak bakarrik ireki."
+
+#~ msgid "Don't _ask me again"
+#~ msgstr "_Ez galdetu berriro"
+
+#~ msgid "A file named \"%s\" already exists.  Do you want to replace it?"
+#~ msgstr "'%s' izeneko fitxategia badago lehendik. Ordeztea nahi duzu?"
+
+#~ msgid ""
+#~ "The file already exists in \"%s\".  Replacing it will overwrite its "
+#~ "contents."
+#~ msgstr ""
+#~ "'%s'(e)n badago fitxategia lehendik. Hau ordeztean bere eduki guztia "
+#~ "gainidatziko da."
+
+#~ msgid "Close open draft messages?"
+#~ msgstr "Itxi irekitako mezu zirriborroak?"
+
+#~ msgid "Start Geary with hidden main window"
+#~ msgstr "Abiarazi Geary leiho nagusia ezkutatuta"
+
+#~ msgid "Output debugging information"
+#~ msgstr "Irteerako arazketaren informazioa"
+
+#~ msgid "Log conversation monitoring"
+#~ msgstr "Erregistratu berriketaren monitorizazioa"
+
+#~ msgid "Log network deserialization"
+#~ msgstr "Erregistratu sarearen deserializatzea"
+
+#~ msgid "Log network activity"
+#~ msgstr "Erregistratu sareko jarduera"
+
+#~ msgid "Log IMAP replay queue"
+#~ msgstr "Erregistratu IMAP gertaeren ilara"
+
+#~ msgid "Log network serialization"
+#~ msgstr "Erregistratu sarearen serializazioa"
+
+#~ msgid "Log periodic activity"
+#~ msgstr "Erregistratu aldiko jarduera"
+
+#~ msgid "Log database queries (generates lots of messages)"
+#~ msgstr "Erregistratu datu-basearen kontsultak (mezu ugari sortzen ditu)"
+
+#~ msgid "Log folder normalization"
+#~ msgstr "Erregistratu karpetaren normalizazioa"
+
+#~ msgid "Allow inspection of WebView"
+#~ msgstr "Baimendu WebView aztertzea"
+
+#~ msgid "Display program version"
+#~ msgstr "Bistaratu programaren bertsioa"
+
+#~ msgid "Use %s to open a new composer window"
+#~ msgstr "Erabili '%s' prestatzeko leiho berria irekitzeko"
+
+#~ msgid "Please report comments, suggestions and bugs to:"
+#~ msgstr "Bidali iruzkinak, iradokizunak eta eman akatsen berri hemen:"
+
+#~ msgid "Failed to parse command line options: %s\n"
+#~ msgstr "Huts egin du komando-lerroaren aukerak aztertzean: %s\n"
+
+#~ msgid "Unrecognized command line option \"%s\"\n"
+#~ msgstr "Komando-lerroaren '%s' aukera ezezaguna\n"
+
+#~ msgid "%s - New Messages"
+#~ msgstr "%s - Mezu berriak"
+
+#~ msgid "%s, %d new message total"
+#~ msgid_plural "%s, %d new messages total"
+#~ msgstr[0] "%s, mezu berri %d guztira"
+#~ msgstr[1] "%s, %d mezu berri guztira"
+
+#~ msgid ""
+#~ "%s\n"
+#~ "(%d other new message for %s)"
+#~ msgid_plural ""
+#~ "%s\n"
+#~ "(%d other new messages for %s)"
+#~ msgstr[0] ""
+#~ "%1$s\n"
+#~ "%3$s(r)en beste mezu berri %2$d"
+#~ msgstr[1] ""
+#~ "%1$s\n"
+#~ "%3$s(r)en beste %2$d mezu berri"
+
+#~ msgid "Me"
+#~ msgstr "Ni"
+
+#~ msgid "First Last"
+#~ msgstr "First Last"
+
+#~ msgid "Welcome to Geary."
+#~ msgstr "Ongi etorri Geary-ra."
+
+#~ msgid "Enter your account information to get started."
+#~ msgstr "Sartu zure kontuaren informazioa hasteko."
+
+#~ msgid "2 weeks back"
+#~ msgstr "2 aste atzera"
+
+#~ msgid "1 month back"
+#~ msgstr "Hilabete 1 atzera"
+
+#~ msgid "3 months back"
+#~ msgstr "3 hilabete atzera"
+
+#~ msgid "6 months back"
+#~ msgstr "6 hilabete atzera"
+
+#~ msgid "1 year back"
+#~ msgstr "Urte 1 atzera"
+
+#~ msgid "2 years back"
+#~ msgstr "2 urte atzera"
+
+#~ msgid "4 years back"
+#~ msgstr "4 urte atzera"
+
+#~ msgid "Everything"
+#~ msgstr "Dena"
+
+#~ msgid "Remem_ber passwords"
+#~ msgstr "_Gogoratu pasahitzak"
+
+#~ msgid "Remem_ber password"
+#~ msgstr "_Gogoratu pasahitza"
+
+#~ msgid "        &#8226; Invalid account nickname.\n"
+#~ msgstr "        &#8226; Kontuaren goitizena baliogabea.\n"
+
+#~ msgid "        &#8226; Email address already added to Geary.\n"
+#~ msgstr "        &#8226; Helbide elektronikoa jadanik Geary-ri gehituta.\n"
+
+#~ msgid "        &#8226; IMAP connection error.\n"
+#~ msgstr "        &#8226; IMAP konexioaren errorea.\n"
+
+#~ msgid "        &#8226; IMAP username or password incorrect.\n"
+#~ msgstr "        &#8226; Okerreko IMAP erabiltzaile-izena edo pasahitza.\n"
+
+#~ msgid "        &#8226; SMTP connection error.\n"
+#~ msgstr "        &#8226; SMTP konexioaren errorea.\n"
+
+#~ msgid "        &#8226; SMTP username or password incorrect.\n"
+#~ msgstr "        &#8226; Okerreko SMTP erabiltzaile-izena edo pasahitza.\n"
+
+#~ msgid "        &#8226; Connection error.\n"
+#~ msgstr "        &#8226; Konexioaren errorea.\n"
+
+#~ msgid "        &#8226; Username or password incorrect.\n"
+#~ msgstr "        &#8226; Okerreko erabiltzaile-izena edo pasahitza.\n"
+
+#~ msgid "_Add"
+#~ msgstr "_Gehitu"
+
+#~ msgid "%l:%M %P"
+#~ msgstr "%l:%M %P"
+
+#~ msgid "%H:%M"
+#~ msgstr "%H:%M"
+
+#~ msgctxt "Default clock format"
+#~ msgid "%l:%M %P"
+#~ msgstr "%l:%M %P"
+
+#~ msgid "%b %-e"
+#~ msgstr "%b %e"
+
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%Y %B %e, %l:%M %P"
+
+#~ msgid "%B %-e, %Y %-H:%M"
+#~ msgstr "%Y %B %e, %H:%M"
+
+#~ msgctxt "Default full date"
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%Y %B %e, %l:%M %P"
+
+#~ msgid "Now"
+#~ msgstr "Orain"
+
+#~ msgid "%dm ago"
+#~ msgid_plural "%dm ago"
+#~ msgstr[0] "Duela %dm"
+#~ msgstr[1] "Duela %dm"
+
+#~ msgid "%dh ago"
+#~ msgid_plural "%dh ago"
+#~ msgstr[0] "Duela %do"
+#~ msgstr[1] "Duela %do"
+
+#~ msgid "Yesterday"
+#~ msgstr "Atzo"
+
+#~ msgid "%A"
+#~ msgstr "%A"
+
+#~ msgid "bytes"
+#~ msgstr "byte"
+
+#~ msgctxt "Abbreviation for terabyte"
+#~ msgid "TB"
+#~ msgstr "TB"
+
+#~ msgctxt "Abbreviation for gigabyte"
+#~ msgid "GB"
+#~ msgstr "GB"
+
+#~ msgctxt "Abbreviation for megabyte"
+#~ msgid "MB"
+#~ msgstr "MB"
+
+#~ msgctxt "Abbreviation for kilobyte"
+#~ msgid "KB"
+#~ msgstr "KB"
+
+#~ msgid "%s, %s"
+#~ msgstr "%s (%s)"
+
+#~ msgid "Inboxes"
+#~ msgstr "Sarrerako ontziak"
+
+#~ msgid "Search %s account"
+#~ msgstr "Bilatu '%s' kontua"
+
+#~ msgid "%d result"
+#~ msgid_plural "%d results"
+#~ msgstr[0] "Emaitza %d"
+#~ msgstr[1] "%d emaitz"
+
+#~ msgid "%u conversation selected."
+#~ msgid_plural "%u conversations selected."
+#~ msgstr[0] "Berriketa %u hautatuta."
+#~ msgstr[1] "%u berriketa hautatuta."
+
+#~ msgid "No search results found."
+#~ msgstr "Ez da bilaketaren emaitzarik aurkitu."
+
+#~ msgid "No conversations in folder."
+#~ msgstr "Ez dago berriketarik karpetan."
+
+#~ msgid "Date:"
+#~ msgstr "Data:"
+
+#~ msgid "%u read message"
+#~ msgid_plural "%u read messages"
+#~ msgstr[0] "Mezu %u irakurrita"
+#~ msgstr[1] "%u mezu irakurrita"
+
+#~ msgid "This message was sent successfully, but could not be saved to %s."
+#~ msgstr "Mezu hori ongi bidali da, baina ez da '%s'(e)n gorde."
+
+#~ msgid "_Copy"
+#~ msgstr "_Kopiatu"
+
+#~ msgid "Copy _Link"
+#~ msgstr "Kopiatu _esteka"
+
+#~ msgid "Select _Message"
+#~ msgstr "Hautatu _mezua"
+
+#~ msgid "Select _All"
+#~ msgstr "Hautatu _dena"
+
+#~ msgid "_Inspect"
+#~ msgstr "_Aztertu"
+
+#~ msgid "This link appears to go to"
+#~ msgstr "Esteka hori hona bideratzen duela dirudi:"
+
+#~ msgid "but actually goes to"
+#~ msgstr "baina benetan hona zuzentzen du:"
+
+#~ msgid " (Invalid?)"
+#~ msgstr " (baliogabea?)"
+
+#~ msgid "_Save Image As..."
+#~ msgstr "Gorde irudia _honela..."
+
+#~ msgid "_Save As..."
+#~ msgstr "Gorde _honela..."
+
+#~ msgid "Save All A_ttachments..."
+#~ msgstr "Gorde eranskin _guztiak..."
+
+#~ msgid "Save A_ttachment..."
+#~ msgid_plural "Save All A_ttachments..."
+#~ msgstr[0] "Gorde _eranskina..."
+#~ msgstr[1] "Gorde _eranskin guztiak..."
+
+#~ msgid "Mark Unread From _Here"
+#~ msgstr "Markatu irakurri gabe _hemendik"
+
+#~ msgid "_View Source"
+#~ msgstr "Ikusi i_turburua"
+
+#~ msgid "Failed to open default text editor."
+#~ msgstr "Huts egin du testuaren editore lehenetsia irekitzean."
+
+#~ msgid "%s - Conversation Inspector"
+#~ msgstr "%s - bihurketaren ikustatzailea"
+
+#~ msgid "Saved"
+#~ msgstr "Gordeta"
+
+#~ msgid "Saving"
+#~ msgstr "Gordetzen"
+
+#~ msgid "Error saving"
+#~ msgstr "Errorea gordetzean"
+
+#~ msgid "Do you want to discard this message?"
+#~ msgstr "Mezu hau baztertzea nahi duzu?"
+
+#~ msgid "Send message with an empty subject and body?"
+#~ msgstr "Bidali gairik eta gorputzik gabeko mezua?"
+
+#~ msgid "Send message without an attachment?"
+#~ msgstr "Bidali eranskinik gabeko mezua?"
+
+#~ msgid "Cannot add attachment"
+#~ msgstr "Ezin da eranskina gehitu"
+
+#~ msgid "\"%s\" could not be found."
+#~ msgstr "Ezin izan da '%s' aurkitu."
+
+#~ msgid "\"%s\" is a folder."
+#~ msgstr "'%s' karpeta da."
+
+#~ msgid "\"%s\" is an empty file."
+#~ msgstr "'%s' fitxategi hutsa da."
+
+#~ msgid "\"%s\" could not be opened for reading."
+#~ msgstr "Ezin izan da '%s' irakurtzeko ireki."
+
+#~ msgid "\"%s\" already attached for delivery."
+#~ msgstr "'%s' jadanik bidaltzeko erantsita dago."
+
+#~ msgid "%s (%s)"
+#~ msgstr "%s (%s)"
+
+#~ msgid "To: "
+#~ msgstr "Nori: "
+
+#~ msgid "Cc: "
+#~ msgstr "Cc: "
+
+#~ msgid "Bcc: "
+#~ msgstr "Bcc: "
+
+#~ msgid "Select Color"
+#~ msgstr "Hautatu kolorea"
+
+#~ msgid "_From:"
+#~ msgstr "_Nork:"
+
+#~ msgid "%s (%d)"
+#~ msgstr "%s (%d)"
+
+#~ msgid "Sending..."
+#~ msgstr "Bidaltzen..."
+
+#~ msgid "%i match"
+#~ msgid_plural "%i matches"
+#~ msgstr[0] "%i bat dator"
+#~ msgstr[1] "%i bat datoz"
+
+#~ msgid "%i match (wrapped)"
+#~ msgid_plural "%i matches (wrapped)"
+#~ msgstr[0] "%i bat dator (doituta)"
+#~ msgstr[1] "%i bat datoz (doituta)"
+
+#~ msgid "not found"
+#~ msgstr "ez da aurkitu"
+
+#~ msgid "_OK"
+#~ msgstr "_Ados"
+
+#~ msgid "_Cancel"
+#~ msgstr "_Utzi"
+
+#~ msgid "_Discard"
+#~ msgstr "_Baztertu"
+
+#~ msgid "_Open"
+#~ msgstr "_Ireki"
+
+#~ msgid "_Print..."
+#~ msgstr "I_nprimatu..."
+
+#~ msgid "_Remove"
+#~ msgstr "_Kendu"
+
+#~ msgid "_Keep"
+#~ msgstr "_Mantendu"
+
+#~ msgid "Search all mail in account for keywords (Ctrl+S)"
+#~ msgstr "Bilatu kontuaren mezu guztietan gako-hitzak (Ktrl+S)"
+
+#~ msgid "Indexing %s account"
+#~ msgstr "'%s' kontua indexatzen"

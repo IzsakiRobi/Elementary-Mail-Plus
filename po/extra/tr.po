@@ -1,0 +1,289 @@
+# Turkish translation for pantheon-mail
+# Copyright (c) 2016 Rosetta Contributors and Canonical Ltd 2016
+# This file is distributed under the same license as the pantheon-mail package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pantheon-mail\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-08 16:46+0000\n"
+"PO-Revision-Date: 2022-06-27 12:51+0000\n"
+"Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
+"Language-Team: Turkish <https://l10n.elementary.io/projects/mail/extra/tr/>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.4.2\n"
+"X-Launchpad-Export-Date: 2017-04-08 06:35+0000\n"
+
+#: data/mail.metainfo.xml.in:10 data/io.elementary.mail.desktop.in:2
+msgid "Mail"
+msgstr "Posta"
+
+#: data/mail.metainfo.xml.in:11 data/io.elementary.mail.desktop.in:3
+msgid "Send and receive mail"
+msgstr "Posta gönder ve al"
+
+#: data/mail.metainfo.xml.in:13
+msgid ""
+"Mail is designed to let you manage your email quickly and effortlessly. Its "
+"interface is based on conversations, so you can read an entire discussion "
+"without having to click from message to message."
+msgstr ""
+"Posta uygulaması, e-postalarınız hızlı ve efor harcamadan yönetebilmeniz "
+"için dizayn edildi. Arayüzü konuşmalar baz alınarak hazırlandı bu sayede "
+"mesajdan mesaja tıklamak zorunda kalmadan tüm konuşmayı okuyabilirsiniz."
+
+#: data/mail.metainfo.xml.in:15
+msgid "Lightweight mail client with full IMAP support"
+msgstr "Tam IMAP destekli hafif bir posta istemcisi"
+
+#: data/mail.metainfo.xml.in:16
+msgid "Mail grouped into conversations, not a tree of threads"
+msgstr "Posta uygulaması, bir konu ağacı değil, sohbetler halinde gruplandırır"
+
+#: data/mail.metainfo.xml.in:17
+msgid "As-you-type searching"
+msgstr "Yazarken arama"
+
+#: data/mail.metainfo.xml.in:18
+msgid "Multiple account support"
+msgstr "Çoklu hesap desteği"
+
+#: data/mail.metainfo.xml.in:19
+#, fuzzy
+#| msgid "Inline HTML composer that saves drafts to the server"
+msgid "Powerful HTML composer that saves drafts to the server"
+msgstr "Taslakları sunucuya kaydeden satır içi HTML oluşturucu"
+
+#: data/mail.metainfo.xml.in:20
+msgid "Works with Gmail, Yahoo! Mail, and other popular IMAP servers"
+msgstr "Gmail, Yahoo! Mail ve diğer popüler IMAP sunucuları ile çalışır"
+
+#: data/mail.metainfo.xml.in:66
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/mail.metainfo.xml.in:74 data/mail.metainfo.xml.in:83
+#: data/mail.metainfo.xml.in:100 data/mail.metainfo.xml.in:133
+#: data/mail.metainfo.xml.in:154 data/mail.metainfo.xml.in:173
+#: data/mail.metainfo.xml.in:195
+msgid "Improvements:"
+msgstr "İyileştirmeler:"
+
+#: data/mail.metainfo.xml.in:76 data/mail.metainfo.xml.in:86
+#: data/mail.metainfo.xml.in:111 data/mail.metainfo.xml.in:142
+#: data/mail.metainfo.xml.in:156 data/mail.metainfo.xml.in:177
+#: data/mail.metainfo.xml.in:198
+msgid "Updated translations"
+msgstr "Çeviriler güncellendi"
+
+#: data/mail.metainfo.xml.in:85
+msgid ""
+"Use the actual recipients of a message as sender when replying or forwarding"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:102
+msgid "Ability to create multiple signatures and set defaults per account"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:103
+msgid "Add support for inline images in the composer"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:104
+msgid "Add support for renaming folders"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:105
+msgid "Move settings menu to the mailboxes pane"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:106
+msgid "Use the FileChooser portal"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:107
+msgid "Improve network availability handling"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:108
+msgid "Fix issues with fetching e-mail when Mail is not autostarted"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:109
+msgid "Notify the user when a calendar event is included in a message"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:110
+msgid "Improve performance when switching between folders"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:135
+msgid ""
+"The welcome view is removed when an account is added in Online Accounts "
+"without having to restart Mail"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:136
+msgid ""
+"The composer is always presented as a new window and includes more keyboard "
+"shortcuts"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:137
+msgid "The search filter menu now appears next to the search bar"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:138
+msgid "HeaderBars appear to float above content when scrolled"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:139
+#, fuzzy
+#| msgid "Fix a potential crash while loading messages"
+msgid "Fix a potential crash with empty messages"
+msgstr "Mesajları yüklerken olası bir çökme düzeltildi"
+
+#: data/mail.metainfo.xml.in:140
+msgid "Stop resizing from cutting off the message list"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:141
+#, fuzzy
+#| msgid "Stability improvements"
+msgid "Performance improvements"
+msgstr "Kararlılık iyileştirmeleri"
+
+#: data/mail.metainfo.xml.in:167 data/mail.metainfo.xml.in:189
+msgid "Fixes:"
+msgstr "Düzeltmeler:"
+
+#: data/mail.metainfo.xml.in:169
+msgid "Fixed an error which caused mail accounts to be loaded multiple times"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:170
+msgid "Fixed a bug which caused Mail to crash occasionally"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:171
+msgid "Display recipient in Sent folder instead of sender"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:175
+msgid "Updated app icon"
+msgstr "Uygulama simgesi güncellendi"
+
+#: data/mail.metainfo.xml.in:176
+msgid "New design"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:184
+msgid "New features:"
+msgstr "Yeni özellikler:"
+
+#: data/mail.metainfo.xml.in:186
+msgid "Use message subject for composer window title"
+msgstr "İleti oluşturucu başlığı için ileti konusunu kullan"
+
+#: data/mail.metainfo.xml.in:187
+msgid "Added support for Unified Inbox for Microsoft 365 accounts"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:191
+msgid ""
+"Fixed an error which caused the inbox monitoring in the background to crash"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:192
+msgid "Removed duplicate sender addresses when composing a message"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:193
+msgid "Fix a freeze when archiving the last message in a folder"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:197
+msgid ""
+"Renamed Office 365 to Microsoft 365 to follow suite on Microsoft's rebranding"
+msgstr ""
+
+#: data/io.elementary.mail.desktop.in:6
+msgid "Email;E-mail;Mail;"
+msgstr "EPosta;E-Posta;Posta;Email;E-mail;Mail;"
+
+#: data/io.elementary.mail.desktop.in:16
+msgid "Compose Message"
+msgstr "İleti Oluştur"
+
+#~ msgid "Fix a potential crash while loading messages"
+#~ msgstr "Mesajları yüklerken olası bir çökme düzeltildi"
+
+#~ msgid "Mark sent messages as read"
+#~ msgstr "Gönderilen mesajları okundu olarak işaretleme"
+
+#~ msgid "Fix an issue where some mail fails to be deleted"
+#~ msgstr "Bazı postaların silinemediği bir sorunu düzeltme"
+
+#~ msgid "Use accent color for unread message titles"
+#~ msgstr "Okunmamış mesaj başlıkları için vurgu rengi kullanma"
+
+#~ msgid "Autoselect the next message after archiving"
+#~ msgstr "Arşivlemeden sonra sonraki mesajı otomatik seçme"
+
+#~ msgid "Use local time in message headers"
+#~ msgstr "Mesaj başlıklarında yerel saati kullanma"
+
+#~ msgid "Send a notification when new messages arrive"
+#~ msgstr "Yeni mesajlar geldiğinde bildirim gönderme"
+
+#~ msgid "Add a button to manually fetch new messages"
+#~ msgstr "Yeni mesajları manuel olarak almak için bir düğme eklendi"
+
+#~ msgid "Automatically select the next message after deleting"
+#~ msgstr "Sildikten sonra sonraki mesajı otomatik olarak seçme"
+
+#~ msgid "Filter unread or starred conversations"
+#~ msgstr "Okunmamış veya yıldızlı görüşmeleri filtreleme"
+
+#~ msgid "Make sure we don't save sent messages twice for outlook.com accounts"
+#~ msgstr ""
+#~ "Outlook.com hesapları için gönderilen mesajları iki kez "
+#~ "kaydetmediğimizden emin olma"
+
+#~ msgid "Fix a potential crash when changing folders"
+#~ msgstr "Klasörleri değiştirirken olası bir çökmeyi önleme"
+
+#~ msgid "Improve search performance"
+#~ msgstr "Arama performansını iyileştirme"
+
+#~ msgid "Complete rewrite from scratch"
+#~ msgstr "Tamamen yeniden yazıldı"
+
+#~ msgid "io.elementary.mail"
+#~ msgstr "io.elementary.mail"
+
+#~ msgid "Desktop notifications"
+#~ msgstr "Masaüstü bildirimleri"
+
+#~ msgid "Minor bug fixes"
+#~ msgstr "Küçük hata düzeltmeleri"
+
+#~ msgid "Translation updates"
+#~ msgstr "Çeviriler güncellendi"
+
+#~ msgid "internet-mail"
+#~ msgstr "internet-mail"
+
+#~ msgid "About Mail"
+#~ msgstr "Mail Hakkında"
+
+#~ msgid "Lightweight mail client"
+#~ msgstr "Hafif e-posta istemcisi"
+
+#~ msgid "Appstream: add releases info"
+#~ msgstr "Appstream: bülten bilgileri ekle"

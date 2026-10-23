@@ -1,0 +1,353 @@
+# German translation for pantheon-mail
+# Copyright (c) 2016 Rosetta Contributors and Canonical Ltd 2016
+# This file is distributed under the same license as the pantheon-mail package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pantheon-mail\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-08 16:46+0000\n"
+"PO-Revision-Date: 2023-03-01 02:25+0000\n"
+"Last-Translator: Uwe S <saabisto@gmx.de>\n"
+"Language-Team: German <https://l10n.elementary.io/projects/mail/extra/de/>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.2\n"
+"X-Launchpad-Export-Date: 2017-03-09 06:00+0000\n"
+
+#: data/mail.metainfo.xml.in:10 data/io.elementary.mail.desktop.in:2
+msgid "Mail"
+msgstr "Mail"
+
+#: data/mail.metainfo.xml.in:11 data/io.elementary.mail.desktop.in:3
+msgid "Send and receive mail"
+msgstr "E-Mail-Nachrichten senden und empfangen"
+
+#: data/mail.metainfo.xml.in:13
+msgid ""
+"Mail is designed to let you manage your email quickly and effortlessly. Its "
+"interface is based on conversations, so you can read an entire discussion "
+"without having to click from message to message."
+msgstr ""
+"Mail wurde entwickelt, damit Sie Ihre E-Mails schnell und einfach verwalten "
+"können. Seine Benutzeroberfläche stellt Nachrichten in der "
+"Konversationsansicht dar, sodass Sie eine ganze Diskussion lesen können, "
+"ohne von einer Nachricht zur nächsten wechseln zu müssen."
+
+#: data/mail.metainfo.xml.in:15
+msgid "Lightweight mail client with full IMAP support"
+msgstr "Schlanke E-Mail-Anwendung mit kompletter IMAP-Unterstützung"
+
+#: data/mail.metainfo.xml.in:16
+msgid "Mail grouped into conversations, not a tree of threads"
+msgstr ""
+"E-Mails gruppiert in Konversationen, nicht in einer Reihe vieler einzelner "
+"Nachrichten"
+
+#: data/mail.metainfo.xml.in:17
+msgid "As-you-type searching"
+msgstr "Suche während der Eingabe"
+
+#: data/mail.metainfo.xml.in:18
+msgid "Multiple account support"
+msgstr "Unterstützung mehrerer Konten"
+
+#: data/mail.metainfo.xml.in:19
+#, fuzzy
+#| msgid "Inline HTML composer that saves drafts to the server"
+msgid "Powerful HTML composer that saves drafts to the server"
+msgstr "Inline-HTML-Editor, der Entwürfe auf dem Server speichert"
+
+#: data/mail.metainfo.xml.in:20
+msgid "Works with Gmail, Yahoo! Mail, and other popular IMAP servers"
+msgstr "Funktioniert mit Gmail, Yahoo! Mail, und anderen IMAP-Servern"
+
+#: data/mail.metainfo.xml.in:66
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/mail.metainfo.xml.in:74 data/mail.metainfo.xml.in:83
+#: data/mail.metainfo.xml.in:100 data/mail.metainfo.xml.in:133
+#: data/mail.metainfo.xml.in:154 data/mail.metainfo.xml.in:173
+#: data/mail.metainfo.xml.in:195
+msgid "Improvements:"
+msgstr "Verbesserungen:"
+
+#: data/mail.metainfo.xml.in:76 data/mail.metainfo.xml.in:86
+#: data/mail.metainfo.xml.in:111 data/mail.metainfo.xml.in:142
+#: data/mail.metainfo.xml.in:156 data/mail.metainfo.xml.in:177
+#: data/mail.metainfo.xml.in:198
+msgid "Updated translations"
+msgstr "Aktualisierte Übersetzungen"
+
+#: data/mail.metainfo.xml.in:85
+msgid ""
+"Use the actual recipients of a message as sender when replying or forwarding"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:102
+msgid "Ability to create multiple signatures and set defaults per account"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:103
+msgid "Add support for inline images in the composer"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:104
+msgid "Add support for renaming folders"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:105
+msgid "Move settings menu to the mailboxes pane"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:106
+msgid "Use the FileChooser portal"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:107
+msgid "Improve network availability handling"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:108
+msgid "Fix issues with fetching e-mail when Mail is not autostarted"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:109
+msgid "Notify the user when a calendar event is included in a message"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:110
+msgid "Improve performance when switching between folders"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:135
+msgid ""
+"The welcome view is removed when an account is added in Online Accounts "
+"without having to restart Mail"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:136
+msgid ""
+"The composer is always presented as a new window and includes more keyboard "
+"shortcuts"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:137
+msgid "The search filter menu now appears next to the search bar"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:138
+msgid "HeaderBars appear to float above content when scrolled"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:139
+#, fuzzy
+#| msgid "Fix a potential crash while loading messages"
+msgid "Fix a potential crash with empty messages"
+msgstr "Mögliche Abstürze beim Laden von Nachrichten behoben"
+
+#: data/mail.metainfo.xml.in:140
+msgid "Stop resizing from cutting off the message list"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:141
+#, fuzzy
+#| msgid "Stability improvements"
+msgid "Performance improvements"
+msgstr "Stabilitätsverbesserungen"
+
+#: data/mail.metainfo.xml.in:167 data/mail.metainfo.xml.in:189
+msgid "Fixes:"
+msgstr "Fehlerbehebungen:"
+
+#: data/mail.metainfo.xml.in:169
+msgid "Fixed an error which caused mail accounts to be loaded multiple times"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:170
+msgid "Fixed a bug which caused Mail to crash occasionally"
+msgstr ""
+
+#: data/mail.metainfo.xml.in:171
+msgid "Display recipient in Sent folder instead of sender"
+msgstr "Empfänger im Gesendet-Ordner anstelle des Absenders anzeigen"
+
+#: data/mail.metainfo.xml.in:175
+msgid "Updated app icon"
+msgstr "Aktualisierte App-Symbole"
+
+#: data/mail.metainfo.xml.in:176
+msgid "New design"
+msgstr "Neues Design"
+
+#: data/mail.metainfo.xml.in:184
+msgid "New features:"
+msgstr "Neue Funktionen:"
+
+#: data/mail.metainfo.xml.in:186
+msgid "Use message subject for composer window title"
+msgstr "Nachrichtenbetreff als Fenstertitel nutzen"
+
+#: data/mail.metainfo.xml.in:187
+msgid "Added support for Unified Inbox for Microsoft 365 accounts"
+msgstr ""
+"Unterstützung für die gemeinsamen Ordner von Microsoft 365 Konten hinzugefügt"
+
+#: data/mail.metainfo.xml.in:191
+msgid ""
+"Fixed an error which caused the inbox monitoring in the background to crash"
+msgstr ""
+"Ein Fehler, welcher die Eingangsüberwachung im Hintergrund zum Abstürzen "
+"brachte, wurde behoben"
+
+#: data/mail.metainfo.xml.in:192
+msgid "Removed duplicate sender addresses when composing a message"
+msgstr ""
+"Doppelte Absenderadressen beim Schreiben einer Nachricht wurden entfernt"
+
+#: data/mail.metainfo.xml.in:193
+msgid "Fix a freeze when archiving the last message in a folder"
+msgstr ""
+"Behebung eines Problems, das beim Archivieren der letzten Nachricht in einem "
+"Ordner auftrat"
+
+#: data/mail.metainfo.xml.in:197
+msgid ""
+"Renamed Office 365 to Microsoft 365 to follow suite on Microsoft's rebranding"
+msgstr ""
+"Umbenennung von Office 365 zu Microsoft 365 um der neuen Microsoft "
+"Produktreihe zu entsprechen"
+
+#: data/io.elementary.mail.desktop.in:6
+msgid "Email;E-mail;Mail;"
+msgstr "Email;E-Mail;Mail;"
+
+#: data/io.elementary.mail.desktop.in:16
+msgid "Compose Message"
+msgstr "Nachricht verfassen"
+
+#~ msgid "Fix a potential crash while loading messages"
+#~ msgstr "Mögliche Abstürze beim Laden von Nachrichten behoben"
+
+#~ msgid "Secondary-click menu on the conversations list"
+#~ msgstr "Sekundärklick-Menü auf der Unterhaltungsliste"
+
+#~ msgid "Ensure conversations are re-sorted by date when new messages appear"
+#~ msgstr ""
+#~ "Sicherstellen, dass Unterhaltungen beim Eintreffen neuer Nachrichten "
+#~ "erneut nach Datum sortiert werden"
+
+#~ msgid "Fixed sender combobox after opening a mailto link"
+#~ msgstr "Problem mit \"mailto:\"-Links behoben"
+
+#~ msgid "Mark sent messages as read"
+#~ msgstr "Gesendete Nachrichten als gelesen markieren"
+
+#~ msgid "Fix a hang when deleting the last message in a mailbox"
+#~ msgstr ""
+#~ "Behebt eine Verzögerung, die auftrat wenn die letzte Nachricht im "
+#~ "Posteingang gelöscht wurde"
+
+#~ msgid "Fix an issue where some mail fails to be deleted"
+#~ msgstr ""
+#~ "Behebt einen Fehler, der verhinderte gewisse Nachrichten löschen zu können"
+
+#~ msgid "Use accent color for unread message titles"
+#~ msgstr "Nutze Akzentfarben für ungelesene Nachrichtentitel"
+
+#~ msgid "Autoselect the next message after archiving"
+#~ msgstr "Automatisch die nächste Nachricht nach dem Archivieren auswählen"
+
+#~ msgid "Use local time in message headers"
+#~ msgstr "Nutze Lokalzeiten in den Nachrichtentiteln"
+
+#~ msgid "Send a notification when new messages arrive"
+#~ msgstr "Benachrichtigung senden, wenn neue Nachrichten ankommen"
+
+#~ msgid "Add a button to manually fetch new messages"
+#~ msgstr "Button zum manuellen Abrufen neuer Nachrichten hinzugefügt"
+
+#~ msgid "Automatically select the next message after deleting"
+#~ msgstr "Automatisch die nächste Nachricht nach dem Löschen auswählen"
+
+#~ msgid "Filter unread or starred conversations"
+#~ msgstr "Nach ungelesenen oder markierten Unterhaltungen filtern"
+
+#~ msgid "Make sure we don't save sent messages twice for outlook.com accounts"
+#~ msgstr ""
+#~ "Sicherstellen, dass über outlook.com-Kontos gesendete Nachrichten nicht "
+#~ "zweimal gespeichert werden"
+
+#~ msgid "Fix a potential crash when changing folders"
+#~ msgstr "Mögliche Abstürze beim Wechseln von Ordnern behoben"
+
+#~ msgid "Improve search performance"
+#~ msgstr "Performance der Suchfunktion verbessert"
+
+#~ msgid "Fix an issue that prevented some messaging from rendering at all"
+#~ msgstr ""
+#~ "Behebt einen Fehler, der dazu führte, dass manche Nachrichteninhalte "
+#~ "nicht gerendert wurden"
+
+#~ msgid ""
+#~ "Set the correct \"From\" address when replying and multiple accounts are "
+#~ "set up"
+#~ msgstr ""
+#~ "Korrekte \"von\" Adresse beim Antworten benutzen, wenn mehrere Konten "
+#~ "eingerichtet sind"
+
+#~ msgid "Fix a crash on startup for some conversations"
+#~ msgstr ""
+#~ "Behebt einen Fehler beim Start, der bei manchen Konversationen auftrat"
+
+#~ msgid "Only save drafts when there are new changes"
+#~ msgstr "Entwürfe nur speichern, wenn Änderungen vorgenommen wurden"
+
+#~ msgid "Move Undo notification to the message view"
+#~ msgstr "Rückgängig-Benachrichtigung in die Nachrichtenübersicht verschoben"
+
+#~ msgid "Preserve conversation subjects when replying or forwarding"
+#~ msgstr "Betreffzeilen beim Beantworten oder Weiterleiten beibehalten"
+
+#~ msgid "Disable the composer while messages are being sent"
+#~ msgstr "Editor deaktivieren während Nachrichten gesendet werden"
+
+#~ msgid "Edit saved draft messages"
+#~ msgstr "Gespeicherte Entwürfe bearbeiten"
+
+#~ msgid "Make sure we don't save sent messages twice for some account types"
+#~ msgstr ""
+#~ "Sicherstellen, dass bei manchen Kontotypen Nachrichten nicht zweimal "
+#~ "gesendet werden"
+
+#~ msgid "Complete rewrite from scratch"
+#~ msgstr "Von Grund auf neu geschrieben"
+
+#~ msgid "io.elementary.mail"
+#~ msgstr "io.elementary.mail"
+
+#~ msgid "Desktop notifications"
+#~ msgstr "Desktop-Benachrichtigungen"
+
+#~ msgid "Minor bug fixes"
+#~ msgstr "Kleinere Fehlerbehebungen"
+
+#~ msgid "Translation updates"
+#~ msgstr "Aktualisierte Übersetzungen"
+
+#~ msgid "internet-mail"
+#~ msgstr "internet-mail"
+
+#~ msgid "About Mail"
+#~ msgstr "Info zu Mail"
+
+#~ msgid "Lightweight mail client"
+#~ msgstr "Schlanke E-Mail-Anwendung"
+
+#~ msgid "Release for Loki"
+#~ msgstr "Veröffentlichung für Loki"

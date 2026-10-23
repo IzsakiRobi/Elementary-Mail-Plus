@@ -1,0 +1,2275 @@
+# Brazilian Portuguese translation for Geary email client
+# Copyright 2012-2014 Yorba Foundation
+# This file is distributed under the GNU LGPL, version 2.1.
+#
+# Translators (Transifex):
+# leonardolemos <leonardolemos@live.com>, 2012
+# Fábio Nogueira <deb-user-ba@ubuntu.com>, 2012
+# Fábio Nogueira <deb.user.ba@gmail.com>, 2013
+# bsides <rafaelbsides@gmail.com>, 2013
+# Elder Marco <eldermarco@gmail.com>, 2013
+# Guilherme Gondim <semente@taurinus.org>, 2013
+# José Agnaldo Jr. <agjunior.sd@gmail.com>, 2013
+#
+# Translators (GNOME):
+# Enrico Nicoletto <liverig@gmail.com>, 2014.
+# Rafael Ferreira <rafael.f.f1@gmail.com>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: geary\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-08 16:46+0000\n"
+"PO-Revision-Date: 2024-11-30 00:32+0000\n"
+"Last-Translator: Fulvio Leo <fulviokaldas@outlook.com>\n"
+"Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/mail/"
+"mail/pt_BR/>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.6.2\n"
+"X-Launchpad-Export-Date: 2017-03-09 06:00+0000\n"
+
+#: src/Application.vala:145
+msgid "Unable to open System Settings"
+msgstr "Não é possível abrir as Configurações do Sistema"
+
+#: src/Application.vala:146
+msgid ""
+"Open System Settings manually or install Evolution to set up online accounts."
+msgstr ""
+"Abra as configurações do sistema manualmente ou instale o Evolution para "
+"configurar contas online."
+
+#: src/Application.vala:217
+msgid ""
+"Mail will automatically start when this device turns on and run when its "
+"window is closed so that it can send notifications when new mail arrives."
+msgstr ""
+"O Correio será iniciado automaticamente quando este dispositivo for ligado, "
+"e continuará em execução quando sua janela for fechada para que possa enviar "
+"notificações quando um novo e-mail chegar."
+
+#: src/Composer.vala:94 src/MessageList/MessageListItem.vala:102
+msgid "From:"
+msgstr "De:"
+
+#: src/Composer.vala:114 src/MessageList/MessageListItem.vala:108
+msgid "To:"
+msgstr "Para:"
+
+#: src/Composer.vala:120
+msgid "Cc"
+msgstr "Cc"
+
+#: src/Composer.vala:122
+msgid "Bcc"
+msgstr "Cco"
+
+#: src/Composer.vala:133 src/MessageList/MessageListItem.vala:148
+msgid "Cc:"
+msgstr "Cc:"
+
+#: src/Composer.vala:152
+msgid "Bcc:"
+msgstr "Cco:"
+
+#: src/Composer.vala:171 src/MessageList/MessageListItem.vala:114
+msgid "Subject:"
+msgstr "Assunto:"
+
+#: src/Composer.vala:205
+msgid "Insert Image"
+msgstr "Inserir Imagem"
+
+#: src/Composer.vala:232
+msgid "Delete draft"
+msgstr "Deletar o rascunho"
+
+#: src/Composer.vala:240
+msgid "Attach file"
+msgstr "Anexar arquivo"
+
+#: src/Composer.vala:251
+msgid "Insert Signature…"
+msgstr "Inserir Assinatura…"
+
+#: src/Composer.vala:256
+msgid "Send"
+msgstr "Enviar"
+
+#: src/Composer.vala:299
+msgid "New Message"
+msgstr "Nova mensagem"
+
+#: src/Composer.vala:445
+msgid "Choose a file"
+msgstr "Escolha um arquivo"
+
+#: src/Composer.vala:448
+msgid "Attach"
+msgstr "Anexo"
+
+#: src/Composer.vala:449 src/Composer.vala:472 src/Composer.vala:763
+#: src/Dialogs/InsertLinkDialog.vala:66
+#: src/MessageList/AttachmentButton.vala:144
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/Composer.vala:464
+msgid "Images"
+msgstr "Imagens"
+
+#: src/Composer.vala:468
+msgid "Choose an image"
+msgstr "Escolha uma imagem"
+
+#: src/Composer.vala:471
+msgid "Insert"
+msgstr "Inserir"
+
+#: src/Composer.vala:500
+msgid "Unable to insert image"
+msgstr "Não foi possível inserir a imagem"
+
+#: src/Composer.vala:501
+msgid "There was an unexpected error while trying to insert the image."
+msgstr "Ocorreu um erro inesperado ao tentar inserir a imagem."
+
+#: src/Composer.vala:665
+msgid "%a, %b %-e, %Y at %-l:%M %p"
+msgstr "%a, %b %-e, %Y em %-l:%M %p"
+
+#: src/Composer.vala:695
+#, c-format
+msgid "On %1$s, %2$s wrote:"
+msgstr "Em %1$s, %2$s escreveu:"
+
+#: src/Composer.vala:699
+msgid "---------- Forwarded message ----------"
+msgstr "---------- Mensagem encaminhada ----------"
+
+#: src/Composer.vala:701
+#, c-format
+msgid "From: %s<br/>"
+msgstr "De: %s<br/>"
+
+#: src/Composer.vala:702
+#, c-format
+msgid "Subject: %s<br/>"
+msgstr "Assunto: %s<br/>"
+
+#: src/Composer.vala:703
+#, c-format
+msgid "Date: %s<br/>"
+msgstr "Data: %s<br/>"
+
+#: src/Composer.vala:704
+#, c-format
+msgid "To: %s<br/>"
+msgstr "Para: %s<br/>"
+
+#: src/Composer.vala:706
+#, c-format
+msgid "Cc: %s<br/>"
+msgstr "Cc: %s<br/>"
+
+#: src/Composer.vala:754
+msgid "Permanently delete this draft?"
+msgstr "Excluir permanentemente este rascunho?"
+
+#: src/Composer.vala:755
+msgid ""
+"You cannot undo this action, nor recover your draft once it has been deleted."
+msgstr ""
+"Você não pode desfazer esta ação, nem recuperar seu rascunho depois de "
+"deletado."
+
+#: src/Composer.vala:765
+msgid "Delete Draft"
+msgstr "Deletar Rascunho"
+
+#: src/Composer.vala:789
+msgid "Send without subject?"
+msgstr "Enviar sem assunto?"
+
+#: src/Composer.vala:790
+msgid ""
+"This message has an empty subject field. The recipient may be unable to "
+"infer its scope or importance."
+msgstr ""
+"Esta mensagem possui um campo de assunto vazio. O destinatário pode não ser "
+"capaz de inferir o seu alcance ou importância."
+
+#: src/Composer.vala:797
+msgid "Don't Send"
+msgstr "Não enviar"
+
+#: src/Composer.vala:799
+msgid "Send Anyway"
+msgstr "Enviar desta forma"
+
+#: src/Composer.vala:830
+msgid "Sent message was not saved"
+msgstr "A mensagem enviada não foi salva"
+
+#: src/Composer.vala:831
+msgid ""
+"The message was sent, however a copy was not saved to the Sent message "
+"folder."
+msgstr "A mensagem foi enviada, mas uma cópia não foi salva na pasta Enviadas."
+
+#: src/Composer.vala:846
+msgid "Unable to send message"
+msgstr "Não foi possível enviar mensagem"
+
+#: src/Composer.vala:847
+msgid "There was an unexpected error while sending your message."
+msgstr "Ocorreu um erro inesperado ao enviar sua mensagem."
+
+#: src/Composer.vala:945 src/FolderList/FolderList.vala:55
+msgid "Edit Signatures…"
+msgstr "Editar Assinaturas…"
+
+#: src/Composer.vala:949
+msgid "None"
+msgstr "Nenhum"
+
+#: src/Composer.vala:1140
+msgid "Unable to save draft"
+msgstr "Não foi possível salvar o rascunho"
+
+#: src/Composer.vala:1141
+msgid "There was an unexpected error while saving your draft."
+msgstr "Ocorreu um erro inesperado ao salvar seu rascunho."
+
+#: src/EditorToolbar.vala:55
+msgid "Bold"
+msgstr "Negrito"
+
+#: src/EditorToolbar.vala:62
+msgid "Italic"
+msgstr "Itálico"
+
+#: src/EditorToolbar.vala:73
+msgid "Underline"
+msgstr "Sublinhado"
+
+#: src/EditorToolbar.vala:85
+msgid "Strikethrough"
+msgstr "Tachado"
+
+#: src/EditorToolbar.vala:100
+msgid "Remove formatting"
+msgstr "Remover formatação"
+
+#: src/EditorToolbar.vala:108 src/Dialogs/InsertLinkDialog.vala:68
+msgid "Insert Link"
+msgstr "Inserir link"
+
+#: src/InboxMonitor.vala:158 src/InboxMonitor.vala:170
+#, c-format
+msgid "%s to %s"
+msgstr "%s para %s"
+
+#. /TRANSLATORS: The %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#: src/InboxMonitor.vala:165
+#, c-format
+msgid "%u new message"
+msgid_plural "%u new messages"
+msgstr[0] "%u nova mensagem"
+msgstr[1] "%u novas mensagens"
+
+#. /TRANSLATORS: The first %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#. /The next %s represents the number of senders
+#: src/InboxMonitor.vala:177
+#, c-format
+msgid "%s from %u sender"
+msgid_plural "%s from %u senders"
+msgstr[0] "%s de %u remetente"
+msgstr[1] "%s de %u remetentes"
+
+#: src/MainWindow.vala:80
+msgid "Mail"
+msgstr "Correio"
+
+#: src/MainWindow.vala:123 src/Dialogs/AliasDialog/AliasDialog.vala:96
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:172
+msgid "Undo"
+msgstr "Desfazer"
+
+#: src/MainWindow.vala:281
+msgid "Message Archived"
+msgid_plural "Messages Archived"
+msgstr[0] "Mensagem arquivada"
+msgstr[1] "Mensagens arquivadas"
+
+#: src/MainWindow.vala:285
+msgid "Couldn't archive message"
+msgstr "Não foi possível arquivar a mensagem"
+
+#: src/MainWindow.vala:298
+msgid "Message Moved"
+msgid_plural "Messages Moved"
+msgstr[0] "Mensagem movida"
+msgstr[1] "Mensagens movidas"
+
+#: src/MainWindow.vala:302
+msgid "Couldn't move message"
+msgstr "Não foi possível mover a mensagem"
+
+#: src/MainWindow.vala:315
+msgid "Message Deleted"
+msgid_plural "Messages Deleted"
+msgstr[0] "Mensagem eliminada"
+msgstr[1] "Mensagens eliminadas"
+
+#: src/MainWindow.vala:319
+msgid "Couldn't delete message"
+msgstr "Não foi possível excluir a mensagem"
+
+#: src/WelcomeView.vala:45
+msgid "Connect an Account"
+msgstr "Conecte uma Conta"
+
+#: src/WelcomeView.vala:52
+msgid "Mail uses email accounts configured in System Settings."
+msgstr "O email usa contas de email configuradas nas Configurações do Sistema."
+
+#: src/WelcomeView.vala:59
+msgid "Online Accounts…"
+msgstr "Contas Online…"
+
+#: src/Backend/Account.vala:48
+msgid "Unable to connect"
+msgstr "Não foi possível conectar"
+
+#: src/Backend/Account.vala:49
+msgid "There was an unexpected error while trying to connect to the server."
+msgstr "Ocorreu um erro inesperado ao tentar conectar-se ao servidor."
+
+#: src/Backend/MoveOperation.vala:65
+#, c-format
+msgid "Moving messages… (%u remaining)"
+msgstr "Movendo mensagens… (%u restante)"
+
+#: src/Backend/MoveOperation.vala:98
+msgid "No Archive folder is configured."
+msgstr "Nenhuma pasta de Arquivo está configurada."
+
+#: src/Backend/MoveOperation.vala:126
+msgid "The destination folder was not found."
+msgstr "A pasta de destino não foi encontrada."
+
+#: src/Backend/MoveOperation.vala:130
+msgid "The source folder is the destination folder."
+msgstr "A pasta de origem é a pasta de destino."
+
+#: src/Backend/Session.vala:642
+msgid "New Signature"
+msgstr "Nova Assinatura"
+
+#: src/Backend/ContactManager.vala:88 src/Backend/ContactManager.vala:122
+#, c-format
+msgid "Couldn't add “%s” to addressbook"
+msgstr "Não foi possível adicionar “%s” ao catálogo de endereços"
+
+#: src/Backend/ContactManager.vala:89
+msgid "No addressbook available."
+msgstr "Nenhum catálogo de endereços disponível."
+
+#: src/Backend/ContactManager.vala:123
+msgid "Operation failed."
+msgstr "A operação falhou."
+
+#: src/ConversationList/ConversationItemModel.vala:74
+#: src/ConversationList/ConversationItemModel.vala:112
+msgid ", "
+msgstr ", "
+
+#: src/ConversationList/ConversationItemModel.vala:77
+#: src/ConversationList/ConversationItemModel.vala:115
+#: src/ConversationList/ConversationItemModel.vala:123
+#: src/MessageList/AttachmentButton.vala:100
+msgid "Unknown"
+msgstr "Desconhecido"
+
+#: src/ConversationList/ConversationList.vala:85
+msgid "Search Mail"
+msgstr "Pesquisar e-mail"
+
+#: src/ConversationList/ConversationList.vala:89
+msgid "Hide read conversations"
+msgstr "Ocultar conversas lidas"
+
+#: src/ConversationList/ConversationList.vala:90
+msgid "Hide unstarred conversations"
+msgstr "Ocultar conversas sem estrela"
+
+#: src/ConversationList/ConversationList.vala:107
+msgid "Filter Conversations"
+msgstr "Filtrar conversas"
+
+#: src/ConversationList/ConversationList.vala:130
+msgid "Fetch new messages"
+msgstr "Buscar novas mensagens"
+
+#: src/ConversationList/ConversationList.vala:137
+msgid "Fetching new messages…"
+msgstr "Buscando novas mensagens…"
+
+#: src/ConversationList/ConversationListItem.vala:94
+msgid "Archive"
+msgstr "Arquivar"
+
+#: src/ConversationList/ConversationListItem.vala:99
+msgid "Trash"
+msgstr "Lixeira"
+
+#: src/ConversationList/ConversationListItem.vala:181
+msgid "Unread"
+msgstr "Não lida"
+
+#: src/ConversationList/ConversationListItem.vala:194
+msgid "Replied"
+msgstr "Respondido"
+
+#: src/ConversationList/ConversationListItem.vala:198
+msgid "Forwarded"
+msgstr "Encaminhado"
+
+#: src/ConversationList/ConversationListItem.vala:212
+msgid "Move To Trash"
+msgstr "Mover para a lixeira"
+
+#: src/ConversationList/ConversationListItem.vala:215
+msgid "Mark As Unread"
+msgstr "Marcar como não lido"
+
+#: src/ConversationList/ConversationListItem.vala:217
+#: src/MessageList/MessageList.vala:51
+msgid "Mark as Read"
+msgstr "Marcar como lido"
+
+#: src/ConversationList/ConversationListItem.vala:221
+#: src/MessageList/MessageList.vala:52
+msgid "Star"
+msgstr "Estrela"
+
+#: src/ConversationList/ConversationListItem.vala:223
+#: src/MessageList/MessageList.vala:53
+msgid "Unstar"
+msgstr "Remover estrela"
+
+#: src/Dialogs/InsertLinkDialog.vala:29
+msgid "URL:"
+msgstr "URL:"
+
+#: src/Dialogs/InsertLinkDialog.vala:39
+msgid "Link Text:"
+msgstr "Texto Link:"
+
+#: src/Dialogs/InsertLinkDialog.vala:45
+msgid "Example Website"
+msgstr "Website de Exemplo"
+
+#: src/Dialogs/AliasDialog/Alias.vala:52
+msgid "John Doe"
+msgstr "John Doe"
+
+#: src/Dialogs/AliasDialog/Alias.vala:56
+msgid "Name"
+msgstr "Nome"
+
+#: src/Dialogs/AliasDialog/Alias.vala:75
+msgid "E-mail Address"
+msgstr "Endereço de email"
+
+#: src/Dialogs/AliasDialog/Alias.vala:80
+msgid "Delete alias"
+msgstr "Excluir apelido"
+
+#: src/Dialogs/AliasDialog/Alias.vala:100
+msgid "Edit alias"
+msgstr "Editar apelido"
+
+#: src/Dialogs/AliasDialog/Alias.vala:175
+msgid "Name not set"
+msgstr "Nome não definido"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:33
+msgid "No Aliases"
+msgstr "Sem Apelidos"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:37
+msgid "Add aliases using the button in the toolbar below"
+msgstr "Adicione apelidos usando o botão na barra de ferramentas abaixo"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:67
+msgid "Add Alias…"
+msgstr "Adicionar apelido…"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:104
+msgid "Aliases"
+msgstr "Apelidos"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:108
+msgid "Close"
+msgstr "Fechar"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:178
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:330
+#, c-format
+msgid "'%s' deleted"
+msgstr "'%s' excluído"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:39
+msgid "No Signatures"
+msgstr "Sem assinaturas"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:43
+msgid "Add signatures using the button in the toolbar below"
+msgstr "Adicione assinaturas usando o botão na barra de ferramentas abaixo"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:67
+msgid "Create Signature"
+msgstr "Criar assinatura"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:86
+msgid "Title"
+msgstr "Título"
+
+#. Work around a styling issue
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:99
+msgid "For example “Work” or “Personal”"
+msgstr "Por exemplo “Trabalho” ou “Pessoal”"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:122
+msgid "Delete"
+msgstr "Excluir"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:131
+msgid "Set Default For…"
+msgstr "Definir padrão para…"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:156
+msgid "Signature"
+msgstr "Assinatura"
+
+#: src/FolderList/AccountItemModel.vala:155
+msgid "Edit Aliases…"
+msgstr "Editar Apelidos…"
+
+#: src/FolderList/FolderItemModel.vala:48
+msgid "Refresh folder"
+msgstr "Atualizar pasta"
+
+#: src/FolderList/FolderItemModel.vala:53
+msgid "Rename folder"
+msgstr "Renomear pasta"
+
+#: src/FolderList/FolderItemModel.vala:146
+#: src/FolderList/FolderItemModel.vala:175
+#: src/FolderList/FolderItemModel.vala:193
+#, c-format
+msgid "Couldn't rename “%s”"
+msgstr "Não foi possível renomear “%s”"
+
+#: src/FolderList/FolderItemModel.vala:147
+msgid "Folder names cannot contain “/”"
+msgstr "Os nomes das pastas não podem conter “/”"
+
+#: src/FolderList/FolderItemModel.vala:176
+#, c-format
+msgid "A folder named “%s” already exists"
+msgstr "Já existe uma pasta chamada “%s”"
+
+#: src/FolderList/FolderList.vala:34
+msgid "Compose new message"
+msgstr "Criar nova mensagem"
+
+#: src/FolderList/FolderList.vala:56
+msgid "Account Settings…"
+msgstr "Configurações da Conta…"
+
+#: src/FolderList/FolderList.vala:59
+msgid "Always Show Remote Images"
+msgstr "Sempre exibir imagens remotas"
+
+#: src/FolderList/FolderList.vala:65
+msgid "Menu"
+msgstr "Menu"
+
+#: src/FolderList/GroupedFolderItemModel.vala:38
+msgctxt "Inbox Folder"
+msgid "Inbox"
+msgstr "Caixa de entrada"
+
+#: src/FolderList/GroupedFolderItemModel.vala:42
+msgctxt "Archive Folder"
+msgid "Archive"
+msgstr "Arquivados"
+
+#: src/FolderList/GroupedFolderItemModel.vala:46
+msgctxt "Sent Folder"
+msgid "Sent"
+msgstr "Enviados"
+
+#: src/FolderList/SessionItemModel.vala:28
+msgid "All Mailboxes"
+msgstr "Todas as caixas de correio"
+
+#: src/MessageList/MessageList.vala:28 src/MessageList/MessageListItem.vala:210
+msgid "Reply"
+msgstr "Responder"
+
+#: src/MessageList/MessageList.vala:37 src/MessageList/MessageListItem.vala:213
+msgid "Reply All"
+msgstr "Responder a Todos"
+
+#: src/MessageList/MessageList.vala:46 src/MessageList/MessageListItem.vala:216
+msgid "Forward"
+msgstr "Encaminhar"
+
+#: src/MessageList/MessageList.vala:50
+msgid "Mark as Unread"
+msgstr "Marcar como não lido"
+
+#: src/MessageList/MessageList.vala:60
+msgid "Mark Conversation"
+msgstr "Marcar conversa"
+
+#: src/MessageList/MessageList.vala:68
+msgid "Move Conversation to…"
+msgstr "Mover conversa para…"
+
+#: src/MessageList/MessageList.vala:77
+msgid "Move conversations to archive"
+msgstr "Mover conversas para arquivar"
+
+#: src/MessageList/MessageList.vala:85
+msgid "Move conversations to Trash"
+msgstr "Mover conversas para o Lixo"
+
+#: src/MessageList/MessageList.vala:100
+msgid "No Message Selected"
+msgstr "Nenhuma mensagem selecionada"
+
+#. /TRANSLATORS: The first %s represents the date and the second %s the time of the message (either when it was received or sent)
+#: src/MessageList/MessageListItem.vala:190
+#, c-format
+msgid "%s at %s"
+msgstr "%s em %s"
+
+#: src/MessageList/MessageListItem.vala:198
+#: src/MessageList/MessageListItem.vala:397
+msgid "Unstar message"
+msgstr "Remover favorito da mensagem"
+
+#: src/MessageList/MessageListItem.vala:201
+#: src/MessageList/MessageListItem.vala:393
+msgid "Star message"
+msgstr "Favoritar mensagem"
+
+#: src/MessageList/MessageListItem.vala:221
+msgid "Print…"
+msgstr "Imprimir…"
+
+#: src/MessageList/MessageListItem.vala:231
+msgid "More"
+msgstr "Mais"
+
+#: src/MessageList/MessageListItem.vala:281
+msgid "Open in Calendar"
+msgstr "Abrir no Calendário"
+
+#: src/MessageList/MessageListItem.vala:286
+msgid "This message contains a Calendar Event."
+msgstr "Esta mensagem contém um Evento de Calendário."
+
+#: src/MessageList/MessageListItem.vala:297
+msgid "Show Images"
+msgstr "Mostrar imagens"
+
+#: src/MessageList/MessageListItem.vala:298
+msgid "Always Show from Sender"
+msgstr "Sempre mostrar deste remetente"
+
+#: src/MessageList/MessageListItem.vala:302
+msgid "This message contains remote images."
+msgstr "Esta mensagem contém imagens remotas."
+
+#: src/MessageList/MessageListItem.vala:341
+msgid "This message contains one or more attachments"
+msgstr "Esta mensagem contém um ou mais anexos"
+
+#. / Translators: This is the default file name of a printed email
+#: src/MessageList/MessageListItem.vala:417
+msgid "Email Message"
+msgstr "Mensagem de e-mail"
+
+#: src/MessageList/MessageListItem.vala:439
+msgid "Unable to print email"
+msgstr "Não é possível imprimir e-mail"
+
+#: src/MessageList/MessageListItem.vala:691
+#, c-format
+msgid "Trust and open “%s”?"
+msgstr "Confiar e abrir “%s”?"
+
+#: src/MessageList/MessageListItem.vala:692
+msgid ""
+"Attachments may cause damage to your system if opened. Only open files from "
+"trusted sources."
+msgstr ""
+"Se abertos, anexos podem causar danos ao seu sistema. Abra apenas arquivos "
+"de fontes confiáveis."
+
+#: src/MessageList/MessageListItem.vala:699
+msgid "Open Anyway"
+msgstr "Abrir de qualquer maneira"
+
+#: src/MessageList/AttachmentButton.vala:57
+msgid "Open"
+msgstr "Abrir"
+
+#: src/MessageList/AttachmentButton.vala:58
+msgid "Save As…"
+msgstr "Salvar como…"
+
+#: src/MessageList/AttachmentButton.vala:143
+msgid "Save"
+msgstr "Salvar"
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:22
+msgid "No mailboxes found"
+msgstr "Nenhuma caixa de correio encontrada"
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:26
+msgid "Try changing search terms"
+msgstr "Tente alterar os termos de pesquisa"
+
+#, fuzzy
+#~| msgid "https://example.com"
+#~ msgid "Email@example.com"
+#~ msgstr "https://exemplo.com"
+
+#, fuzzy
+#~| msgid "Email Address:"
+#~ msgid "Address:"
+#~ msgstr "Endereço de E-mail:"
+
+#, fuzzy
+#~| msgid "Email address:"
+#~ msgid "Enter e-mail address…"
+#~ msgstr "Endereço de e-mail:"
+
+#~ msgid "Reply to All"
+#~ msgstr "Responder a todos"
+
+#, c-format
+#~ msgid "Are you sure you want to open %s?"
+#~ msgstr "Você tem certeza que deseja abrir %s?"
+
+#~ msgid "Quote text"
+#~ msgstr "Citar texto"
+
+#~ msgid "Unquote text"
+#~ msgstr "Remover citação"
+
+#~ msgid "Drafts | Draft"
+#~ msgstr "Rascunhos | Rascunho"
+
+#~ msgid "Sent | Sent Mail | Sent Email | Sent E-Mail"
+#~ msgstr "Enviados | Correios enviados | E-mails enviados"
+
+#~ msgid ""
+#~ "Junk | Spam | Junk Mail | Junk Email | Junk E-Mail | Bulk Mail | Bulk "
+#~ "Email | Bulk E-Mail"
+#~ msgstr "Spam | Lixo eletrônico"
+
+#~ msgid "Trash | Rubbish | Rubbish Bin"
+#~ msgstr "Lixeira | Lixo"
+
+#~ msgid "Archive | Archives"
+#~ msgstr "Arquivo | Arquivos"
+
+#~ msgid "Drafts"
+#~ msgstr "Rascunhos"
+
+#~ msgid "Starred"
+#~ msgstr "Com estrela"
+
+#~ msgid "Important"
+#~ msgstr "Importante"
+
+#~ msgid "Spam"
+#~ msgstr "Spam"
+
+#~ msgid "Outbox"
+#~ msgstr "Caixa de saída"
+
+#~ msgid "Search"
+#~ msgstr "Pesquisar"
+
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgid "SMTP"
+#~ msgstr "SMTP"
+
+#~ msgid "Gmail"
+#~ msgstr "Gmail"
+
+#~ msgid "Yahoo! Mail"
+#~ msgstr "Yahoo! Mail"
+
+#~ msgid "Outlook.com"
+#~ msgstr "Outlook.com"
+
+#~ msgid "Other"
+#~ msgstr "Outro"
+
+#~ msgid "attachment"
+#~ msgstr "anexo"
+
+#~ msgid "bcc"
+#~ msgstr "cco"
+
+#~ msgid "body"
+#~ msgstr "corpo"
+
+#~ msgid "cc"
+#~ msgstr "cc"
+
+#~ msgid "from"
+#~ msgstr "de"
+
+#~ msgid "subject"
+#~ msgstr "assunto"
+
+#~ msgid "to"
+#~ msgstr "para"
+
+#~ msgid "me"
+#~ msgstr "eu"
+
+#~ msgid "(no subject)"
+#~ msgstr "(sem assunto)"
+
+#~ msgid "%s wrote:"
+#~ msgstr "%s escreveu:"
+
+#~ msgid "On %s:"
+#~ msgstr "Em %s:"
+
+#~ msgid "none"
+#~ msgstr "nenhum"
+
+#~ msgid "Mail Client"
+#~ msgstr "Cliente de e-mail"
+
+#~ msgid "Copyright 2011-2015 Yorba Foundation"
+#~ msgstr "Diretos autorais 2011-2015 Fundação Yorba"
+
+#~ msgid "Visit the Yorba web site"
+#~ msgstr "Visite o website da Yorba"
+
+#~ msgid "Delete conversation"
+#~ msgstr "Excluir conversa"
+
+#~ msgid "Delete conversation (Shift+Delete)"
+#~ msgstr "Excluir a conversa (Shift+Delete)"
+
+#~ msgid "Delete conversations (Shift+Delete)"
+#~ msgstr "Excluir as conversas (Shift+Delete)"
+
+#~ msgid "Move conversation to Trash (Delete, Backspace)"
+#~ msgid_plural "Move conversations to Trash (Delete, Backspace)"
+#~ msgstr[0] "Mover conversa para a lixeira (Delete, Backspace)"
+#~ msgstr[1] "Mover conversas para a lixeira (Delete, Backspace)"
+
+#~ msgid "Move conversations to Trash (Delete, Backspace)"
+#~ msgstr "Mover conversas para a lixeira (Del, Backspace)"
+
+#~ msgid "_Archive"
+#~ msgstr "_Arquivar"
+
+#~ msgid "Archive conversation (A)"
+#~ msgid_plural "Archive conversations (A)"
+#~ msgstr[0] "Arquivar conversa (A)"
+#~ msgstr[1] "Arquivar conversas (A)"
+
+#~ msgid "Archive conversations (A)"
+#~ msgstr "Arquivar conversas (A)"
+
+#~ msgid "Mark as S_pam"
+#~ msgstr "Marcar como S_pam"
+
+#~ msgid "Mark as not S_pam"
+#~ msgstr "Marcar como não S_pam"
+
+#~ msgid "Add label to conversation"
+#~ msgid_plural "Add label to conversations"
+#~ msgstr[0] "Adicionar selo para a conversa"
+#~ msgstr[1] "Adicionar selo para as conversas"
+
+#~ msgid "Add label to conversations"
+#~ msgstr "Adicionar marcador às conversas"
+
+#~ msgid "A_ccounts"
+#~ msgstr "_Contas"
+
+#~ msgid "_Preferences"
+#~ msgstr "_Preferências"
+
+#~ msgid "_Help"
+#~ msgstr "_Ajuda"
+
+#~ msgid "_About"
+#~ msgstr "_Sobre"
+
+#~ msgid "_Quit"
+#~ msgstr "_Fechar"
+
+#~ msgid "_Mark as..."
+#~ msgstr "_Marcar como..."
+
+#~ msgid "Mark as _Read"
+#~ msgstr "Marcar como L_ido"
+
+#~ msgid "Mark as _Unread"
+#~ msgstr "Marcar como N_ão Lido"
+
+#~ msgid "Add label"
+#~ msgstr "Adicionar etiqueta"
+
+#~ msgid "_Label"
+#~ msgstr "_Selo"
+
+#~ msgid "_Move"
+#~ msgstr "_Mover"
+
+#~ msgid "Compose new message (Ctrl+N, N)"
+#~ msgstr "Compor nova mensagem (Ctrl+N, N)"
+
+#~ msgid "_Reply"
+#~ msgstr "_Responder"
+
+#~ msgid "Reply (Ctrl+R, R)"
+#~ msgstr "Responder (Ctrl+R, R)"
+
+#~ msgid "Reply all (Ctrl+Shift+R, Shift+R)"
+#~ msgstr "Responder tudo (Ctrl+Shift+R, Shift+R)"
+
+#~ msgid "_Forward"
+#~ msgstr "_Encaminhar"
+
+#~ msgid "Forward (Ctrl+L, F)"
+#~ msgstr "Encaminhar (Ctrl+L, F)"
+
+#~ msgid "Empty"
+#~ msgstr "Vazio"
+
+#~ msgid "Empty Spam or Trash folders"
+#~ msgstr "esvaziar pasta de spam ou lixeira"
+
+#~ msgid "Empty _Spam…"
+#~ msgstr "Esvaziar _spam"
+
+#~ msgid "Empty _Trash…"
+#~ msgstr "Esvaziar _lixeira"
+
+#~ msgid "Toggle search bar"
+#~ msgstr "Alternar barra de pesquisa"
+
+#~ msgid "Unable to store server trust exception"
+#~ msgstr "Não foi possível armazenar exceção de confiança de servidor"
+
+#~ msgid "Your settings are insecure"
+#~ msgstr "Suas configurações são inseguras"
+
+#~ msgid ""
+#~ "Your IMAP and/or SMTP settings do not specify SSL or TLS.  This means "
+#~ "your username and password could be read by another person on the "
+#~ "network.  Are you sure you want to do this?"
+#~ msgstr ""
+#~ "As suas configurações de IMAP e/ou SMTP não especificam um SSL ou TLS. "
+#~ "Isso significa que seu usuário e senha poderão ser lidos por outra pessoa "
+#~ "na rede. Você tem certeza que deseja fazer isso?"
+
+#~ msgid "Co_ntinue"
+#~ msgstr "Co_ntinuar"
+
+#~ msgid "Error sending email"
+#~ msgstr "Erro ao enviar e-mail"
+
+#~ msgid ""
+#~ "Geary encountered an error sending an email.  If the problem persists, "
+#~ "please manually delete the email from your Outbox folder."
+#~ msgstr ""
+#~ "O Geary encontrou um erro ao enviar um e-mail. Se o problema persistir, "
+#~ "por favor exclua manualmente o e-mail da sua pasta Caixa de saída."
+
+#~ msgid "Error saving sent mail"
+#~ msgstr "Erro ao salvar e-mail"
+
+#~ msgid ""
+#~ "Geary encountered an error saving a sent message to Sent Mail.  The "
+#~ "message will stay in your Outbox folder until you delete it."
+#~ msgstr ""
+#~ "O Geary encontrou um erro ao salvar um e-mail na pasta de Correios "
+#~ "enviados. A mensagem vai permanecer em sua pasta Caixa de saída até você "
+#~ "excluí-la."
+
+#~ msgid "Labels"
+#~ msgstr "Rótulos"
+
+#~ msgid "Unable to open the database for %s"
+#~ msgstr "Incapaz de abrir o banco de dados para %s"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to corruption of the database file in this directory:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Geary can rebuild the database and re-synchronize with the server or "
+#~ "exit.\n"
+#~ "\n"
+#~ "Rebuilding the database will destroy all local email and its attachments. "
+#~ "<b>The mail on the your server will not be affected.</b>"
+#~ msgstr ""
+#~ "Ocorreu um erro ao abrir o banco de dados do e-mail local para esta "
+#~ "conta. Isto possivelmente se dá devido à corrupção do arquivo de banco de "
+#~ "dados nesse diretório:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "O Geary pode reconstruir o banco de dados e sincronizar novamente com o "
+#~ "servidor ou sair.\n"
+#~ "\n"
+#~ "Reconstruir o banco de dados irá destruir todos e-mails locais e seus "
+#~ "anexos. <b>Os e-mails no seu servidor não serão afetados.</b>"
+
+#~ msgid "_Rebuild"
+#~ msgstr "_Reconstruir"
+
+#~ msgid "E_xit"
+#~ msgstr "S_air"
+
+#~ msgid "Unable to rebuild database for \"%s\""
+#~ msgstr "Incapaz de reconstruir o banco de dados para \"%s\""
+
+#~ msgid ""
+#~ "Error during rebuild:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Erro durante a reconstrução:\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid "Unable to open local mailbox for %s"
+#~ msgstr "Incapaz de abrir a caixa de e-mail local para %s"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to a file permissions problem.\n"
+#~ "\n"
+#~ "Please check that you have read/write permissions for all files in this "
+#~ "directory:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Ocorreu um erro ao abrir o banco de dados do e-mail local para esta "
+#~ "conta. Isto se deve possivelmente a problema de permissões de arquivo.\n"
+#~ "\n"
+#~ "Por favor, verifique se você tem permissão de leitura/gravação para todos "
+#~ "os arquivos neste diretório:\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid ""
+#~ "The version number of the local mail database is formatted for a newer "
+#~ "version of Geary. Unfortunately, the database cannot be \"rolled back\" "
+#~ "to work with this version of Geary.\n"
+#~ "\n"
+#~ "Please install the latest version of Geary and try again."
+#~ msgstr ""
+#~ "O número da versão do banco de dados do correio local está formatado para "
+#~ "uma versão mais recente do Geary. Infelizmente, o banco de dados não pode "
+#~ "ser  \"revertido \" para trabalhar com esta versão do Geary.\n"
+#~ "\n"
+#~ "Por favor, instale a última versão do Geary e tente outra vez."
+
+#~ msgid ""
+#~ "There was an error opening the local account. This is probably due to "
+#~ "connectivity issues.\n"
+#~ "\n"
+#~ "Please check your network connection and restart Geary."
+#~ msgstr ""
+#~ "Ocorreu um erro ao abrir a conta local. Isto se deve provavelmente a "
+#~ "problemas de conectividade.\n"
+#~ "\n"
+#~ "Por favor, verifique sua conexão de rede e reinicie o Geary."
+
+#~ msgid "About %s"
+#~ msgstr "Sobre %s"
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Leonardo Lemos <leonardolemos@live.com>\n"
+#~ "Fábio Nogueira <fnogueira@gnome.org>\n"
+#~ "Enrico Nicoletto <liverig@gmail.com>.\n"
+#~ "\n"
+#~ "Launchpad Contributions:\n"
+#~ "  Christian Lacerda https://launchpad.net/~christian-mails\n"
+#~ "  Cleiton Floss https://launchpad.net/~cleitonfloss\n"
+#~ "  Edvaldo de Souza Cruz https://launchpad.net/~edvaldoscruz\n"
+#~ "  Fábio Nogueira https://launchpad.net/~fnogueira\n"
+#~ "  Guilmour Alves da Silva Cunha https://launchpad.net/~guilmour-asc\n"
+#~ "  Leonardo Lemos https://launchpad.net/~leonardolemos\n"
+#~ "  Lucas Cenir Friederich https://launchpad.net/~lucasfriederich\n"
+#~ "  Lucas Trevisan https://launchpad.net/~furle\n"
+#~ "  Marcelo Hosannah https://launchpad.net/~mhosannah\n"
+#~ "  Marco Aurélio Krause https://launchpad.net/~fxhelp-br\n"
+#~ "  Matheus Macabu https://launchpad.net/~mkbu\n"
+#~ "  Pedro H. Garcia https://launchpad.net/~pedrohega\n"
+#~ "  Rafael https://launchpad.net/~mseqs00\n"
+#~ "  Rafael Ferreira https://launchpad.net/~rafael-f-f1-s\n"
+#~ "  Samuel Cecilio https://launchpad.net/~samuelcecilio\n"
+#~ "  Saulo De Baco https://launchpad.net/~saulodebaco\n"
+#~ "  Thiago Abreu https://launchpad.net/~thiagojedi\n"
+#~ "  elementary Apps team https://launchpad.net/~elementary-apps\n"
+#~ "  álvaro https://launchpad.net/~alvaroantonioluz"
+
+#~ msgid "Undo move (Ctrl+Z)"
+#~ msgstr "Desfazer mudança (Ctrlz+Z)"
+
+#~ msgid "Are you sure you want to open \"%s\"?"
+#~ msgstr "Você tem certeza de que deseja abrir \"%s\"?"
+
+#~ msgid ""
+#~ "Attachments may cause damage to your system if opened.  Only open files "
+#~ "from trusted sources."
+#~ msgstr ""
+#~ "Anexos podem causar danos ao seu sistema se abertos. Apenas abra arquivos "
+#~ "de fontes confiáveis."
+
+#~ msgid "Don't _ask me again"
+#~ msgstr "Não me _pergunte novamente"
+
+#~ msgid "A file named \"%s\" already exists.  Do you want to replace it?"
+#~ msgstr "Um arquivo chamado \"%s\" já existe. Você deseja substituí-lo?"
+
+#~ msgid ""
+#~ "The file already exists in \"%s\".  Replacing it will overwrite its "
+#~ "contents."
+#~ msgstr ""
+#~ "O arquivo já existe em \"%s\". Substituí-lo irá sobrescrever o seu "
+#~ "conteúdo."
+
+#~ msgid "_Replace"
+#~ msgstr "_Substituir"
+
+#~ msgid "Close open draft messages?"
+#~ msgstr "Fechar mensagens de rascunhos abertas?"
+
+#~ msgid "Empty all email from your %s folder?"
+#~ msgstr "Apagar todos os emails de sua pasta %s?"
+
+#~ msgid "This removes the email from Geary and your email server."
+#~ msgstr "Isso irá remover o email do Geary e de seu servidor de email."
+
+#~ msgid "This cannot be undone."
+#~ msgstr "Isto não pode ser desfeito."
+
+#~ msgid "Empty %s"
+#~ msgstr "Esvaziar %s"
+
+#~ msgid "Error emptying %s"
+#~ msgstr "Erro ao esvaziar %s"
+
+#~ msgid "Undo archive (Ctrl+Z)"
+#~ msgstr "Desfazer arquivamento (Ctrl+Z)"
+
+#~ msgid "Undo trash (Ctrl+Z)"
+#~ msgstr "Desfazer lixeira (Ctrl+Z)"
+
+#~ msgid "Undo (Ctrl+Z)"
+#~ msgstr "Desfazer (Ctrlz+Z)"
+
+#~ msgid "Start Geary with hidden main window"
+#~ msgstr "Iniciar Geary com a janela prinicipal oculta"
+
+#~ msgid "Output debugging information"
+#~ msgstr "Informações de depuração de saída"
+
+#~ msgid "Log conversation monitoring"
+#~ msgstr "Gravar monitoramento de conversação"
+
+#~ msgid "Log network deserialization"
+#~ msgstr "Deserialização do log de rede"
+
+#~ msgid "Log network activity"
+#~ msgstr "Registrar atividade de rede"
+
+#~ msgid "Log IMAP replay queue"
+#~ msgstr "Gravar lista de repetição do IMAP"
+
+#~ msgid "Log network serialization"
+#~ msgstr "Registrar serialização de rede"
+
+#~ msgid "Log periodic activity"
+#~ msgstr "Registrar atividade periódica"
+
+#~ msgid "Log database queries (generates lots of messages)"
+#~ msgstr "Registrar consultas ao banco de dados (gera muitas mensagens)"
+
+#~ msgid "Log folder normalization"
+#~ msgstr "Registrar normalização de pasta"
+
+#~ msgid "Allow inspection of WebView"
+#~ msgstr "Permitir inspeção do WebView"
+
+#~ msgid "Revoke all server certificates with TLS warnings"
+#~ msgstr "Revogar todos os certificados de servidor com avisos de TLS"
+
+#~ msgid "Display program version"
+#~ msgstr "Mostrar versão do programa"
+
+#~ msgid "Use %s to open a new composer window"
+#~ msgstr "Usar %s para abrir uma nova janela de redator"
+
+#~ msgid "Please report comments, suggestions and bugs to:"
+#~ msgstr "Por favor, envie sugestões, comentários ou bugs para:"
+
+#~ msgid "Failed to parse command line options: %s\n"
+#~ msgstr "Falha ao analisar as opções de linha de comando: %s\n"
+
+#~ msgid "Unrecognized command line option \"%s\"\n"
+#~ msgstr "Opção de linha de comando não reconhecida \"%s\"\n"
+
+#~ msgid "%s - New Messages"
+#~ msgstr "%s - Novas Mensagens"
+
+#~ msgid "%s, %d new message total"
+#~ msgid_plural "%s, %d new messages total"
+#~ msgstr[0] "%s, %d nova mensagem no total"
+#~ msgstr[1] "%s, %d novas mensagens no total"
+
+#~ msgid ""
+#~ "%s\n"
+#~ "(%d other new message for %s)"
+#~ msgid_plural ""
+#~ "%s\n"
+#~ "(%d other new messages for %s)"
+#~ msgstr[0] ""
+#~ "%s\n"
+#~ "(%d outra nova mensagem para %s)"
+#~ msgstr[1] ""
+#~ "%s\n"
+#~ "(%d outras novas mensagens para %s)"
+
+#~ msgid "Me"
+#~ msgstr "Mim"
+
+#~ msgid "Untrusted Connection: %s"
+#~ msgstr "Conexão não confiável: %s"
+
+#~ msgid "The identity of the %s mail server at %s:%u could not be verified."
+#~ msgstr ""
+#~ "A identidade do servidor de e-mail %s em %s:%u não pôde ser verificado."
+
+#~ msgid ""
+#~ "Selecting \"Trust This Server\" or \"Always Trust This Server\" may cause "
+#~ "your username and password to be transmitted insecurely."
+#~ msgstr ""
+#~ "Selecionar \"Confiar nesse servidor\" ou \"Sempre confiar nesse "
+#~ "servidor\" pode resultar em seu usuário e senha serem transmitidos do "
+#~ "forma insegura."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Geary not to access this "
+#~ "server."
+#~ msgstr ""
+#~ "Selecionar \"Não confiar nesse servidor\" vai resultar em o Geary não "
+#~ "acessar  a esse servidor."
+
+#~ msgid "Geary will not add or update this email account."
+#~ msgstr "Geary não vai adicionar ou atualizar essa conta de e-mail."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Geary to stop accessing "
+#~ "this account."
+#~ msgstr ""
+#~ "Selecionar \"Não confiar nesse servidor\" vai resultar em o Geary parar "
+#~ "de acessar essa conta."
+
+#~ msgid "Geary will exit if you have no other open email accounts."
+#~ msgstr "Geary vai sair, se você não tiver outra conta de e-mail aberta."
+
+#~ msgid ""
+#~ "Contact your system administrator or email service provider if you have "
+#~ "any question about these issues."
+#~ msgstr ""
+#~ "Contate o administrador do seu sistema ou provedor de serviço de e-mail "
+#~ "caso tenha alguma pergunta sobre esses problemas."
+
+#~ msgid "The server's certificate is not signed by a known authority"
+#~ msgstr ""
+#~ "O certificado do servidor não está assinado por uma autoridade conhecida"
+
+#~ msgid "The server's identity does not match the identity in the certificate"
+#~ msgstr ""
+#~ "A identidade do servidor não corresponde à identidade no certificado"
+
+#~ msgid "The server's certificate has expired"
+#~ msgstr "O certificado do servidor expirou"
+
+#~ msgid "The server's certificate has not been activated"
+#~ msgstr "O certificado do servidor não foi ativado"
+
+#~ msgid "The server's certificate has been revoked and is now invalid"
+#~ msgstr "O certificado do servidor foi revogado e agora é inválido"
+
+#~ msgid "The server's certificate is considered insecure"
+#~ msgstr "O certificado do servidor é considerado inseguro"
+
+#~ msgid "An error has occurred processing the server's certificate"
+#~ msgstr "Ocorreu um erro ao processar o certificado do servidor"
+
+#~ msgid "Geary requires your email password to continue"
+#~ msgstr "Geary requer sua senha de e-mail para continuar"
+
+#~ msgid "Additional addresses for %s"
+#~ msgstr "Endereços adicionais para %s"
+
+#~ msgid "First Last"
+#~ msgstr "Primeiro Último"
+
+#~ msgid "Welcome to Geary."
+#~ msgstr "Bem-vindo ao Geary."
+
+#~ msgid "Enter your account information to get started."
+#~ msgstr "Entre com as informações de sua conta para iniciar."
+
+#~ msgid "2 weeks back"
+#~ msgstr "2 semanas atrás"
+
+#~ msgid "1 month back"
+#~ msgstr "1 mês atrás"
+
+#~ msgid "3 months back"
+#~ msgstr "3 meses atrás"
+
+#~ msgid "6 months back"
+#~ msgstr "6 meses atrás"
+
+#~ msgid "1 year back"
+#~ msgstr "1 ano atrás"
+
+#~ msgid "2 years back"
+#~ msgstr "2 anos atrás"
+
+#~ msgid "4 years back"
+#~ msgstr "4 anos atrás"
+
+#~ msgid "Everything"
+#~ msgstr "Tudo"
+
+#~ msgid "Edit"
+#~ msgstr "Editar"
+
+#~ msgid "Preview"
+#~ msgstr "Pré-visualizar"
+
+#~ msgid "Remem_ber passwords"
+#~ msgstr "Lem_brar senhas"
+
+#~ msgid "Remem_ber password"
+#~ msgstr "Lem_brar senha"
+
+#~ msgid "        &#8226; Invalid account nickname.\n"
+#~ msgstr "        &#8226; Apelido de conta inválido.\n"
+
+#~ msgid "        &#8226; Email address already added to Geary.\n"
+#~ msgstr "        &#8226; Endereço de e-mail já adicionado ao Geary.\n"
+
+#~ msgid "        &#8226; IMAP connection error.\n"
+#~ msgstr "        &#8226; Erro de conexão ao IMAP.\n"
+
+#~ msgid "        &#8226; IMAP username or password incorrect.\n"
+#~ msgstr "        &#8226; Nome de usuário ou senha de IMAP incorretos.\n"
+
+#~ msgid "        &#8226; SMTP connection error.\n"
+#~ msgstr "        &#8226; Erro de conexão ao SMTP.\n"
+
+#~ msgid "        &#8226; SMTP username or password incorrect.\n"
+#~ msgstr "        &#8226; Nome de usuário ou senha SMTP incorretos.\n"
+
+#~ msgid "        &#8226; Connection error.\n"
+#~ msgstr "        &#8226; Erro de conexão.\n"
+
+#~ msgid "        &#8226; Username or password incorrect.\n"
+#~ msgstr "        &#8226; Nome de usuário ou senha incorretos.\n"
+
+#~ msgid "_Add"
+#~ msgstr "_Adicionar"
+
+#~ msgid "%l:%M %P"
+#~ msgstr "%l:%M %P"
+
+#~ msgid "%H:%M"
+#~ msgstr "%H:%M"
+
+#~ msgctxt "Default clock format"
+#~ msgid "%l:%M %P"
+#~ msgstr "%l:%M %P"
+
+#~ msgid "%b %-e"
+#~ msgstr "%b %-e"
+
+#~ msgid "%x"
+#~ msgstr "%x"
+
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%B %-e, %Y %-l:%M %P"
+
+#~ msgid "%B %-e, %Y %-H:%M"
+#~ msgstr "%B %-e, %Y %-H:%M"
+
+#~ msgctxt "Default full date"
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%B %-e, %Y %-l:%M %P"
+
+#~ msgid "Now"
+#~ msgstr "Agora"
+
+#~ msgid "%dm ago"
+#~ msgid_plural "%dm ago"
+#~ msgstr[0] "%dm atrás"
+#~ msgstr[1] "%dm atrás"
+
+#~ msgid "%dh ago"
+#~ msgid_plural "%dh ago"
+#~ msgstr[0] "%dh atrás"
+#~ msgstr[1] "%dh atrás"
+
+#~ msgid "Yesterday"
+#~ msgstr "Ontem"
+
+#~ msgid "%A"
+#~ msgstr "%A"
+
+#~ msgid "bytes"
+#~ msgstr "bytes"
+
+#~ msgctxt "Abbreviation for terabyte"
+#~ msgid "TB"
+#~ msgstr "TB"
+
+#~ msgctxt "Abbreviation for gigabyte"
+#~ msgid "GB"
+#~ msgstr "GB"
+
+#~ msgctxt "Abbreviation for megabyte"
+#~ msgid "MB"
+#~ msgstr "MB"
+
+#~ msgctxt "Abbreviation for kilobyte"
+#~ msgid "KB"
+#~ msgstr "KB"
+
+#~ msgid "%d message"
+#~ msgid_plural "%d messages"
+#~ msgstr[0] "%d mensagem"
+#~ msgstr[1] "%d mensagens"
+
+#~ msgid "%s, %s"
+#~ msgstr "%s, %s"
+
+#~ msgid "Inboxes"
+#~ msgstr "Caixas de entrada"
+
+#~ msgid "Search %s account"
+#~ msgstr "Pesquisar conta %s"
+
+#~ msgid "%d result"
+#~ msgid_plural "%d results"
+#~ msgstr[0] "%d resultado"
+#~ msgstr[1] "%d resultados"
+
+#~ msgid "%u conversation selected."
+#~ msgid_plural "%u conversations selected."
+#~ msgstr[0] "%u conversa selecionada."
+#~ msgstr[1] "%u conversas selecionadas."
+
+#~ msgid "No search results found."
+#~ msgstr "Nenhum resultado encontrado."
+
+#~ msgid "No conversations in folder."
+#~ msgstr "Não há conversas na pasta."
+
+#~ msgid "Always Show From Sender"
+#~ msgstr "Mostrar sempre do remetente"
+
+#~ msgid "Date:"
+#~ msgstr "Data:"
+
+#~ msgid "%u read message"
+#~ msgid_plural "%u read messages"
+#~ msgstr[0] "%u mensagem lida"
+#~ msgstr[1] "%u mensagens lidas"
+
+#~ msgid "This message was sent successfully, but could not be saved to %s."
+#~ msgstr ""
+#~ "Essa mensagem foi enviada com sucesso, mas não pôde ser salva para %s."
+
+#~ msgid "_Copy"
+#~ msgstr "_Copiar"
+
+#~ msgid "Copy _Email Address"
+#~ msgstr "Copiar endereço de _e-mail"
+
+#~ msgid "Copy _Link"
+#~ msgstr "Copiar _Link"
+
+#~ msgid "Select _Message"
+#~ msgstr "Selecionar _Mensagem"
+
+#~ msgid "Select _All"
+#~ msgstr "Selecionar _tudo"
+
+#~ msgid "_Inspect"
+#~ msgstr "_Inspecionar"
+
+#~ msgid "This link appears to go to"
+#~ msgstr "Este link parece ir para"
+
+#~ msgid "but actually goes to"
+#~ msgstr "mas atualmente vai para"
+
+#~ msgid " (Invalid?)"
+#~ msgstr " (Inválido?)"
+
+#~ msgid "_Save Image As..."
+#~ msgstr "_Salvar imagem como..."
+
+#~ msgid "_Save As..."
+#~ msgstr "_Salvar como…"
+
+#~ msgid "Save All A_ttachments..."
+#~ msgstr "Salvar todos os a_nexos..."
+
+#~ msgid "Save A_ttachment..."
+#~ msgid_plural "Save All A_ttachments..."
+#~ msgstr[0] "Salvar a_nexo..."
+#~ msgstr[1] "Salvar todos os a_nexos..."
+
+#~ msgid "Reply to _All"
+#~ msgstr "Responder a _todos"
+
+#~ msgid "_Mark as Read"
+#~ msgstr "_Marcar como lida"
+
+#~ msgid "_Mark as Unread"
+#~ msgstr "_Marcar como não lida"
+
+#~ msgid "Mark Unread From _Here"
+#~ msgstr "Marcar como não lida a partir _daqui"
+
+#~ msgid "_View Source"
+#~ msgstr "_Visualizar fonte"
+
+#~ msgid "Failed to open default text editor."
+#~ msgstr "Falha ao abrir o editor de texto padrão."
+
+#~ msgid "%s - Conversation Inspector"
+#~ msgstr "%s - Inspetor de conversa"
+
+#~ msgid "Saved"
+#~ msgstr "Salvo"
+
+#~ msgid "Saving"
+#~ msgstr "Salvando"
+
+#~ msgid "Error saving"
+#~ msgstr "Erro ao salvar"
+
+#~ msgid "Press Backspace to delete quote"
+#~ msgstr "Pressione a tecla backspace para excluir citação"
+
+#~ msgid ""
+#~ "attach|attaching|attaches|attachment|attachments|attached|enclose|"
+#~ "enclosed|enclosing|encloses|enclosure|enclosures"
+#~ msgstr ""
+#~ "anexar|anexando|anexa|anexo|anexos|anexado|anexada|inserir|inserido|"
+#~ "inserindo|insere|inserido|inserida|inseridos|inseridas"
+
+#~ msgid "Do you want to discard this message?"
+#~ msgstr "Você deseja descartar"
+
+#~ msgid "Send message with an empty subject and body?"
+#~ msgstr "Enviar mensagem com o assunto e corpo vazio?"
+
+#~ msgid "Send message without an attachment?"
+#~ msgstr "Enviar mensagem sem anexo?"
+
+#~ msgid "Cannot add attachment"
+#~ msgstr "Não é possível adicionar anexo"
+
+#~ msgid "\"%s\" could not be found."
+#~ msgstr "\"%s\" não foi encontrado."
+
+#~ msgid "\"%s\" is a folder."
+#~ msgstr "\"%s\" é uma pasta."
+
+#~ msgid "\"%s\" is an empty file."
+#~ msgstr "\"%s\" é um arquivo vazio."
+
+#~ msgid "\"%s\" could not be opened for reading."
+#~ msgstr "\"%s\" não pôde ser aberto para leitura."
+
+#~ msgid "\"%s\" already attached for delivery."
+#~ msgstr "\"%s\" já foi anexado para envio."
+
+#~ msgid "%s (%s)"
+#~ msgstr "%s (%s)"
+
+#~ msgid "To: "
+#~ msgstr "Para: "
+
+#~ msgid "Cc: "
+#~ msgstr "Cc: "
+
+#~ msgid "Bcc: "
+#~ msgstr "Cco: "
+
+#~ msgid "Reply-To: "
+#~ msgstr "Responder-a: "
+
+#~ msgid "Select Color"
+#~ msgstr "Selecione a cor"
+
+#~ msgid "%1$s via %2$s"
+#~ msgstr "%1$s via %2$s"
+
+#~ msgid "_From:"
+#~ msgstr "_De:"
+
+#~ msgid "%s (%d)"
+#~ msgstr "%s (%d)"
+
+#~ msgid "Sending..."
+#~ msgstr "Enviando..."
+
+#~ msgid "%i match"
+#~ msgid_plural "%i matches"
+#~ msgstr[0] "%i ocorrência"
+#~ msgstr[1] "%i ocorrências"
+
+#~ msgid "%i match (wrapped)"
+#~ msgid_plural "%i matches (wrapped)"
+#~ msgstr[0] "%i ocorrência (quebrada)"
+#~ msgstr[1] "%i ocorrências (quebradas)"
+
+#~ msgid "not found"
+#~ msgstr "não encontrado"
+
+#~ msgid "_OK"
+#~ msgstr "_OK"
+
+#~ msgid "_Cancel"
+#~ msgstr "_Cancelar"
+
+#~ msgid "_Discard"
+#~ msgstr "_Descartar"
+
+#~ msgid "_Open"
+#~ msgstr "_Abrir"
+
+#~ msgid "_Print..."
+#~ msgstr "_Imprimir..."
+
+#~ msgid "_Remove"
+#~ msgstr "_Remover"
+
+#~ msgid "_Keep"
+#~ msgstr "_Manter"
+
+#~ msgid "Search all mail in account for keywords (Ctrl+S)"
+#~ msgstr "Pesquisar todos os e-mails na conta por palavras-chave (Ctrl+S)"
+
+#~ msgid "Indexing %s account"
+#~ msgstr "Indexando a conta %s"
+
+#~ msgid "Send by Email"
+#~ msgstr "Enviar por e-mail"
+
+#~ msgid "Send files using Mail"
+#~ msgstr "Enviar arquivos por e-mail"
+
+#~ msgid "Welcome to Mail"
+#~ msgstr "Bem vindo ao Mail"
+
+#~ msgid "More options"
+#~ msgstr "Mais opções"
+
+#~ msgid "Search %s"
+#~ msgstr "Pesquisar %s"
+
+#~ msgid "Reading"
+#~ msgstr "Lendo"
+
+#~ msgid "Automatically select next message:"
+#~ msgstr "Selecione a próxima mensagem automaticamente:"
+
+#~ msgid "Conversation previews:"
+#~ msgstr "Pré-visualização de conversas:"
+
+#~ msgid "Three-pane layout:"
+#~ msgstr "Visão de três painéis:"
+
+#~ msgid "Composer"
+#~ msgstr "Compositor"
+
+#~ msgid "Spell check:"
+#~ msgstr "Verificação ortográfica:"
+
+#~ msgid "Notifications"
+#~ msgstr "Notificações"
+
+#~ msgid "Always watch for new mail:"
+#~ msgstr "Sempre procurar por novo email:"
+
+#~ msgid "Delete Conversation (Shift+Delete)"
+#~ msgid_plural "Delete Conversations (Shift+Delete)"
+#~ msgstr[0] "Apagar conversa (Shift+Delete)"
+#~ msgstr[1] "Apagar conversas (Shift+Delete)"
+
+#~ msgid "Delete Conversations (Shift+Delete)"
+#~ msgstr "Apagar conversas (Shift+Delete)"
+
+#~ msgid ""
+#~ "<span weight=\"bold\" size=\"larger\">Are you sure you want to remove "
+#~ "this account?</span> "
+#~ msgstr ""
+#~ "<span weight=\"bold\" size=\"larger\">Você tem certeza que deseja remover "
+#~ "esta conta?</span> "
+
+#~ msgid ""
+#~ "All email associated with this account will be removed from your "
+#~ "computer. This will not affect email on the server."
+#~ msgstr ""
+#~ "Todos e-mails associados à esta conta serão removidos do seu computador. "
+#~ "Isso não afetará emails no servidor."
+
+#~ msgid "Nickname:"
+#~ msgstr "Apelido:"
+
+#~ msgid "Find"
+#~ msgstr "Procurar"
+
+#~ msgid "Previous Result"
+#~ msgstr "Resultado anterior"
+
+#~ msgid "Next result"
+#~ msgstr "Próximo resultado"
+
+#~ msgid "_Case sensitive"
+#~ msgstr "_Diferenciar maiúsculas/minúsculas"
+
+#~ msgid "label"
+#~ msgstr "rótulo"
+
+#~ msgid "Geary update in progress…"
+#~ msgstr "Atualização do Geary em progresso…"
+
+#~ msgid "Remove email address"
+#~ msgstr "Remover endereço de e-mail"
+
+#~ msgid ""
+#~ "Some email services require additional addresses be configured on the "
+#~ "server.  Contact your email provider for more information."
+#~ msgstr ""
+#~ "Alguns serviços de e-mail exigem que endereços adicionais sejam "
+#~ "configurados no servidor. Contate seu provedor de e-mail para maiores "
+#~ "informações."
+
+#~ msgid "_Update"
+#~ msgstr "_Atualizar"
+
+#~ msgid "Please wait while Geary validates your account."
+#~ msgstr "Por favor aguarde enquanto validamos sua conta."
+
+#~ msgid "_Redo"
+#~ msgstr "_Refazer"
+
+#~ msgid "Cu_t"
+#~ msgstr "Cor_tar"
+
+#~ msgid "_Paste"
+#~ msgstr "_Colar"
+
+#~ msgid "_Left"
+#~ msgstr "_Esquerda"
+
+#~ msgid "_Right"
+#~ msgstr "_Direita"
+
+#~ msgid "_Center"
+#~ msgstr "_Centralizar"
+
+#~ msgid "_Justify"
+#~ msgstr "_Justificar"
+
+#~ msgid "Link (Ctrl+L)"
+#~ msgstr "Ligar (Ctrl+L)"
+
+#~ msgid "C_olor"
+#~ msgstr "C_or"
+
+#~ msgid "Quote text  (Ctrl+])"
+#~ msgstr "Citar texto (Ctrl+])"
+
+#~ msgctxt "Clipboard paste with rich text"
+#~ msgid "Paste _With Formatting"
+#~ msgstr "Colar _com formatação"
+
+#~ msgid "Bold (Ctrl+B)"
+#~ msgstr "Negrito (Ctrl+B)"
+
+#~ msgid "Italic (Ctrl+I)"
+#~ msgstr "Itálico (Ctrl+I)"
+
+#~ msgid "Show Extended Fields"
+#~ msgstr "Mostrar campos extendidos"
+
+#~ msgctxt "Label"
+#~ msgid "Close and Save"
+#~ msgstr "Salvar e fechar"
+
+#~ msgctxt "Short Label"
+#~ msgid "Close and Save"
+#~ msgstr "Salvar e fechar"
+
+#~ msgctxt "Tooltip"
+#~ msgid "Close and Save"
+#~ msgstr "Salvar e fechar"
+
+#~ msgctxt "Label"
+#~ msgid "Close and Discard"
+#~ msgstr "Descartar e fechar"
+
+#~ msgctxt "Short Label"
+#~ msgid "Close and Discard"
+#~ msgstr "Descartar e fechar"
+
+#~ msgctxt "Tooltip"
+#~ msgid "Close and Discard"
+#~ msgstr "Descartar e fechar"
+
+#~ msgid "Lar_ge"
+#~ msgstr "Gran_de"
+
+#~ msgid "Large"
+#~ msgstr "Grande"
+
+#~ msgid "_Medium"
+#~ msgstr "_Médio"
+
+#~ msgid "Medium"
+#~ msgstr "Médio"
+
+#~ msgid "_Small"
+#~ msgstr "_Pequeno"
+
+#~ msgid "Small"
+#~ msgstr "Pequeno"
+
+#~ msgid "S_ans Serif"
+#~ msgstr "Sem serif_a"
+
+#~ msgid "Sans Serif"
+#~ msgstr "Sem serifa"
+
+#~ msgid "S_erif"
+#~ msgstr "S_erifa"
+
+#~ msgid "Serif"
+#~ msgstr "Serifa"
+
+#~ msgid "_Fixed Width"
+#~ msgstr "_Largura fixa"
+
+#~ msgid "Fixed Width"
+#~ msgstr "Largura fixa"
+
+#~ msgid "Detach"
+#~ msgstr "Remover anexo"
+
+#~ msgid "Detach (Ctrl+D)"
+#~ msgstr "Remover anexo (Ctrl+D)"
+
+#~ msgid "_Send"
+#~ msgstr "_Enviar"
+
+#~ msgid "Send (Ctrl+Enter)"
+#~ msgstr "Enviar (Ctrl+Enter)"
+
+#~ msgid "_Attach File"
+#~ msgstr "_Anexar arquivo"
+
+#~ msgid "Attach File"
+#~ msgstr "Anexar arquivo"
+
+#~ msgid "_Include Original Attachments"
+#~ msgstr "_Incluir anexos originais"
+
+#~ msgid "Include Original Attachments"
+#~ msgstr "Incluir anexos originais"
+
+#~ msgid "Application Menu"
+#~ msgstr "Menu de aplicativos"
+
+#~ msgid "_To"
+#~ msgstr "_Para"
+
+#~ msgid "_Cc"
+#~ msgstr "_Cc"
+
+#~ msgid "_Subject"
+#~ msgstr "_Assunto"
+
+#~ msgid "_Bcc"
+#~ msgstr "_Cco"
+
+#~ msgid "_Reply-To"
+#~ msgstr "_Responder"
+
+#~ msgid "From"
+#~ msgstr "De"
+
+#~ msgid "Drop files here"
+#~ msgstr "Soltar arquivos aqui"
+
+#~ msgid "To add them as attachments"
+#~ msgstr "Para enviá-los como anexos"
+
+#~ msgid "<span weight=\"bold\" size=\"larger\">Cannot remove account</span> "
+#~ msgstr ""
+#~ "<span weight=\"bold\" size=\"larger\">Não foi possível remover a conta</"
+#~ "span> "
+
+#~ msgid ""
+#~ "A composer window associated with this account is currently open. Send or "
+#~ "discard the message and try again."
+#~ msgstr ""
+#~ "Uma janela do autor, associada a esta conta, está atualmente aberta. "
+#~ "Envie ou descarte a mensagem e tente novamente."
+
+#~ msgid "Addi_tional email addresses…"
+#~ msgstr "Endereços de e-mail adic_ionais…"
+
+#~ msgid "_Save sent mail"
+#~ msgstr "_Salvar emails enviados"
+
+#~ msgid "Password"
+#~ msgstr "Senha"
+
+#~ msgid "_Password:"
+#~ msgstr "_Senha:"
+
+#~ msgid "Work, Home, etc."
+#~ msgstr "Casa, Trabalho, etc."
+
+#~ msgid "N_ickname:"
+#~ msgstr "A_pelido:"
+
+#~ msgid "S_ervice:"
+#~ msgstr "S_erviço:"
+
+#~ msgid "IMAP settings"
+#~ msgstr "Configurações do IMAP"
+
+#~ msgid "Se_rver:"
+#~ msgstr "Se_rvidor:"
+
+#~ msgid "P_ort"
+#~ msgstr "P_orta"
+
+#~ msgid "Ser_ver:"
+#~ msgstr "Ser_vidor:"
+
+#~ msgid "Por_t"
+#~ msgstr "Por_ta"
+
+#~ msgid "SMTP settings"
+#~ msgstr "Configurações do SMTP"
+
+#~ msgid "User_name:"
+#~ msgstr "_Nome de usuário:"
+
+#~ msgid "Pass_word:"
+#~ msgstr "_Senha:"
+
+#~ msgid "SMTP username"
+#~ msgstr "Nome de usuário SMTP"
+
+#~ msgid "SMTP password"
+#~ msgstr "Senha SMTP"
+
+#~ msgid "_Username:"
+#~ msgstr "Nome de _usuário:"
+
+#~ msgid "IMAP username"
+#~ msgstr "Nome de usuário IMAP"
+
+#~ msgid "IMAP password"
+#~ msgstr "Senha IMAP"
+
+#~ msgid "Encr_yption:"
+#~ msgstr "Enc_riptação:"
+
+#~ msgid "Encrypt_ion:"
+#~ msgstr "Encr_iptação:"
+
+#~ msgid "SSL/TLS"
+#~ msgstr "SSL/TLS"
+
+#~ msgid "STARTTLS"
+#~ msgstr "STARTTLS"
+
+#~ msgid "No authentication re_quired"
+#~ msgstr "Sem autenticação re_querida"
+
+#~ msgid "Use IMAP cre_dentials"
+#~ msgstr "Usar cre_denciais do IMAP"
+
+#~ msgid "Storage"
+#~ msgstr "Armazenamento"
+
+#~ msgid "_Download mail"
+#~ msgstr "_Baixar e-mail"
+
+#~ msgid "Save dra_fts on server"
+#~ msgstr "Salvar ras_cunhos no servidor"
+
+#~ msgid "Si_gn emails (HTML allowed):"
+#~ msgstr "As_sinar e-mail (HTML ativado)"
+
+#~ msgid "Add account"
+#~ msgstr "Adicionar conta"
+
+#~ msgid "Edit account"
+#~ msgstr "Editar conta"
+
+#~ msgid "Remove account"
+#~ msgstr "Remover conta"
+
+#~ msgid "Untrusted Connection"
+#~ msgstr "Conexão não confiável"
+
+#~ msgid "_Always Trust This Server"
+#~ msgstr "_Sempre confiar neste servidor"
+
+#~ msgid "_Trust This Server"
+#~ msgstr "_Confiar neste servidor"
+
+#~ msgid "_Don't Trust This Server"
+#~ msgstr "_Não confiar neste servidor"
+
+#~ msgid "SMTP Credentials"
+#~ msgstr "Credenciais SMTP"
+
+#~ msgid "Username"
+#~ msgstr "Nome de usuário"
+
+#~ msgid "_Remember password"
+#~ msgstr "Lemb_rar senha"
+
+#~ msgid "_Authenticate"
+#~ msgstr "_Autenticar"
+
+#~ msgid "© 2011-2015 Yorba Foundation, © 2016 elementary LLC."
+#~ msgstr "© 2011-2015 Yorba Foundation, © 2016 elementary LLC."
+
+#~ msgid ""
+#~ "Mail encountered an error sending an email.  If the problem persists, "
+#~ "please manually delete the email from your Outbox folder."
+#~ msgstr ""
+#~ "O Correio Eletrônico encontrou um erro enviando um e-mail. Se o problema "
+#~ "persistir, por favor remova manualmente o e-mail da caixa de saída."
+
+#~ msgid ""
+#~ "Mail encountered an error saving a sent message to Sent Mail.  The "
+#~ "message will stay in your Outbox folder until you delete it."
+#~ msgstr ""
+#~ "O Correio Eletrônico encontrou um erro salvando uma mensagem enviada para "
+#~ "a pasta de mensagens enviadas. A mensagem estará na sua caixa de saída "
+#~ "até você a deletar."
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to corruption of the database file in this directory:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Mail can rebuild the database and re-synchronize with the server or "
+#~ "exit.\n"
+#~ "\n"
+#~ "Rebuilding the database will destroy all local email and its attachments. "
+#~ "<b>The mail on the your server will not be affected.</b>"
+#~ msgstr ""
+#~ "Houve um erro abrindo o banco de dados local de e-mails para esta conta. "
+#~ "Isto provavelmente foi causado por corrompimento do arquivo de banco de "
+#~ "dados neste diretório:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "O Correio Eletrônico pode reconstruir o banco de dados e re-sincronizar "
+#~ "com o servidor ou fechar.\n"
+#~ "\n"
+#~ "Reconstruir o banco de dados destruirá todos os e-mails locais e seus "
+#~ "anexos. <b>O e-mail do servidor não será afetado.</b>"
+
+#~ msgid ""
+#~ "The version number of the local mail database is formatted for a newer "
+#~ "version of Mail. Unfortunately, the database cannot be \"rolled back\" to "
+#~ "work with this version of Mail.\n"
+#~ "\n"
+#~ "Please install the latest version of Mail and try again."
+#~ msgstr ""
+#~ "O número de versão do banco de dados de emails local está formatado para "
+#~ "uma nova versão do Correio Eletrônico. Infelizmente, o banco de dados não "
+#~ "pode ser portado para trabalhar com esta versão do Correio Eletrônico.\n"
+#~ "\n"
+#~ "Por favor, instale a última versão do Correio Eletrônico e tente "
+#~ "novamente."
+
+#~ msgid ""
+#~ "There was an error opening the local account. This is probably due to "
+#~ "connectivity issues.\n"
+#~ "\n"
+#~ "Please check your network connection and restart Mail."
+#~ msgstr ""
+#~ "Houve um erro abrindo a conta local. Este erro provavelmente foi causado "
+#~ "por problemas de conexão.\n"
+#~ "\n"
+#~ "Por favor, cheque sua conexão de internet e reinicie o Correio Eletrônico."
+
+#~ msgid "This removes the email from Mail and your email server."
+#~ msgstr ""
+#~ "Isto removerá o e-mail do Correio Eletrônico e do servidor de e-mail."
+
+#~ msgid "        &#8226; Email address already added to Mail.\n"
+#~ msgstr ""
+#~ "        &#8226; Este endereço de e-mail já foi adicionado ao Correio "
+#~ "Eletrônico.\n"
+
+#~ msgid "Mail requires your email password to continue"
+#~ msgstr "Mail requer a senha de seu email para continuar"
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Mail not to access this "
+#~ "server."
+#~ msgstr ""
+#~ "Selecionar \"Não confie neste servidor\" irá  impedir o Mail de acessar "
+#~ "esse servidor."
+
+#~ msgid "Mail will not add or update this email account."
+#~ msgstr "Mail não irá adicionar ou atualizar essa conta de email."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Mail to stop accessing "
+#~ "this account."
+#~ msgstr ""
+#~ "Selecionar \"Não confie neste servidor\" irá  impedir o Mail de acessar "
+#~ "essa conta."
+
+#~ msgid "Mail will exit if you have no other open email accounts."
+#~ msgstr ""
+#~ "O Correio Eletrônico fechará se você não tiver outras contas de e-mail "
+#~ "abertas."
+
+#~ msgid "Please wait while Mail validates your account."
+#~ msgstr "Por favor aguarde enquanto Mail valida sua conta."
+
+#~ msgid "Mail update in progress…"
+#~ msgstr "Atualização em andamento…"
+
+#~ msgid ""
+#~ "2011-2015 Yorba Foundation\n"
+#~ "© 2016 elementary LLC."
+#~ msgstr ""
+#~ "2011-2015 Yorba Foundation\n"
+#~ "© 2016 elementary LLC."
+
+#~ msgid "Show About dialog"
+#~ msgstr "Mostrar a caixa de diálogo Sobre"
+
+#~ msgid "Save Attachment…"
+#~ msgstr "Salvar anexo…"
+
+#~ msgid "Save All Attachments…"
+#~ msgstr "Salvar todos os anexos…"
+
+#~ msgid "View Source"
+#~ msgstr "Exibir o código fonte"
+
+#~ msgid "View message"
+#~ msgstr "Ver mensagem"
+
+#~ msgid "Copy Email Address"
+#~ msgstr "Copiar endereço de e-mail"
+
+#~ msgid "Hide message"
+#~ msgstr "Esconder mensagem"
+
+#~ msgid "Case sensitive"
+#~ msgstr "Diferenciar maiúsculas/minúsculas"
+
+#~ msgid "%u match"
+#~ msgid_plural "%u matches"
+#~ msgstr[0] "%u corresponde"
+#~ msgstr[1] "%u correspondem"
+
+#~ msgid "no-reply;no_reply;noreply;do-not-reply;do_not_reply;donotreply"
+#~ msgstr "no-reply;no_reply;noreply;do-not-reply;do_not_reply;donotreply"
+
+#~ msgid "Include original attachments"
+#~ msgstr "Incluir anexos originais"
+
+#~ msgid "Don't ask me again"
+#~ msgstr "Não me pergunte novamente"
+
+#~ msgid "Are you sure you want to remove this account?"
+#~ msgstr "Você tem certeza que deseja remover essa conta?"
+
+#~ msgid "Username:"
+#~ msgstr "Nome de usuário:"
+
+#~ msgid "Password:"
+#~ msgstr "Senha:"
+
+#~ msgid "SMTP Credentials:"
+#~ msgstr "Credenciais SMTP:"
+
+#~ msgid "Remember password"
+#~ msgstr "Lembrar senha"
+
+#~ msgid "Authenticate"
+#~ msgstr "Autenticar"
+
+#~ msgid "Strikethrough (Ctrl+%)"
+#~ msgstr "Tachado (Ctrl+%)"
+
+#~ msgid "Link (Ctrl+K)"
+#~ msgstr "Link (Ctrl+K)"
+
+#~ msgid "Forward (Ctrl+Shift+F)"
+#~ msgstr "Encaminhar (Ctrl+Shift+F)"

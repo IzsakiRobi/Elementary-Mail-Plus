@@ -1,0 +1,1633 @@
+# Hungarian translation for Geary email client.
+# Copyright (C) 2011-2014 Yorba Foundation
+# This file is distributed under the same license as the geary package.
+#
+# lukibeni <lukacs.bence1@gmail.com>, 2012, 2013.
+# metalsasi <metalsasi@gmail.com>, 2012.
+# Balázs Úr <urbalazs@gmail.com>, 2014, 2015.
+# Gabor Kelemen <kelemeng at gnome dot hu>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: geary-master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-08 16:46+0000\n"
+"PO-Revision-Date: 2024-01-25 19:40+0000\n"
+"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
+"Language-Team: Hungarian <https://l10n.elementary.io/projects/mail/mail/hu/"
+">\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.0.2\n"
+"X-Launchpad-Export-Date: 2017-03-09 05:59+0000\n"
+
+#: src/Application.vala:145
+msgid "Unable to open System Settings"
+msgstr "A Rendszerbeállítások megnyitása sikertelen"
+
+#: src/Application.vala:146
+msgid ""
+"Open System Settings manually or install Evolution to set up online accounts."
+msgstr ""
+"Nyissa meg a Rendszerbeállításokat vagy telepítse az Evolutiont az online "
+"fiókok beállításához."
+
+#: src/Application.vala:217
+msgid ""
+"Mail will automatically start when this device turns on and run when its "
+"window is closed so that it can send notifications when new mail arrives."
+msgstr ""
+"Az E-mail automatikusan elindul a készülék elindításakor és futni fog akkor "
+"is, ha az ablaka bezárásra kerül, hogy értesítéseket küldhessen a bejövő e-"
+"mailekről."
+
+#: src/Composer.vala:94 src/MessageList/MessageListItem.vala:102
+msgid "From:"
+msgstr "Feladó:"
+
+#: src/Composer.vala:114 src/MessageList/MessageListItem.vala:108
+msgid "To:"
+msgstr "Címzett:"
+
+#: src/Composer.vala:120
+msgid "Cc"
+msgstr "Másolat"
+
+#: src/Composer.vala:122
+msgid "Bcc"
+msgstr "Titkos másolat"
+
+#: src/Composer.vala:133 src/MessageList/MessageListItem.vala:148
+msgid "Cc:"
+msgstr "Másolat:"
+
+#: src/Composer.vala:152
+msgid "Bcc:"
+msgstr "Titkos másolat:"
+
+#: src/Composer.vala:171 src/MessageList/MessageListItem.vala:114
+msgid "Subject:"
+msgstr "Tárgy:"
+
+#: src/Composer.vala:205
+msgid "Insert Image"
+msgstr "Kép beszúrása"
+
+#: src/Composer.vala:232
+msgid "Delete draft"
+msgstr "Piszkozat törlése"
+
+#: src/Composer.vala:240
+msgid "Attach file"
+msgstr "Fájl csatolása"
+
+#: src/Composer.vala:251
+msgid "Insert Signature…"
+msgstr "Aláírás beszúrása…"
+
+#: src/Composer.vala:256
+msgid "Send"
+msgstr "Küldés"
+
+#: src/Composer.vala:299
+msgid "New Message"
+msgstr "Új levél"
+
+#: src/Composer.vala:445
+msgid "Choose a file"
+msgstr "Válasszon egy fájlt"
+
+#: src/Composer.vala:448
+msgid "Attach"
+msgstr "Csatolás"
+
+#: src/Composer.vala:449 src/Composer.vala:472 src/Composer.vala:763
+#: src/Dialogs/InsertLinkDialog.vala:66
+#: src/MessageList/AttachmentButton.vala:144
+msgid "Cancel"
+msgstr "Mégse"
+
+#: src/Composer.vala:464
+msgid "Images"
+msgstr "Képek"
+
+#: src/Composer.vala:468
+msgid "Choose an image"
+msgstr "Válasszon egy képet"
+
+#: src/Composer.vala:471
+msgid "Insert"
+msgstr "Beszúrás"
+
+#: src/Composer.vala:500
+msgid "Unable to insert image"
+msgstr "A kép beszúrása sikertelen"
+
+#: src/Composer.vala:501
+msgid "There was an unexpected error while trying to insert the image."
+msgstr "Egy váratlan hiba merült fel a kép beszúrása közben."
+
+#: src/Composer.vala:665
+msgid "%a, %b %-e, %Y at %-l:%M %p"
+msgstr "%Y. %b. %-e., %a %-k:%M-kor"
+
+#: src/Composer.vala:695
+#, c-format
+msgid "On %1$s, %2$s wrote:"
+msgstr "%1$s írta %2$s:"
+
+#: src/Composer.vala:699
+msgid "---------- Forwarded message ----------"
+msgstr "---------- Továbbított levél -----------"
+
+#: src/Composer.vala:701
+#, c-format
+msgid "From: %s<br/>"
+msgstr "Feladó: %s<br/>"
+
+#: src/Composer.vala:702
+#, c-format
+msgid "Subject: %s<br/>"
+msgstr "Tárgy: %s<br/>"
+
+#: src/Composer.vala:703
+#, c-format
+msgid "Date: %s<br/>"
+msgstr "Dátum: %s<br/>"
+
+#: src/Composer.vala:704
+#, c-format
+msgid "To: %s<br/>"
+msgstr "Címzett: %s<br/>"
+
+#: src/Composer.vala:706
+#, c-format
+msgid "Cc: %s<br/>"
+msgstr "Másolat: %s<br/>"
+
+#: src/Composer.vala:754
+msgid "Permanently delete this draft?"
+msgstr "Véglegesen törölni szeretné ezt a piszkozatot?"
+
+#: src/Composer.vala:755
+msgid ""
+"You cannot undo this action, nor recover your draft once it has been deleted."
+msgstr ""
+"Nem vonhatja vissza ezt a műveletet, nem állíthatja vissza a piszkozatot a "
+"törlés után."
+
+#: src/Composer.vala:765
+msgid "Delete Draft"
+msgstr "Piszkozat törlése"
+
+#: src/Composer.vala:789
+msgid "Send without subject?"
+msgstr "Küldés tárgy nélkül?"
+
+#: src/Composer.vala:790
+msgid ""
+"This message has an empty subject field. The recipient may be unable to "
+"infer its scope or importance."
+msgstr ""
+"A levél tárgy mezője üres. A fogadó nem biztos, hogy meg tudja ítélni a "
+"besorolását vagy fontosságát."
+
+#: src/Composer.vala:797
+msgid "Don't Send"
+msgstr "Ne küldje el"
+
+#: src/Composer.vala:799
+msgid "Send Anyway"
+msgstr "Elküldés mindenképp"
+
+#: src/Composer.vala:830
+msgid "Sent message was not saved"
+msgstr "Az elküldött levél nem lett elmentve"
+
+#: src/Composer.vala:831
+msgid ""
+"The message was sent, however a copy was not saved to the Sent message "
+"folder."
+msgstr ""
+"A levél el lett küldve, de nem került mentésre másolat az Elküldött mappába."
+
+#: src/Composer.vala:846
+msgid "Unable to send message"
+msgstr "Nem sikerült elküldeni a levelet"
+
+#: src/Composer.vala:847
+msgid "There was an unexpected error while sending your message."
+msgstr "Egy váratlan hiba merült fel a levél küldése közben."
+
+#: src/Composer.vala:945 src/FolderList/FolderList.vala:55
+msgid "Edit Signatures…"
+msgstr "Aláírások szerkesztése…"
+
+#: src/Composer.vala:949
+msgid "None"
+msgstr "Nincs"
+
+#: src/Composer.vala:1140
+msgid "Unable to save draft"
+msgstr "Piszkozat mentése sikertelen"
+
+#: src/Composer.vala:1141
+msgid "There was an unexpected error while saving your draft."
+msgstr "A piszkozat mentése közben váratlan hiba merült fel."
+
+#: src/EditorToolbar.vala:55
+msgid "Bold"
+msgstr "Félkövér"
+
+#: src/EditorToolbar.vala:62
+msgid "Italic"
+msgstr "Dőlt"
+
+#: src/EditorToolbar.vala:73
+msgid "Underline"
+msgstr "Aláhúzott"
+
+#: src/EditorToolbar.vala:85
+msgid "Strikethrough"
+msgstr "Áthúzott"
+
+#: src/EditorToolbar.vala:100
+msgid "Remove formatting"
+msgstr "Formátum törlése"
+
+#: src/EditorToolbar.vala:108 src/Dialogs/InsertLinkDialog.vala:68
+msgid "Insert Link"
+msgstr "Link beszúrása"
+
+#: src/InboxMonitor.vala:158 src/InboxMonitor.vala:170
+#, c-format
+msgid "%s to %s"
+msgstr "%s ide: %s"
+
+#. /TRANSLATORS: The %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#: src/InboxMonitor.vala:165
+#, c-format
+msgid "%u new message"
+msgid_plural "%u new messages"
+msgstr[0] "%u új levél"
+msgstr[1] "%u új levél"
+
+#. /TRANSLATORS: The first %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#. /The next %s represents the number of senders
+#: src/InboxMonitor.vala:177
+#, c-format
+msgid "%s from %u sender"
+msgid_plural "%s from %u senders"
+msgstr[0] "%s %u feladótól"
+msgstr[1] "%s %u feladótól"
+
+#: src/MainWindow.vala:80
+msgid "Mail"
+msgstr "E-mail"
+
+#: src/MainWindow.vala:123 src/Dialogs/AliasDialog/AliasDialog.vala:96
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:172
+msgid "Undo"
+msgstr "Visszavonás"
+
+#: src/MainWindow.vala:281
+msgid "Message Archived"
+msgid_plural "Messages Archived"
+msgstr[0] "Levél archiválva"
+msgstr[1] "Levelek archiválva"
+
+#: src/MainWindow.vala:285
+msgid "Couldn't archive message"
+msgstr "A levél archiválásának megszüntetése sikertelen"
+
+#: src/MainWindow.vala:298
+msgid "Message Moved"
+msgid_plural "Messages Moved"
+msgstr[0] "Levél áthelyezve"
+msgstr[1] "Levelek áthelyezve"
+
+#: src/MainWindow.vala:302
+msgid "Couldn't move message"
+msgstr "A levél áthelyezése sikertelen"
+
+#: src/MainWindow.vala:315
+msgid "Message Deleted"
+msgid_plural "Messages Deleted"
+msgstr[0] "Levél törölve"
+msgstr[1] "Levelek törölve"
+
+#: src/MainWindow.vala:319
+msgid "Couldn't delete message"
+msgstr "A levél törlése sikertelen"
+
+#: src/WelcomeView.vala:45
+msgid "Connect an Account"
+msgstr "Fiók csatlakoztatása"
+
+#: src/WelcomeView.vala:52
+msgid "Mail uses email accounts configured in System Settings."
+msgstr ""
+"A levelezőrendszer a rendszerbeállításokban lévő felhasználói fiókokat "
+"használja."
+
+#: src/WelcomeView.vala:59
+msgid "Online Accounts…"
+msgstr "Online fiókok…"
+
+#: src/Backend/Account.vala:48
+msgid "Unable to connect"
+msgstr "A kapcsolódás sikertelen"
+
+#: src/Backend/Account.vala:49
+msgid "There was an unexpected error while trying to connect to the server."
+msgstr "Egy váratlan hiba merült fel a szerverhez való kapcsolódás közben."
+
+#: src/Backend/MoveOperation.vala:65
+#, c-format
+msgid "Moving messages… (%u remaining)"
+msgstr "Levelek áthelyezése… (fennmaradó: %u)"
+
+#: src/Backend/MoveOperation.vala:98
+msgid "No Archive folder is configured."
+msgstr "Nincs beállítva archívummappa."
+
+#: src/Backend/MoveOperation.vala:126
+msgid "The destination folder was not found."
+msgstr "A célmappa nem található."
+
+#: src/Backend/MoveOperation.vala:130
+msgid "The source folder is the destination folder."
+msgstr "A forrásmappa megegyezik a célmappával."
+
+#: src/Backend/Session.vala:642
+msgid "New Signature"
+msgstr "Új aláírás"
+
+#: src/Backend/ContactManager.vala:88 src/Backend/ContactManager.vala:122
+#, c-format
+msgid "Couldn't add “%s” to addressbook"
+msgstr "Nem sikerült hozzáadni a címtárhoz ezt: \"%s\""
+
+#: src/Backend/ContactManager.vala:89
+msgid "No addressbook available."
+msgstr "Nincs elérhető címtár."
+
+#: src/Backend/ContactManager.vala:123
+msgid "Operation failed."
+msgstr "A művelet sikertelen."
+
+#: src/ConversationList/ConversationItemModel.vala:74
+#: src/ConversationList/ConversationItemModel.vala:112
+msgid ", "
+msgstr ", "
+
+#: src/ConversationList/ConversationItemModel.vala:77
+#: src/ConversationList/ConversationItemModel.vala:115
+#: src/ConversationList/ConversationItemModel.vala:123
+#: src/MessageList/AttachmentButton.vala:100
+msgid "Unknown"
+msgstr "Ismeretlen"
+
+#: src/ConversationList/ConversationList.vala:85
+msgid "Search Mail"
+msgstr "Levél keresése"
+
+#: src/ConversationList/ConversationList.vala:89
+msgid "Hide read conversations"
+msgstr "Olvasott beszélgetések elrejtése"
+
+#: src/ConversationList/ConversationList.vala:90
+msgid "Hide unstarred conversations"
+msgstr "Nem csillagozott beszélgetések elrejtése"
+
+#: src/ConversationList/ConversationList.vala:107
+msgid "Filter Conversations"
+msgstr "Beszélgetések szűrése"
+
+#: src/ConversationList/ConversationList.vala:130
+msgid "Fetch new messages"
+msgstr "Új levelek lekérése"
+
+#: src/ConversationList/ConversationList.vala:137
+msgid "Fetching new messages…"
+msgstr "Új levelek lekérése…"
+
+#: src/ConversationList/ConversationListItem.vala:94
+msgid "Archive"
+msgstr "Archiválás"
+
+#: src/ConversationList/ConversationListItem.vala:99
+msgid "Trash"
+msgstr "Kukába helyezés"
+
+#: src/ConversationList/ConversationListItem.vala:181
+msgid "Unread"
+msgstr "Olvasatlan"
+
+#: src/ConversationList/ConversationListItem.vala:194
+msgid "Replied"
+msgstr "Válaszolva"
+
+#: src/ConversationList/ConversationListItem.vala:198
+msgid "Forwarded"
+msgstr "Továbbítva"
+
+#: src/ConversationList/ConversationListItem.vala:212
+msgid "Move To Trash"
+msgstr "Áthelyezés a kukába"
+
+#: src/ConversationList/ConversationListItem.vala:215
+msgid "Mark As Unread"
+msgstr "Megjelölés olvasatlanként"
+
+#: src/ConversationList/ConversationListItem.vala:217
+#: src/MessageList/MessageList.vala:51
+msgid "Mark as Read"
+msgstr "Megjelölés olvasottként"
+
+#: src/ConversationList/ConversationListItem.vala:221
+#: src/MessageList/MessageList.vala:52
+msgid "Star"
+msgstr "Csillagozás"
+
+#: src/ConversationList/ConversationListItem.vala:223
+#: src/MessageList/MessageList.vala:53
+msgid "Unstar"
+msgstr "Csillagozás megszüntetése"
+
+#: src/Dialogs/InsertLinkDialog.vala:29
+msgid "URL:"
+msgstr "URL:"
+
+#: src/Dialogs/InsertLinkDialog.vala:39
+msgid "Link Text:"
+msgstr "Link szövege:"
+
+#: src/Dialogs/InsertLinkDialog.vala:45
+msgid "Example Website"
+msgstr "Példaoldal"
+
+#: src/Dialogs/AliasDialog/Alias.vala:52
+msgid "John Doe"
+msgstr "Kovács Jónás"
+
+#: src/Dialogs/AliasDialog/Alias.vala:56
+msgid "Name"
+msgstr "Név"
+
+#: src/Dialogs/AliasDialog/Alias.vala:75
+msgid "E-mail Address"
+msgstr "E-mail-cím"
+
+#: src/Dialogs/AliasDialog/Alias.vala:80
+msgid "Delete alias"
+msgstr "Alias törlése"
+
+#: src/Dialogs/AliasDialog/Alias.vala:100
+msgid "Edit alias"
+msgstr "Alias szerkesztése"
+
+#: src/Dialogs/AliasDialog/Alias.vala:175
+msgid "Name not set"
+msgstr "Nincs beállítva név"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:33
+msgid "No Aliases"
+msgstr "Nincsenek aliasok"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:37
+msgid "Add aliases using the button in the toolbar below"
+msgstr "Adjon hozzá aliasokat az alul található gombbal"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:67
+msgid "Add Alias…"
+msgstr "Alias hozzáadása…"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:104
+msgid "Aliases"
+msgstr "Aliasok"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:108
+msgid "Close"
+msgstr "Bezárás"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:178
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:330
+#, c-format
+msgid "'%s' deleted"
+msgstr "'%s' törölve"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:39
+msgid "No Signatures"
+msgstr "Nincsenek aláírások"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:43
+msgid "Add signatures using the button in the toolbar below"
+msgstr "Adjon hozzá aláírásokat az alul található gombbal"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:67
+msgid "Create Signature"
+msgstr "Aláírás létrehozása"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:86
+msgid "Title"
+msgstr "Megnevezés"
+
+#. Work around a styling issue
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:99
+msgid "For example “Work” or “Personal”"
+msgstr "Például \"Munkahelyi\" vagy \"Személyes\""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:122
+msgid "Delete"
+msgstr "Törlés"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:131
+msgid "Set Default For…"
+msgstr "Beállítás alapértelmezettként ehhez…"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:156
+msgid "Signature"
+msgstr "Aláírás"
+
+#: src/FolderList/AccountItemModel.vala:155
+msgid "Edit Aliases…"
+msgstr "Aliasok szerkesztése…"
+
+#: src/FolderList/FolderItemModel.vala:48
+msgid "Refresh folder"
+msgstr "Mappa frissítése"
+
+#: src/FolderList/FolderItemModel.vala:53
+msgid "Rename folder"
+msgstr "Mappa átnevezése"
+
+#: src/FolderList/FolderItemModel.vala:146
+#: src/FolderList/FolderItemModel.vala:175
+#: src/FolderList/FolderItemModel.vala:193
+#, c-format
+msgid "Couldn't rename “%s”"
+msgstr "Nem sikerült átnevezni ezt: \"%s\""
+
+#: src/FolderList/FolderItemModel.vala:147
+msgid "Folder names cannot contain “/”"
+msgstr "A mappanevek nem tartalmazhatnak perjelet (\"/\")"
+
+#: src/FolderList/FolderItemModel.vala:176
+#, c-format
+msgid "A folder named “%s” already exists"
+msgstr "Egy \"%s\" nevű mappa már létezik"
+
+#: src/FolderList/FolderList.vala:34
+msgid "Compose new message"
+msgstr "Új levél írása"
+
+#: src/FolderList/FolderList.vala:56
+msgid "Account Settings…"
+msgstr "Fiókbeállítások…"
+
+#: src/FolderList/FolderList.vala:59
+msgid "Always Show Remote Images"
+msgstr "Mindig jelenítse meg a távoli képeket"
+
+#: src/FolderList/FolderList.vala:65
+msgid "Menu"
+msgstr "Menü"
+
+#: src/FolderList/GroupedFolderItemModel.vala:38
+msgctxt "Inbox Folder"
+msgid "Inbox"
+msgstr "Beérkező levelek"
+
+#: src/FolderList/GroupedFolderItemModel.vala:42
+msgctxt "Archive Folder"
+msgid "Archive"
+msgstr "Archívum"
+
+#: src/FolderList/GroupedFolderItemModel.vala:46
+msgctxt "Sent Folder"
+msgid "Sent"
+msgstr "Elküldött"
+
+#: src/FolderList/SessionItemModel.vala:28
+msgid "All Mailboxes"
+msgstr "Összes postafiók"
+
+#: src/MessageList/MessageList.vala:28 src/MessageList/MessageListItem.vala:210
+msgid "Reply"
+msgstr "Válasz"
+
+#: src/MessageList/MessageList.vala:37 src/MessageList/MessageListItem.vala:213
+msgid "Reply All"
+msgstr "Válasz mindenkinek"
+
+#: src/MessageList/MessageList.vala:46 src/MessageList/MessageListItem.vala:216
+msgid "Forward"
+msgstr "Továbbítás"
+
+#: src/MessageList/MessageList.vala:50
+msgid "Mark as Unread"
+msgstr "Megjelölés olvasatlanként"
+
+#: src/MessageList/MessageList.vala:60
+msgid "Mark Conversation"
+msgstr "Beszélgetés megjelölése"
+
+#: src/MessageList/MessageList.vala:68
+msgid "Move Conversation to…"
+msgstr "Beszélgetés áthelyezése…"
+
+#: src/MessageList/MessageList.vala:77
+msgid "Move conversations to archive"
+msgstr "Beszélgetések áthelyezése az archívumba"
+
+#: src/MessageList/MessageList.vala:85
+msgid "Move conversations to Trash"
+msgstr "Beszélgetések áthelyezése a kukába"
+
+#: src/MessageList/MessageList.vala:100
+msgid "No Message Selected"
+msgstr "Nincs levél kiválasztva"
+
+#. /TRANSLATORS: The first %s represents the date and the second %s the time of the message (either when it was received or sent)
+#: src/MessageList/MessageListItem.vala:190
+#, c-format
+msgid "%s at %s"
+msgstr "%s %s"
+
+#: src/MessageList/MessageListItem.vala:198
+#: src/MessageList/MessageListItem.vala:397
+msgid "Unstar message"
+msgstr "Levél csillagozásának megszüntetése"
+
+#: src/MessageList/MessageListItem.vala:201
+#: src/MessageList/MessageListItem.vala:393
+msgid "Star message"
+msgstr "Levél csillagozása"
+
+#: src/MessageList/MessageListItem.vala:221
+msgid "Print…"
+msgstr "Nyomtatás…"
+
+#: src/MessageList/MessageListItem.vala:231
+msgid "More"
+msgstr "Továbbiak"
+
+#: src/MessageList/MessageListItem.vala:281
+msgid "Open in Calendar"
+msgstr "Megnyitás a Naptárban"
+
+#: src/MessageList/MessageListItem.vala:286
+msgid "This message contains a Calendar Event."
+msgstr "Ez a levél egy naptáreseményt tartalmaz."
+
+#: src/MessageList/MessageListItem.vala:297
+msgid "Show Images"
+msgstr "Képek megjelenítése"
+
+#: src/MessageList/MessageListItem.vala:298
+msgid "Always Show from Sender"
+msgstr "Mindig jelenjen meg a feladótól"
+
+#: src/MessageList/MessageListItem.vala:302
+msgid "This message contains remote images."
+msgstr "Ez a levél távoli képeket tartalmaz."
+
+#: src/MessageList/MessageListItem.vala:341
+msgid "This message contains one or more attachments"
+msgstr "Ennek a levélnek több csatolmánya is van"
+
+#. / Translators: This is the default file name of a printed email
+#: src/MessageList/MessageListItem.vala:417
+msgid "Email Message"
+msgstr "E-mail"
+
+#: src/MessageList/MessageListItem.vala:439
+msgid "Unable to print email"
+msgstr "Nem sikerült kinyomtatni az e-mailt"
+
+#: src/MessageList/MessageListItem.vala:691
+#, c-format
+msgid "Trust and open “%s”?"
+msgstr "Megbízás “%s” fájlban és megnyitás?"
+
+#: src/MessageList/MessageListItem.vala:692
+msgid ""
+"Attachments may cause damage to your system if opened. Only open files from "
+"trusted sources."
+msgstr ""
+"A csatolt fájlok megnyitása a rendszer károsodását okozhatják. Csak "
+"megbízható forrásból származó fájlokat nyisson meg."
+
+#: src/MessageList/MessageListItem.vala:699
+msgid "Open Anyway"
+msgstr "Megnyitás mindenképp"
+
+#: src/MessageList/AttachmentButton.vala:57
+msgid "Open"
+msgstr "Megnyitás"
+
+#: src/MessageList/AttachmentButton.vala:58
+msgid "Save As…"
+msgstr "Mentés másként…"
+
+#: src/MessageList/AttachmentButton.vala:143
+msgid "Save"
+msgstr "Mentés"
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:22
+msgid "No mailboxes found"
+msgstr "Nem találhatók postaládák"
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:26
+msgid "Try changing search terms"
+msgstr "Próbáljon más keresőkifejezéseket"
+
+#~ msgid "Email@example.com"
+#~ msgstr "email@pelda.hu"
+
+#~ msgid "Reply to All"
+#~ msgstr "Válasz mindenkinek"
+
+#, c-format
+#~ msgid "Are you sure you want to open %s?"
+#~ msgstr "Biztosan meg szeretné nyitni ezt: %s?"
+
+#~ msgid "Drafts | Draft"
+#~ msgstr "Piszkozatok | Piszkozat"
+
+#~ msgid "Sent | Sent Mail | Sent Email | Sent E-Mail"
+#~ msgstr "Elküldött | Elküldött levelek | Elküldött üzenetek"
+
+#~ msgid ""
+#~ "Junk | Spam | Junk Mail | Junk Email | Junk E-Mail | Bulk Mail | Bulk "
+#~ "Email | Bulk E-Mail"
+#~ msgstr "Szemét | Spam | Levélszemét"
+
+#~ msgid "Trash | Rubbish | Rubbish Bin"
+#~ msgstr "Kuka | Szemét"
+
+#~ msgid "Archive | Archives"
+#~ msgstr "Archívum | Archívumok | Archiváltak"
+
+#~ msgid "Drafts"
+#~ msgstr "Piszkozatok"
+
+#~ msgid "Starred"
+#~ msgstr "Csillagozott"
+
+#~ msgid "Important"
+#~ msgstr "Fontos"
+
+#~ msgid "Spam"
+#~ msgstr "Levélszemét"
+
+#~ msgid "Outbox"
+#~ msgstr "Postázandó"
+
+#~ msgid "Search"
+#~ msgstr "Keresés"
+
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgid "SMTP"
+#~ msgstr "SMTP"
+
+#~ msgid "Gmail"
+#~ msgstr "Gmail"
+
+#~ msgid "Yahoo! Mail"
+#~ msgstr "Yahoo! Mail"
+
+#~ msgid "Outlook.com"
+#~ msgstr "Outlook.com"
+
+#~ msgid "Other"
+#~ msgstr "Egyéb"
+
+#~ msgid "attachment"
+#~ msgstr "melléklet"
+
+#~ msgid "bcc"
+#~ msgstr "titkos másolat"
+
+#~ msgid "body"
+#~ msgstr "törzs"
+
+#~ msgid "cc"
+#~ msgstr "másolat"
+
+#~ msgid "from"
+#~ msgstr "feladó"
+
+#~ msgid "subject"
+#~ msgstr "tárgy"
+
+#~ msgid "to"
+#~ msgstr "címzett"
+
+#~ msgid "me"
+#~ msgstr "én"
+
+#~ msgid "(no subject)"
+#~ msgstr "(nincs tárgy)"
+
+#~ msgid "%s wrote:"
+#~ msgstr "%s írta:"
+
+#~ msgid "On %s:"
+#~ msgstr "Ekkor: %s:"
+
+#~ msgid "none"
+#~ msgstr "nincs"
+
+#~ msgid "Mail Client"
+#~ msgstr "Levelezőkliens"
+
+#~ msgid "Copyright 2011-2015 Yorba Foundation"
+#~ msgstr "Copyright 2011-2015 Yorba Foundation"
+
+#~ msgid "Visit the Yorba web site"
+#~ msgstr "Keresse fel a Yorba weboldalát"
+
+#~ msgid "Delete conversation (Shift+Delete)"
+#~ msgstr "Beszélgetés törlése (Shift+Delete)"
+
+#~ msgid "Delete conversations (Shift+Delete)"
+#~ msgstr "Beszélgetések törlése (Shift+Delete)"
+
+#~ msgid "Move conversations to Trash (Delete, Backspace)"
+#~ msgstr "Beszélgetések áthelyezése a kukába (Delete, Backspace)"
+
+#~ msgid "_Archive"
+#~ msgstr "_Archiválás"
+
+#~ msgid "Archive conversations (A)"
+#~ msgstr "Beszélgetések archiválása (A)"
+
+#~ msgid "Mark as S_pam"
+#~ msgstr "Megjelölés levél_szemétként"
+
+#~ msgid "Mark as not S_pam"
+#~ msgstr "Megjelölés nem levél_szemétként"
+
+#~ msgid "Add label to conversations"
+#~ msgstr "Címke hozzáadása a beszélgetésekhez"
+
+#~ msgid "A_ccounts"
+#~ msgstr "F_iókok"
+
+#~ msgid "_Preferences"
+#~ msgstr "_Beállítások"
+
+#~ msgid "_Help"
+#~ msgstr "_Súgó"
+
+#~ msgid "_About"
+#~ msgstr "_Névjegy"
+
+#~ msgid "_Quit"
+#~ msgstr "_Kilépés"
+
+#~ msgid "_Mark as..."
+#~ msgstr "_Megjelölés mint…"
+
+#~ msgid "Mark as _Read"
+#~ msgstr "Megjelölés _olvasottként"
+
+#~ msgid "Mark as _Unread"
+#~ msgstr "Megjelölés ol_vasatlanként"
+
+#~ msgid "Add label"
+#~ msgstr "Címke hozzáadása"
+
+#~ msgid "_Label"
+#~ msgstr "_Címke"
+
+#~ msgid "_Move"
+#~ msgstr "Át_helyezés"
+
+#~ msgid "_Reply"
+#~ msgstr "_Válasz"
+
+#~ msgid "Reply (Ctrl+R, R)"
+#~ msgstr "Válasz (Ctrl+R, R)"
+
+#~ msgid "Reply all (Ctrl+Shift+R, Shift+R)"
+#~ msgstr "Válasz mindenkinek (Ctrl+Shift+R, Shift+R)"
+
+#~ msgid "Forward (Ctrl+L, F)"
+#~ msgstr "Továbbítás (Ctrl+L, F)"
+
+#~ msgid "Empty"
+#~ msgstr "Ürítés"
+
+#~ msgid "Empty Spam or Trash folders"
+#~ msgstr "Levélszemét vagy kuka mappák ürítése"
+
+#~ msgid "Empty _Spam…"
+#~ msgstr "_Levélszemét ürítése…"
+
+#~ msgid "Empty _Trash…"
+#~ msgstr "_Kuka ürítése…"
+
+#~ msgid "Toggle search bar"
+#~ msgstr "Keresősáv ki- vagy bekapcsolása"
+
+#~ msgid "Unable to store server trust exception"
+#~ msgstr "Nem lehet eltárolni a kiszolgáló megbízhatósági kivételét"
+
+#~ msgid "Your settings are insecure"
+#~ msgstr "A beállításai nem biztonságosak"
+
+#~ msgid ""
+#~ "Your IMAP and/or SMTP settings do not specify SSL or TLS.  This means "
+#~ "your username and password could be read by another person on the "
+#~ "network.  Are you sure you want to do this?"
+#~ msgstr ""
+#~ "Az IMAP és/vagy SMTP beállításai nem tartalmaznak SSL vagy TLS "
+#~ "titkosítást. Ez azt jelenti, hogy a felhasználónevét és a jelszavát mások "
+#~ "elolvashatják a hálózaton. Biztos benne, hogy ezt szeretné tenni?"
+
+#~ msgid "Co_ntinue"
+#~ msgstr "Fo_lytatás"
+
+#~ msgid "Error sending email"
+#~ msgstr "Hiba a levél küldésekor"
+
+#~ msgid ""
+#~ "Geary encountered an error sending an email.  If the problem persists, "
+#~ "please manually delete the email from your Outbox folder."
+#~ msgstr ""
+#~ "A Geary hibára futott a levél küldésekor. Ha a probléma állandó, törölje "
+#~ "kézzel a levelet a Kimenő levelek mappájából."
+
+#~ msgid "Error saving sent mail"
+#~ msgstr "Hiba az elküldött levél mentésekor"
+
+#~ msgid ""
+#~ "Geary encountered an error saving a sent message to Sent Mail.  The "
+#~ "message will stay in your Outbox folder until you delete it."
+#~ msgstr ""
+#~ "A Geary hibára futott az elküldött levél mentésekor az Elküldött levelek "
+#~ "mappába. Az üzenet a Kimenő levelek mappájában fog maradni, amíg ki nem "
+#~ "törli azt."
+
+#~ msgid "Labels"
+#~ msgstr "Címkék"
+
+#~ msgid "Unable to open the database for %s"
+#~ msgstr "Nem sikerült megnyitni az adatbázist ehhez: %s"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to corruption of the database file in this directory:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Geary can rebuild the database and re-synchronize with the server or "
+#~ "exit.\n"
+#~ "\n"
+#~ "Rebuilding the database will destroy all local email and its attachments. "
+#~ "<b>The mail on the your server will not be affected.</b>"
+#~ msgstr ""
+#~ "Hiba történt a fiók helyi levéladatbázisának megnyitásakor. Ez "
+#~ "valószínűleg a könyvtárban lévő adatbázisfájl sérülése miatt történt:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "A Geary képes újjáépíteni az adatbázist és újra szinkronizálni a "
+#~ "kiszolgálóval, vagy kilép.\n"
+#~ "\n"
+#~ "Az adatbázis újjáépítése törölni fogja az összes helyi levelet és azok "
+#~ "mellékleteit. <b>A kiszolgálón lévő levelek nem érintettek.</b>"
+
+#~ msgid "_Rebuild"
+#~ msgstr "Ú_jjáépítés"
+
+#~ msgid "E_xit"
+#~ msgstr "_Kilépés"
+
+#~ msgid "Unable to rebuild database for \"%s\""
+#~ msgstr "Nem sikerült újjáépíteni az adatbázist ehhez: „%s”"
+
+#~ msgid ""
+#~ "Error during rebuild:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Hiba az újjáépítés során:\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid "Unable to open local mailbox for %s"
+#~ msgstr "Nem sikerült megnyitni a helyi postafiókot ehhez: %s"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to a file permissions problem.\n"
+#~ "\n"
+#~ "Please check that you have read/write permissions for all files in this "
+#~ "directory:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Hiba történt a fiók helyi levéladatbázisának megnyitásakor. Ez "
+#~ "valószínűleg a fájl jogosultsági problémája miatt volt.\n"
+#~ "\n"
+#~ "Ellenőrizze, hogy minden fájlra van-e olvasási/írási jogosultsága ebben a "
+#~ "könyvtárban:\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid ""
+#~ "The version number of the local mail database is formatted for a newer "
+#~ "version of Geary. Unfortunately, the database cannot be \"rolled back\" "
+#~ "to work with this version of Geary.\n"
+#~ "\n"
+#~ "Please install the latest version of Geary and try again."
+#~ msgstr ""
+#~ "A helyi levéladatbázis verziószáma a Geary újabb verziójához van "
+#~ "kialakítva. Sajnos az adatbázist nem lehet „visszagörgetni”, hogy működni "
+#~ "tudjon a Geary ezen verziójával.\n"
+#~ "\n"
+#~ "Telepítse a Geary legújabb verzióját és próbálja újra."
+
+#~ msgid ""
+#~ "There was an error opening the local account. This is probably due to "
+#~ "connectivity issues.\n"
+#~ "\n"
+#~ "Please check your network connection and restart Geary."
+#~ msgstr ""
+#~ "Hiba történt a helyi fiók megnyitásakor. Ez valószínűleg kapcsolódási "
+#~ "problémák miatt volt.\n"
+#~ "\n"
+#~ "Ellenőrizze a hálózati kapcsolatot és indítsa újra a Geary programot."
+
+#~ msgid "About %s"
+#~ msgstr "%s névjegye"
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Kelemen Gábor <kelemeng at gnome dot hu>\n"
+#~ "Lukács Bence <lukacs.bence1 at gmail dot com>\n"
+#~ "Úr Balázs <urbalazs at gmail dot com>\n"
+#~ "\n"
+#~ "Launchpad Contributions:\n"
+#~ "  Dono https://launchpad.net/~laszlo-bence-27\n"
+#~ "  Mark Fulop https://launchpad.net/~mrkflp\n"
+#~ "  Úr Balázs https://launchpad.net/~urbalazs"
+
+#~ msgid "Undo move (Ctrl+Z)"
+#~ msgstr "Áthelyezés visszavonása (Ctrl+Z)"
+
+#~ msgid "Are you sure you want to open \"%s\"?"
+#~ msgstr "Biztosan meg szeretné nyitni: „%s”?"
+
+#~ msgid ""
+#~ "Attachments may cause damage to your system if opened.  Only open files "
+#~ "from trusted sources."
+#~ msgstr ""
+#~ "A mellékletek kárt okozhatnak a rendszerében, ha meg vannak nyitva. Csak "
+#~ "megbízható forrásokból nyisson meg fájlokat."
+
+#~ msgid "Don't _ask me again"
+#~ msgstr "Ne _kérdezze újra"
+
+#~ msgid "A file named \"%s\" already exists.  Do you want to replace it?"
+#~ msgstr "A(z) „%s” nevű fájl már létezik. Le akarja cserélni?"
+
+#~ msgid ""
+#~ "The file already exists in \"%s\".  Replacing it will overwrite its "
+#~ "contents."
+#~ msgstr ""
+#~ "A fájl már létezik a(z) „%s” helyen. Lecserélésével a tartalma felül lesz "
+#~ "írva."
+
+#~ msgid "Close open draft messages?"
+#~ msgstr "Bezárja a megnyitott piszkozat leveleket?"
+
+#~ msgid "Empty all email from your %s folder?"
+#~ msgstr "Minden levelet kiürít a(z) %s mappából?"
+
+#~ msgid "This removes the email from Geary and your email server."
+#~ msgstr ""
+#~ "Ez eltávolítja a levelet a Geary programból és a levelezőkiszolgálóról."
+
+#~ msgid "This cannot be undone."
+#~ msgstr "Ez nem vonható vissza."
+
+#~ msgid "Empty %s"
+#~ msgstr "%s ürítése"
+
+#~ msgid "Error emptying %s"
+#~ msgstr "Hiba a(z) %s ürítésekor"
+
+#~ msgid "Undo archive (Ctrl+Z)"
+#~ msgstr "Archiválás visszavonása (Ctrl+Z)"
+
+#~ msgid "Undo trash (Ctrl+Z)"
+#~ msgstr "Kukába helyezés visszavonása (Ctrl+Z)"
+
+#~ msgid "Undo (Ctrl+Z)"
+#~ msgstr "Visszavonás (Ctrl+Z)"
+
+#~ msgid "Start Geary with hidden main window"
+#~ msgstr "A Geary indítása rejtett főablakkal"
+
+#~ msgid "Output debugging information"
+#~ msgstr "Hibakeresési információk kiírása"
+
+#~ msgid "Log conversation monitoring"
+#~ msgstr "Beszélgetésfigyelés naplózása"
+
+#~ msgid "Log network deserialization"
+#~ msgstr "Hálózati visszafejtés naplózása"
+
+#~ msgid "Log network activity"
+#~ msgstr "Hálózati tevékenység naplózása"
+
+#~ msgid "Log IMAP replay queue"
+#~ msgstr "IMAP eseménysor naplózása"
+
+#~ msgid "Log network serialization"
+#~ msgstr "Hálózati sorosítás naplózása"
+
+#~ msgid "Log periodic activity"
+#~ msgstr "Időszakos tevékenység naplózása"
+
+#~ msgid "Log database queries (generates lots of messages)"
+#~ msgstr "Adatbázis lekérdezések naplózása (sok üzenetet állít elő)"
+
+#~ msgid "Log folder normalization"
+#~ msgstr "Mappa-normalizálás naplózása"
+
+#~ msgid "Allow inspection of WebView"
+#~ msgstr "A webes nézet megfigyelésének engedélyezése"
+
+#~ msgid "Revoke all server certificates with TLS warnings"
+#~ msgstr "Minden kiszolgáló tanúsítvány visszavonása TLS figyelmeztetésekkel"
+
+#~ msgid "Display program version"
+#~ msgstr "A program verziójának megjelenítése"
+
+#~ msgid "Use %s to open a new composer window"
+#~ msgstr "%s használata egy új levélíró ablak megnyitásához"
+
+#~ msgid "Please report comments, suggestions and bugs to:"
+#~ msgstr "Kérjük írja le véleményét, észrevételeit és a hibákat ide:"
+
+#~ msgid "Failed to parse command line options: %s\n"
+#~ msgstr "A parancssori kapcsolók feldolgozása meghiúsult: %s\n"
+
+#~ msgid "Unrecognized command line option \"%s\"\n"
+#~ msgstr "Ismeretlen parancssori kapcsoló: „%s”\n"
+
+#~ msgid "%s - New Messages"
+#~ msgstr "%s - Új levelek"
+
+#~ msgid "%s, %d new message total"
+#~ msgid_plural "%s, %d new messages total"
+#~ msgstr[0] "%s, összesen %d új levél"
+#~ msgstr[1] "%s, összesen %d új levél"
+
+#~ msgid ""
+#~ "%s\n"
+#~ "(%d other new message for %s)"
+#~ msgid_plural ""
+#~ "%s\n"
+#~ "(%d other new messages for %s)"
+#~ msgstr[0] ""
+#~ "%s\n"
+#~ "(további %d új levél ehhez: %s)"
+#~ msgstr[1] ""
+#~ "%s\n"
+#~ "(további %d új levél ehhez: %s)"
+
+#~ msgid "Me"
+#~ msgstr "Én"
+
+#~ msgid "Untrusted Connection: %s"
+#~ msgstr "Nem megbízható kapcsolat: %s"
+
+#~ msgid "The identity of the %s mail server at %s:%u could not be verified."
+#~ msgstr ""
+#~ "A(z) %s levelező kiszolgáló személyazonossága a(z) %s:%u címen nem "
+#~ "ellenőrizhető."
+
+#~ msgid ""
+#~ "Selecting \"Trust This Server\" or \"Always Trust This Server\" may cause "
+#~ "your username and password to be transmitted insecurely."
+#~ msgstr ""
+#~ "A „Megbízom a kiszolgálóban” és a „Mindig megbízom a kiszolgálóban” "
+#~ "választása a felhasználónév és jelszó nem biztonságos átvitelét okozhatja."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Geary not to access this "
+#~ "server."
+#~ msgstr ""
+#~ "A „Nem bízom meg a kiszolgálóban” választása azt fogja okozni, hogy a "
+#~ "Geary nem férhet hozzá ehhez a kiszolgálóhoz."
+
+#~ msgid "Geary will not add or update this email account."
+#~ msgstr "A Geary nem fogja hozzáadni vagy frissíteni ezt az e-mail fiókot."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Geary to stop accessing "
+#~ "this account."
+#~ msgstr ""
+#~ "A „Nem bízom meg a kiszolgálóban” választása azt fogja okozni, hogy a "
+#~ "Geary leállítja a hozzáférést ehhez a fiókhoz."
+
+#~ msgid "Geary will exit if you have no other open email accounts."
+#~ msgstr "A Geary ki fog lépni, ha nincs más megnyitott e-mail fiókja."
+
+#~ msgid ""
+#~ "Contact your system administrator or email service provider if you have "
+#~ "any question about these issues."
+#~ msgstr ""
+#~ "Lépjen kapcsolatba a rendszergazdával vagy az e-mail szolgáltatójával, ha "
+#~ "bármilyen kérdése van ezzel a hibával kapcsolatban."
+
+#~ msgid "The server's certificate is not signed by a known authority"
+#~ msgstr ""
+#~ "A kiszolgáló tanúsítványát nem ismert hitelesítésszolgáltató írta alá"
+
+#~ msgid "The server's identity does not match the identity in the certificate"
+#~ msgstr ""
+#~ "A kiszolgáló személyazonossága nem egyezik a tanúsítványban lévő "
+#~ "személyazonossággal"
+
+#~ msgid "The server's certificate has expired"
+#~ msgstr "A kiszolgáló tanúsítványa lejárt"
+
+#~ msgid "The server's certificate has not been activated"
+#~ msgstr "A kiszolgáló tanúsítványát még nem aktiválták"
+
+#~ msgid "The server's certificate has been revoked and is now invalid"
+#~ msgstr "A kiszolgáló tanúsítványát visszavonták és most érvénytelen"
+
+#~ msgid "The server's certificate is considered insecure"
+#~ msgstr "A kiszolgáló tanúsítványa nem tekinthető biztonságosnak"
+
+#~ msgid "An error has occurred processing the server's certificate"
+#~ msgstr "Hiba történt a kiszolgáló tanúsítványának feldolgozása során"
+
+#~ msgid "Geary requires your email password to continue"
+#~ msgstr "A Geary az e-mail jelszavát igényli a folytatáshoz"
+
+#~ msgid "Additional addresses for %s"
+#~ msgstr "További címek a következőhöz: %s"
+
+#~ msgid "First Last"
+#~ msgstr "Last First"
+
+#~ msgid "Welcome to Geary."
+#~ msgstr "Üdvözli a Geary!"
+
+#~ msgid "Enter your account information to get started."
+#~ msgstr "Adja meg a fiókinformációit a kezdéshez."
+
+#~ msgid "2 weeks back"
+#~ msgstr "2 hétre visszamenőleg"
+
+#~ msgid "1 month back"
+#~ msgstr "1 hónapra visszamenőleg"
+
+#~ msgid "3 months back"
+#~ msgstr "3 hónapra visszamenőleg"
+
+#~ msgid "6 months back"
+#~ msgstr "6 hónapra visszamenőleg"
+
+#~ msgid "1 year back"
+#~ msgstr "1 évre visszamenőleg"
+
+#~ msgid "2 years back"
+#~ msgstr "2 évre visszamenőleg"
+
+#~ msgid "4 years back"
+#~ msgstr "4 évre visszamenőleg"
+
+#~ msgid "Everything"
+#~ msgstr "Minden"
+
+#~ msgid "Edit"
+#~ msgstr "Szerkesztés"
+
+#~ msgid "Preview"
+#~ msgstr "Előnézet"
+
+#~ msgid "Remem_ber passwords"
+#~ msgstr "_Jelszavak megjegyzése"
+
+#~ msgid "Remem_ber password"
+#~ msgstr "_Jelszó megjegyzése"
+
+#~ msgid "        &#8226; Invalid account nickname.\n"
+#~ msgstr "        &#8226; Érvénytelen fiók becenév.\n"
+
+#~ msgid "        &#8226; Email address already added to Geary.\n"
+#~ msgstr ""
+#~ "        &#8226; Az e-mail cím már hozzá lett adva a Geary programhoz.\n"
+
+#~ msgid "        &#8226; IMAP connection error.\n"
+#~ msgstr "        &#8226; IMAP kapcsolódási hiba.\n"
+
+#~ msgid "        &#8226; IMAP username or password incorrect.\n"
+#~ msgstr "        &#8226; Az IMAP felhasználónév vagy jelszó helytelen.\n"
+
+#~ msgid "        &#8226; SMTP connection error.\n"
+#~ msgstr "        &#8226; SMTP kapcsolódási hiba.\n"
+
+#~ msgid "        &#8226; SMTP username or password incorrect.\n"
+#~ msgstr "        &#8226; Az SMTP felhasználónév vagy jelszó helytelen.\n"
+
+#~ msgid "        &#8226; Connection error.\n"
+#~ msgstr "        &#8226; Kapcsolódási hiba.\n"
+
+#~ msgid "        &#8226; Username or password incorrect.\n"
+#~ msgstr "        &#8226; A felhasználónév vagy jelszó helytelen.\n"
+
+#~ msgid "_Add"
+#~ msgstr "_Hozzáadás"
+
+#~ msgid "%l:%M %P"
+#~ msgstr "%k.%M"
+
+#~ msgid "%H:%M"
+#~ msgstr "%H.%M"
+
+#~ msgctxt "Default clock format"
+#~ msgid "%l:%M %P"
+#~ msgstr "%k.%M"
+
+#~ msgid "%b %-e"
+#~ msgstr "%b. %-e."
+
+#~ msgid "%x"
+#~ msgstr "%x"
+
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%Y. %B %-e. %-k.%M"
+
+#~ msgid "%B %-e, %Y %-H:%M"
+#~ msgstr "%Y. %B %-e. %-H.%M"
+
+#~ msgctxt "Default full date"
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%Y. %B %-e. %-k.%M"
+
+#~ msgid "Now"
+#~ msgstr "Most"
+
+#~ msgid "%dm ago"
+#~ msgid_plural "%dm ago"
+#~ msgstr[0] "%dm óta"
+#~ msgstr[1] "%dm óta"
+
+#~ msgid "%dh ago"
+#~ msgid_plural "%dh ago"
+#~ msgstr[0] "%dh óta"
+#~ msgstr[1] "%dh óta"
+
+#~ msgid "Yesterday"
+#~ msgstr "Tegnap"
+
+#~ msgid "%A"
+#~ msgstr "%A"
+
+#~ msgid "bytes"
+#~ msgstr "bájt"
+
+#~ msgctxt "Abbreviation for terabyte"
+#~ msgid "TB"
+#~ msgstr "TB"
+
+#~ msgctxt "Abbreviation for gigabyte"
+#~ msgid "GB"
+#~ msgstr "GB"
+
+#~ msgctxt "Abbreviation for megabyte"
+#~ msgid "MB"
+#~ msgstr "MB"
+
+#~ msgctxt "Abbreviation for kilobyte"
+#~ msgid "KB"
+#~ msgstr "KB"
+
+#~ msgid "%s, %s"
+#~ msgstr "%s, %s"
+
+#~ msgid "Inboxes"
+#~ msgstr "Beérkezett üzenetek"
+
+#~ msgid "Search %s account"
+#~ msgstr "%s fiók keresése"
+
+#~ msgid "%d result"
+#~ msgid_plural "%d results"
+#~ msgstr[0] "%d találat"
+#~ msgstr[1] "%d találat"
+
+#~ msgid "%u conversation selected."
+#~ msgid_plural "%u conversations selected."
+#~ msgstr[0] "%u beszélgetés kijelölve."
+#~ msgstr[1] "%u beszélgetés kijelölve."
+
+#~ msgid "No search results found."
+#~ msgstr "Nincsenek találatok."
+
+#~ msgid "No conversations in folder."
+#~ msgstr "Nincsenek beszélgetések a mappában."
+
+#~ msgid "Edit Draft"
+#~ msgstr "Piszkozat szerkesztése"
+
+#~ msgid "Date:"
+#~ msgstr "Dátum:"
+
+#~ msgid "%u read message"
+#~ msgid_plural "%u read messages"
+#~ msgstr[0] "%u olvasott levél"
+#~ msgstr[1] "%u olvasott levél"
+
+#~ msgid "This message was sent successfully, but could not be saved to %s."
+#~ msgstr ""
+#~ "Ez a levél sikeresen el lett küldve, de nem sikerült elmenteni ide: %s."
+
+#~ msgid "_Copy"
+#~ msgstr "_Másolás"
+
+#~ msgid "Copy _Link"
+#~ msgstr "_Hivatkozás másolása"
+
+#~ msgid "Select _Message"
+#~ msgstr "_Levél kijelölése"
+
+#~ msgid "Select _All"
+#~ msgstr "Ö_sszes kijelölése"
+
+#~ msgid "_Inspect"
+#~ msgstr "_Vizsgálat"
+
+#~ msgid "This link appears to go to"
+#~ msgstr "Úgy tűnik, ez a hivatkozás ide mutat"
+
+#~ msgid "but actually goes to"
+#~ msgstr "de valójában ide ugrik"
+
+#~ msgid " (Invalid?)"
+#~ msgstr " (Érvénytelen?)"
+
+#~ msgid "_Save Image As..."
+#~ msgstr "_Kép mentése másként…"
+
+#~ msgid "_Save As..."
+#~ msgstr "M_entés másként…"
+
+#~ msgid "Save All A_ttachments..."
+#~ msgstr "Minden _melléklet mentése…"
+
+#~ msgid "Save A_ttachment..."
+#~ msgid_plural "Save All A_ttachments..."
+#~ msgstr[0] "M_elléklet mentése…"
+#~ msgstr[1] "Minden m_elléklet mentése…"
+
+#~ msgid "Mark Unread From _Here"
+#~ msgstr "Megjelölés olvasatlanként _innentől"
+
+#~ msgid "_View Source"
+#~ msgstr "_Forrás megtekintése"
+
+#~ msgid "Failed to open default text editor."
+#~ msgstr "Nem sikerült megnyitni az alapértelmezett szövegszerkesztőt."
+
+#~ msgid "%s - Conversation Inspector"
+#~ msgstr "%s - Beszélgetés felügyelő"
+
+#~ msgid "Saved"
+#~ msgstr "Elmentve"
+
+#~ msgid "Saving"
+#~ msgstr "Mentés"
+
+#~ msgid "Error saving"
+#~ msgstr "Hiba a mentéskor"
+
+#~ msgid "Press Backspace to delete quote"
+#~ msgstr "Nyomja meg a Backspace billentyűt az idézet törléséhez"
+
+#~ msgid ""
+#~ "attach|attaching|attaches|attachment|attachments|attached|enclose|"
+#~ "enclosed|enclosing|encloses|enclosure|enclosures"
+#~ msgstr ""
+#~ "attach|attaching|attaches|attachment|attachments|attached|enclose|"
+#~ "enclosed|enclosing|encloses|enclosure|enclosures|CV|cover|letter|csatol|"
+#~ "csatolás|csatolást|csatolásokat|csatolmány|csatolmányt|csatolmányok|"
+#~ "csatolmányokat|csatolva|csatolom|csatoltam|mellékel|melléklet|mellékletet|"
+#~ "mellékletek|mellékleteket|mellékelve|mellékelem|mellékeltem|küldöm|"
+#~ "elküldöm|átküldöm|postázom|fájl|fájlt|fájlok|fájlokat|állomány|állományt|"
+#~ "állományok|állományokat|életrajz|életrajzot|életrajzom|életrajzomat|"
+#~ "önéletrajz|önéletrajzot|önéletrajzom|"
+#~ "önéletrajzomat|.doc|.docx|.pdf|.xls|.xlsx|.ppt|.pptx|.rtf|.pps|.odt|.ods|.odp|.odg|.odb"
+
+#~ msgid "Do you want to discard this message?"
+#~ msgstr "El szeretné dobni ezt a levelet?"
+
+#~ msgid "Send message with an empty subject and body?"
+#~ msgstr "Elküldi a levelet üres tárggyal és törzzsel?"
+
+#~ msgid "Send message without an attachment?"
+#~ msgstr "Elküldi a levelet melléklet nélkül?"
+
+#~ msgid "Cannot add attachment"
+#~ msgstr "Nem sikerült mellékletet hozzáadni"
+
+#~ msgid "\"%s\" could not be found."
+#~ msgstr "„%s” nem található."
+
+#~ msgid "\"%s\" is a folder."
+#~ msgstr "„%s” egy mappa."
+
+#~ msgid "\"%s\" is an empty file."
+#~ msgstr "„%s” egy üres fájl."
+
+#~ msgid "\"%s\" could not be opened for reading."
+#~ msgstr "„%s” nem nyitható meg olvasásra."
+
+#~ msgid "\"%s\" already attached for delivery."
+#~ msgstr "„%s” már csatolva van a küldeményhez."
+
+#~ msgid "%s (%s)"
+#~ msgstr "%s (%s)"
+
+#~ msgid "To: "
+#~ msgstr "Címzett: "
+
+#~ msgid "Cc: "
+#~ msgstr "Másolat: "
+
+#~ msgid "Bcc: "
+#~ msgstr "Titkos másolat: "
+
+#~ msgid "Reply-To: "
+#~ msgstr "Válaszcím: "
+
+#~ msgid "Select Color"
+#~ msgstr "Szín kiválasztása"
+
+#~ msgid "%1$s via %2$s"
+#~ msgstr "%1$s ezen keresztül: %2$s"
+
+#~ msgid "_From:"
+#~ msgstr "_Feladó:"
+
+#~ msgid "%s (%d)"
+#~ msgstr "%s (%d)"
+
+#~ msgid "Sending..."
+#~ msgstr "Küldés…"
+
+#~ msgid "%i match"
+#~ msgid_plural "%i matches"
+#~ msgstr[0] "%i találat"
+#~ msgstr[1] "%i találat"
+
+#~ msgid "%i match (wrapped)"
+#~ msgid_plural "%i matches (wrapped)"
+#~ msgstr[0] "%i találat (körbeért)"
+#~ msgstr[1] "%i találat (körbeért)"
+
+#~ msgid "not found"
+#~ msgstr "nincs találat"
+
+#~ msgid "_OK"
+#~ msgstr "_OK"
+
+#~ msgid "_Cancel"
+#~ msgstr "Mé_gse"
+
+#~ msgid "_Discard"
+#~ msgstr "El_dobás"
+
+#~ msgid "_Open"
+#~ msgstr "_Megnyitás"
+
+#~ msgid "_Print..."
+#~ msgstr "_Nyomtatás…"
+
+#~ msgid "_Remove"
+#~ msgstr "_Eltávolítás"
+
+#~ msgid "_Keep"
+#~ msgstr "_Megtartás"
+
+#~ msgid "Search all mail in account for keywords (Ctrl+S)"
+#~ msgstr "A fiók minden levélének keresése kulcsszavakra (Ctrl+S)"
+
+#~ msgid "Indexing %s account"
+#~ msgstr "%s fiók indexelése"

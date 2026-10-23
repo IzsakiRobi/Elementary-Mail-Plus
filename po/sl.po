@@ -1,0 +1,2375 @@
+# Slovenian translations for geary.
+# Copyright (C) 2009 geary COPYRIGHT HOLDER
+# This file is distributed under the same license as the geary package.
+#
+# anthonmanix <anthon.manix@gmail.com>, 2012-2013.
+# Matej Urbančič <mateju@svn.gnome.org>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: geary-0.4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-08 16:46+0000\n"
+"PO-Revision-Date: 2020-01-06 00:07+0000\n"
+"Last-Translator: Marko <marko.dolar@gmail.com>\n"
+"Language-Team: Slovenian <https://l10n.elementary.io/projects/mail/mail/sl/"
+">\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 3.9.1\n"
+"X-Launchpad-Export-Date: 2017-03-09 06:00+0000\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: src/Application.vala:145
+#, fuzzy
+#| msgid "Unable to validate:\n"
+msgid "Unable to open System Settings"
+msgstr "Potrditev ni možna:\n"
+
+#: src/Application.vala:146
+msgid ""
+"Open System Settings manually or install Evolution to set up online accounts."
+msgstr ""
+
+#: src/Application.vala:217
+msgid ""
+"Mail will automatically start when this device turns on and run when its "
+"window is closed so that it can send notifications when new mail arrives."
+msgstr ""
+
+#: src/Composer.vala:94 src/MessageList/MessageListItem.vala:102
+msgid "From:"
+msgstr "Od:"
+
+#: src/Composer.vala:114 src/MessageList/MessageListItem.vala:108
+msgid "To:"
+msgstr "Za:"
+
+#: src/Composer.vala:120
+msgid "Cc"
+msgstr "Kp"
+
+#: src/Composer.vala:122
+msgid "Bcc"
+msgstr "Skp"
+
+#: src/Composer.vala:133 src/MessageList/MessageListItem.vala:148
+msgid "Cc:"
+msgstr "Kp:"
+
+#: src/Composer.vala:152
+msgid "Bcc:"
+msgstr "Skp:"
+
+#: src/Composer.vala:171 src/MessageList/MessageListItem.vala:114
+msgid "Subject:"
+msgstr "Zadeva:"
+
+#: src/Composer.vala:205
+msgid "Insert Image"
+msgstr "Vstavi sliko"
+
+#: src/Composer.vala:232
+msgid "Delete draft"
+msgstr "Izbriši osnutek"
+
+#: src/Composer.vala:240
+msgid "Attach file"
+msgstr "Pripni datoteko"
+
+#: src/Composer.vala:251
+#, fuzzy
+#| msgid "Insert Link"
+msgid "Insert Signature…"
+msgstr "Vstavi povezavo"
+
+#: src/Composer.vala:256
+msgid "Send"
+msgstr "Pošlji"
+
+#: src/Composer.vala:299
+msgid "New Message"
+msgstr "Novo sporočilo"
+
+#: src/Composer.vala:445
+msgid "Choose a file"
+msgstr "Izberite datoteko"
+
+#: src/Composer.vala:448
+#, fuzzy
+#| msgid "_Attach"
+msgid "Attach"
+msgstr "_Pripni"
+
+#: src/Composer.vala:449 src/Composer.vala:472 src/Composer.vala:763
+#: src/Dialogs/InsertLinkDialog.vala:66
+#: src/MessageList/AttachmentButton.vala:144
+msgid "Cancel"
+msgstr "Prekliči"
+
+#: src/Composer.vala:464
+#, fuzzy
+#| msgid "Show Images"
+msgid "Images"
+msgstr "Prikaži slike"
+
+#: src/Composer.vala:468
+#, fuzzy
+#| msgid "Choose a file"
+msgid "Choose an image"
+msgstr "Izberite datoteko"
+
+#: src/Composer.vala:471
+#, fuzzy
+#| msgid "Insert Link"
+msgid "Insert"
+msgstr "Vstavi povezavo"
+
+#: src/Composer.vala:500
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Unable to insert image"
+msgstr "Izbriši osnutek"
+
+#: src/Composer.vala:501
+msgid "There was an unexpected error while trying to insert the image."
+msgstr ""
+
+#: src/Composer.vala:665
+msgid "%a, %b %-e, %Y at %-l:%M %p"
+msgstr "%a, %-e. %b, %Y ob %-l:%M %p"
+
+#: src/Composer.vala:695
+#, c-format
+msgid "On %1$s, %2$s wrote:"
+msgstr "%1$s, je %2$s napisal:"
+
+#: src/Composer.vala:699
+msgid "---------- Forwarded message ----------"
+msgstr "---------- Posredovano sporočilo ----------"
+
+#: src/Composer.vala:701
+#, c-format
+msgid "From: %s<br/>"
+msgstr "Od: %s<br/>"
+
+#: src/Composer.vala:702
+#, c-format
+msgid "Subject: %s<br/>"
+msgstr "Zadeva: %s<br/>"
+
+#: src/Composer.vala:703
+#, c-format
+msgid "Date: %s<br/>"
+msgstr "Datum: %s<br/>"
+
+#: src/Composer.vala:704
+#, c-format
+msgid "To: %s<br/>"
+msgstr "Za: %s<br/>"
+
+#: src/Composer.vala:706
+#, c-format
+msgid "Cc: %s<br/>"
+msgstr "Kp: %s<br/>"
+
+#: src/Composer.vala:754
+#, fuzzy
+#| msgid "Do you want to permanently delete this message?"
+#| msgid_plural "Do you want to permanently delete these messages?"
+msgid "Permanently delete this draft?"
+msgstr "Želite trajno izbrisati ta sporočila?"
+
+#: src/Composer.vala:755
+msgid ""
+"You cannot undo this action, nor recover your draft once it has been deleted."
+msgstr ""
+
+#: src/Composer.vala:765
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Delete Draft"
+msgstr "Izbriši osnutek"
+
+#: src/Composer.vala:789
+#, fuzzy
+#| msgid "Send Message With an Empty Subject?"
+msgid "Send without subject?"
+msgstr "Želite poslati sporočilo brez zadeve?"
+
+#: src/Composer.vala:790
+#, fuzzy
+#| msgid ""
+#| "This message has an empty subject field. The recipient may not be able to "
+#| "infer the scope or importance of the message."
+msgid ""
+"This message has an empty subject field. The recipient may be unable to "
+"infer its scope or importance."
+msgstr ""
+"To sporočilo nima zadeve. Prejemnik morda ne bo mogel sklepati o pomembnosti "
+"sporočila."
+
+#: src/Composer.vala:797
+msgid "Don't Send"
+msgstr "Ne pošlji"
+
+#: src/Composer.vala:799
+msgid "Send Anyway"
+msgstr "Vseeno pošlji"
+
+#: src/Composer.vala:830
+#, fuzzy
+#| msgid "Send message with an empty body?"
+msgid "Sent message was not saved"
+msgstr "Želite poslati sporočilo brez vsebine?"
+
+#: src/Composer.vala:831
+msgid ""
+"The message was sent, however a copy was not saved to the Sent message "
+"folder."
+msgstr ""
+
+#: src/Composer.vala:846
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Unable to send message"
+msgstr "Izbriši osnutek"
+
+#: src/Composer.vala:847
+msgid "There was an unexpected error while sending your message."
+msgstr ""
+
+#: src/Composer.vala:945 src/FolderList/FolderList.vala:55
+msgid "Edit Signatures…"
+msgstr ""
+
+#: src/Composer.vala:949
+msgid "None"
+msgstr "Nobena"
+
+#: src/Composer.vala:1140
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Unable to save draft"
+msgstr "Izbriši osnutek"
+
+#: src/Composer.vala:1141
+msgid "There was an unexpected error while saving your draft."
+msgstr ""
+
+#: src/EditorToolbar.vala:55
+msgid "Bold"
+msgstr "Krepko"
+
+#: src/EditorToolbar.vala:62
+msgid "Italic"
+msgstr "Ležeče"
+
+#: src/EditorToolbar.vala:73
+msgid "Underline"
+msgstr "Podčrtano"
+
+#: src/EditorToolbar.vala:85
+msgid "Strikethrough"
+msgstr "Prečrtano"
+
+#: src/EditorToolbar.vala:100
+msgid "Remove formatting"
+msgstr "Odstrani oblikovanje"
+
+#: src/EditorToolbar.vala:108 src/Dialogs/InsertLinkDialog.vala:68
+msgid "Insert Link"
+msgstr "Vstavi povezavo"
+
+#: src/InboxMonitor.vala:158 src/InboxMonitor.vala:170
+#, c-format
+msgid "%s to %s"
+msgstr ""
+
+#. /TRANSLATORS: The %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#: src/InboxMonitor.vala:165
+#, fuzzy, c-format
+#| msgid "%d new message"
+#| msgid_plural "%d new messages"
+msgid "%u new message"
+msgid_plural "%u new messages"
+msgstr[0] "%d novo sporočilo"
+msgstr[1] "%d nova sporočila"
+msgstr[2] "%d nova sporočila"
+msgstr[3] "%d novih sporočil"
+
+#. /TRANSLATORS: The first %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#. /The next %s represents the number of senders
+#: src/InboxMonitor.vala:177
+#, fuzzy, c-format
+#| msgid "Always Show from Sender"
+msgid "%s from %u sender"
+msgid_plural "%s from %u senders"
+msgstr[0] "Vedno pokaži od pošiljatelja"
+msgstr[1] "Vedno pokaži od pošiljatelja"
+msgstr[2] "Vedno pokaži od pošiljatelja"
+msgstr[3] "Vedno pokaži od pošiljatelja"
+
+#: src/MainWindow.vala:80
+msgid "Mail"
+msgstr "Elektronska pošta"
+
+#: src/MainWindow.vala:123 src/Dialogs/AliasDialog/AliasDialog.vala:96
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:172
+msgid "Undo"
+msgstr "Razveljavi"
+
+#: src/MainWindow.vala:281
+#, fuzzy
+#| msgid "Message Deleted"
+#| msgid_plural "Messages Deleted"
+msgid "Message Archived"
+msgid_plural "Messages Archived"
+msgstr[0] "Sporočilo izbrisano"
+msgstr[1] "Sporočila izbrisana"
+msgstr[2] "Sporočila izbrisana"
+msgstr[3] "Sporočila izbrisana"
+
+#: src/MainWindow.vala:285
+#, fuzzy
+#| msgid "Unstar message"
+msgid "Couldn't archive message"
+msgstr "Odstrani zvezdico s sporočila"
+
+#: src/MainWindow.vala:298
+#, fuzzy
+#| msgid "Message Deleted"
+#| msgid_plural "Messages Deleted"
+msgid "Message Moved"
+msgid_plural "Messages Moved"
+msgstr[0] "Sporočilo izbrisano"
+msgstr[1] "Sporočila izbrisana"
+msgstr[2] "Sporočila izbrisana"
+msgstr[3] "Sporočila izbrisana"
+
+#: src/MainWindow.vala:302
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Couldn't move message"
+msgstr "Izbriši osnutek"
+
+#: src/MainWindow.vala:315
+msgid "Message Deleted"
+msgid_plural "Messages Deleted"
+msgstr[0] "Sporočilo izbrisano"
+msgstr[1] "Sporočila izbrisana"
+msgstr[2] "Sporočila izbrisana"
+msgstr[3] "Sporočila izbrisana"
+
+#: src/MainWindow.vala:319
+msgid "Couldn't delete message"
+msgstr ""
+
+#: src/WelcomeView.vala:45
+msgid "Connect an Account"
+msgstr "Poveži račun"
+
+#: src/WelcomeView.vala:52
+msgid "Mail uses email accounts configured in System Settings."
+msgstr "Pošta uporablja e-poštne račune nastavljene v sistemskih nastavitvah."
+
+#: src/WelcomeView.vala:59
+msgid "Online Accounts…"
+msgstr "Spletni računi…"
+
+#: src/Backend/Account.vala:48
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Unable to connect"
+msgstr "Izbriši osnutek"
+
+#: src/Backend/Account.vala:49
+msgid "There was an unexpected error while trying to connect to the server."
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:65
+#, c-format
+msgid "Moving messages… (%u remaining)"
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:98
+msgid "No Archive folder is configured."
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:126
+msgid "The destination folder was not found."
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:130
+msgid "The source folder is the destination folder."
+msgstr ""
+
+#: src/Backend/Session.vala:642
+msgid "New Signature"
+msgstr ""
+
+#: src/Backend/ContactManager.vala:88 src/Backend/ContactManager.vala:122
+#, c-format
+msgid "Couldn't add “%s” to addressbook"
+msgstr ""
+
+#: src/Backend/ContactManager.vala:89
+msgid "No addressbook available."
+msgstr ""
+
+#: src/Backend/ContactManager.vala:123
+msgid "Operation failed."
+msgstr ""
+
+#: src/ConversationList/ConversationItemModel.vala:74
+#: src/ConversationList/ConversationItemModel.vala:112
+msgid ", "
+msgstr ", "
+
+#: src/ConversationList/ConversationItemModel.vala:77
+#: src/ConversationList/ConversationItemModel.vala:115
+#: src/ConversationList/ConversationItemModel.vala:123
+#: src/MessageList/AttachmentButton.vala:100
+msgid "Unknown"
+msgstr "Neznano"
+
+#: src/ConversationList/ConversationList.vala:85
+msgid "Search Mail"
+msgstr "Išči pošto"
+
+#: src/ConversationList/ConversationList.vala:89
+#, fuzzy
+#| msgid "Mark conversations"
+msgid "Hide read conversations"
+msgstr "Označi pogovore"
+
+#: src/ConversationList/ConversationList.vala:90
+#, fuzzy
+#| msgid "Mark conversations"
+msgid "Hide unstarred conversations"
+msgstr "Označi pogovore"
+
+#: src/ConversationList/ConversationList.vala:107
+#, fuzzy
+#| msgid "Delete Conversation"
+msgid "Filter Conversations"
+msgstr "Izbriši pogovor"
+
+#: src/ConversationList/ConversationList.vala:130
+#, fuzzy
+#| msgid "%d new message"
+#| msgid_plural "%d new messages"
+msgid "Fetch new messages"
+msgstr "%d novo sporočilo"
+
+#: src/ConversationList/ConversationList.vala:137
+#, fuzzy
+#| msgid "%d new message"
+#| msgid_plural "%d new messages"
+msgid "Fetching new messages…"
+msgstr "%d novo sporočilo"
+
+#: src/ConversationList/ConversationListItem.vala:94
+msgid "Archive"
+msgstr "Arhiv"
+
+#: src/ConversationList/ConversationListItem.vala:99
+msgid "Trash"
+msgstr "Smeti"
+
+#: src/ConversationList/ConversationListItem.vala:181
+msgid "Unread"
+msgstr "Neprebrano"
+
+#: src/ConversationList/ConversationListItem.vala:194
+msgid "Replied"
+msgstr "Odgovorjeno"
+
+#: src/ConversationList/ConversationListItem.vala:198
+msgid "Forwarded"
+msgstr "Posredovano"
+
+#: src/ConversationList/ConversationListItem.vala:212
+#, fuzzy
+#| msgid "Move conversations to Trash"
+msgid "Move To Trash"
+msgstr "Premakni pogovore v smetnjak"
+
+#: src/ConversationList/ConversationListItem.vala:215
+#, fuzzy
+#| msgid "Mark as Unread"
+msgid "Mark As Unread"
+msgstr "Označi kot neprebrano"
+
+#: src/ConversationList/ConversationListItem.vala:217
+#: src/MessageList/MessageList.vala:51
+msgid "Mark as Read"
+msgstr "Označi kot prebrano"
+
+#: src/ConversationList/ConversationListItem.vala:221
+#: src/MessageList/MessageList.vala:52
+msgid "Star"
+msgstr "Dodaj zvezdico"
+
+#: src/ConversationList/ConversationListItem.vala:223
+#: src/MessageList/MessageList.vala:53
+msgid "Unstar"
+msgstr "Odstrani zvezdico"
+
+#: src/Dialogs/InsertLinkDialog.vala:29
+msgid "URL:"
+msgstr "URL naslov:"
+
+#: src/Dialogs/InsertLinkDialog.vala:39
+msgid "Link Text:"
+msgstr "Besedilo povezave:"
+
+#: src/Dialogs/InsertLinkDialog.vala:45
+msgid "Example Website"
+msgstr "Primer spletne strani"
+
+#: src/Dialogs/AliasDialog/Alias.vala:52
+msgid "John Doe"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/Alias.vala:56
+#, fuzzy
+#| msgid "N_ame:"
+msgid "Name"
+msgstr "_Ime:"
+
+#: src/Dialogs/AliasDialog/Alias.vala:75
+#, fuzzy
+#| msgid "E_mail address:"
+msgid "E-mail Address"
+msgstr "E-poštni nas_lov:"
+
+#: src/Dialogs/AliasDialog/Alias.vala:80
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Delete alias"
+msgstr "Izbriši osnutek"
+
+#: src/Dialogs/AliasDialog/Alias.vala:100
+#, fuzzy
+#| msgid "Edit Draft"
+msgid "Edit alias"
+msgstr "Uredi osnutek"
+
+#: src/Dialogs/AliasDialog/Alias.vala:175
+msgid "Name not set"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:33
+msgid "No Aliases"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:37
+msgid "Add aliases using the button in the toolbar below"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:67
+msgid "Add Alias…"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:104
+msgid "Aliases"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:108
+#, fuzzy
+#| msgid "_Close"
+msgid "Close"
+msgstr "_Zapri"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:178
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:330
+#, c-format
+msgid "'%s' deleted"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:39
+#, fuzzy
+#| msgid "Insert Link"
+msgid "No Signatures"
+msgstr "Vstavi povezavo"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:43
+msgid "Add signatures using the button in the toolbar below"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:67
+#, fuzzy
+#| msgid "Insert Link"
+msgid "Create Signature"
+msgstr "Vstavi povezavo"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:86
+msgid "Title"
+msgstr ""
+
+#. Work around a styling issue
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:99
+msgid "For example “Work” or “Personal”"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:122
+msgid "Delete"
+msgstr "Izbriši"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:131
+msgid "Set Default For…"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:156
+#, fuzzy
+#| msgid "Insert Link"
+msgid "Signature"
+msgstr "Vstavi povezavo"
+
+#: src/FolderList/AccountItemModel.vala:155
+msgid "Edit Aliases…"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:48
+msgid "Refresh folder"
+msgstr "Osveži mapo"
+
+#: src/FolderList/FolderItemModel.vala:53
+#, fuzzy
+#| msgid "Refresh folder"
+msgid "Rename folder"
+msgstr "Osveži mapo"
+
+#: src/FolderList/FolderItemModel.vala:146
+#: src/FolderList/FolderItemModel.vala:175
+#: src/FolderList/FolderItemModel.vala:193
+#, c-format
+msgid "Couldn't rename “%s”"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:147
+msgid "Folder names cannot contain “/”"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:176
+#, c-format
+msgid "A folder named “%s” already exists"
+msgstr ""
+
+#: src/FolderList/FolderList.vala:34
+msgid "Compose new message"
+msgstr "Sestavi novo sporočilo"
+
+#: src/FolderList/FolderList.vala:56
+msgid "Account Settings…"
+msgstr "Nastavitve računa…"
+
+#: src/FolderList/FolderList.vala:59
+msgid "Always Show Remote Images"
+msgstr "Vedno prikaži slike iz interneta"
+
+#: src/FolderList/FolderList.vala:65
+msgid "Menu"
+msgstr "Meni"
+
+#: src/FolderList/GroupedFolderItemModel.vala:38
+#, fuzzy
+#| msgid "Inbox"
+msgctxt "Inbox Folder"
+msgid "Inbox"
+msgstr "Prejeto"
+
+#: src/FolderList/GroupedFolderItemModel.vala:42
+#, fuzzy
+#| msgid "Archive"
+msgctxt "Archive Folder"
+msgid "Archive"
+msgstr "Arhiv"
+
+#: src/FolderList/GroupedFolderItemModel.vala:46
+#, fuzzy
+#| msgid "Sent Mail"
+msgctxt "Sent Folder"
+msgid "Sent"
+msgstr "Poslano"
+
+#: src/FolderList/SessionItemModel.vala:28
+#, fuzzy
+#| msgid "All Mail"
+msgid "All Mailboxes"
+msgstr "Vsa pošta"
+
+#: src/MessageList/MessageList.vala:28 src/MessageList/MessageListItem.vala:210
+msgid "Reply"
+msgstr "Odgovori"
+
+#: src/MessageList/MessageList.vala:37 src/MessageList/MessageListItem.vala:213
+msgid "Reply All"
+msgstr "Odgovori vsem"
+
+#: src/MessageList/MessageList.vala:46 src/MessageList/MessageListItem.vala:216
+msgid "Forward"
+msgstr "Posreduj"
+
+#: src/MessageList/MessageList.vala:50
+msgid "Mark as Unread"
+msgstr "Označi kot neprebrano"
+
+#: src/MessageList/MessageList.vala:60
+msgid "Mark Conversation"
+msgstr "Označi pogovor"
+
+#: src/MessageList/MessageList.vala:68
+#, fuzzy
+#| msgid "Move conversation"
+#| msgid_plural "Move conversations"
+msgid "Move Conversation to…"
+msgstr "Premakni pogovore"
+
+#: src/MessageList/MessageList.vala:77
+#, fuzzy
+#| msgid "Move conversations to Trash"
+msgid "Move conversations to archive"
+msgstr "Premakni pogovore v smetnjak"
+
+#: src/MessageList/MessageList.vala:85
+msgid "Move conversations to Trash"
+msgstr "Premakni pogovore v smetnjak"
+
+#: src/MessageList/MessageList.vala:100
+msgid "No Message Selected"
+msgstr "Nobeno sporočilo ni izbrano"
+
+#. /TRANSLATORS: The first %s represents the date and the second %s the time of the message (either when it was received or sent)
+#: src/MessageList/MessageListItem.vala:190
+#, c-format
+msgid "%s at %s"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:198
+#: src/MessageList/MessageListItem.vala:397
+msgid "Unstar message"
+msgstr "Odstrani zvezdico s sporočila"
+
+#: src/MessageList/MessageListItem.vala:201
+#: src/MessageList/MessageListItem.vala:393
+msgid "Star message"
+msgstr "Označi sporočilo z zvezdico"
+
+#: src/MessageList/MessageListItem.vala:221
+msgid "Print…"
+msgstr "Natisni…"
+
+#: src/MessageList/MessageListItem.vala:231
+msgid "More"
+msgstr "Več"
+
+#: src/MessageList/MessageListItem.vala:281
+msgid "Open in Calendar"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:286
+#, fuzzy
+#| msgid "This message contains remote images."
+msgid "This message contains a Calendar Event."
+msgstr "To sporočilo vsebuje oddaljene slike."
+
+#: src/MessageList/MessageListItem.vala:297
+msgid "Show Images"
+msgstr "Prikaži slike"
+
+#: src/MessageList/MessageListItem.vala:298
+msgid "Always Show from Sender"
+msgstr "Vedno pokaži od pošiljatelja"
+
+#: src/MessageList/MessageListItem.vala:302
+msgid "This message contains remote images."
+msgstr "To sporočilo vsebuje oddaljene slike."
+
+#: src/MessageList/MessageListItem.vala:341
+msgid "This message contains one or more attachments"
+msgstr "To sporočilo vključuje eno ali več priponk"
+
+#. / Translators: This is the default file name of a printed email
+#: src/MessageList/MessageListItem.vala:417
+#, fuzzy
+#| msgid "New Message"
+msgid "Email Message"
+msgstr "Novo sporočilo"
+
+#: src/MessageList/MessageListItem.vala:439
+#, fuzzy
+#| msgid "Unable to validate:\n"
+msgid "Unable to print email"
+msgstr "Potrditev ni možna:\n"
+
+#: src/MessageList/MessageListItem.vala:691
+#, c-format
+msgid "Trust and open “%s”?"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:692
+msgid ""
+"Attachments may cause damage to your system if opened. Only open files from "
+"trusted sources."
+msgstr ""
+"Odpiranje priponk lahko škodi vašemu sistemu. Odpirajte samo datoteke, ki "
+"prihajajo z zaupanja vrednih virov."
+
+#: src/MessageList/MessageListItem.vala:699
+msgid "Open Anyway"
+msgstr "Vseeno odpri"
+
+#: src/MessageList/AttachmentButton.vala:57
+msgid "Open"
+msgstr "Odpri"
+
+#: src/MessageList/AttachmentButton.vala:58
+msgid "Save As…"
+msgstr "Shrani kot…"
+
+#: src/MessageList/AttachmentButton.vala:143
+msgid "Save"
+msgstr "Shrani"
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:22
+msgid "No mailboxes found"
+msgstr ""
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:26
+msgid "Try changing search terms"
+msgstr ""
+
+#, fuzzy
+#~| msgid "https://example.com"
+#~ msgid "Email@example.com"
+#~ msgstr "https://primer.si"
+
+#, fuzzy
+#~| msgid "Email Address:"
+#~ msgid "Address:"
+#~ msgstr "E-poštni naslov:"
+
+#, fuzzy
+#~| msgid "Email address:"
+#~ msgid "Enter e-mail address…"
+#~ msgstr "E-poštni naslov:"
+
+#~ msgid "Reply to All"
+#~ msgstr "Odgovori vsem"
+
+#, c-format
+#~ msgid "Are you sure you want to open %s?"
+#~ msgstr "Ali ste prepričani da želite odpreti %s?"
+
+#~ msgid "Quote text"
+#~ msgstr "Citiraj besedilo"
+
+#~ msgid "Unquote text"
+#~ msgstr "Odstrani citat"
+
+#~ msgid "Drafts | Draft"
+#~ msgstr "Osnutki | Osnutek"
+
+#~ msgid "Sent | Sent Mail | Sent Email | Sent E-Mail"
+#~ msgstr "Po"
+
+#~ msgid ""
+#~ "Junk | Spam | Junk Mail | Junk Email | Junk E-Mail | Bulk Mail | Bulk "
+#~ "Email | Bulk E-Mail"
+#~ msgstr ""
+#~ "Junk | Spam | Junk Mail | Junk Email | Junk E-Mail | Bulk Mail | Bulk "
+#~ "Email | Bulk E-Mail | Vsiljena pošta | Neželena pošta"
+
+#~ msgid "Trash | Rubbish | Rubbish Bin"
+#~ msgstr "Trash | Rubbish | Rubbish Bin | Smeti | Koš"
+
+#~ msgid "Archive | Archives"
+#~ msgstr "Archive | Archives | Arhiv"
+
+#~ msgid "Drafts"
+#~ msgstr "Osnutki"
+
+#~ msgid "Starred"
+#~ msgstr "Z zvezdico"
+
+#~ msgid "Important"
+#~ msgstr "Pomembno"
+
+#~ msgid "Spam"
+#~ msgstr "Neželena pošta"
+
+#~ msgid "Outbox"
+#~ msgstr "Odhodno"
+
+#~ msgid "Search"
+#~ msgstr "Iskanje"
+
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgid "SMTP"
+#~ msgstr "SMTP"
+
+#~ msgid "Gmail"
+#~ msgstr "Gmail"
+
+#~ msgid "Yahoo! Mail"
+#~ msgstr "Yahoo! Mail"
+
+#~ msgid "Outlook.com"
+#~ msgstr "Outlook.com"
+
+#~ msgid "Other"
+#~ msgstr "Ostalo"
+
+#~ msgid "attachment"
+#~ msgstr "priponka"
+
+#~ msgid "bcc"
+#~ msgstr "skp"
+
+#~ msgid "body"
+#~ msgstr "telo"
+
+#~ msgid "cc"
+#~ msgstr "kp"
+
+#~ msgid "from"
+#~ msgstr "od"
+
+#~ msgid "subject"
+#~ msgstr "zadeva"
+
+#~ msgid "to"
+#~ msgstr "za"
+
+#~ msgid "me"
+#~ msgstr "jaz"
+
+#~ msgid "(no subject)"
+#~ msgstr "(brez zadeve)"
+
+#~ msgid "%s wrote:"
+#~ msgstr "%s je napisal:"
+
+#~ msgid "On %s:"
+#~ msgstr "Na %s:"
+
+#~ msgid "none"
+#~ msgstr "nobeno"
+
+#~ msgid "Mail Client"
+#~ msgstr "Poštni klient"
+
+#~ msgid "Copyright 2011-2015 Yorba Foundation"
+#~ msgstr "Copyright 2011-2015 Yorba Foundation"
+
+#~ msgid "Visit the Yorba web site"
+#~ msgstr "Obiščite spletno stran Yorba"
+
+#~ msgid "Delete conversation"
+#~ msgstr "Izbriši pogovor"
+
+#~ msgid "Delete conversation (Shift+Delete)"
+#~ msgstr "Izbriši pogovor (Shift + Delete)"
+
+#~ msgid "Delete conversations (Shift+Delete)"
+#~ msgstr "Izbriši pogovore (Shift + Delete)"
+
+#~ msgid "Move conversation to Trash (Delete, Backspace)"
+#~ msgid_plural "Move conversations to Trash (Delete, Backspace)"
+#~ msgstr[0] "Premakni pogovore v smeti (Delete, Backspace)"
+#~ msgstr[1] "Premakni pogovor v smeti (Delete, Backspace)"
+#~ msgstr[2] "Premakni pogovora v smeti (Delete, Backspace)"
+#~ msgstr[3] "Premakni pogovore v smeti (Delete, Backspace)"
+
+#~ msgid "Move conversations to Trash (Delete, Backspace)"
+#~ msgstr "Premakni pogovore v smeti (Delete, Backspace)"
+
+#~ msgid "_Archive"
+#~ msgstr "_Arhiv"
+
+#~ msgid "Archive conversation (A)"
+#~ msgid_plural "Archive conversations (A)"
+#~ msgstr[0] "Arhiviraj pogovore (A)"
+#~ msgstr[1] "Arhiviraj pogovor (A)"
+#~ msgstr[2] "Arhiviraj pogovora (A)"
+#~ msgstr[3] "Arhiviraj pogovore (A)"
+
+#~ msgid "Archive conversations (A)"
+#~ msgstr "Arhiviraj pogovore (A)"
+
+#~ msgid "Mark as S_pam"
+#~ msgstr "Označi kot _neželeno pošto"
+
+#~ msgid "Mark as not S_pam"
+#~ msgstr "Označi kot _želeno pošto"
+
+#~ msgid "Add label to conversation"
+#~ msgid_plural "Add label to conversations"
+#~ msgstr[0] "Dodaj oznako pogovorom"
+#~ msgstr[1] "Dodaj oznako pogovoru"
+#~ msgstr[2] "Dodaj oznako pogovoroma"
+#~ msgstr[3] "Dodaj oznako pogovorom"
+
+#~ msgid "Add label to conversations"
+#~ msgstr "Dodaj oznako pogovorom"
+
+#~ msgid "A_ccounts"
+#~ msgstr "_Računi"
+
+#~ msgid "_Preferences"
+#~ msgstr "_Nastavitve"
+
+#~ msgid "_Help"
+#~ msgstr "_Pomoč"
+
+#~ msgid "_About"
+#~ msgstr "_O programu"
+
+#~ msgid "_Quit"
+#~ msgstr "I_zhod"
+
+#~ msgid "_Mark as..."
+#~ msgstr "_Označi kot..."
+
+#~ msgid "Mark as _Read"
+#~ msgstr "Označi kot _prebrano"
+
+#~ msgid "Mark as _Unread"
+#~ msgstr "Označi kot _neprebrano"
+
+#~ msgid "Add label"
+#~ msgstr "Dodaj oznako"
+
+#~ msgid "_Label"
+#~ msgstr "_Oznaka"
+
+#~ msgid "_Move"
+#~ msgstr "_Premakni"
+
+#~ msgid "Compose new message (Ctrl+N, N)"
+#~ msgstr "Sestavi novo sporočilo (Ctrl+N, N)"
+
+#~ msgid "_Reply"
+#~ msgstr "_Odgovori"
+
+#~ msgid "Reply (Ctrl+R, R)"
+#~ msgstr "Odgovori (Ctrl+R, R)"
+
+#~ msgid "Reply all (Ctrl+Shift+R, Shift+R)"
+#~ msgstr "Odgovori na vse (Ctrl+Shift+R, Shift+R)"
+
+#~ msgid "_Forward"
+#~ msgstr "_Posreduj"
+
+#~ msgid "Forward (Ctrl+L, F)"
+#~ msgstr "Posreduj (Ctrl+L, F)"
+
+#~ msgid "Empty"
+#~ msgstr "Izprazni"
+
+#~ msgid "Empty Spam or Trash folders"
+#~ msgstr "Izprazni smeti ali mapo z neželeno pošto"
+
+#~ msgid "Empty _Spam…"
+#~ msgstr "Izprazni neželeno _pošto…"
+
+#~ msgid "Empty _Trash…"
+#~ msgstr "Izprazni Sme_ti…"
+
+#~ msgid "Toggle search bar"
+#~ msgstr "Prikaži/Skrij iskalno vrstico"
+
+#~ msgid "Unable to store server trust exception"
+#~ msgstr "Ni bilo mogoče shraniti izjeme pri strežniški overovitvi"
+
+#~ msgid "Your settings are insecure"
+#~ msgstr "Vaše nastavitve niso varne"
+
+#~ msgid ""
+#~ "Your IMAP and/or SMTP settings do not specify SSL or TLS.  This means "
+#~ "your username and password could be read by another person on the "
+#~ "network.  Are you sure you want to do this?"
+#~ msgstr ""
+#~ "Vaše IMAP in/ali SMTP nastavitve ne določajo SSL ali TLS.  To pomeni, da "
+#~ "lahko druga oseba na omrežju prebere vaše uporabniško ime in geslo.  Ali "
+#~ "ste prepričani, da želite to storiti?"
+
+#~ msgid "Co_ntinue"
+#~ msgstr "_Nadaljuj"
+
+#~ msgid "Error sending email"
+#~ msgstr "Napaka pri pošiljanju epošte"
+
+#~ msgid ""
+#~ "Geary encountered an error sending an email.  If the problem persists, "
+#~ "please manually delete the email from your Outbox folder."
+#~ msgstr ""
+#~ "Pri pošiljanju pošte je prišlo do napake.  Če težava ne izgine, izbrišite "
+#~ "sporočilo iz odpremnega predala."
+
+#~ msgid "Error saving sent mail"
+#~ msgstr "Napaka pri shranjevanju poslanega sporočila"
+
+#~ msgid ""
+#~ "Geary encountered an error saving a sent message to Sent Mail.  The "
+#~ "message will stay in your Outbox folder until you delete it."
+#~ msgstr ""
+#~ "Prišlo je do napake pri shranjevanju poslanega sporočila v mapo. "
+#~ "Sporočilo bo ostalo v odpremnem predalu dokler ga ne izbrišete."
+
+#~ msgid "Labels"
+#~ msgstr "Oznake"
+
+#~ msgid "Unable to open the database for %s"
+#~ msgstr "Podatkovne baze za %s ni mogoče odpreti"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to corruption of the database file in this directory:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Geary can rebuild the database and re-synchronize with the server or "
+#~ "exit.\n"
+#~ "\n"
+#~ "Rebuilding the database will destroy all local email and its attachments. "
+#~ "<b>The mail on the your server will not be affected.</b>"
+#~ msgstr ""
+#~ "Prišlo je do napake pri odpiranju baze s pošto za ta račun.  Vzrok je "
+#~ "verjetno okvara podatkovne baze v mapi:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Geary lahko ponovno sestavi podatkovno bazo in jo sinhronizira s "
+#~ "strežnikom ali pa se zapre.\n"
+#~ "\n"
+#~ "Sestavljanje podatkovne baze bo uničilo vso lokalno pošto in priponke. "
+#~ "<b>Pošta na strežniku ne bo spremenjena.</b>"
+
+#~ msgid "_Rebuild"
+#~ msgstr "Ponovno _izgradi"
+
+#~ msgid "E_xit"
+#~ msgstr "I_zhod"
+
+#~ msgid "Unable to rebuild database for \"%s\""
+#~ msgstr "Podatkovne baze za \"%s\" ni mogoče ponovno zgraditi"
+
+#~ msgid ""
+#~ "Error during rebuild:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Napaka pri ponovnem sestavljanju podatkovne baze:\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid "Unable to open local mailbox for %s"
+#~ msgstr "Ni bilo mogoče odpreti lokalnega poštnega predala za %s"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to a file permissions problem.\n"
+#~ "\n"
+#~ "Please check that you have read/write permissions for all files in this "
+#~ "directory:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Prišlo je do napake pri odpiranju lokalne podatkovne baze s pošto za ta "
+#~ "račun. Verjetno je vzrok v napačnih dovoljenjih.\n"
+#~ "\n"
+#~ "Prosimo preverite da imate dovoljenje za branje in pisanje vseh datotek v "
+#~ "mapi:\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid ""
+#~ "The version number of the local mail database is formatted for a newer "
+#~ "version of Geary. Unfortunately, the database cannot be \"rolled back\" "
+#~ "to work with this version of Geary.\n"
+#~ "\n"
+#~ "Please install the latest version of Geary and try again."
+#~ msgstr ""
+#~ "Podatkovna baza s pošto je bila ustvarjena z novejšo različico Gearya. Na "
+#~ "žalost Geary novejše podatkovne baze ne more odpreti.\n"
+#~ "\n"
+#~ "Prosimo posodobite Geary in poskusite znova."
+
+#~ msgid ""
+#~ "There was an error opening the local account. This is probably due to "
+#~ "connectivity issues.\n"
+#~ "\n"
+#~ "Please check your network connection and restart Geary."
+#~ msgstr ""
+#~ "Prišlo je do napake pri odpiranju lokalnega računa. To je verjetno zaradi "
+#~ "težav z internetno povezavo.\n"
+#~ "\n"
+#~ "Prosimo preverite delovanje interneta in ponovno poženite Geary."
+
+#~ msgid "About %s"
+#~ msgstr "O %s"
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "zasluge-za-prevajanje\n"
+#~ "\n"
+#~ "Launchpad Contributions:\n"
+#~ "  Jernej Virag https://launchpad.net/~jernej\n"
+#~ "  MarkoD https://launchpad.net/~markodolar\n"
+#~ "  Matej Urbančič https://launchpad.net/~mateju\n"
+#~ "  elementary Apps team https://launchpad.net/~elementary-apps"
+
+#~ msgid "Undo move (Ctrl+Z)"
+#~ msgstr "Razveljavi premik (Ctrl + Z)"
+
+#~ msgid "Are you sure you want to open \"%s\"?"
+#~ msgstr "Ste prepričani, da želite odpreti \"%s\"?"
+
+#~ msgid ""
+#~ "Attachments may cause damage to your system if opened.  Only open files "
+#~ "from trusted sources."
+#~ msgstr ""
+#~ "Priponke so lahko škodljive vašemu sistemu, če jih odprete.  Odpirajte "
+#~ "samo datoteke iz zaupljivih virov."
+
+#~ msgid "Don't _ask me again"
+#~ msgstr "Ne _sprašuj me več"
+
+#~ msgid "A file named \"%s\" already exists.  Do you want to replace it?"
+#~ msgstr "Datoteka z imenom \"%s\" že obstaja.  Ali jo želite zamenjati?"
+
+#~ msgid ""
+#~ "The file already exists in \"%s\".  Replacing it will overwrite its "
+#~ "contents."
+#~ msgstr ""
+#~ "Datoteka že obstaja v \"%s\".  Če jo zamenjate, boste prepisali njeno "
+#~ "vsebino."
+
+#~ msgid "_Replace"
+#~ msgstr "_Zamenjaj"
+
+#~ msgid "Close open draft messages?"
+#~ msgstr "Zaprem vse odprte osnutke?"
+
+#~ msgid "Empty all email from your %s folder?"
+#~ msgstr "Izprazni vso pošto iz mape %s?"
+
+#~ msgid "This removes the email from Geary and your email server."
+#~ msgstr "To odstrani pošto z Gearya in vašega poštnega strežnika."
+
+#~ msgid "This cannot be undone."
+#~ msgstr "Tega se ne da razveljaviti."
+
+#~ msgid "Empty %s"
+#~ msgstr "Izprazni %s"
+
+#~ msgid "Error emptying %s"
+#~ msgstr "Napaka pri praznjenju %s"
+
+#~ msgid "Undo archive (Ctrl+Z)"
+#~ msgstr "Razveljavi arhiviranje (Ctrl + Z)"
+
+#~ msgid "Undo trash (Ctrl+Z)"
+#~ msgstr "Razveljavi premik v smeti (Ctrl + Z)"
+
+#~ msgid "Undo (Ctrl+Z)"
+#~ msgstr "Razveljavi (Ctrl + Z)"
+
+#~ msgid "Start Geary with hidden main window"
+#~ msgstr "Poženi Geary s skritim glavnim oknom"
+
+#~ msgid "Output debugging information"
+#~ msgstr "Izpis informacij o razhroščevanju"
+
+#~ msgid "Log conversation monitoring"
+#~ msgstr "Beleži nadzorovanje pogovorov"
+
+#~ msgid "Log network deserialization"
+#~ msgstr "Beleži serializacijo mreže"
+
+#~ msgid "Log network activity"
+#~ msgstr "Beleži aktivnost mreže"
+
+#~ msgid "Log IMAP replay queue"
+#~ msgstr "Beleži IMAP vrsto ponovitev"
+
+#~ msgid "Log network serialization"
+#~ msgstr "Beleži serializacijo mreže"
+
+#~ msgid "Log periodic activity"
+#~ msgstr "Beleži periodično aktivnost"
+
+#~ msgid "Log database queries (generates lots of messages)"
+#~ msgstr "Beleži poizvedbe podatkovne baze (ustvari veli sporočil)"
+
+#~ msgid "Log folder normalization"
+#~ msgstr "Beleži normalizacijo map"
+
+#~ msgid "Allow inspection of WebView"
+#~ msgstr "Allow inspection of WebView"
+
+#~ msgid "Revoke all server certificates with TLS warnings"
+#~ msgstr "Odstrani vse strežniške certifikate s TLS opozorili"
+
+#~ msgid "Display program version"
+#~ msgstr "Prikaži različico programa"
+
+#~ msgid "Use %s to open a new composer window"
+#~ msgstr "Uporabi %s za odprtje novega urejevalnika"
+
+#~ msgid "Please report comments, suggestions and bugs to:"
+#~ msgstr "Prosimo prijavite komentarje, predloge in hrošče na:"
+
+#~ msgid "Failed to parse command line options: %s\n"
+#~ msgstr "Razčlenjevanje možnosti ukazne vrstice ni uspelo: %s\n"
+
+#~ msgid "Unrecognized command line option \"%s\"\n"
+#~ msgstr "Neznana možnost ukazne vrstice \"%s\"\n"
+
+#~ msgid "%s - New Messages"
+#~ msgstr "%s - Nova sporočila"
+
+#~ msgid "%s, %d new message total"
+#~ msgid_plural "%s, %d new messages total"
+#~ msgstr[0] "%s, %d novih sporočil"
+#~ msgstr[1] "%s, %d novo sporočilo"
+#~ msgstr[2] "%s, %d novi sporočili"
+#~ msgstr[3] "%s, %d nova sporočila"
+
+#~ msgid ""
+#~ "%s\n"
+#~ "(%d other new message for %s)"
+#~ msgid_plural ""
+#~ "%s\n"
+#~ "(%d other new messages for %s)"
+#~ msgstr[0] ""
+#~ "%s\n"
+#~ "(%d drugih novih sporočil za %s)"
+#~ msgstr[1] ""
+#~ "%s\n"
+#~ "(%d drugo novo sporočilo za %s)"
+#~ msgstr[2] ""
+#~ "%s\n"
+#~ "(%d drugi novi sporočili za %s)"
+#~ msgstr[3] ""
+#~ "%s\n"
+#~ "(%d druga nova sporočila za %s)"
+
+#~ msgid "Me"
+#~ msgstr "Jaz"
+
+#~ msgid "Untrusted Connection: %s"
+#~ msgstr "Nezaupana povezava: %s"
+
+#~ msgid "The identity of the %s mail server at %s:%u could not be verified."
+#~ msgstr "Identiteta poštnega strežnika %s na %s: %u ni mogoče preveriti."
+
+#~ msgid ""
+#~ "Selecting \"Trust This Server\" or \"Always Trust This Server\" may cause "
+#~ "your username and password to be transmitted insecurely."
+#~ msgstr ""
+#~ "Izbor \"Zaupaj temu strežniku\" ali \"Vedno zaupaj temu strežniku\" lahko "
+#~ "povzroči nezaščiten prenos vašega uporabniškega imena in gesla."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Geary not to access this "
+#~ "server."
+#~ msgstr ""
+#~ "Izbor \"Ne zaupaj temu strežniku\" bo Gearyu preprečilo dostop do tega "
+#~ "strežnika."
+
+#~ msgid "Geary will not add or update this email account."
+#~ msgstr "Geary ne bo dodal ali posodobil tega računa."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Geary to stop accessing "
+#~ "this account."
+#~ msgstr ""
+#~ "Izbor \"Ne zaupaj temu strežniku\" bo Gearyu preprečilo dostop do tega "
+#~ "strežnika."
+
+#~ msgid "Geary will exit if you have no other open email accounts."
+#~ msgstr "Geary se bo zaprl če nimate odprtih drugih poštnih računov."
+
+#~ msgid ""
+#~ "Contact your system administrator or email service provider if you have "
+#~ "any question about these issues."
+#~ msgstr ""
+#~ "Kontaktirajte vašega sistemskega administratorja ali ponudnika "
+#~ "elektronske pošte če imate vprašanje v povezavi s temi težavami."
+
+#~ msgid "The server's certificate is not signed by a known authority"
+#~ msgstr "Strežniški certifikat ni podpisan od znanega overovitelja"
+
+#~ msgid "The server's identity does not match the identity in the certificate"
+#~ msgstr "Identiteta strežnika se ne sklada z identiteto v certifikatu"
+
+#~ msgid "The server's certificate has expired"
+#~ msgstr "Strežniški certifikat je potekel"
+
+#~ msgid "The server's certificate has not been activated"
+#~ msgstr "Strežniški certifikat ni bil aktiviran"
+
+#~ msgid "The server's certificate has been revoked and is now invalid"
+#~ msgstr "Strežniški certifikat je bil preklican in več ni veljaven"
+
+#~ msgid "The server's certificate is considered insecure"
+#~ msgstr "Strežniški certifikat ni varen"
+
+#~ msgid "An error has occurred processing the server's certificate"
+#~ msgstr "Prišlo je do napake pri obdelavi strežniškega certifikata"
+
+#~ msgid "Geary requires your email password to continue"
+#~ msgstr "Geary za nadaljevanje potrebuje vaše geslo"
+
+#~ msgid "Additional addresses for %s"
+#~ msgstr "Dodatni naslovi za %s"
+
+#~ msgid "First Last"
+#~ msgstr "Ime Priimek"
+
+#~ msgid "Welcome to Geary."
+#~ msgstr "Dobrodošli v Geary."
+
+#~ msgid "Enter your account information to get started."
+#~ msgstr "Vpišite podatke o svojem računu, da lahko začnete."
+
+#~ msgid "2 weeks back"
+#~ msgstr "2 tedna nazaj"
+
+#~ msgid "1 month back"
+#~ msgstr "1 mesec nazaj"
+
+#~ msgid "3 months back"
+#~ msgstr "3 mesece nazaj"
+
+#~ msgid "6 months back"
+#~ msgstr "6 mesecev nazaj"
+
+#~ msgid "1 year back"
+#~ msgstr "1 leto nazaj"
+
+#~ msgid "2 years back"
+#~ msgstr "2 leti nazaj"
+
+#~ msgid "4 years back"
+#~ msgstr "4 leta nazaj"
+
+#~ msgid "Everything"
+#~ msgstr "Vse"
+
+#~ msgid "Edit"
+#~ msgstr "Uredi"
+
+#~ msgid "Preview"
+#~ msgstr "Predogled"
+
+#~ msgid "Remem_ber passwords"
+#~ msgstr "Zap_omni si gesla"
+
+#~ msgid "Remem_ber password"
+#~ msgstr "Zap_omni si geslo"
+
+#~ msgid "        &#8226; Invalid account nickname.\n"
+#~ msgstr "        &#8226; Napačen vzdevek računa.\n"
+
+#~ msgid "        &#8226; Email address already added to Geary.\n"
+#~ msgstr "        &#8226; Epoštni naslov je že dodan v Geary.\n"
+
+#~ msgid "        &#8226; IMAP connection error.\n"
+#~ msgstr "        &#8226; Napaka pri IMAP povezavi.\n"
+
+#~ msgid "        &#8226; IMAP username or password incorrect.\n"
+#~ msgstr "        &#8226; IMAP uporabniško ime ali geslo je napačno.\n"
+
+#~ msgid "        &#8226; SMTP connection error.\n"
+#~ msgstr "        &#8226; Napaka pri SMTP povezavi.\n"
+
+#~ msgid "        &#8226; SMTP username or password incorrect.\n"
+#~ msgstr "        &#8226; SMTP uporabniško ime ali geslo je napačno.\n"
+
+#~ msgid "        &#8226; Connection error.\n"
+#~ msgstr "        &#8226; Napaka pri povezavi.\n"
+
+#~ msgid "        &#8226; Username or password incorrect.\n"
+#~ msgstr "        &#8226; Uporabniško ime ali geslo je napačno.\n"
+
+#~ msgid "_Add"
+#~ msgstr "_Dodaj"
+
+#~ msgid "%l:%M %P"
+#~ msgstr "%l:%M %P"
+
+#~ msgid "%H:%M"
+#~ msgstr "%H:%M"
+
+#~ msgctxt "Default clock format"
+#~ msgid "%l:%M %P"
+#~ msgstr "%l:%M %P"
+
+#~ msgid "%b %-e"
+#~ msgstr "%-e. %b"
+
+#~ msgid "%x"
+#~ msgstr "%x"
+
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%-e. %B, %Y %-l:%M %P"
+
+#~ msgid "%B %-e, %Y %-H:%M"
+#~ msgstr "%-e. %B, %Y %-H:%M"
+
+#~ msgctxt "Default full date"
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%-e. %B, %Y %-l:%M %P"
+
+#~ msgid "Now"
+#~ msgstr "Zdaj"
+
+#~ msgid "%dm ago"
+#~ msgid_plural "%dm ago"
+#~ msgstr[0] "pred %dm"
+#~ msgstr[1] "pred %dm"
+#~ msgstr[2] "pred %dm"
+#~ msgstr[3] "pred %dm"
+
+#~ msgid "%dh ago"
+#~ msgid_plural "%dh ago"
+#~ msgstr[0] "pred %dh"
+#~ msgstr[1] "pred %dh"
+#~ msgstr[2] "pred %dh"
+#~ msgstr[3] "pred %dh"
+
+#~ msgid "Yesterday"
+#~ msgstr "Včeraj"
+
+#~ msgid "%A"
+#~ msgstr "%A"
+
+#~ msgid "bytes"
+#~ msgstr "bytov"
+
+#~ msgctxt "Abbreviation for terabyte"
+#~ msgid "TB"
+#~ msgstr "TB"
+
+#~ msgctxt "Abbreviation for gigabyte"
+#~ msgid "GB"
+#~ msgstr "GB"
+
+#~ msgctxt "Abbreviation for megabyte"
+#~ msgid "MB"
+#~ msgstr "MB"
+
+#~ msgctxt "Abbreviation for kilobyte"
+#~ msgid "KB"
+#~ msgstr "KB"
+
+#~ msgid "%d message"
+#~ msgid_plural "%d messages"
+#~ msgstr[0] "%d sporočilo"
+#~ msgstr[1] "%d sporočili"
+#~ msgstr[2] "%d sporočila"
+#~ msgstr[3] "%d sporočil"
+
+#~ msgid "%s, %s"
+#~ msgstr "%s, %s"
+
+#~ msgid "Inboxes"
+#~ msgstr "Prejeto"
+
+#~ msgid "Search %s account"
+#~ msgstr "Išči v računu %s"
+
+#~ msgid "%d result"
+#~ msgid_plural "%d results"
+#~ msgstr[0] "%d rezultatov"
+#~ msgstr[1] "%d rezultat"
+#~ msgstr[2] "%d rezultata"
+#~ msgstr[3] "%d rezultati"
+
+#~ msgid "%u conversation selected."
+#~ msgid_plural "%u conversations selected."
+#~ msgstr[0] "%u izbranih pogovorov."
+#~ msgstr[1] "%u izbran pogovor."
+#~ msgstr[2] "%u izbrana pogovora."
+#~ msgstr[3] "%u izbrani pogovori."
+
+#~ msgid "No search results found."
+#~ msgstr "Ni najdenih rezultatov iskanja."
+
+#~ msgid "No conversations in folder."
+#~ msgstr "V mapi ni pogovorov."
+
+#~ msgid "Always Show From Sender"
+#~ msgstr "Vedno pokaži od pošiljatelja"
+
+#~ msgid "Date:"
+#~ msgstr "Datum:"
+
+#~ msgid "%u read message"
+#~ msgid_plural "%u read messages"
+#~ msgstr[0] "%u prebranih sporočil"
+#~ msgstr[1] "%u prebrano sporočilo"
+#~ msgstr[2] "%u prebrani sporočili"
+#~ msgstr[3] "%u prebrana sporočila"
+
+#~ msgid "This message was sent successfully, but could not be saved to %s."
+#~ msgstr ""
+#~ "Sporočilo je bilo poslano uspešno, a ga ni bilo mogoče shraniti v %s."
+
+#~ msgid "_Copy"
+#~ msgstr "_Kopiraj"
+
+#~ msgid "Copy _Email Address"
+#~ msgstr "Kopiraj _epoštni naslov"
+
+#~ msgid "Copy _Link"
+#~ msgstr "Kopiraj _povezavo"
+
+#~ msgid "Select _Message"
+#~ msgstr "Izberi _sporočilo"
+
+#~ msgid "Select _All"
+#~ msgstr "Izberi _vse"
+
+#~ msgid "_Inspect"
+#~ msgstr "_Preveri"
+
+#~ msgid "This link appears to go to"
+#~ msgstr "Povezava bi naj kazala na"
+
+#~ msgid "but actually goes to"
+#~ msgstr "ampak v resnici kaže na"
+
+#~ msgid " (Invalid?)"
+#~ msgstr " (Neveljavno?)"
+
+#~ msgid "_Save Image As..."
+#~ msgstr "_Shrani sliko kot..."
+
+#~ msgid "_Save As..."
+#~ msgstr "_Shrani kot..."
+
+#~ msgid "Save All A_ttachments..."
+#~ msgstr "Shrani vse _priponke…"
+
+#~ msgid "Save A_ttachment..."
+#~ msgid_plural "Save All A_ttachments..."
+#~ msgstr[0] "Shrani _priponko…"
+#~ msgstr[1] "Shrani obe _priponki…"
+#~ msgstr[2] "Shrani vse _priponke…"
+#~ msgstr[3] "Shrani vse _priponke…"
+
+#~ msgid "Reply to _All"
+#~ msgstr "Odgovori _vsem"
+
+#~ msgid "_Mark as Read"
+#~ msgstr "_Označi kot prebrano"
+
+#~ msgid "_Mark as Unread"
+#~ msgstr "_Označi kot neprebrano"
+
+#~ msgid "Mark Unread From _Here"
+#~ msgstr "Označi kot neprebrano od _tukaj"
+
+#~ msgid "_View Source"
+#~ msgstr "_Pokaži izvorno kodo"
+
+#~ msgid "Failed to open default text editor."
+#~ msgstr "Odpiranje privzetega urejevalnika besedila ni uspelo."
+
+#~ msgid "%s - Conversation Inspector"
+#~ msgstr "%s - Preverjanje pogovorov"
+
+#~ msgid "Saved"
+#~ msgstr "Shranjeno"
+
+#~ msgid "Saving"
+#~ msgstr "Shranjevanje"
+
+#~ msgid "Error saving"
+#~ msgstr "Napaka pri shranjevanju"
+
+#~ msgid "Press Backspace to delete quote"
+#~ msgstr "Pritisnite Backspace za izbris citata"
+
+#~ msgid ""
+#~ "attach|attaching|attaches|attachment|attachments|attached|enclose|"
+#~ "enclosed|enclosing|encloses|enclosure|enclosures"
+#~ msgstr ""
+#~ "pripni|pripeta|dodana|dodano|dodan|prilagam|priloženo|priložena|priložen|"
+#~ "priponka"
+
+#~ msgid "Do you want to discard this message?"
+#~ msgstr "Želite zavreči to sporočilo?"
+
+#~ msgid "Send message with an empty subject and body?"
+#~ msgstr "Želite poslati sporočilo brez zadeve in vsebine?"
+
+#~ msgid "Send message without an attachment?"
+#~ msgstr "Želite poslati sporočilo brez priponke?"
+
+#~ msgid "Cannot add attachment"
+#~ msgstr "Priponke ni možno dodati"
+
+#~ msgid "\"%s\" could not be found."
+#~ msgstr "\"%s\" ni bilo mogoče najti."
+
+#~ msgid "\"%s\" is a folder."
+#~ msgstr "\"%s\" je mapa."
+
+#~ msgid "\"%s\" is an empty file."
+#~ msgstr "\"%s\" je prazna datoteka."
+
+#~ msgid "\"%s\" could not be opened for reading."
+#~ msgstr "\"%s\" ni bilo mogoče odpreti za branje."
+
+#~ msgid "\"%s\" already attached for delivery."
+#~ msgstr "\"%s\" že pripeto za dostavo."
+
+#~ msgid "%s (%s)"
+#~ msgstr "%s (%s)"
+
+#~ msgid "To: "
+#~ msgstr "Za: "
+
+#~ msgid "Cc: "
+#~ msgstr "Kp: "
+
+#~ msgid "Bcc: "
+#~ msgstr "Skp: "
+
+#~ msgid "Reply-To: "
+#~ msgstr "Odgovor-Za: "
+
+#~ msgid "Select Color"
+#~ msgstr "Izberi barvo"
+
+#~ msgid "%1$s via %2$s"
+#~ msgstr "%1$s preko %2$s"
+
+#~ msgid "_From:"
+#~ msgstr "_Od:"
+
+#~ msgid "%s (%d)"
+#~ msgstr "%s (%s)"
+
+#~ msgid "Sending..."
+#~ msgstr "Pošiljanje..."
+
+#~ msgid "%i match"
+#~ msgid_plural "%i matches"
+#~ msgstr[0] "%i zadetkov"
+#~ msgstr[1] "%i zadetek"
+#~ msgstr[2] "%i zadetka"
+#~ msgstr[3] "%i zadetki"
+
+#~ msgid "%i match (wrapped)"
+#~ msgid_plural "%i matches (wrapped)"
+#~ msgstr[0] "%i zadetkov"
+#~ msgstr[1] "%i zadetek"
+#~ msgstr[2] "%i zadetka"
+#~ msgstr[3] "%i zadetki"
+
+#~ msgid "not found"
+#~ msgstr "Ni zadetkov"
+
+#~ msgid "_OK"
+#~ msgstr "_V redu"
+
+#~ msgid "_Cancel"
+#~ msgstr "_Prekliči"
+
+#~ msgid "_Discard"
+#~ msgstr "_Zavrži"
+
+#~ msgid "_Open"
+#~ msgstr "_Odpri"
+
+#~ msgid "_Print..."
+#~ msgstr "_Tiskaj..."
+
+#~ msgid "_Remove"
+#~ msgstr "_Odstrani"
+
+#~ msgid "_Keep"
+#~ msgstr "_Obdrži"
+
+#~ msgid "Search all mail in account for keywords (Ctrl+S)"
+#~ msgstr "Preišči vso pošto v računu za ključne besede (Ctrl+S)"
+
+#~ msgid "Indexing %s account"
+#~ msgstr "Indeksiranje računa %s"
+
+#~ msgid "Send by Email"
+#~ msgstr "Pošlji po e-pošti"
+
+#~ msgid "Send files using Mail"
+#~ msgstr "Pošlji datoteke preko e-pošte"
+
+#~ msgid "Welcome to Mail"
+#~ msgstr "Dobrodošli v Pošti"
+
+#~ msgid "More options"
+#~ msgstr "Več možnosti"
+
+#~ msgid "Search %s"
+#~ msgstr "Išči %s"
+
+#~ msgid "Reading"
+#~ msgstr "Branje"
+
+#~ msgid "Automatically select next message:"
+#~ msgstr "Samodejno izberi naslednje sporočilo:"
+
+#~ msgid "Conversation previews:"
+#~ msgstr "Predogled pogovorov:"
+
+#~ msgid "Three-pane layout:"
+#~ msgstr "Postavitev s tremi stolpci:"
+
+#~ msgid "Composer"
+#~ msgstr "Urejevalnik"
+
+#~ msgid "Spell check:"
+#~ msgstr "Črkovanje:"
+
+#~ msgid "Notifications"
+#~ msgstr "Obvestila"
+
+#~ msgid "Always watch for new mail:"
+#~ msgstr "Vedno čakaj na novo pošto:"
+
+#~ msgid "Delete Conversation (Shift+Delete)"
+#~ msgid_plural "Delete Conversations (Shift+Delete)"
+#~ msgstr[0] "Izbriši pogovore (Shift+Delete)"
+#~ msgstr[1] "Izbriši pogovor (Shift+Delete)"
+#~ msgstr[2] "Izbriši pogovora (Shift+Delete)"
+#~ msgstr[3] "Izbriši pogovore (Shift+Delete)"
+
+#~ msgid "Delete Conversations (Shift+Delete)"
+#~ msgstr "Izbriši pogovore (Shift+Delete)"
+
+#~ msgid ""
+#~ "<span weight=\"bold\" size=\"larger\">Are you sure you want to remove "
+#~ "this account?</span> "
+#~ msgstr ""
+#~ "<span weight=\"bold\" size=\"larger\">Ali ste prepričani da želite "
+#~ "odstraniti ta račun?</span> "
+
+#~ msgid ""
+#~ "All email associated with this account will be removed from your "
+#~ "computer. This will not affect email on the server."
+#~ msgstr ""
+#~ "Vsa pošta s tega računa bo odstranjena z vašega računalnika. Pošta na "
+#~ "strežniku ne bo dotaknjena."
+
+#~ msgid "Nickname:"
+#~ msgstr "Vzdevek:"
+
+#~ msgid "Find"
+#~ msgstr "Iskanje"
+
+#~ msgid "Previous Result"
+#~ msgstr "Prejšnji rezultat"
+
+#~ msgid "Next result"
+#~ msgstr "Naslednji rezultat"
+
+#~ msgid "_Case sensitive"
+#~ msgstr "_Upoštevaj velikost črk"
+
+#~ msgid "label"
+#~ msgstr "oznaka"
+
+#~ msgid "Geary update in progress…"
+#~ msgstr "Geary se posodablja…"
+
+#~ msgid "Remove email address"
+#~ msgstr "Odstrani poštni naslov"
+
+#~ msgid ""
+#~ "Some email services require additional addresses be configured on the "
+#~ "server.  Contact your email provider for more information."
+#~ msgstr ""
+#~ "Nekatere poštne storitve zahtevajo nastavitev dodatnih naslovov na "
+#~ "strežniku. Kontaktirajte vašega ponudnika za več informacij."
+
+#~ msgid "_Update"
+#~ msgstr "Poso_dobi"
+
+#~ msgid "Please wait while Geary validates your account."
+#~ msgstr "Prosimo počakajte da Geary potrdi vaš račun."
+
+#~ msgid "_Redo"
+#~ msgstr "_Uveljavi"
+
+#~ msgid "Cu_t"
+#~ msgstr "I_zreži"
+
+#~ msgid "_Paste"
+#~ msgstr "_Prilepi"
+
+#~ msgid "_Left"
+#~ msgstr "_Levo"
+
+#~ msgid "_Right"
+#~ msgstr "_Desno"
+
+#~ msgid "_Center"
+#~ msgstr "_Sredinsko"
+
+#~ msgid "_Justify"
+#~ msgstr "_Obojestransko"
+
+#~ msgid "Link (Ctrl+L)"
+#~ msgstr "Povezava (Ctrl + L)"
+
+#~ msgid "C_olor"
+#~ msgstr "_Barva"
+
+#~ msgid "Quote text  (Ctrl+])"
+#~ msgstr "Citiraj tekst (Ctrl+J)"
+
+#~ msgctxt "Clipboard paste with rich text"
+#~ msgid "Paste _With Formatting"
+#~ msgstr "Prilepi z oblikovanje_m"
+
+#~ msgid "Bold (Ctrl+B)"
+#~ msgstr "Krepko (Ctrl+B)"
+
+#~ msgid "Italic (Ctrl+I)"
+#~ msgstr "Ležeče (Ctrl + I)"
+
+#~ msgid "Show Extended Fields"
+#~ msgstr "Prikaži razširjena polja"
+
+#~ msgctxt "Label"
+#~ msgid "Close and Save"
+#~ msgstr "Shrani in zapri"
+
+#~ msgctxt "Short Label"
+#~ msgid "Close and Save"
+#~ msgstr "Shrani in zapri"
+
+#~ msgctxt "Tooltip"
+#~ msgid "Close and Save"
+#~ msgstr "Shrani in zapri"
+
+#~ msgctxt "Label"
+#~ msgid "Close and Discard"
+#~ msgstr "Zavrzi in zapri"
+
+#~ msgctxt "Short Label"
+#~ msgid "Close and Discard"
+#~ msgstr "Zavrzi in zapri"
+
+#~ msgctxt "Tooltip"
+#~ msgid "Close and Discard"
+#~ msgstr "Zavrzi in zapri"
+
+#~ msgid "Lar_ge"
+#~ msgstr "_Veliko"
+
+#~ msgid "Large"
+#~ msgstr "Veliko"
+
+#~ msgid "_Medium"
+#~ msgstr "_Srednje"
+
+#~ msgid "Medium"
+#~ msgstr "Srednje"
+
+#~ msgid "_Small"
+#~ msgstr "Majh_no"
+
+#~ msgid "Small"
+#~ msgstr "Majhno"
+
+#~ msgid "S_ans Serif"
+#~ msgstr "Sans Serif"
+
+#~ msgid "Sans Serif"
+#~ msgstr "Sans Serif"
+
+#~ msgid "S_erif"
+#~ msgstr "Serif"
+
+#~ msgid "Serif"
+#~ msgstr "Serif"
+
+#~ msgid "_Fixed Width"
+#~ msgstr "Fiksna širina"
+
+#~ msgid "Fixed Width"
+#~ msgstr "Fiksna širina"
+
+#~ msgid "Detach"
+#~ msgstr "Odpni"
+
+#~ msgid "Detach (Ctrl+D)"
+#~ msgstr "Odpni (Ctrl + D)"
+
+#~ msgid "_Send"
+#~ msgstr "_Pošlji"
+
+#~ msgid "Send (Ctrl+Enter)"
+#~ msgstr "Pošlji (Ctrl + Enter)"
+
+#~ msgid "_Attach File"
+#~ msgstr "Priloži _datoteko"
+
+#~ msgid "Attach File"
+#~ msgstr "Priloži datoteko"
+
+#~ msgid "_Include Original Attachments"
+#~ msgstr "V_ključi izvorne priponke"
+
+#~ msgid "Include Original Attachments"
+#~ msgstr "Vključi izvorne priponke"
+
+#~ msgid "Application Menu"
+#~ msgstr "Meni s programi"
+
+#~ msgid "_To"
+#~ msgstr "_Za"
+
+#~ msgid "_Cc"
+#~ msgstr "K_p"
+
+#~ msgid "_Subject"
+#~ msgstr "Zad_eva"
+
+#~ msgid "_Bcc"
+#~ msgstr "_Skp"
+
+#~ msgid "_Reply-To"
+#~ msgstr "_Odgovor-Za"
+
+#~ msgid "From"
+#~ msgstr "Od"
+
+#~ msgid "Drop files here"
+#~ msgstr "Sem potegnite datoteke"
+
+#~ msgid "To add them as attachments"
+#~ msgstr "da jih dodate kot priponke"
+
+#~ msgid "<span weight=\"bold\" size=\"larger\">Cannot remove account</span> "
+#~ msgstr ""
+#~ "<span weight=\"bold\" size=\"larger\">Ni bilo mogoče odstraniti računa</"
+#~ "span> "
+
+#~ msgid ""
+#~ "A composer window associated with this account is currently open. Send or "
+#~ "discard the message and try again."
+#~ msgstr ""
+#~ "Urejevalnik povezan s tem računom je odprt. Pošljite ali zavrzite "
+#~ "sporočilo in poskusite znova."
+
+#~ msgid "Addi_tional email addresses…"
+#~ msgstr "Dodat_ni poštni naslovi…"
+
+#~ msgid "_Save sent mail"
+#~ msgstr "_Shrani poslano sporočilo"
+
+#~ msgid "Password"
+#~ msgstr "Geslo"
+
+#~ msgid "_Password:"
+#~ msgstr "_Geslo:"
+
+#~ msgid "Work, Home, etc."
+#~ msgstr "Služba, doma, itd."
+
+#~ msgid "N_ickname:"
+#~ msgstr "Vzdeve_k:"
+
+#~ msgid "S_ervice:"
+#~ msgstr "S_toritev:"
+
+#~ msgid "IMAP settings"
+#~ msgstr "Nastavitve IMAP"
+
+#~ msgid "Se_rver:"
+#~ msgstr "_Strežnik:"
+
+#~ msgid "P_ort"
+#~ msgstr "Vrata:"
+
+#~ msgid "Ser_ver:"
+#~ msgstr "_Strežnik:"
+
+#~ msgid "Por_t"
+#~ msgstr "_Vrata:"
+
+#~ msgid "SMTP settings"
+#~ msgstr "Nastavitve SMTP"
+
+#~ msgid "User_name:"
+#~ msgstr "_Uporabniško ime:"
+
+#~ msgid "Pass_word:"
+#~ msgstr "Ges_lo:"
+
+#~ msgid "SMTP username"
+#~ msgstr "Uporabniško ime za SMTP"
+
+#~ msgid "SMTP password"
+#~ msgstr "Geslo za SMTP"
+
+#~ msgid "_Username:"
+#~ msgstr "_Uporabniško ime:"
+
+#~ msgid "IMAP username"
+#~ msgstr "Uporabniško ime za IMAP"
+
+#~ msgid "IMAP password"
+#~ msgstr "Geslo za IMAP"
+
+#~ msgid "Encr_yption:"
+#~ msgstr "Enkripcija:"
+
+#~ msgid "Encrypt_ion:"
+#~ msgstr "Enkr_ipcija:"
+
+#~ msgid "SSL/TLS"
+#~ msgstr "SSL/TLS"
+
+#~ msgid "STARTTLS"
+#~ msgstr "STARTTLS"
+
+#~ msgid "No authentication re_quired"
+#~ msgstr "Avtentikacija ni potrebna"
+
+#~ msgid "Use IMAP cre_dentials"
+#~ msgstr "Uporabi podatke od IMAP"
+
+#~ msgid "Storage"
+#~ msgstr "Shramba"
+
+#~ msgid "_Download mail"
+#~ msgstr "_Prene_si pošto"
+
+#~ msgid "Save dra_fts on server"
+#~ msgstr "Shrani os_nutke na strežnik"
+
+#~ msgid "Si_gn emails (HTML allowed):"
+#~ msgstr "Podpiši sporočila (HTML je dovoljen):"
+
+#~ msgid "Add account"
+#~ msgstr "Dodaj račun"
+
+#~ msgid "Edit account"
+#~ msgstr "Uredi račun"
+
+#~ msgid "Remove account"
+#~ msgstr "Odstrani račun"
+
+#~ msgid "Untrusted Connection"
+#~ msgstr "Nezaupana povezava"
+
+#~ msgid "_Always Trust This Server"
+#~ msgstr "_Vedno zaupaj temu strežniku"
+
+#~ msgid "_Trust This Server"
+#~ msgstr "_Zaupaj temu strežniku"
+
+#~ msgid "_Don't Trust This Server"
+#~ msgstr "_Ne zaupaj temu strežniku"
+
+#~ msgid "SMTP Credentials"
+#~ msgstr "Poverilnice za SMTP"
+
+#~ msgid "Username"
+#~ msgstr "Uporabniško ime"
+
+#~ msgid "_Remember password"
+#~ msgstr "Zapomni si _geslo"
+
+#~ msgid "_Authenticate"
+#~ msgstr "_Overi"
+
+#~ msgid "© 2011-2015 Yorba Foundation, © 2016 elementary LLC."
+#~ msgstr "© 2011-2015 Yorba Foundation, © 2016 elementary LLC."
+
+#~ msgid ""
+#~ "Mail encountered an error sending an email.  If the problem persists, "
+#~ "please manually delete the email from your Outbox folder."
+#~ msgstr ""
+#~ "Pri pošiljanju sporočila je prišlo do napake. Če težava ne izgine, "
+#~ "prosimo izbrišite sporočilo iz odpremnega predala."
+
+#~ msgid ""
+#~ "Mail encountered an error saving a sent message to Sent Mail.  The "
+#~ "message will stay in your Outbox folder until you delete it."
+#~ msgstr ""
+#~ "Pri shranjevanju sporočila v poslano pošto je prišlo do napake. Sporočilo "
+#~ "bo ostalo v odpremnem predalu dokler ga ne izbrišete."
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to corruption of the database file in this directory:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Mail can rebuild the database and re-synchronize with the server or "
+#~ "exit.\n"
+#~ "\n"
+#~ "Rebuilding the database will destroy all local email and its attachments. "
+#~ "<b>The mail on the your server will not be affected.</b>"
+#~ msgstr ""
+#~ "Prišlo je do napake pri odpiranju lokalne podatkovne baze za ta račun. To "
+#~ "je verjetno zaradi okvare podatkovne baze v mapi:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Geary lahko ponovno izgradi bazo in jo sinhronizira s strežnikom ali pa "
+#~ "se zapre.\n"
+#~ "\n"
+#~ "Izgradnja baze bo uničila vso pošto in priponke shranjene na tem "
+#~ "računalniku. <b>Pošta na strežniku bo ostala nedotaknjena.</b>"
+
+#~ msgid ""
+#~ "The version number of the local mail database is formatted for a newer "
+#~ "version of Mail. Unfortunately, the database cannot be \"rolled back\" to "
+#~ "work with this version of Mail.\n"
+#~ "\n"
+#~ "Please install the latest version of Mail and try again."
+#~ msgstr ""
+#~ "Lokalna podatkovna baza s pošto je bila ustvarjena z novejšo verzijo "
+#~ "Gearya. Na žalost te baze ta verzija Gearya ne more odpreti.\n"
+#~ "\n"
+#~ "Prosimo namestite novo različico in poskusite znova."
+
+#~ msgid ""
+#~ "There was an error opening the local account. This is probably due to "
+#~ "connectivity issues.\n"
+#~ "\n"
+#~ "Please check your network connection and restart Mail."
+#~ msgstr ""
+#~ "Prišlo je do napake pri odpiranju lokalnega računa. Vzrok je verjetno v "
+#~ "težavah s povezljivostjo.\n"
+#~ "\n"
+#~ "Prosimo preverite vašo internetno povezavo in ponovno poženite Pošto."
+
+#~ msgid "This removes the email from Mail and your email server."
+#~ msgstr "To odstrani sporočilo s Pošte in vašega poštnega strežnika."
+
+#~ msgid "        &#8226; Email address already added to Mail.\n"
+#~ msgstr "        &#8226; Poštni naslov je že bil dodan.\n"
+
+#~ msgid "Mail requires your email password to continue"
+#~ msgstr "Potrebno je vaše poštno geslo za nadaljevanje"
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Mail not to access this "
+#~ "server."
+#~ msgstr ""
+#~ "Izbira \"Ne zaupaj temu strežniku\" bo preprečila Pošti dostop do tega "
+#~ "strežnika."
+
+#~ msgid "Mail will not add or update this email account."
+#~ msgstr "Pošta ne bo dodala ali posodabljala tega poštnega računa."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Mail to stop accessing "
+#~ "this account."
+#~ msgstr ""
+#~ "Izbira \"Ne zaupaj temu strežniku\" po preprečila Pošti dostop do tega "
+#~ "računa."
+
+#~ msgid "Mail will exit if you have no other open email accounts."
+#~ msgstr "Pošta se bo zaprla če nimate drugih odprtih poštnih računov."
+
+#~ msgid "Please wait while Mail validates your account."
+#~ msgstr "Prosimo počakajte da Pošta potrdi vaš račun."
+
+#~ msgid "Mail update in progress…"
+#~ msgstr "Posodabljanje pošte v teku…"
+
+#~ msgid ""
+#~ "2011-2015 Yorba Foundation\n"
+#~ "© 2016 elementary LLC."
+#~ msgstr ""
+#~ "2011-2015 Yorba Foundation\n"
+#~ "© 2016 elementary LLC."
+
+#~ msgid "Show About dialog"
+#~ msgstr "Prikaži informacije o programu"
+
+#~ msgid "Save Attachment…"
+#~ msgstr "Shrani priponko…"
+
+#~ msgid "Save All Attachments…"
+#~ msgstr "Shrani vse priponke…"
+
+#~ msgid "View Source"
+#~ msgstr "Pokaži izvorno kodo"
+
+#~ msgid "View message"
+#~ msgstr "Ogled sporočila"
+
+#~ msgid "Copy Email Address"
+#~ msgstr "Kopiraj e-poštni naslov"
+
+#~ msgid "Hide message"
+#~ msgstr "Skrij sporočilo"
+
+#~ msgid "Case sensitive"
+#~ msgstr "Razlikuj velike in male črke"
+
+#~ msgid "%u match"
+#~ msgid_plural "%u matches"
+#~ msgstr[0] "%u zadetkov"
+#~ msgstr[1] "%u zadetek"
+#~ msgstr[2] "%u zadetka"
+#~ msgstr[3] "%u zadetki"
+
+#~ msgid "no-reply;no_reply;noreply;do-not-reply;do_not_reply;donotreply"
+#~ msgstr ""
+#~ "no-reply;no_reply;noreply;do-not-reply;do_not_reply;donotreply|ne-"
+#~ "odgovrajaj|neodgovarjaj"
+
+#~ msgid "Include original attachments"
+#~ msgstr "Vključi izvorne priponke"
+
+#~ msgid "Don't ask me again"
+#~ msgstr "Ne sprašuj me več"
+
+#~ msgid "Are you sure you want to remove this account?"
+#~ msgstr "Ali ste prepričani da želite odstraniti ta račun?"
+
+#~ msgid "Username:"
+#~ msgstr "Uporabniško ime:"
+
+#~ msgid "Password:"
+#~ msgstr "Geslo:"
+
+#~ msgid "SMTP Credentials:"
+#~ msgstr "SMTP poverilnice:"
+
+#~ msgid "Remember password"
+#~ msgstr "Zapomni si geslo"
+
+#~ msgid "Authenticate"
+#~ msgstr "Overi"
+
+#~ msgid "Strikethrough (Ctrl+%)"
+#~ msgstr "Prečrtaj (Ctrl+%)"
+
+#~ msgid "Link (Ctrl+K)"
+#~ msgstr "Povezava (Ctrl+K)"
+
+#~ msgid "Forward (Ctrl+Shift+F)"
+#~ msgstr "Posreduj (Ctrl+Shift+F)"

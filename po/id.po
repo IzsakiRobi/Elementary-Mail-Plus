@@ -1,0 +1,1570 @@
+# Indonesian translation of geary
+# Copyright 2012-2013 Yorba Foundation
+# This file is distributed under the GNU LGPL, version 2.1.
+#
+# Translators:
+# Andika Triwidada <andika@gmail.com>, 2012-2014
+# elementary Indonesia <elementaryindo@gmail.com>, 2012, 2013
+# Mohamad Hasan Al Banna, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: geary master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-08 16:46+0000\n"
+"PO-Revision-Date: 2023-06-04 16:07+0000\n"
+"Last-Translator: Faisal Rachmadin "
+"<frachmadin@users.noreply.l10n.elementary.io>\n"
+"Language-Team: Indonesian <https://l10n.elementary.io/projects/mail/mail/id/"
+">\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.17\n"
+"X-Launchpad-Export-Date: 2017-03-09 05:59+0000\n"
+
+#: src/Application.vala:145
+msgid "Unable to open System Settings"
+msgstr "Tidak dapat membuka Pengaturan Sistem"
+
+#: src/Application.vala:146
+msgid ""
+"Open System Settings manually or install Evolution to set up online accounts."
+msgstr ""
+"Buka Pengaturan Sistem secara manual atau pasang Evolution untuk menyiapkan "
+"akun daring."
+
+#: src/Application.vala:217
+msgid ""
+"Mail will automatically start when this device turns on and run when its "
+"window is closed so that it can send notifications when new mail arrives."
+msgstr ""
+
+#: src/Composer.vala:94 src/MessageList/MessageListItem.vala:102
+msgid "From:"
+msgstr "Dari:"
+
+#: src/Composer.vala:114 src/MessageList/MessageListItem.vala:108
+msgid "To:"
+msgstr "Ke:"
+
+#: src/Composer.vala:120
+msgid "Cc"
+msgstr "Cc"
+
+#: src/Composer.vala:122
+msgid "Bcc"
+msgstr "Bcc"
+
+#: src/Composer.vala:133 src/MessageList/MessageListItem.vala:148
+msgid "Cc:"
+msgstr "Cc:"
+
+#: src/Composer.vala:152
+msgid "Bcc:"
+msgstr "Bcc:"
+
+#: src/Composer.vala:171 src/MessageList/MessageListItem.vala:114
+msgid "Subject:"
+msgstr "Perihal:"
+
+#: src/Composer.vala:205
+msgid "Insert Image"
+msgstr "Masukkan Gambar"
+
+#: src/Composer.vala:232
+msgid "Delete draft"
+msgstr "Hapus konsep"
+
+#: src/Composer.vala:240
+msgid "Attach file"
+msgstr "Lampirkan berkas"
+
+#: src/Composer.vala:251
+#, fuzzy
+#| msgid "Insert Link"
+msgid "Insert Signature…"
+msgstr "Masukkan Tautan"
+
+#: src/Composer.vala:256
+msgid "Send"
+msgstr "Kirim"
+
+#: src/Composer.vala:299
+msgid "New Message"
+msgstr "Pesan Baru"
+
+#: src/Composer.vala:445
+msgid "Choose a file"
+msgstr "Pilih berkas"
+
+#: src/Composer.vala:448
+msgid "Attach"
+msgstr "_Lampirkan"
+
+#: src/Composer.vala:449 src/Composer.vala:472 src/Composer.vala:763
+#: src/Dialogs/InsertLinkDialog.vala:66
+#: src/MessageList/AttachmentButton.vala:144
+msgid "Cancel"
+msgstr "Batal"
+
+#: src/Composer.vala:464
+#, fuzzy
+#| msgid "Show Images"
+msgid "Images"
+msgstr "Tampilkan Gambar"
+
+#: src/Composer.vala:468
+#, fuzzy
+#| msgid "Choose a file"
+msgid "Choose an image"
+msgstr "Pilih berkas"
+
+#: src/Composer.vala:471
+#, fuzzy
+#| msgid "Insert Link"
+msgid "Insert"
+msgstr "Masukkan Tautan"
+
+#: src/Composer.vala:500
+#, fuzzy
+#| msgid "Unable to send message"
+msgid "Unable to insert image"
+msgstr "Tidak dapat mengirim pesan"
+
+#: src/Composer.vala:501
+#, fuzzy
+#| msgid "There was an unexpected error while trying to connect to the server."
+msgid "There was an unexpected error while trying to insert the image."
+msgstr "Terjadi kesalahan tak terduga saat mencoba menyambung ke server."
+
+#: src/Composer.vala:665
+msgid "%a, %b %-e, %Y at %-l:%M %p"
+msgstr "%a, %-e %b %Y pada %-H:%M"
+
+#: src/Composer.vala:695
+#, c-format
+msgid "On %1$s, %2$s wrote:"
+msgstr "Pada %1$s, %2$s menulis:"
+
+#: src/Composer.vala:699
+msgid "---------- Forwarded message ----------"
+msgstr "---------- Pesan yang diteruskan --------"
+
+#: src/Composer.vala:701
+#, c-format
+msgid "From: %s<br/>"
+msgstr "Dari: %s<br/>"
+
+#: src/Composer.vala:702
+#, c-format
+msgid "Subject: %s<br/>"
+msgstr "Perihal: %s<br/>"
+
+#: src/Composer.vala:703
+#, c-format
+msgid "Date: %s<br/>"
+msgstr "Tanggal: %s<br/>"
+
+#: src/Composer.vala:704
+#, c-format
+msgid "To: %s<br/>"
+msgstr "Kepada: %s<br/>"
+
+#: src/Composer.vala:706
+#, c-format
+msgid "Cc: %s<br/>"
+msgstr "Cc: %s<br/>"
+
+#: src/Composer.vala:754
+msgid "Permanently delete this draft?"
+msgstr "Hapus konsep ini secara permanen?"
+
+#: src/Composer.vala:755
+msgid ""
+"You cannot undo this action, nor recover your draft once it has been deleted."
+msgstr ""
+"Anda tidak dapat mengurungkan tindakan ini, atau memulihkan konsep Anda "
+"setelah dihapus."
+
+#: src/Composer.vala:765
+msgid "Delete Draft"
+msgstr "Hapus Konsep"
+
+#: src/Composer.vala:789
+msgid "Send without subject?"
+msgstr "Kirim tanpa subjek?"
+
+#: src/Composer.vala:790
+msgid ""
+"This message has an empty subject field. The recipient may be unable to "
+"infer its scope or importance."
+msgstr ""
+"Pesan ini memiliki bidang subjek kosong. Penerima mungkin tidak dapat "
+"menyimpulkan ruang lingkup atau kepentingannya."
+
+#: src/Composer.vala:797
+msgid "Don't Send"
+msgstr "Jangan Kirim"
+
+#: src/Composer.vala:799
+msgid "Send Anyway"
+msgstr "Kirim Saja"
+
+#: src/Composer.vala:830
+msgid "Sent message was not saved"
+msgstr "Pesan terkirim tidak disimpan"
+
+#: src/Composer.vala:831
+msgid ""
+"The message was sent, however a copy was not saved to the Sent message "
+"folder."
+msgstr ""
+"Pesan telah dikirim, namun salinan tidak disimpan ke folder pesan Terkirim."
+
+#: src/Composer.vala:846
+msgid "Unable to send message"
+msgstr "Tidak dapat mengirim pesan"
+
+#: src/Composer.vala:847
+msgid "There was an unexpected error while sending your message."
+msgstr "Terjadi kesalahan tak terduga saat mengirim pesan."
+
+#: src/Composer.vala:945 src/FolderList/FolderList.vala:55
+msgid "Edit Signatures…"
+msgstr ""
+
+#: src/Composer.vala:949
+msgid "None"
+msgstr "Nihil"
+
+#: src/Composer.vala:1140
+msgid "Unable to save draft"
+msgstr "Tidak dapat menyimpan konsep"
+
+#: src/Composer.vala:1141
+msgid "There was an unexpected error while saving your draft."
+msgstr "Terjadi kesalahan tak terduga saat menyimpan konsep Anda."
+
+#: src/EditorToolbar.vala:55
+msgid "Bold"
+msgstr "Tebal"
+
+#: src/EditorToolbar.vala:62
+msgid "Italic"
+msgstr "Miring"
+
+#: src/EditorToolbar.vala:73
+msgid "Underline"
+msgstr "Garis bawah"
+
+#: src/EditorToolbar.vala:85
+msgid "Strikethrough"
+msgstr "Dicoret"
+
+#: src/EditorToolbar.vala:100
+msgid "Remove formatting"
+msgstr "Hapus pemformatan"
+
+#: src/EditorToolbar.vala:108 src/Dialogs/InsertLinkDialog.vala:68
+msgid "Insert Link"
+msgstr "Masukkan Tautan"
+
+#: src/InboxMonitor.vala:158 src/InboxMonitor.vala:170
+#, c-format
+msgid "%s to %s"
+msgstr "%s ke %s"
+
+#. /TRANSLATORS: The %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#: src/InboxMonitor.vala:165
+#, c-format
+msgid "%u new message"
+msgid_plural "%u new messages"
+msgstr[0] "%u pesan baru"
+
+#. /TRANSLATORS: The first %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#. /The next %s represents the number of senders
+#: src/InboxMonitor.vala:177
+#, c-format
+msgid "%s from %u sender"
+msgid_plural "%s from %u senders"
+msgstr[0] "%s dari %u pengirim"
+
+#: src/MainWindow.vala:80
+msgid "Mail"
+msgstr "Surat"
+
+#: src/MainWindow.vala:123 src/Dialogs/AliasDialog/AliasDialog.vala:96
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:172
+msgid "Undo"
+msgstr "Batalkan"
+
+#: src/MainWindow.vala:281
+msgid "Message Archived"
+msgid_plural "Messages Archived"
+msgstr[0] "Pesan Diarsipkan"
+
+#: src/MainWindow.vala:285
+#, fuzzy
+#| msgid "Unstar message"
+msgid "Couldn't archive message"
+msgstr "Batal bintangkan pesan"
+
+#: src/MainWindow.vala:298
+msgid "Message Moved"
+msgid_plural "Messages Moved"
+msgstr[0] "Pesan Dipindahkan"
+
+#: src/MainWindow.vala:302
+#, fuzzy
+#| msgid "Failed to move messages: %s"
+msgid "Couldn't move message"
+msgstr "Gagal memindahkan pesan: %s"
+
+#: src/MainWindow.vala:315
+msgid "Message Deleted"
+msgid_plural "Messages Deleted"
+msgstr[0] "Pesan Dihapus"
+
+#: src/MainWindow.vala:319
+msgid "Couldn't delete message"
+msgstr ""
+
+#: src/WelcomeView.vala:45
+msgid "Connect an Account"
+msgstr "Hubungkan Akun"
+
+#: src/WelcomeView.vala:52
+msgid "Mail uses email accounts configured in System Settings."
+msgstr "Surat menggunakan akun surel yang dikonfigurasi di Pengaturan Sistem."
+
+#: src/WelcomeView.vala:59
+msgid "Online Accounts…"
+msgstr "Akun Daring…"
+
+#: src/Backend/Account.vala:48
+msgid "Unable to connect"
+msgstr "Tidak dapat menyambungkan"
+
+#: src/Backend/Account.vala:49
+msgid "There was an unexpected error while trying to connect to the server."
+msgstr "Terjadi kesalahan tak terduga saat mencoba menyambung ke server."
+
+#: src/Backend/MoveOperation.vala:65
+#, c-format
+msgid "Moving messages… (%u remaining)"
+msgstr "Memindahkan pesan… (%u tersisa)"
+
+#: src/Backend/MoveOperation.vala:98
+msgid "No Archive folder is configured."
+msgstr "Tidak ada folder Arsip yang dikonfigurasi."
+
+#: src/Backend/MoveOperation.vala:126
+msgid "The destination folder was not found."
+msgstr "Folder tujuan tidak ditemukan."
+
+#: src/Backend/MoveOperation.vala:130
+msgid "The source folder is the destination folder."
+msgstr "Folder sumber adalah folder tujuan."
+
+#: src/Backend/Session.vala:642
+msgid "New Signature"
+msgstr ""
+
+#: src/Backend/ContactManager.vala:88 src/Backend/ContactManager.vala:122
+#, c-format
+msgid "Couldn't add “%s” to addressbook"
+msgstr ""
+
+#: src/Backend/ContactManager.vala:89
+msgid "No addressbook available."
+msgstr ""
+
+#: src/Backend/ContactManager.vala:123
+msgid "Operation failed."
+msgstr ""
+
+#: src/ConversationList/ConversationItemModel.vala:74
+#: src/ConversationList/ConversationItemModel.vala:112
+msgid ", "
+msgstr ""
+
+#: src/ConversationList/ConversationItemModel.vala:77
+#: src/ConversationList/ConversationItemModel.vala:115
+#: src/ConversationList/ConversationItemModel.vala:123
+#: src/MessageList/AttachmentButton.vala:100
+msgid "Unknown"
+msgstr "Tidak diketahui"
+
+#: src/ConversationList/ConversationList.vala:85
+msgid "Search Mail"
+msgstr "Cari Surat"
+
+#: src/ConversationList/ConversationList.vala:89
+msgid "Hide read conversations"
+msgstr "Sembunyikan percakapan yang sudah dibaca"
+
+#: src/ConversationList/ConversationList.vala:90
+msgid "Hide unstarred conversations"
+msgstr "Sembunyikan percakapan tanpa bintang"
+
+#: src/ConversationList/ConversationList.vala:107
+msgid "Filter Conversations"
+msgstr "Saring Percakapan"
+
+#: src/ConversationList/ConversationList.vala:130
+msgid "Fetch new messages"
+msgstr "Mengambil pesan baru"
+
+#: src/ConversationList/ConversationList.vala:137
+msgid "Fetching new messages…"
+msgstr "Mengambil pesan baru…"
+
+#: src/ConversationList/ConversationListItem.vala:94
+msgid "Archive"
+msgstr "Arsip"
+
+#: src/ConversationList/ConversationListItem.vala:99
+msgid "Trash"
+msgstr "Sampah"
+
+#: src/ConversationList/ConversationListItem.vala:181
+msgid "Unread"
+msgstr "Belum dibaca"
+
+#: src/ConversationList/ConversationListItem.vala:194
+msgid "Replied"
+msgstr "Dibalas"
+
+#: src/ConversationList/ConversationListItem.vala:198
+msgid "Forwarded"
+msgstr "Diteruskan"
+
+#: src/ConversationList/ConversationListItem.vala:212
+msgid "Move To Trash"
+msgstr "Pindahkan Ke Sampah"
+
+#: src/ConversationList/ConversationListItem.vala:215
+msgid "Mark As Unread"
+msgstr "Tandai Sebagai Belum Dibaca"
+
+#: src/ConversationList/ConversationListItem.vala:217
+#: src/MessageList/MessageList.vala:51
+msgid "Mark as Read"
+msgstr "Tandai sebagai Sudah Dibaca"
+
+#: src/ConversationList/ConversationListItem.vala:221
+#: src/MessageList/MessageList.vala:52
+msgid "Star"
+msgstr "Bintang"
+
+#: src/ConversationList/ConversationListItem.vala:223
+#: src/MessageList/MessageList.vala:53
+msgid "Unstar"
+msgstr "Hapus Bintang"
+
+#: src/Dialogs/InsertLinkDialog.vala:29
+msgid "URL:"
+msgstr "URL:"
+
+#: src/Dialogs/InsertLinkDialog.vala:39
+msgid "Link Text:"
+msgstr "Teks Tautan:"
+
+#: src/Dialogs/InsertLinkDialog.vala:45
+msgid "Example Website"
+msgstr "Contoh Situs Web"
+
+#: src/Dialogs/AliasDialog/Alias.vala:52
+msgid "John Doe"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/Alias.vala:56
+msgid "Name"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/Alias.vala:75
+#, fuzzy
+#| msgid "Copy _Email Address"
+msgid "E-mail Address"
+msgstr "Salin Alamat Sur_el"
+
+#: src/Dialogs/AliasDialog/Alias.vala:80
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Delete alias"
+msgstr "Hapus konsep"
+
+#: src/Dialogs/AliasDialog/Alias.vala:100
+#, fuzzy
+#| msgid "Edit Draft"
+msgid "Edit alias"
+msgstr "Sunting Draf"
+
+#: src/Dialogs/AliasDialog/Alias.vala:175
+msgid "Name not set"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:33
+msgid "No Aliases"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:37
+msgid "Add aliases using the button in the toolbar below"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:67
+msgid "Add Alias…"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:104
+msgid "Aliases"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:108
+#, fuzzy
+#| msgid "_Close"
+msgid "Close"
+msgstr "_Tutup"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:178
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:330
+#, c-format
+msgid "'%s' deleted"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:39
+#, fuzzy
+#| msgid "Insert Link"
+msgid "No Signatures"
+msgstr "Masukkan Tautan"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:43
+msgid "Add signatures using the button in the toolbar below"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:67
+#, fuzzy
+#| msgid "Insert Link"
+msgid "Create Signature"
+msgstr "Masukkan Tautan"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:86
+msgid "Title"
+msgstr ""
+
+#. Work around a styling issue
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:99
+msgid "For example “Work” or “Personal”"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:122
+msgid "Delete"
+msgstr "Hapus"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:131
+msgid "Set Default For…"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:156
+#, fuzzy
+#| msgid "Insert Link"
+msgid "Signature"
+msgstr "Masukkan Tautan"
+
+#: src/FolderList/AccountItemModel.vala:155
+msgid "Edit Aliases…"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:48
+msgid "Refresh folder"
+msgstr "Segarkan folder"
+
+#: src/FolderList/FolderItemModel.vala:53
+#, fuzzy
+#| msgid "Refresh folder"
+msgid "Rename folder"
+msgstr "Segarkan folder"
+
+#: src/FolderList/FolderItemModel.vala:146
+#: src/FolderList/FolderItemModel.vala:175
+#: src/FolderList/FolderItemModel.vala:193
+#, c-format
+msgid "Couldn't rename “%s”"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:147
+msgid "Folder names cannot contain “/”"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:176
+#, c-format
+msgid "A folder named “%s” already exists"
+msgstr ""
+
+#: src/FolderList/FolderList.vala:34
+msgid "Compose new message"
+msgstr "Tulis pesan baru"
+
+#: src/FolderList/FolderList.vala:56
+msgid "Account Settings…"
+msgstr "Pengaturan Akun…"
+
+#: src/FolderList/FolderList.vala:59
+msgid "Always Show Remote Images"
+msgstr "Selalu Tampilkan Gambar"
+
+#: src/FolderList/FolderList.vala:65
+msgid "Menu"
+msgstr "Menu"
+
+#: src/FolderList/GroupedFolderItemModel.vala:38
+#, fuzzy
+#| msgid "Inbox"
+msgctxt "Inbox Folder"
+msgid "Inbox"
+msgstr "Kotak Masuk"
+
+#: src/FolderList/GroupedFolderItemModel.vala:42
+#, fuzzy
+#| msgid "Archive"
+msgctxt "Archive Folder"
+msgid "Archive"
+msgstr "Arsip"
+
+#: src/FolderList/GroupedFolderItemModel.vala:46
+#, fuzzy
+#| msgid "Sent"
+msgctxt "Sent Folder"
+msgid "Sent"
+msgstr "Terkirim"
+
+#: src/FolderList/SessionItemModel.vala:28
+msgid "All Mailboxes"
+msgstr "Semua Kotak Surat"
+
+#: src/MessageList/MessageList.vala:28 src/MessageList/MessageListItem.vala:210
+msgid "Reply"
+msgstr "Balas"
+
+#: src/MessageList/MessageList.vala:37 src/MessageList/MessageListItem.vala:213
+msgid "Reply All"
+msgstr "Balas Semua"
+
+#: src/MessageList/MessageList.vala:46 src/MessageList/MessageListItem.vala:216
+msgid "Forward"
+msgstr "Teruskan"
+
+#: src/MessageList/MessageList.vala:50
+msgid "Mark as Unread"
+msgstr "Tandai sebagai belum dibaca"
+
+#: src/MessageList/MessageList.vala:60
+msgid "Mark Conversation"
+msgstr "Tandai Percakapan"
+
+#: src/MessageList/MessageList.vala:68
+msgid "Move Conversation to…"
+msgstr "Pindahkan Percakapan ke…"
+
+#: src/MessageList/MessageList.vala:77
+msgid "Move conversations to archive"
+msgstr "Pindahkan percakapan ke arsip"
+
+#: src/MessageList/MessageList.vala:85
+msgid "Move conversations to Trash"
+msgstr "Pindahkan percakapan ke Sampah"
+
+#: src/MessageList/MessageList.vala:100
+msgid "No Message Selected"
+msgstr "Tidak Ada Pesan yang Dipilih"
+
+#. /TRANSLATORS: The first %s represents the date and the second %s the time of the message (either when it was received or sent)
+#: src/MessageList/MessageListItem.vala:190
+#, c-format
+msgid "%s at %s"
+msgstr "%s pada %s"
+
+#: src/MessageList/MessageListItem.vala:198
+#: src/MessageList/MessageListItem.vala:397
+msgid "Unstar message"
+msgstr "Batal bintangkan pesan"
+
+#: src/MessageList/MessageListItem.vala:201
+#: src/MessageList/MessageListItem.vala:393
+msgid "Star message"
+msgstr "Bintangkan pesan"
+
+#: src/MessageList/MessageListItem.vala:221
+msgid "Print…"
+msgstr "Cetak…"
+
+#: src/MessageList/MessageListItem.vala:231
+msgid "More"
+msgstr "Lainnya"
+
+#: src/MessageList/MessageListItem.vala:281
+msgid "Open in Calendar"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:286
+#, fuzzy
+#| msgid "This message contains remote images."
+msgid "This message contains a Calendar Event."
+msgstr "Pesan ini memuat gambar remote."
+
+#: src/MessageList/MessageListItem.vala:297
+msgid "Show Images"
+msgstr "Tampilkan Gambar"
+
+#: src/MessageList/MessageListItem.vala:298
+msgid "Always Show from Sender"
+msgstr "Selalu Tampilkan dari Pengirim"
+
+#: src/MessageList/MessageListItem.vala:302
+msgid "This message contains remote images."
+msgstr "Pesan ini memuat gambar remote."
+
+#: src/MessageList/MessageListItem.vala:341
+msgid "This message contains one or more attachments"
+msgstr "Pesan ini berisi satu atau lebih lampiran"
+
+#. / Translators: This is the default file name of a printed email
+#: src/MessageList/MessageListItem.vala:417
+msgid "Email Message"
+msgstr "Pesan Surel"
+
+#: src/MessageList/MessageListItem.vala:439
+msgid "Unable to print email"
+msgstr "Tidak dapat mencetak surel"
+
+#: src/MessageList/MessageListItem.vala:691
+#, c-format
+msgid "Trust and open “%s”?"
+msgstr "Percayai dan buka “%s”?"
+
+#: src/MessageList/MessageListItem.vala:692
+msgid ""
+"Attachments may cause damage to your system if opened. Only open files from "
+"trusted sources."
+msgstr ""
+"Lampiran mungkin menyebabkan kerusakan pada sistem Anda jika dibuka. Hanya "
+"buka berkas dari sumber terpercaya."
+
+#: src/MessageList/MessageListItem.vala:699
+msgid "Open Anyway"
+msgstr "Buka Saja"
+
+#: src/MessageList/AttachmentButton.vala:57
+msgid "Open"
+msgstr "Buka"
+
+#: src/MessageList/AttachmentButton.vala:58
+msgid "Save As…"
+msgstr "Simpan Sebagai…"
+
+#: src/MessageList/AttachmentButton.vala:143
+msgid "Save"
+msgstr "Simpan"
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:22
+msgid "No mailboxes found"
+msgstr ""
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:26
+msgid "Try changing search terms"
+msgstr ""
+
+#, fuzzy
+#~| msgid "https://example.com"
+#~ msgid "Email@example.com"
+#~ msgstr "https://contoh.com"
+
+#, fuzzy
+#~| msgid "Reply to _All"
+#~ msgid "Reply to All"
+#~ msgstr "Balas ke Semu_a"
+
+#, c-format
+#~ msgid "Are you sure you want to open %s?"
+#~ msgstr "Apa Anda yakin untuk membuka %s?"
+
+#~ msgid "Quote text"
+#~ msgstr "Kutipan"
+
+#~ msgid "Unquote text"
+#~ msgstr "Batalkan kutipan"
+
+#~ msgid "Drafts | Draft"
+#~ msgstr "Draf"
+
+#~ msgid "Sent | Sent Mail | Sent Email | Sent E-Mail"
+#~ msgstr ""
+#~ "Sent | Sent Mail | Sent Email | Sent E-Mail | Surat Keluar | Terkirim"
+
+#~ msgid ""
+#~ "Junk | Spam | Junk Mail | Junk Email | Junk E-Mail | Bulk Mail | Bulk "
+#~ "Email | Bulk E-Mail"
+#~ msgstr ""
+#~ "Junk | Spam | Junk Mail | Junk Email | Junk E-Mail | Bulk Mail | Bulk "
+#~ "Email | Bulk E-Mail"
+
+#~ msgid "Trash | Rubbish | Rubbish Bin"
+#~ msgstr ""
+#~ "Trash | Rubbish | Rubbish Bin | Sampah | Tong Sampah | Tempat Sampah"
+
+#~ msgid "Drafts"
+#~ msgstr "Draf"
+
+#~ msgid "Starred"
+#~ msgstr "Dibintangi"
+
+#~ msgid "Important"
+#~ msgstr "Penting"
+
+#~ msgid "Spam"
+#~ msgstr "Spam"
+
+#~ msgid "Outbox"
+#~ msgstr "Kotak Keluar"
+
+#~ msgid "Search"
+#~ msgstr "Cari"
+
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgid "SMTP"
+#~ msgstr "SMTP"
+
+#~ msgid "Gmail"
+#~ msgstr "Gmail"
+
+#~ msgid "Yahoo! Mail"
+#~ msgstr "Yahoo! Mail"
+
+#~ msgid "Outlook.com"
+#~ msgstr "Outlook.com"
+
+#~ msgid "Other"
+#~ msgstr "Lainnya"
+
+#~ msgid "attachment"
+#~ msgstr "lampiran"
+
+#~ msgid "bcc"
+#~ msgstr "bcc"
+
+#~ msgid "body"
+#~ msgstr "body"
+
+#~ msgid "cc"
+#~ msgstr "cc"
+
+#~ msgid "from"
+#~ msgstr "from"
+
+#~ msgid "subject"
+#~ msgstr "perihal"
+
+#~ msgid "to"
+#~ msgstr "to"
+
+#~ msgid "me"
+#~ msgstr "me"
+
+#~ msgid "(no subject)"
+#~ msgstr "(tanpa perihal)"
+
+#~ msgid "%s wrote:"
+#~ msgstr "%s menulis:"
+
+#~ msgid "On %s:"
+#~ msgstr "Pada %s:"
+
+#~ msgid "none"
+#~ msgstr "nihil"
+
+#~ msgid "Mail Client"
+#~ msgstr "Klien Surat"
+
+#~ msgid "Visit the Yorba web site"
+#~ msgstr "Kunjungi halaman web Yorba"
+
+#~ msgid "Delete conversation (Shift+Delete)"
+#~ msgstr "Hapus percakapan (Shift+Delete)"
+
+#~ msgid "Delete conversations (Shift+Delete)"
+#~ msgstr "Hapus percakapan (Shift+Delete)"
+
+#~ msgid "_Archive"
+#~ msgstr "_Arsip"
+
+#~ msgid "Archive conversations (A)"
+#~ msgstr "Arsipkan percakapan (A)"
+
+#~ msgid "Mark as S_pam"
+#~ msgstr "Tandai sebagai S_pam"
+
+#~ msgid "Mark as not S_pam"
+#~ msgstr "Tandai sebagai bukan S_pam"
+
+#~ msgid "A_ccounts"
+#~ msgstr "A_kun"
+
+#~ msgid "_Preferences"
+#~ msgstr "_Preferensi"
+
+#~ msgid "_Help"
+#~ msgstr "_Bantuan"
+
+#~ msgid "_About"
+#~ msgstr "Tent_ang"
+
+#~ msgid "_Quit"
+#~ msgstr "_Keluar"
+
+#~ msgid "_Mark as..."
+#~ msgstr "Tan_dai sebagai..."
+
+#~ msgid "Mark as _Read"
+#~ msgstr "Tandai Sudah Di_baca"
+
+#~ msgid "Mark as _Unread"
+#~ msgstr "Tandai _Belum Dibaca"
+
+#~ msgid "Add label"
+#~ msgstr "Tambah label"
+
+#~ msgid "_Label"
+#~ msgstr "_Label"
+
+#~ msgid "_Move"
+#~ msgstr "_Pindahkan"
+
+#~ msgid "_Reply"
+#~ msgstr "B_alas"
+
+#~ msgid "Reply (Ctrl+R, R)"
+#~ msgstr "Balas (Ctrl+R, R)"
+
+#~ msgid "Reply all (Ctrl+Shift+R, Shift+R)"
+#~ msgstr "Balas semua (Ctrl+Shift+R, Shift+R)"
+
+#~ msgid "Forward (Ctrl+L, F)"
+#~ msgstr "Maju (Ctrl+L, F)"
+
+#~ msgid "Unable to store server trust exception"
+#~ msgstr "Tak bisa menyimpan pengecualian kepercayaan server"
+
+#~ msgid "Your settings are insecure"
+#~ msgstr "Pengaturan Anda tak aman"
+
+#~ msgid ""
+#~ "Your IMAP and/or SMTP settings do not specify SSL or TLS.  This means "
+#~ "your username and password could be read by another person on the "
+#~ "network.  Are you sure you want to do this?"
+#~ msgstr ""
+#~ "Pengaturan IMAP dan/atau SMTP Anda tidak menyatakan SSL atau TLS. Artinya "
+#~ "nama pengguna dan sandi Anda bisa dibaca orang lain di jaringan ini. Anda "
+#~ "yakin ingin melakukan ini?"
+
+#~ msgid "Co_ntinue"
+#~ msgstr "La_njutkan"
+
+#~ msgid "Error sending email"
+#~ msgstr "Galat saat mengirim surel"
+
+#~ msgid ""
+#~ "Geary encountered an error sending an email.  If the problem persists, "
+#~ "please manually delete the email from your Outbox folder."
+#~ msgstr ""
+#~ "Gary menemui galat ketika mengirim sebuah surel. Bila masalah tetap "
+#~ "muncul, harap hapus surel secara manual dari folder Kotak Keluar Anda."
+
+#~ msgid "Error saving sent mail"
+#~ msgstr "Galat saat menyimpan surel terkirim"
+
+#~ msgid ""
+#~ "Geary encountered an error saving a sent message to Sent Mail.  The "
+#~ "message will stay in your Outbox folder until you delete it."
+#~ msgstr ""
+#~ "Gary menemui galat ketika menyimpan sebuah surel terkirim ke Sent Mail.  "
+#~ "Pesan akan tetap berada di folder Kotak Keluar Anda sampai Anda "
+#~ "menghapusnya."
+
+#~ msgid "Labels"
+#~ msgstr "Label"
+
+#~ msgid "Unable to open the database for %s"
+#~ msgstr "Tak bisa membuka basis data bagi %s"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to corruption of the database file in this directory:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Geary can rebuild the database and re-synchronize with the server or "
+#~ "exit.\n"
+#~ "\n"
+#~ "Rebuilding the database will destroy all local email and its attachments. "
+#~ "<b>The mail on the your server will not be affected.</b>"
+#~ msgstr ""
+#~ "Ada galat saat membuka basis data surat lokal bagi akun ini. Ini mungkin "
+#~ "karena korupsi berkas basis data dalam direktori ini:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Geary bisa membangun ulang basis data dan menyelaraskan ulang dengan "
+#~ "server atau keluar.\n"
+#~ "\n"
+#~ "Membangun ulang basis data akan menghancurkan semua surel lokal dan "
+#~ "lampirannya. <b>Surat pada server Anda tak akan terpengaruh.</b>"
+
+#~ msgid "_Rebuild"
+#~ msgstr "_Bangun Ulang"
+
+#~ msgid "E_xit"
+#~ msgstr "_Keluar"
+
+#~ msgid "Unable to rebuild database for \"%s\""
+#~ msgstr "Tak bisa membangun ulang basis data bagi \"%s\""
+
+#~ msgid ""
+#~ "Error during rebuild:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Galat saat membangun ulang:\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid "Unable to open local mailbox for %s"
+#~ msgstr "Tak bisa membuka kotak surat bagi %s"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to a file permissions problem.\n"
+#~ "\n"
+#~ "Please check that you have read/write permissions for all files in this "
+#~ "directory:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Ada galat saat membuka basis data surat lokal bagi akun ini. Ini mungkin "
+#~ "karena masalah hak akses berkas.\n"
+#~ "\n"
+#~ "Harap periksa apakah Anda punya hak baca/tulis bagi semua berkas dalam "
+#~ "direktori ini:\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid ""
+#~ "The version number of the local mail database is formatted for a newer "
+#~ "version of Geary. Unfortunately, the database cannot be \"rolled back\" "
+#~ "to work with this version of Geary.\n"
+#~ "\n"
+#~ "Please install the latest version of Geary and try again."
+#~ msgstr ""
+#~ "Nomor versi dari basis data surat lokal diformat bagi versi Geary yang "
+#~ "lebih baru. Sayang sekali, basis data tak bisa di-\"roll back\" agar "
+#~ "bekerja dengan versi Geary ini.\n"
+#~ "\n"
+#~ "Harap pasang versi Geary terbaru dan coba lagi."
+
+#~ msgid ""
+#~ "There was an error opening the local account. This is probably due to "
+#~ "connectivity issues.\n"
+#~ "\n"
+#~ "Please check your network connection and restart Geary."
+#~ msgstr ""
+#~ "Ada galat saat membuka akun lokal. Ini mungkin karena masalah "
+#~ "konektivitas.\n"
+#~ "\n"
+#~ "Harap periksa koneksi jaringan Anda dan start ulang Geary."
+
+#~ msgid "About %s"
+#~ msgstr "Tentang %s"
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Andika Triwidada <andika@gmail.com>, 2012, 2013\n"
+#~ "\n"
+#~ "Dani Pratomo <elementaryindo@gmail.com>, 2012.\n"
+#~ "\n"
+#~ "Launchpad Contributions:\n"
+#~ "  Andika Triwidada https://launchpad.net/~andika"
+
+#~ msgid "Are you sure you want to open \"%s\"?"
+#~ msgstr "Anda yakin ingin membuka \"%s\"?"
+
+#~ msgid ""
+#~ "Attachments may cause damage to your system if opened.  Only open files "
+#~ "from trusted sources."
+#~ msgstr ""
+#~ "Lampiran berpotensi bahaya jika dibuka. Hanya buka berkas dari sumber "
+#~ "terpercaya."
+
+#~ msgid "Don't _ask me again"
+#~ msgstr "Jangan t_anya lagi"
+
+#~ msgid "A file named \"%s\" already exists.  Do you want to replace it?"
+#~ msgstr "Berkas bernama \"%s\" sudah ada. Anda ingin menimpanya?"
+
+#~ msgid ""
+#~ "The file already exists in \"%s\".  Replacing it will overwrite its "
+#~ "contents."
+#~ msgstr "Berkas telah ada di \"%s\".  Kalau ditimpa isi sebelumnya hilang."
+
+#~ msgid "Close open draft messages?"
+#~ msgstr "Tutup draf pesan yang terbuka?"
+
+#~ msgid "Start Geary with hidden main window"
+#~ msgstr "Mulai Geary dengan jendela utama tersembunyi"
+
+#~ msgid "Output debugging information"
+#~ msgstr "Keluaran informasi pengawakutuan"
+
+#~ msgid "Log conversation monitoring"
+#~ msgstr "Catat pemantauan percakapan"
+
+#~ msgid "Log network deserialization"
+#~ msgstr "Catat deserialisasi jaringan"
+
+#~ msgid "Log network activity"
+#~ msgstr "Catat aktivitas jaringan"
+
+#~ msgid "Log IMAP replay queue"
+#~ msgstr "Catat antrian putar ulang IMAP"
+
+#~ msgid "Log network serialization"
+#~ msgstr "Catat serialisasi jaringan"
+
+#~ msgid "Log periodic activity"
+#~ msgstr "Catat aktivitas periodik"
+
+#~ msgid "Log database queries (generates lots of messages)"
+#~ msgstr "Catat kuiri basis data (menimbulkan banyak pesan)"
+
+#~ msgid "Log folder normalization"
+#~ msgstr "Catat normalisasi map"
+
+#~ msgid "Allow inspection of WebView"
+#~ msgstr "Izinkan inspeksi WebView"
+
+#~ msgid "Revoke all server certificates with TLS warnings"
+#~ msgstr "Cabut semua sertifikat server yang memiliki peringatan TLS"
+
+#~ msgid "Display program version"
+#~ msgstr "Tampilkan versi program"
+
+#~ msgid "Use %s to open a new composer window"
+#~ msgstr "Pakai %s untuk membuka jendela penyusun baru"
+
+#~ msgid "Please report comments, suggestions and bugs to:"
+#~ msgstr "Harap kirimkan komentar, saran, dan kutu ke:"
+
+#~ msgid "Failed to parse command line options: %s\n"
+#~ msgstr "Gagal mengurai opsi baris perintah: %s\n"
+
+#~ msgid "Unrecognized command line option \"%s\"\n"
+#~ msgstr "Baris perintah asing \"%s\"\n"
+
+#~ msgid "%s - New Messages"
+#~ msgstr "%s - Pesan Baru"
+
+#~ msgid "%s, %d new message total"
+#~ msgid_plural "%s, %d new messages total"
+#~ msgstr[0] "%s, total %d pesan baru"
+
+#~ msgid ""
+#~ "%s\n"
+#~ "(%d other new message for %s)"
+#~ msgid_plural ""
+#~ "%s\n"
+#~ "(%d other new messages for %s)"
+#~ msgstr[0] ""
+#~ "%s\n"
+#~ "(%d pesan baru lain bagi %s)"
+
+#~ msgid "Me"
+#~ msgstr "Aku"
+
+#~ msgid "Untrusted Connection: %s"
+#~ msgstr "Koneksi Tak Terpercaya: %s"
+
+#~ msgid "The identity of the %s mail server at %s:%u could not be verified."
+#~ msgstr "Identitas dari server surat %s pada %s:%u tak dapat diverifikasi."
+
+#~ msgid ""
+#~ "Selecting \"Trust This Server\" or \"Always Trust This Server\" may cause "
+#~ "your username and password to be transmitted insecurely."
+#~ msgstr ""
+#~ "Memilih \"Percayai Server Ini\" atau \"Selalu Percayai Server Ini\" dapat "
+#~ "menyebabkan nama pengguna dan sandi Anda dipancarkan secara tak aman."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Geary not to access this "
+#~ "server."
+#~ msgstr ""
+#~ "Memilih \"Jangan Percayai Server Ini\" akan menyebabkan Geary tak "
+#~ "mengakses server ini."
+
+#~ msgid "Geary will not add or update this email account."
+#~ msgstr "Geary tak akan menambah atau memutakhirkan akun surel ini."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Geary to stop accessing "
+#~ "this account."
+#~ msgstr ""
+#~ "Memilih \"Jangan Percayai Server Ini\" akan menyebabkan Geary berhenti "
+#~ "mengakses akun ini."
+
+#~ msgid "Geary will exit if you have no other open email accounts."
+#~ msgstr "Geary akan keluar bila Anda tak punya akun surel lain yang terbuka."
+
+#~ msgid ""
+#~ "Contact your system administrator or email service provider if you have "
+#~ "any question about these issues."
+#~ msgstr ""
+#~ "Hubungi administrator sistem Anda atau penyedia layanan surel bila Anda "
+#~ "punya pertanyaan tentang masalah-masalah ini."
+
+#~ msgid "The server's certificate is not signed by a known authority"
+#~ msgstr "Sertifikat server tak ditandatangani oleh otoritas yang dikenal"
+
+#~ msgid "The server's identity does not match the identity in the certificate"
+#~ msgstr "Identitas server tak cocok dengan identitas dalam sertifikat"
+
+#~ msgid "The server's certificate has expired"
+#~ msgstr "Sertifikat server telah kedaluarsa"
+
+#~ msgid "The server's certificate has not been activated"
+#~ msgstr "Sertifikat server belum diaktifkan"
+
+#~ msgid "The server's certificate has been revoked and is now invalid"
+#~ msgstr "Sertifikat server telah dicabut dan kini tak valid"
+
+#~ msgid "The server's certificate is considered insecure"
+#~ msgstr "Sertifikat server dianggap tidak aman"
+
+#~ msgid "An error has occurred processing the server's certificate"
+#~ msgstr "Terjadi galat saat memroses sertifikat server"
+
+#~ msgid "First Last"
+#~ msgstr "NamaDepan NamaBelakang"
+
+#~ msgid "Welcome to Geary."
+#~ msgstr "Selamat datang ke Geary."
+
+#~ msgid "Enter your account information to get started."
+#~ msgstr "Masukkan info akun Anda untuk memulai."
+
+#~ msgid "2 weeks back"
+#~ msgstr "2 minggu ke belakang"
+
+#~ msgid "1 month back"
+#~ msgstr "1 bulan ke belakang"
+
+#~ msgid "3 months back"
+#~ msgstr "3 bulan ke belakang"
+
+#~ msgid "6 months back"
+#~ msgstr "6 bulan ke belakang"
+
+#~ msgid "1 year back"
+#~ msgstr "1 tahun ke belakang"
+
+#~ msgid "2 years back"
+#~ msgstr "2 tahun ke belakang"
+
+#~ msgid "4 years back"
+#~ msgstr "4 tahun ke belakang"
+
+#~ msgid "Everything"
+#~ msgstr "Semua"
+
+#~ msgid "Remem_ber passwords"
+#~ msgstr "I_ngat sandi"
+
+#~ msgid "Remem_ber password"
+#~ msgstr "I_ngat sandi"
+
+#~ msgid "        &#8226; Invalid account nickname.\n"
+#~ msgstr "        &#8226; Nama panggilan akun tidak sah.\n"
+
+#~ msgid "        &#8226; Email address already added to Geary.\n"
+#~ msgstr "        &#8226; Alamat surel telah ditambahkan ke Geary.\n"
+
+#~ msgid "        &#8226; IMAP connection error.\n"
+#~ msgstr "        &#8226; Galat koneksi IMAP.\n"
+
+#~ msgid "        &#8226; IMAP username or password incorrect.\n"
+#~ msgstr "        &#8226; Nama pengguna atau sandi IMAP salah.\n"
+
+#~ msgid "        &#8226; SMTP connection error.\n"
+#~ msgstr "        &#8226; Koneksi SMTP galat.\n"
+
+#~ msgid "        &#8226; SMTP username or password incorrect.\n"
+#~ msgstr "        &#8226; Nama pengguna atau sandi SMTP salah.\n"
+
+#~ msgid "        &#8226; Connection error.\n"
+#~ msgstr "        &#8226; Galat koneksi.\n"
+
+#~ msgid "        &#8226; Username or password incorrect.\n"
+#~ msgstr "        &#8226; Nama pengguna atau sandi salah.\n"
+
+#~ msgid "_Add"
+#~ msgstr "T_ambah"
+
+#~ msgid "%l:%M %P"
+#~ msgstr "%l:%M %P"
+
+#~ msgid "%H:%M"
+#~ msgstr "%H:%M"
+
+#~ msgctxt "Default clock format"
+#~ msgid "%l:%M %P"
+#~ msgstr "%H:%M"
+
+#~ msgid "%b %-e"
+#~ msgstr "%-e %b"
+
+#~ msgid "%x"
+#~ msgstr "%x"
+
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%-e %B %Y %-l:%M %P"
+
+#~ msgid "%B %-e, %Y %-H:%M"
+#~ msgstr "%-e %B %Y %-H:%M"
+
+#~ msgctxt "Default full date"
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%-e %B %Y %-H:%M"
+
+#~ msgid "Now"
+#~ msgstr "Sekarang"
+
+#~ msgid "%dm ago"
+#~ msgid_plural "%dm ago"
+#~ msgstr[0] "%dm lalu"
+
+#~ msgid "%dh ago"
+#~ msgid_plural "%dh ago"
+#~ msgstr[0] "%dj lalu"
+
+#~ msgid "Yesterday"
+#~ msgstr "Kemarin"
+
+#~ msgid "%A"
+#~ msgstr "%A"
+
+#~ msgid "bytes"
+#~ msgstr "byte"
+
+#~ msgctxt "Abbreviation for terabyte"
+#~ msgid "TB"
+#~ msgstr "TB"
+
+#~ msgctxt "Abbreviation for gigabyte"
+#~ msgid "GB"
+#~ msgstr "GB"
+
+#~ msgctxt "Abbreviation for megabyte"
+#~ msgid "MB"
+#~ msgstr "MB"
+
+#~ msgctxt "Abbreviation for kilobyte"
+#~ msgid "KB"
+#~ msgstr "KB"
+
+#~ msgid "%s, %s"
+#~ msgstr "%s, %s"
+
+#~ msgid "Inboxes"
+#~ msgstr "Inboks"
+
+#~ msgid "Search %s account"
+#~ msgstr "Cari akun %s"
+
+#~ msgid "%d result"
+#~ msgid_plural "%d results"
+#~ msgstr[0] "%d hasil"
+
+#~ msgid "%u conversation selected."
+#~ msgid_plural "%u conversations selected."
+#~ msgstr[0] "%u percakapan dipilih."
+
+#~ msgid "No search results found."
+#~ msgstr "Tak ada hasil pencarian."
+
+#~ msgid "No conversations in folder."
+#~ msgstr "Tak ada percakapan dalam map."
+
+#~ msgid "Date:"
+#~ msgstr "Tanggal:"
+
+#~ msgid "%u read message"
+#~ msgid_plural "%u read messages"
+#~ msgstr[0] "%u pesan terbaca"
+
+#~ msgid "This message was sent successfully, but could not be saved to %s."
+#~ msgstr "Pesan ini sukses dikirim, tapi tak bisa disimpan ke %s."
+
+#~ msgid "_Copy"
+#~ msgstr "Sali_n"
+
+#~ msgid "Copy _Link"
+#~ msgstr "Sa_lin Tautan"
+
+#~ msgid "Select _Message"
+#~ msgstr "Pilih _Pesan"
+
+#~ msgid "Select _All"
+#~ msgstr "Pilih Semu_a"
+
+#~ msgid "_Inspect"
+#~ msgstr "Per_iksa"
+
+#~ msgid "This link appears to go to"
+#~ msgstr "Tautan ini nampaknya menuju ke"
+
+#~ msgid "but actually goes to"
+#~ msgstr "tapi sebenarnya ke"
+
+#~ msgid " (Invalid?)"
+#~ msgstr " (Tak valid?)"
+
+#~ msgid "_Save Image As..."
+#~ msgstr "_Simpan Gambar Sebagai..."
+
+#~ msgid "_Save As..."
+#~ msgstr "_Simpan Sebagai..."
+
+#~ msgid "Save All A_ttachments..."
+#~ msgstr "Simpan Semua _Lampiran..."
+
+#~ msgid "Save A_ttachment..."
+#~ msgid_plural "Save All A_ttachments..."
+#~ msgstr[0] "Simpan Semua _Lampiran..."
+
+#~ msgid "Mark Unread From _Here"
+#~ msgstr "Tandai Belum Dibaca Dari _Sini"
+
+#~ msgid "_View Source"
+#~ msgstr "Lihat Su_mber"
+
+#~ msgid "Failed to open default text editor."
+#~ msgstr "Gagal membuka penyunting teks utama."
+
+#~ msgid "%s - Conversation Inspector"
+#~ msgstr "%s - Penyidik Percakapan"
+
+#~ msgid "Saved"
+#~ msgstr "Disimpan"
+
+#~ msgid "Saving"
+#~ msgstr "Menyimpan"
+
+#~ msgid "Error saving"
+#~ msgstr "Galat saat menyimpan"
+
+#~ msgid ""
+#~ "attach|attaching|attaches|attachment|attachments|attached|enclose|"
+#~ "enclosed|enclosing|encloses|enclosure|enclosures"
+#~ msgstr ""
+#~ "lampiran|melampirkan|dilampirkan|terlampir|attach|attaching|attaches|"
+#~ "attachment|attachments|attached|enclose|enclosed|enclosing|encloses|"
+#~ "enclosure|enclosures"
+
+#~ msgid "Do you want to discard this message?"
+#~ msgstr "Anda mau membuang pesan ini?"
+
+#~ msgid "Send message with an empty subject and body?"
+#~ msgstr "Kirim pesan dengan subjek dan isi kosong?"
+
+#~ msgid "Send message without an attachment?"
+#~ msgstr "Kirim pesan tanpa lampiran?"
+
+#~ msgid "Cannot add attachment"
+#~ msgstr "Tak bisa menambah lampiran"
+
+#~ msgid "\"%s\" could not be found."
+#~ msgstr "\"%s\" tidak ditemukan."
+
+#~ msgid "\"%s\" is a folder."
+#~ msgstr "\"%s\" adalah map."
+
+#~ msgid "\"%s\" is an empty file."
+#~ msgstr "\"%s\" adalah berkas kosong."
+
+#~ msgid "\"%s\" could not be opened for reading."
+#~ msgstr "\"%s\" tak bisa dibuka untuk dibaca."
+
+#~ msgid "\"%s\" already attached for delivery."
+#~ msgstr "\"%s\" sudah dilampirkan untuk pengiriman."
+
+#~ msgid "%s (%s)"
+#~ msgstr "%s (%s)"
+
+#~ msgid "To: "
+#~ msgstr "Kepada: "
+
+#~ msgid "Cc: "
+#~ msgstr "Cc: "
+
+#~ msgid "Bcc: "
+#~ msgstr "Bcc: "
+
+#~ msgid "Select Color"
+#~ msgstr "Pilih Warna"
+
+#~ msgid "_From:"
+#~ msgstr "_Dari:"
+
+#~ msgid "%s (%d)"
+#~ msgstr "%s (%d)"
+
+#~ msgid "Sending..."
+#~ msgstr "Mengirim..."
+
+#~ msgid "%i match"
+#~ msgid_plural "%i matches"
+#~ msgstr[0] "%i cocok"
+
+#~ msgid "%i match (wrapped)"
+#~ msgid_plural "%i matches (wrapped)"
+#~ msgstr[0] "%i cocok (dilipat)"
+
+#~ msgid "not found"
+#~ msgstr "tak ditemukan"
+
+#~ msgid "_OK"
+#~ msgstr "_OK"
+
+#~ msgid "_Cancel"
+#~ msgstr "Ba_tal"
+
+#~ msgid "_Discard"
+#~ msgstr "_Buang"
+
+#~ msgid "_Open"
+#~ msgstr "_Buka"
+
+#~ msgid "_Print..."
+#~ msgstr "_Cetak..."
+
+#~ msgid "_Remove"
+#~ msgstr "Singki_rkan"
+
+#~ msgid "_Keep"
+#~ msgstr "_Pertahankan"
+
+#~ msgid "Search all mail in account for keywords (Ctrl+S)"
+#~ msgstr "Cari kata kunci pada semua surat dalam akun (Ctrl+S)"
+
+#~ msgid "Indexing %s account"
+#~ msgstr "Mengindeks akun %s"

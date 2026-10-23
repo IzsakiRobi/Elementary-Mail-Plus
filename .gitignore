@@ -1,0 +1,9 @@
+*~
+build/
+.flatpak-builder/
+obj-*/
+debian/.debhelper/
+debian/elementary-mail-plus/
+debian/elementary-mail-plus.substvars
+debian/elementary-mail-plus.debhelper.log
+debian/files

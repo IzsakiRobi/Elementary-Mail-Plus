@@ -1,0 +1,2179 @@
+# po/geary.pot
+# PO message string template file for Geary email client
+# Copyright 2012-2013 Yorba Foundation
+# This file is distributed under the GNU LGPL, version 2.1.
+#
+# Translators:
+# Cheng-Chia Tseng <pswo10680@gmail.com>, 2012-2013
+msgid ""
+msgstr ""
+"Project-Id-Version: geary-0.4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-08 16:46+0000\n"
+"PO-Revision-Date: 2024-09-13 00:58+0000\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
+"Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
+"mail/mail/zh_Hant/>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.6.2\n"
+"X-Launchpad-Export-Date: 2017-03-09 06:00+0000\n"
+
+#: src/Application.vala:145
+msgid "Unable to open System Settings"
+msgstr "無法開啟系統設定值"
+
+#: src/Application.vala:146
+msgid ""
+"Open System Settings manually or install Evolution to set up online accounts."
+msgstr "請手動開啟系統設定或是安裝 Evolution 來設定線上帳號。"
+
+#: src/Application.vala:217
+msgid ""
+"Mail will automatically start when this device turns on and run when its "
+"window is closed so that it can send notifications when new mail arrives."
+msgstr ""
+"《郵件》會在此裝置開機時自動啟動，並在其視窗關閉時繼續執行，以便在有新信件時"
+"傳送通知。"
+
+#: src/Composer.vala:94 src/MessageList/MessageListItem.vala:102
+msgid "From:"
+msgstr "寄件者："
+
+#: src/Composer.vala:114 src/MessageList/MessageListItem.vala:108
+msgid "To:"
+msgstr "收件者："
+
+#: src/Composer.vala:120
+msgid "Cc"
+msgstr "副本"
+
+#: src/Composer.vala:122
+msgid "Bcc"
+msgstr "密件副本"
+
+#: src/Composer.vala:133 src/MessageList/MessageListItem.vala:148
+msgid "Cc:"
+msgstr "副本："
+
+#: src/Composer.vala:152
+msgid "Bcc:"
+msgstr "密件副本："
+
+#: src/Composer.vala:171 src/MessageList/MessageListItem.vala:114
+msgid "Subject:"
+msgstr "主旨："
+
+#: src/Composer.vala:205
+msgid "Insert Image"
+msgstr "插入圖片"
+
+#: src/Composer.vala:232
+msgid "Delete draft"
+msgstr "刪除草稿"
+
+#: src/Composer.vala:240
+msgid "Attach file"
+msgstr "附上檔案"
+
+#: src/Composer.vala:251
+msgid "Insert Signature…"
+msgstr "插入簽章…"
+
+#: src/Composer.vala:256
+msgid "Send"
+msgstr "寄送"
+
+#: src/Composer.vala:299
+msgid "New Message"
+msgstr "新訊息"
+
+#: src/Composer.vala:445
+msgid "Choose a file"
+msgstr "選擇一個檔案"
+
+#: src/Composer.vala:448
+msgid "Attach"
+msgstr "附加"
+
+#: src/Composer.vala:449 src/Composer.vala:472 src/Composer.vala:763
+#: src/Dialogs/InsertLinkDialog.vala:66
+#: src/MessageList/AttachmentButton.vala:144
+msgid "Cancel"
+msgstr "取消"
+
+#: src/Composer.vala:464
+msgid "Images"
+msgstr "圖片"
+
+#: src/Composer.vala:468
+msgid "Choose an image"
+msgstr "選擇圖片"
+
+#: src/Composer.vala:471
+msgid "Insert"
+msgstr "插入"
+
+#: src/Composer.vala:500
+msgid "Unable to insert image"
+msgstr "無法插入圖片"
+
+#: src/Composer.vala:501
+msgid "There was an unexpected error while trying to insert the image."
+msgstr "嘗試插入圖片時發生非預期的錯誤。"
+
+#: src/Composer.vala:665
+msgid "%a, %b %-e, %Y at %-l:%M %p"
+msgstr "%Y年%-m月%-e日 %A %p %-l:%M"
+
+#: src/Composer.vala:695
+#, c-format
+msgid "On %1$s, %2$s wrote:"
+msgstr "%2$s 於 %1$s 寫下："
+
+#: src/Composer.vala:699
+msgid "---------- Forwarded message ----------"
+msgstr "---------- 轉寄的訊息 ----------"
+
+#: src/Composer.vala:701
+#, c-format
+msgid "From: %s<br/>"
+msgstr "寄件者：%s<br/>"
+
+#: src/Composer.vala:702
+#, c-format
+msgid "Subject: %s<br/>"
+msgstr "主旨：%s<br/>"
+
+#: src/Composer.vala:703
+#, c-format
+msgid "Date: %s<br/>"
+msgstr "日期：%s<br/>"
+
+#: src/Composer.vala:704
+#, c-format
+msgid "To: %s<br/>"
+msgstr "收件者：%s<br/>"
+
+#: src/Composer.vala:706
+#, c-format
+msgid "Cc: %s<br/>"
+msgstr "副本：%s<br/>"
+
+#: src/Composer.vala:754
+msgid "Permanently delete this draft?"
+msgstr "永久刪除此草稿？"
+
+#: src/Composer.vala:755
+msgid ""
+"You cannot undo this action, nor recover your draft once it has been deleted."
+msgstr "你不能還原此動作，亦不能復原已被刪除的草稿。"
+
+#: src/Composer.vala:765
+msgid "Delete Draft"
+msgstr "刪除草稿"
+
+#: src/Composer.vala:789
+msgid "Send without subject?"
+msgstr "是否要寄送主旨空白的訊息？"
+
+#: src/Composer.vala:790
+msgid ""
+"This message has an empty subject field. The recipient may be unable to "
+"infer its scope or importance."
+msgstr "此訊息之主旨為空。收件者可能無法推斷其主題及重要性。"
+
+#: src/Composer.vala:797
+msgid "Don't Send"
+msgstr "不要寄出"
+
+#: src/Composer.vala:799
+msgid "Send Anyway"
+msgstr "無論如何都送出"
+
+#: src/Composer.vala:830
+msgid "Sent message was not saved"
+msgstr "寄出的訊息未被保存"
+
+#: src/Composer.vala:831
+msgid ""
+"The message was sent, however a copy was not saved to the Sent message "
+"folder."
+msgstr "訊息已傳送，但是副本並未存入寄件備份資料夾。"
+
+#: src/Composer.vala:846
+msgid "Unable to send message"
+msgstr "無法傳送訊息"
+
+#: src/Composer.vala:847
+msgid "There was an unexpected error while sending your message."
+msgstr "傳送訊息時發生非預期的錯誤。"
+
+#: src/Composer.vala:945 src/FolderList/FolderList.vala:55
+msgid "Edit Signatures…"
+msgstr "編輯簽章…"
+
+#: src/Composer.vala:949
+msgid "None"
+msgstr "無"
+
+#: src/Composer.vala:1140
+msgid "Unable to save draft"
+msgstr "無法儲存草稿"
+
+#: src/Composer.vala:1141
+msgid "There was an unexpected error while saving your draft."
+msgstr "儲存草稿時發生非預期的錯誤。"
+
+#: src/EditorToolbar.vala:55
+msgid "Bold"
+msgstr "粗體"
+
+#: src/EditorToolbar.vala:62
+msgid "Italic"
+msgstr "斜體"
+
+#: src/EditorToolbar.vala:73
+msgid "Underline"
+msgstr "底線"
+
+#: src/EditorToolbar.vala:85
+msgid "Strikethrough"
+msgstr "刪除線"
+
+#: src/EditorToolbar.vala:100
+msgid "Remove formatting"
+msgstr "移除文字格式"
+
+#: src/EditorToolbar.vala:108 src/Dialogs/InsertLinkDialog.vala:68
+msgid "Insert Link"
+msgstr "插入連結"
+
+#: src/InboxMonitor.vala:158 src/InboxMonitor.vala:170
+#, c-format
+msgid "%s to %s"
+msgstr "%s 至 %s"
+
+#. /TRANSLATORS: The %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#: src/InboxMonitor.vala:165
+#, c-format
+msgid "%u new message"
+msgid_plural "%u new messages"
+msgstr[0] "%u 封新訊息"
+
+#. /TRANSLATORS: The first %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#. /The next %s represents the number of senders
+#: src/InboxMonitor.vala:177
+#, c-format
+msgid "%s from %u sender"
+msgid_plural "%s from %u senders"
+msgstr[0] "來自 %2$u 人的 %1$s"
+
+#: src/MainWindow.vala:80
+msgid "Mail"
+msgstr "郵件"
+
+#: src/MainWindow.vala:123 src/Dialogs/AliasDialog/AliasDialog.vala:96
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:172
+msgid "Undo"
+msgstr "復原"
+
+#: src/MainWindow.vala:281
+msgid "Message Archived"
+msgid_plural "Messages Archived"
+msgstr[0] "訊息已封存"
+
+#: src/MainWindow.vala:285
+msgid "Couldn't archive message"
+msgstr "無法封存訊息"
+
+#: src/MainWindow.vala:298
+msgid "Message Moved"
+msgid_plural "Messages Moved"
+msgstr[0] "訊息已移動"
+
+#: src/MainWindow.vala:302
+msgid "Couldn't move message"
+msgstr "無法移動訊息"
+
+#: src/MainWindow.vala:315
+msgid "Message Deleted"
+msgid_plural "Messages Deleted"
+msgstr[0] "訊息已被刪除"
+
+#: src/MainWindow.vala:319
+msgid "Couldn't delete message"
+msgstr "無法刪除訊息"
+
+#: src/WelcomeView.vala:45
+msgid "Connect an Account"
+msgstr "連接帳號"
+
+#: src/WelcomeView.vala:52
+msgid "Mail uses email accounts configured in System Settings."
+msgstr "《郵件》使用系統設定值中所設定的電子郵件帳號。"
+
+#: src/WelcomeView.vala:59
+msgid "Online Accounts…"
+msgstr "線上帳號…"
+
+#: src/Backend/Account.vala:48
+msgid "Unable to connect"
+msgstr "無法連接"
+
+#: src/Backend/Account.vala:49
+msgid "There was an unexpected error while trying to connect to the server."
+msgstr "嘗試連接到伺服器時發生非預期的錯誤。"
+
+#: src/Backend/MoveOperation.vala:65
+#, c-format
+msgid "Moving messages… (%u remaining)"
+msgstr "訊息移動中…（剩下 %u 封）"
+
+#: src/Backend/MoveOperation.vala:98
+msgid "No Archive folder is configured."
+msgstr "未設定封存資料夾。"
+
+#: src/Backend/MoveOperation.vala:126
+msgid "The destination folder was not found."
+msgstr "找不到目的地資料夾。"
+
+#: src/Backend/MoveOperation.vala:130
+msgid "The source folder is the destination folder."
+msgstr "來源資料夾與目的地資料夾相同。"
+
+#: src/Backend/Session.vala:642
+msgid "New Signature"
+msgstr "新增簽章"
+
+#: src/Backend/ContactManager.vala:88 src/Backend/ContactManager.vala:122
+#, c-format
+msgid "Couldn't add “%s” to addressbook"
+msgstr "無法將「%s」加入通訊錄"
+
+#: src/Backend/ContactManager.vala:89
+msgid "No addressbook available."
+msgstr "無可用的通訊錄。"
+
+#: src/Backend/ContactManager.vala:123
+msgid "Operation failed."
+msgstr "操作失敗了。"
+
+#: src/ConversationList/ConversationItemModel.vala:74
+#: src/ConversationList/ConversationItemModel.vala:112
+msgid ", "
+msgstr "、 "
+
+#: src/ConversationList/ConversationItemModel.vala:77
+#: src/ConversationList/ConversationItemModel.vala:115
+#: src/ConversationList/ConversationItemModel.vala:123
+#: src/MessageList/AttachmentButton.vala:100
+msgid "Unknown"
+msgstr "未知"
+
+#: src/ConversationList/ConversationList.vala:85
+msgid "Search Mail"
+msgstr "搜尋郵件"
+
+#: src/ConversationList/ConversationList.vala:89
+msgid "Hide read conversations"
+msgstr "隱藏已讀對話"
+
+#: src/ConversationList/ConversationList.vala:90
+msgid "Hide unstarred conversations"
+msgstr "隱藏未加星號的對話"
+
+#: src/ConversationList/ConversationList.vala:107
+msgid "Filter Conversations"
+msgstr "過濾對話"
+
+#: src/ConversationList/ConversationList.vala:130
+msgid "Fetch new messages"
+msgstr "取得新訊息"
+
+#: src/ConversationList/ConversationList.vala:137
+msgid "Fetching new messages…"
+msgstr "正在取得新訊息…"
+
+#: src/ConversationList/ConversationListItem.vala:94
+msgid "Archive"
+msgstr "封存"
+
+#: src/ConversationList/ConversationListItem.vala:99
+msgid "Trash"
+msgstr "垃圾桶"
+
+#: src/ConversationList/ConversationListItem.vala:181
+msgid "Unread"
+msgstr "未讀"
+
+#: src/ConversationList/ConversationListItem.vala:194
+msgid "Replied"
+msgstr "已回覆"
+
+#: src/ConversationList/ConversationListItem.vala:198
+msgid "Forwarded"
+msgstr "已轉寄"
+
+#: src/ConversationList/ConversationListItem.vala:212
+msgid "Move To Trash"
+msgstr "移至垃圾桶"
+
+#: src/ConversationList/ConversationListItem.vala:215
+msgid "Mark As Unread"
+msgstr "標記為未讀"
+
+#: src/ConversationList/ConversationListItem.vala:217
+#: src/MessageList/MessageList.vala:51
+msgid "Mark as Read"
+msgstr "標記為已讀"
+
+#: src/ConversationList/ConversationListItem.vala:221
+#: src/MessageList/MessageList.vala:52
+msgid "Star"
+msgstr "加上星號"
+
+#: src/ConversationList/ConversationListItem.vala:223
+#: src/MessageList/MessageList.vala:53
+msgid "Unstar"
+msgstr "移除星號"
+
+#: src/Dialogs/InsertLinkDialog.vala:29
+msgid "URL:"
+msgstr "URL:"
+
+#: src/Dialogs/InsertLinkDialog.vala:39
+msgid "Link Text:"
+msgstr "連結文字："
+
+#: src/Dialogs/InsertLinkDialog.vala:45
+msgid "Example Website"
+msgstr "輸入網站名稱"
+
+#: src/Dialogs/AliasDialog/Alias.vala:52
+msgid "John Doe"
+msgstr "無名氏"
+
+#: src/Dialogs/AliasDialog/Alias.vala:56
+msgid "Name"
+msgstr "名稱"
+
+#: src/Dialogs/AliasDialog/Alias.vala:75
+msgid "E-mail Address"
+msgstr "電子郵件位址"
+
+#: src/Dialogs/AliasDialog/Alias.vala:80
+msgid "Delete alias"
+msgstr "刪除別名"
+
+#: src/Dialogs/AliasDialog/Alias.vala:100
+msgid "Edit alias"
+msgstr "編輯別名"
+
+#: src/Dialogs/AliasDialog/Alias.vala:175
+msgid "Name not set"
+msgstr "名稱未設定"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:33
+msgid "No Aliases"
+msgstr "無別名"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:37
+msgid "Add aliases using the button in the toolbar below"
+msgstr "用下方工具列中的按鈕來新增別名"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:67
+msgid "Add Alias…"
+msgstr "新增別名…"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:104
+msgid "Aliases"
+msgstr "別名"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:108
+msgid "Close"
+msgstr "關閉"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:178
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:330
+#, c-format
+msgid "'%s' deleted"
+msgstr "「%s」已刪除"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:39
+msgid "No Signatures"
+msgstr "無簽章"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:43
+msgid "Add signatures using the button in the toolbar below"
+msgstr "用下方工具列中的按鈕來新增簽章"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:67
+msgid "Create Signature"
+msgstr "建立簽章"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:86
+msgid "Title"
+msgstr "標題"
+
+#. Work around a styling issue
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:99
+msgid "For example “Work” or “Personal”"
+msgstr "例如「工作」或「個人」"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:122
+msgid "Delete"
+msgstr "刪除"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:131
+msgid "Set Default For…"
+msgstr "設為預設…"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:156
+msgid "Signature"
+msgstr "簽章"
+
+#: src/FolderList/AccountItemModel.vala:155
+msgid "Edit Aliases…"
+msgstr "編輯別名…"
+
+#: src/FolderList/FolderItemModel.vala:48
+msgid "Refresh folder"
+msgstr "重新整理"
+
+#: src/FolderList/FolderItemModel.vala:53
+msgid "Rename folder"
+msgstr "重新命名資料夾"
+
+#: src/FolderList/FolderItemModel.vala:146
+#: src/FolderList/FolderItemModel.vala:175
+#: src/FolderList/FolderItemModel.vala:193
+#, c-format
+msgid "Couldn't rename “%s”"
+msgstr "無法重新命名「%s」"
+
+#: src/FolderList/FolderItemModel.vala:147
+msgid "Folder names cannot contain “/”"
+msgstr "資料夾名稱中不能包含 \"/\""
+
+#: src/FolderList/FolderItemModel.vala:176
+#, c-format
+msgid "A folder named “%s” already exists"
+msgstr "名為「%s」的資料夾已經存在"
+
+#: src/FolderList/FolderList.vala:34
+msgid "Compose new message"
+msgstr "撰寫新訊息"
+
+#: src/FolderList/FolderList.vala:56
+msgid "Account Settings…"
+msgstr "帳號設定…"
+
+#: src/FolderList/FolderList.vala:59
+msgid "Always Show Remote Images"
+msgstr "永遠顯示遠端圖片"
+
+#: src/FolderList/FolderList.vala:65
+msgid "Menu"
+msgstr "選單"
+
+#: src/FolderList/GroupedFolderItemModel.vala:38
+msgctxt "Inbox Folder"
+msgid "Inbox"
+msgstr "收件匣"
+
+#: src/FolderList/GroupedFolderItemModel.vala:42
+msgctxt "Archive Folder"
+msgid "Archive"
+msgstr "封存"
+
+#: src/FolderList/GroupedFolderItemModel.vala:46
+msgctxt "Sent Folder"
+msgid "Sent"
+msgstr "寄件備份"
+
+#: src/FolderList/SessionItemModel.vala:28
+msgid "All Mailboxes"
+msgstr "所有信箱"
+
+#: src/MessageList/MessageList.vala:28 src/MessageList/MessageListItem.vala:210
+msgid "Reply"
+msgstr "回覆"
+
+#: src/MessageList/MessageList.vala:37 src/MessageList/MessageListItem.vala:213
+msgid "Reply All"
+msgstr "回覆所有人"
+
+#: src/MessageList/MessageList.vala:46 src/MessageList/MessageListItem.vala:216
+msgid "Forward"
+msgstr "轉寄"
+
+#: src/MessageList/MessageList.vala:50
+msgid "Mark as Unread"
+msgstr "標記為未讀"
+
+#: src/MessageList/MessageList.vala:60
+msgid "Mark Conversation"
+msgstr "標記對話"
+
+#: src/MessageList/MessageList.vala:68
+msgid "Move Conversation to…"
+msgstr "將對話移動到…"
+
+#: src/MessageList/MessageList.vala:77
+msgid "Move conversations to archive"
+msgstr "將對話封存"
+
+#: src/MessageList/MessageList.vala:85
+msgid "Move conversations to Trash"
+msgstr "將對話移至垃圾桶"
+
+#: src/MessageList/MessageList.vala:100
+msgid "No Message Selected"
+msgstr "未選取任何訊息"
+
+#. /TRANSLATORS: The first %s represents the date and the second %s the time of the message (either when it was received or sent)
+#: src/MessageList/MessageListItem.vala:190
+#, c-format
+msgid "%s at %s"
+msgstr "%s的%s"
+
+#: src/MessageList/MessageListItem.vala:198
+#: src/MessageList/MessageListItem.vala:397
+msgid "Unstar message"
+msgstr "從訊息移除星號"
+
+#: src/MessageList/MessageListItem.vala:201
+#: src/MessageList/MessageListItem.vala:393
+msgid "Star message"
+msgstr "為訊息標上星號"
+
+#: src/MessageList/MessageListItem.vala:221
+msgid "Print…"
+msgstr "列印…"
+
+#: src/MessageList/MessageListItem.vala:231
+msgid "More"
+msgstr "更多"
+
+#: src/MessageList/MessageListItem.vala:281
+msgid "Open in Calendar"
+msgstr "在行事曆中開啟"
+
+#: src/MessageList/MessageListItem.vala:286
+msgid "This message contains a Calendar Event."
+msgstr "此訊息包含行事曆活動。"
+
+#: src/MessageList/MessageListItem.vala:297
+msgid "Show Images"
+msgstr "顯示圖片"
+
+#: src/MessageList/MessageListItem.vala:298
+msgid "Always Show from Sender"
+msgstr "總是顯示寄件者"
+
+#: src/MessageList/MessageListItem.vala:302
+msgid "This message contains remote images."
+msgstr "此訊息包含遠端圖片。"
+
+#: src/MessageList/MessageListItem.vala:341
+msgid "This message contains one or more attachments"
+msgstr "這封訊息含有一項或多項附件"
+
+#. / Translators: This is the default file name of a printed email
+#: src/MessageList/MessageListItem.vala:417
+msgid "Email Message"
+msgstr "郵件訊息"
+
+#: src/MessageList/MessageListItem.vala:439
+msgid "Unable to print email"
+msgstr "無法列印郵件"
+
+#: src/MessageList/MessageListItem.vala:691
+#, c-format
+msgid "Trust and open “%s”?"
+msgstr "要信任並開啟「%s」嗎？"
+
+#: src/MessageList/MessageListItem.vala:692
+msgid ""
+"Attachments may cause damage to your system if opened. Only open files from "
+"trusted sources."
+msgstr "開啟附件可能有機會損害您的系統。請僅只開啟源自受信任來源的檔案。"
+
+#: src/MessageList/MessageListItem.vala:699
+msgid "Open Anyway"
+msgstr "無論如何都開啟"
+
+#: src/MessageList/AttachmentButton.vala:57
+msgid "Open"
+msgstr "開啟"
+
+#: src/MessageList/AttachmentButton.vala:58
+msgid "Save As…"
+msgstr "儲存為…"
+
+#: src/MessageList/AttachmentButton.vala:143
+msgid "Save"
+msgstr "儲存"
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:22
+msgid "No mailboxes found"
+msgstr "沒有找到信箱"
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:26
+msgid "Try changing search terms"
+msgstr "請嘗試變更搜尋內容"
+
+#, fuzzy
+#~| msgid "https://example.com"
+#~ msgid "Email@example.com"
+#~ msgstr "https://example.com"
+
+#, fuzzy
+#~| msgid "Email Address:"
+#~ msgid "Address:"
+#~ msgstr "電子郵件位址："
+
+#, fuzzy
+#~| msgid "Email address:"
+#~ msgid "Enter e-mail address…"
+#~ msgstr "電子郵件位址："
+
+#~ msgid "Reply to All"
+#~ msgstr "回覆所有人"
+
+#, c-format
+#~ msgid "Are you sure you want to open %s?"
+#~ msgstr "您確定要開啟 %s？"
+
+#, fuzzy
+#~ msgid "Quote text"
+#~ msgstr "引用文字 (Ctrl+])"
+
+#, fuzzy
+#~ msgid "Unquote text"
+#~ msgstr "取消文字引用 (Ctrl+[)"
+
+#~ msgid "Drafts | Draft"
+#~ msgstr "草稿 | Drafts | Draft"
+
+#~ msgid "Sent | Sent Mail | Sent Email | Sent E-Mail"
+#~ msgstr ""
+#~ "已寄送 | 已送出 | 已寄送郵件 | 已寄送電子郵件 | Sent | Sent Mail | Sent "
+#~ "Email | Sent E-Mail"
+
+#~ msgid ""
+#~ "Junk | Spam | Junk Mail | Junk Email | Junk E-Mail | Bulk Mail | Bulk "
+#~ "Email | Bulk E-Mail"
+#~ msgstr ""
+#~ "垃圾郵件 | 垃圾信件 | 垃圾信 | Junk | Spam | Junk Mail | Junk Email | "
+#~ "Junk E-Mail | Bulk Mail | Bulk Email | Bulk E-Mail"
+
+#~ msgid "Trash | Rubbish | Rubbish Bin"
+#~ msgstr "垃圾桶 | 垃圾筒 | 回收筒 | 垃圾 | Trash | Rubbish | Rubbish Bin"
+
+#~ msgid "Archive | Archives"
+#~ msgstr "封存 | 封存檔 | Archive | Archives"
+
+#~ msgid "Drafts"
+#~ msgstr "草稿"
+
+#~ msgid "Starred"
+#~ msgstr "已標星"
+
+#~ msgid "Important"
+#~ msgstr "重要"
+
+#~ msgid "Spam"
+#~ msgstr "垃圾郵件"
+
+#~ msgid "Outbox"
+#~ msgstr "寄件匣"
+
+#~ msgid "Search"
+#~ msgstr "搜尋"
+
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgid "SMTP"
+#~ msgstr "SMTP"
+
+#~ msgid "Gmail"
+#~ msgstr "Gmail"
+
+#~ msgid "Yahoo! Mail"
+#~ msgstr "Yahoo! Mail"
+
+#~ msgid "Outlook.com"
+#~ msgstr "Outlook.com"
+
+#~ msgid "Other"
+#~ msgstr "其他"
+
+#~ msgid "attachment"
+#~ msgstr "附件"
+
+#~ msgid "bcc"
+#~ msgstr "密件副本"
+
+#~ msgid "body"
+#~ msgstr "正文"
+
+#~ msgid "cc"
+#~ msgstr "副本"
+
+#~ msgid "from"
+#~ msgstr "寄件者"
+
+#~ msgid "subject"
+#~ msgstr "主旨"
+
+#~ msgid "to"
+#~ msgstr "收件者"
+
+#~ msgid "me"
+#~ msgstr "我"
+
+#~ msgid "(no subject)"
+#~ msgstr "(無主旨)"
+
+#~ msgid "%s wrote:"
+#~ msgstr "%s 寫到："
+
+#~ msgid "On %s:"
+#~ msgstr "於 %s："
+
+#~ msgid "none"
+#~ msgstr "無"
+
+#~ msgid "Mail Client"
+#~ msgstr "郵件客戶端"
+
+#~ msgid "Copyright 2011-2015 Yorba Foundation"
+#~ msgstr "著作權所有 2011-2015 Yorba Foundation"
+
+#~ msgid "Visit the Yorba web site"
+#~ msgstr "造訪 Yorba 網站"
+
+#~ msgid "Delete conversation"
+#~ msgstr "刪除對話"
+
+#~ msgid "Delete conversation (Shift+Delete)"
+#~ msgstr "刪除對話 (Shift+Delete)"
+
+#~ msgid "Delete conversations (Shift+Delete)"
+#~ msgstr "刪除對話 (Shift+Delete)"
+
+#~ msgid "Move conversation to Trash (Delete, Backspace)"
+#~ msgid_plural "Move conversations to Trash (Delete, Backspace)"
+#~ msgstr[0] "將對話搬移至垃圾桶 (Delete、Backspace)"
+
+#~ msgid "Move conversations to Trash (Delete, Backspace)"
+#~ msgstr "將對話搬移至垃圾桶 (Delete、Backspace)"
+
+#~ msgid "_Archive"
+#~ msgstr "封存(_A)"
+
+#~ msgid "Archive conversation (A)"
+#~ msgid_plural "Archive conversations (A)"
+#~ msgstr[0] "封存對話 (A)"
+
+#~ msgid "Archive conversations (A)"
+#~ msgstr "更多對話封存對話 (A)"
+
+#~ msgid "Mark as S_pam"
+#~ msgstr "標記為垃圾郵件(_P)"
+
+#~ msgid "Mark as not S_pam"
+#~ msgstr "標記為非垃圾郵件(_P)"
+
+#~ msgid "Add label to conversation"
+#~ msgid_plural "Add label to conversations"
+#~ msgstr[0] "貼加標籤到對話"
+
+#~ msgid "Add label to conversations"
+#~ msgstr "貼加標籤到對話"
+
+#~ msgid "A_ccounts"
+#~ msgstr "帳號(_C)"
+
+#~ msgid "_Preferences"
+#~ msgstr "偏好設定(_P)"
+
+#~ msgid "_Help"
+#~ msgstr "幫助(_H)"
+
+#~ msgid "_About"
+#~ msgstr "關於(_A)"
+
+#~ msgid "_Quit"
+#~ msgstr "退出(_Q)"
+
+#~ msgid "_Mark as..."
+#~ msgstr "標記為(_M)..."
+
+#~ msgid "Mark as _Read"
+#~ msgstr "標記為已讀(_R)"
+
+#~ msgid "Mark as _Unread"
+#~ msgstr "標記為未讀(_U)"
+
+#~ msgid "Add label"
+#~ msgstr "加入標籤"
+
+#~ msgid "_Label"
+#~ msgstr "標籤(_L)"
+
+#~ msgid "_Move"
+#~ msgstr "移動(_M)"
+
+#~ msgid "Compose new message (Ctrl+N, N)"
+#~ msgstr "編撰新訊息 (Ctrl+N、N)"
+
+#~ msgid "_Reply"
+#~ msgstr "回覆(_R)"
+
+#~ msgid "Reply (Ctrl+R, R)"
+#~ msgstr "回覆 (Ctrl+R、R)"
+
+#~ msgid "Reply all (Ctrl+Shift+R, Shift+R)"
+#~ msgstr "回覆所有人 (Ctrl+Shift+R、Shift+R)"
+
+#~ msgid "_Forward"
+#~ msgstr "轉寄(_F)"
+
+#~ msgid "Forward (Ctrl+L, F)"
+#~ msgstr "轉寄 (Ctrl+L、F)"
+
+#~ msgid "Empty"
+#~ msgstr "淨空"
+
+#~ msgid "Empty Spam or Trash folders"
+#~ msgstr "淨空垃圾信或垃圾桶資料夾"
+
+#~ msgid "Empty _Spam…"
+#~ msgstr "淨空垃圾信(_S)…"
+
+#~ msgid "Empty _Trash…"
+#~ msgstr "淨空垃圾桶(_T)…"
+
+#~ msgid "Toggle search bar"
+#~ msgstr "開關搜尋列"
+
+#~ msgid "Unable to store server trust exception"
+#~ msgstr "無法儲存伺服器信任例外"
+
+#~ msgid "Your settings are insecure"
+#~ msgstr "您的設定並不安全"
+
+#~ msgid ""
+#~ "Your IMAP and/or SMTP settings do not specify SSL or TLS.  This means "
+#~ "your username and password could be read by another person on the "
+#~ "network.  Are you sure you want to do this?"
+#~ msgstr ""
+#~ "您的 IMAP 與/或 SMTP 設定中沒有指定 SSL 或 TLS。這代表您的使用者名稱與密碼"
+#~ "可能被網路上的其他人讀取。您確定要這麼做？"
+
+#~ msgid "Co_ntinue"
+#~ msgstr "繼續(_N)"
+
+#~ msgid "Error sending email"
+#~ msgstr "寄送電子郵件時發生錯誤"
+
+#~ msgid ""
+#~ "Geary encountered an error sending an email.  If the problem persists, "
+#~ "please manually delete the email from your Outbox folder."
+#~ msgstr ""
+#~ "Geary 在寄送電子郵件時遭遇錯誤。如果問題持續發生，請從您的寄件匣資料夾中手"
+#~ "動刪除該封電子郵件。"
+
+#~ msgid "Error saving sent mail"
+#~ msgstr "儲存郵件時發生錯誤"
+
+#~ msgid ""
+#~ "Geary encountered an error saving a sent message to Sent Mail.  The "
+#~ "message will stay in your Outbox folder until you delete it."
+#~ msgstr ""
+#~ "Geary 將寄送的訊息儲存至已寄送郵件時遭遇錯誤。這封訊息會留在您的寄件匣資料"
+#~ "夾中，直到您刪除該封電子郵件為止。"
+
+#~ msgid "Labels"
+#~ msgstr "標籤"
+
+#~ msgid "Unable to open the database for %s"
+#~ msgstr "無法為 %s 開啟資料庫"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to corruption of the database file in this directory:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Geary can rebuild the database and re-synchronize with the server or "
+#~ "exit.\n"
+#~ "\n"
+#~ "Rebuilding the database will destroy all local email and its attachments. "
+#~ "<b>The mail on the your server will not be affected.</b>"
+#~ msgstr ""
+#~ "為此帳號開啟本地端郵件資料庫時發生錯誤。這可能是因為此目錄中的資料庫檔案已"
+#~ "損毀：\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Geary 可以重建開資料庫並重新與伺服器同步，又或者直接離開。\n"
+#~ "\n"
+#~ "重建資料庫會銷毀所有本地端的郵件與其相關附件。<b>您在伺服器上的郵件則不會"
+#~ "受影響。</b>"
+
+#~ msgid "_Rebuild"
+#~ msgstr "重建(_R)"
+
+#~ msgid "E_xit"
+#~ msgstr "離開(_X)"
+
+#~ msgid "Unable to rebuild database for \"%s\""
+#~ msgstr "無法重建「%s」資料庫"
+
+#~ msgid ""
+#~ "Error during rebuild:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "重建時發生錯誤：\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid "Unable to open local mailbox for %s"
+#~ msgstr "無法為 %s 開啟本地端收信匣"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to a file permissions problem.\n"
+#~ "\n"
+#~ "Please check that you have read/write permissions for all files in this "
+#~ "directory:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "開啟此帳號的本地端郵件資料庫時發生錯誤。這可能是因為檔案權限設定有問題所造"
+#~ "成。\n"
+#~ "\n"
+#~ "請檢查您是否擁有此目錄中所有檔案的讀/寫權：\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid ""
+#~ "The version number of the local mail database is formatted for a newer "
+#~ "version of Geary. Unfortunately, the database cannot be \"rolled back\" "
+#~ "to work with this version of Geary.\n"
+#~ "\n"
+#~ "Please install the latest version of Geary and try again."
+#~ msgstr ""
+#~ "本地端郵件資料庫的版本號格式為新版 Geary 所採用。不幸的是，該版本的 Geary "
+#~ "無法「回溯」處理資料庫。\n"
+#~ "\n"
+#~ "請安裝最新版的 Geary 並重試。"
+
+#~ msgid ""
+#~ "There was an error opening the local account. This is probably due to "
+#~ "connectivity issues.\n"
+#~ "\n"
+#~ "Please check your network connection and restart Geary."
+#~ msgstr ""
+#~ "開啟本地端帳號時發生錯誤。這可能因為連線活動發生問題。\n"
+#~ "\n"
+#~ "請檢查您的網路連線，並重新啟動 Geary。"
+
+#~ msgid "About %s"
+#~ msgstr "關於 %s"
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Cheng-Chia Tseng <pswo10680@gmail.com>, 2012-2015.\n"
+#~ "\n"
+#~ "Launchpad Contributions:\n"
+#~ "  Cheng-Chia Tseng https://launchpad.net/~zerng07\n"
+#~ "  Yi-Wei Chang https://launchpad.net/~jchang6513\n"
+#~ "  賴家亨 https://launchpad.net/~laichiaheng"
+
+#~ msgid "Undo move (Ctrl+Z)"
+#~ msgstr "取消移動 (Ctrl+Z)"
+
+#~ msgid "Are you sure you want to open \"%s\"?"
+#~ msgstr "您確定您想要開啟「%s」嗎？"
+
+#~ msgid ""
+#~ "Attachments may cause damage to your system if opened.  Only open files "
+#~ "from trusted sources."
+#~ msgstr "開啟附件可能有機會損害您的系統。請只開啟源自受信任來源的檔案。"
+
+#~ msgid "Don't _ask me again"
+#~ msgstr "之後不要再問我(_A)"
+
+#~ msgid "A file named \"%s\" already exists.  Do you want to replace it?"
+#~ msgstr "已經存在檔案名稱「%s」。您想要替換它嗎？"
+
+#~ msgid ""
+#~ "The file already exists in \"%s\".  Replacing it will overwrite its "
+#~ "contents."
+#~ msgstr "「%s」中已經存在該檔案。替換它將覆寫其內容。"
+
+#~ msgid "_Replace"
+#~ msgstr "替換(_R)"
+
+#~ msgid "Close open draft messages?"
+#~ msgstr "關閉開啟的草稿訊息？"
+
+#~ msgid "Empty all email from your %s folder?"
+#~ msgstr "是否要從您的 %s 資料夾中淨空所有的電子郵件？"
+
+#~ msgid "This removes the email from Geary and your email server."
+#~ msgstr "這會從 Geary 與您的電子郵件伺服器移除電子郵件。"
+
+#~ msgid "This cannot be undone."
+#~ msgstr "這個動作無法復原。"
+
+#~ msgid "Empty %s"
+#~ msgstr "淨空 %s"
+
+#~ msgid "Error emptying %s"
+#~ msgstr "淨空 %s 時發生錯誤"
+
+#~ msgid "Undo archive (Ctrl+Z)"
+#~ msgstr "取消封存 (Ctrl+Z)"
+
+#~ msgid "Undo trash (Ctrl+Z)"
+#~ msgstr "取消丟到垃圾桶 (Ctrl+Z)"
+
+#~ msgid "Undo (Ctrl+Z)"
+#~ msgstr "取消 (Ctrl+Z)"
+
+#~ msgid "Start Geary with hidden main window"
+#~ msgstr "啟動 Geary 並隱藏主視窗"
+
+#~ msgid "Output debugging information"
+#~ msgstr "輸出除錯用資訊"
+
+#~ msgid "Log conversation monitoring"
+#~ msgstr "紀錄對話監視"
+
+#~ msgid "Log network deserialization"
+#~ msgstr "紀錄網路去序列化"
+
+#~ msgid "Log network activity"
+#~ msgstr "紀錄網路活動"
+
+#~ msgid "Log IMAP replay queue"
+#~ msgstr "紀錄 IMAP replay 佇列"
+
+#~ msgid "Log network serialization"
+#~ msgstr "紀錄網路序列化"
+
+#~ msgid "Log periodic activity"
+#~ msgstr "紀錄週期性活動"
+
+#~ msgid "Log database queries (generates lots of messages)"
+#~ msgstr "紀錄資料庫查詢 (會產生大量訊息)"
+
+#~ msgid "Log folder normalization"
+#~ msgstr "紀錄資料夾一般化"
+
+#~ msgid "Allow inspection of WebView"
+#~ msgstr "允許 WebView 的檢閱"
+
+#~ msgid "Revoke all server certificates with TLS warnings"
+#~ msgstr "撤銷所有具 TLS 警告的伺服器憑證"
+
+#~ msgid "Display program version"
+#~ msgstr "顯示程式版本"
+
+#~ msgid "Use %s to open a new composer window"
+#~ msgstr "使用 %s 開啟新的編撰器視窗"
+
+#~ msgid "Please report comments, suggestions and bugs to:"
+#~ msgstr "請回報評註、建議與臭蟲至："
+
+#~ msgid "Failed to parse command line options: %s\n"
+#~ msgstr "無法解析指令列選項：%s\n"
+
+#~ msgid "Unrecognized command line option \"%s\"\n"
+#~ msgstr "無法辨識的指令列選項「%s」\n"
+
+#~ msgid "%s - New Messages"
+#~ msgstr "%s - 新訊息"
+
+#~ msgid "%s, %d new message total"
+#~ msgid_plural "%s, %d new messages total"
+#~ msgstr[0] "%s，總計 %d 封新訊息"
+
+#~ msgid ""
+#~ "%s\n"
+#~ "(%d other new message for %s)"
+#~ msgid_plural ""
+#~ "%s\n"
+#~ "(%d other new messages for %s)"
+#~ msgstr[0] ""
+#~ "%s\n"
+#~ "(%d 封其他新訊息，%s)"
+
+#~ msgid "Me"
+#~ msgstr "我"
+
+#~ msgid "Untrusted Connection: %s"
+#~ msgstr "未受信任的連線：%s"
+
+#~ msgid "The identity of the %s mail server at %s:%u could not be verified."
+#~ msgstr "%s 郵件伺服器 (位於 %s:%u) 的辨識身份無法通過核驗。"
+
+#~ msgid ""
+#~ "Selecting \"Trust This Server\" or \"Always Trust This Server\" may cause "
+#~ "your username and password to be transmitted insecurely."
+#~ msgstr ""
+#~ "選取「信任這臺伺服器」或「總是信任這臺伺服器」有可能導致您的使用者名稱與密"
+#~ "碼以不安全的方式傳送。"
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Geary not to access this "
+#~ "server."
+#~ msgstr "選取「不要信任這臺伺服器」會導致 Geary 無法存取這臺伺服器。"
+
+#~ msgid "Geary will not add or update this email account."
+#~ msgstr "Geary 不會加入或更新這個電子信箱帳號。"
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Geary to stop accessing "
+#~ "this account."
+#~ msgstr "選取「不要信任這臺伺服器」會導致 Geary 停止這個帳號的存取。"
+
+#~ msgid "Geary will exit if you have no other open email accounts."
+#~ msgstr "如果您沒有其他開啟的電子郵件帳號，Geary 將離開。"
+
+#~ msgid ""
+#~ "Contact your system administrator or email service provider if you have "
+#~ "any question about these issues."
+#~ msgstr "若您對於這些問題有任何疑問，請聯絡您的系統管理員或電子郵件服務商。"
+
+#~ msgid "The server's certificate is not signed by a known authority"
+#~ msgstr "伺服器的憑證並非由已知的授權中心簽署"
+
+#~ msgid "The server's identity does not match the identity in the certificate"
+#~ msgstr "伺服器的辨識身份與憑證的辨識身份並不相同"
+
+#~ msgid "The server's certificate has expired"
+#~ msgstr "伺服器的憑證已經過期"
+
+#~ msgid "The server's certificate has not been activated"
+#~ msgstr "伺服器的憑證尚未啟用"
+
+#~ msgid "The server's certificate has been revoked and is now invalid"
+#~ msgstr "伺服器的憑證已經撤銷，目前無效"
+
+#~ msgid "The server's certificate is considered insecure"
+#~ msgstr "伺服器的憑證被視為不安全"
+
+#~ msgid "An error has occurred processing the server's certificate"
+#~ msgstr "處理伺服器的憑證時遭遇錯誤。"
+
+#~ msgid "Geary requires your email password to continue"
+#~ msgstr "Geary 需要您的電子郵件密碼才能繼續"
+
+#~ msgid "Additional addresses for %s"
+#~ msgstr "%s 的其他位址"
+
+#~ msgid "First Last"
+#~ msgstr "名字 姓氏"
+
+#~ msgid "Welcome to Geary."
+#~ msgstr "歡迎使用 Geary。"
+
+#~ msgid "Enter your account information to get started."
+#~ msgstr "請輸入您的帳戶資訊以開始使用。"
+
+#~ msgid "2 weeks back"
+#~ msgstr "2 週前"
+
+#~ msgid "1 month back"
+#~ msgstr "1 個月前"
+
+#~ msgid "3 months back"
+#~ msgstr "3 週前"
+
+#~ msgid "6 months back"
+#~ msgstr "6 週前"
+
+#~ msgid "1 year back"
+#~ msgstr "1 年前"
+
+#~ msgid "2 years back"
+#~ msgstr "2 年前"
+
+#~ msgid "4 years back"
+#~ msgstr "4 年前"
+
+#~ msgid "Everything"
+#~ msgstr "每件"
+
+#~ msgid "Edit"
+#~ msgstr "編輯"
+
+#~ msgid "Preview"
+#~ msgstr "預覽"
+
+#~ msgid "Remem_ber passwords"
+#~ msgstr "記住密碼(_B)"
+
+#~ msgid "Remem_ber password"
+#~ msgstr "記住密碼(_B)"
+
+#~ msgid "        &#8226; Invalid account nickname.\n"
+#~ msgstr "        &#8226; 帳號暱稱無效。\n"
+
+#~ msgid "        &#8226; Email address already added to Geary.\n"
+#~ msgstr "        &#8226; 電子郵件位址已加入 Geary。\n"
+
+#~ msgid "        &#8226; IMAP connection error.\n"
+#~ msgstr "        &#8226; IMAP 連線錯誤。\n"
+
+#~ msgid "        &#8226; IMAP username or password incorrect.\n"
+#~ msgstr "        &#8226; IMAP 使用者名稱或密碼不正確。\n"
+
+#~ msgid "        &#8226; SMTP connection error.\n"
+#~ msgstr "        &#8226; SMTP 連線錯誤。\n"
+
+#~ msgid "        &#8226; SMTP username or password incorrect.\n"
+#~ msgstr "        &#8226; SMTP  使用者名稱或密碼不正確。\n"
+
+#~ msgid "        &#8226; Connection error.\n"
+#~ msgstr "        &#8226;連線錯誤 。\n"
+
+#~ msgid "        &#8226; Username or password incorrect.\n"
+#~ msgstr "        &#8226; 使用者名稱或密碼不正確。\n"
+
+#~ msgid "_Add"
+#~ msgstr "加入(_A)"
+
+#~ msgid "%l:%M %P"
+#~ msgstr "%P %l:%M"
+
+#~ msgid "%H:%M"
+#~ msgstr "%H:%M"
+
+#~ msgctxt "Default clock format"
+#~ msgid "%l:%M %P"
+#~ msgstr "%P %l:%M"
+
+#~ msgid "%b %-e"
+#~ msgstr "%b%-e日"
+
+#~ msgid "%x"
+#~ msgstr "%x"
+
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%Y年%b%-e日 %P %-l:%M"
+
+#~ msgid "%B %-e, %Y %-H:%M"
+#~ msgstr "%Y年%b%-e日 %-H:%M"
+
+#~ msgctxt "Default full date"
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%Y年%b%-e日 %P %-l:%M"
+
+#~ msgid "Now"
+#~ msgstr "現在"
+
+#~ msgid "%dm ago"
+#~ msgid_plural "%dm ago"
+#~ msgstr[0] "%d分鐘前"
+
+#~ msgid "%dh ago"
+#~ msgid_plural "%dh ago"
+#~ msgstr[0] "%d小時前"
+
+#~ msgid "Yesterday"
+#~ msgstr "昨日"
+
+#~ msgid "%A"
+#~ msgstr "%A"
+
+#~ msgid "bytes"
+#~ msgstr "位元組"
+
+#~ msgctxt "Abbreviation for terabyte"
+#~ msgid "TB"
+#~ msgstr "TB"
+
+#~ msgctxt "Abbreviation for gigabyte"
+#~ msgid "GB"
+#~ msgstr "GB"
+
+#~ msgctxt "Abbreviation for megabyte"
+#~ msgid "MB"
+#~ msgstr "MB"
+
+#~ msgctxt "Abbreviation for kilobyte"
+#~ msgid "KB"
+#~ msgstr "KB"
+
+#~ msgid "%d message"
+#~ msgid_plural "%d messages"
+#~ msgstr[0] "%d 封訊息"
+
+#~ msgid "%s, %s"
+#~ msgstr "%s，%s"
+
+#~ msgid "Inboxes"
+#~ msgstr "收信匣"
+
+#~ msgid "Search %s account"
+#~ msgstr "搜尋 %s 帳號"
+
+#~ msgid "%d result"
+#~ msgid_plural "%d results"
+#~ msgstr[0] "%d 項結果"
+
+#~ msgid "%u conversation selected."
+#~ msgid_plural "%u conversations selected."
+#~ msgstr[0] "%u 則對話已選取。"
+
+#~ msgid "No search results found."
+#~ msgstr "找不到符合的搜尋結果。"
+
+#~ msgid "No conversations in folder."
+#~ msgstr "資料夾中沒有對話。"
+
+#~ msgid "Always Show From Sender"
+#~ msgstr "總是顯示寄件者"
+
+#~ msgid "Date:"
+#~ msgstr "日期："
+
+#~ msgid "%u read message"
+#~ msgid_plural "%u read messages"
+#~ msgstr[0] "%u 封已讀訊息"
+
+#~ msgid "This message was sent successfully, but could not be saved to %s."
+#~ msgstr "這封訊息已成功寄送，但無法到 %s。"
+
+#~ msgid "_Copy"
+#~ msgstr "複製(_C)"
+
+#~ msgid "Copy _Email Address"
+#~ msgstr "複製電子郵件位址(_E)"
+
+#~ msgid "Copy _Link"
+#~ msgstr "複製連結(_L)"
+
+#~ msgid "Select _Message"
+#~ msgstr "選取訊息(_M)"
+
+#~ msgid "Select _All"
+#~ msgstr "選取全部(_A)"
+
+#~ msgid "_Inspect"
+#~ msgstr "檢閱(_I)"
+
+#~ msgid "This link appears to go to"
+#~ msgstr "此連結似乎要前往"
+
+#~ msgid "but actually goes to"
+#~ msgstr "但實際上卻連往"
+
+#~ msgid " (Invalid?)"
+#~ msgstr " (無效？)"
+
+#~ msgid "_Save Image As..."
+#~ msgstr "另存影像為(_S)..."
+
+#~ msgid "_Save As..."
+#~ msgstr "儲存為(_S)..."
+
+#~ msgid "Save All A_ttachments..."
+#~ msgstr "儲存所有附件(_T)..."
+
+#~ msgid "Save A_ttachment..."
+#~ msgid_plural "Save All A_ttachments..."
+#~ msgstr[0] "儲存所有附件(_T)..."
+
+#~ msgid "Reply to _All"
+#~ msgstr "回覆所有人(_A)"
+
+#~ msgid "_Mark as Read"
+#~ msgstr "標記為已讀(_M)"
+
+#~ msgid "_Mark as Unread"
+#~ msgstr "標記為未讀(_M)"
+
+#~ msgid "Mark Unread From _Here"
+#~ msgstr "從此處起標記為未讀(_H)"
+
+#~ msgid "_View Source"
+#~ msgstr "檢視來源(_V)"
+
+#~ msgid "Failed to open default text editor."
+#~ msgstr "無法開啟預設的文字編輯器。"
+
+#~ msgid "%s - Conversation Inspector"
+#~ msgstr "%s - 對話檢閱器"
+
+#~ msgid "Saved"
+#~ msgstr "已儲存"
+
+#~ msgid "Saving"
+#~ msgstr "儲存中"
+
+#~ msgid "Error saving"
+#~ msgstr "儲存時發生錯誤"
+
+#~ msgid "Press Backspace to delete quote"
+#~ msgstr "按下 Backspace 刪除引言"
+
+#~ msgid ""
+#~ "attach|attaching|attaches|attachment|attachments|attached|enclose|"
+#~ "enclosed|enclosing|encloses|enclosure|enclosures"
+#~ msgstr ""
+#~ "attach|attaching|attaches|attachment|attachments|attached|enclose|"
+#~ "enclosed|enclosing|encloses|enclosure|enclosures|附件|附上|附加"
+
+#~ msgid "Do you want to discard this message?"
+#~ msgstr "您是否想丟棄此封訊息？"
+
+#~ msgid "Send message with an empty subject and body?"
+#~ msgstr "是否要寄送主旨與內文皆空白的訊息？"
+
+#~ msgid "Send message without an attachment?"
+#~ msgstr "是否要寄送沒有附件的訊息？"
+
+#~ msgid "Cannot add attachment"
+#~ msgstr "無法加入附件"
+
+#~ msgid "\"%s\" could not be found."
+#~ msgstr "「%s」無法找到。"
+
+#~ msgid "\"%s\" is a folder."
+#~ msgstr "「%s」是資料夾。"
+
+#~ msgid "\"%s\" is an empty file."
+#~ msgstr "「%s」是空白檔案。"
+
+#~ msgid "\"%s\" could not be opened for reading."
+#~ msgstr "「%s」無法開啟以供讀取。"
+
+#~ msgid "\"%s\" already attached for delivery."
+#~ msgstr "「%s」已附上可供郵遞。"
+
+#~ msgid "%s (%s)"
+#~ msgstr "%s (%s)"
+
+#~ msgid "To: "
+#~ msgstr "收件者： "
+
+#~ msgid "Cc: "
+#~ msgstr "副本： "
+
+#~ msgid "Bcc: "
+#~ msgstr "密件副本： "
+
+#~ msgid "Reply-To: "
+#~ msgstr "回覆： "
+
+#~ msgid "Select Color"
+#~ msgstr "選取色彩"
+
+#~ msgid "%1$s via %2$s"
+#~ msgstr "%1$s 經由 %2$s"
+
+#~ msgid "_From:"
+#~ msgstr "寄件者(_F)："
+
+#~ msgid "%s (%d)"
+#~ msgstr "%s (%d)"
+
+#~ msgid "Sending..."
+#~ msgstr "正寄送中..."
+
+#~ msgid "%i match"
+#~ msgid_plural "%i matches"
+#~ msgstr[0] "%i 項符合結果"
+
+#~ msgid "%i match (wrapped)"
+#~ msgid_plural "%i matches (wrapped)"
+#~ msgstr[0] "%i 項符合結果 (前後循環)"
+
+#~ msgid "not found"
+#~ msgstr "找不到"
+
+#~ msgid "_OK"
+#~ msgstr "確定(_O)"
+
+#~ msgid "_Cancel"
+#~ msgstr "取消(_C)"
+
+#~ msgid "_Discard"
+#~ msgstr "丟棄(_D)"
+
+#~ msgid "_Open"
+#~ msgstr "開啟(_O)"
+
+#~ msgid "_Print..."
+#~ msgstr "列印(_P)..."
+
+#~ msgid "_Remove"
+#~ msgstr "移除(_R)"
+
+#~ msgid "_Keep"
+#~ msgstr "保留(_K)"
+
+#~ msgid "Search all mail in account for keywords (Ctrl+S)"
+#~ msgstr "以關鍵字搜尋帳號中的所有郵件 (Ctrl+S)"
+
+#~ msgid "Indexing %s account"
+#~ msgstr "正為 %s 帳號製作索引"
+
+#~ msgid "Send by Email"
+#~ msgstr "以電子郵件傳送"
+
+#~ msgid "Send files using Mail"
+#~ msgstr "使用《郵件》傳送檔案"
+
+#~ msgid "Welcome to Mail"
+#~ msgstr "歡迎使用《郵件》"
+
+#~ msgid "More options"
+#~ msgstr "其他選項"
+
+#~ msgid "Search %s"
+#~ msgstr "搜尋 %s"
+
+#~ msgid "Reading"
+#~ msgstr "閱讀"
+
+#~ msgid "Automatically select next message:"
+#~ msgstr "自動選取下個訊息："
+
+#~ msgid "Conversation previews:"
+#~ msgstr "對話預覽："
+
+#~ msgid "Three-pane layout:"
+#~ msgstr "三面板配置："
+
+#~ msgid "Composer"
+#~ msgstr "編撰器"
+
+#~ msgid "Spell check:"
+#~ msgstr "西文拼字檢查："
+
+#~ msgid "Notifications"
+#~ msgstr "通知"
+
+#~ msgid "Always watch for new mail:"
+#~ msgstr "總是查看有無新郵件："
+
+#~ msgid "Delete Conversation (Shift+Delete)"
+#~ msgid_plural "Delete Conversations (Shift+Delete)"
+#~ msgstr[0] "刪除對話 (Shift+Delete)"
+
+#~ msgid "Delete Conversations (Shift+Delete)"
+#~ msgstr "刪除對話 (Shift+Delete)"
+
+#~ msgid ""
+#~ "<span weight=\"bold\" size=\"larger\">Are you sure you want to remove "
+#~ "this account?</span> "
+#~ msgstr ""
+#~ "<span weight=\"bold\" size=\"larger\">您確定要移除這個帳號嗎？</span> "
+
+#~ msgid ""
+#~ "All email associated with this account will be removed from your "
+#~ "computer. This will not affect email on the server."
+#~ msgstr ""
+#~ "任何與此帳號相關連的電子郵件皆會從您電腦中刪除。這不會影響到伺服器上的電子"
+#~ "郵件。"
+
+#~ msgid "Nickname:"
+#~ msgstr "暱稱："
+
+#~ msgid "Find"
+#~ msgstr "尋找"
+
+#~ msgid "Previous Result"
+#~ msgstr "上個結果"
+
+#~ msgid "Next result"
+#~ msgstr "下個結果"
+
+#~ msgid "_Case sensitive"
+#~ msgstr "區分字母大小寫(_C)"
+
+#~ msgid "label"
+#~ msgstr "標籤"
+
+#~ msgid "Geary update in progress…"
+#~ msgstr "正在更新 Geary…"
+
+#~ msgid "Remove email address"
+#~ msgstr "移除電子郵件位址"
+
+#~ msgid ""
+#~ "Some email services require additional addresses be configured on the "
+#~ "server.  Contact your email provider for more information."
+#~ msgstr ""
+#~ "部分電子郵件服務需要在伺服器上設定額外的位址。請聯絡您的電子郵件服務供應商"
+#~ "深入瞭解相關資訊。"
+
+#~ msgid "_Update"
+#~ msgstr "更新(_U)"
+
+#~ msgid "Please wait while Geary validates your account."
+#~ msgstr "請稍等，Geary 正在驗證您的帳號。"
+
+#~ msgid "_Redo"
+#~ msgstr "再次動作(_R)"
+
+#~ msgid "Cu_t"
+#~ msgstr "剪下(_T)"
+
+#~ msgid "_Paste"
+#~ msgstr "貼上(_P)"
+
+#~ msgid "_Left"
+#~ msgstr "靠左(_L)"
+
+#~ msgid "_Right"
+#~ msgstr "靠右(_R)"
+
+#~ msgid "_Center"
+#~ msgstr "置中(_C)"
+
+#~ msgid "_Justify"
+#~ msgstr "左右對齊(_J)"
+
+#~ msgid "Link (Ctrl+L)"
+#~ msgstr "連結 (Ctrl+L)"
+
+#~ msgid "C_olor"
+#~ msgstr "色彩(_O)"
+
+#~ msgid "Quote text  (Ctrl+])"
+#~ msgstr "引用文字 (Ctrl+])"
+
+#~ msgctxt "Clipboard paste with rich text"
+#~ msgid "Paste _With Formatting"
+#~ msgstr "附帶文字格式貼上(_W)"
+
+#~ msgid "Bold (Ctrl+B)"
+#~ msgstr "粗體 (Ctrl+B)"
+
+#~ msgid "Italic (Ctrl+I)"
+#~ msgstr "義大利斜體 (Ctrl+I)"
+
+#~ msgid "Show Extended Fields"
+#~ msgstr "顯示擴展欄位"
+
+#~ msgctxt "Label"
+#~ msgid "Close and Save"
+#~ msgstr "關閉並儲存"
+
+#~ msgctxt "Short Label"
+#~ msgid "Close and Save"
+#~ msgstr "關閉並儲存"
+
+#~ msgctxt "Tooltip"
+#~ msgid "Close and Save"
+#~ msgstr "關閉並儲存"
+
+#~ msgctxt "Label"
+#~ msgid "Close and Discard"
+#~ msgstr "關閉並丟棄"
+
+#~ msgctxt "Short Label"
+#~ msgid "Close and Discard"
+#~ msgstr "關閉並丟棄"
+
+#~ msgctxt "Tooltip"
+#~ msgid "Close and Discard"
+#~ msgstr "關閉並丟棄"
+
+#~ msgid "Lar_ge"
+#~ msgstr "大(_G)"
+
+#~ msgid "Large"
+#~ msgstr "大"
+
+#~ msgid "_Medium"
+#~ msgstr "中(_M)"
+
+#~ msgid "Medium"
+#~ msgstr "中"
+
+#~ msgid "_Small"
+#~ msgstr "小(_S)"
+
+#~ msgid "Small"
+#~ msgstr "小"
+
+#~ msgid "S_ans Serif"
+#~ msgstr "無襯線體(_A)"
+
+#~ msgid "Sans Serif"
+#~ msgstr "無襯線體"
+
+#~ msgid "S_erif"
+#~ msgstr "襯線體(_E)"
+
+#~ msgid "Serif"
+#~ msgstr "襯線體"
+
+#~ msgid "_Fixed Width"
+#~ msgstr "固定寬(_F)"
+
+#~ msgid "Fixed Width"
+#~ msgstr "固定寬"
+
+#~ msgid "Detach"
+#~ msgstr "卸離"
+
+#~ msgid "Detach (Ctrl+D)"
+#~ msgstr "卸離 (Ctrl+D)"
+
+#~ msgid "_Send"
+#~ msgstr "寄送(_S)"
+
+#~ msgid "Send (Ctrl+Enter)"
+#~ msgstr "寄送 (Ctrl+Enter)"
+
+#~ msgid "_Attach File"
+#~ msgstr "附上檔案(_A)"
+
+#~ msgid "Attach File"
+#~ msgstr "附上檔案"
+
+#~ msgid "_Include Original Attachments"
+#~ msgstr "包含原始附件(_I)"
+
+#~ msgid "Include Original Attachments"
+#~ msgstr "包含原始附件"
+
+#~ msgid "Application Menu"
+#~ msgstr "應用程式選單"
+
+#~ msgid "_To"
+#~ msgstr "收件者(_T)"
+
+#~ msgid "_Cc"
+#~ msgstr "副本(_C)"
+
+#~ msgid "_Subject"
+#~ msgstr "主旨(_S)"
+
+#~ msgid "_Bcc"
+#~ msgstr "密件副本(_B)"
+
+#~ msgid "_Reply-To"
+#~ msgstr "回覆(_R)"
+
+#~ msgid "From"
+#~ msgstr "寄件者"
+
+#~ msgid "Drop files here"
+#~ msgstr "檔案可拖放至此"
+
+#~ msgid "To add them as attachments"
+#~ msgstr "以將其作為附件"
+
+#~ msgid "<span weight=\"bold\" size=\"larger\">Cannot remove account</span> "
+#~ msgstr "<span weight=\"bold\" size=\"larger\">無法移除帳號</span> "
+
+#~ msgid ""
+#~ "A composer window associated with this account is currently open. Send or "
+#~ "discard the message and try again."
+#~ msgstr ""
+#~ "目前已有開啟和此帳號相關連的編撰器視窗。請寄送或丟棄該訊息，並重試一次。"
+
+#~ msgid "Addi_tional email addresses…"
+#~ msgstr "額外電子郵件位址(_T)…"
+
+#~ msgid "_Save sent mail"
+#~ msgstr "儲存寄送之郵件(_S)"
+
+#~ msgid "Password"
+#~ msgstr "密碼"
+
+#~ msgid "_Password:"
+#~ msgstr "密碼(_P)："
+
+#~ msgid "Work, Home, etc."
+#~ msgstr "工作用、自家用等。"
+
+#~ msgid "N_ickname:"
+#~ msgstr "暱稱(_I)："
+
+#~ msgid "S_ervice:"
+#~ msgstr "服務(_E)："
+
+#~ msgid "IMAP settings"
+#~ msgstr "IMAP 設定值"
+
+#~ msgid "Se_rver:"
+#~ msgstr "伺服器(_R)："
+
+#~ msgid "P_ort"
+#~ msgstr "連接埠(_O)"
+
+#~ msgid "Ser_ver:"
+#~ msgstr "伺服器(_V)："
+
+#~ msgid "Por_t"
+#~ msgstr "連接埠(_T)"
+
+#~ msgid "SMTP settings"
+#~ msgstr "SMTP 設定值"
+
+#~ msgid "User_name:"
+#~ msgstr "使用者名稱(_N)："
+
+#~ msgid "Pass_word:"
+#~ msgstr "密碼(_W)："
+
+#~ msgid "SMTP username"
+#~ msgstr "SMTP 使用者名稱"
+
+#~ msgid "SMTP password"
+#~ msgstr "SMTP 密碼"
+
+#~ msgid "_Username:"
+#~ msgstr "使用者名稱(_U)："
+
+#~ msgid "IMAP username"
+#~ msgstr "IMAP 使用者名稱"
+
+#~ msgid "IMAP password"
+#~ msgstr "IMAP 密碼"
+
+#~ msgid "Encr_yption:"
+#~ msgstr "加密(_Y)："
+
+#~ msgid "Encrypt_ion:"
+#~ msgstr "加密(_I)："
+
+#~ msgid "SSL/TLS"
+#~ msgstr "SSL/TLS"
+
+#~ msgid "STARTTLS"
+#~ msgstr "STARTTLS"
+
+#~ msgid "No authentication re_quired"
+#~ msgstr "不需要核對身份(_Q)"
+
+#~ msgid "Use IMAP cre_dentials"
+#~ msgstr "使用 IMAP 憑證(_D)"
+
+#~ msgid "Storage"
+#~ msgstr "儲藏"
+
+#~ msgid "_Download mail"
+#~ msgstr "下載郵件(_D)"
+
+#~ msgid "Save dra_fts on server"
+#~ msgstr "在伺服器上儲存草稿(_F)"
+
+#~ msgid "Si_gn emails (HTML allowed):"
+#~ msgstr "簽署電子郵件 (允許 HTML)："
+
+#~ msgid "Add account"
+#~ msgstr "加入帳號"
+
+#~ msgid "Edit account"
+#~ msgstr "編輯帳號"
+
+#~ msgid "Remove account"
+#~ msgstr "移除帳號"
+
+#~ msgid "Untrusted Connection"
+#~ msgstr "未受信任的連線"
+
+#~ msgid "_Always Trust This Server"
+#~ msgstr "總是信任這臺伺服器(_A)"
+
+#~ msgid "_Trust This Server"
+#~ msgstr "信任這臺伺服器(_T)"
+
+#~ msgid "_Don't Trust This Server"
+#~ msgstr "不要信任這臺伺服器(_D)"
+
+#~ msgid "SMTP Credentials"
+#~ msgstr "SMTP 憑證"
+
+#~ msgid "Username"
+#~ msgstr "使用者名稱"
+
+#~ msgid "_Remember password"
+#~ msgstr "記住密碼(_R)"
+
+#~ msgid "_Authenticate"
+#~ msgstr "身分認證(_A)"
+
+#~ msgid "© 2011-2015 Yorba Foundation, © 2016 elementary LLC."
+#~ msgstr "© 2011-2015 Yorba Foundation, © 2016 elementary LLC."
+
+#~ msgid ""
+#~ "Mail encountered an error sending an email.  If the problem persists, "
+#~ "please manually delete the email from your Outbox folder."
+#~ msgstr ""
+#~ "《郵件》在寄送電子郵件時遭遇錯誤。若問題持續發生，請從您的「寄件匣」中手動"
+#~ "刪除該封電子郵件。"
+
+#~ msgid ""
+#~ "Mail encountered an error saving a sent message to Sent Mail.  The "
+#~ "message will stay in your Outbox folder until you delete it."
+#~ msgstr ""
+#~ "《郵件》將寄送的訊息儲存至「已寄郵件」時遭遇錯誤。這封訊息會留在您的「寄件"
+#~ "匣」資料夾中，直到您刪除該封電子郵件為止。"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to corruption of the database file in this directory:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Mail can rebuild the database and re-synchronize with the server or "
+#~ "exit.\n"
+#~ "\n"
+#~ "Rebuilding the database will destroy all local email and its attachments. "
+#~ "<b>The mail on the your server will not be affected.</b>"
+#~ msgstr ""
+#~ "為此帳號開啟本地端郵件資料庫時發生錯誤。這可能是因為此目錄中的資料庫檔案已"
+#~ "損毀：\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "《郵件》可以重建開資料庫並重新與伺服器同步，又或者直接離開。\n"
+#~ "\n"
+#~ "重建資料庫會銷毀所有本地端的郵件與其相關附件。<b>您在伺服器上的郵件則不會"
+#~ "受影響。</b>"
+
+#~ msgid ""
+#~ "The version number of the local mail database is formatted for a newer "
+#~ "version of Mail. Unfortunately, the database cannot be \"rolled back\" to "
+#~ "work with this version of Mail.\n"
+#~ "\n"
+#~ "Please install the latest version of Mail and try again."
+#~ msgstr ""
+#~ "本地端郵件資料庫的版本號採用較新版的《郵件》格式。不幸的是，此版本的《郵"
+#~ "件》無法「回溯」以處理資料庫。\n"
+#~ "\n"
+#~ "請安裝最新版的《郵件》並重試。"
+
+#~ msgid ""
+#~ "There was an error opening the local account. This is probably due to "
+#~ "connectivity issues.\n"
+#~ "\n"
+#~ "Please check your network connection and restart Mail."
+#~ msgstr ""
+#~ "開啟本地端帳號時發生錯誤。這可能因為連線活動發生問題。\n"
+#~ "\n"
+#~ "請檢查您的網路連線，並重新啟動《郵件》。"
+
+#~ msgid "This removes the email from Mail and your email server."
+#~ msgstr "這會從《郵件》與您的電子郵件伺服器移除電子郵件。"
+
+#~ msgid "        &#8226; Email address already added to Mail.\n"
+#~ msgstr "        &#8226; 電子郵件位址已加入《郵件》。\n"
+
+#~ msgid "Mail requires your email password to continue"
+#~ msgstr "《郵件》需要您的電子郵件密碼才能繼續"
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Mail not to access this "
+#~ "server."
+#~ msgstr "選取「不要信任這臺伺服器」會導致《郵件》無法存取這臺伺服器。"
+
+#~ msgid "Mail will not add or update this email account."
+#~ msgstr "《郵件》不會加入或更新這個電子信箱帳號。"
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Mail to stop accessing "
+#~ "this account."
+#~ msgstr "選取「不要信任這臺伺服器」會導致《郵件》停止這個帳號的存取。"
+
+#~ msgid "Mail will exit if you have no other open email accounts."
+#~ msgstr "如果您沒有其他開啟的電子郵件帳號，《郵件》將離開。"
+
+#~ msgid "Please wait while Mail validates your account."
+#~ msgstr "請稍候，《郵件》正在驗證您的帳號。"
+
+#~ msgid "Mail update in progress…"
+#~ msgstr "正在更新郵件…"
+
+#~ msgid ""
+#~ "2011-2015 Yorba Foundation\n"
+#~ "© 2016 elementary LLC."
+#~ msgstr ""
+#~ "2011-2015 Yorba Foundation\n"
+#~ "© 2016 elementary LLC."
+
+#~ msgid "Show About dialog"
+#~ msgstr "顯示「關於」對話盒"
+
+#~ msgid "Save Attachment…"
+#~ msgstr "儲存附件…"
+
+#~ msgid "Save All Attachments…"
+#~ msgstr "儲存所有附件…"
+
+#~ msgid "View Source"
+#~ msgstr "檢示來源"
+
+#~ msgid "View message"
+#~ msgstr "檢視訊息"
+
+#~ msgid "Copy Email Address"
+#~ msgstr "複製電子郵件位址"
+
+#~ msgid "Hide message"
+#~ msgstr "隱藏訊息"
+
+#~ msgid "Case sensitive"
+#~ msgstr "區分大小寫"
+
+#~ msgid "%u match"
+#~ msgid_plural "%u matches"
+#~ msgstr[0] "%u 項符合"
+
+#~ msgid "no-reply;no_reply;noreply;do-not-reply;do_not_reply;donotreply"
+#~ msgstr "no-reply;no_reply;noreply;do-not-reply;do_not_reply;donotreply"
+
+#~ msgid "Include original attachments"
+#~ msgstr "包含原始附件"
+
+#~ msgid "Don't ask me again"
+#~ msgstr "之後請別再問我"
+
+#~ msgid "Are you sure you want to remove this account?"
+#~ msgstr "您確定要移除這個帳號？"
+
+#~ msgid "Username:"
+#~ msgstr "使用者名稱："
+
+#~ msgid "Password:"
+#~ msgstr "密碼："
+
+#~ msgid "SMTP Credentials:"
+#~ msgstr "SMTP 憑證："
+
+#~ msgid "Remember password"
+#~ msgstr "記住密碼"
+
+#~ msgid "Authenticate"
+#~ msgstr "核對身份"
+
+#~ msgid "Strikethrough (Ctrl+%)"
+#~ msgstr "刪劃線 (Ctrl+%)"
+
+#~ msgid "Link (Ctrl+K)"
+#~ msgstr "連結 (Ctrl+K)"
+
+#~ msgid "Forward (Ctrl+Shift+F)"
+#~ msgstr "轉寄 (Ctrl+Shift+F)"

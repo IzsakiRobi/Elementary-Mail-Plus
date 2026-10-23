@@ -1,0 +1,357 @@
+# Japanese translation for pantheon-mail
+# Copyright (c) 2016 Rosetta Contributors and Canonical Ltd 2016
+# This file is distributed under the same license as the pantheon-mail package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pantheon-mail\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-08 16:46+0000\n"
+"PO-Revision-Date: 2025-08-30 02:22+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
+"Language-Team: Japanese <https://l10n.elementaryos.org/projects/mail/extra/"
+"ja/>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.11.4\n"
+"X-Launchpad-Export-Date: 2017-03-19 06:51+0000\n"
+
+#: data/mail.metainfo.xml.in:10 data/io.elementary.mail.desktop.in:2
+msgid "Mail"
+msgstr "メール"
+
+#: data/mail.metainfo.xml.in:11 data/io.elementary.mail.desktop.in:3
+msgid "Send and receive mail"
+msgstr "メールを送信し受信します"
+
+#: data/mail.metainfo.xml.in:13
+msgid ""
+"Mail is designed to let you manage your email quickly and effortlessly. Its "
+"interface is based on conversations, so you can read an entire discussion "
+"without having to click from message to message."
+msgstr ""
+"“メール”はメールを素早く、楽々と管理できるようにデザインされています。スレッ"
+"ドに基づいたインターフェースなので、メールのやりとりをメッセージからメッセー"
+"ジへとクリックせずに読むことができます。"
+
+#: data/mail.metainfo.xml.in:15
+msgid "Lightweight mail client with full IMAP support"
+msgstr "IMAP に完全対応する軽量メールクライアント"
+
+#: data/mail.metainfo.xml.in:16
+msgid "Mail grouped into conversations, not a tree of threads"
+msgstr "メールはスレッドの階層表示ではなく、会話ごとの分類で表示されます"
+
+#: data/mail.metainfo.xml.in:17
+msgid "As-you-type searching"
+msgstr "自動検索候補"
+
+#: data/mail.metainfo.xml.in:18
+msgid "Multiple account support"
+msgstr "複数アカウントに対応"
+
+#: data/mail.metainfo.xml.in:19
+msgid "Powerful HTML composer that saves drafts to the server"
+msgstr "サーバーへ下書きを保存する強力な HTML メール作成画面"
+
+#: data/mail.metainfo.xml.in:20
+msgid "Works with Gmail, Yahoo! Mail, and other popular IMAP servers"
+msgstr ""
+"Gmail と Yahoo! メール、そしてその他のよく利用される IMAP サーバーで動作しま"
+"す"
+
+#: data/mail.metainfo.xml.in:66
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/mail.metainfo.xml.in:74 data/mail.metainfo.xml.in:83
+#: data/mail.metainfo.xml.in:100 data/mail.metainfo.xml.in:133
+#: data/mail.metainfo.xml.in:154 data/mail.metainfo.xml.in:173
+#: data/mail.metainfo.xml.in:195
+msgid "Improvements:"
+msgstr "改善点:"
+
+#: data/mail.metainfo.xml.in:76 data/mail.metainfo.xml.in:86
+#: data/mail.metainfo.xml.in:111 data/mail.metainfo.xml.in:142
+#: data/mail.metainfo.xml.in:156 data/mail.metainfo.xml.in:177
+#: data/mail.metainfo.xml.in:198
+msgid "Updated translations"
+msgstr "翻訳の更新"
+
+#: data/mail.metainfo.xml.in:85
+msgid ""
+"Use the actual recipients of a message as sender when replying or forwarding"
+msgstr ""
+"返信時や転送時、実際にメッセージを受信した人を差出人として使うように修正"
+
+#: data/mail.metainfo.xml.in:102
+msgid "Ability to create multiple signatures and set defaults per account"
+msgstr "複数の署名を作成し、アカウント毎にデフォルトを設定できる機能を追加"
+
+#: data/mail.metainfo.xml.in:103
+msgid "Add support for inline images in the composer"
+msgstr "メール作成画面でインライン画像に対応"
+
+#: data/mail.metainfo.xml.in:104
+msgid "Add support for renaming folders"
+msgstr "フォルダーの名前変更に対応"
+
+#: data/mail.metainfo.xml.in:105
+msgid "Move settings menu to the mailboxes pane"
+msgstr "設定メニューをメールボックスペインに移動"
+
+#: data/mail.metainfo.xml.in:106
+msgid "Use the FileChooser portal"
+msgstr "ファイル選択ポータルを使うように修正"
+
+#: data/mail.metainfo.xml.in:107
+msgid "Improve network availability handling"
+msgstr "ネットワーク接続状態に応じた処理を改善"
+
+#: data/mail.metainfo.xml.in:108
+msgid "Fix issues with fetching e-mail when Mail is not autostarted"
+msgstr "“メール”が自動起動していない場合に、メールの取得に失敗する不具合を修正"
+
+#: data/mail.metainfo.xml.in:109
+msgid "Notify the user when a calendar event is included in a message"
+msgstr ""
+"メッセージにカレンダーの予定が含まれる場合にユーザーに通知する機能を追加"
+
+#: data/mail.metainfo.xml.in:110
+msgid "Improve performance when switching between folders"
+msgstr "フォルダー切り替え時のパフォーマンスを改善"
+
+#: data/mail.metainfo.xml.in:135
+msgid ""
+"The welcome view is removed when an account is added in Online Accounts "
+"without having to restart Mail"
+msgstr ""
+"オンラインアカウント設定でアカウントが追加された場合、“メール”を再起動しなく"
+"てもようこそ画面が消えるように修正"
+
+#: data/mail.metainfo.xml.in:136
+msgid ""
+"The composer is always presented as a new window and includes more keyboard "
+"shortcuts"
+msgstr ""
+"メール作成画面が常に新しいウィンドウとして表示されるようになり、使用可能な"
+"キーボードショートカットも増加"
+
+#: data/mail.metainfo.xml.in:137
+msgid "The search filter menu now appears next to the search bar"
+msgstr "検索フィルターメニューを検索バーの隣に移動"
+
+#: data/mail.metainfo.xml.in:138
+msgid "HeaderBars appear to float above content when scrolled"
+msgstr ""
+"メール本文をスクロールすると、ヘッダーバーがその上に浮いて見える効果を追加"
+
+#: data/mail.metainfo.xml.in:139
+msgid "Fix a potential crash with empty messages"
+msgstr "空のメッセージが原因でクラッシュする可能性のある不具合を修正"
+
+#: data/mail.metainfo.xml.in:140
+msgid "Stop resizing from cutting off the message list"
+msgstr "サイズの変更によってメッセージ一覧が見えなくなってしまわないように修正"
+
+#: data/mail.metainfo.xml.in:141
+msgid "Performance improvements"
+msgstr "パフォーマンスの改善"
+
+#: data/mail.metainfo.xml.in:167 data/mail.metainfo.xml.in:189
+msgid "Fixes:"
+msgstr "修正点:"
+
+#: data/mail.metainfo.xml.in:169
+msgid "Fixed an error which caused mail accounts to be loaded multiple times"
+msgstr "メールアカウントが複数回読み込まれてしまうエラーを修正"
+
+#: data/mail.metainfo.xml.in:170
+msgid "Fixed a bug which caused Mail to crash occasionally"
+msgstr "“メール”がクラッシュする原因になっていた不具合を修正"
+
+#: data/mail.metainfo.xml.in:171
+msgid "Display recipient in Sent folder instead of sender"
+msgstr "“送信済み”受信箱では、送信者ではなく宛先を表示するように修正"
+
+#: data/mail.metainfo.xml.in:175
+msgid "Updated app icon"
+msgstr "アプリのアイコンをアップデート"
+
+#: data/mail.metainfo.xml.in:176
+msgid "New design"
+msgstr "新しいデザイン"
+
+#: data/mail.metainfo.xml.in:184
+msgid "New features:"
+msgstr "新機能:"
+
+#: data/mail.metainfo.xml.in:186
+msgid "Use message subject for composer window title"
+msgstr "メール作成ウィンドウのタイトルにメッセージの件名を使うように修正"
+
+#: data/mail.metainfo.xml.in:187
+msgid "Added support for Unified Inbox for Microsoft 365 accounts"
+msgstr "Microsoft 365 アカウントの統合受信トレイに対応"
+
+#: data/mail.metainfo.xml.in:191
+msgid ""
+"Fixed an error which caused the inbox monitoring in the background to crash"
+msgstr "バックグランドでの新着メールの確認がクラッシュするエラーを修正"
+
+#: data/mail.metainfo.xml.in:192
+msgid "Removed duplicate sender addresses when composing a message"
+msgstr "メッセージ作成時、重複する宛先を削除するように修正"
+
+#: data/mail.metainfo.xml.in:193
+msgid "Fix a freeze when archiving the last message in a folder"
+msgstr ""
+"フォルダー内の最後のメッセージをアーカイブするとフリーズする不具合を修正"
+
+#: data/mail.metainfo.xml.in:197
+msgid ""
+"Renamed Office 365 to Microsoft 365 to follow suite on Microsoft's rebranding"
+msgstr ""
+"Microsoft のブランド名変更に伴い、“Office 365”という表示を“Microsoft 365”に変"
+"更"
+
+#: data/io.elementary.mail.desktop.in:6
+msgid "Email;E-mail;Mail;"
+msgstr "Email;E-mail;Mail;Eメール;電子メール;メール;"
+
+#: data/io.elementary.mail.desktop.in:16
+msgid "Compose Message"
+msgstr "メッセージを作成"
+
+#~ msgid "Fix a potential crash while loading messages"
+#~ msgstr "メッセージ読み込み中にクラッシュする可能性のある不具合を修正"
+
+#~ msgid "Secondary-click menu on the conversations list"
+#~ msgstr "スレッド一覧で副クリックメニューを表示できるように修正"
+
+#~ msgid "Ensure conversations are re-sorted by date when new messages appear"
+#~ msgstr ""
+#~ "新しいメッセージを受信しても、日付順で並んだメッセージの順番が崩れないよう"
+#~ "に修正"
+
+#~ msgid "Fixed sender combobox after opening a mailto link"
+#~ msgstr ""
+#~ "mailto リンクを開いた際に、差出人コンボボックスが正しく表示されるように修"
+#~ "正"
+
+#~ msgid "Mark sent messages as read"
+#~ msgstr "送信済みのメッセージを既読としてマークするように修正"
+
+#~ msgid "Fix a hang when deleting the last message in a mailbox"
+#~ msgstr ""
+#~ "メールボックスの最後のメッセージを削除するとハングアップする不具合を修正"
+
+#~ msgid "Fix an issue where some mail fails to be deleted"
+#~ msgstr "メールが削除できないことがある不具合を修正"
+
+#~ msgid "Use accent color for unread message titles"
+#~ msgstr ""
+#~ "未読メッセージのタイトルをユーザー設定のアクセントカラーで表示するように変"
+#~ "更"
+
+#~ msgid "Autoselect the next message after archiving"
+#~ msgstr "アーカイブ後、次のメッセージを自動的に選択するように修正"
+
+#~ msgid "Use local time in message headers"
+#~ msgstr "メッセージのヘッダーに地方時を使うように修正"
+
+#~ msgid "Send a notification when new messages arrive"
+#~ msgstr "メッセージ受信時に通知を表示する機能を追加"
+
+#~ msgid "Add a button to manually fetch new messages"
+#~ msgstr "手動で新規メッセージを取得するボタンを追加"
+
+#~ msgid "Automatically select the next message after deleting"
+#~ msgstr "メッセージの削除後、次のメッセージを自動的に選択するように修正"
+
+#~ msgid "Filter unread or starred conversations"
+#~ msgstr "未開封またはスターなしのスレッドだけを表示できる機能を追加"
+
+#~ msgid "Make sure we don't save sent messages twice for outlook.com accounts"
+#~ msgstr ""
+#~ "outlook.com アカウント使用時、送信済みのメッセージが二度保存されていた不具"
+#~ "合を修正"
+
+#~ msgid "Fix a potential crash when changing folders"
+#~ msgstr "フォルダー変更時にクラッシュする可能性のある不具合を修正"
+
+#~ msgid "Improve search performance"
+#~ msgstr "検索パフォーマンスを改善"
+
+#~ msgid "Fix an issue that prevented some messaging from rendering at all"
+#~ msgstr "一部のメッセージが一切描画されない不具合を修正"
+
+#~ msgid ""
+#~ "Set the correct \"From\" address when replying and multiple accounts are "
+#~ "set up"
+#~ msgstr ""
+#~ "複数のアカウントが設定されている場合、適切な\"差出人\"メールアドレスを設定"
+#~ "するように修正"
+
+#~ msgid "Fix a crash on startup for some conversations"
+#~ msgstr ""
+#~ "スレッドが原因でアプリが起動時にクラッシュすることがある不具合を修正"
+
+#~ msgid "Only save drafts when there are new changes"
+#~ msgstr "変更がある場合のみ下書きを保存するように修正"
+
+#~ msgid "Move Undo notification to the message view"
+#~ msgstr "“元に戻す”機能を提供する通知をメッセージビューに表示するように変更"
+
+#~ msgid "Preserve conversation subjects when replying or forwarding"
+#~ msgstr "返信や転送の際に件名を維持するように修正"
+
+#~ msgid "Disable the composer while messages are being sent"
+#~ msgstr "メッセージの送信中は編集ウィンドウを無効化するように修正"
+
+#~ msgid "Edit saved draft messages"
+#~ msgstr "保存済みの下書きを編集できる機能を追加"
+
+#~ msgid "Make sure we don't save sent messages twice for some account types"
+#~ msgstr ""
+#~ "アカウントの種類によっては送信済みのメッセージが二度保存されていた不具合を"
+#~ "修正"
+
+#~ msgid "Complete rewrite from scratch"
+#~ msgstr "アプリを完全にゼロから書き直し"
+
+#~ msgid "io.elementary.mail"
+#~ msgstr "io.elementary.mail"
+
+#~ msgid "Desktop notifications"
+#~ msgstr "デスクトップ通知"
+
+#~ msgid "Minor bug fixes"
+#~ msgstr "軽微なバグの修正"
+
+#~ msgid "Translation updates"
+#~ msgstr "翻訳の更新"
+
+#~ msgid "internet-mail"
+#~ msgstr "internet-mail"
+
+#~ msgid "About Mail"
+#~ msgstr "メールについて"
+
+#~ msgid "Lightweight mail client"
+#~ msgstr "軽量なメールクライアントです"
+
+#~ msgid "Appstream: add releases info"
+#~ msgstr "Appstream: リリース情報を追加"
+
+#, fuzzy
+#~ msgid "Don't overwrite custom settings not available in the POA plugin"
+#~ msgstr ""
+#~ "POA プラグインで利用可能ではないカスタム設定を上書きしないでください"
+
+#~ msgid "Release for Loki"
+#~ msgstr "Loki 用のリリース"

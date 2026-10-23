@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        :root {
+            --bg-color: white;
+            --fg-color: black;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #3A3A3A;
+                --fg-color: white;
+            }
+        }
+
+        html {
+            height: 100%;
+        }
+        body {
+            margin: 0px !important;
+            padding: 0 !important;
+            background-color: var(--bg-color) !important;
+            color: var(--fg-color);
+            font-size: medium !important;
+            height: 100% !important;
+        }
+        body.plain, body.plain * {
+            font-family: monospace !important;
+            font-weight: normal;
+            font-style: normal;
+            font-size: medium !important;
+            color: var(--fg-color);
+            text-decoration: none;
+        }
+        body.plain a {
+            cursor: text;
+        }
+        #elementary-message-body {
+            box-sizing: border-box;
+            padding: 6px;
+            outline: 0px solid transparent;
+        }
+        #elementary-message-signature {
+            box-sizing: border-box;
+            padding: 6px;
+            outline: 0px solid transparent;
+        }
+        #elementary-message-quote {
+            box-sizing: border-box;
+            padding: 6px;
+            padding-top: 12px !important;
+            outline: 0px solid transparent;
+        }
+        blockquote {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 12px;
+            margin-right: 12px;
+            padding-left: 6px;
+            padding-right: 6px;
+            background-color: var(--bg-color);
+            border: 0;
+            border-left: 3px #aaa solid;
+            color: var(--fg-color);
+        }
+        pre {
+            white-space: pre-wrap;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div contenteditable="true" style="height:100%;" id="elementary-message-body" dir="auto"></div>
+    <div contenteditable="true" hidden="true" id="elementary-message-signature" dir="auto"></div>
+    <div contenteditable="true" hidden="true" id="elementary-message-quote" dir="auto"></div>
+</body>
+</html>

@@ -1,0 +1,2266 @@
+# Uyghur translation for pantheon-mail
+# Copyright (c) 2016 Rosetta Contributors and Canonical Ltd 2016
+# This file is distributed under the same license as the pantheon-mail package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pantheon-mail\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-08 16:46+0000\n"
+"PO-Revision-Date: 2017-04-15 20:40+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"Language-Team: Uighur <https://l10n.elementary.io/projects/mail/mail/ug/>\n"
+"Language: ug\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.13-dev\n"
+"X-Launchpad-Export-Date: 2017-03-09 06:00+0000\n"
+
+#: src/Application.vala:145
+#, fuzzy
+#| msgid "Unable to validate:\n"
+msgid "Unable to open System Settings"
+msgstr "دەلىللەش مەغلۇپ بولدى:\n"
+
+#: src/Application.vala:146
+msgid ""
+"Open System Settings manually or install Evolution to set up online accounts."
+msgstr ""
+
+#: src/Application.vala:217
+msgid ""
+"Mail will automatically start when this device turns on and run when its "
+"window is closed so that it can send notifications when new mail arrives."
+msgstr ""
+
+#: src/Composer.vala:94 src/MessageList/MessageListItem.vala:102
+msgid "From:"
+msgstr "يوللىغۇچى:"
+
+#: src/Composer.vala:114 src/MessageList/MessageListItem.vala:108
+msgid "To:"
+msgstr "تاپشۇرۇۋالغۇچى:"
+
+#: src/Composer.vala:120
+#, fuzzy
+msgid "Cc"
+msgstr "كۆچۈرۈپ ئەۋەتىش:"
+
+#: src/Composer.vala:122
+#, fuzzy
+msgid "Bcc"
+msgstr "مەخپى يوللاش"
+
+#: src/Composer.vala:133 src/MessageList/MessageListItem.vala:148
+msgid "Cc:"
+msgstr "كۆچۈرۈپ ئەۋەتىش:"
+
+#: src/Composer.vala:152
+msgid "Bcc:"
+msgstr "مەخپى يوللاش"
+
+#: src/Composer.vala:171 src/MessageList/MessageListItem.vala:114
+msgid "Subject:"
+msgstr "تېمىسى:"
+
+#: src/Composer.vala:205
+msgid "Insert Image"
+msgstr ""
+
+#: src/Composer.vala:232
+msgid "Delete draft"
+msgstr "ئورگىنالنى ئۆچۈرۈش"
+
+#: src/Composer.vala:240
+msgid "Attach file"
+msgstr "قوشۇمچە ھۆججەت"
+
+#: src/Composer.vala:251
+msgid "Insert Signature…"
+msgstr ""
+
+#: src/Composer.vala:256
+msgid "Send"
+msgstr "يوللاش"
+
+#: src/Composer.vala:299
+msgid "New Message"
+msgstr "يىڭى ئېلخەت"
+
+#: src/Composer.vala:445
+msgid "Choose a file"
+msgstr "ھۆججەت تاللاش"
+
+#: src/Composer.vala:448
+#, fuzzy
+#| msgid "_Attach"
+msgid "Attach"
+msgstr "قوشۇمچە ھۆججەت"
+
+#: src/Composer.vala:449 src/Composer.vala:472 src/Composer.vala:763
+#: src/Dialogs/InsertLinkDialog.vala:66
+#: src/MessageList/AttachmentButton.vala:144
+msgid "Cancel"
+msgstr "ياق"
+
+#: src/Composer.vala:464
+#, fuzzy
+#| msgid "Show Images"
+msgid "Images"
+msgstr "رەسىملەرنى كۆرسىتىش"
+
+#: src/Composer.vala:468
+#, fuzzy
+#| msgid "Choose a file"
+msgid "Choose an image"
+msgstr "ھۆججەت تاللاش"
+
+#: src/Composer.vala:471
+msgid "Insert"
+msgstr ""
+
+#: src/Composer.vala:500
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Unable to insert image"
+msgstr "ئورگىنالنى ئۆچۈرۈش"
+
+#: src/Composer.vala:501
+msgid "There was an unexpected error while trying to insert the image."
+msgstr ""
+
+#: src/Composer.vala:665
+msgid "%a, %b %-e, %Y at %-l:%M %p"
+msgstr "%Y-%b-%e日，%p %-l:%M"
+
+#: src/Composer.vala:695
+#, c-format
+msgid "On %1$s, %2$s wrote:"
+msgstr "%1$s دە، %2$s يىزىش:"
+
+#: src/Composer.vala:699
+msgid "---------- Forwarded message ----------"
+msgstr "---------- يەتكۈزۈلگەن ئۇچۇرلار ----------"
+
+#: src/Composer.vala:701
+#, fuzzy, c-format
+msgid "From: %s<br/>"
+msgstr "يوللىغۇچى: %s\n"
+
+#: src/Composer.vala:702
+#, fuzzy, c-format
+msgid "Subject: %s<br/>"
+msgstr "تېمىسى: %s\n"
+
+#: src/Composer.vala:703
+#, fuzzy, c-format
+msgid "Date: %s<br/>"
+msgstr "چىسلاسى: %s\n"
+
+#: src/Composer.vala:704
+#, fuzzy, c-format
+msgid "To: %s<br/>"
+msgstr "تاپشۇرۇۋالغۇچى: %s\n"
+
+#: src/Composer.vala:706
+#, fuzzy, c-format
+msgid "Cc: %s<br/>"
+msgstr "كۆچۈرۈپ ئەۋەتىش: %s\n"
+
+#: src/Composer.vala:754
+#, fuzzy
+#| msgid "Do you want to permanently delete this message?"
+#| msgid_plural "Do you want to permanently delete these messages?"
+msgid "Permanently delete this draft?"
+msgstr "سىز بۇ ئۇچۇرلارنى مەڭگۈلۈك ئۆچۈرەمسىز؟"
+
+#: src/Composer.vala:755
+msgid ""
+"You cannot undo this action, nor recover your draft once it has been deleted."
+msgstr ""
+
+#: src/Composer.vala:765
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Delete Draft"
+msgstr "ئورگىنالنى ئۆچۈرۈش"
+
+#: src/Composer.vala:789
+#, fuzzy
+msgid "Send without subject?"
+msgstr "تېمىسى يوق ئېلخەتنى ئەۋەتەمسىز؟"
+
+#: src/Composer.vala:790
+msgid ""
+"This message has an empty subject field. The recipient may be unable to "
+"infer its scope or importance."
+msgstr ""
+
+#: src/Composer.vala:797
+msgid "Don't Send"
+msgstr ""
+
+#: src/Composer.vala:799
+#, fuzzy
+msgid "Send Anyway"
+msgstr "يەنىلا ئىچىش"
+
+#: src/Composer.vala:830
+#, fuzzy
+#| msgid "Send message with an empty body?"
+msgid "Sent message was not saved"
+msgstr "مەزمۇنى يوق ئېلخەتنى ئەۋەتەمسىز؟"
+
+#: src/Composer.vala:831
+msgid ""
+"The message was sent, however a copy was not saved to the Sent message "
+"folder."
+msgstr ""
+
+#: src/Composer.vala:846
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Unable to send message"
+msgstr "ئورگىنالنى ئۆچۈرۈش"
+
+#: src/Composer.vala:847
+msgid "There was an unexpected error while sending your message."
+msgstr ""
+
+#: src/Composer.vala:945 src/FolderList/FolderList.vala:55
+msgid "Edit Signatures…"
+msgstr ""
+
+#: src/Composer.vala:949
+msgid "None"
+msgstr "ھىچنىمە يوق"
+
+#: src/Composer.vala:1140
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Unable to save draft"
+msgstr "ئورگىنالنى ئۆچۈرۈش"
+
+#: src/Composer.vala:1141
+msgid "There was an unexpected error while saving your draft."
+msgstr ""
+
+#: src/EditorToolbar.vala:55
+msgid "Bold"
+msgstr ""
+
+#: src/EditorToolbar.vala:62
+msgid "Italic"
+msgstr ""
+
+#: src/EditorToolbar.vala:73
+#, fuzzy
+msgid "Underline"
+msgstr "ئاستىغا سىزىش (Ctrl+U)"
+
+#: src/EditorToolbar.vala:85
+#, fuzzy
+msgid "Strikethrough"
+msgstr "سىزىۋىتىش (Ctrl+K)"
+
+#: src/EditorToolbar.vala:100
+#, fuzzy
+msgid "Remove formatting"
+msgstr "فورماتىنى ئۆچۈرۈش (Ctrl+Space)"
+
+#: src/EditorToolbar.vala:108 src/Dialogs/InsertLinkDialog.vala:68
+msgid "Insert Link"
+msgstr ""
+
+#: src/InboxMonitor.vala:158 src/InboxMonitor.vala:170
+#, c-format
+msgid "%s to %s"
+msgstr ""
+
+#. /TRANSLATORS: The %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#: src/InboxMonitor.vala:165
+#, fuzzy, c-format
+#| msgid "%d new message"
+#| msgid_plural "%d new messages"
+msgid "%u new message"
+msgid_plural "%u new messages"
+msgstr[0] "%d يىڭى ئېلخەت"
+
+#. /TRANSLATORS: The first %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#. /The next %s represents the number of senders
+#: src/InboxMonitor.vala:177
+#, fuzzy, c-format
+#| msgid "Always Show from Sender"
+msgid "%s from %u sender"
+msgid_plural "%s from %u senders"
+msgstr[0] "يوللىغۇچىنى داۋاملىق كۆرسىتىش"
+
+#: src/MainWindow.vala:80
+msgid "Mail"
+msgstr "ئېلخەت"
+
+#: src/MainWindow.vala:123 src/Dialogs/AliasDialog/AliasDialog.vala:96
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:172
+#, fuzzy
+msgid "Undo"
+msgstr "بىكار قىلىش"
+
+#: src/MainWindow.vala:281
+#, fuzzy
+msgid "Message Archived"
+msgid_plural "Messages Archived"
+msgstr[0] "ھىچقانداق دىئالوگ تاللانمىدى."
+
+#: src/MainWindow.vala:285
+#, fuzzy
+#| msgid "Unstar message"
+msgid "Couldn't archive message"
+msgstr "يۇلتۇز بەلگىسىنى ئۆچۈرۈش"
+
+#: src/MainWindow.vala:298
+#, fuzzy
+msgid "Message Moved"
+msgid_plural "Messages Moved"
+msgstr[0] "ھىچقانداق دىئالوگ تاللانمىدى."
+
+#: src/MainWindow.vala:302
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Couldn't move message"
+msgstr "ئورگىنالنى ئۆچۈرۈش"
+
+#: src/MainWindow.vala:315
+#, fuzzy
+msgid "Message Deleted"
+msgid_plural "Messages Deleted"
+msgstr[0] "ھىچقانداق دىئالوگ تاللانمىدى."
+
+#: src/MainWindow.vala:319
+msgid "Couldn't delete message"
+msgstr ""
+
+#: src/WelcomeView.vala:45
+#, fuzzy
+msgid "Connect an Account"
+msgstr "ھىساۋات ئۆچۈرۈش"
+
+#: src/WelcomeView.vala:52
+msgid "Mail uses email accounts configured in System Settings."
+msgstr ""
+
+#: src/WelcomeView.vala:59
+#, fuzzy
+msgid "Online Accounts…"
+msgstr "ھىساۋاتلار"
+
+#: src/Backend/Account.vala:48
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Unable to connect"
+msgstr "ئورگىنالنى ئۆچۈرۈش"
+
+#: src/Backend/Account.vala:49
+msgid "There was an unexpected error while trying to connect to the server."
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:65
+#, c-format
+msgid "Moving messages… (%u remaining)"
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:98
+msgid "No Archive folder is configured."
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:126
+msgid "The destination folder was not found."
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:130
+msgid "The source folder is the destination folder."
+msgstr ""
+
+#: src/Backend/Session.vala:642
+msgid "New Signature"
+msgstr ""
+
+#: src/Backend/ContactManager.vala:88 src/Backend/ContactManager.vala:122
+#, c-format
+msgid "Couldn't add “%s” to addressbook"
+msgstr ""
+
+#: src/Backend/ContactManager.vala:89
+msgid "No addressbook available."
+msgstr ""
+
+#: src/Backend/ContactManager.vala:123
+msgid "Operation failed."
+msgstr ""
+
+#: src/ConversationList/ConversationItemModel.vala:74
+#: src/ConversationList/ConversationItemModel.vala:112
+msgid ", "
+msgstr "، "
+
+#: src/ConversationList/ConversationItemModel.vala:77
+#: src/ConversationList/ConversationItemModel.vala:115
+#: src/ConversationList/ConversationItemModel.vala:123
+#: src/MessageList/AttachmentButton.vala:100
+msgid "Unknown"
+msgstr ""
+
+#: src/ConversationList/ConversationList.vala:85
+msgid "Search Mail"
+msgstr "ئېلخەت ئىزدەش"
+
+#: src/ConversationList/ConversationList.vala:89
+#, fuzzy
+#| msgid "Mark conversations"
+msgid "Hide read conversations"
+msgstr "دىئالوگلارغا بەلگە قىلىش"
+
+#: src/ConversationList/ConversationList.vala:90
+#, fuzzy
+#| msgid "Mark conversations"
+msgid "Hide unstarred conversations"
+msgstr "دىئالوگلارغا بەلگە قىلىش"
+
+#: src/ConversationList/ConversationList.vala:107
+#, fuzzy
+#| msgid "Delete Conversation"
+msgid "Filter Conversations"
+msgstr "دىئالوگنى ئۆچۈرۈش"
+
+#: src/ConversationList/ConversationList.vala:130
+#, fuzzy
+#| msgid "%d new message"
+#| msgid_plural "%d new messages"
+msgid "Fetch new messages"
+msgstr "%d يىڭى ئېلخەت"
+
+#: src/ConversationList/ConversationList.vala:137
+#, fuzzy
+#| msgid "%d new message"
+#| msgid_plural "%d new messages"
+msgid "Fetching new messages…"
+msgstr "%d يىڭى ئېلخەت"
+
+#: src/ConversationList/ConversationListItem.vala:94
+msgid "Archive"
+msgstr "ئارخىپ"
+
+#: src/ConversationList/ConversationListItem.vala:99
+msgid "Trash"
+msgstr "ئەخلەت چېلىكى"
+
+#: src/ConversationList/ConversationListItem.vala:181
+#, fuzzy
+msgid "Unread"
+msgstr "%d ئوقۇلمىغان ئېلخەت"
+
+#: src/ConversationList/ConversationListItem.vala:194
+#, fuzzy
+msgid "Replied"
+msgstr "جاۋاب قايتۇرۇش"
+
+#: src/ConversationList/ConversationListItem.vala:198
+#, fuzzy
+msgid "Forwarded"
+msgstr "يەتكۈزۈش"
+
+#: src/ConversationList/ConversationListItem.vala:212
+#, fuzzy
+msgid "Move To Trash"
+msgstr "دىئالوگلارنى يۆتكەش"
+
+#: src/ConversationList/ConversationListItem.vala:215
+#, fuzzy
+#| msgid "Mark as Unread"
+msgid "Mark As Unread"
+msgstr "ئوقۇلمىغان دەپ بەلگە قىلىش"
+
+#: src/ConversationList/ConversationListItem.vala:217
+#: src/MessageList/MessageList.vala:51
+msgid "Mark as Read"
+msgstr "ئوقۇلغان دەپ بەلگە قىلىش"
+
+#: src/ConversationList/ConversationListItem.vala:221
+#: src/MessageList/MessageList.vala:52
+#, fuzzy
+msgid "Star"
+msgstr "يۇلتۇز بەلگىسى قىتىش"
+
+#: src/ConversationList/ConversationListItem.vala:223
+#: src/MessageList/MessageList.vala:53
+#, fuzzy
+msgid "Unstar"
+msgstr "يۇلتۇز بەلگىسىنى ئۆچۈرۈش"
+
+#: src/Dialogs/InsertLinkDialog.vala:29
+msgid "URL:"
+msgstr ""
+
+#: src/Dialogs/InsertLinkDialog.vala:39
+#, fuzzy
+msgid "Link Text:"
+msgstr "كۆپ تېكست"
+
+#: src/Dialogs/InsertLinkDialog.vala:45
+#, fuzzy
+msgid "Example Website"
+msgstr "توربىكەت"
+
+#: src/Dialogs/AliasDialog/Alias.vala:52
+msgid "John Doe"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/Alias.vala:56
+#, fuzzy
+#| msgid "N_ame:"
+msgid "Name"
+msgstr "ئىسمى:"
+
+#: src/Dialogs/AliasDialog/Alias.vala:75
+#, fuzzy
+#| msgid "E_mail address:"
+msgid "E-mail Address"
+msgstr "ئېلخەت ئادىرىسى:"
+
+#: src/Dialogs/AliasDialog/Alias.vala:80
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Delete alias"
+msgstr "ئورگىنالنى ئۆچۈرۈش"
+
+#: src/Dialogs/AliasDialog/Alias.vala:100
+#, fuzzy
+#| msgid "Edit Draft"
+msgid "Edit alias"
+msgstr "ئورگىنالنى تەھرىرلەش"
+
+#: src/Dialogs/AliasDialog/Alias.vala:175
+msgid "Name not set"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:33
+msgid "No Aliases"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:37
+msgid "Add aliases using the button in the toolbar below"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:67
+msgid "Add Alias…"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:104
+msgid "Aliases"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:108
+#, fuzzy
+#| msgid "_Close"
+msgid "Close"
+msgstr "تاقاش"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:178
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:330
+#, c-format
+msgid "'%s' deleted"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:39
+msgid "No Signatures"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:43
+msgid "Add signatures using the button in the toolbar below"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:67
+msgid "Create Signature"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:86
+msgid "Title"
+msgstr ""
+
+#. Work around a styling issue
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:99
+msgid "For example “Work” or “Personal”"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:122
+msgid "Delete"
+msgstr "ئۆچۈرۈش"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:131
+msgid "Set Default For…"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:156
+msgid "Signature"
+msgstr ""
+
+#: src/FolderList/AccountItemModel.vala:155
+msgid "Edit Aliases…"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:48
+msgid "Refresh folder"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:53
+msgid "Rename folder"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:146
+#: src/FolderList/FolderItemModel.vala:175
+#: src/FolderList/FolderItemModel.vala:193
+#, c-format
+msgid "Couldn't rename “%s”"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:147
+msgid "Folder names cannot contain “/”"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:176
+#, c-format
+msgid "A folder named “%s” already exists"
+msgstr ""
+
+#: src/FolderList/FolderList.vala:34
+#, fuzzy
+msgid "Compose new message"
+msgstr "يىڭى ئېلخەت يىزىش"
+
+#: src/FolderList/FolderList.vala:56
+msgid "Account Settings…"
+msgstr ""
+
+#: src/FolderList/FolderList.vala:59
+#, fuzzy
+msgid "Always Show Remote Images"
+msgstr "يىراق مۇساپىلىك رەسىملەرنى داۋاملىق كۆرسىتىش:"
+
+#: src/FolderList/FolderList.vala:65
+msgid "Menu"
+msgstr "تىزىملىك"
+
+#: src/FolderList/GroupedFolderItemModel.vala:38
+#, fuzzy
+#| msgid "Inbox"
+msgctxt "Inbox Folder"
+msgid "Inbox"
+msgstr "تاپشۇرۇۋىلىنغانلىرى"
+
+#: src/FolderList/GroupedFolderItemModel.vala:42
+#, fuzzy
+#| msgid "Archive"
+msgctxt "Archive Folder"
+msgid "Archive"
+msgstr "ئارخىپ"
+
+#: src/FolderList/GroupedFolderItemModel.vala:46
+#, fuzzy
+#| msgid "Sent Mail"
+msgctxt "Sent Folder"
+msgid "Sent"
+msgstr "يوللانغانلىرى"
+
+#: src/FolderList/SessionItemModel.vala:28
+#, fuzzy
+#| msgid "All Mail"
+msgid "All Mailboxes"
+msgstr "بارلىق ئېلخەتلەر"
+
+#: src/MessageList/MessageList.vala:28 src/MessageList/MessageListItem.vala:210
+msgid "Reply"
+msgstr "جاۋاب قايتۇرۇش"
+
+#: src/MessageList/MessageList.vala:37 src/MessageList/MessageListItem.vala:213
+#, fuzzy
+msgid "Reply All"
+msgstr "ھەممىسىگە جاۋاب قايتۇرۇش"
+
+#: src/MessageList/MessageList.vala:46 src/MessageList/MessageListItem.vala:216
+msgid "Forward"
+msgstr "يەتكۈزۈش"
+
+#: src/MessageList/MessageList.vala:50
+msgid "Mark as Unread"
+msgstr "ئوقۇلمىغان دەپ بەلگە قىلىش"
+
+#: src/MessageList/MessageList.vala:60
+#, fuzzy
+msgid "Mark Conversation"
+msgstr "دىئالوگقا بەلگە قىلىش"
+
+#: src/MessageList/MessageList.vala:68
+#, fuzzy
+#| msgid "Move conversation"
+#| msgid_plural "Move conversations"
+msgid "Move Conversation to…"
+msgstr "دىئالوگلارنى يۆتكەش"
+
+#: src/MessageList/MessageList.vala:77
+#, fuzzy
+msgid "Move conversations to archive"
+msgstr "دىئالوگلارنى يۆتكەش"
+
+#: src/MessageList/MessageList.vala:85
+#, fuzzy
+msgid "Move conversations to Trash"
+msgstr "دىئالوگلارنى يۆتكەش"
+
+#: src/MessageList/MessageList.vala:100
+#, fuzzy
+msgid "No Message Selected"
+msgstr "ھىچقانداق دىئالوگ تاللانمىدى."
+
+#. /TRANSLATORS: The first %s represents the date and the second %s the time of the message (either when it was received or sent)
+#: src/MessageList/MessageListItem.vala:190
+#, c-format
+msgid "%s at %s"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:198
+#: src/MessageList/MessageListItem.vala:397
+msgid "Unstar message"
+msgstr "يۇلتۇز بەلگىسىنى ئۆچۈرۈش"
+
+#: src/MessageList/MessageListItem.vala:201
+#: src/MessageList/MessageListItem.vala:393
+msgid "Star message"
+msgstr "يۇلتۇز بەلگىسى قىتىش"
+
+#: src/MessageList/MessageListItem.vala:221
+msgid "Print…"
+msgstr "بىسىش…"
+
+#: src/MessageList/MessageListItem.vala:231
+msgid "More"
+msgstr "تىخىمۇ كۆپ"
+
+#: src/MessageList/MessageListItem.vala:281
+msgid "Open in Calendar"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:286
+#, fuzzy
+#| msgid "This message contains remote images."
+msgid "This message contains a Calendar Event."
+msgstr "بۇ ئېلخەتتە يىراق مۇساپىلىك رەسىم بار."
+
+#: src/MessageList/MessageListItem.vala:297
+msgid "Show Images"
+msgstr "رەسىملەرنى كۆرسىتىش"
+
+#: src/MessageList/MessageListItem.vala:298
+msgid "Always Show from Sender"
+msgstr "يوللىغۇچىنى داۋاملىق كۆرسىتىش"
+
+#: src/MessageList/MessageListItem.vala:302
+msgid "This message contains remote images."
+msgstr "بۇ ئېلخەتتە يىراق مۇساپىلىك رەسىم بار."
+
+#: src/MessageList/MessageListItem.vala:341
+msgid "This message contains one or more attachments"
+msgstr "بۇ ئېلخەت بىر ياكى بىردىن كۆپ قوشۇمچە ھۆججەتنى ئۆزئىچىگە ئالغان"
+
+#. / Translators: This is the default file name of a printed email
+#: src/MessageList/MessageListItem.vala:417
+#, fuzzy
+#| msgid "New Message"
+msgid "Email Message"
+msgstr "يىڭى ئېلخەت"
+
+#: src/MessageList/MessageListItem.vala:439
+#, fuzzy
+#| msgid "Unable to validate:\n"
+msgid "Unable to print email"
+msgstr "دەلىللەش مەغلۇپ بولدى:\n"
+
+#: src/MessageList/MessageListItem.vala:691
+#, c-format
+msgid "Trust and open “%s”?"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:692
+msgid ""
+"Attachments may cause damage to your system if opened. Only open files from "
+"trusted sources."
+msgstr ""
+"قوشۇمچە ھۆججەتلەر ئىچىلسا سىستېمىڭىزغا بۇزغۇنچىلىق ئىلىپ كىلىشى مۇمكىن. "
+"پەقەت مەنبەسى ئىشەنچلىك ھۆججەتلەرنى ئىچىشىڭىزنى تەۋسىيە قىلىمىز."
+
+#: src/MessageList/MessageListItem.vala:699
+msgid "Open Anyway"
+msgstr "يەنىلا ئىچىش"
+
+#: src/MessageList/AttachmentButton.vala:57
+msgid "Open"
+msgstr "ئىچىش"
+
+#: src/MessageList/AttachmentButton.vala:58
+msgid "Save As…"
+msgstr "بۆلەك جايغا ساقلاش…"
+
+#: src/MessageList/AttachmentButton.vala:143
+#, fuzzy
+msgid "Save"
+msgstr "ساقلاش"
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:22
+msgid "No mailboxes found"
+msgstr ""
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:26
+msgid "Try changing search terms"
+msgstr ""
+
+#, fuzzy
+#~| msgid "Email Address:"
+#~ msgid "Address:"
+#~ msgstr "ئېلخەت ئادىرىسى:"
+
+#, fuzzy
+#~| msgid "Email address:"
+#~ msgid "Enter e-mail address…"
+#~ msgstr "ئېلخەت ئادىرىسى:"
+
+#~ msgid "Reply to All"
+#~ msgstr "ھەممىسىگە جاۋاپ قايتۇرۇش"
+
+#, c-format
+#~ msgid "Are you sure you want to open %s?"
+#~ msgstr "\"%s\" نى راسىتتىنلا ئاچامسىز؟"
+
+#, fuzzy
+#~ msgid "Quote text"
+#~ msgstr "تېكستنى يۆتكەپ ئىشلىتىش (Ctrl+])"
+
+#, fuzzy
+#~ msgid "Unquote text"
+#~ msgstr "تېكستنى يۆتكەپ ئىشلىتىشنى ئەمەلدىن قالدۇرۇش (Ctrl+[)"
+
+#~ msgid "Drafts | Draft"
+#~ msgstr "ئورىگىناللار"
+
+#~ msgid "Sent | Sent Mail | Sent Email | Sent E-Mail"
+#~ msgstr "يوللانغانلىرى"
+
+#~ msgid ""
+#~ "Junk | Spam | Junk Mail | Junk Email | Junk E-Mail | Bulk Mail | Bulk "
+#~ "Email | Bulk E-Mail"
+#~ msgstr "كىرەكسىز ئېلخەتلەر"
+
+#~ msgid "Trash | Rubbish | Rubbish Bin"
+#~ msgstr "ئەخلەت چېلىكى"
+
+#~ msgid "Archive | Archives"
+#~ msgstr "ئارخىپلار"
+
+#~ msgid "Drafts"
+#~ msgstr "ئورىگىناللار"
+
+#~ msgid "Starred"
+#~ msgstr "بەلگە قىلىنغانلىرى"
+
+#~ msgid "Important"
+#~ msgstr "مۇھىملىرى"
+
+#~ msgid "Spam"
+#~ msgstr "كىرەكسىز ئېلخەتلەر"
+
+#~ msgid "Outbox"
+#~ msgstr "يوللانغانلىرى"
+
+#~ msgid "Search"
+#~ msgstr "ئىزدەش"
+
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgid "SMTP"
+#~ msgstr "SMTP"
+
+#~ msgid "Gmail"
+#~ msgstr "SMTP"
+
+#~ msgid "Yahoo! Mail"
+#~ msgstr "Yahoo! ئېلخىتى"
+
+#~ msgid "Outlook.com"
+#~ msgstr "Outlook.com"
+
+#~ msgid "Other"
+#~ msgstr "باشقىلار"
+
+#~ msgid "attachment"
+#~ msgstr "قوشۇمچە ھۆججەت"
+
+#~ msgid "bcc"
+#~ msgstr "مەخپى يوللاش"
+
+#~ msgid "body"
+#~ msgstr "ئاساسىي تېكست"
+
+#~ msgid "cc"
+#~ msgstr "كۆچۈرۈپ ئەۋەتىش:"
+
+#~ msgid "from"
+#~ msgstr "يوللىغۇچى"
+
+#~ msgid "subject"
+#~ msgstr "تېمىسى"
+
+#~ msgid "to"
+#~ msgstr "تاپشۇرۇۋالغۇچى"
+
+#~ msgid "me"
+#~ msgstr "ئۆزەم"
+
+#~ msgid "(no subject)"
+#~ msgstr "(تېمىسىز)"
+
+#~ msgid "%s wrote:"
+#~ msgstr "%s يىزىش:"
+
+#~ msgid "On %s:"
+#~ msgstr "%s دە:"
+
+#~ msgid "none"
+#~ msgstr "ھىچنىمە يوق"
+
+#~ msgid "Mail Client"
+#~ msgstr "ئېلخەت تېرمىنالى"
+
+#~ msgid "Copyright 2011-2015 Yorba Foundation"
+#~ msgstr "نەشىر ھوقۇقى  2011-2015 Yorba فوندىغا تەۋە"
+
+#~ msgid "Visit the Yorba web site"
+#~ msgstr "Yorba توربىكىتىنى زىيارەت قىلىڭ"
+
+#~ msgid "Delete conversation"
+#~ msgstr "دىئالوگنى ئۆچۈرۈش"
+
+#~ msgid "Delete conversation (Shift+Delete)"
+#~ msgstr "دىئالوگنى ئۆچۈرۈش (Shift+Delete)"
+
+#~ msgid "Delete conversations (Shift+Delete)"
+#~ msgstr "دىئالوگلارنى ئۆچۈرۈش (Shift+Delete)"
+
+#~ msgid "Move conversation to Trash (Delete, Backspace)"
+#~ msgid_plural "Move conversations to Trash (Delete, Backspace)"
+#~ msgstr[0] "دىئالگلارنى ئەخەت چېلىكىگە تاشلاش(Delete, Backspace)"
+
+#~ msgid "Move conversations to Trash (Delete, Backspace)"
+#~ msgstr "دىئالگلارنى ئەخەت چېلىكىگە تاشلاش(Delete, Backspace)"
+
+#~ msgid "_Archive"
+#~ msgstr "ئارخىپ"
+
+#~ msgid "Archive conversation (A)"
+#~ msgid_plural "Archive conversations (A)"
+#~ msgstr[0] "دىئالوگ ئارخىپى"
+
+#~ msgid "Archive conversations (A)"
+#~ msgstr "دىئالوگلار ئارخىپى"
+
+#~ msgid "Mark as S_pam"
+#~ msgstr "كىرەكسىز ئېلخەت بەلگىسى قىلىش"
+
+#~ msgid "Mark as not S_pam"
+#~ msgstr "كىرەكسىز ئېلخەت بەلگىسىنى ئۆچۈرۈش"
+
+#~ msgid "Add label to conversation"
+#~ msgid_plural "Add label to conversations"
+#~ msgstr[0] "دىئالوگلارغا خەتكۈچ قىتىش"
+
+#~ msgid "Add label to conversations"
+#~ msgstr "دىئالوگلارغا بەلگە قىلىش"
+
+#~ msgid "A_ccounts"
+#~ msgstr "ھىساۋاتلار"
+
+#~ msgid "_Preferences"
+#~ msgstr "مايىللىق"
+
+#~ msgid "_Help"
+#~ msgstr "ياردەم"
+
+#~ msgid "_About"
+#~ msgstr "ھەققىدە"
+
+#~ msgid "_Quit"
+#~ msgstr "چىكىنىش"
+
+#~ msgid "_Mark as..."
+#~ msgstr "بەلگە قىلىش...."
+
+#~ msgid "Mark as _Read"
+#~ msgstr "ئوقۇلغان دەپ بەلگە قىلىش"
+
+#~ msgid "Mark as _Unread"
+#~ msgstr "ئوقۇلمىغان دەپ بەلگە قىلىش"
+
+#~ msgid "Add label"
+#~ msgstr "خەتكۈچ قىتىش"
+
+#~ msgid "_Label"
+#~ msgstr "خەتكۈچ"
+
+#~ msgid "_Move"
+#~ msgstr "يۆتكەش"
+
+#~ msgid "Compose new message (Ctrl+N, N)"
+#~ msgstr "يىڭى ئېلخەت يىزىش (Ctrl+N, N)"
+
+#~ msgid "_Reply"
+#~ msgstr "جاۋاب قايتۇرۇش"
+
+#~ msgid "Reply (Ctrl+R, R)"
+#~ msgstr "جاۋاب قايتۇرۇش (Ctrl+R, R)"
+
+#~ msgid "Reply all (Ctrl+Shift+R, Shift+R)"
+#~ msgstr "ھەممىسىگە جاۋاب قايتۇرۇش (Ctrl+Shift+R, Shift+R)"
+
+#~ msgid "_Forward"
+#~ msgstr "يەتكۈزۈش"
+
+#~ msgid "Forward (Ctrl+L, F)"
+#~ msgstr "يەتكۈزۈش (Ctrl+L, F)"
+
+#~ msgid "Empty"
+#~ msgstr "قۇرۇقداش"
+
+#~ msgid "Empty Spam or Trash folders"
+#~ msgstr "كىرەكسىز ئېلخەتلەرنى ياكى ئەخلەت چېلىكىنى قۇرۇقداش"
+
+#~ msgid "Empty _Spam…"
+#~ msgstr "كىرەكسىز ئېلخەتلەرنى قۇرۇقداش…"
+
+#~ msgid "Empty _Trash…"
+#~ msgstr "ئەخلەت چېلىكىنى قۇرۇقداش…"
+
+#~ msgid "Toggle search bar"
+#~ msgstr "ئىزدەش ستونىنى ئالماشتۇرۇش"
+
+#~ msgid "Unable to store server trust exception"
+#~ msgstr "ئىشەنچلىك مۇلازىمېتىرلاردىن باشقىسىنى ساقلىغىلى بولمايدۇ"
+
+#~ msgid "Your settings are insecure"
+#~ msgstr "تەڭشەكلىرىڭىز بىخەتەر ئەمەس"
+
+#~ msgid ""
+#~ "Your IMAP and/or SMTP settings do not specify SSL or TLS.  This means "
+#~ "your username and password could be read by another person on the "
+#~ "network.  Are you sure you want to do this?"
+#~ msgstr ""
+#~ "سىزنىڭ IMAP ۋە/ياكى SMTP تەڭشەكلىرىڭىز SSL ياكى TLS نى بەلگىلىمىگەن. بۇ "
+#~ "سىزنىڭ ئىسمىڭىز ۋپارولىڭىزنى توردىكى باشقا كىشىلەرنىڭمۇ "
+#~ "ئوقۇيالايدىغانلىقىنى بىلدۈرىدۇ. راسىتتىنلا بۇنداق بولسىمۇ مەيلىمۇ؟"
+
+#~ msgid "Co_ntinue"
+#~ msgstr "داۋاملاشتۇرۇش"
+
+#~ msgid "Error sending email"
+#~ msgstr "ئېلخەتنى يوللاشتا خاتالىق كۆرۈلدى"
+
+#~ msgid ""
+#~ "Geary encountered an error sending an email.  If the problem persists, "
+#~ "please manually delete the email from your Outbox folder."
+#~ msgstr ""
+#~ "Geary ئېلخەت يوللاشتا خاتالىققا ئۇچرىدى. ئەگەر بۇ خاتالىق كۆرۈلسە، "
+#~ "يوللانغانلار مۇندەرىجىسىدىن بۇ ئېلخەتنى ئۆچۈرىۋىتىڭ."
+
+#~ msgid "Error saving sent mail"
+#~ msgstr "يوللانغان ئېلخەتنى يوللاشتا خاتالىق كۆرۈلدى"
+
+#~ msgid ""
+#~ "Geary encountered an error saving a sent message to Sent Mail.  The "
+#~ "message will stay in your Outbox folder until you delete it."
+#~ msgstr ""
+#~ "Geary يوللانغان ئېلخەتنى ساقلاشتا خاتالىققا يولۇقتى. ئەگەر "
+#~ "ئۆچۈرۈۋەتمىسىڭىز بۇ ئېلخەت يوللانغانلىرى مۇندەرىجىسىدە داۋاملىق ساقلىنىدۇ."
+
+#~ msgid "Labels"
+#~ msgstr "خەتكۈچلەر"
+
+#~ msgid "Unable to open the database for %s"
+#~ msgstr "%s نىڭ ساندانىنى ئاچقىلى بولمىدى"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to corruption of the database file in this directory:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Geary can rebuild the database and re-synchronize with the server or "
+#~ "exit.\n"
+#~ "\n"
+#~ "Rebuilding the database will destroy all local email and its attachments. "
+#~ "<b>The mail on the your server will not be affected.</b>"
+#~ msgstr ""
+#~ "بۇ ئابونتنىڭ يەرلىكتىكى ئېلخەت ساندانىنى ئىچىشتا خاتالىق كۆرۈلدى. بۇ "
+#~ "خاتالىق بەلكىم شۇ مۇندەرىجىدىكى ساندان ھۆججىتىنىڭ بۇزۇلغانلىقىدىن بولۇشى "
+#~ "مۇمكىن:"
+
+#~ msgid "_Rebuild"
+#~ msgstr "قايتا قۇرۇش"
+
+#~ msgid "E_xit"
+#~ msgstr "چىكىنىش"
+
+#~ msgid "Unable to rebuild database for \"%s\""
+#~ msgstr "\"%s\" نىڭ ساندانىنى قايتا قۇرغىلى بولمىدى"
+
+#~ msgid ""
+#~ "Error during rebuild:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr "\"%s\" نىڭ ساندانىنى قايتا قۇرۇشتا خاتالىق كۆرۈلدى:"
+
+#~ msgid "Unable to open local mailbox for %s"
+#~ msgstr "%s نىڭ يەرلىكتىكى ئېلخەت ساندۇقىنى ئاچقىلى بولمىدى"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to a file permissions problem.\n"
+#~ "\n"
+#~ "Please check that you have read/write permissions for all files in this "
+#~ "directory:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "بۇ ھىساۋاتنىڭ يەرلىكتىكى ئېلخەت ساندانىنى ئىچىشتا خاتالىق كۆرۈلدى. بەلكىم "
+#~ "ھۆججەتنى مەشغۇلات قىلىش ھوقۇقى سەۋەبىدىن بولىشى مۇمكىن."
+
+#~ msgid ""
+#~ "The version number of the local mail database is formatted for a newer "
+#~ "version of Geary. Unfortunately, the database cannot be \"rolled back\" "
+#~ "to work with this version of Geary.\n"
+#~ "\n"
+#~ "Please install the latest version of Geary and try again."
+#~ msgstr ""
+#~ "بۇ نەشىرىدىكى يەرلىكتىكى ئېلخەت ساندانى يىڭى نەشىرىدىكى Geary ئارقىلىق "
+#~ "فورماتلانغان. سانداننى بۇ نەشىرىدە نورمال ئىشلەتكىلى بولمايدۇ."
+
+#~ msgid ""
+#~ "There was an error opening the local account. This is probably due to "
+#~ "connectivity issues.\n"
+#~ "\n"
+#~ "Please check your network connection and restart Geary."
+#~ msgstr ""
+#~ "يەرلىكتىكى ھىساۋاتنى ئىچىشتا خاتالىق كۆرۈلدى، بۇ بەلكىم تور ئۇلىنىشى "
+#~ "سەۋەبىدىن بولىشى مۇمكىن."
+
+#~ msgid "About %s"
+#~ msgstr "%s ھەققىدە"
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Launchpad Contributions:\n"
+#~ "  ablimet https://launchpad.net/~ablimet\n"
+#~ "  elementary Apps team https://launchpad.net/~elementary-apps"
+
+#~ msgid "Undo move (Ctrl+Z)"
+#~ msgstr "مەشغۇلاتنى ئەمەلدىن قالدۇرماق (Ctrl+Z)"
+
+#~ msgid "Are you sure you want to open \"%s\"?"
+#~ msgstr "\"%s\" نى راسىتتىنلا ئاچامسىز؟"
+
+#~ msgid ""
+#~ "Attachments may cause damage to your system if opened.  Only open files "
+#~ "from trusted sources."
+#~ msgstr ""
+#~ "قوشۇمچە ھۆججەتلەر ئىچىلسا سىستېمىڭىزغا بۇزغۇنچىلىق ئىلىپ كىلىشى مۇمكىن. "
+#~ "پەقەت مەنبەسى ئىشەنچلىك ھۆججەتلەرنى ئىچىشىڭىزنى تەۋسىيە قىلىمىز."
+
+#~ msgid "Don't _ask me again"
+#~ msgstr "قايتا سورىماسلىق"
+
+#~ msgid "A file named \"%s\" already exists.  Do you want to replace it?"
+#~ msgstr "\"%s\" ئىسىملىك ھۆججەت مەۋجۇت، ئۇنى ئالماشتۇرامسىز؟"
+
+#~ msgid ""
+#~ "The file already exists in \"%s\".  Replacing it will overwrite its "
+#~ "contents."
+#~ msgstr ""
+#~ "بۇ ھۆججەت  \"%s\" دە مەۋجۇت، ئالماشتۇرسىڭىز مەزمۇنى قايتىدىن يىزىلىدۇ."
+
+#~ msgid "_Replace"
+#~ msgstr "ئالماشتۇرۇش"
+
+#~ msgid "Close open draft messages?"
+#~ msgstr "ئىچىلغان ئورىگىناللارنى تاقامسىز؟"
+
+#~ msgid "Empty all email from your %s folder?"
+#~ msgstr "%s مۇندەرىجىڭىزدىكى ھەممە ئېلخەتلەرنى ئۆچۈرەمسىز؟"
+
+#~ msgid "This removes the email from Geary and your email server."
+#~ msgstr ""
+#~ "بۇ مەشغۇلات ئېلخەتنى  Geary دىن ۋە سىزنىڭ ئېلخەت مۇلازىمېتىرىڭىزدىن "
+#~ "ئۆچۈرىدۇ."
+
+#~ msgid "This cannot be undone."
+#~ msgstr "بۇ مەشغۇلاتنى ئەمەلدىن قالدۇرالمايسىز."
+
+#~ msgid "Empty %s"
+#~ msgstr "%s نى قۇرۇقداش"
+
+#~ msgid "Error emptying %s"
+#~ msgstr "%s نى قۇرۇقداۋاتقاندا خاتالىق كۆرۈلدى"
+
+#~ msgid "Undo archive (Ctrl+Z)"
+#~ msgstr "ئەمەلدىن قالدۇرۇپ ئارخىپقا ساقلاش(Ctrl+Z)"
+
+#~ msgid "Undo trash (Ctrl+Z)"
+#~ msgstr "ئەخلەت چېلىكىگە تاشلاشنى ئەمەلدىن قالدۇرۇش (Ctrl+Z)"
+
+#~ msgid "Undo (Ctrl+Z)"
+#~ msgstr "ئەمەلدىن قالدۇرۇش (Ctrl+Z)"
+
+#~ msgid "Start Geary with hidden main window"
+#~ msgstr "Geary نى يوشۇرۇن ئاساسىي كۆزنەكتە قوزغىتىش"
+
+#~ msgid "Output debugging information"
+#~ msgstr "سىناش ئۇچۇرلىرىنى چىقىرىش"
+
+#~ msgid "Log conversation monitoring"
+#~ msgstr "دىئالوگ كۆزىتىش خاتىرىسى"
+
+#~ msgid "Log network deserialization"
+#~ msgstr "تور ئەكسىبايتلاشتۇرۇش خاتىرىسى"
+
+#~ msgid "Log network activity"
+#~ msgstr "تور پائالىيىتى خاتىرىسى"
+
+#~ msgid "Log IMAP replay queue"
+#~ msgstr "IMAP قايتا قويۇش سىپى خاتىرىسى"
+
+#~ msgid "Log network serialization"
+#~ msgstr "تور بايتلاشتۇرۇش خاتىرىسى"
+
+#~ msgid "Log periodic activity"
+#~ msgstr "دەۋرىي پائالىيەت خاتىرىسى"
+
+#~ msgid "Log database queries (generates lots of messages)"
+#~ msgstr "ساندان ئاختۇرۇش خاتىرىسى (كۆپ مىقداردا ئۇچۇر ھاسىل قىلىدۇ)"
+
+#~ msgid "Log folder normalization"
+#~ msgstr "مۇندەرىجە ئۆلچەملەشتۈرۈش خاتىرىسى"
+
+#~ msgid "Allow inspection of WebView"
+#~ msgstr "ئېلخەتكە قىستۇرۇلغان توربەتنى كۆرۈشكە رۇخسەت قىلىش"
+
+#~ msgid "Revoke all server certificates with TLS warnings"
+#~ msgstr "TLS ئاگاھلاندۇرۇشى بار بارلىق گۇۋاھنامىلەرنى ئۆچۈرۈش"
+
+#~ msgid "Display program version"
+#~ msgstr "پروگرامما نەشىرىنى كۆرسىتىش"
+
+#~ msgid "Use %s to open a new composer window"
+#~ msgstr "%s بىلەن يىڭى كۆزنەك ئىچىش"
+
+#~ msgid "Please report comments, suggestions and bugs to:"
+#~ msgstr "ئىنكاسلارنى، تەكلىپلەرنى ۋە خاتالىقلارنى دوكلات قىلىش:"
+
+#~ msgid "Failed to parse command line options: %s\n"
+#~ msgstr "كوماندا كۆرۈنمە يۈزى پارامېتىرلىرىنى ئانالىز قىلغىلى بولمىدى: %s\n"
+
+#~ msgid "Unrecognized command line option \"%s\"\n"
+#~ msgstr "پەرقلەندۈرەلمىگەن كوماندا كۆرۈنمە يۈزى پارامېتىرلىرى  \"%s\"\n"
+
+#~ msgid "%s - New Messages"
+#~ msgstr "%s - يىڭى ئېلخەت"
+
+#~ msgid "%s, %d new message total"
+#~ msgid_plural "%s, %d new messages total"
+#~ msgstr[0] "%s, جەمئىي %d يىڭى ئېلخەت"
+
+#~ msgid ""
+#~ "%s\n"
+#~ "(%d other new message for %s)"
+#~ msgid_plural ""
+#~ "%s\n"
+#~ "(%d other new messages for %s)"
+#~ msgstr[0] ""
+#~ "%s\n"
+#~ "(%s نىڭ باشقا %d يىڭى ئېلخىتى)"
+
+#~ msgid "Me"
+#~ msgstr "مەن"
+
+#~ msgid "Untrusted Connection: %s"
+#~ msgstr "ئىشەنچسىز ئۇلىنىش: %s"
+
+#~ msgid "The identity of the %s mail server at %s:%u could not be verified."
+#~ msgstr ""
+#~ "%s:%u دىكى ئېلخەت مۇلازىمېتىرى %s نىڭ سالاھىيىتىنى دەلىللىگىلى بولمىدى."
+
+#~ msgid ""
+#~ "Selecting \"Trust This Server\" or \"Always Trust This Server\" may cause "
+#~ "your username and password to be transmitted insecurely."
+#~ msgstr ""
+#~ "\"بۇ مۇلازىمېتىرغا ئىشىنىش\" ياكى \"بۇ مۇلازىمېتىرغا مەڭگۈ ئىشىنىش\" نى "
+#~ "تاللىسىڭىز ئىسىم ۋە پارولىڭىز بىخەتەر بولمىغان ھالەتتە يەتكۈزۈلىشى مۇمكىن."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Geary not to access this "
+#~ "server."
+#~ msgstr ""
+#~ "\"بۇ مۇلازىمېتىرغا ئىشەنمەسلىك\" نى تاللىسىڭىز Geary بۇ مۇلازىمېتىرنى "
+#~ "زىيارەت قىلالماسلىقى مۇمكىن."
+
+#~ msgid "Geary will not add or update this email account."
+#~ msgstr "Geary بۇ ئېلخەت ھىساۋاتىنى قاتمايدۇ ياكى يىڭىلىمايدۇ."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Geary to stop accessing "
+#~ "this account."
+#~ msgstr ""
+#~ "\"بۇ مۇلازىمېتىرغا ئىشەنمەسلىك\" نى تاللىسىڭىز Geary بۇ مۇلازىمېتىرنى "
+#~ "زىيارەت قىلىشتىن توختايدۇ."
+
+#~ msgid "Geary will exit if you have no other open email accounts."
+#~ msgstr ""
+#~ "ئەگەر سىزنىڭ باشقا ئىچىلغان ئېلخەت ھىساۋاتىڭىز بولمىسا Geary دىن "
+#~ "چىكىنىسىز."
+
+#~ msgid ""
+#~ "Contact your system administrator or email service provider if you have "
+#~ "any question about these issues."
+#~ msgstr ""
+#~ "ئەگەر بۇنىڭغا نىسبەتەن ھەرقانداق سوئالىڭىز بولسا سىستېما باشقۇرغۇچىسى "
+#~ "ياكى ئېلخەت مۇلازىمېتى تەمىنلىگۈچىسى بىلەن ئالاقىلىشىڭ."
+
+#~ msgid "The server's certificate is not signed by a known authority"
+#~ msgstr ""
+#~ "بۇ مۇلازىمېتىرنىڭ گۇۋاھنامىسى مەلۇم بولغان ئورگان تەرىپىدىن تەمىنلەنمىگەن"
+
+#~ msgid "The server's identity does not match the identity in the certificate"
+#~ msgstr "مۇلازىمېتىرنىڭ سالاھىيىتى گۇۋاھنامىدىكى سالاھىيەتكە ماس كەلمەيدۇ."
+
+#~ msgid "The server's certificate has expired"
+#~ msgstr "بۇ مۇلازىمېتىرنىڭ گۇۋاھنامىسىنىڭ ۋاقتى ئۆتكەن"
+
+#~ msgid "The server's certificate has not been activated"
+#~ msgstr "بۇ مۇلازىمېتىرنىڭ گۇۋاھنامىسى تىخى قوزغىتىلمىغان"
+
+#~ msgid "The server's certificate has been revoked and is now invalid"
+#~ msgstr "بۇ مۇلازىمېتىرنىڭ گۇۋاھنامىسى كۈچىدىن قالدۇرۇلغان، ھازىر ئىناۋەتسىز"
+
+#~ msgid "The server's certificate is considered insecure"
+#~ msgstr "بۇ مۇلازىمېتىرنىڭ گۇۋاھنامىسى بىخەتەر ئەمەس دەپ قارالدى"
+
+#~ msgid "An error has occurred processing the server's certificate"
+#~ msgstr "مۇلازىمېتىرنىڭ گۇۋاھنامىسىنى دەلىللەش جەريانىدا خاتالىق كۆرۈلدى"
+
+#~ msgid "Geary requires your email password to continue"
+#~ msgstr "داۋاملاشتۇرۇش ئۈچۈن Geary سىزنىڭ ئېلخەت پارولىڭىزغا ئىھتىياجلىق"
+
+#~ msgid "Additional addresses for %s"
+#~ msgstr "%s نىڭ قوشۇمچە ئادىرىسى"
+
+#~ msgid "First Last"
+#~ msgstr "ئىسىم-فامىلىسى"
+
+#~ msgid "Welcome to Geary."
+#~ msgstr "Geary غا خۇش كەلدىڭىز."
+
+#~ msgid "Enter your account information to get started."
+#~ msgstr "باشلاش ئۈچۈن ھىساۋات ئۇچۇرلىرىڭىزنى كىرگۈزۈڭ."
+
+#~ msgid "2 weeks back"
+#~ msgstr "2 ھەپتە بۇرۇن"
+
+#~ msgid "1 month back"
+#~ msgstr "1 ئاي بۇرۇن"
+
+#~ msgid "3 months back"
+#~ msgstr "3 ئاي بۇرۇن"
+
+#~ msgid "6 months back"
+#~ msgstr "6 ئاي بۇرۇن"
+
+#~ msgid "1 year back"
+#~ msgstr "1 يىل بۇرۇن"
+
+#~ msgid "2 years back"
+#~ msgstr "2 يىل بۇرۇن"
+
+#~ msgid "4 years back"
+#~ msgstr "4 يىل بۇرۇن"
+
+#~ msgid "Everything"
+#~ msgstr "ھەممىسى"
+
+#~ msgid "Edit"
+#~ msgstr "تەھرىرلەش"
+
+#~ msgid "Preview"
+#~ msgstr "ئالدىن كۆرۈش"
+
+#~ msgid "Remem_ber passwords"
+#~ msgstr "پارولنى ئىسىدە ساقلاش"
+
+#~ msgid "Remem_ber password"
+#~ msgstr "پارولنى ئىسىدە ساقلاش"
+
+#~ msgid "        &#8226; Invalid account nickname.\n"
+#~ msgstr "        &#8226;  ئىسمى ئىناۋەتسىز بەلگىلەرنى ئۆزئىچىگە ئالغان.\n"
+
+#~ msgid "        &#8226; Email address already added to Geary.\n"
+#~ msgstr "        &#8226; ئېلخەت ئادىرىسى Geary غا قىتىلىپ بولغان.\n"
+
+#~ msgid "        &#8226; IMAP connection error.\n"
+#~ msgstr "        &#8226; IMAP ئۇلىنىشىدا خاتالىق كۆرۈلدى.\n"
+
+#~ msgid "        &#8226; IMAP username or password incorrect.\n"
+#~ msgstr "        &#8226; IMAP ئىسمى ياكى پارولى خاتا.\n"
+
+#~ msgid "        &#8226; SMTP connection error.\n"
+#~ msgstr "        &#8226; SMTP ئۇلىنىشىدا خاتالىق كۆرۈلدى.\n"
+
+#~ msgid "        &#8226; SMTP username or password incorrect.\n"
+#~ msgstr "        &#8226; SMTP ئىسمى ياكى پارولى خاتا.\n"
+
+#~ msgid "        &#8226; Connection error.\n"
+#~ msgstr "        &#8226; ئۇلىنىشتا خاتالىق كۆرۈلدى.\n"
+
+#~ msgid "        &#8226; Username or password incorrect.\n"
+#~ msgstr "        &#8226;  ئىسمى ياكى پارولى خاتا.\n"
+
+#~ msgid "_Add"
+#~ msgstr "قىتىش"
+
+#~ msgid "%l:%M %P"
+#~ msgstr "%l:%M %P"
+
+#~ msgid "%H:%M"
+#~ msgstr "%H:%M"
+
+#~ msgctxt "Default clock format"
+#~ msgid "%l:%M %P"
+#~ msgstr "%l:%M %P"
+
+#~ msgid "%b %-e"
+#~ msgstr "%b %-e"
+
+#~ msgid "%x"
+#~ msgstr "%x"
+
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%Y-%m月 %-e，%p %i:%M"
+
+#~ msgid "%B %-e, %Y %-H:%M"
+#~ msgstr "%Y-%m月 %-e，%H:%M"
+
+#~ msgctxt "Default full date"
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%Y-%m- %-e，%p %i:%M"
+
+#~ msgid "Now"
+#~ msgstr "ھازىر"
+
+#~ msgid "%dm ago"
+#~ msgid_plural "%dm ago"
+#~ msgstr[0] "%d مىنۇت بۇرۇن"
+
+#~ msgid "%dh ago"
+#~ msgid_plural "%dh ago"
+#~ msgstr[0] "%d سائەت بۇرۇن"
+
+#~ msgid "Yesterday"
+#~ msgstr "تۈنۈگۈن"
+
+#~ msgid "%A"
+#~ msgstr "%A"
+
+#~ msgid "bytes"
+#~ msgstr "بايتلار"
+
+#~ msgctxt "Abbreviation for terabyte"
+#~ msgid "TB"
+#~ msgstr "TB"
+
+#~ msgctxt "Abbreviation for gigabyte"
+#~ msgid "GB"
+#~ msgstr "GB"
+
+#~ msgctxt "Abbreviation for megabyte"
+#~ msgid "MB"
+#~ msgstr "MB"
+
+#~ msgctxt "Abbreviation for kilobyte"
+#~ msgid "KB"
+#~ msgstr "KB"
+
+#~ msgid "%d message"
+#~ msgid_plural "%d messages"
+#~ msgstr[0] "%d ئېلخەت"
+
+#~ msgid "%s, %s"
+#~ msgstr "%s, %s"
+
+#~ msgid "Inboxes"
+#~ msgstr "قوبۇللاش ساندۇقى"
+
+#~ msgid "Search %s account"
+#~ msgstr "ھىساۋات  %s نى ئىزدەش"
+
+#~ msgid "%d result"
+#~ msgid_plural "%d results"
+#~ msgstr[0] "%d نەتىجە"
+
+#~ msgid "%u conversation selected."
+#~ msgid_plural "%u conversations selected."
+#~ msgstr[0] "%u دىئالوگ تاللاندى."
+
+#~ msgid "No search results found."
+#~ msgstr "ئىزدەش نەتىجىسى تىپىلمىدى."
+
+#~ msgid "No conversations in folder."
+#~ msgstr "مۇندەرىجىدە دىئالوگ يوق."
+
+#~ msgid "Always Show From Sender"
+#~ msgstr "يوللىغۇچىنى داۋاملىق كۆرسىتىش"
+
+#~ msgid "Date:"
+#~ msgstr "چىسلاسى:"
+
+#~ msgid "%u read message"
+#~ msgid_plural "%u read messages"
+#~ msgstr[0] "%u ئوقۇلغان ئېلخەت"
+
+#~ msgid "This message was sent successfully, but could not be saved to %s."
+#~ msgstr "بۇ ئېلخەت ئوڭۇشلۇق يوللاندى، لىكىن %s غا ساقلىغىلى بولمىدى."
+
+#~ msgid "_Copy"
+#~ msgstr "كۆچۈرۈش"
+
+#~ msgid "Copy _Email Address"
+#~ msgstr "ئېلخەت ئادىرىسىنى كۆچۈرۈش"
+
+#~ msgid "Copy _Link"
+#~ msgstr "ئۇلانمىنى كۆچۈرۈش"
+
+#~ msgid "Select _Message"
+#~ msgstr "ئېلخەت تاللاش"
+
+#~ msgid "Select _All"
+#~ msgstr "ھەممىسىنى تاللاش"
+
+#~ msgid "_Inspect"
+#~ msgstr "تەكشۈرۈش"
+
+#~ msgid "This link appears to go to"
+#~ msgstr "بۇ ئۇلىنىش تۆۋەندىكى ئادىرىسقا بارىدۇ دەپ كۆرسەتتى"
+
+#~ msgid "but actually goes to"
+#~ msgstr "لىكىن ئەمىلىيەتتە تۆۋەندىكى ئۇلىنىشقا بارىدۇ"
+
+#~ msgid " (Invalid?)"
+#~ msgstr " (ئىناۋەتسىز؟)"
+
+#~ msgid "_Save Image As..."
+#~ msgstr "رەسىمنى بۆلەك جايغا ساقلاش...."
+
+#~ msgid "_Save As..."
+#~ msgstr "بۆلەك جايغا ساقلاش...."
+
+#~ msgid "Save All A_ttachments..."
+#~ msgstr "ھەممە قوشۇمچە ھۆججەتنى ساقلاش...."
+
+#~ msgid "Save A_ttachment..."
+#~ msgid_plural "Save All A_ttachments..."
+#~ msgstr[0] "ھەممە قوشۇمچە ھۆججەتنى ساقلاش...."
+
+#~ msgid "Reply to _All"
+#~ msgstr "ھەممىسىگە جاۋاپ قايتۇرۇش"
+
+#~ msgid "_Mark as Read"
+#~ msgstr "ئوقۇلغان دەپ بەلگە قىلىش"
+
+#~ msgid "_Mark as Unread"
+#~ msgstr "ئوقۇلمىغان دەپ بەلگە قىلىش"
+
+#~ msgid "Mark Unread From _Here"
+#~ msgstr "بۇ يەردىن ئوقۇلمىغان دەپ بەلگە قىلىش"
+
+#~ msgid "_View Source"
+#~ msgstr "مەنبەسىنى كۆرۈش"
+
+#~ msgid "Failed to open default text editor."
+#~ msgstr "نورمالدىكى تېكست تەھرىرلىگۈچىسىنى ئىچىش مەغلۇپ بولدى."
+
+#~ msgid "%s - Conversation Inspector"
+#~ msgstr "%s - دىئالوگ تەكشۈرگۈچىسى"
+
+#~ msgid "Saved"
+#~ msgstr "ساقلانغان"
+
+#~ msgid "Saving"
+#~ msgstr "ساقلاۋاتىدۇ"
+
+#~ msgid "Error saving"
+#~ msgstr "ساقلاشتا خاتالىق كۆرۈلدى"
+
+#~ msgid "Press Backspace to delete quote"
+#~ msgstr "Backspace كۇنۇپكىسىنى ئۇزۇن بىسىپ يۆتكەپ ئىشلىتىشنى ئۆچۈرۈڭ"
+
+#~ msgid ""
+#~ "attach|attaching|attaches|attachment|attachments|attached|enclose|"
+#~ "enclosed|enclosing|encloses|enclosure|enclosures"
+#~ msgstr ""
+#~ "قوشۇمچە ھۆججەت|قىتىلىۋاتىدۇ|قوشۇمچە ھۆججەت|قوشۇمچە ھۆججەت|قوشۇمچە "
+#~ "ھۆججەتلەر|قىتىلغان|پىچەتلەش|پىچەتلەنگەن|پىچەتلەۋاتىدۇ|پىچەتلەش|قوشۇمچە "
+#~ "ھۆججەت|قوشۇمچە ھۆججەت"
+
+#~ msgid "Do you want to discard this message?"
+#~ msgstr "بۇ ئېلخەتنى تاشلىۋىتەمسىز؟"
+
+#~ msgid "Send message with an empty subject and body?"
+#~ msgstr "تېمىسى ۋە مەزمۇنى يوق ئېلخەتنى ئەۋەتەمسىز؟"
+
+#~ msgid "Send message without an attachment?"
+#~ msgstr "قوشۇمچە ھۆججىتى يوق ئېلخەت ئەۋەتەمسىز؟"
+
+#~ msgid "Cannot add attachment"
+#~ msgstr "قوشۇمچە ھۆججەت قاتقىلى بولمىدى"
+
+#~ msgid "\"%s\" could not be found."
+#~ msgstr "ھۆججەت \"%s\" مەۋجۇت ئەمەس."
+
+#~ msgid "\"%s\" is a folder."
+#~ msgstr "\"%s\" بىر مۇندەرىجە."
+
+#~ msgid "\"%s\" is an empty file."
+#~ msgstr "\"%s\" قۇرۇق ھۆججەت."
+
+#~ msgid "\"%s\" could not be opened for reading."
+#~ msgstr "\"%s\" نى ئوقۇش شەكلىدە ئاچقىلى بولمىدى."
+
+#~ msgid "\"%s\" already attached for delivery."
+#~ msgstr "\"%s\" قوشۇمچە ھۆججەت تىزىملىكىدە"
+
+#~ msgid "%s (%s)"
+#~ msgstr "%s (%s)"
+
+#~ msgid "To: "
+#~ msgstr "تاپشۇرۇۋالغۇچى: "
+
+#~ msgid "Cc: "
+#~ msgstr "كۆچۈرۈپ ئەۋەتىش: "
+
+#~ msgid "Bcc: "
+#~ msgstr "مەخپى يوللاش: "
+
+#~ msgid "Reply-To: "
+#~ msgstr "جاۋاب قايتۇرۇش: "
+
+#~ msgid "Select Color"
+#~ msgstr "رەڭ تاللاش"
+
+#~ msgid "%1$s via %2$s"
+#~ msgstr "%1$s ئارقىلىق %2$s"
+
+#~ msgid "_From:"
+#~ msgstr "يوللىغۇچى:"
+
+#~ msgid "%s (%d)"
+#~ msgstr "%s (%d)"
+
+#~ msgid "Sending..."
+#~ msgstr "يوللاۋاتىدۇ...."
+
+#~ msgid "%i match"
+#~ msgid_plural "%i matches"
+#~ msgstr[0] "%i ماس كەلدى"
+
+#~ msgid "%i match (wrapped)"
+#~ msgid_plural "%i matches (wrapped)"
+#~ msgstr[0] "%i ماس كەلدى (قاتلاپ قويۇلدى)"
+
+#~ msgid "not found"
+#~ msgstr "تىپىلمىدى"
+
+#~ msgid "_OK"
+#~ msgstr "ھەئە"
+
+#~ msgid "_Cancel"
+#~ msgstr "ياق"
+
+#~ msgid "_Discard"
+#~ msgstr "تاشلىۋىتىش"
+
+#~ msgid "_Open"
+#~ msgstr "ئىچىش"
+
+#~ msgid "_Print..."
+#~ msgstr "بىسىش...."
+
+#~ msgid "_Remove"
+#~ msgstr "ئۆچۈرۈش"
+
+#~ msgid "_Keep"
+#~ msgstr "ساقلاش"
+
+#~ msgid "Search all mail in account for keywords (Ctrl+S)"
+#~ msgstr "بارلىق ھىساۋاتلاردىكى ئېلخەتلەردىن ئىزدەش"
+
+#~ msgid "Indexing %s account"
+#~ msgstr "ھىساۋات %s نى ئىندېكسلاۋاتىدۇ"
+
+#~ msgid "Send by Email"
+#~ msgstr "ئېلخەت ئارقىلىق يوللاش"
+
+#~ msgid "Send files using Mail"
+#~ msgstr "ھۆججەتلەرنى ئېلخەت ئارقىلىق يوللاش"
+
+#~ msgid "Welcome to Mail"
+#~ msgstr "ئېلخەتكە خۇش كەلدىڭىز"
+
+#~ msgid "More options"
+#~ msgstr "تىخىمۇ كۆپ پارامېتىرلار"
+
+#~ msgid "Search %s"
+#~ msgstr "%s نى ئىزدەش"
+
+#~ msgid "Reading"
+#~ msgstr "ئوقۇش"
+
+#~ msgid "Automatically select next message:"
+#~ msgstr "كەينىدىكى ئېلخەتنى ئاپتوماتىك تاللاش:"
+
+#~ msgid "Conversation previews:"
+#~ msgstr "دىئالوگنى كۆرۈپ بىقىش:"
+
+#~ msgid "Three-pane layout:"
+#~ msgstr "ئۈچ ستونلوق بەتيۈزى:"
+
+#~ msgid "Composer"
+#~ msgstr "ئاپتور"
+
+#~ msgid "Spell check:"
+#~ msgstr "ئىملا تەكشۈرۈش:"
+
+#~ msgid "Notifications"
+#~ msgstr "ئۇقتۇرۇشلار"
+
+#~ msgid "Always watch for new mail:"
+#~ msgstr "داۋاملىق يىڭى ئېلخەتلەرنى كۆزىتىش:"
+
+#~ msgid "Delete Conversation (Shift+Delete)"
+#~ msgid_plural "Delete Conversations (Shift+Delete)"
+#~ msgstr[0] "دىئالوگلارنى ئۆچۈرۈش"
+
+#~ msgid "Delete Conversations (Shift+Delete)"
+#~ msgstr "دىئالوگلارنى ئۆچۈرۈش (Shift+Delete)"
+
+#~ msgid ""
+#~ "<span weight=\"bold\" size=\"larger\">Are you sure you want to remove "
+#~ "this account?</span> "
+#~ msgstr ""
+#~ "<span weight=\"bold\" size=\"larger\">بۇ ھىساۋاتنى راسىتتىنلا ئۆچۈرەمسىز؟"
+#~ "</span> "
+
+#~ msgid ""
+#~ "All email associated with this account will be removed from your "
+#~ "computer. This will not affect email on the server."
+#~ msgstr ""
+#~ "بۇ ھىساۋاتقا مۇناسىۋەتلىك بارلىق ئېلخەتلەرنى كومپىيۇتىرىڭىزدىن "
+#~ "ئۆچۈرۈلىدۇ، لىكىن مۇلازىمېتىردىكى ئېلخەتلەرگە تەسىر قىلمايدۇ."
+
+#~ msgid "Nickname:"
+#~ msgstr "ئەركىلەتمە ئىسمى:"
+
+#~ msgid "Find"
+#~ msgstr "ئىزدەش"
+
+#~ msgid "Previous Result"
+#~ msgstr "ئالدىنقى نەتىجە"
+
+#~ msgid "Next result"
+#~ msgstr "كىيىنكى نەتىجە"
+
+#~ msgid "_Case sensitive"
+#~ msgstr "چوڭ-كىچىك يىزىشنى پەرقلەندۈرۈش"
+
+#~ msgid "label"
+#~ msgstr "خەتكۈچ"
+
+#~ msgid "Geary update in progress…"
+#~ msgstr "Geary يىڭىلىنىۋاتىدۇ…"
+
+#~ msgid "Remove email address"
+#~ msgstr "ئېلخەت ئادىرىسىنى ئۆچۈرۈش"
+
+#~ msgid ""
+#~ "Some email services require additional addresses be configured on the "
+#~ "server.  Contact your email provider for more information."
+#~ msgstr ""
+#~ "بەزى ئېلخەت مۇلازىمەتلىرى مۇلازىمېتىردا تەڭشەلگەن باشقا ئېلخەت ئادىرىسىنى "
+#~ "تەلەپ قىلىدۇ. تىخىمۇ كۆپ ئۇچۇرلار ئۇچۈن ئېلخەت تەمىنلىگۈچى بىلەن "
+#~ "ئالاقىلىشىڭ."
+
+#~ msgid "_Update"
+#~ msgstr "يىڭىلاش"
+
+#~ msgid "Please wait while Geary validates your account."
+#~ msgstr "Geary ھىساۋاتىڭىزنى تەستىقلاۋاتىدۇ، سەل ساقلاڭ."
+
+#~ msgid "_Redo"
+#~ msgstr "قايتا ئىشلەش"
+
+#~ msgid "Cu_t"
+#~ msgstr "كىسىش"
+
+#~ msgid "_Paste"
+#~ msgstr "چاپلاش"
+
+#~ msgid "_Left"
+#~ msgstr "سولغا توغرىلاش"
+
+#~ msgid "_Right"
+#~ msgstr "ئوڭغا توغرىلاش"
+
+#~ msgid "_Center"
+#~ msgstr "ئوتتۇرىغا توغرىلاش"
+
+#~ msgid "_Justify"
+#~ msgstr "تەكشى توغرىلاش"
+
+#~ msgid "Link (Ctrl+L)"
+#~ msgstr "ئۇلىنىش (Ctrl+L)"
+
+#~ msgid "C_olor"
+#~ msgstr "رەڭ"
+
+#~ msgid "Quote text  (Ctrl+])"
+#~ msgstr "تېكستنى يۆتكەپ ئىشلىتىش (Ctrl+])"
+
+#~ msgctxt "Clipboard paste with rich text"
+#~ msgid "Paste _With Formatting"
+#~ msgstr "فورماتى بىلەن چاپلاش"
+
+#~ msgid "Bold (Ctrl+B)"
+#~ msgstr "توملاشتۇرۇش (Ctrl+B)"
+
+#~ msgid "Italic (Ctrl+I)"
+#~ msgstr "يانتۇ قىلىش (Ctrl+I)"
+
+#~ msgid "Show Extended Fields"
+#~ msgstr "مۇناسىۋەتلىك ھۆججەتلەرنى كۆرسىتىش"
+
+#~ msgctxt "Label"
+#~ msgid "Close and Save"
+#~ msgstr "تاقاش ۋە ساقلاش"
+
+#~ msgctxt "Short Label"
+#~ msgid "Close and Save"
+#~ msgstr "تاقاش ۋە ساقلاش"
+
+#~ msgctxt "Tooltip"
+#~ msgid "Close and Save"
+#~ msgstr "تاقاش ۋە ساقلاش"
+
+#~ msgctxt "Label"
+#~ msgid "Close and Discard"
+#~ msgstr "تاقاش ۋە تاشلىۋىتىش"
+
+#~ msgctxt "Short Label"
+#~ msgid "Close and Discard"
+#~ msgstr "تاقاش ۋە تاشلىۋىتىش"
+
+#~ msgctxt "Tooltip"
+#~ msgid "Close and Discard"
+#~ msgstr "تاقاش ۋە تاشلىۋىتىش"
+
+#~ msgid "Lar_ge"
+#~ msgstr "چوڭ"
+
+#~ msgid "Large"
+#~ msgstr "چوڭ"
+
+#~ msgid "_Medium"
+#~ msgstr "ئوتتۇراھال"
+
+#~ msgid "Medium"
+#~ msgstr "ئوتتۇراھال"
+
+#~ msgid "_Small"
+#~ msgstr "كىچىك"
+
+#~ msgid "Small"
+#~ msgstr "كىچىك"
+
+#~ msgid "S_ans Serif"
+#~ msgstr "تۈس سىزىقسىز"
+
+#~ msgid "Sans Serif"
+#~ msgstr "تۈس سىزىقسىز"
+
+#~ msgid "S_erif"
+#~ msgstr "تۈس سىزىقلىق"
+
+#~ msgid "Serif"
+#~ msgstr "تۈس سىزىقلىق"
+
+#~ msgid "_Fixed Width"
+#~ msgstr "تەڭ ئارىلىقلىق"
+
+#~ msgid "Fixed Width"
+#~ msgstr "تەڭ ئارىلىقلىق"
+
+#~ msgid "Detach"
+#~ msgstr "قوشۇمچە ھۆججەتنى ئۆچۈرۈش"
+
+#~ msgid "Detach (Ctrl+D)"
+#~ msgstr "قوشۇمچە ھۆججەتنى ئۆچۈرۈش"
+
+#~ msgid "_Send"
+#~ msgstr "يوللاش"
+
+#~ msgid "Send (Ctrl+Enter)"
+#~ msgstr "يوللاش"
+
+#~ msgid "_Attach File"
+#~ msgstr "قوشۇمچە ھۆججەت"
+
+#~ msgid "Attach File"
+#~ msgstr "قوشۇمچە ھۆججەت"
+
+#~ msgid "_Include Original Attachments"
+#~ msgstr "ئورگىنالدىكى قوشۇمچە ھۆججەتلەرنى ئۆزئىچىگە ئىلىش"
+
+#~ msgid "Include Original Attachments"
+#~ msgstr "ئورگىنالدىكى قوشۇمچە ھۆججەتلەرنى ئۆزئىچىگە ئىلىش"
+
+#~ msgid "Application Menu"
+#~ msgstr "ئەپ تىزىملىكى"
+
+#~ msgid "_To"
+#~ msgstr "تاپشۇرۇۋالغۇچى"
+
+#~ msgid "_Cc"
+#~ msgstr "كۆچۈرۈپ ئەۋەتىش:"
+
+#~ msgid "_Subject"
+#~ msgstr "تېمىسى:"
+
+#~ msgid "_Bcc"
+#~ msgstr "مەخپى يوللاش:"
+
+#~ msgid "_Reply-To"
+#~ msgstr "جاۋاب قايتۇرۇش:"
+
+#~ msgid "From"
+#~ msgstr "يوللىغۇچى"
+
+#~ msgid "Drop files here"
+#~ msgstr "ھۆججەتلەرنى بۇ يەرگە سۆرەش"
+
+#~ msgid "To add them as attachments"
+#~ msgstr "قوشۇمچە ھۆججەت قىلىپ قىتىش"
+
+#~ msgid "<span weight=\"bold\" size=\"larger\">Cannot remove account</span> "
+#~ msgstr ""
+#~ "<span weight=\"bold\" size=\"larger\">ھىساۋاتنى ئۆچۈرگىلى بولمىدى</span> "
+
+#~ msgid ""
+#~ "A composer window associated with this account is currently open. Send or "
+#~ "discard the message and try again."
+#~ msgstr ""
+#~ "بۇ ھىساۋات بىلەن مۇناسىۋەتلىك تەھرىرلەش كۆزنىكى تىخى تاقالمىغان. "
+#~ "تەھرىرلەش كۆزنىكىدىكى ئېلخەتنى بىرتەرەپ قىلىپ بولغاندىن كىيىن قايتا سىناڭ."
+
+#~ msgid "Addi_tional email addresses…"
+#~ msgstr "قوشۇمچە ئېلخەت ئادىرىسى…"
+
+#~ msgid "_Save sent mail"
+#~ msgstr "يوللانغان ئېلخەتنى ساقلاش"
+
+#~ msgid "Password"
+#~ msgstr "پارول"
+
+#~ msgid "_Password:"
+#~ msgstr "پارول:"
+
+#~ msgid "Work, Home, etc."
+#~ msgstr "خىزمەت، تۇرمۇش قاتارلىقلار."
+
+#~ msgid "N_ickname:"
+#~ msgstr "ئەركىلەتمە ئىسمى:"
+
+#~ msgid "S_ervice:"
+#~ msgstr "مۇلازىمەت:"
+
+#~ msgid "IMAP settings"
+#~ msgstr "IMAP تەڭشەكلىرى"
+
+#~ msgid "Se_rver:"
+#~ msgstr "مۇلازىمېتىر:"
+
+#~ msgid "P_ort"
+#~ msgstr "پورت"
+
+#~ msgid "Ser_ver:"
+#~ msgstr "مۇلازىمېتىر:"
+
+#~ msgid "Por_t"
+#~ msgstr "پورت"
+
+#~ msgid "SMTP settings"
+#~ msgstr "SMTP تەڭشەكلىرى"
+
+#~ msgid "User_name:"
+#~ msgstr "ئابونت ئىسمى:"
+
+#~ msgid "Pass_word:"
+#~ msgstr "پارول:"
+
+#~ msgid "SMTP username"
+#~ msgstr "SMTP ئابونت ئىسمى"
+
+#~ msgid "SMTP password"
+#~ msgstr "SMTP پارولى"
+
+#~ msgid "_Username:"
+#~ msgstr "ئابونت ئىسمى:"
+
+#~ msgid "IMAP username"
+#~ msgstr "IMAP ئابونت ئىسمى"
+
+#~ msgid "IMAP password"
+#~ msgstr "IMAP پارولى"
+
+#~ msgid "Encr_yption:"
+#~ msgstr "شىفېرلاش"
+
+#~ msgid "Encrypt_ion:"
+#~ msgstr "شىفېرلاش"
+
+#~ msgid "SSL/TLS"
+#~ msgstr "SSL/TLS"
+
+#~ msgid "STARTTLS"
+#~ msgstr "STARTTLS"
+
+#~ msgid "No authentication re_quired"
+#~ msgstr "دەلىللىمىسىمۇ بولىدۇ"
+
+#~ msgid "Use IMAP cre_dentials"
+#~ msgstr "IMAP ئىسپاتىنى ئىشلىتىش"
+
+#~ msgid "Storage"
+#~ msgstr "ساقلاش"
+
+#~ msgid "_Download mail"
+#~ msgstr "ئېلخەتنى چۈشۈرۈش"
+
+#~ msgid "Save dra_fts on server"
+#~ msgstr "ئورگىنالنى مۇلازىمېتىرغا ساقلاش"
+
+#~ msgid "Si_gn emails (HTML allowed):"
+#~ msgstr "ئېلخەتلەرگە ئىمزا قويۇش (HTML نى ئىشلەتكىلى بولىدۇ):"
+
+#~ msgid "Add account"
+#~ msgstr "ھىساۋات قىتىش"
+
+#~ msgid "Edit account"
+#~ msgstr "ھىساۋات تەھرىرلەش"
+
+#~ msgid "Remove account"
+#~ msgstr "ھىساۋات ئۆچۈرۈش"
+
+#~ msgid "Untrusted Connection"
+#~ msgstr "ئىشەنچسىز ئۇلىنىش"
+
+#~ msgid "_Always Trust This Server"
+#~ msgstr "بۇ مۇلازىمېتىرغا داۋاملىق ئىشىنىش"
+
+#~ msgid "_Trust This Server"
+#~ msgstr "بۇ مۇلازىمېتىرغا ئىشىنىش"
+
+#~ msgid "_Don't Trust This Server"
+#~ msgstr "بۇ مۇلازىمېتىرغا ئىشەنمەسلىك"
+
+#~ msgid "SMTP Credentials"
+#~ msgstr "SMTP ئىسپاتلىرى"
+
+#~ msgid "Username"
+#~ msgstr "ئابونت ئىسمى"
+
+#~ msgid "_Remember password"
+#~ msgstr "پارولنى ئەستە ساقلاش"
+
+#~ msgid "_Authenticate"
+#~ msgstr "دەلىللەش"
+
+#~ msgid "© 2011-2015 Yorba Foundation, © 2016 elementary LLC."
+#~ msgstr "© 2011-2015 Yorba فوندى،© 2016 elementary LLC."
+
+#~ msgid ""
+#~ "Mail encountered an error sending an email.  If the problem persists, "
+#~ "please manually delete the email from your Outbox folder."
+#~ msgstr ""
+#~ "ئېلخەت يوللاشتا خاتالىق كۆرۈلدى. ئەگەر بۇ خاتالىق داۋاملىق كۆرۈلسە، "
+#~ "يوللانغانلار مۇندەرىجىسىدىن بۇ ئېلخەتنى ئۆچۈرىۋىتىڭ."
+
+#~ msgid ""
+#~ "Mail encountered an error saving a sent message to Sent Mail.  The "
+#~ "message will stay in your Outbox folder until you delete it."
+#~ msgstr ""
+#~ "يوللانغان ئېلخەتنى ساقلاشتا خاتالىق كۆرۈلدى. ئەگەر ئۆچۈرۈۋەتمىسىڭىز بۇ "
+#~ "ئېلخەت يوللانغانلىرى مۇندەرىجىسىدە داۋاملىق ساقلىنىدۇ."
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to corruption of the database file in this directory:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Mail can rebuild the database and re-synchronize with the server or "
+#~ "exit.\n"
+#~ "\n"
+#~ "Rebuilding the database will destroy all local email and its attachments. "
+#~ "<b>The mail on the your server will not be affected.</b>"
+#~ msgstr ""
+#~ "بۇ ئابونتنىڭ يەرلىكتىكى ئېلخەت ساندانىنى ئىچىشتا خاتالىق كۆرۈلدى. بۇ "
+#~ "خاتالىق بەلكىم شۇ مۇندەرىجىدىكى ساندان ھۆججىتىنىڭ بۇزۇلغانلىقىدىن بولۇشى "
+#~ "مۇمكىن:"
+
+#~ msgid ""
+#~ "The version number of the local mail database is formatted for a newer "
+#~ "version of Mail. Unfortunately, the database cannot be \"rolled back\" to "
+#~ "work with this version of Mail.\n"
+#~ "\n"
+#~ "Please install the latest version of Mail and try again."
+#~ msgstr ""
+#~ "بۇ نەشىرىدىكى يەرلىكتىكى ئېلخەت ساندانى يىڭى نەشىرىدىكى ئېلخەت ئارقىلىق "
+#~ "فورماتلانغان. سانداننى بۇ نەشىرىدە نورمال ئىشلەتكىلى بولمايدۇ."
+
+#~ msgid ""
+#~ "There was an error opening the local account. This is probably due to "
+#~ "connectivity issues.\n"
+#~ "\n"
+#~ "Please check your network connection and restart Mail."
+#~ msgstr ""
+#~ "يەرلىكتىكى ھىساۋاتنى ئىچىشتا خاتالىق كۆرۈلدى، بۇ بەلكىم تور ئۇلىنىشى "
+#~ "سەۋەبىدىن بولىشى مۇمكىن."
+
+#~ msgid "This removes the email from Mail and your email server."
+#~ msgstr "بۇ مەشغۇلات ئېلخەتنى سىزنىڭ ئېلخەت مۇلازىمېتىرىڭىزدىن ئۆچۈرىدۇ."
+
+#~ msgid "        &#8226; Email address already added to Mail.\n"
+#~ msgstr "        &#8226; ئېلخەت ئادىرىسى قىتىلىپ بولغان.\n"
+
+#~ msgid "Mail requires your email password to continue"
+#~ msgstr "داۋاملاشتۇرۇش ئۈچۈن ئېلخەت پارولىڭىزنى كىرگۈزۈڭ"
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Mail not to access this "
+#~ "server."
+#~ msgstr ""
+#~ "\"بۇ مۇلازىمېتىرغا ئىشەنمەسلىك\" نى تاللىسىڭىز بۇ مۇلازىمېتىرنى زىيارەت "
+#~ "قىلالماسلىقىڭىز مۇمكىن."
+
+#~ msgid "Mail will not add or update this email account."
+#~ msgstr "ئېلخەت بۇ ھىساۋاتىنى قاتمايدۇ ياكى يىڭىلىمايدۇ."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Mail to stop accessing "
+#~ "this account."
+#~ msgstr ""
+#~ "\"بۇ مۇلازىمېتىرغا ئىشەنمەسلىك\" نى تاللىسىڭىز بۇ مۇلازىمېتىرنى زىيارەت "
+#~ "قىلىشتىن توختايسىز."
+
+#~ msgid "Mail will exit if you have no other open email accounts."
+#~ msgstr ""
+#~ "ئەگەر سىزنىڭ باشقا ئىچىلغان ئېلخەت ھىساۋاتىڭىز بولمىسا ئېلخەتتىن "
+#~ "چىكىنىسىز."
+
+#~ msgid "Please wait while Mail validates your account."
+#~ msgstr "ھىساۋاتىڭىز تەستىقلىنىۋاتىدۇ، سەل ساقلاڭ."
+
+#~ msgid "Mail update in progress…"
+#~ msgstr "ئېلخەت پروگراممىسى يىڭىلىنىۋاتىدۇ…"
+
+#~ msgid ""
+#~ "2011-2015 Yorba Foundation\n"
+#~ "© 2016 elementary LLC."
+#~ msgstr "© 2011-2015 Yorba فوندى،© 2016 elementary LLC."
+
+#~ msgid "Show About dialog"
+#~ msgstr "ئۇچۇر دىئالوگى كۆزنىكىنى كۆرسىتىش"
+
+#~ msgid "Save Attachment…"
+#~ msgstr "قوشۇمچە ھۆججەتنى ساقلاش…"
+
+#~ msgid "Save All Attachments…"
+#~ msgstr "ھەممە قوشۇمچە ھۆججەتلەرنى ساقلاش…"
+
+#~ msgid "View Source"
+#~ msgstr "مەنبەسىنى كۆرۈش"
+
+#~ msgid "View message"
+#~ msgstr "ئۇچۇر كۆرۈش"
+
+#~ msgid "Copy Email Address"
+#~ msgstr "ئېلخەت ئادىرىسىنى كۆچۈرۈش"
+
+#~ msgid "Hide message"
+#~ msgstr "ئېلخەتنى كۆرسەتمەسلىك"
+
+#~ msgid "Case sensitive"
+#~ msgstr "چوڭ-كىچىك يىزىشنى پەرقلەندۈرۈش"
+
+#~ msgid "%u match"
+#~ msgid_plural "%u matches"
+#~ msgstr[0] "%u ماس كەلدى"
+
+#~ msgid "no-reply;no_reply;noreply;do-not-reply;do_not_reply;donotreply"
+#~ msgstr ""
+#~ "جاۋاپ قايتۇرماڭ؛ جاۋاپ قايتۇرماڭ؛ جاۋاپ قايتۇرماڭ؛ جاۋاپ قايتۇرماڭ؛ جاۋاپ "
+#~ "قايتۇرماڭ؛ جاۋاپ قايتۇرماڭ؛"
+
+#~ msgid "Include original attachments"
+#~ msgstr "ئورگىنالدىكى قوشۇمچە ھۆججەتلەرنى ئۆزئىچىگە ئىلىش"
+
+#~ msgid "Don't ask me again"
+#~ msgstr "قايتا سورىماسلىق"
+
+#~ msgid "Are you sure you want to remove this account?"
+#~ msgstr "بۇ ھىساۋاتنى راسىتتىنلا ئۆچۈرەمسىز؟"
+
+#~ msgid "Username:"
+#~ msgstr "ئابونت ئىسمى:"
+
+#~ msgid "Password:"
+#~ msgstr "پارول:"
+
+#~ msgid "SMTP Credentials:"
+#~ msgstr "SMTP ئىسپاتلىرى:"
+
+#~ msgid "Remember password"
+#~ msgstr "پارولنى ئەستە ساقلاش"
+
+#~ msgid "Authenticate"
+#~ msgstr "دەلىللەش"
+
+#~ msgid "Strikethrough (Ctrl+%)"
+#~ msgstr "سىزىۋىتىش (Ctrl+K)"
+
+#~ msgid "Link (Ctrl+K)"
+#~ msgstr "ئۇلىنىش (Ctrl+K)"
+
+#~ msgid "Forward (Ctrl+Shift+F)"
+#~ msgstr "يەتكۈزۈش (Ctrl+Shift+F)"

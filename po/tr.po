@@ -1,0 +1,2293 @@
+# po/geary.pot
+# PO message string template file for Geary email client
+# Copyright 2012-2013 Yorba Foundation
+# This file is distributed under the GNU LGPL, version 2.1.
+#
+# Translators:
+# alperenelhan <alperen@elhan.org>, 2012
+# Baris Ata <brsata@gmail.com>, 2013
+# Ferhat Tunctan <ferhattnctn66@gmail.com>, 2012
+# Ferhat Tunctan <ferhattnctn66@gmail.com>, 2012
+# Muhammet Kara <muhammetk@gmail.com>, 2014.
+# Necdet Yücel <necdetyucel@gmail.com>, 2015.
+# Simge Sezgin <simgesezgin88@gmail.com>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: geary-0.4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-08 16:46+0000\n"
+"PO-Revision-Date: 2023-05-17 21:00+0000\n"
+"Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
+"Language-Team: Turkish <https://l10n.elementary.io/projects/mail/mail/tr/>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17\n"
+"X-Launchpad-Export-Date: 2017-03-09 06:00+0000\n"
+"X-POOTLE-MTIME: 1423290848.000000\n"
+
+#: src/Application.vala:145
+#, fuzzy
+#| msgid "Unable to print email"
+msgid "Unable to open System Settings"
+msgstr "E-posta yazdırılamıyor"
+
+#: src/Application.vala:146
+msgid ""
+"Open System Settings manually or install Evolution to set up online accounts."
+msgstr ""
+
+#: src/Application.vala:217
+msgid ""
+"Mail will automatically start when this device turns on and run when its "
+"window is closed so that it can send notifications when new mail arrives."
+msgstr ""
+
+#: src/Composer.vala:94 src/MessageList/MessageListItem.vala:102
+msgid "From:"
+msgstr "Gönderen:"
+
+#: src/Composer.vala:114 src/MessageList/MessageListItem.vala:108
+msgid "To:"
+msgstr "Kime:"
+
+#: src/Composer.vala:120
+msgid "Cc"
+msgstr "Cc"
+
+#: src/Composer.vala:122
+msgid "Bcc"
+msgstr "Bcc"
+
+#: src/Composer.vala:133 src/MessageList/MessageListItem.vala:148
+msgid "Cc:"
+msgstr "Cc:"
+
+#: src/Composer.vala:152
+msgid "Bcc:"
+msgstr "Bcc:"
+
+#: src/Composer.vala:171 src/MessageList/MessageListItem.vala:114
+msgid "Subject:"
+msgstr "Konu:"
+
+#: src/Composer.vala:205
+msgid "Insert Image"
+msgstr "Resim Ekle"
+
+#: src/Composer.vala:232
+msgid "Delete draft"
+msgstr "Taslağı sil"
+
+#: src/Composer.vala:240
+msgid "Attach file"
+msgstr "Dosya ekle"
+
+#: src/Composer.vala:251
+#, fuzzy
+#| msgid "Insert Link"
+msgid "Insert Signature…"
+msgstr "Bağlantı Ekle"
+
+#: src/Composer.vala:256
+msgid "Send"
+msgstr "Gönder"
+
+#: src/Composer.vala:299
+msgid "New Message"
+msgstr "Yeni İleti"
+
+#: src/Composer.vala:445
+msgid "Choose a file"
+msgstr "Bir dosya seçin"
+
+#: src/Composer.vala:448
+msgid "Attach"
+msgstr "Ekle"
+
+#: src/Composer.vala:449 src/Composer.vala:472 src/Composer.vala:763
+#: src/Dialogs/InsertLinkDialog.vala:66
+#: src/MessageList/AttachmentButton.vala:144
+msgid "Cancel"
+msgstr "İptal"
+
+#: src/Composer.vala:464
+#, fuzzy
+#| msgid "Show Images"
+msgid "Images"
+msgstr "Resimleri Göster"
+
+#: src/Composer.vala:468
+#, fuzzy
+#| msgid "Choose a file"
+msgid "Choose an image"
+msgstr "Bir dosya seçin"
+
+#: src/Composer.vala:471
+#, fuzzy
+#| msgid "Insert Link"
+msgid "Insert"
+msgstr "Bağlantı Ekle"
+
+#: src/Composer.vala:500
+#, fuzzy
+#| msgid "Unable to send message"
+msgid "Unable to insert image"
+msgstr "Mesaj gönderilemiyor"
+
+#: src/Composer.vala:501
+#, fuzzy
+#| msgid "There was an unexpected error while sending your message."
+msgid "There was an unexpected error while trying to insert the image."
+msgstr "Mesajınız gönderilirken beklenmeyen bir hata oluştu."
+
+#: src/Composer.vala:665
+msgid "%a, %b %-e, %Y at %-l:%M %p"
+msgstr "%-e %B %Y %A, %-k:%M"
+
+#: src/Composer.vala:695
+#, c-format
+msgid "On %1$s, %2$s wrote:"
+msgstr "%2$s, %1$s tarihinde şunu yazdı:"
+
+#: src/Composer.vala:699
+msgid "---------- Forwarded message ----------"
+msgstr "---------- Yönlendirilen ileti ----------"
+
+#: src/Composer.vala:701
+#, c-format
+msgid "From: %s<br/>"
+msgstr "Gönderen: %s<br/>"
+
+#: src/Composer.vala:702
+#, c-format
+msgid "Subject: %s<br/>"
+msgstr "Konu: %s<br/>"
+
+#: src/Composer.vala:703
+#, c-format
+msgid "Date: %s<br/>"
+msgstr "Tarih: %s<br/>"
+
+#: src/Composer.vala:704
+#, c-format
+msgid "To: %s<br/>"
+msgstr "Kime: %s<br/>"
+
+#: src/Composer.vala:706
+#, c-format
+msgid "Cc: %s<br/>"
+msgstr "Cc: %s<br/>"
+
+#: src/Composer.vala:754
+msgid "Permanently delete this draft?"
+msgstr "Bu taslak kalıcı olarak silinsin mi?"
+
+#: src/Composer.vala:755
+msgid ""
+"You cannot undo this action, nor recover your draft once it has been deleted."
+msgstr ""
+"Bu eylemi geri alamaz veya taslağınızı silindikten sonra kurtaramazsınız."
+
+#: src/Composer.vala:765
+msgid "Delete Draft"
+msgstr "Taslağı Sil"
+
+#: src/Composer.vala:789
+msgid "Send without subject?"
+msgstr "İleti konusu olmadan gönderilsin mi?"
+
+#: src/Composer.vala:790
+msgid ""
+"This message has an empty subject field. The recipient may be unable to "
+"infer its scope or importance."
+msgstr ""
+"Bu iletide konu alanı bulunmamaktadır. Alıcı, mesajın kapsamını veya önemini "
+"kavrayamayabilir."
+
+#: src/Composer.vala:797
+msgid "Don't Send"
+msgstr "Gönderme"
+
+#: src/Composer.vala:799
+msgid "Send Anyway"
+msgstr "Yine de Gönder"
+
+#: src/Composer.vala:830
+msgid "Sent message was not saved"
+msgstr "Gönderilen mesaj kaydedilmedi"
+
+#: src/Composer.vala:831
+msgid ""
+"The message was sent, however a copy was not saved to the Sent message "
+"folder."
+msgstr ""
+"Mesaj gönderildi, ancak bir kopyası Gönderilmiş mesajlar klasörüne "
+"kaydedilmedi."
+
+#: src/Composer.vala:846
+msgid "Unable to send message"
+msgstr "Mesaj gönderilemiyor"
+
+#: src/Composer.vala:847
+msgid "There was an unexpected error while sending your message."
+msgstr "Mesajınız gönderilirken beklenmeyen bir hata oluştu."
+
+#: src/Composer.vala:945 src/FolderList/FolderList.vala:55
+msgid "Edit Signatures…"
+msgstr ""
+
+#: src/Composer.vala:949
+msgid "None"
+msgstr "Hiç"
+
+#: src/Composer.vala:1140
+msgid "Unable to save draft"
+msgstr "Taslak kaydedilemiyor"
+
+#: src/Composer.vala:1141
+msgid "There was an unexpected error while saving your draft."
+msgstr "Taslağınız kaydedilirken beklenmeyen bir hata oluştu."
+
+#: src/EditorToolbar.vala:55
+msgid "Bold"
+msgstr "Kalın"
+
+#: src/EditorToolbar.vala:62
+msgid "Italic"
+msgstr "İtalik"
+
+#: src/EditorToolbar.vala:73
+msgid "Underline"
+msgstr "Altı Çizili"
+
+#: src/EditorToolbar.vala:85
+msgid "Strikethrough"
+msgstr "Üstü Çizili"
+
+#: src/EditorToolbar.vala:100
+msgid "Remove formatting"
+msgstr "Biçimlendirmeyi kaldır"
+
+#: src/EditorToolbar.vala:108 src/Dialogs/InsertLinkDialog.vala:68
+msgid "Insert Link"
+msgstr "Bağlantı Ekle"
+
+#: src/InboxMonitor.vala:158 src/InboxMonitor.vala:170
+#, c-format
+msgid "%s to %s"
+msgstr "%s: %s"
+
+#. /TRANSLATORS: The %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#: src/InboxMonitor.vala:165
+#, c-format
+msgid "%u new message"
+msgid_plural "%u new messages"
+msgstr[0] "%u yeni mesaj"
+msgstr[1] "%u yeni mesaj"
+
+#. /TRANSLATORS: The first %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#. /The next %s represents the number of senders
+#: src/InboxMonitor.vala:177
+#, c-format
+msgid "%s from %u sender"
+msgid_plural "%s from %u senders"
+msgstr[0] "%u gönderenden %s"
+msgstr[1] "%u gönderenden %s"
+
+#: src/MainWindow.vala:80
+msgid "Mail"
+msgstr "Posta"
+
+#: src/MainWindow.vala:123 src/Dialogs/AliasDialog/AliasDialog.vala:96
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:172
+msgid "Undo"
+msgstr "Geri Al"
+
+#: src/MainWindow.vala:281
+msgid "Message Archived"
+msgid_plural "Messages Archived"
+msgstr[0] "İleti Arşivlendi"
+msgstr[1] "İletiler Arşivlendi"
+
+#: src/MainWindow.vala:285
+#, fuzzy
+#| msgid "Unstar message"
+msgid "Couldn't archive message"
+msgstr "İletiden yıldızı kaldır"
+
+#: src/MainWindow.vala:298
+#, fuzzy
+#| msgid "Message Archived"
+#| msgid_plural "Messages Archived"
+msgid "Message Moved"
+msgid_plural "Messages Moved"
+msgstr[0] "İleti Arşivlendi"
+msgstr[1] "İletiler Arşivlendi"
+
+#: src/MainWindow.vala:302
+#, fuzzy
+#| msgid "Unable to send message"
+msgid "Couldn't move message"
+msgstr "Mesaj gönderilemiyor"
+
+#: src/MainWindow.vala:315
+msgid "Message Deleted"
+msgid_plural "Messages Deleted"
+msgstr[0] "İleti Silindi"
+msgstr[1] "İletiler Silindi"
+
+#: src/MainWindow.vala:319
+msgid "Couldn't delete message"
+msgstr ""
+
+#: src/WelcomeView.vala:45
+msgid "Connect an Account"
+msgstr "Bir Hesaba Bağlan"
+
+#: src/WelcomeView.vala:52
+msgid "Mail uses email accounts configured in System Settings."
+msgstr ""
+"Posta uygulaması, Sistem Ayarlarında yapılandırılmış e-posta hesaplarını "
+"kullanır."
+
+#: src/WelcomeView.vala:59
+msgid "Online Accounts…"
+msgstr "Çevrimiçi Hesaplar…"
+
+#: src/Backend/Account.vala:48
+#, fuzzy
+#| msgid "Unable to save draft"
+msgid "Unable to connect"
+msgstr "Taslak kaydedilemiyor"
+
+#: src/Backend/Account.vala:49
+#, fuzzy
+#| msgid "There was an unexpected error while sending your message."
+msgid "There was an unexpected error while trying to connect to the server."
+msgstr "Mesajınız gönderilirken beklenmeyen bir hata oluştu."
+
+#: src/Backend/MoveOperation.vala:65
+#, c-format
+msgid "Moving messages… (%u remaining)"
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:98
+msgid "No Archive folder is configured."
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:126
+msgid "The destination folder was not found."
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:130
+msgid "The source folder is the destination folder."
+msgstr ""
+
+#: src/Backend/Session.vala:642
+msgid "New Signature"
+msgstr ""
+
+#: src/Backend/ContactManager.vala:88 src/Backend/ContactManager.vala:122
+#, c-format
+msgid "Couldn't add “%s” to addressbook"
+msgstr ""
+
+#: src/Backend/ContactManager.vala:89
+msgid "No addressbook available."
+msgstr ""
+
+#: src/Backend/ContactManager.vala:123
+msgid "Operation failed."
+msgstr ""
+
+#: src/ConversationList/ConversationItemModel.vala:74
+#: src/ConversationList/ConversationItemModel.vala:112
+msgid ", "
+msgstr ", "
+
+#: src/ConversationList/ConversationItemModel.vala:77
+#: src/ConversationList/ConversationItemModel.vala:115
+#: src/ConversationList/ConversationItemModel.vala:123
+#: src/MessageList/AttachmentButton.vala:100
+msgid "Unknown"
+msgstr "Bilinmeyen"
+
+#: src/ConversationList/ConversationList.vala:85
+msgid "Search Mail"
+msgstr "Posta Ara"
+
+#: src/ConversationList/ConversationList.vala:89
+msgid "Hide read conversations"
+msgstr "Okunmuş konuşmaları gizle"
+
+#: src/ConversationList/ConversationList.vala:90
+msgid "Hide unstarred conversations"
+msgstr "Yıldızsız konuşmaları gizle"
+
+#: src/ConversationList/ConversationList.vala:107
+msgid "Filter Conversations"
+msgstr "Konuşmaları Filtrele"
+
+#: src/ConversationList/ConversationList.vala:130
+msgid "Fetch new messages"
+msgstr "Yeni mesajları getir"
+
+#: src/ConversationList/ConversationList.vala:137
+msgid "Fetching new messages…"
+msgstr "Yeni mesajlar getiriliyor…"
+
+#: src/ConversationList/ConversationListItem.vala:94
+msgid "Archive"
+msgstr "Arşiv"
+
+#: src/ConversationList/ConversationListItem.vala:99
+msgid "Trash"
+msgstr "Çöp"
+
+#: src/ConversationList/ConversationListItem.vala:181
+msgid "Unread"
+msgstr "Okunmamış"
+
+#: src/ConversationList/ConversationListItem.vala:194
+msgid "Replied"
+msgstr "Yanıtlandı"
+
+#: src/ConversationList/ConversationListItem.vala:198
+msgid "Forwarded"
+msgstr "Yönlendirildi"
+
+#: src/ConversationList/ConversationListItem.vala:212
+msgid "Move To Trash"
+msgstr "Çöpe Taşı"
+
+#: src/ConversationList/ConversationListItem.vala:215
+msgid "Mark As Unread"
+msgstr "Okunmamış Olarak İşaretle"
+
+#: src/ConversationList/ConversationListItem.vala:217
+#: src/MessageList/MessageList.vala:51
+msgid "Mark as Read"
+msgstr "Okunmuş olarak İşaretle"
+
+#: src/ConversationList/ConversationListItem.vala:221
+#: src/MessageList/MessageList.vala:52
+msgid "Star"
+msgstr "Yıldız Ekle"
+
+#: src/ConversationList/ConversationListItem.vala:223
+#: src/MessageList/MessageList.vala:53
+msgid "Unstar"
+msgstr "Yıldızı Kaldır"
+
+#: src/Dialogs/InsertLinkDialog.vala:29
+msgid "URL:"
+msgstr "URL:"
+
+#: src/Dialogs/InsertLinkDialog.vala:39
+msgid "Link Text:"
+msgstr "Bağlantı Metni:"
+
+#: src/Dialogs/InsertLinkDialog.vala:45
+msgid "Example Website"
+msgstr "Örnek Web Sitesi"
+
+#: src/Dialogs/AliasDialog/Alias.vala:52
+msgid "John Doe"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/Alias.vala:56
+#, fuzzy
+#| msgid "N_ame:"
+msgid "Name"
+msgstr "A_d:"
+
+#: src/Dialogs/AliasDialog/Alias.vala:75
+#, fuzzy
+#| msgid "E_mail address:"
+msgid "E-mail Address"
+msgstr "E_posta adresi:"
+
+#: src/Dialogs/AliasDialog/Alias.vala:80
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Delete alias"
+msgstr "Taslağı sil"
+
+#: src/Dialogs/AliasDialog/Alias.vala:100
+#, fuzzy
+#| msgid "Edit Draft"
+msgid "Edit alias"
+msgstr "Taslağı Düzenle"
+
+#: src/Dialogs/AliasDialog/Alias.vala:175
+msgid "Name not set"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:33
+msgid "No Aliases"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:37
+msgid "Add aliases using the button in the toolbar below"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:67
+msgid "Add Alias…"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:104
+msgid "Aliases"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:108
+#, fuzzy
+#| msgid "_Close"
+msgid "Close"
+msgstr "_Kapat"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:178
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:330
+#, c-format
+msgid "'%s' deleted"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:39
+#, fuzzy
+#| msgid "Insert Link"
+msgid "No Signatures"
+msgstr "Bağlantı Ekle"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:43
+msgid "Add signatures using the button in the toolbar below"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:67
+#, fuzzy
+#| msgid "Insert Link"
+msgid "Create Signature"
+msgstr "Bağlantı Ekle"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:86
+msgid "Title"
+msgstr ""
+
+#. Work around a styling issue
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:99
+msgid "For example “Work” or “Personal”"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:122
+msgid "Delete"
+msgstr "Sil"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:131
+msgid "Set Default For…"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:156
+#, fuzzy
+#| msgid "Insert Link"
+msgid "Signature"
+msgstr "Bağlantı Ekle"
+
+#: src/FolderList/AccountItemModel.vala:155
+msgid "Edit Aliases…"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:48
+msgid "Refresh folder"
+msgstr "Klasörü yenile"
+
+#: src/FolderList/FolderItemModel.vala:53
+#, fuzzy
+#| msgid "Refresh folder"
+msgid "Rename folder"
+msgstr "Klasörü yenile"
+
+#: src/FolderList/FolderItemModel.vala:146
+#: src/FolderList/FolderItemModel.vala:175
+#: src/FolderList/FolderItemModel.vala:193
+#, c-format
+msgid "Couldn't rename “%s”"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:147
+msgid "Folder names cannot contain “/”"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:176
+#, c-format
+msgid "A folder named “%s” already exists"
+msgstr ""
+
+#: src/FolderList/FolderList.vala:34
+msgid "Compose new message"
+msgstr "Yeni ileti oluştur"
+
+#: src/FolderList/FolderList.vala:56
+msgid "Account Settings…"
+msgstr "Hesap Ayarları…"
+
+#: src/FolderList/FolderList.vala:59
+msgid "Always Show Remote Images"
+msgstr "Uzak Resimleri Her Zaman Göster"
+
+#: src/FolderList/FolderList.vala:65
+msgid "Menu"
+msgstr "Menü"
+
+#: src/FolderList/GroupedFolderItemModel.vala:38
+#, fuzzy
+#| msgid "Inbox"
+msgctxt "Inbox Folder"
+msgid "Inbox"
+msgstr "Gelen Kutusu"
+
+#: src/FolderList/GroupedFolderItemModel.vala:42
+#, fuzzy
+#| msgid "Archive"
+msgctxt "Archive Folder"
+msgid "Archive"
+msgstr "Arşiv"
+
+#: src/FolderList/GroupedFolderItemModel.vala:46
+#, fuzzy
+#| msgid "Sent"
+msgctxt "Sent Folder"
+msgid "Sent"
+msgstr "Gönder"
+
+#: src/FolderList/SessionItemModel.vala:28
+msgid "All Mailboxes"
+msgstr "Tüm Posta Kutuları"
+
+#: src/MessageList/MessageList.vala:28 src/MessageList/MessageListItem.vala:210
+msgid "Reply"
+msgstr "Yanıtla"
+
+#: src/MessageList/MessageList.vala:37 src/MessageList/MessageListItem.vala:213
+msgid "Reply All"
+msgstr "Tümünü Yanıtla"
+
+#: src/MessageList/MessageList.vala:46 src/MessageList/MessageListItem.vala:216
+msgid "Forward"
+msgstr "Yönlendir"
+
+#: src/MessageList/MessageList.vala:50
+msgid "Mark as Unread"
+msgstr "Okunmamış olarak İşaretle"
+
+#: src/MessageList/MessageList.vala:60
+msgid "Mark Conversation"
+msgstr "Konuşmayı İşaretle"
+
+#: src/MessageList/MessageList.vala:68
+#, fuzzy
+#| msgid "Move conversation"
+#| msgid_plural "Move conversations"
+msgid "Move Conversation to…"
+msgstr "Konuşmayı taşı"
+
+#: src/MessageList/MessageList.vala:77
+msgid "Move conversations to archive"
+msgstr "Konuşmaları arşive taşı"
+
+#: src/MessageList/MessageList.vala:85
+msgid "Move conversations to Trash"
+msgstr "Konuşmaları Çöpe Taşı"
+
+#: src/MessageList/MessageList.vala:100
+msgid "No Message Selected"
+msgstr "Hiçbir İleti Seçilmedi"
+
+#. /TRANSLATORS: The first %s represents the date and the second %s the time of the message (either when it was received or sent)
+#: src/MessageList/MessageListItem.vala:190
+#, c-format
+msgid "%s at %s"
+msgstr "%s saat %s"
+
+#: src/MessageList/MessageListItem.vala:198
+#: src/MessageList/MessageListItem.vala:397
+msgid "Unstar message"
+msgstr "İletiden yıldızı kaldır"
+
+#: src/MessageList/MessageListItem.vala:201
+#: src/MessageList/MessageListItem.vala:393
+msgid "Star message"
+msgstr "İletiye yıldız ekle"
+
+#: src/MessageList/MessageListItem.vala:221
+msgid "Print…"
+msgstr "Yazdır…"
+
+#: src/MessageList/MessageListItem.vala:231
+msgid "More"
+msgstr "Daha fazla"
+
+#: src/MessageList/MessageListItem.vala:281
+msgid "Open in Calendar"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:286
+#, fuzzy
+#| msgid "This message contains remote images."
+msgid "This message contains a Calendar Event."
+msgstr "Bu iletide uzak resimler bulunuyor."
+
+#: src/MessageList/MessageListItem.vala:297
+msgid "Show Images"
+msgstr "Resimleri Göster"
+
+#: src/MessageList/MessageListItem.vala:298
+msgid "Always Show from Sender"
+msgstr "Bu Gönderenin Resimlerini Her Zaman Göster"
+
+#: src/MessageList/MessageListItem.vala:302
+msgid "This message contains remote images."
+msgstr "Bu iletide uzak resimler bulunuyor."
+
+#: src/MessageList/MessageListItem.vala:341
+msgid "This message contains one or more attachments"
+msgstr "Bu ileti, bir veya daha fazla ek içeriyor"
+
+#. / Translators: This is the default file name of a printed email
+#: src/MessageList/MessageListItem.vala:417
+msgid "Email Message"
+msgstr "E-posta İletisi"
+
+#: src/MessageList/MessageListItem.vala:439
+msgid "Unable to print email"
+msgstr "E-posta yazdırılamıyor"
+
+#: src/MessageList/MessageListItem.vala:691
+#, c-format
+msgid "Trust and open “%s”?"
+msgstr "“%s” dosyasına güvenip açmak istiyor musunuz?"
+
+#: src/MessageList/MessageListItem.vala:692
+msgid ""
+"Attachments may cause damage to your system if opened. Only open files from "
+"trusted sources."
+msgstr ""
+"Ekler açıldığında sisteminize zarar verebilir. Yalnızca güvenilir "
+"kaynaklardan gelen dosyaları açın."
+
+#: src/MessageList/MessageListItem.vala:699
+msgid "Open Anyway"
+msgstr "Yine de Aç"
+
+#: src/MessageList/AttachmentButton.vala:57
+msgid "Open"
+msgstr "Aç"
+
+#: src/MessageList/AttachmentButton.vala:58
+msgid "Save As…"
+msgstr "Farklı Kaydet…"
+
+#: src/MessageList/AttachmentButton.vala:143
+msgid "Save"
+msgstr "Kaydet"
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:22
+msgid "No mailboxes found"
+msgstr ""
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:26
+msgid "Try changing search terms"
+msgstr ""
+
+#, fuzzy
+#~| msgid "https://example.com"
+#~ msgid "Email@example.com"
+#~ msgstr "https://example.com"
+
+#, fuzzy
+#~| msgid "Email Address:"
+#~ msgid "Address:"
+#~ msgstr "E-Posta Adresi:"
+
+#, fuzzy
+#~| msgid "Email address:"
+#~ msgid "Enter e-mail address…"
+#~ msgstr "E-posta adresi:"
+
+#~ msgid "Reply to All"
+#~ msgstr "Tümünü Yanıtla"
+
+#, c-format
+#~ msgid "Are you sure you want to open %s?"
+#~ msgstr "%s adlı eki açmak istediğinizden emin misiniz?"
+
+#~ msgid "Quote text"
+#~ msgstr "Metni alıntıla"
+
+#~ msgid "Unquote text"
+#~ msgstr "Metni alıntılamaktan vazgeç"
+
+#~ msgid "Drafts | Draft"
+#~ msgstr "Taslaklar | Taslak"
+
+#~ msgid "Sent | Sent Mail | Sent Email | Sent E-Mail"
+#~ msgstr ""
+#~ "Gönderilmiş | Gönderilmiş Posta | Gönderilmiş Eposta | Gönderilmiş E-Posta"
+
+#~ msgid ""
+#~ "Junk | Spam | Junk Mail | Junk Email | Junk E-Mail | Bulk Mail | Bulk "
+#~ "Email | Bulk E-Mail"
+#~ msgstr ""
+#~ "Önemsiz | İstenmeyen | Önemsiz Posta | Önemsiz Eposta | Toplu Posta | "
+#~ "Toplu Eposta | Toplu E-posta"
+
+#~ msgid "Trash | Rubbish | Rubbish Bin"
+#~ msgstr "Çöp | Çöp | Çöp Kutusu"
+
+#~ msgid "Archive | Archives"
+#~ msgstr "Arşiv  | Arşivler"
+
+#~ msgid "Drafts"
+#~ msgstr "Taslaklar"
+
+#~ msgid "Starred"
+#~ msgstr "Yıldızlı"
+
+#~ msgid "Important"
+#~ msgstr "Önemli"
+
+#~ msgid "Spam"
+#~ msgstr "Gereksiz"
+
+#~ msgid "Outbox"
+#~ msgstr "Giden Kutusu"
+
+#~ msgid "Search"
+#~ msgstr "Ara"
+
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgid "SMTP"
+#~ msgstr "SMTP"
+
+#~ msgid "Gmail"
+#~ msgstr "Gmail"
+
+#~ msgid "Yahoo! Mail"
+#~ msgstr "Yahoo! Mail"
+
+#~ msgid "Outlook.com"
+#~ msgstr "Outlook.com"
+
+#~ msgid "Other"
+#~ msgstr "Diğer"
+
+#~ msgid "attachment"
+#~ msgstr "ek"
+
+#~ msgid "bcc"
+#~ msgstr "bcc"
+
+#~ msgid "body"
+#~ msgstr "gövde"
+
+#~ msgid "cc"
+#~ msgstr "cc"
+
+#~ msgid "from"
+#~ msgstr "kimden"
+
+#~ msgid "subject"
+#~ msgstr "konu"
+
+#~ msgid "to"
+#~ msgstr "kime"
+
+#~ msgid "me"
+#~ msgstr "ben"
+
+#~ msgid "(no subject)"
+#~ msgstr "(konu yok)"
+
+#~ msgid "%s wrote:"
+#~ msgstr "%s yazdı:"
+
+#~ msgid "On %s:"
+#~ msgstr "%s tarihinde:"
+
+#~ msgid "none"
+#~ msgstr "hiçbiri"
+
+#~ msgid "Mail Client"
+#~ msgstr "Posta İstemcisi"
+
+#~ msgid "Copyright 2011-2015 Yorba Foundation"
+#~ msgstr "Telif Hakkı 2011-2015 Yorba Kuruluşu"
+
+#~ msgid "Visit the Yorba web site"
+#~ msgstr "Yorba web sitesini ziyaret edin"
+
+#~ msgid "Delete conversation"
+#~ msgstr "Konuşmayı sil"
+
+#~ msgid "Delete conversation (Shift+Delete)"
+#~ msgstr "Konuşmayı sil (Shift+Delete)"
+
+#~ msgid "Delete conversations (Shift+Delete)"
+#~ msgstr "Konuşmaları sil (Shift+Delete)"
+
+#~ msgid "Move conversation to Trash (Delete, Backspace)"
+#~ msgid_plural "Move conversations to Trash (Delete, Backspace)"
+#~ msgstr[0] "Konuşmayı Çöpe taşı (Delete, Backspace)"
+#~ msgstr[1] "Konuşmaları Çöpe taşı (Delete, Backspace)"
+
+#~ msgid "Move conversations to Trash (Delete, Backspace)"
+#~ msgstr "Konuşmaları Çöpe taşı (Delete, Backspace)"
+
+#~ msgid "_Archive"
+#~ msgstr "_Arşivle"
+
+#~ msgid "Archive conversation (A)"
+#~ msgid_plural "Archive conversations (A)"
+#~ msgstr[0] "Konuşmayı arşivle (A)"
+#~ msgstr[1] "Konuşmaları arşivle (A)"
+
+#~ msgid "Archive conversations (A)"
+#~ msgstr "Konuşmaları arşivle (A)"
+
+#~ msgid "Mark as S_pam"
+#~ msgstr "İ_stenmeyen olarak İşaretle"
+
+#~ msgid "Mark as not S_pam"
+#~ msgstr "İstenen olarak İşaretle"
+
+#~ msgid "Add label to conversation"
+#~ msgid_plural "Add label to conversations"
+#~ msgstr[0] "Konuşmaya etiket ekle"
+#~ msgstr[1] "Konuşmalara etiket ekle"
+
+#~ msgid "Add label to conversations"
+#~ msgstr "Konuşmaya etiket ekle"
+
+#~ msgid "A_ccounts"
+#~ msgstr "_Hesaplar"
+
+#~ msgid "_Preferences"
+#~ msgstr "_Tercihler"
+
+#~ msgid "_Help"
+#~ msgstr "_Yardım"
+
+#~ msgid "_About"
+#~ msgstr "_Hakkında"
+
+#~ msgid "_Quit"
+#~ msgstr "_Çık"
+
+#~ msgid "_Mark as..."
+#~ msgstr "_… olarak işaretle"
+
+#~ msgid "Mark as _Read"
+#~ msgstr "Okundu Olarak İşa_retle"
+
+#~ msgid "Mark as _Unread"
+#~ msgstr "Ok_unmamış Olarak İşaretle"
+
+#~ msgid "Add label"
+#~ msgstr "Etiket ekle"
+
+#~ msgid "_Label"
+#~ msgstr "_Etiketle"
+
+#~ msgid "_Move"
+#~ msgstr "_Taşı"
+
+#~ msgid "Compose new message (Ctrl+N, N)"
+#~ msgstr "Yeni ileti oluştur (Ctrl+N, N)"
+
+#~ msgid "_Reply"
+#~ msgstr "_Yanıtla"
+
+#~ msgid "Reply (Ctrl+R, R)"
+#~ msgstr "Yanıtla (Ctrl+R, R)"
+
+#~ msgid "Reply all (Ctrl+Shift+R, Shift+R)"
+#~ msgstr "Tümünü Yanıtla (Ctrl+Shift+R, Shift+R)"
+
+#~ msgid "_Forward"
+#~ msgstr "_İlet"
+
+#~ msgid "Forward (Ctrl+L, F)"
+#~ msgstr "Yönlendir (Ctrl+L, F)"
+
+#~ msgid "Empty"
+#~ msgstr "Boşalt"
+
+#~ msgid "Empty Spam or Trash folders"
+#~ msgstr "Gereksiz ve Çöp klasörlerini boşalt"
+
+#~ msgid "Empty _Spam…"
+#~ msgstr "Gereksizi_Boşalt"
+
+#~ msgid "Empty _Trash…"
+#~ msgstr "Çöpü _Boşalt…"
+
+#~ msgid "Toggle search bar"
+#~ msgstr "Arama çubuğunu etkinleştir"
+
+#~ msgid "Unable to store server trust exception"
+#~ msgstr "Sunucu güven istisnası depolanamadı"
+
+#~ msgid "Your settings are insecure"
+#~ msgstr "Ayarlarınız emniyetsiz"
+
+#~ msgid ""
+#~ "Your IMAP and/or SMTP settings do not specify SSL or TLS.  This means "
+#~ "your username and password could be read by another person on the "
+#~ "network.  Are you sure you want to do this?"
+#~ msgstr ""
+#~ "IMAP ve/veya SMTP ayarlarınız SSL veya TLS belirtmiyor.  Bunun anlamı "
+#~ "kullanıcı adınız ve şifreniz ağdaki başka biri tarafından okunabilir "
+#~ "demektir. Bunu yapmak istediğinizden emin misiniz?"
+
+#~ msgid "Co_ntinue"
+#~ msgstr "Devam_et"
+
+#~ msgid "Error sending email"
+#~ msgstr "E-posta gönderme hatası"
+
+#~ msgid ""
+#~ "Geary encountered an error sending an email.  If the problem persists, "
+#~ "please manually delete the email from your Outbox folder."
+#~ msgstr ""
+#~ "Geary eposta gönderilirken bir hata ile karşılaştı.  Eğer sorun devam "
+#~ "ederse, lütfen e-postayı Giden klasöründen elle siliniz."
+
+#~ msgid "Error saving sent mail"
+#~ msgstr "Gönderilmiş posta kaydedilirken hata"
+
+#~ msgid ""
+#~ "Geary encountered an error saving a sent message to Sent Mail.  The "
+#~ "message will stay in your Outbox folder until you delete it."
+#~ msgstr ""
+#~ "Geary, Gönderilmiş Postaya gönderilmiş iletiyi kaydederken bir hata ile "
+#~ "karşılaştı.  İleti, siz silene kadar Giden Klasörünüzde kalacak."
+
+#~ msgid "Labels"
+#~ msgstr "Etiketler"
+
+#~ msgid "Unable to open the database for %s"
+#~ msgstr "%s için veritabanı açılamadı"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to corruption of the database file in this directory:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Geary can rebuild the database and re-synchronize with the server or "
+#~ "exit.\n"
+#~ "\n"
+#~ "Rebuilding the database will destroy all local email and its attachments. "
+#~ "<b>The mail on the your server will not be affected.</b>"
+#~ msgstr ""
+#~ "Bu hesap için yerel posta veritabanı açılırken bir hata oluştu. Hatanın "
+#~ "sebebi muhtemelen bu dizindeki veritabanı dosyasının bozulmuş olmasıdır:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Geary, veritabanını yeniden oluşturabilir ve sunucuyla yeniden "
+#~ "eşitleyebilir ya da çıkabilir.\n"
+#~ "Veritabanının yeniden inşa edilmesi bütün yerel epostaları ve eklerini "
+#~ "yok edecektir.<b>Sizin sunucunuzdaki postalar etkilenmeyecektir.</b>"
+
+#~ msgid "_Rebuild"
+#~ msgstr "_Yeniden Oluştur"
+
+#~ msgid "E_xit"
+#~ msgstr "Ç_ık"
+
+#~ msgid "Unable to rebuild database for \"%s\""
+#~ msgstr "\"%s\" için veritabanı yeniden oluşturulamadı"
+
+#~ msgid ""
+#~ "Error during rebuild:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Yeniden oluşturma sırasında hata:\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid "Unable to open local mailbox for %s"
+#~ msgstr "%s için yerel posta kutusu açılamadı"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to a file permissions problem.\n"
+#~ "\n"
+#~ "Please check that you have read/write permissions for all files in this "
+#~ "directory:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Bu hesap için yerel posta veritabanı açılırken bir hata oluştu. Hata "
+#~ "muhtemelen dosya izin sorunlarından kaynaklanmaktadır.\n"
+#~ "\n"
+#~ "Lütfen bu dizindeki bütün dosyalar için okuma/yazma iznine sahip olup "
+#~ "olmadığınızı kontrol edin:\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid ""
+#~ "The version number of the local mail database is formatted for a newer "
+#~ "version of Geary. Unfortunately, the database cannot be \"rolled back\" "
+#~ "to work with this version of Geary.\n"
+#~ "\n"
+#~ "Please install the latest version of Geary and try again."
+#~ msgstr ""
+#~ "Lokal posta veritabanı sürüm numarası daha yeni bir Geary sürümü için "
+#~ "biçimlendirildi. Ne yazık ki, veritabanı, Geary uygulamasının bu sürümü "
+#~ "ile çalışabilmesi için \"geri alınır\" durumda değildir.\n"
+#~ "\n"
+#~ "Lütfen Geary uygulamasının son sürümünü kurun ve tekrar deneyin."
+
+#~ msgid ""
+#~ "There was an error opening the local account. This is probably due to "
+#~ "connectivity issues.\n"
+#~ "\n"
+#~ "Please check your network connection and restart Geary."
+#~ msgstr ""
+#~ "Yerel hesap açılırken bir hata oluştu. Hata muhtemelen bağlantı sorunları "
+#~ "nedeniyle.\n"
+#~ "\n"
+#~ "Lütfen ağ bağlantılarınızı kontrol edin ve Geary uygulamasını yeniden "
+#~ "başlatın."
+
+#~ msgid "About %s"
+#~ msgstr "%s hakında"
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Ferhat TUNÇTAN <ferhattnctn19@yahoo.com.tr>\n"
+#~ "Yunus Burak TUNÇTAN <buraktunctan@hotmail.com>\n"
+#~ "Muhammet Kara <muhammetk@gmail.com>\n"
+#~ "\n"
+#~ "Launchpad Contributions:\n"
+#~ "  Deniz CAN https://launchpad.net/~denizcan72\n"
+#~ "  Melih Güçlü https://launchpad.net/~melihguclu\n"
+#~ "  MuHa Aliss https://launchpad.net/~muha.aliss\n"
+#~ "  Sadık Poyraz https://launchpad.net/~sadikpoyraz01\n"
+#~ "  Simge Sezgin https://launchpad.net/~simgesezgin88\n"
+#~ "  elementary Apps team https://launchpad.net/~elementary-apps\n"
+#~ "  serkan https://launchpad.net/~serkankrsglu"
+
+#~ msgid "Undo move (Ctrl+Z)"
+#~ msgstr "Geri Al - Taşı (Ctrl+Z)"
+
+#~ msgid "Are you sure you want to open \"%s\"?"
+#~ msgstr "\"%s\" i açmak istediğinizden emin misiniz?"
+
+#~ msgid ""
+#~ "Attachments may cause damage to your system if opened.  Only open files "
+#~ "from trusted sources."
+#~ msgstr ""
+#~ "Eklerin açılması sisteminizin zarar görmesine neden olabilir.  Yalnızca "
+#~ "güvendiğiniz kaynaklardan gelen dosyaları açın."
+
+#~ msgid "Don't _ask me again"
+#~ msgstr "Tekrar_sorma"
+
+#~ msgid "A file named \"%s\" already exists.  Do you want to replace it?"
+#~ msgstr ""
+#~ "\"%s\" isimli bir dosya zaten var  Bunu varolanla değiştirmek istiyor "
+#~ "musunuz?"
+
+#~ msgid ""
+#~ "The file already exists in \"%s\".  Replacing it will overwrite its "
+#~ "contents."
+#~ msgstr ""
+#~ "Dosya \"%s\"'in içinde zaten var.  Bunu varolanla değiştirmek, içeriğini "
+#~ "üzerine yazacak."
+
+#~ msgid "_Replace"
+#~ msgstr "_Değiştir"
+
+#~ msgid "Close open draft messages?"
+#~ msgstr "Açık taslak iletiler kapatılsın mı?"
+
+#~ msgid "Empty all email from your %s folder?"
+#~ msgstr "%s klasöründeki bütün e-postalar silinsin mi ?"
+
+#~ msgid "This removes the email from Geary and your email server."
+#~ msgstr "Bu işlem Geary'deki ve e-posta sunucusundaki postalarınızı siler."
+
+#~ msgid "This cannot be undone."
+#~ msgstr "Bu işlem geri alınamaz."
+
+#~ msgid "Empty %s"
+#~ msgstr "%s klasörünü boşalt"
+
+#~ msgid "Error emptying %s"
+#~ msgstr "%s boşaltılırken bir sorun meydana geldi"
+
+#~ msgid "Undo archive (Ctrl+Z)"
+#~ msgstr "Geri Al - Arşiv (Ctrl+Z)"
+
+#~ msgid "Undo trash (Ctrl+Z)"
+#~ msgstr "Geri Al - Çöp (Ctrl+Z)"
+
+#~ msgid "Undo (Ctrl+Z)"
+#~ msgstr "Geri Al (Ctrl+Z)"
+
+#~ msgid "Start Geary with hidden main window"
+#~ msgstr "Geary'i ana pencere gizlenmiş olarak başlatın"
+
+#~ msgid "Output debugging information"
+#~ msgstr "Çıktı hata ayıklama bilgisi"
+
+#~ msgid "Log conversation monitoring"
+#~ msgstr "Sohbet gözetimini kayda al"
+
+#~ msgid "Log network deserialization"
+#~ msgstr "Ağ paralelleştirilmesini kayda al"
+
+#~ msgid "Log network activity"
+#~ msgstr "Ağ etkinliğini kayda al"
+
+#~ msgid "Log IMAP replay queue"
+#~ msgstr "IMAP tekrar sırasını kayda al"
+
+#~ msgid "Log network serialization"
+#~ msgstr "Ağ serileştirmeyi kayda al"
+
+#~ msgid "Log periodic activity"
+#~ msgstr "Dönemsel etkinliği kayda al"
+
+#~ msgid "Log database queries (generates lots of messages)"
+#~ msgstr "Veritabanı sorgularını kayda al (bir çok ileti oluşturur)"
+
+#~ msgid "Log folder normalization"
+#~ msgstr "Klasör düzgelemeyi kayda al"
+
+#~ msgid "Allow inspection of WebView"
+#~ msgstr "WebView kontrolüne izin ver"
+
+#~ msgid "Revoke all server certificates with TLS warnings"
+#~ msgstr "TLS uyarıları ile bütün sertifikaları iptal et"
+
+#~ msgid "Display program version"
+#~ msgstr "Uygulama sürümünü göster"
+
+#~ msgid "Use %s to open a new composer window"
+#~ msgstr "Yeni bir düzenleyici pencere açmak için %s kullan"
+
+#~ msgid "Please report comments, suggestions and bugs to:"
+#~ msgstr "Lütfen yorumlarınızı,  önerilerinizi ve hataları bildirin:"
+
+#~ msgid "Failed to parse command line options: %s\n"
+#~ msgstr "Komut satırı seçenekleri ayrıştırılamadı: %s\n"
+
+#~ msgid "Unrecognized command line option \"%s\"\n"
+#~ msgstr "Tanınmayan komut satırı seçeneği \"%s\"\n"
+
+#~ msgid "%s - New Messages"
+#~ msgstr "%s - Yeni İleti"
+
+#~ msgid "%s, %d new message total"
+#~ msgid_plural "%s, %d new messages total"
+#~ msgstr[0] "Toplam %s, %d yeni ileti"
+#~ msgstr[1] "Toplam %s, %d yeni ileti"
+
+#~ msgid ""
+#~ "%s\n"
+#~ "(%d other new message for %s)"
+#~ msgid_plural ""
+#~ "%s\n"
+#~ "(%d other new messages for %s)"
+#~ msgstr[0] "%s için %d yeni ileti"
+#~ msgstr[1] "%s için %d yeni ileti"
+
+#~ msgid "Me"
+#~ msgstr "Ben"
+
+#~ msgid "Untrusted Connection: %s"
+#~ msgstr "Güvenilir Olmayan Bağlantı: %s"
+
+#~ msgid "The identity of the %s mail server at %s:%u could not be verified."
+#~ msgstr "%s konumundaki %s posta sunucusu kimliği:%u onaylanamadı."
+
+#~ msgid ""
+#~ "Selecting \"Trust This Server\" or \"Always Trust This Server\" may cause "
+#~ "your username and password to be transmitted insecurely."
+#~ msgstr ""
+#~ "\"Bu Sunucuya Güven\" ya da \"Bu Sunucuya Her Zaman Güven\"  seçimi "
+#~ "kullanıcı adınız ve parolanızın güvensiz iletilmesine neden olabilir."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Geary not to access this "
+#~ "server."
+#~ msgstr ""
+#~ "\"Bu Sunucuya Güvenme\" seçimi Geary uygulamasının bu sunucuya "
+#~ "erişememesine neden olacak."
+
+#~ msgid "Geary will not add or update this email account."
+#~ msgstr "Geary bu eposta hesabını ekleyemeyecek ya da güncelleyemeyecek."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Geary to stop accessing "
+#~ "this account."
+#~ msgstr ""
+#~ "\"Bu Sunucuya Güvenme\" seçimi Geary uygulamasının bu hesaba erişimi "
+#~ "durdurmasına neden olacak."
+
+#~ msgid "Geary will exit if you have no other open email accounts."
+#~ msgstr "Eğer başka açık eposta hesapları varsa Geary çıkacak."
+
+#~ msgid ""
+#~ "Contact your system administrator or email service provider if you have "
+#~ "any question about these issues."
+#~ msgstr ""
+#~ "Bu sorunlar ile ilgili herhangi bir sorunuz varsa, sistem yöneticinize ya "
+#~ "da eposta servis sağlayıcınıza başvurun."
+
+#~ msgid "The server's certificate is not signed by a known authority"
+#~ msgstr "Sunucu sertifikası bilinen bir yetkili tarafından imzalanmamış"
+
+#~ msgid "The server's identity does not match the identity in the certificate"
+#~ msgstr "Sunucu kimliği sertifikadaki kimlik ile uyuşmuyor"
+
+#~ msgid "The server's certificate has expired"
+#~ msgstr "Sunucu sertifikasının süresi doldu"
+
+#~ msgid "The server's certificate has not been activated"
+#~ msgstr "Sunucu sertifikası etkinleştirilemedi"
+
+#~ msgid "The server's certificate has been revoked and is now invalid"
+#~ msgstr "Sunucu sertifikası iptal edildi ve şu anda geçersiz"
+
+#~ msgid "The server's certificate is considered insecure"
+#~ msgstr "Sunucunun sertifikası güvensiz kabul ediliyor"
+
+#~ msgid "An error has occurred processing the server's certificate"
+#~ msgstr "Sunucu sertifikası işlenirken bir hata oluştu"
+
+#~ msgid "Geary requires your email password to continue"
+#~ msgstr "Geary devam etmek için eposta parolanızı istiyor"
+
+#~ msgid "Additional addresses for %s"
+#~ msgstr "%s için ek adresler"
+
+#~ msgid "First Last"
+#~ msgstr "Adı Soyadı"
+
+#~ msgid "Welcome to Geary."
+#~ msgstr "Geary'e Hoşgeldiniz."
+
+#~ msgid "Enter your account information to get started."
+#~ msgstr "Başlamak için hesap bilginizi giriniz."
+
+#~ msgid "2 weeks back"
+#~ msgstr "2 hafta öncesinden"
+
+#~ msgid "1 month back"
+#~ msgstr "1 ay öncesinden"
+
+#~ msgid "3 months back"
+#~ msgstr "3 ay öncesinden"
+
+#~ msgid "6 months back"
+#~ msgstr "6 ay öncesinden"
+
+#~ msgid "1 year back"
+#~ msgstr "1 yıl öncesinden"
+
+#~ msgid "2 years back"
+#~ msgstr "2 yıl öncesinden"
+
+#~ msgid "4 years back"
+#~ msgstr "4 yıl öncesinden"
+
+#~ msgid "Everything"
+#~ msgstr "Herşey"
+
+#~ msgid "Edit"
+#~ msgstr "Düzenle"
+
+#~ msgid "Preview"
+#~ msgstr "Önizleme"
+
+#~ msgid "Remem_ber passwords"
+#~ msgstr "Parolaları _hatırla"
+
+#~ msgid "Remem_ber password"
+#~ msgstr "Parolayı _hatırla"
+
+#~ msgid "        &#8226; Invalid account nickname.\n"
+#~ msgstr "        &#8226; Geçersiz hesap takma adı.\n"
+
+#~ msgid "        &#8226; Email address already added to Geary.\n"
+#~ msgstr "        &#8226; E-posta adresi zaten Geary'e eklenmiş.\n"
+
+#~ msgid "        &#8226; IMAP connection error.\n"
+#~ msgstr "        &#8226; IMAP bağlantı hatası.\n"
+
+#~ msgid "        &#8226; IMAP username or password incorrect.\n"
+#~ msgstr "        &#8226; IMAP kullanıcı adı veya parola hatalı.\n"
+
+#~ msgid "        &#8226; SMTP connection error.\n"
+#~ msgstr "        &#8226; SMTP bağlantı hatası.\n"
+
+#~ msgid "        &#8226; SMTP username or password incorrect.\n"
+#~ msgstr "        &#8226; SMTP kullanıcı adı veya parola hatalı.\n"
+
+#~ msgid "        &#8226; Connection error.\n"
+#~ msgstr "        &#8226; Bağlantı hatası.\n"
+
+#~ msgid "        &#8226; Username or password incorrect.\n"
+#~ msgstr "        &#8226; Kullanıcı adı veya parola hatalı.\n"
+
+#~ msgid "_Add"
+#~ msgstr "_Ekle"
+
+#~ msgid "%l:%M %P"
+#~ msgstr "%l:%M %P"
+
+#~ msgid "%H:%M"
+#~ msgstr "%H:%M"
+
+#~ msgctxt "Default clock format"
+#~ msgid "%l:%M %P"
+#~ msgstr "%l:%M %P"
+
+#~ msgid "%b %-e"
+#~ msgstr "%b %-e"
+
+#~ msgid "%x"
+#~ msgstr "%x"
+
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%B %-e, %Y %-l:%M %P"
+
+#~ msgid "%B %-e, %Y %-H:%M"
+#~ msgstr "%B %-e, %Y %-H:%M"
+
+#~ msgctxt "Default full date"
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%B %-e, %Y %-l:%M %P"
+
+#~ msgid "Now"
+#~ msgstr "Şimdi"
+
+#~ msgid "%dm ago"
+#~ msgid_plural "%dm ago"
+#~ msgstr[0] "%dm önce"
+#~ msgstr[1] "%dm önce"
+
+#~ msgid "%dh ago"
+#~ msgid_plural "%dh ago"
+#~ msgstr[0] "%dh önce"
+#~ msgstr[1] "%dh önce"
+
+#~ msgid "Yesterday"
+#~ msgstr "Dün"
+
+#~ msgid "%A"
+#~ msgstr "%A"
+
+#~ msgid "bytes"
+#~ msgstr "bytes"
+
+#~ msgctxt "Abbreviation for terabyte"
+#~ msgid "TB"
+#~ msgstr "TB"
+
+#~ msgctxt "Abbreviation for gigabyte"
+#~ msgid "GB"
+#~ msgstr "GB"
+
+#~ msgctxt "Abbreviation for megabyte"
+#~ msgid "MB"
+#~ msgstr "MB"
+
+#~ msgctxt "Abbreviation for kilobyte"
+#~ msgid "KB"
+#~ msgstr "KB"
+
+#~ msgid "%d message"
+#~ msgid_plural "%d messages"
+#~ msgstr[0] "%d ileti"
+#~ msgstr[1] "%d ileti"
+
+#~ msgid "%s, %s"
+#~ msgstr "%s, %s"
+
+#~ msgid "Inboxes"
+#~ msgstr "Gelen Kutusu"
+
+#~ msgid "Search %s account"
+#~ msgstr "%s hesabını ara"
+
+#~ msgid "%d result"
+#~ msgid_plural "%d results"
+#~ msgstr[0] "%d sonuç"
+#~ msgstr[1] "%d sonuç"
+
+#~ msgid "%u conversation selected."
+#~ msgid_plural "%u conversations selected."
+#~ msgstr[0] "%u konuşmala seçildi."
+#~ msgstr[1] "%u konuşmala seçildi."
+
+#~ msgid "No search results found."
+#~ msgstr "Hiç arama sonucu bulunamadı."
+
+#~ msgid "No conversations in folder."
+#~ msgstr "Klasörde hiç konuşma yok."
+
+#~ msgid "Always Show From Sender"
+#~ msgstr "Her Zaman Gönderenden Göster"
+
+#~ msgid "Date:"
+#~ msgstr "Tarih:"
+
+#~ msgid "%u read message"
+#~ msgid_plural "%u read messages"
+#~ msgstr[0] "%u okunan ileti"
+#~ msgstr[1] "%u okunan ileti"
+
+#~ msgid "This message was sent successfully, but could not be saved to %s."
+#~ msgstr "Bu ileti başarıyla gönderildi, fakat %s'e kaydedilemedi."
+
+#~ msgid "_Copy"
+#~ msgstr "_Kopyala"
+
+#~ msgid "Copy _Email Address"
+#~ msgstr "Kopyala _Eposta Adresi"
+
+#~ msgid "Copy _Link"
+#~ msgstr "Kopyala _Bağlantı"
+
+#~ msgid "Select _Message"
+#~ msgstr "_İleti Seçin"
+
+#~ msgid "Select _All"
+#~ msgstr "Hepsini _Seç"
+
+#~ msgid "_Inspect"
+#~ msgstr "_İncele"
+
+#~ msgid "This link appears to go to"
+#~ msgstr "Bu bağlantı şuraya gitmek için görünür"
+
+#~ msgid "but actually goes to"
+#~ msgstr "aslında şuraya gider"
+
+#~ msgid " (Invalid?)"
+#~ msgstr " (Geçersiz?)"
+
+#~ msgid "_Save Image As..."
+#~ msgstr "Görüntüyü Farklı _Kaydet..."
+
+#~ msgid "_Save As..."
+#~ msgstr "_… Olarak Kaydet"
+
+#~ msgid "Save All A_ttachments..."
+#~ msgstr "Tüm E_klentileri Kaydet..."
+
+#~ msgid "Save A_ttachment..."
+#~ msgid_plural "Save All A_ttachments..."
+#~ msgstr[0] "E_klentiyi kaydet..."
+#~ msgstr[1] "E_klentileri kaydet..."
+
+#~ msgid "Reply to _All"
+#~ msgstr "Tümüne _Yanıt Ver"
+
+#~ msgid "_Mark as Read"
+#~ msgstr "_Okunmuş olarak işaretle"
+
+#~ msgid "_Mark as Unread"
+#~ msgstr "_Okunmamış olarak işaretle"
+
+#~ msgid "Mark Unread From _Here"
+#~ msgstr "_Buradan Okunmamış İşaretle"
+
+#~ msgid "_View Source"
+#~ msgstr "_Kaynağı Görüntüle"
+
+#~ msgid "Failed to open default text editor."
+#~ msgstr "Varsayılan metin düzenleyici açılamadı."
+
+#~ msgid "%s - Conversation Inspector"
+#~ msgstr "%s - Sohbet Araştırıcısı"
+
+#~ msgid "Saved"
+#~ msgstr "Kaydedildi"
+
+#~ msgid "Saving"
+#~ msgstr "Kaydediliyor"
+
+#~ msgid "Error saving"
+#~ msgstr "Kaydedilirken hata"
+
+#~ msgid "Press Backspace to delete quote"
+#~ msgstr "Alıntıyı silmek için Backspace tuşuna basın"
+
+#~ msgid ""
+#~ "attach|attaching|attaches|attachment|attachments|attached|enclose|"
+#~ "enclosed|enclosing|encloses|enclosure|enclosures"
+#~ msgstr ""
+#~ "ekle|ekleniyor|ekler|ek|ekler|eklendi|içer|içerdi|içeriyor|içerir|"
+#~ "koruncak|koruncaklar"
+
+#~ msgid "Do you want to discard this message?"
+#~ msgstr "Bu iletiden vazgeçmek istiyor musunuz?"
+
+#~ msgid "Send message with an empty subject and body?"
+#~ msgstr "İleti konusu ve gövdesi olmadan gönderilsin mi?"
+
+#~ msgid "Send message without an attachment?"
+#~ msgstr "İleti eki olmadan gönderilsin mi?"
+
+#~ msgid "Cannot add attachment"
+#~ msgstr "Eklenti eklenemiyor"
+
+#~ msgid "\"%s\" could not be found."
+#~ msgstr "\"%s\" bulunamadı."
+
+#~ msgid "\"%s\" is a folder."
+#~ msgstr "\"%s\" bir klasör."
+
+#~ msgid "\"%s\" is an empty file."
+#~ msgstr "\"%s\" boş bir dosya."
+
+#~ msgid "\"%s\" could not be opened for reading."
+#~ msgstr "\"%s\" okuma için açılamadı."
+
+#~ msgid "\"%s\" already attached for delivery."
+#~ msgstr "\"%s\" gönderim için zaten eklendi."
+
+#~ msgid "%s (%s)"
+#~ msgstr "%s (%s)"
+
+#~ msgid "To: "
+#~ msgstr "Kime: "
+
+#~ msgid "Cc: "
+#~ msgstr "Cc: "
+
+#~ msgid "Bcc: "
+#~ msgstr "Bcc: "
+
+#~ msgid "Reply-To: "
+#~ msgstr "Yanıtla: "
+
+#~ msgid "Select Color"
+#~ msgstr "Renk Seç"
+
+#~ msgid "%1$s via %2$s"
+#~ msgstr "%2$s üzerinden %1$s"
+
+#~ msgid "_From:"
+#~ msgstr "_Gönderen:"
+
+#~ msgid "%s (%d)"
+#~ msgstr "%s (%d)"
+
+#~ msgid "Sending..."
+#~ msgstr "Gönderiliyor..."
+
+#~ msgid "%i match"
+#~ msgid_plural "%i matches"
+#~ msgstr[0] "%i eşleşme"
+#~ msgstr[1] "%i eşleşme"
+
+#~ msgid "%i match (wrapped)"
+#~ msgid_plural "%i matches (wrapped)"
+#~ msgstr[0] "%i eşleşme (paket)"
+#~ msgstr[1] "%i eşleşme (paket)"
+
+#~ msgid "not found"
+#~ msgstr "bulunamadı"
+
+#~ msgid "_OK"
+#~ msgstr "_Tamam"
+
+#~ msgid "_Cancel"
+#~ msgstr "_İptal et"
+
+#~ msgid "_Discard"
+#~ msgstr "_Vazgeç"
+
+#~ msgid "_Open"
+#~ msgstr "_Aç"
+
+#~ msgid "_Print..."
+#~ msgstr "_Yazdır..."
+
+#~ msgid "_Remove"
+#~ msgstr "_Kaldır"
+
+#~ msgid "_Keep"
+#~ msgstr "_Sakla"
+
+#~ msgid "Search all mail in account for keywords (Ctrl+S)"
+#~ msgstr "Anahtar kelimeler için hesaptaki bütün postaları ara (Ctrl+S)"
+
+#~ msgid "Indexing %s account"
+#~ msgstr "%s hesabı indeksleniyor"
+
+#~ msgid "Send by Email"
+#~ msgstr "E-posta ile gönder"
+
+#~ msgid "Send files using Mail"
+#~ msgstr "Postayı kullanarak dosya gönder"
+
+#~ msgid "Welcome to Mail"
+#~ msgstr "Postaya hoş geldiniz"
+
+#~ msgid "More options"
+#~ msgstr "Daha fazla seçenek"
+
+#~ msgid "Search %s"
+#~ msgstr "%s Ara"
+
+#~ msgid "Reading"
+#~ msgstr "Okunuyor"
+
+#~ msgid "Automatically select next message:"
+#~ msgstr "Sıradaki mesajı otomatik olarak seç:"
+
+#~ msgid "Conversation previews:"
+#~ msgstr "Konuşma önizlemesi:"
+
+#~ msgid "Three-pane layout:"
+#~ msgstr "Üçlü-Panel düzeni"
+
+#~ msgid "Composer"
+#~ msgstr "Yazar"
+
+#~ msgid "Spell check:"
+#~ msgstr "Hece kontrolü:"
+
+#~ msgid "Notifications"
+#~ msgstr "Bildirimler"
+
+#~ msgid "Always watch for new mail:"
+#~ msgstr "Daima yeni postalar için izle:"
+
+#~ msgid "Delete Conversation (Shift+Delete)"
+#~ msgid_plural "Delete Conversations (Shift+Delete)"
+#~ msgstr[0] "Konuşmayı sil (Shift+Delete)"
+#~ msgstr[1] "Konuşmaları sil (Shift+Delete)"
+
+#~ msgid "Delete Conversations (Shift+Delete)"
+#~ msgstr "Konuşmaları Sil (Shift+Delete)"
+
+#~ msgid ""
+#~ "<span weight=\"bold\" size=\"larger\">Are you sure you want to remove "
+#~ "this account?</span> "
+#~ msgstr ""
+#~ "<span weight=\"bold\" size=\"larger\">Bu hesabı silmek istediğinizden "
+#~ "emin misiniz?</span> "
+
+#~ msgid ""
+#~ "All email associated with this account will be removed from your "
+#~ "computer. This will not affect email on the server."
+#~ msgstr ""
+#~ "Bu hesapla ilişkili tüm e-postalar bilgisayarınızdan silinecektir.Bu "
+#~ "işlem sunucudaki postaları etkilemez."
+
+#~ msgid "Nickname:"
+#~ msgstr "Takma ad:"
+
+#~ msgid "Find"
+#~ msgstr "Bul"
+
+#~ msgid "Previous Result"
+#~ msgstr "Önceki Sonuç"
+
+#~ msgid "Next result"
+#~ msgstr "Sonraki sonuç"
+
+#~ msgid "_Case sensitive"
+#~ msgstr "_Büyük küçük harf duyarlı"
+
+#~ msgid "label"
+#~ msgstr "etiket"
+
+#~ msgid "Geary update in progress…"
+#~ msgstr "Geary güncelleniyor…"
+
+#~ msgid "Remove email address"
+#~ msgstr "E-posta adresini sil"
+
+#~ msgid ""
+#~ "Some email services require additional addresses be configured on the "
+#~ "server.  Contact your email provider for more information."
+#~ msgstr ""
+#~ "Bazı e-posta servisleri sunucuda düzenlenmesi gereken ek adresler "
+#~ "gerektiriyor. Daha fazla bilgi için e-posta sağlayıcınızla iletişime "
+#~ "geçin."
+
+#~ msgid "_Update"
+#~ msgstr "_Güncelle"
+
+#~ msgid "Please wait while Geary validates your account."
+#~ msgstr "Geary hesabınızı onaylıyor, lütfen bekleyin."
+
+#~ msgid "_Redo"
+#~ msgstr "_Yinele"
+
+#~ msgid "Cu_t"
+#~ msgstr "Ke_s"
+
+#~ msgid "_Paste"
+#~ msgstr "_Yapıştır"
+
+#~ msgid "_Left"
+#~ msgstr "_Sol"
+
+#~ msgid "_Right"
+#~ msgstr "_Sağ"
+
+#~ msgid "_Center"
+#~ msgstr "_Merkez"
+
+#~ msgid "_Justify"
+#~ msgstr "Kenarlara _Yay"
+
+#~ msgid "Link (Ctrl+L)"
+#~ msgstr "Link (Ctrl+L)"
+
+#~ msgid "C_olor"
+#~ msgstr "R_enk"
+
+#~ msgid "Quote text  (Ctrl+])"
+#~ msgstr "Metni alıntıla (Ctrl+])"
+
+#~ msgctxt "Clipboard paste with rich text"
+#~ msgid "Paste _With Formatting"
+#~ msgstr "Biçimlendirme _yapmadan yapıştır"
+
+#~ msgid "Bold (Ctrl+B)"
+#~ msgstr "Kalın (Ctrl+B)"
+
+#~ msgid "Italic (Ctrl+I)"
+#~ msgstr "İtalik (Ctrl+I)"
+
+#~ msgid "Show Extended Fields"
+#~ msgstr "Genişletilmiş alanları göster"
+
+#~ msgctxt "Label"
+#~ msgid "Close and Save"
+#~ msgstr "Kaydet ve çık"
+
+#~ msgctxt "Short Label"
+#~ msgid "Close and Save"
+#~ msgstr "Kaydet ve çık"
+
+#~ msgctxt "Tooltip"
+#~ msgid "Close and Save"
+#~ msgstr "Kaydet ve çık"
+
+#~ msgctxt "Label"
+#~ msgid "Close and Discard"
+#~ msgstr "Kaydetmeden çık"
+
+#~ msgctxt "Short Label"
+#~ msgid "Close and Discard"
+#~ msgstr "Kaydetmeden çık"
+
+#~ msgctxt "Tooltip"
+#~ msgid "Close and Discard"
+#~ msgstr "Kaydetmeden çık"
+
+#~ msgid "Lar_ge"
+#~ msgstr "Ge_niş"
+
+#~ msgid "Large"
+#~ msgstr "Geniş"
+
+#~ msgid "_Medium"
+#~ msgstr "_Orta"
+
+#~ msgid "Medium"
+#~ msgstr "Orta"
+
+#~ msgid "_Small"
+#~ msgstr "_Küçük"
+
+#~ msgid "Small"
+#~ msgstr "Küçük"
+
+#~ msgid "S_ans Serif"
+#~ msgstr "S_ans Serif"
+
+#~ msgid "Sans Serif"
+#~ msgstr "Sans Serif"
+
+#~ msgid "S_erif"
+#~ msgstr "S_erif"
+
+#~ msgid "Serif"
+#~ msgstr "Serif"
+
+#~ msgid "_Fixed Width"
+#~ msgstr "_Sabit genişlik"
+
+#~ msgid "Fixed Width"
+#~ msgstr "Sabit Genişlik"
+
+#~ msgid "Detach"
+#~ msgstr "Ayır"
+
+#~ msgid "Detach (Ctrl+D)"
+#~ msgstr "Ayır (Ctrl+D)"
+
+#~ msgid "_Send"
+#~ msgstr "_Gönder"
+
+#~ msgid "Send (Ctrl+Enter)"
+#~ msgstr "İlet (Ctrl+Enter)"
+
+#~ msgid "_Attach File"
+#~ msgstr "_Dosya ekle"
+
+#~ msgid "Attach File"
+#~ msgstr "Dosya Ekle"
+
+#~ msgid "_Include Original Attachments"
+#~ msgstr "_Orjinal ekleri kapsa"
+
+#~ msgid "Include Original Attachments"
+#~ msgstr "Orjinal ekleri kapsa"
+
+#~ msgid "Application Menu"
+#~ msgstr "Uygulama Menüsü"
+
+#~ msgid "_To"
+#~ msgstr "_Alıcı"
+
+#~ msgid "_Cc"
+#~ msgstr "_Cc"
+
+#~ msgid "_Subject"
+#~ msgstr "_Konu"
+
+#~ msgid "_Bcc"
+#~ msgstr "_Bcc"
+
+#~ msgid "_Reply-To"
+#~ msgstr "_Yanıtla"
+
+#~ msgid "From"
+#~ msgstr "Gönderen"
+
+#~ msgid "Drop files here"
+#~ msgstr "Dosyaları buraya sürükle"
+
+#~ msgid "To add them as attachments"
+#~ msgstr "Dosya olarak eklemek için"
+
+#~ msgid "<span weight=\"bold\" size=\"larger\">Cannot remove account</span> "
+#~ msgstr "<span weight=\"bold\" size=\"larger\">Hesap Silinemiyor</span> "
+
+#~ msgid ""
+#~ "A composer window associated with this account is currently open. Send or "
+#~ "discard the message and try again."
+#~ msgstr ""
+#~ "Bu hesapla bağlantılı bir e-posta yazma penceresi şu anda açık. Devam "
+#~ "etmek için mesajı gönderin yada iptal edin ve tekrar deneyin."
+
+#~ msgid "Addi_tional email addresses…"
+#~ msgstr "Ek e-posta adresleri…"
+
+#~ msgid "_Save sent mail"
+#~ msgstr "_Gönderilen postayı kaydet"
+
+#~ msgid "Password"
+#~ msgstr "Parola"
+
+#~ msgid "_Password:"
+#~ msgstr "_Parola:"
+
+#~ msgid "Work, Home, etc."
+#~ msgstr "İş, Ev, vb."
+
+#~ msgid "N_ickname:"
+#~ msgstr "T_akma Ad:"
+
+#~ msgid "S_ervice:"
+#~ msgstr "S_ervis:"
+
+#~ msgid "IMAP settings"
+#~ msgstr "IMAP ayarları"
+
+#~ msgid "Se_rver:"
+#~ msgstr "_Sunucu:"
+
+#~ msgid "P_ort"
+#~ msgstr "P_ort"
+
+#~ msgid "Ser_ver:"
+#~ msgstr "S_unucu:"
+
+#~ msgid "Por_t"
+#~ msgstr "Por_t"
+
+#~ msgid "SMTP settings"
+#~ msgstr "SMTP ayarları"
+
+#~ msgid "User_name:"
+#~ msgstr "Kullanıcı _adı:"
+
+#~ msgid "Pass_word:"
+#~ msgstr "Şif_re:"
+
+#~ msgid "SMTP username"
+#~ msgstr "SMTP kullanıcı adı"
+
+#~ msgid "SMTP password"
+#~ msgstr "SMTP şifre"
+
+#~ msgid "_Username:"
+#~ msgstr "_Kullanıcı adı:"
+
+#~ msgid "IMAP username"
+#~ msgstr "IMAP kullanıcı adı"
+
+#~ msgid "IMAP password"
+#~ msgstr "Imap şifre"
+
+#~ msgid "Encr_yption:"
+#~ msgstr "Şifr_eleme"
+
+#~ msgid "Encrypt_ion:"
+#~ msgstr "Şifrele_me"
+
+#~ msgid "SSL/TLS"
+#~ msgstr "SSL/TLS"
+
+#~ msgid "STARTTLS"
+#~ msgstr "STARTTLS"
+
+#~ msgid "No authentication re_quired"
+#~ msgstr "Kimlik doğrulama gerek_miyor"
+
+#~ msgid "Use IMAP cre_dentials"
+#~ msgstr "IMAP kimlik_bilgilerini kullan"
+
+#~ msgid "Storage"
+#~ msgstr "Depolama"
+
+#~ msgid "_Download mail"
+#~ msgstr "E_postayı indir"
+
+#~ msgid "Save dra_fts on server"
+#~ msgstr "Silinen_leri sunucuya kaydet"
+
+#~ msgid "Si_gn emails (HTML allowed):"
+#~ msgstr "E-postaları işaret_le (HTML kullanılabilir)"
+
+#~ msgid "Add account"
+#~ msgstr "Hesap ekle"
+
+#~ msgid "Edit account"
+#~ msgstr "Hesabı düzenle"
+
+#~ msgid "Remove account"
+#~ msgstr "Hesabı kaldır"
+
+#~ msgid "Untrusted Connection"
+#~ msgstr "Güvenilmeyen Bağlantı"
+
+#~ msgid "_Always Trust This Server"
+#~ msgstr "Bu Sunucuya _Daima Güven"
+
+#~ msgid "_Trust This Server"
+#~ msgstr "Sunucuya _Güven"
+
+#~ msgid "_Don't Trust This Server"
+#~ msgstr "Bu sunucuya _güvenme"
+
+#~ msgid "SMTP Credentials"
+#~ msgstr "SMTP Kimlik Bilgileri"
+
+#~ msgid "Username"
+#~ msgstr "Kullanıcı adı"
+
+#~ msgid "_Remember password"
+#~ msgstr "Şifreyi _hatırla"
+
+#~ msgid "_Authenticate"
+#~ msgstr "_Kimlik Doğrulama"
+
+#~ msgid "© 2011-2015 Yorba Foundation, © 2016 elementary LLC."
+#~ msgstr "© 2011-2015 Yorba Foundation, © 2016 elementary LLC."
+
+#~ msgid ""
+#~ "Mail encountered an error sending an email.  If the problem persists, "
+#~ "please manually delete the email from your Outbox folder."
+#~ msgstr ""
+#~ "Mail e-posta gönderirken bir hata ile karşılaştı. Sorun devam ederse, "
+#~ "lütfen e-postayı el ile Outbox klasörünüzden silin."
+
+#~ msgid ""
+#~ "Mail encountered an error saving a sent message to Sent Mail.  The "
+#~ "message will stay in your Outbox folder until you delete it."
+#~ msgstr ""
+#~ "Mail gönderilmiş mesajı Gönderilmiş Postalar'a kaydederken bir hata ile "
+#~ "karşılaştı. Bu mesaj siz silinceye kadar Outbox klasörünüzde kalacak."
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to corruption of the database file in this directory:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Mail can rebuild the database and re-synchronize with the server or "
+#~ "exit.\n"
+#~ "\n"
+#~ "Rebuilding the database will destroy all local email and its attachments. "
+#~ "<b>The mail on the your server will not be affected.</b>"
+#~ msgstr ""
+#~ "Bu hesap için yerel posta veritabanını açarken bir hata oluştu. "
+#~ "Muhtemelen bu dizindeki bir veritabanı bozulmasından kaynaklanıyor.\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Mail veritabanını yeniden oluşturabilir ve sunucu ile yeniden senkronize "
+#~ "edebilir yada çıkabilir.\n"
+#~ "\n"
+#~ "Veritabanını yeniden oluşturmak tüm yerel e-postaları ve eklerini yok "
+#~ "edecektir. <b>Sunucunuz üstündeki postalar etkilenmez.</b>"
+
+#~ msgid ""
+#~ "The version number of the local mail database is formatted for a newer "
+#~ "version of Mail. Unfortunately, the database cannot be \"rolled back\" to "
+#~ "work with this version of Mail.\n"
+#~ "\n"
+#~ "Please install the latest version of Mail and try again."
+#~ msgstr ""
+#~ "Yerel posta veritabanının sürüm numarası Mail 'in yeni bir sürümü için "
+#~ "biçimlendirildi. Ne yazık ki, veritabanı Mail 'in bu sürümü ile çalışmak "
+#~ "için \" geri alınamaz\".\n"
+#~ "\n"
+#~ "Lütfen Mail'in son sürümünü yükleyin ve yeniden deneyin."
+
+#~ msgid ""
+#~ "There was an error opening the local account. This is probably due to "
+#~ "connectivity issues.\n"
+#~ "\n"
+#~ "Please check your network connection and restart Mail."
+#~ msgstr ""
+#~ "Yerel hesap açarken bir hata oluştu. Bunun nedeni muhtemelen bağlantı "
+#~ "sorunları.\n"
+#~ "\n"
+#~ "Lütfen ağ bağlantınızı kontrol edin ve Mail'i yeniden başlatın."
+
+#~ msgid "This removes the email from Mail and your email server."
+#~ msgstr "E-postanız, Mail ve e-posta sunucunuzdan kaldırılacaktır."
+
+#~ msgid "        &#8226; Email address already added to Mail.\n"
+#~ msgstr "        &#8226; E-posta adresi zaten Mail'e eklenmiş.\n"
+
+#~ msgid "Mail requires your email password to continue"
+#~ msgstr "Mail'e devam etmek için e-posta parolası gerekiyor"
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Mail not to access this "
+#~ "server."
+#~ msgstr ""
+#~ "\"Bu Sunucuya Güvenme\" nin seçilmesi Mail'in bu sunucuya erişmesine "
+#~ "engel olur."
+
+#~ msgid "Mail will not add or update this email account."
+#~ msgstr "Mail bu e-posta hesabını eklemeyecek ya da güncellemeyecek."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Mail to stop accessing "
+#~ "this account."
+#~ msgstr ""
+#~ "\"Bu Sunucuya Güvenme\" nin seçilmesi Mail'in bu hesaba erişimini "
+#~ "durdurur."
+
+#~ msgid "Mail will exit if you have no other open email accounts."
+#~ msgstr "Eğer başka açık e-posta hesabınız yoksa Mail çıkış yapacak."
+
+#~ msgid "Please wait while Mail validates your account."
+#~ msgstr "Mail hesabınızı doğrularken lütfen bekleyin."
+
+#~ msgid "Mail update in progress…"
+#~ msgstr "Mail güncellemesi sürüyor…"
+
+#~ msgid ""
+#~ "2011-2015 Yorba Foundation\n"
+#~ "© 2016 elementary LLC."
+#~ msgstr ""
+#~ "2011-2015 Yorba Kuruluşu\n"
+#~ "© 2016 elementary LLC."
+
+#~ msgid "Show About dialog"
+#~ msgstr "Hakkında iletisini göster"
+
+#~ msgid "Save Attachment…"
+#~ msgstr "Eki Kaydet…"
+
+#~ msgid "Save All Attachments…"
+#~ msgstr "Tüm Ekleri Kaydet…"
+
+#~ msgid "View Source"
+#~ msgstr "Kaynağı Görüntüle"
+
+#~ msgid "View message"
+#~ msgstr "Mesajı göster"
+
+#~ msgid "Copy Email Address"
+#~ msgstr "E-posta Adresini Kopyala"
+
+#~ msgid "Hide message"
+#~ msgstr "Mesajı gizle"
+
+#~ msgid "Case sensitive"
+#~ msgstr "Büyük küçük harf duyarlı"
+
+#~ msgid "%u match"
+#~ msgid_plural "%u matches"
+#~ msgstr[0] "%u eşleşme"
+#~ msgstr[1] "%u eşleşme"
+
+#~ msgid "Include original attachments"
+#~ msgstr "Orjinal ekleri dahil et"
+
+#~ msgid "Don't ask me again"
+#~ msgstr "Bir daha sorma"
+
+#~ msgid "Are you sure you want to remove this account?"
+#~ msgstr "Bu hesabı silmek istediğinizden emin misiniz?"
+
+#~ msgid "Username:"
+#~ msgstr "Kullanıcı adı:"
+
+#~ msgid "Password:"
+#~ msgstr "Şifre:"
+
+#~ msgid "SMTP Credentials:"
+#~ msgstr "SMTP Kimlik Bilgileri:"
+
+#~ msgid "Remember password"
+#~ msgstr "Parolayı hatırla"
+
+#~ msgid "Authenticate"
+#~ msgstr "Kimlik Doğrula"
+
+#~ msgid "Strikethrough (Ctrl+%)"
+#~ msgstr "Üstü çizili (Ctrl+%)"
+
+#~ msgid "Link (Ctrl+K)"
+#~ msgstr "Bağlantı (Ctrl+K)"
+
+#~ msgid "Forward (Ctrl+Shift+F)"
+#~ msgstr "İlet (Ctrl+Shift+F)"

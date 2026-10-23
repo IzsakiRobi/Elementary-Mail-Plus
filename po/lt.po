@@ -1,0 +1,2362 @@
+# po/geary.pot
+# PO message string template file for Geary email client
+# Copyright 2012-2013 Yorba Foundation
+# This file is distributed under the GNU LGPL, version 2.1.
+#
+# Translators:
+# velniukas6 <velniukas6@gmail.com>, 2014.
+# Jonas Skarulskis <jonas.ska@gmail.com>, 2015.
+# Aurimas Černius <aurisc4@gmail.com>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: geary-0.4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-08 16:46+0000\n"
+"PO-Revision-Date: 2019-07-20 09:24+0000\n"
+"Last-Translator: Moo <hazap@hotmail.com>\n"
+"Language-Team: Lithuanian <https://l10n.elementary.io/projects/mail/mail/lt/"
+">\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && (n % 100 < 11 || n % 100 > "
+"19)) ? 0 : ((n % 10 >= 2 && n % 10 <= 9 && (n % 100 < 11 || n % 100 > 19)) ? "
+"1 : 2);\n"
+"X-Generator: Weblate 3.7.1\n"
+"X-Launchpad-Export-Date: 2017-03-09 05:59+0000\n"
+
+#: src/Application.vala:145
+#, fuzzy
+#| msgid "Unable to validate:\n"
+msgid "Unable to open System Settings"
+msgstr "Negalima patvirtinti:\n"
+
+#: src/Application.vala:146
+msgid ""
+"Open System Settings manually or install Evolution to set up online accounts."
+msgstr ""
+
+#: src/Application.vala:217
+msgid ""
+"Mail will automatically start when this device turns on and run when its "
+"window is closed so that it can send notifications when new mail arrives."
+msgstr ""
+
+#: src/Composer.vala:94 src/MessageList/MessageListItem.vala:102
+msgid "From:"
+msgstr "Nuo:"
+
+#: src/Composer.vala:114 src/MessageList/MessageListItem.vala:108
+msgid "To:"
+msgstr "Kam:"
+
+#: src/Composer.vala:120
+msgid "Cc"
+msgstr "Kopija"
+
+#: src/Composer.vala:122
+msgid "Bcc"
+msgstr "Nematoma kopija"
+
+#: src/Composer.vala:133 src/MessageList/MessageListItem.vala:148
+msgid "Cc:"
+msgstr "Kopija:"
+
+#: src/Composer.vala:152
+msgid "Bcc:"
+msgstr "Nematoma kopija:"
+
+#: src/Composer.vala:171 src/MessageList/MessageListItem.vala:114
+msgid "Subject:"
+msgstr "Tema:"
+
+#: src/Composer.vala:205
+msgid "Insert Image"
+msgstr "Įterpti paveikslą"
+
+#: src/Composer.vala:232
+msgid "Delete draft"
+msgstr "Ištrinti juodraštį"
+
+#: src/Composer.vala:240
+msgid "Attach file"
+msgstr "Pridėti failą"
+
+#: src/Composer.vala:251
+#, fuzzy
+#| msgid "Insert Link"
+msgid "Insert Signature…"
+msgstr "Įterpti nuorodą"
+
+#: src/Composer.vala:256
+msgid "Send"
+msgstr "Siųsti"
+
+#: src/Composer.vala:299
+msgid "New Message"
+msgstr "Naujas laiškas"
+
+#: src/Composer.vala:445
+msgid "Choose a file"
+msgstr "Pasirinkite failą"
+
+#: src/Composer.vala:448
+#, fuzzy
+#| msgid "_Attach"
+msgid "Attach"
+msgstr "_Pridėti"
+
+#: src/Composer.vala:449 src/Composer.vala:472 src/Composer.vala:763
+#: src/Dialogs/InsertLinkDialog.vala:66
+#: src/MessageList/AttachmentButton.vala:144
+msgid "Cancel"
+msgstr "Atsisakyti"
+
+#: src/Composer.vala:464
+#, fuzzy
+#| msgid "Show Images"
+msgid "Images"
+msgstr "Rodyti paveikslus"
+
+#: src/Composer.vala:468
+#, fuzzy
+#| msgid "Choose a file"
+msgid "Choose an image"
+msgstr "Pasirinkite failą"
+
+#: src/Composer.vala:471
+#, fuzzy
+#| msgid "Insert Link"
+msgid "Insert"
+msgstr "Įterpti nuorodą"
+
+#: src/Composer.vala:500
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Unable to insert image"
+msgstr "Ištrinti juodraštį"
+
+#: src/Composer.vala:501
+msgid "There was an unexpected error while trying to insert the image."
+msgstr ""
+
+#: src/Composer.vala:665
+msgid "%a, %b %-e, %Y at %-l:%M %p"
+msgstr "%Y %b %-e, %a, %-k:%M"
+
+#: src/Composer.vala:695
+#, c-format
+msgid "On %1$s, %2$s wrote:"
+msgstr "%1$s, %2$s rašė:"
+
+#: src/Composer.vala:699
+msgid "---------- Forwarded message ----------"
+msgstr "---------- Persiųstas laiškas ----------"
+
+#: src/Composer.vala:701
+#, c-format
+msgid "From: %s<br/>"
+msgstr "Nuo: %s<br/>"
+
+#: src/Composer.vala:702
+#, c-format
+msgid "Subject: %s<br/>"
+msgstr "Tema: %s<br/>"
+
+#: src/Composer.vala:703
+#, c-format
+msgid "Date: %s<br/>"
+msgstr "Data: %s<br/>"
+
+#: src/Composer.vala:704
+#, c-format
+msgid "To: %s<br/>"
+msgstr "Kam: %s<br/>"
+
+#: src/Composer.vala:706
+#, c-format
+msgid "Cc: %s<br/>"
+msgstr "Kopija: %s<br/>"
+
+#: src/Composer.vala:754
+#, fuzzy
+#| msgid "Do you want to permanently delete this message?"
+#| msgid_plural "Do you want to permanently delete these messages?"
+msgid "Permanently delete this draft?"
+msgstr "Ar norite visam laikui ištrinti šį laišką?"
+
+#: src/Composer.vala:755
+msgid ""
+"You cannot undo this action, nor recover your draft once it has been deleted."
+msgstr ""
+
+#: src/Composer.vala:765
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Delete Draft"
+msgstr "Ištrinti juodraštį"
+
+#: src/Composer.vala:789
+#, fuzzy
+#| msgid "Send Message With an Empty Subject?"
+msgid "Send without subject?"
+msgstr "Ar siųsti laišką be temos?"
+
+#: src/Composer.vala:790
+#, fuzzy
+#| msgid ""
+#| "This message has an empty subject field. The recipient may not be able to "
+#| "infer the scope or importance of the message."
+msgid ""
+"This message has an empty subject field. The recipient may be unable to "
+"infer its scope or importance."
+msgstr ""
+"Šiame laiške yra tuščias temos laukas. Gavėjas gali neįvertinti laiško "
+"svarbumo ar turinio."
+
+#: src/Composer.vala:797
+msgid "Don't Send"
+msgstr "Nesiųsti"
+
+#: src/Composer.vala:799
+msgid "Send Anyway"
+msgstr "Vis tiek siųsti"
+
+#: src/Composer.vala:830
+#, fuzzy
+#| msgid "Send message with an empty body?"
+msgid "Sent message was not saved"
+msgstr "Ar siųsti laišką be teksto?"
+
+#: src/Composer.vala:831
+msgid ""
+"The message was sent, however a copy was not saved to the Sent message "
+"folder."
+msgstr ""
+
+#: src/Composer.vala:846
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Unable to send message"
+msgstr "Ištrinti juodraštį"
+
+#: src/Composer.vala:847
+msgid "There was an unexpected error while sending your message."
+msgstr ""
+
+#: src/Composer.vala:945 src/FolderList/FolderList.vala:55
+msgid "Edit Signatures…"
+msgstr ""
+
+#: src/Composer.vala:949
+msgid "None"
+msgstr "Nieko"
+
+#: src/Composer.vala:1140
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Unable to save draft"
+msgstr "Ištrinti juodraštį"
+
+#: src/Composer.vala:1141
+msgid "There was an unexpected error while saving your draft."
+msgstr ""
+
+#: src/EditorToolbar.vala:55
+msgid "Bold"
+msgstr "Pusjuodis"
+
+#: src/EditorToolbar.vala:62
+msgid "Italic"
+msgstr "Kursyvas"
+
+#: src/EditorToolbar.vala:73
+msgid "Underline"
+msgstr "Pabrauktas"
+
+#: src/EditorToolbar.vala:85
+msgid "Strikethrough"
+msgstr "Perbrauktas"
+
+#: src/EditorToolbar.vala:100
+msgid "Remove formatting"
+msgstr "Šalinti formatavimą"
+
+#: src/EditorToolbar.vala:108 src/Dialogs/InsertLinkDialog.vala:68
+msgid "Insert Link"
+msgstr "Įterpti nuorodą"
+
+#: src/InboxMonitor.vala:158 src/InboxMonitor.vala:170
+#, c-format
+msgid "%s to %s"
+msgstr ""
+
+#. /TRANSLATORS: The %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#: src/InboxMonitor.vala:165
+#, fuzzy, c-format
+#| msgid "%d new message"
+#| msgid_plural "%d new messages"
+msgid "%u new message"
+msgid_plural "%u new messages"
+msgstr[0] "%d naujas laiškas"
+msgstr[1] "%d nauji laiškai"
+msgstr[2] "%d naujų laiškų"
+
+#. /TRANSLATORS: The first %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#. /The next %s represents the number of senders
+#: src/InboxMonitor.vala:177
+#, fuzzy, c-format
+#| msgid "Always Show from Sender"
+msgid "%s from %u sender"
+msgid_plural "%s from %u senders"
+msgstr[0] "Visada rodyti nuo siuntėjo"
+msgstr[1] "Visada rodyti nuo siuntėjo"
+msgstr[2] "Visada rodyti nuo siuntėjo"
+
+#: src/MainWindow.vala:80
+msgid "Mail"
+msgstr "Paštas"
+
+#: src/MainWindow.vala:123 src/Dialogs/AliasDialog/AliasDialog.vala:96
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:172
+msgid "Undo"
+msgstr "Atšaukti"
+
+#: src/MainWindow.vala:281
+#, fuzzy
+#| msgid "Message Deleted"
+#| msgid_plural "Messages Deleted"
+msgid "Message Archived"
+msgid_plural "Messages Archived"
+msgstr[0] "Laiškas ištrintas"
+msgstr[1] "Laiškai ištrinti"
+msgstr[2] "Laiškai ištrinti"
+
+#: src/MainWindow.vala:285
+#, fuzzy
+#| msgid "Unstar message"
+msgid "Couldn't archive message"
+msgstr "Nežymėti žvaigždute"
+
+#: src/MainWindow.vala:298
+#, fuzzy
+#| msgid "Message Deleted"
+#| msgid_plural "Messages Deleted"
+msgid "Message Moved"
+msgid_plural "Messages Moved"
+msgstr[0] "Laiškas ištrintas"
+msgstr[1] "Laiškai ištrinti"
+msgstr[2] "Laiškai ištrinti"
+
+#: src/MainWindow.vala:302
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Couldn't move message"
+msgstr "Ištrinti juodraštį"
+
+#: src/MainWindow.vala:315
+msgid "Message Deleted"
+msgid_plural "Messages Deleted"
+msgstr[0] "Laiškas ištrintas"
+msgstr[1] "Laiškai ištrinti"
+msgstr[2] "Laiškai ištrinti"
+
+#: src/MainWindow.vala:319
+msgid "Couldn't delete message"
+msgstr ""
+
+#: src/WelcomeView.vala:45
+msgid "Connect an Account"
+msgstr "Prijungti paskyrą"
+
+#: src/WelcomeView.vala:52
+msgid "Mail uses email accounts configured in System Settings."
+msgstr "Paštas naudoja sistemos nustatymuose sukonfigūruotas pašto paskyras."
+
+#: src/WelcomeView.vala:59
+msgid "Online Accounts…"
+msgstr "Internetinės paskyros…"
+
+#: src/Backend/Account.vala:48
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Unable to connect"
+msgstr "Ištrinti juodraštį"
+
+#: src/Backend/Account.vala:49
+msgid "There was an unexpected error while trying to connect to the server."
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:65
+#, c-format
+msgid "Moving messages… (%u remaining)"
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:98
+msgid "No Archive folder is configured."
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:126
+msgid "The destination folder was not found."
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:130
+msgid "The source folder is the destination folder."
+msgstr ""
+
+#: src/Backend/Session.vala:642
+msgid "New Signature"
+msgstr ""
+
+#: src/Backend/ContactManager.vala:88 src/Backend/ContactManager.vala:122
+#, c-format
+msgid "Couldn't add “%s” to addressbook"
+msgstr ""
+
+#: src/Backend/ContactManager.vala:89
+msgid "No addressbook available."
+msgstr ""
+
+#: src/Backend/ContactManager.vala:123
+msgid "Operation failed."
+msgstr ""
+
+#: src/ConversationList/ConversationItemModel.vala:74
+#: src/ConversationList/ConversationItemModel.vala:112
+msgid ", "
+msgstr ", "
+
+#: src/ConversationList/ConversationItemModel.vala:77
+#: src/ConversationList/ConversationItemModel.vala:115
+#: src/ConversationList/ConversationItemModel.vala:123
+#: src/MessageList/AttachmentButton.vala:100
+msgid "Unknown"
+msgstr "Nežinoma"
+
+#: src/ConversationList/ConversationList.vala:85
+msgid "Search Mail"
+msgstr "Ieškoti pašte"
+
+#: src/ConversationList/ConversationList.vala:89
+#, fuzzy
+#| msgid "Mark conversations"
+msgid "Hide read conversations"
+msgstr "Žymėti pokalbius"
+
+#: src/ConversationList/ConversationList.vala:90
+#, fuzzy
+#| msgid "Mark conversations"
+msgid "Hide unstarred conversations"
+msgstr "Žymėti pokalbius"
+
+#: src/ConversationList/ConversationList.vala:107
+#, fuzzy
+#| msgid "Delete Conversation"
+msgid "Filter Conversations"
+msgstr "Ištrinti pokalbį"
+
+#: src/ConversationList/ConversationList.vala:130
+#, fuzzy
+#| msgid "%d new message"
+#| msgid_plural "%d new messages"
+msgid "Fetch new messages"
+msgstr "%d naujas laiškas"
+
+#: src/ConversationList/ConversationList.vala:137
+#, fuzzy
+#| msgid "%d new message"
+#| msgid_plural "%d new messages"
+msgid "Fetching new messages…"
+msgstr "%d naujas laiškas"
+
+#: src/ConversationList/ConversationListItem.vala:94
+msgid "Archive"
+msgstr "Archyvas"
+
+#: src/ConversationList/ConversationListItem.vala:99
+msgid "Trash"
+msgstr "Šiukšlinė"
+
+#: src/ConversationList/ConversationListItem.vala:181
+msgid "Unread"
+msgstr "Neskaitytas"
+
+#: src/ConversationList/ConversationListItem.vala:194
+msgid "Replied"
+msgstr "Atsakytas"
+
+#: src/ConversationList/ConversationListItem.vala:198
+msgid "Forwarded"
+msgstr "Persiųstas"
+
+#: src/ConversationList/ConversationListItem.vala:212
+#, fuzzy
+#| msgid "Move conversations to Trash"
+msgid "Move To Trash"
+msgstr "Perkelti pokalbius į šiukšlinę"
+
+#: src/ConversationList/ConversationListItem.vala:215
+#, fuzzy
+#| msgid "Mark as Unread"
+msgid "Mark As Unread"
+msgstr "Žymėti neskaitytu"
+
+#: src/ConversationList/ConversationListItem.vala:217
+#: src/MessageList/MessageList.vala:51
+msgid "Mark as Read"
+msgstr "Žymėti skaitytu"
+
+#: src/ConversationList/ConversationListItem.vala:221
+#: src/MessageList/MessageList.vala:52
+msgid "Star"
+msgstr "Žymėti žvaigždute"
+
+#: src/ConversationList/ConversationListItem.vala:223
+#: src/MessageList/MessageList.vala:53
+msgid "Unstar"
+msgstr "Nežymėti žvaigždute"
+
+#: src/Dialogs/InsertLinkDialog.vala:29
+msgid "URL:"
+msgstr "URL:"
+
+#: src/Dialogs/InsertLinkDialog.vala:39
+msgid "Link Text:"
+msgstr "Nuorodos tekstas:"
+
+#: src/Dialogs/InsertLinkDialog.vala:45
+msgid "Example Website"
+msgstr "Pavyzdinė svetainė"
+
+#: src/Dialogs/AliasDialog/Alias.vala:52
+msgid "John Doe"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/Alias.vala:56
+#, fuzzy
+#| msgid "N_ame:"
+msgid "Name"
+msgstr "V_ardas:"
+
+#: src/Dialogs/AliasDialog/Alias.vala:75
+#, fuzzy
+#| msgid "E_mail address:"
+msgid "E-mail Address"
+msgstr "El. pašto adresas:"
+
+#: src/Dialogs/AliasDialog/Alias.vala:80
+#, fuzzy
+#| msgid "Delete draft"
+msgid "Delete alias"
+msgstr "Ištrinti juodraštį"
+
+#: src/Dialogs/AliasDialog/Alias.vala:100
+#, fuzzy
+#| msgid "Edit Draft"
+msgid "Edit alias"
+msgstr "Redaguoti juodraštį"
+
+#: src/Dialogs/AliasDialog/Alias.vala:175
+msgid "Name not set"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:33
+msgid "No Aliases"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:37
+msgid "Add aliases using the button in the toolbar below"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:67
+msgid "Add Alias…"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:104
+msgid "Aliases"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:108
+#, fuzzy
+#| msgid "_Close"
+msgid "Close"
+msgstr "_Užverti"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:178
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:330
+#, c-format
+msgid "'%s' deleted"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:39
+#, fuzzy
+#| msgid "Insert Link"
+msgid "No Signatures"
+msgstr "Įterpti nuorodą"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:43
+msgid "Add signatures using the button in the toolbar below"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:67
+#, fuzzy
+#| msgid "Insert Link"
+msgid "Create Signature"
+msgstr "Įterpti nuorodą"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:86
+msgid "Title"
+msgstr ""
+
+#. Work around a styling issue
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:99
+msgid "For example “Work” or “Personal”"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:122
+msgid "Delete"
+msgstr "Ištrinti"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:131
+msgid "Set Default For…"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:156
+#, fuzzy
+#| msgid "Insert Link"
+msgid "Signature"
+msgstr "Įterpti nuorodą"
+
+#: src/FolderList/AccountItemModel.vala:155
+msgid "Edit Aliases…"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:48
+msgid "Refresh folder"
+msgstr "Įkelti aplanką iš naujo"
+
+#: src/FolderList/FolderItemModel.vala:53
+#, fuzzy
+#| msgid "Refresh folder"
+msgid "Rename folder"
+msgstr "Įkelti aplanką iš naujo"
+
+#: src/FolderList/FolderItemModel.vala:146
+#: src/FolderList/FolderItemModel.vala:175
+#: src/FolderList/FolderItemModel.vala:193
+#, c-format
+msgid "Couldn't rename “%s”"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:147
+msgid "Folder names cannot contain “/”"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:176
+#, c-format
+msgid "A folder named “%s” already exists"
+msgstr ""
+
+#: src/FolderList/FolderList.vala:34
+msgid "Compose new message"
+msgstr "Rašyti naują laišką"
+
+#: src/FolderList/FolderList.vala:56
+msgid "Account Settings…"
+msgstr "Paskyros nustatymai…"
+
+#: src/FolderList/FolderList.vala:59
+msgid "Always Show Remote Images"
+msgstr "Visada rodyti nuotolinius paveikslus"
+
+#: src/FolderList/FolderList.vala:65
+msgid "Menu"
+msgstr "Meniu"
+
+#: src/FolderList/GroupedFolderItemModel.vala:38
+#, fuzzy
+#| msgid "Inbox"
+msgctxt "Inbox Folder"
+msgid "Inbox"
+msgstr "Gautieji"
+
+#: src/FolderList/GroupedFolderItemModel.vala:42
+#, fuzzy
+#| msgid "Archive"
+msgctxt "Archive Folder"
+msgid "Archive"
+msgstr "Archyvas"
+
+#: src/FolderList/GroupedFolderItemModel.vala:46
+#, fuzzy
+#| msgid "Sent Mail"
+msgctxt "Sent Folder"
+msgid "Sent"
+msgstr "Išsiųstieji"
+
+#: src/FolderList/SessionItemModel.vala:28
+#, fuzzy
+#| msgid "All Mail"
+msgid "All Mailboxes"
+msgstr "Visi laiškai"
+
+#: src/MessageList/MessageList.vala:28 src/MessageList/MessageListItem.vala:210
+msgid "Reply"
+msgstr "Atsakyti"
+
+#: src/MessageList/MessageList.vala:37 src/MessageList/MessageListItem.vala:213
+msgid "Reply All"
+msgstr "Atsakyti visiems"
+
+#: src/MessageList/MessageList.vala:46 src/MessageList/MessageListItem.vala:216
+msgid "Forward"
+msgstr "Persiųsti"
+
+#: src/MessageList/MessageList.vala:50
+msgid "Mark as Unread"
+msgstr "Žymėti neskaitytu"
+
+#: src/MessageList/MessageList.vala:60
+msgid "Mark Conversation"
+msgstr "Žymėti pokalbį"
+
+#: src/MessageList/MessageList.vala:68
+#, fuzzy
+#| msgid "Move conversation"
+#| msgid_plural "Move conversations"
+msgid "Move Conversation to…"
+msgstr "Perkelti pokalbį"
+
+#: src/MessageList/MessageList.vala:77
+#, fuzzy
+#| msgid "Move conversations to Trash"
+msgid "Move conversations to archive"
+msgstr "Perkelti pokalbius į šiukšlinę"
+
+#: src/MessageList/MessageList.vala:85
+msgid "Move conversations to Trash"
+msgstr "Perkelti pokalbius į šiukšlinę"
+
+#: src/MessageList/MessageList.vala:100
+msgid "No Message Selected"
+msgstr "Nepasirinkta jokių laiškų"
+
+#. /TRANSLATORS: The first %s represents the date and the second %s the time of the message (either when it was received or sent)
+#: src/MessageList/MessageListItem.vala:190
+#, c-format
+msgid "%s at %s"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:198
+#: src/MessageList/MessageListItem.vala:397
+msgid "Unstar message"
+msgstr "Nežymėti žvaigždute"
+
+#: src/MessageList/MessageListItem.vala:201
+#: src/MessageList/MessageListItem.vala:393
+msgid "Star message"
+msgstr "Žymėti žvaigždute"
+
+#: src/MessageList/MessageListItem.vala:221
+msgid "Print…"
+msgstr "Spausdinti…"
+
+#: src/MessageList/MessageListItem.vala:231
+msgid "More"
+msgstr "Daugiau"
+
+#: src/MessageList/MessageListItem.vala:281
+msgid "Open in Calendar"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:286
+#, fuzzy
+#| msgid "This message contains remote images."
+msgid "This message contains a Calendar Event."
+msgstr "Šiame laiške yra nuotolinių paveikslų."
+
+#: src/MessageList/MessageListItem.vala:297
+msgid "Show Images"
+msgstr "Rodyti paveikslus"
+
+#: src/MessageList/MessageListItem.vala:298
+msgid "Always Show from Sender"
+msgstr "Visada rodyti nuo siuntėjo"
+
+#: src/MessageList/MessageListItem.vala:302
+msgid "This message contains remote images."
+msgstr "Šiame laiške yra nuotolinių paveikslų."
+
+#: src/MessageList/MessageListItem.vala:341
+msgid "This message contains one or more attachments"
+msgstr "Šiame laiške yra vienas ar daugiau priedų"
+
+#. / Translators: This is the default file name of a printed email
+#: src/MessageList/MessageListItem.vala:417
+#, fuzzy
+#| msgid "New Message"
+msgid "Email Message"
+msgstr "Naujas laiškas"
+
+#: src/MessageList/MessageListItem.vala:439
+#, fuzzy
+#| msgid "Unable to validate:\n"
+msgid "Unable to print email"
+msgstr "Negalima patvirtinti:\n"
+
+#: src/MessageList/MessageListItem.vala:691
+#, c-format
+msgid "Trust and open “%s”?"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:692
+msgid ""
+"Attachments may cause damage to your system if opened. Only open files from "
+"trusted sources."
+msgstr ""
+"Atveriami priedai gali pakenkti jūsų sistemai. Atverkite failus tik nuo "
+"patikimų šaltinių."
+
+#: src/MessageList/MessageListItem.vala:699
+msgid "Open Anyway"
+msgstr "Vis tiek atverti"
+
+#: src/MessageList/AttachmentButton.vala:57
+msgid "Open"
+msgstr "Atverti"
+
+#: src/MessageList/AttachmentButton.vala:58
+msgid "Save As…"
+msgstr "Įrašyti kaip…"
+
+#: src/MessageList/AttachmentButton.vala:143
+msgid "Save"
+msgstr "Įrašyti"
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:22
+msgid "No mailboxes found"
+msgstr ""
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:26
+msgid "Try changing search terms"
+msgstr ""
+
+#, fuzzy
+#~| msgid "https://example.com"
+#~ msgid "Email@example.com"
+#~ msgstr "https://example.com"
+
+#, fuzzy
+#~| msgid "Email Address:"
+#~ msgid "Address:"
+#~ msgstr "El. pašto adresas:"
+
+#, fuzzy
+#~| msgid "Email address:"
+#~ msgid "Enter e-mail address…"
+#~ msgstr "El. pašto adresas:"
+
+#~ msgid "Reply to All"
+#~ msgstr "Atsakyti visiems"
+
+#, c-format
+#~ msgid "Are you sure you want to open %s?"
+#~ msgstr "Ar tikrai norite atverti %s?"
+
+#~ msgid "Quote text"
+#~ msgstr "Cituoti tekstą"
+
+#~ msgid "Unquote text"
+#~ msgstr "Necituoti teksto"
+
+#~ msgid "Drafts | Draft"
+#~ msgstr "Juodraščiai | Juodraštis"
+
+#~ msgid "Sent | Sent Mail | Sent Email | Sent E-Mail"
+#~ msgstr ""
+#~ "Išsiųsti | Išsiųsti laiškai | Išsiųstas paštas | Išsiųstas el. paštas"
+
+#~ msgid ""
+#~ "Junk | Spam | Junk Mail | Junk Email | Junk E-Mail | Bulk Mail | Bulk "
+#~ "Email | Bulk E-Mail"
+#~ msgstr "Šlamšas | Brukalas | Šlamšto laiškai | Šlamšto el. laiškai"
+
+#~ msgid "Trash | Rubbish | Rubbish Bin"
+#~ msgstr "Šiukšlinė | Ištrinti laiškai | Šiukšliadėžė"
+
+#~ msgid "Archive | Archives"
+#~ msgstr "Archive | Archives | Archyvas | Archyvai"
+
+#~ msgid "Drafts"
+#~ msgstr "Juodraščiai"
+
+#~ msgid "Starred"
+#~ msgstr "Pažymėti"
+
+#~ msgid "Important"
+#~ msgstr "Svarbūs"
+
+#~ msgid "Spam"
+#~ msgstr "Brukalas"
+
+#~ msgid "Outbox"
+#~ msgstr "Siunčiamieji"
+
+#~ msgid "Search"
+#~ msgstr "Paieška"
+
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgid "SMTP"
+#~ msgstr "SMTP"
+
+#~ msgid "Gmail"
+#~ msgstr "Gmail"
+
+#~ msgid "Yahoo! Mail"
+#~ msgstr "Yahoo! Mail"
+
+#~ msgid "Outlook.com"
+#~ msgstr "Outlook.com"
+
+#~ msgid "Other"
+#~ msgstr "Kita"
+
+#~ msgid "attachment"
+#~ msgstr "priedas"
+
+#~ msgid "bcc"
+#~ msgstr "nematoma kopija"
+
+#~ msgid "body"
+#~ msgstr "laiško tekstas"
+
+#~ msgid "cc"
+#~ msgstr "kopija"
+
+#~ msgid "from"
+#~ msgstr "nuo"
+
+#~ msgid "subject"
+#~ msgstr "tema"
+
+#~ msgid "to"
+#~ msgstr "gavėjas"
+
+#~ msgid "me"
+#~ msgstr "man"
+
+#~ msgid "(no subject)"
+#~ msgstr "(be temos)"
+
+#~ msgid "%s wrote:"
+#~ msgstr "%s rašė:"
+
+#~ msgid "On %s:"
+#~ msgstr "%s:"
+
+#~ msgid "none"
+#~ msgstr "nėra"
+
+#~ msgid "Mail Client"
+#~ msgstr "Pašto klientas"
+
+#~ msgid "Copyright 2011-2015 Yorba Foundation"
+#~ msgstr "Autorių Teisės 2011-2015 Yorba Foundation"
+
+#~ msgid "Visit the Yorba web site"
+#~ msgstr "Aplankyti Yorba tinklalapį"
+
+#~ msgid "Delete conversation"
+#~ msgstr "Ištrinti pokalbį"
+
+#~ msgid "Delete conversation (Shift+Delete)"
+#~ msgstr "Ištrinti pokalbį (Shift+Delete (Lyg2+Šalinti))"
+
+#~ msgid "Delete conversations (Shift+Delete)"
+#~ msgstr "Ištrinti pokalbius (Shift+Delete (Lyg2+Šalinti))"
+
+#~ msgid "Move conversation to Trash (Delete, Backspace)"
+#~ msgid_plural "Move conversations to Trash (Delete, Backspace)"
+#~ msgstr[0] ""
+#~ "Perkelti pokalbį į šiukšlinę (Delete, Backspace (Šalinti, Naikinti))"
+#~ msgstr[1] ""
+#~ "Perkelti pokalbius į šiukšlinę (Delete, Backspace (Šalinti, Naikinti))"
+#~ msgstr[2] ""
+#~ "Perkelti pokalbius į šiukšlinę (Delete, Backspace (Šalinti, Naikinti))"
+
+#~ msgid "Move conversations to Trash (Delete, Backspace)"
+#~ msgstr ""
+#~ "Perkelti pokalbius į šiukšlinę (Delete, Backspace (Šalinti, Naikinti))"
+
+#~ msgid "_Archive"
+#~ msgstr "_Archyvuoti"
+
+#~ msgid "Archive conversation (A)"
+#~ msgid_plural "Archive conversations (A)"
+#~ msgstr[0] "Archyvuoti pokalbį (A)"
+#~ msgstr[1] "Archyvuoti pokalbius (A)"
+#~ msgstr[2] "Archyvuoti pokalbius (A)"
+
+#~ msgid "Archive conversations (A)"
+#~ msgstr "Archyvuoti pokalbius (A)"
+
+#~ msgid "Mark as S_pam"
+#~ msgstr "Žymėti kaip _brukalą"
+
+#~ msgid "Mark as not S_pam"
+#~ msgstr "Žymėti kaip ne _brukalą"
+
+#~ msgid "Add label to conversation"
+#~ msgid_plural "Add label to conversations"
+#~ msgstr[0] "Pridėti pokalbiui etiketę"
+#~ msgstr[1] "Pridėti pokalbiams etiketę"
+#~ msgstr[2] "Pridėti pokalbiams etiketę"
+
+#~ msgid "Add label to conversations"
+#~ msgstr "Pridėti pokalbiams etiketę"
+
+#~ msgid "A_ccounts"
+#~ msgstr "Pa_skyros"
+
+#~ msgid "_Preferences"
+#~ msgstr "_Nuostatos"
+
+#~ msgid "_Help"
+#~ msgstr "_Pagalba"
+
+#~ msgid "_About"
+#~ msgstr "_Apie"
+
+#~ msgid "_Quit"
+#~ msgstr "_Išeiti"
+
+#~ msgid "_Mark as..."
+#~ msgstr "_Žymėti kaip..."
+
+#~ msgid "Mark as _Read"
+#~ msgstr "Žymėti kaip _skaitytą"
+
+#~ msgid "Mark as _Unread"
+#~ msgstr "Žymėti kaip _neskaitytą"
+
+#~ msgid "Add label"
+#~ msgstr "Pridėti etiketę"
+
+#~ msgid "_Label"
+#~ msgstr "_Etiketė"
+
+#~ msgid "_Move"
+#~ msgstr "_Perkelti"
+
+#~ msgid "Compose new message (Ctrl+N, N)"
+#~ msgstr "Rašyti naują laišką (Ctrl+N (Vald+N), N)"
+
+#~ msgid "_Reply"
+#~ msgstr "_Atsakyti"
+
+#~ msgid "Reply (Ctrl+R, R)"
+#~ msgstr "Atsakyti (Ctrl+R (Vald+R), R)"
+
+#~ msgid "Reply all (Ctrl+Shift+R, Shift+R)"
+#~ msgstr "Atsakyti visiems (Ctrl+Shift+R (Vald+Lyg2+R), Shift+R (Lyg2+R))"
+
+#~ msgid "_Forward"
+#~ msgstr "_Persiųsti"
+
+#~ msgid "Forward (Ctrl+L, F)"
+#~ msgstr "Persiųsti (Ctrl+L (Vald+L), F)"
+
+#~ msgid "Empty"
+#~ msgstr "Išvalyti"
+
+#~ msgid "Empty Spam or Trash folders"
+#~ msgstr "Išvalyti brukalo ir šiukšlinės aplankus"
+
+#~ msgid "Empty _Spam…"
+#~ msgstr "Išvalyti _brukalą…"
+
+#~ msgid "Empty _Trash…"
+#~ msgstr "Išvalyti š_iukšlinę…"
+
+#~ msgid "Toggle search bar"
+#~ msgstr "Perjungti paieškos juostą"
+
+#~ msgid "Unable to store server trust exception"
+#~ msgstr "Nepavyko išsaugoti serverio patikimumo išimties"
+
+#~ msgid "Your settings are insecure"
+#~ msgstr "Jūsų nustatytmai yra nesaugūs"
+
+#~ msgid ""
+#~ "Your IMAP and/or SMTP settings do not specify SSL or TLS.  This means "
+#~ "your username and password could be read by another person on the "
+#~ "network.  Are you sure you want to do this?"
+#~ msgstr ""
+#~ "Jūsų IMAP ir/ar SMTP nustatymai nenurodo SSL ar TLS.  Tai reiškia kad "
+#~ "jūsų naudotojo vardas bei slaptažodis gali būti nuskaitytas kitų asmenų "
+#~ "tinkle.  Ar tikrai norite tęsti?"
+
+#~ msgid "Co_ntinue"
+#~ msgstr "Tęs_ti"
+
+#~ msgid "Error sending email"
+#~ msgstr "Klaida, siunčiant paštą"
+
+#~ msgid ""
+#~ "Geary encountered an error sending an email.  If the problem persists, "
+#~ "please manually delete the email from your Outbox folder."
+#~ msgstr ""
+#~ "Geary susidūrė su klaida, siunčiant laišką. Jeigu klaida išlieka, prašome "
+#~ "rankiniu būdu ištrinti laišką iš Siunčiamųjų aplanko."
+
+#~ msgid "Error saving sent mail"
+#~ msgstr "Klaida, įrašant išsiųstą laišką"
+
+#~ msgid ""
+#~ "Geary encountered an error saving a sent message to Sent Mail.  The "
+#~ "message will stay in your Outbox folder until you delete it."
+#~ msgstr ""
+#~ "Geary susidūrė su klaida įrašant laišką į išsiųstų laiškų aplanką. "
+#~ "Laiškas liks Siunčiamųjų aplanke tol, kol jį ištrinsite."
+
+#~ msgid "Labels"
+#~ msgstr "Etikėtės"
+
+#~ msgid "Unable to open the database for %s"
+#~ msgstr "Nepavyksta atverti %s duomenų bazės"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to corruption of the database file in this directory:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Geary can rebuild the database and re-synchronize with the server or "
+#~ "exit.\n"
+#~ "\n"
+#~ "Rebuilding the database will destroy all local email and its attachments. "
+#~ "<b>The mail on the your server will not be affected.</b>"
+#~ msgstr ""
+#~ "Įvyko klaida, atveriant šios paskyros vietinę duomenų bazę. Klaida "
+#~ "susijusi su galimai pažeistu duomenų bazės failu šiame kataloge.\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Geary gali iš naujo sukurti duomenų bazę ir iš naujo sinchronizuoti ją su "
+#~ "serveriu arba išeiti.\n"
+#~ "\n"
+#~ "Duomenų bazės kūrimas iš naujo pašalins visus vietinius laiškus ir jų "
+#~ "priedus. <b>Serveryje esantis paštas nebus paveiktas.</b>"
+
+#~ msgid "_Rebuild"
+#~ msgstr "_Sukurti iš naujo"
+
+#~ msgid "E_xit"
+#~ msgstr "Iš_eiti"
+
+#~ msgid "Unable to rebuild database for \"%s\""
+#~ msgstr "Nepavyksta iš naujo sukurti \"%s\" duomenų bazės"
+
+#~ msgid ""
+#~ "Error during rebuild:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Klaida kūrimo iš naujo metu:\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid "Unable to open local mailbox for %s"
+#~ msgstr "Nepavyksta atverti vietinės %s pašto dėžutės"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to a file permissions problem.\n"
+#~ "\n"
+#~ "Please check that you have read/write permissions for all files in this "
+#~ "directory:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Atveriant vietinę šios paskyros pašto duomenų bazę, įvyko klaida. Gali "
+#~ "būti, kad tai yra susiję su leidimų problema.\n"
+#~ "\n"
+#~ "Prašome patikrinti ar turite skaitymo/rašymo teises visiems failams "
+#~ "esantiems kataloge:\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid ""
+#~ "The version number of the local mail database is formatted for a newer "
+#~ "version of Geary. Unfortunately, the database cannot be \"rolled back\" "
+#~ "to work with this version of Geary.\n"
+#~ "\n"
+#~ "Please install the latest version of Geary and try again."
+#~ msgstr ""
+#~ "Vietinės laiškų duomenų bazės numeris yra suformatuotas naujesnei Geary "
+#~ "versijai. Deja, duomenų bazė negali būti \"grąžinta\" darbui su šia Geary "
+#~ "versija.\n"
+#~ "\n"
+#~ "Prašome įdiegti naujausią Geary versiją ir bandyti dar kartą."
+
+#~ msgid ""
+#~ "There was an error opening the local account. This is probably due to "
+#~ "connectivity issues.\n"
+#~ "\n"
+#~ "Please check your network connection and restart Geary."
+#~ msgstr ""
+#~ "Atveriant vietinę paskyrą, įvyko klaida. Tikriausiai, tai atsitiko dėl "
+#~ "ryšio problemų.\n"
+#~ "\n"
+#~ "Prašome patikrinti tinklo ryšį ir iš naujo paleisti Geary."
+
+#~ msgid "About %s"
+#~ msgstr "Apie %s"
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Vertėjų sąrašas\n"
+#~ "\n"
+#~ "Launchpad Contributions:\n"
+#~ "  Moo https://launchpad.net/~mooo\n"
+#~ "  aurisc4 https://launchpad.net/~aurisc4"
+
+#~ msgid "Undo move (Ctrl+Z)"
+#~ msgstr "Atšaukti perkelimą (Ctrl+Z (Vald+Z))"
+
+#~ msgid "Are you sure you want to open \"%s\"?"
+#~ msgstr "Ar tikrai norite atverti \"%s\"?"
+
+#~ msgid ""
+#~ "Attachments may cause damage to your system if opened.  Only open files "
+#~ "from trusted sources."
+#~ msgstr ""
+#~ "Atveriami priedai gali pakenkti jūsų sistemai. Atverkite failus tik nuo "
+#~ "patikimų šaltinių."
+
+#~ msgid "Don't _ask me again"
+#~ msgstr "_Daugiau nebeklausti"
+
+#~ msgid "A file named \"%s\" already exists.  Do you want to replace it?"
+#~ msgstr "Failas, pavadinimu \"%s\" jau yra.  Norite jį pakeisti?"
+
+#~ msgid ""
+#~ "The file already exists in \"%s\".  Replacing it will overwrite its "
+#~ "contents."
+#~ msgstr "Toks failas jau yra \"%s\".  Pakeitimas perrašys failo turinį."
+
+#~ msgid "_Replace"
+#~ msgstr "_Pakeisti"
+
+#~ msgid "Close open draft messages?"
+#~ msgstr "Užverti atvertus juodraščius?"
+
+#~ msgid "Empty all email from your %s folder?"
+#~ msgstr "Išvalyti visus laiškus iš %s aplanko?"
+
+#~ msgid "This removes the email from Geary and your email server."
+#~ msgstr "Tai pašalina laiškus iš Geary ir jūsų el. pašto serverio."
+
+#~ msgid "This cannot be undone."
+#~ msgstr "Tai negali būti atšaukta."
+
+#~ msgid "Empty %s"
+#~ msgstr "Išvalyti %s"
+
+#~ msgid "Error emptying %s"
+#~ msgstr "Klaida išvalant %s"
+
+#~ msgid "Undo archive (Ctrl+Z)"
+#~ msgstr "Atšaukti archyvavimą (Ctrl+Z (Vald+Z))"
+
+#~ msgid "Undo trash (Ctrl+Z)"
+#~ msgstr "Atšaukti išmetimą (Ctrl+Z (Vald+Z))"
+
+#~ msgid "Undo (Ctrl+Z)"
+#~ msgstr "Atšaukti (Ctrl+Z (Vald+Z))"
+
+#~ msgid "Start Geary with hidden main window"
+#~ msgstr "Paleidžiant Geary slėpti pagrindinį langą"
+
+#~ msgid "Output debugging information"
+#~ msgstr "Išvesti derinimo informaciją"
+
+#~ msgid "Log conversation monitoring"
+#~ msgstr "Registruoti pokalbių stebėjimą"
+
+#~ msgid "Log network deserialization"
+#~ msgstr "Registruoti tinklo išnuoseklinimą"
+
+#~ msgid "Log network activity"
+#~ msgstr "Registruoti tinklo veiklą"
+
+#~ msgid "Log IMAP replay queue"
+#~ msgstr "Registruoti IMAP atsakų eilę"
+
+#~ msgid "Log network serialization"
+#~ msgstr "Registruoti tinklo nuoseklinimą"
+
+#~ msgid "Log periodic activity"
+#~ msgstr "Registruoti periodinę veiklą"
+
+#~ msgid "Log database queries (generates lots of messages)"
+#~ msgstr "Registruoti duomenų bazės užklausas (sukuria daug žinučių)"
+
+#~ msgid "Log folder normalization"
+#~ msgstr "Registruoti aplanko normalizavimą"
+
+#~ msgid "Allow inspection of WebView"
+#~ msgstr "Leisti WebView patikrinimą"
+
+#~ msgid "Revoke all server certificates with TLS warnings"
+#~ msgstr "Panaikinti visus serverių liudijimus su TLS įspėjimais"
+
+#~ msgid "Display program version"
+#~ msgstr "Rodyti programos versiją"
+
+#~ msgid "Use %s to open a new composer window"
+#~ msgstr "Naudokite %s naujam rašymo langui atverti"
+
+#~ msgid "Please report comments, suggestions and bugs to:"
+#~ msgstr "Prašome siųsti komentarus, pasiūlymus ir klaidas į:"
+
+#~ msgid "Failed to parse command line options: %s\n"
+#~ msgstr "Nepavyko išnagrinėti komandų eilutės parametrų: %s\n"
+
+#~ msgid "Unrecognized command line option \"%s\"\n"
+#~ msgstr "Neatpažintas komandų eilutės parametras \"%s\"\n"
+
+#~ msgid "%s - New Messages"
+#~ msgstr "%s - Nauji laiškai"
+
+#~ msgid "%s, %d new message total"
+#~ msgid_plural "%s, %d new messages total"
+#~ msgstr[0] "%s, iš viso %d naujas laiškas"
+#~ msgstr[1] "%s, iš viso %d nauji laiškai"
+#~ msgstr[2] "%s, iš viso %d naujų laiškų"
+
+#~ msgid ""
+#~ "%s\n"
+#~ "(%d other new message for %s)"
+#~ msgid_plural ""
+#~ "%s\n"
+#~ "(%d other new messages for %s)"
+#~ msgstr[0] ""
+#~ "%s\n"
+#~ "(%d naujas laiškas %s)"
+#~ msgstr[1] ""
+#~ "%s\n"
+#~ "(%d nauji laiškai %s)"
+#~ msgstr[2] ""
+#~ "%s\n"
+#~ "(%d naujų laiškų %s)"
+
+#~ msgid "Me"
+#~ msgstr "Aš"
+
+#~ msgid "Untrusted Connection: %s"
+#~ msgstr "Nepatikimas ryšys: %s"
+
+#~ msgid "The identity of the %s mail server at %s:%u could not be verified."
+#~ msgstr "%s pašto serverio tapatybės iš %s:%u patvirtinti nepavyko."
+
+#~ msgid ""
+#~ "Selecting \"Trust This Server\" or \"Always Trust This Server\" may cause "
+#~ "your username and password to be transmitted insecurely."
+#~ msgstr ""
+#~ "Pasirinkus \"Pasitikėti šiuo serveriu\" ar \"Visada pasitikėti šiuo "
+#~ "serveriu\" jūsų naudotojo vardas ir slaptažodis gali būti perduoti "
+#~ "nesaugiu būdu."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Geary not to access this "
+#~ "server."
+#~ msgstr ""
+#~ "Pasirinkus \"Nepasitikėti šiuo serveriu\" Geary nebesijungs prie šio "
+#~ "serverio."
+
+#~ msgid "Geary will not add or update this email account."
+#~ msgstr "Geary nepridės ir neatnaujins šios el. pašto paskyros."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Geary to stop accessing "
+#~ "this account."
+#~ msgstr ""
+#~ "Pasirinkus \"Nepasitikėti šiuo serveriu\" Geary nebeaptarnaus šios "
+#~ "paskyros."
+
+#~ msgid "Geary will exit if you have no other open email accounts."
+#~ msgstr ""
+#~ "Geary baigs savo darbą, jei neturėsite jokių kitų atvertų el. pašto "
+#~ "paskyrų."
+
+#~ msgid ""
+#~ "Contact your system administrator or email service provider if you have "
+#~ "any question about these issues."
+#~ msgstr ""
+#~ "Susisiekite su savo sistemos administratoriumi arba el. pašto paslaugos "
+#~ "tiekėju jei turite kokių nors klausimų apie šias problemas."
+
+#~ msgid "The server's certificate is not signed by a known authority"
+#~ msgstr "Serverio liudijimas pasirašytas nežinomo leidėjo"
+
+#~ msgid "The server's identity does not match the identity in the certificate"
+#~ msgstr "Serverio tapatybė nesutampa su liudijime nurodytąja tapatybe"
+
+#~ msgid "The server's certificate has expired"
+#~ msgstr "Serverio liudijimas nebegalioja"
+
+#~ msgid "The server's certificate has not been activated"
+#~ msgstr "Serverio liudijimas nebuvo aktyvuotas"
+
+#~ msgid "The server's certificate has been revoked and is now invalid"
+#~ msgstr "Serverio liudijimas buvo panaikintas ir dabar yra negaliojantis"
+
+#~ msgid "The server's certificate is considered insecure"
+#~ msgstr "Serverio liudijimas laikomas nesaugiu"
+
+#~ msgid "An error has occurred processing the server's certificate"
+#~ msgstr "Apdorojant serverio liudijimą, įvyko klaida"
+
+#~ msgid "Geary requires your email password to continue"
+#~ msgstr "Norint tęsti, Geary reikalingas jūsų el. pašto slaptažodis"
+
+#~ msgid "Additional addresses for %s"
+#~ msgstr "Papildomi adresai, skirti %s"
+
+#~ msgid "First Last"
+#~ msgstr "Vardas Pavardė"
+
+#~ msgid "Welcome to Geary."
+#~ msgstr "Sveiki atvykę į Geary."
+
+#~ msgid "Enter your account information to get started."
+#~ msgstr "Norėdami pradėti, įveskite savo paskyros informaciją."
+
+#~ msgid "2 weeks back"
+#~ msgstr "2 savaičių senumo"
+
+#~ msgid "1 month back"
+#~ msgstr "1 mėnesio senumo"
+
+#~ msgid "3 months back"
+#~ msgstr "3 mėnesių senumo"
+
+#~ msgid "6 months back"
+#~ msgstr "6 mėnesių senumo"
+
+#~ msgid "1 year back"
+#~ msgstr "1 metų senumo"
+
+#~ msgid "2 years back"
+#~ msgstr "2 metų senumo"
+
+#~ msgid "4 years back"
+#~ msgstr "4 metų senumo"
+
+#~ msgid "Everything"
+#~ msgstr "Visus"
+
+#~ msgid "Edit"
+#~ msgstr "Taisyti"
+
+#~ msgid "Preview"
+#~ msgstr "Peržiūra"
+
+#~ msgid "Remem_ber passwords"
+#~ msgstr "Prisimin_ti slaptažodžius"
+
+#~ msgid "Remem_ber password"
+#~ msgstr "Prisimin_ti slaptažodį"
+
+#~ msgid "        &#8226; Invalid account nickname.\n"
+#~ msgstr "        &#8226; Neteisingas paskyros slapyvardis.\n"
+
+#~ msgid "        &#8226; Email address already added to Geary.\n"
+#~ msgstr "        &#8226; Pašto adresas jau pridėtas į Geary.\n"
+
+#~ msgid "        &#8226; IMAP connection error.\n"
+#~ msgstr "        &#8226; IMAP prisijungimo klaida.\n"
+
+#~ msgid "        &#8226; IMAP username or password incorrect.\n"
+#~ msgstr "        &#8226; Neteisingas IMAP naudotojo vardas ar slaptažodis.\n"
+
+#~ msgid "        &#8226; SMTP connection error.\n"
+#~ msgstr "        &#8226; SMTP prisijungimo klaida.\n"
+
+#~ msgid "        &#8226; SMTP username or password incorrect.\n"
+#~ msgstr "        &#8226; Neteisingas SMTP naudotojo vardas ar slaptažodis.\n"
+
+#~ msgid "        &#8226; Connection error.\n"
+#~ msgstr "        &#8226; Prisijungimo klaida.\n"
+
+#~ msgid "        &#8226; Username or password incorrect.\n"
+#~ msgstr "        &#8226; Neteisingas naudotojo vardas ar slaptažodis.\n"
+
+#~ msgid "_Add"
+#~ msgstr "_Pridėti"
+
+#~ msgid "%l:%M %P"
+#~ msgstr "%l:%M %P"
+
+#~ msgid "%H:%M"
+#~ msgstr "%H:%M"
+
+#~ msgctxt "Default clock format"
+#~ msgid "%l:%M %P"
+#~ msgstr "%l:%M %P"
+
+#~ msgid "%b %-e"
+#~ msgstr "%b %-e"
+
+#~ msgid "%x"
+#~ msgstr "%x"
+
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%B %-e, %Y %-l:%M %P"
+
+#~ msgid "%B %-e, %Y %-H:%M"
+#~ msgstr "%Y %B %-e, %-H:%M"
+
+#~ msgctxt "Default full date"
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%Y %B %-e, %-l:%M %P"
+
+#~ msgid "Now"
+#~ msgstr "Dabar"
+
+#~ msgid "%dm ago"
+#~ msgid_plural "%dm ago"
+#~ msgstr[0] "Prieš %d minutę"
+#~ msgstr[1] "Prieš %d minutes"
+#~ msgstr[2] "Prieš %d minučių"
+
+#~ msgid "%dh ago"
+#~ msgid_plural "%dh ago"
+#~ msgstr[0] "Prieš %d valandą"
+#~ msgstr[1] "Prieš %d valandas"
+#~ msgstr[2] "Prieš %d valandų"
+
+#~ msgid "Yesterday"
+#~ msgstr "Vakar"
+
+#~ msgid "%A"
+#~ msgstr "%A"
+
+#~ msgid "bytes"
+#~ msgstr "baitai"
+
+#~ msgctxt "Abbreviation for terabyte"
+#~ msgid "TB"
+#~ msgstr "TB"
+
+#~ msgctxt "Abbreviation for gigabyte"
+#~ msgid "GB"
+#~ msgstr "GB"
+
+#~ msgctxt "Abbreviation for megabyte"
+#~ msgid "MB"
+#~ msgstr "MB"
+
+#~ msgctxt "Abbreviation for kilobyte"
+#~ msgid "KB"
+#~ msgstr "KB"
+
+#~ msgid "%d message"
+#~ msgid_plural "%d messages"
+#~ msgstr[0] "%d laiškas"
+#~ msgstr[1] "%d laiškai"
+#~ msgstr[2] "%d laiškų"
+
+#~ msgid "%s, %s"
+#~ msgstr "%s, %s"
+
+#~ msgid "Inboxes"
+#~ msgstr "Gautieji"
+
+#~ msgid "Search %s account"
+#~ msgstr "Ieškoti %s paskyros"
+
+#~ msgid "%d result"
+#~ msgid_plural "%d results"
+#~ msgstr[0] "%d rezultatas"
+#~ msgstr[1] "%d rezultatai"
+#~ msgstr[2] "%d rezultatų"
+
+#~ msgid "%u conversation selected."
+#~ msgid_plural "%u conversations selected."
+#~ msgstr[0] "Pasirinktas %u pokalbis."
+#~ msgstr[1] "Pasirinkti %u pokalbiai."
+#~ msgstr[2] "Pasirinkta %u pokalbių."
+
+#~ msgid "No search results found."
+#~ msgstr "Nerasta jokių paieškos rezultatų."
+
+#~ msgid "No conversations in folder."
+#~ msgstr "Aplanke pokalbių nėra."
+
+#~ msgid "Always Show From Sender"
+#~ msgstr "Visada rodyti nuo siuntėjo"
+
+#~ msgid "Date:"
+#~ msgstr "Data:"
+
+#~ msgid "%u read message"
+#~ msgid_plural "%u read messages"
+#~ msgstr[0] "%u skaitytas laiškas"
+#~ msgstr[1] "%u skaityti laiškai"
+#~ msgstr[2] "%u skaitytų laiškų"
+
+#~ msgid "This message was sent successfully, but could not be saved to %s."
+#~ msgstr "Šis laiškas buvo sėkmingai išsiųstas, bet jo nepavyko įrašyti į %s."
+
+#~ msgid "_Copy"
+#~ msgstr "_Kopijuoti"
+
+#~ msgid "Copy _Email Address"
+#~ msgstr "Kopijuoti _el. pašto adresą"
+
+#~ msgid "Copy _Link"
+#~ msgstr "Kopijuoti _nuorodą"
+
+#~ msgid "Select _Message"
+#~ msgstr "Pasirinkti _laišką"
+
+#~ msgid "Select _All"
+#~ msgstr "Pasirinkti _viską"
+
+#~ msgid "_Inspect"
+#~ msgstr "_Tikrinti"
+
+#~ msgid "This link appears to go to"
+#~ msgstr "Ši nuoroda nurodo į"
+
+#~ msgid "but actually goes to"
+#~ msgstr "bet iš tiesų nukreipia į"
+
+#~ msgid " (Invalid?)"
+#~ msgstr " (Negaliojantis?)"
+
+#~ msgid "_Save Image As..."
+#~ msgstr "Į_rašyti paveikslą kaip..."
+
+#~ msgid "_Save As..."
+#~ msgstr "Į_rašyti kaip..."
+
+#~ msgid "Save All A_ttachments..."
+#~ msgstr "Įrašyti visus _priedus..."
+
+#~ msgid "Save A_ttachment..."
+#~ msgid_plural "Save All A_ttachments..."
+#~ msgstr[0] "Irašyti pr_iedą..."
+#~ msgstr[1] "Įrašyti pr_iedus..."
+#~ msgstr[2] "Įrašyti pr_iedus..."
+
+#~ msgid "Reply to _All"
+#~ msgstr "Atsakyti _visiems"
+
+#~ msgid "_Mark as Read"
+#~ msgstr "_Žymėti kaip skaitytą"
+
+#~ msgid "_Mark as Unread"
+#~ msgstr "_Žymėti kaip neskaitytą"
+
+#~ msgid "Mark Unread From _Here"
+#~ msgstr "Žymėti neskaitytą nuo _čia"
+
+#~ msgid "_View Source"
+#~ msgstr "Ž_iūrėti pradinį kodą"
+
+#~ msgid "Failed to open default text editor."
+#~ msgstr "Nepavyko atverti numatytojo tekstų redaktoriaus."
+
+#~ msgid "%s - Conversation Inspector"
+#~ msgstr "%s - Pokalbio tikrintojas"
+
+#~ msgid "Saved"
+#~ msgstr "Įrašyta"
+
+#~ msgid "Saving"
+#~ msgstr "Įrašoma"
+
+#~ msgid "Error saving"
+#~ msgstr "Klaida, įrašant"
+
+#~ msgid "Press Backspace to delete quote"
+#~ msgstr "Paspauskite naikinimo klavišą (Backspace) citatai ištrinti"
+
+#~ msgid ""
+#~ "attach|attaching|attaches|attachment|attachments|attached|enclose|"
+#~ "enclosed|enclosing|encloses|enclosure|enclosures"
+#~ msgstr ""
+#~ "prisegtas|prisegta|prisegu|prisegiau|pridėtas|pridėta|pridedu|pridėjau|"
+#~ "failas|failai|failų|byla|bylos|bylų|rinkmena|rinkmenos|rinkmenų|"
+#~ "prisegtukas|priedas|priedai"
+
+#~ msgid "Do you want to discard this message?"
+#~ msgstr "Ar norite atmestį šį laišką?"
+
+#~ msgid "Send message with an empty subject and body?"
+#~ msgstr "Ar siųsti laišką be temos ir teksto?"
+
+#~ msgid "Send message without an attachment?"
+#~ msgstr "Ar siųsti laišką be priedų?"
+
+#~ msgid "Cannot add attachment"
+#~ msgstr "Nepavyksta pridėti priedo"
+
+#~ msgid "\"%s\" could not be found."
+#~ msgstr "Nepavyko rasti \"%s\"."
+
+#~ msgid "\"%s\" is a folder."
+#~ msgstr "\"%s\" yra aplankas."
+
+#~ msgid "\"%s\" is an empty file."
+#~ msgstr "\"%s\" yra tuščias failas."
+
+#~ msgid "\"%s\" could not be opened for reading."
+#~ msgstr "\"%s\" nepavyko atverti skaitymui."
+
+#~ msgid "\"%s\" already attached for delivery."
+#~ msgstr "\"%s\" jau yra pridėtas išsiuntimui."
+
+#~ msgid "%s (%s)"
+#~ msgstr "%s (%s)"
+
+#~ msgid "To: "
+#~ msgstr "Kam: "
+
+#~ msgid "Cc: "
+#~ msgstr "Kopija: "
+
+#~ msgid "Bcc: "
+#~ msgstr "Nematoma kopija: "
+
+#~ msgid "Reply-To: "
+#~ msgstr "Kam atsakyti: "
+
+#~ msgid "Select Color"
+#~ msgstr "Pasirinkti spalvą"
+
+#~ msgid "%1$s via %2$s"
+#~ msgstr "%1$s per %2$s"
+
+#~ msgid "_From:"
+#~ msgstr "_Nuo:"
+
+#~ msgid "%s (%d)"
+#~ msgstr "%s (%d)"
+
+#~ msgid "Sending..."
+#~ msgstr "Siunčiama..."
+
+#~ msgid "%i match"
+#~ msgid_plural "%i matches"
+#~ msgstr[0] "%i atitikmuo"
+#~ msgstr[1] "%i atitikmenys"
+#~ msgstr[2] "%i atitikmenų"
+
+#~ msgid "%i match (wrapped)"
+#~ msgid_plural "%i matches (wrapped)"
+#~ msgstr[0] "%i atitikmuo (perkeltas)"
+#~ msgstr[1] "%i atitikmenys (perkelti)"
+#~ msgstr[2] "%i atitikmenų (perkelti)"
+
+#~ msgid "not found"
+#~ msgstr "nerasta"
+
+#~ msgid "_OK"
+#~ msgstr "_Gerai"
+
+#~ msgid "_Cancel"
+#~ msgstr "_Atsisakyti"
+
+#~ msgid "_Discard"
+#~ msgstr "_Atmesti"
+
+#~ msgid "_Open"
+#~ msgstr "At_verti"
+
+#~ msgid "_Print..."
+#~ msgstr "_Spausdinti..."
+
+#~ msgid "_Remove"
+#~ msgstr "Ša_linti"
+
+#~ msgid "_Keep"
+#~ msgstr "_Palikti"
+
+#~ msgid "Search all mail in account for keywords (Ctrl+S)"
+#~ msgstr "Visame paskyros pašte ieškoti raktažodžių (Ctrl+S (Vald+S)"
+
+#~ msgid "Indexing %s account"
+#~ msgstr "Indeksuojama %s paskyra"
+
+#~ msgid "Send by Email"
+#~ msgstr "Siųsti el. paštu"
+
+#~ msgid "Send files using Mail"
+#~ msgstr "Siųsti failus, naudojantis Paštu"
+
+#~ msgid "Welcome to Mail"
+#~ msgstr "Sveiki atvykę į Paštą"
+
+#~ msgid "More options"
+#~ msgstr "Daugiau parinkčių"
+
+#~ msgid "Search %s"
+#~ msgstr "Ieškoti %s"
+
+#~ msgid "Reading"
+#~ msgstr "Skaitymas"
+
+#~ msgid "Automatically select next message:"
+#~ msgstr "Automatiškai pasirinkti kitą laišką:"
+
+#~ msgid "Conversation previews:"
+#~ msgstr "Pokalbių peržiūros:"
+
+#~ msgid "Three-pane layout:"
+#~ msgstr "Trijų polangių išdėstymas:"
+
+#~ msgid "Composer"
+#~ msgstr "Rašyklė"
+
+#~ msgid "Spell check:"
+#~ msgstr "Rašybos tikrinimas:"
+
+#~ msgid "Notifications"
+#~ msgstr "Pranešimai"
+
+#~ msgid "Always watch for new mail:"
+#~ msgstr "Visada stebėti ar nėra naujų laiškų:"
+
+#~ msgid "Delete Conversation (Shift+Delete)"
+#~ msgid_plural "Delete Conversations (Shift+Delete)"
+#~ msgstr[0] "Ištrinti pokalbį (Shift+Delete (Lyg2+Šalinti))"
+#~ msgstr[1] "Ištrinti pokalbius (Shift+Delete (Lyg2+Šalinti))"
+#~ msgstr[2] "Ištrinti pokalbius (Shift+Delete (Lyg2+Šalinti))"
+
+#~ msgid "Delete Conversations (Shift+Delete)"
+#~ msgstr "Ištrinti pokalbį (Shift+Delete (Lyg2+Šalinti))"
+
+#~ msgid ""
+#~ "<span weight=\"bold\" size=\"larger\">Are you sure you want to remove "
+#~ "this account?</span> "
+#~ msgstr ""
+#~ "<span weight=\"bold\" size=\"larger\">Ar tikrai norite pašalinti šią "
+#~ "paskyrą?</span> "
+
+#~ msgid ""
+#~ "All email associated with this account will be removed from your "
+#~ "computer. This will not affect email on the server."
+#~ msgstr ""
+#~ "Visas su šia paskyra susietas el. paštas bus pašalintas iš jūsų "
+#~ "kompiuterio. Tai nepaveiks serveryje esančio el. pašto."
+
+#~ msgid "Nickname:"
+#~ msgstr "Slapyvardis:"
+
+#~ msgid "Find"
+#~ msgstr "Rasti"
+
+#~ msgid "Previous Result"
+#~ msgstr "Ankstesnis rezultatas"
+
+#~ msgid "Next result"
+#~ msgstr "Kitas rezultatas"
+
+#~ msgid "_Case sensitive"
+#~ msgstr "_Skirti raidžių lygį"
+
+#~ msgid "label"
+#~ msgstr "etiketė"
+
+#~ msgid "Geary update in progress…"
+#~ msgstr "Geary atnaujinimas eigoje…"
+
+#~ msgid "Remove email address"
+#~ msgstr "Šalinti el. pašto adresą"
+
+#~ msgid ""
+#~ "Some email services require additional addresses be configured on the "
+#~ "server.  Contact your email provider for more information."
+#~ msgstr ""
+#~ "Kai kurios el. pašto paslaugos reikalauja, kad serveryje būtų "
+#~ "sukonfigūruoti papildomi adresai. Išsamesnei informacijai, susisiekite su "
+#~ "savo tiekėju."
+
+#~ msgid "_Update"
+#~ msgstr "Atna_ujinti"
+
+#~ msgid "Please wait while Geary validates your account."
+#~ msgstr "Prašome palaukti, kol Geary patvirtins jūsų paskyrą."
+
+#~ msgid "_Redo"
+#~ msgstr "_Grąžinti"
+
+#~ msgid "Cu_t"
+#~ msgstr "Iškirp_ti"
+
+#~ msgid "_Paste"
+#~ msgstr "Į_dėti"
+
+#~ msgid "_Left"
+#~ msgstr "_Kairėje"
+
+#~ msgid "_Right"
+#~ msgstr "_Dešinėje"
+
+#~ msgid "_Center"
+#~ msgstr "_Centre"
+
+#~ msgid "_Justify"
+#~ msgstr "A_bipusis lygiavimas"
+
+#~ msgid "Link (Ctrl+L)"
+#~ msgstr "Nuoroda (Ctrl+L (Vald+L))"
+
+#~ msgid "C_olor"
+#~ msgstr "S_palva"
+
+#~ msgid "Quote text  (Ctrl+])"
+#~ msgstr "Cituoti tekstą (Ctrl+] (Vald+]))"
+
+#~ msgctxt "Clipboard paste with rich text"
+#~ msgid "Paste _With Formatting"
+#~ msgstr "Įdėti _su formatavimu"
+
+#~ msgid "Bold (Ctrl+B)"
+#~ msgstr "Pusjuodis (Ctrl+B (Vald+B))"
+
+#~ msgid "Italic (Ctrl+I)"
+#~ msgstr "Kursyvas (Ctrl+I (Vald+I))"
+
+#~ msgid "Show Extended Fields"
+#~ msgstr "Rodyti išplėstinius laukus"
+
+#~ msgctxt "Label"
+#~ msgid "Close and Save"
+#~ msgstr "Užverti ir įrašyti"
+
+#~ msgctxt "Short Label"
+#~ msgid "Close and Save"
+#~ msgstr "Užverti ir įrašyti"
+
+#~ msgctxt "Tooltip"
+#~ msgid "Close and Save"
+#~ msgstr "Užverti ir įrašyti"
+
+#~ msgctxt "Label"
+#~ msgid "Close and Discard"
+#~ msgstr "Užverti ir atmesti"
+
+#~ msgctxt "Short Label"
+#~ msgid "Close and Discard"
+#~ msgstr "Užverti ir atmesti"
+
+#~ msgctxt "Tooltip"
+#~ msgid "Close and Discard"
+#~ msgstr "Užverti ir atmesti"
+
+#~ msgid "Lar_ge"
+#~ msgstr "Di_delis"
+
+#~ msgid "Large"
+#~ msgstr "Didelis"
+
+#~ msgid "_Medium"
+#~ msgstr "_Vidutinis"
+
+#~ msgid "Medium"
+#~ msgstr "Vidutinis"
+
+#~ msgid "_Small"
+#~ msgstr "_Mažas"
+
+#~ msgid "Small"
+#~ msgstr "Mažas"
+
+#~ msgid "S_ans Serif"
+#~ msgstr "N_eserifinis"
+
+#~ msgid "Sans Serif"
+#~ msgstr "Neserifinis"
+
+#~ msgid "S_erif"
+#~ msgstr "Se_rifinis"
+
+#~ msgid "Serif"
+#~ msgstr "Serifinis"
+
+#~ msgid "_Fixed Width"
+#~ msgstr "_Lygiaplotis"
+
+#~ msgid "Fixed Width"
+#~ msgstr "Lygiaplotis"
+
+#~ msgid "Detach"
+#~ msgstr "Atskirti"
+
+#~ msgid "Detach (Ctrl+D)"
+#~ msgstr "Atskirti (Ctrl+D (Vald+D)"
+
+#~ msgid "_Send"
+#~ msgstr "_Siųsti"
+
+#~ msgid "Send (Ctrl+Enter)"
+#~ msgstr "Siųsti (Ctrl+Enter (Vald+Įvedimas))"
+
+#~ msgid "_Attach File"
+#~ msgstr "_Pridėti failą"
+
+#~ msgid "Attach File"
+#~ msgstr "Pridėti failą"
+
+#~ msgid "_Include Original Attachments"
+#~ msgstr "Į_traukti pradinius priedus"
+
+#~ msgid "Include Original Attachments"
+#~ msgstr "Įtraukti pradinius priedus"
+
+#~ msgid "Application Menu"
+#~ msgstr "Programų meniu"
+
+#~ msgid "_To"
+#~ msgstr "_Kam"
+
+#~ msgid "_Cc"
+#~ msgstr "K_opija"
+
+#~ msgid "_Subject"
+#~ msgstr "_Tema"
+
+#~ msgid "_Bcc"
+#~ msgstr "_Nematoma kopija"
+
+#~ msgid "_Reply-To"
+#~ msgstr "Kam atsak_yti"
+
+#~ msgid "From"
+#~ msgstr "Nuo"
+
+#~ msgid "Drop files here"
+#~ msgstr "Numeskite failus čia"
+
+#~ msgid "To add them as attachments"
+#~ msgstr "Kad pridėtumėte juos kaip priedus"
+
+#~ msgid "<span weight=\"bold\" size=\"larger\">Cannot remove account</span> "
+#~ msgstr ""
+#~ "<span weight=\"bold\" size=\"larger\">Nepavyksta pašalinti paskyros</"
+#~ "span> "
+
+#~ msgid ""
+#~ "A composer window associated with this account is currently open. Send or "
+#~ "discard the message and try again."
+#~ msgstr ""
+#~ "Šiuo metu yra atvertas su šia paskyra susietas rašyklės langas. "
+#~ "Išsiųskite arba atmeskite laišką ir bandykite dar kartą."
+
+#~ msgid "Addi_tional email addresses…"
+#~ msgstr "Pap_ildomi el. pašto adresai…"
+
+#~ msgid "_Save sent mail"
+#~ msgstr "Į_rašyti išsiųstus laiškus"
+
+#~ msgid "Password"
+#~ msgstr "Slaptažodis"
+
+#~ msgid "_Password:"
+#~ msgstr "Sla_ptažodis:"
+
+#~ msgid "Work, Home, etc."
+#~ msgstr "Darbas, namai ir t.t."
+
+#~ msgid "N_ickname:"
+#~ msgstr "S_lapyvardis:"
+
+#~ msgid "S_ervice:"
+#~ msgstr "_Paslauga:"
+
+#~ msgid "IMAP settings"
+#~ msgstr "IMAP nustatymai"
+
+#~ msgid "Se_rver:"
+#~ msgstr "Se_rveris:"
+
+#~ msgid "P_ort"
+#~ msgstr "Pri_evadas"
+
+#~ msgid "Ser_ver:"
+#~ msgstr "_Serveris:"
+
+#~ msgid "Por_t"
+#~ msgstr "Pri_evadas"
+
+#~ msgid "SMTP settings"
+#~ msgstr "SMTP nustatymai"
+
+#~ msgid "User_name:"
+#~ msgstr "Naudotojo _vardas:"
+
+#~ msgid "Pass_word:"
+#~ msgstr "S_laptažodis:"
+
+#~ msgid "SMTP username"
+#~ msgstr "SMTP naudotojo vardas"
+
+#~ msgid "SMTP password"
+#~ msgstr "SMTP slaptažodis"
+
+#~ msgid "_Username:"
+#~ msgstr "_Naudotojo vardas:"
+
+#~ msgid "IMAP username"
+#~ msgstr "IMAP naudotojo vardas"
+
+#~ msgid "IMAP password"
+#~ msgstr "IMAP slaptažodis"
+
+#~ msgid "Encr_yption:"
+#~ msgstr "Ši_fravimas:"
+
+#~ msgid "Encrypt_ion:"
+#~ msgstr "Šifra_vimas:"
+
+#~ msgid "SSL/TLS"
+#~ msgstr "SSL/TLS"
+
+#~ msgid "STARTTLS"
+#~ msgstr "STARTTLS"
+
+#~ msgid "No authentication re_quired"
+#~ msgstr "Tapatybės nustatymas n_ereikalingas"
+
+#~ msgid "Use IMAP cre_dentials"
+#~ msgstr "Naudoti IMAP prisijungimo duomenis"
+
+#~ msgid "Storage"
+#~ msgstr "Kaupiklis"
+
+#~ msgid "_Download mail"
+#~ msgstr "_Atsisiųsti paštą"
+
+#~ msgid "Save dra_fts on server"
+#~ msgstr "Įrašyti juo_draščius serveryje"
+
+#~ msgid "Si_gn emails (HTML allowed):"
+#~ msgstr "Pasirašyti el. laiškus (leidžiama HTML):"
+
+#~ msgid "Add account"
+#~ msgstr "Pridėti paskyrą"
+
+#~ msgid "Edit account"
+#~ msgstr "Taisyti paskyrą"
+
+#~ msgid "Remove account"
+#~ msgstr "Šalinti paskyrą"
+
+#~ msgid "Untrusted Connection"
+#~ msgstr "Nepatikimas ryšys"
+
+#~ msgid "_Always Trust This Server"
+#~ msgstr "_Visada pasitikėti šiuo serveriu"
+
+#~ msgid "_Trust This Server"
+#~ msgstr "_Pasitikėti šiuo serveriu"
+
+#~ msgid "_Don't Trust This Server"
+#~ msgstr "_Nepasitikėti šiuo serveriu"
+
+#~ msgid "SMTP Credentials"
+#~ msgstr "SMTP prisijungimo duomenys"
+
+#~ msgid "Username"
+#~ msgstr "Naudotojo vardas"
+
+#~ msgid "_Remember password"
+#~ msgstr "P_risiminti slaptažodį"
+
+#~ msgid "_Authenticate"
+#~ msgstr "_Nustatyti tapatybę"
+
+#~ msgid "© 2011-2015 Yorba Foundation, © 2016 elementary LLC."
+#~ msgstr "© 2011-2015 Yorba Foundation, © 2016 elementary LLC."
+
+#~ msgid ""
+#~ "Mail encountered an error sending an email.  If the problem persists, "
+#~ "please manually delete the email from your Outbox folder."
+#~ msgstr ""
+#~ "Paštas susidūrė su klaida, siunčiant laišką. Jeigu klaida išlieka, "
+#~ "prašome rankiniu būdu ištrinti laišką iš Siunčiamųjų aplanko."
+
+#~ msgid ""
+#~ "Mail encountered an error saving a sent message to Sent Mail.  The "
+#~ "message will stay in your Outbox folder until you delete it."
+#~ msgstr ""
+#~ "Paštas susidūrė su klaida įrašant laišką į išsiųstų laiškų aplanką. "
+#~ "Laiškas liks Siunčiamųjų aplanke tol, kol jį ištrinsite."
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to corruption of the database file in this directory:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Mail can rebuild the database and re-synchronize with the server or "
+#~ "exit.\n"
+#~ "\n"
+#~ "Rebuilding the database will destroy all local email and its attachments. "
+#~ "<b>The mail on the your server will not be affected.</b>"
+#~ msgstr ""
+#~ "Įvyko klaida, atveriant šios paskyros vietinę duomenų bazę. Klaida "
+#~ "susijusi su galimai pažeistu duomenų bazės failu šiame kataloge.\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Paštas gali iš naujo sukurti duomenų bazę ir iš naujo sinchronizuoti ją "
+#~ "su serveriu arba išeiti.\n"
+#~ "\n"
+#~ "Duomenų bazės kūrimas iš naujo pašalins visus vietinius laiškus ir jų "
+#~ "priedus. <b>Serveryje esantis paštas nebus paveiktas.</b>"
+
+#~ msgid ""
+#~ "The version number of the local mail database is formatted for a newer "
+#~ "version of Mail. Unfortunately, the database cannot be \"rolled back\" to "
+#~ "work with this version of Mail.\n"
+#~ "\n"
+#~ "Please install the latest version of Mail and try again."
+#~ msgstr ""
+#~ "Vietinės laiškų duomenų bazės numeris yra suformatuotas naujesnei Pašto "
+#~ "versijai. Deja, duomenų bazė negali būti \"grąžinta\" darbui su šia Pašto "
+#~ "versija.\n"
+#~ "\n"
+#~ "Prašome įdiegti naujausią Pašto versiją ir bandyti dar kartą."
+
+#~ msgid ""
+#~ "There was an error opening the local account. This is probably due to "
+#~ "connectivity issues.\n"
+#~ "\n"
+#~ "Please check your network connection and restart Mail."
+#~ msgstr ""
+#~ "Atveriant vietinę paskyrą, įvyko klaida. Tikriausiai, tai atsitiko dėl "
+#~ "ryšio problemų.\n"
+#~ "\n"
+#~ "Prašome patikrinti tinklo ryšį ir iš naujo paleisti Paštą."
+
+#~ msgid "This removes the email from Mail and your email server."
+#~ msgstr "Tai pašalina el. paštą iš Pašto ir jūsų el. pašto serverio."
+
+#~ msgid "        &#8226; Email address already added to Mail.\n"
+#~ msgstr "        &#8226; El. pašto adresas jau pridėtas į Paštą.\n"
+
+#~ msgid "Mail requires your email password to continue"
+#~ msgstr "Norint tęsti, paštui reikalingas jūsų el. pašto slaptažodis"
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Mail not to access this "
+#~ "server."
+#~ msgstr ""
+#~ "Pasirinkus \"Nepasitikėti šiuo serveriu\" Paštas nebesijungs prie šio "
+#~ "serverio."
+
+#~ msgid "Mail will not add or update this email account."
+#~ msgstr "Paštas nepridės ir neatnaujins šios el. pašto paskyros."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Mail to stop accessing "
+#~ "this account."
+#~ msgstr ""
+#~ "Pasirinkus \"Nepasitikėti šiuo serveriu\" Paštas nebeaptarnaus šios "
+#~ "paskyros."
+
+#~ msgid "Mail will exit if you have no other open email accounts."
+#~ msgstr ""
+#~ "Paštas baigs savo darbą, jei neturėsite jokių kitų atvertų el. pašto "
+#~ "paskyrų."
+
+#~ msgid "Please wait while Mail validates your account."
+#~ msgstr "Prašome palaukti, kol Paštas patvirtins jūsų paskyrą."
+
+#~ msgid "Mail update in progress…"
+#~ msgstr "Pašto atnaujinimas eigoje…"
+
+#~ msgid ""
+#~ "2011-2015 Yorba Foundation\n"
+#~ "© 2016 elementary LLC."
+#~ msgstr ""
+#~ "2011-2015 Yorba Foundation\n"
+#~ "© 2016 elementary LLC."
+
+#~ msgid "Show About dialog"
+#~ msgstr "Rodyti Apie dialogą"
+
+#~ msgid "Save Attachment…"
+#~ msgstr "Įrašyti priedą…"
+
+#~ msgid "Save All Attachments…"
+#~ msgstr "Įrašyti visus priedus…"
+
+#~ msgid "View Source"
+#~ msgstr "Žiūrėti pradinį kodą"
+
+#~ msgid "View message"
+#~ msgstr "Žiūrėti laišką"
+
+#~ msgid "Copy Email Address"
+#~ msgstr "Kopijuoti el. pašto adresą"
+
+#~ msgid "Hide message"
+#~ msgstr "Slėpti laišką"
+
+#~ msgid "Case sensitive"
+#~ msgstr "Skirti raidžių dydį"
+
+#~ msgid "%u match"
+#~ msgid_plural "%u matches"
+#~ msgstr[0] "%u atitikmuo"
+#~ msgstr[1] "%u atitikmenys"
+#~ msgstr[2] "%u atitikmenų"
+
+#~ msgid "no-reply;no_reply;noreply;do-not-reply;do_not_reply;donotreply"
+#~ msgstr ""
+#~ "no-reply;no_reply;noreply;do-not-"
+#~ "reply;do_not_reply;donotreply;neatsakyti;neatsakyt;neatsakineti;neatsakinet;neatsakykite;neatsakykit;neatsakinekit;neatsakinekite"
+
+#~ msgid "Include original attachments"
+#~ msgstr "Įtraukti pradinius priedus"
+
+#~ msgid "Don't ask me again"
+#~ msgstr "Daugiau nebeklausti"
+
+#~ msgid "Are you sure you want to remove this account?"
+#~ msgstr "Ar tikrai norite pašalinti šią paskyrą?"
+
+#~ msgid "Username:"
+#~ msgstr "Naudotojo vardas:"
+
+#~ msgid "Password:"
+#~ msgstr "Slaptažodis:"
+
+#~ msgid "SMTP Credentials:"
+#~ msgstr "SMTP prisijungimo duomenys:"
+
+#~ msgid "Remember password"
+#~ msgstr "Prisiminti slaptažodį"
+
+#~ msgid "Authenticate"
+#~ msgstr "Nustatyti tapatybę"
+
+#~ msgid "Strikethrough (Ctrl+%)"
+#~ msgstr "Perbrauktas (Ctrl+% (Vald+%))"
+
+#~ msgid "Link (Ctrl+K)"
+#~ msgstr "Nuoroda (Ctrl+K (Vald+K))"
+
+#~ msgid "Forward (Ctrl+Shift+F)"
+#~ msgstr "Persiųsti (Ctrl+Shift+F (Vald+Lyg2+F))"

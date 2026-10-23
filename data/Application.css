@@ -1,0 +1,91 @@
+.titlebar + scrolledwindow undershoot.top {
+    background:
+        linear-gradient(
+            @borders,
+            alpha(black, 0.05) 1px,
+            alpha(black, 0.0) 0.444rem
+        );
+}
+
+.card.collapsed {
+    margin-bottom: -64px;
+}
+
+.conversation-list-item {
+    box-shadow: 0 -1px 0 @menu_separator;
+}
+
+affordance {
+    padding: 1em;
+}
+
+affordance.start:dir(ltr),
+affordance.end:dir(rtl) {
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+
+}
+
+affordance.end:dir(ltr),
+affordance.start:dir(rtl) {
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+affordance label {
+    color: inherit;
+    font-weight: 600;
+}
+
+affordance.archive {
+    background-color: mix(@theme_bg_color, @GRAPE_500, 0.3);
+    color: mix(@theme_fg_color, @GRAPE_500, 0.6);
+}
+
+affordance.trash {
+    background-color: mix(@theme_bg_color, @STRAWBERRY_500, 0.3);
+    color: mix(@theme_fg_color, @error_color, 0.6);
+}
+
+entry button,
+entry entry {
+	border: none;
+	box-shadow: none;
+	background: none;
+	padding: 0;
+}
+
+entry button label {
+    opacity: 0.6;
+    padding: 0 3px;
+}
+
+entry button:hover label {
+    opacity: 1;
+}
+
+entry button:focus {
+    background-color: alpha(@text_color, 0.15);
+}
+
+entry button:checked label {
+    color: @accent_color;
+    opacity: 1;
+}
+
+entry button:disabled label {
+    opacity: 0.5;
+}
+
+.unread-message {
+    font-weight: bolder;
+}
+
+/* Overlay only the star glyph; never paint a tile over the sender avatar. */
+.conversation-list-item .avatar-star {
+    color: #e5a50a;
+    background: none;
+    border: none;
+    box-shadow: none;
+    -gtk-icon-shadow: 0 1px 1px alpha(black, 0.35);
+}

@@ -1,0 +1,1672 @@
+# Kazakh translation for geary.
+# Copyright (C) 2014 geary's COPYRIGHT HOLDER
+# This file is distributed under the same license as the geary package.
+# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: geary master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-08 16:46+0000\n"
+"PO-Revision-Date: 2015-11-24 15:45+0000\n"
+"Last-Translator: elementary Apps team <Unknown>\n"
+"Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
+"Language: kk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2017-03-09 05:59+0000\n"
+"X-Generator: Launchpad (build 18330)\n"
+
+#: src/Application.vala:145
+#, fuzzy
+#| msgid "Unable to validate:\n"
+msgid "Unable to open System Settings"
+msgstr "Тексеру сәтсіз аяқталды:\n"
+
+#: src/Application.vala:146
+msgid ""
+"Open System Settings manually or install Evolution to set up online accounts."
+msgstr ""
+
+#: src/Application.vala:217
+msgid ""
+"Mail will automatically start when this device turns on and run when its "
+"window is closed so that it can send notifications when new mail arrives."
+msgstr ""
+
+#: src/Composer.vala:94 src/MessageList/MessageListItem.vala:102
+msgid "From:"
+msgstr "Кімнен:"
+
+#: src/Composer.vala:114 src/MessageList/MessageListItem.vala:108
+msgid "To:"
+msgstr "Кімге:"
+
+#: src/Composer.vala:120
+#, fuzzy
+msgid "Cc"
+msgstr "Көшірмесі:"
+
+#: src/Composer.vala:122
+#, fuzzy
+msgid "Bcc"
+msgstr "Жасырын көшірме:"
+
+#: src/Composer.vala:133 src/MessageList/MessageListItem.vala:148
+msgid "Cc:"
+msgstr "Көшірмесі:"
+
+#: src/Composer.vala:152
+msgid "Bcc:"
+msgstr "Жасырын көшірме:"
+
+#: src/Composer.vala:171 src/MessageList/MessageListItem.vala:114
+msgid "Subject:"
+msgstr "Тақырып:"
+
+#: src/Composer.vala:205
+msgid "Insert Image"
+msgstr ""
+
+#: src/Composer.vala:232
+msgid "Delete draft"
+msgstr ""
+
+#: src/Composer.vala:240
+msgid "Attach file"
+msgstr ""
+
+#: src/Composer.vala:251
+msgid "Insert Signature…"
+msgstr ""
+
+#: src/Composer.vala:256
+msgid "Send"
+msgstr ""
+
+#: src/Composer.vala:299
+msgid "New Message"
+msgstr "Жаңа хат"
+
+#: src/Composer.vala:445
+msgid "Choose a file"
+msgstr "Файлды таңдау"
+
+#: src/Composer.vala:448
+#, fuzzy
+#| msgid "_Attach"
+msgid "Attach"
+msgstr "Салынымды қ_осып жіберу"
+
+#: src/Composer.vala:449 src/Composer.vala:472 src/Composer.vala:763
+#: src/Dialogs/InsertLinkDialog.vala:66
+#: src/MessageList/AttachmentButton.vala:144
+msgid "Cancel"
+msgstr ""
+
+#: src/Composer.vala:464
+#, fuzzy
+#| msgid "Show Images"
+msgid "Images"
+msgstr "Суреттерді көрсету"
+
+#: src/Composer.vala:468
+#, fuzzy
+#| msgid "Choose a file"
+msgid "Choose an image"
+msgstr "Файлды таңдау"
+
+#: src/Composer.vala:471
+msgid "Insert"
+msgstr ""
+
+#: src/Composer.vala:500
+#, fuzzy
+#| msgid "Unable to validate:\n"
+msgid "Unable to insert image"
+msgstr "Тексеру сәтсіз аяқталды:\n"
+
+#: src/Composer.vala:501
+msgid "There was an unexpected error while trying to insert the image."
+msgstr ""
+
+#: src/Composer.vala:665
+msgid "%a, %b %-e, %Y at %-l:%M %p"
+msgstr "%a, %b %-e, %Y күні, уақыты %H:%M"
+
+#: src/Composer.vala:695
+#, c-format
+msgid "On %1$s, %2$s wrote:"
+msgstr "%1$s, %2$s жазған:"
+
+#: src/Composer.vala:699
+msgid "---------- Forwarded message ----------"
+msgstr "---------- Қайта бағдарланған хат ----------"
+
+#: src/Composer.vala:701
+#, fuzzy, c-format
+msgid "From: %s<br/>"
+msgstr "Кімнен: %s\n"
+
+#: src/Composer.vala:702
+#, fuzzy, c-format
+msgid "Subject: %s<br/>"
+msgstr "Тақырып: %s\n"
+
+#: src/Composer.vala:703
+#, fuzzy, c-format
+msgid "Date: %s<br/>"
+msgstr "Күні: %s\n"
+
+#: src/Composer.vala:704
+#, fuzzy, c-format
+msgid "To: %s<br/>"
+msgstr "Кімге: %s\n"
+
+#: src/Composer.vala:706
+#, fuzzy, c-format
+msgid "Cc: %s<br/>"
+msgstr "Көшірмесі: %s\n"
+
+#: src/Composer.vala:754
+#, fuzzy
+#| msgid "Do you want to permanently delete this message?"
+#| msgid_plural "Do you want to permanently delete these messages?"
+msgid "Permanently delete this draft?"
+msgstr "Бұл хат(тар)ды толығымен өшіруді қалайсыз ба?"
+
+#: src/Composer.vala:755
+msgid ""
+"You cannot undo this action, nor recover your draft once it has been deleted."
+msgstr ""
+
+#: src/Composer.vala:765
+#, fuzzy
+#| msgid "Delete"
+msgid "Delete Draft"
+msgstr "Өшіру"
+
+#: src/Composer.vala:789
+#, fuzzy
+msgid "Send without subject?"
+msgstr "Хатты бос тақырыппен жіберу керек пе?"
+
+#: src/Composer.vala:790
+msgid ""
+"This message has an empty subject field. The recipient may be unable to "
+"infer its scope or importance."
+msgstr ""
+
+#: src/Composer.vala:797
+msgid "Don't Send"
+msgstr ""
+
+#: src/Composer.vala:799
+msgid "Send Anyway"
+msgstr ""
+
+#: src/Composer.vala:830
+#, fuzzy
+#| msgid "Send message with an empty body?"
+msgid "Sent message was not saved"
+msgstr "Хатты бос денесімен жіберу керек пе?"
+
+#: src/Composer.vala:831
+msgid ""
+"The message was sent, however a copy was not saved to the Sent message "
+"folder."
+msgstr ""
+
+#: src/Composer.vala:846
+#, fuzzy
+#| msgid "Unable to validate:\n"
+msgid "Unable to send message"
+msgstr "Тексеру сәтсіз аяқталды:\n"
+
+#: src/Composer.vala:847
+msgid "There was an unexpected error while sending your message."
+msgstr ""
+
+#: src/Composer.vala:945 src/FolderList/FolderList.vala:55
+msgid "Edit Signatures…"
+msgstr ""
+
+#: src/Composer.vala:949
+msgid "None"
+msgstr "Ешнәрсе"
+
+#: src/Composer.vala:1140
+msgid "Unable to save draft"
+msgstr ""
+
+#: src/Composer.vala:1141
+msgid "There was an unexpected error while saving your draft."
+msgstr ""
+
+#: src/EditorToolbar.vala:55
+msgid "Bold"
+msgstr ""
+
+#: src/EditorToolbar.vala:62
+msgid "Italic"
+msgstr ""
+
+#: src/EditorToolbar.vala:73
+msgid "Underline"
+msgstr ""
+
+#: src/EditorToolbar.vala:85
+msgid "Strikethrough"
+msgstr ""
+
+#: src/EditorToolbar.vala:100
+msgid "Remove formatting"
+msgstr ""
+
+#: src/EditorToolbar.vala:108 src/Dialogs/InsertLinkDialog.vala:68
+msgid "Insert Link"
+msgstr ""
+
+#: src/InboxMonitor.vala:158 src/InboxMonitor.vala:170
+#, c-format
+msgid "%s to %s"
+msgstr ""
+
+#. /TRANSLATORS: The %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#: src/InboxMonitor.vala:165
+#, fuzzy, c-format
+#| msgid "%d new message"
+#| msgid_plural "%d new messages"
+msgid "%u new message"
+msgid_plural "%u new messages"
+msgstr[0] "%d жаңа хат"
+
+#. /TRANSLATORS: The first %s represents the number of new messages translated in your language, e.g. "2 new messages"
+#. /The next %s represents the number of senders
+#: src/InboxMonitor.vala:177
+#, c-format
+msgid "%s from %u sender"
+msgid_plural "%s from %u senders"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/MainWindow.vala:80
+#, fuzzy
+#| msgid "All Mail"
+msgid "Mail"
+msgstr "Барлық пошта"
+
+#: src/MainWindow.vala:123 src/Dialogs/AliasDialog/AliasDialog.vala:96
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:172
+msgid "Undo"
+msgstr ""
+
+#: src/MainWindow.vala:281
+#, fuzzy
+msgid "Message Archived"
+msgid_plural "Messages Archived"
+msgstr[0] "Бірде-бір сөйлесу таңдалмады."
+msgstr[1] "Бірде-бір сөйлесу таңдалмады."
+
+#: src/MainWindow.vala:285
+#, fuzzy
+msgid "Couldn't archive message"
+msgstr "%d хабарлама"
+
+#: src/MainWindow.vala:298
+#, fuzzy
+msgid "Message Moved"
+msgid_plural "Messages Moved"
+msgstr[0] "Бірде-бір сөйлесу таңдалмады."
+msgstr[1] "Бірде-бір сөйлесу таңдалмады."
+
+#: src/MainWindow.vala:302
+#, fuzzy
+#| msgid "Unable to validate:\n"
+msgid "Couldn't move message"
+msgstr "Тексеру сәтсіз аяқталды:\n"
+
+#: src/MainWindow.vala:315
+#, fuzzy
+msgid "Message Deleted"
+msgid_plural "Messages Deleted"
+msgstr[0] "Бірде-бір сөйлесу таңдалмады."
+msgstr[1] "Бірде-бір сөйлесу таңдалмады."
+
+#: src/MainWindow.vala:319
+msgid "Couldn't delete message"
+msgstr ""
+
+#: src/WelcomeView.vala:45
+msgid "Connect an Account"
+msgstr ""
+
+#: src/WelcomeView.vala:52
+msgid "Mail uses email accounts configured in System Settings."
+msgstr ""
+
+#: src/WelcomeView.vala:59
+#, fuzzy
+msgid "Online Accounts…"
+msgstr "Тіркелгілер"
+
+#: src/Backend/Account.vala:48
+#, fuzzy
+#| msgid "Unable to validate:\n"
+msgid "Unable to connect"
+msgstr "Тексеру сәтсіз аяқталды:\n"
+
+#: src/Backend/Account.vala:49
+msgid "There was an unexpected error while trying to connect to the server."
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:65
+#, c-format
+msgid "Moving messages… (%u remaining)"
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:98
+msgid "No Archive folder is configured."
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:126
+msgid "The destination folder was not found."
+msgstr ""
+
+#: src/Backend/MoveOperation.vala:130
+msgid "The source folder is the destination folder."
+msgstr ""
+
+#: src/Backend/Session.vala:642
+msgid "New Signature"
+msgstr ""
+
+#: src/Backend/ContactManager.vala:88 src/Backend/ContactManager.vala:122
+#, c-format
+msgid "Couldn't add “%s” to addressbook"
+msgstr ""
+
+#: src/Backend/ContactManager.vala:89
+msgid "No addressbook available."
+msgstr ""
+
+#: src/Backend/ContactManager.vala:123
+msgid "Operation failed."
+msgstr ""
+
+#: src/ConversationList/ConversationItemModel.vala:74
+#: src/ConversationList/ConversationItemModel.vala:112
+msgid ", "
+msgstr ""
+
+#: src/ConversationList/ConversationItemModel.vala:77
+#: src/ConversationList/ConversationItemModel.vala:115
+#: src/ConversationList/ConversationItemModel.vala:123
+#: src/MessageList/AttachmentButton.vala:100
+msgid "Unknown"
+msgstr ""
+
+#: src/ConversationList/ConversationList.vala:85
+msgid "Search Mail"
+msgstr ""
+
+#: src/ConversationList/ConversationList.vala:89
+#, fuzzy
+#| msgid "Add label to conversations"
+msgid "Hide read conversations"
+msgstr "Сөйлесулерге белгіні қосу"
+
+#: src/ConversationList/ConversationList.vala:90
+#, fuzzy
+#| msgid "Add label to conversations"
+msgid "Hide unstarred conversations"
+msgstr "Сөйлесулерге белгіні қосу"
+
+#: src/ConversationList/ConversationList.vala:107
+#, fuzzy
+msgid "Filter Conversations"
+msgstr "Сөйлесулерді белгілеу"
+
+#: src/ConversationList/ConversationList.vala:130
+#, fuzzy
+#| msgid "%d new message"
+#| msgid_plural "%d new messages"
+msgid "Fetch new messages"
+msgstr "%d жаңа хат"
+
+#: src/ConversationList/ConversationList.vala:137
+#, fuzzy
+#| msgid "%d new message"
+#| msgid_plural "%d new messages"
+msgid "Fetching new messages…"
+msgstr "%d жаңа хат"
+
+#: src/ConversationList/ConversationListItem.vala:94
+msgid "Archive"
+msgstr "Архив"
+
+#: src/ConversationList/ConversationListItem.vala:99
+msgid "Trash"
+msgstr "Қоқыс шелегі"
+
+#: src/ConversationList/ConversationListItem.vala:181
+#, fuzzy
+msgid "Unread"
+msgstr "%d оқылмаған"
+
+#: src/ConversationList/ConversationListItem.vala:194
+#, fuzzy
+msgid "Replied"
+msgstr "А_лмастыру"
+
+#: src/ConversationList/ConversationListItem.vala:198
+#, fuzzy
+msgid "Forwarded"
+msgstr "Қа_йта бағдарлау"
+
+#: src/ConversationList/ConversationListItem.vala:212
+#, fuzzy
+msgid "Move To Trash"
+msgstr "Сөйлесулерді жылжыту"
+
+#: src/ConversationList/ConversationListItem.vala:215
+#, fuzzy
+msgid "Mark As Unread"
+msgstr "Оқылмаған етіп бел_гілеу"
+
+#: src/ConversationList/ConversationListItem.vala:217
+#: src/MessageList/MessageList.vala:51
+#, fuzzy
+msgid "Mark as Read"
+msgstr "Оқылған етіп бел_гілеу"
+
+#: src/ConversationList/ConversationListItem.vala:221
+#: src/MessageList/MessageList.vala:52
+#, fuzzy
+msgid "Star"
+msgstr "_Жұлдызшаны орнату"
+
+#: src/ConversationList/ConversationListItem.vala:223
+#: src/MessageList/MessageList.vala:53
+#, fuzzy
+msgid "Unstar"
+msgstr "Жұлдызшаны алы_п тастау"
+
+#: src/Dialogs/InsertLinkDialog.vala:29
+msgid "URL:"
+msgstr ""
+
+#: src/Dialogs/InsertLinkDialog.vala:39
+msgid "Link Text:"
+msgstr ""
+
+#: src/Dialogs/InsertLinkDialog.vala:45
+msgid "Example Website"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/Alias.vala:52
+msgid "John Doe"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/Alias.vala:56
+msgid "Name"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/Alias.vala:75
+#, fuzzy
+#| msgid "Copy _Email Address"
+msgid "E-mail Address"
+msgstr "Эл. пошта а_дресін көшіру"
+
+#: src/Dialogs/AliasDialog/Alias.vala:80
+#, fuzzy
+#| msgid "Delete"
+msgid "Delete alias"
+msgstr "Өшіру"
+
+#: src/Dialogs/AliasDialog/Alias.vala:100
+#, fuzzy
+#| msgid "Edit Draft"
+msgid "Edit alias"
+msgstr "Шимайды түзету"
+
+#: src/Dialogs/AliasDialog/Alias.vala:175
+msgid "Name not set"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:33
+msgid "No Aliases"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:37
+msgid "Add aliases using the button in the toolbar below"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:67
+msgid "Add Alias…"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:104
+msgid "Aliases"
+msgstr ""
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:108
+#, fuzzy
+#| msgid "_Close"
+msgid "Close"
+msgstr "_Жабу"
+
+#: src/Dialogs/AliasDialog/AliasDialog.vala:178
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:330
+#, c-format
+msgid "'%s' deleted"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:39
+msgid "No Signatures"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:43
+msgid "Add signatures using the button in the toolbar below"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:67
+msgid "Create Signature"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:86
+msgid "Title"
+msgstr ""
+
+#. Work around a styling issue
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:99
+msgid "For example “Work” or “Personal”"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:122
+#, fuzzy
+#| msgid "Delete"
+msgid "Delete"
+msgstr "Өшіру"
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:131
+msgid "Set Default For…"
+msgstr ""
+
+#: src/Dialogs/SignatureDialog/SignatureDialog.vala:156
+msgid "Signature"
+msgstr ""
+
+#: src/FolderList/AccountItemModel.vala:155
+msgid "Edit Aliases…"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:48
+msgid "Refresh folder"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:53
+msgid "Rename folder"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:146
+#: src/FolderList/FolderItemModel.vala:175
+#: src/FolderList/FolderItemModel.vala:193
+#, c-format
+msgid "Couldn't rename “%s”"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:147
+msgid "Folder names cannot contain “/”"
+msgstr ""
+
+#: src/FolderList/FolderItemModel.vala:176
+#, c-format
+msgid "A folder named “%s” already exists"
+msgstr ""
+
+#: src/FolderList/FolderList.vala:34
+#, fuzzy
+msgid "Compose new message"
+msgstr "Жаңа хатты жазу (Ctrl+N, N)"
+
+#: src/FolderList/FolderList.vala:56
+msgid "Account Settings…"
+msgstr ""
+
+#: src/FolderList/FolderList.vala:59
+#, fuzzy
+msgid "Always Show Remote Images"
+msgstr "Жіберушіден әрқашан көрсету"
+
+#: src/FolderList/FolderList.vala:65
+msgid "Menu"
+msgstr ""
+
+#: src/FolderList/GroupedFolderItemModel.vala:38
+#, fuzzy
+#| msgid "Inbox"
+msgctxt "Inbox Folder"
+msgid "Inbox"
+msgstr "Кіріс"
+
+#: src/FolderList/GroupedFolderItemModel.vala:42
+#, fuzzy
+#| msgid "Archive"
+msgctxt "Archive Folder"
+msgid "Archive"
+msgstr "Архив"
+
+#: src/FolderList/GroupedFolderItemModel.vala:46
+#, fuzzy
+#| msgid "Sent Mail"
+msgctxt "Sent Folder"
+msgid "Sent"
+msgstr "Жіберілген хаттар"
+
+#: src/FolderList/SessionItemModel.vala:28
+msgid "All Mailboxes"
+msgstr ""
+
+#: src/MessageList/MessageList.vala:28 src/MessageList/MessageListItem.vala:210
+msgid "Reply"
+msgstr ""
+
+#: src/MessageList/MessageList.vala:37 src/MessageList/MessageListItem.vala:213
+#, fuzzy
+msgid "Reply All"
+msgstr "Барлығына жауап б_еру"
+
+#: src/MessageList/MessageList.vala:46 src/MessageList/MessageListItem.vala:216
+msgid "Forward"
+msgstr ""
+
+#: src/MessageList/MessageList.vala:50
+#, fuzzy
+msgid "Mark as Unread"
+msgstr "Оқылмаған етіп бел_гілеу"
+
+#: src/MessageList/MessageList.vala:60
+#, fuzzy
+msgid "Mark Conversation"
+msgstr "Сөйлесулерді белгілеу"
+
+#: src/MessageList/MessageList.vala:68
+#, fuzzy
+msgid "Move Conversation to…"
+msgstr "Сөйлесулерді жылжыту"
+
+#: src/MessageList/MessageList.vala:77
+#, fuzzy
+msgid "Move conversations to archive"
+msgstr "Сөйлесулерді жылжыту"
+
+#: src/MessageList/MessageList.vala:85
+#, fuzzy
+msgid "Move conversations to Trash"
+msgstr "Сөйлесулерді жылжыту"
+
+#: src/MessageList/MessageList.vala:100
+#, fuzzy
+msgid "No Message Selected"
+msgstr "Бірде-бір сөйлесу таңдалмады."
+
+#. /TRANSLATORS: The first %s represents the date and the second %s the time of the message (either when it was received or sent)
+#: src/MessageList/MessageListItem.vala:190
+#, c-format
+msgid "%s at %s"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:198
+#: src/MessageList/MessageListItem.vala:397
+#, fuzzy
+msgid "Unstar message"
+msgstr "%d хабарлама"
+
+#: src/MessageList/MessageListItem.vala:201
+#: src/MessageList/MessageListItem.vala:393
+#, fuzzy
+msgid "Star message"
+msgstr "%d хабарлама"
+
+#: src/MessageList/MessageListItem.vala:221
+msgid "Print…"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:231
+msgid "More"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:281
+msgid "Open in Calendar"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:286
+#, fuzzy
+#| msgid "This message contains remote images."
+msgid "This message contains a Calendar Event."
+msgstr "Бұл хатта қашықтағы суреттер бар."
+
+#: src/MessageList/MessageListItem.vala:297
+msgid "Show Images"
+msgstr "Суреттерді көрсету"
+
+#: src/MessageList/MessageListItem.vala:298
+msgid "Always Show from Sender"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:302
+msgid "This message contains remote images."
+msgstr "Бұл хатта қашықтағы суреттер бар."
+
+#: src/MessageList/MessageListItem.vala:341
+msgid "This message contains one or more attachments"
+msgstr ""
+
+#. / Translators: This is the default file name of a printed email
+#: src/MessageList/MessageListItem.vala:417
+#, fuzzy
+#| msgid "New Message"
+msgid "Email Message"
+msgstr "Жаңа хат"
+
+#: src/MessageList/MessageListItem.vala:439
+#, fuzzy
+#| msgid "Unable to validate:\n"
+msgid "Unable to print email"
+msgstr "Тексеру сәтсіз аяқталды:\n"
+
+#: src/MessageList/MessageListItem.vala:691
+#, c-format
+msgid "Trust and open “%s”?"
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:692
+msgid ""
+"Attachments may cause damage to your system if opened. Only open files from "
+"trusted sources."
+msgstr ""
+
+#: src/MessageList/MessageListItem.vala:699
+msgid "Open Anyway"
+msgstr ""
+
+#: src/MessageList/AttachmentButton.vala:57
+msgid "Open"
+msgstr "Ашу"
+
+#: src/MessageList/AttachmentButton.vala:58
+msgid "Save As…"
+msgstr ""
+
+#: src/MessageList/AttachmentButton.vala:143
+#, fuzzy
+msgid "Save"
+msgstr "_Сақтау"
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:22
+msgid "No mailboxes found"
+msgstr ""
+
+#: src/MessageList/FolderPopover/FolderPopover.vala:26
+msgid "Try changing search terms"
+msgstr ""
+
+#, fuzzy
+#~| msgid "Reply to _All"
+#~ msgid "Reply to All"
+#~ msgstr "Б_арлығына жауап беру"
+
+#~ msgid "Drafts | Draft"
+#~ msgstr "Шимай | Шимайлар | Черновики | Черновик | Drafts | Draft"
+
+#~ msgid "Sent | Sent Mail | Sent Email | Sent E-Mail"
+#~ msgstr ""
+#~ "Жіберілген | Отправленные | Sent | Sent Mail | Sent Email | Sent E-Mail"
+
+#~ msgid ""
+#~ "Junk | Spam | Junk Mail | Junk Email | Junk E-Mail | Bulk Mail | Bulk "
+#~ "Email | Bulk E-Mail"
+#~ msgstr ""
+#~ "Спам | Junk | Spam | Junk Mail | Junk Email | Junk E-Mail | Bulk Mail | "
+#~ "Bulk Email | Bulk E-Mail"
+
+#~ msgid "Trash | Rubbish | Rubbish Bin"
+#~ msgstr "Қоқыс | Қоқыс шелегі | Корзина | Trash | Rubbish | Rubbish Bin"
+
+#~ msgid "Drafts"
+#~ msgstr "Шимайлар"
+
+#~ msgid "Starred"
+#~ msgstr "Жұлдызшалы"
+
+#~ msgid "Important"
+#~ msgstr "Маңызды"
+
+#~ msgid "Spam"
+#~ msgstr "Спам"
+
+#~ msgid "Outbox"
+#~ msgstr "Шығыс"
+
+#~ msgid "Search"
+#~ msgstr "Іздеу"
+
+#~ msgid "IMAP"
+#~ msgstr "IMAP"
+
+#~ msgid "SMTP"
+#~ msgstr "SMTP"
+
+#~ msgid "Gmail"
+#~ msgstr "Gmail"
+
+#~ msgid "Yahoo! Mail"
+#~ msgstr "Yahoo! Mail"
+
+#~ msgid "Outlook.com"
+#~ msgstr "Outlook.com"
+
+#~ msgid "Other"
+#~ msgstr "Басқа"
+
+#~ msgid "attachment"
+#~ msgstr "салыным"
+
+#~ msgid "bcc"
+#~ msgstr "жасырын көшірме"
+
+#~ msgid "body"
+#~ msgstr "денесі"
+
+#~ msgid "cc"
+#~ msgstr "көшірме"
+
+#~ msgid "from"
+#~ msgstr "кімнен"
+
+#~ msgid "subject"
+#~ msgstr "Тақырып"
+
+#~ msgid "to"
+#~ msgstr "кімге"
+
+#~ msgid "me"
+#~ msgstr "мен"
+
+#~ msgid "(no subject)"
+#~ msgstr "(тақырыпсыз)"
+
+#~ msgid "%s wrote:"
+#~ msgstr "%s жазған:"
+
+#~ msgid "On %s:"
+#~ msgstr "%s:"
+
+#~ msgid "none"
+#~ msgstr "жоқ"
+
+#~ msgid "Mail Client"
+#~ msgstr "Пошта клиенті"
+
+#~ msgid "Copyright 2011-2015 Yorba Foundation"
+#~ msgstr "Copyright 2011-2015 Yorba Foundation"
+
+#~ msgid "Visit the Yorba web site"
+#~ msgstr "Yorba веб сайтын шолу"
+
+#~ msgid "Delete conversation (Shift+Delete)"
+#~ msgstr "Сөйлесуді өшіру (Shift+Delete)"
+
+#~ msgid "Delete conversations (Shift+Delete)"
+#~ msgstr "Сөйлесулерді өшіру (Shift+Delete)"
+
+#~ msgid "Move conversations to Trash (Delete, Backspace)"
+#~ msgstr "Сөйлесудерді қоқыс шелегіне тастау (Delete, Backspace)"
+
+#~ msgid "_Archive"
+#~ msgstr "_Архив"
+
+#~ msgid "Archive conversations (A)"
+#~ msgstr "Сөйлесулерді архивтеу (A)"
+
+#~ msgid "Mark as S_pam"
+#~ msgstr "С_пам етіп белгілеу"
+
+#~ msgid "Mark as not S_pam"
+#~ msgstr "С_пам емес етіп белгілеу"
+
+#~ msgid "A_ccounts"
+#~ msgstr "_Тіркелгілер"
+
+#~ msgid "_Preferences"
+#~ msgstr "Ба_птаулар"
+
+#~ msgid "_Help"
+#~ msgstr "_Көмек"
+
+#~ msgid "_About"
+#~ msgstr "Осы тур_алы"
+
+#~ msgid "_Quit"
+#~ msgstr "_Шығу"
+
+#~ msgid "_Mark as..."
+#~ msgstr "Қалайша _белгілеу..."
+
+#~ msgid "Mark as _Read"
+#~ msgstr "Оқ_ылған етіп белгілеу"
+
+#~ msgid "Mark as _Unread"
+#~ msgstr "Оқыл_маған етіп белгілеу"
+
+#~ msgid "Add label"
+#~ msgstr "Белгіні қосу"
+
+#~ msgid "_Label"
+#~ msgstr "Ж_азу"
+
+#~ msgid "_Move"
+#~ msgstr "Жы_лжыту"
+
+#~ msgid "_Reply"
+#~ msgstr "Жауап бе_ру"
+
+#~ msgid "Reply (Ctrl+R, R)"
+#~ msgstr "Жауап беру (Ctrl+R, R)"
+
+#~ msgid "Reply all (Ctrl+Shift+R, Shift+R)"
+#~ msgstr "Барлығына жауап беру (Ctrl+Shift+R, Shift+R)"
+
+#~ msgid "Forward (Ctrl+L, F)"
+#~ msgstr "Қайта бағдарлау (Ctrl+L, F)"
+
+#~ msgid "Empty"
+#~ msgstr "Босату"
+
+#~ msgid "Empty Spam or Trash folders"
+#~ msgstr "Спам немесе Қоқыс шелегі бумаларын босату"
+
+#~ msgid "Empty _Spam…"
+#~ msgstr "_Спам бумасын босату…"
+
+#~ msgid "Empty _Trash…"
+#~ msgstr "Қ_оқыс шелегін босату…"
+
+#~ msgid "Toggle search bar"
+#~ msgstr "Іздеу панелін іске қосу/сөндіру"
+
+#~ msgid "Unable to store server trust exception"
+#~ msgstr "Серверге сену ережесін сақтау қатесі"
+
+#~ msgid "Your settings are insecure"
+#~ msgstr "Сіздің баптауларыңыз қауіпсіз емес"
+
+#~ msgid ""
+#~ "Your IMAP and/or SMTP settings do not specify SSL or TLS.  This means "
+#~ "your username and password could be read by another person on the "
+#~ "network.  Are you sure you want to do this?"
+#~ msgstr ""
+#~ "Сіздің IMAP және/немесе SMTP баптаулары SSL не TLS қолдануды көрсетпейді. "
+#~ "Бұл дегеніміз, сіздің пайдаланушы аты мен пароліңіз желідегі басқа адам "
+#~ "біле алады. Осыны жасауды шынымен қалайсыз ба?"
+
+#~ msgid "Co_ntinue"
+#~ msgstr "Жалғ_астыру"
+
+#~ msgid "Error sending email"
+#~ msgstr "Хатты жіберу сәтсіз"
+
+#~ msgid ""
+#~ "Geary encountered an error sending an email.  If the problem persists, "
+#~ "please manually delete the email from your Outbox folder."
+#~ msgstr ""
+#~ "Geary хатты жібергенде қате орын алды. Егер мәселе қайталана берсе, хатты "
+#~ "қолмен Шығыс бумасынан өшіріңіз."
+
+#~ msgid "Error saving sent mail"
+#~ msgstr "Жіберліген хаттын сақтау сәтсіз"
+
+#~ msgid ""
+#~ "Geary encountered an error saving a sent message to Sent Mail.  The "
+#~ "message will stay in your Outbox folder until you delete it."
+#~ msgstr ""
+#~ "Geary жіберілген хатты Жіберілген хаттар бумасына сақтау кезінде қате "
+#~ "орын алды. Бұл хат сіз оны қолмен өшірілгенге дейін Шығыс бумасында қала "
+#~ "береді."
+
+#~ msgid "Labels"
+#~ msgstr "Белгілер"
+
+#~ msgid "Unable to open the database for %s"
+#~ msgstr "%s үшін дерекқорды ашу мүмкін емес"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to corruption of the database file in this directory:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Geary can rebuild the database and re-synchronize with the server or "
+#~ "exit.\n"
+#~ "\n"
+#~ "Rebuilding the database will destroy all local email and its attachments. "
+#~ "<b>The mail on the your server will not be affected.</b>"
+#~ msgstr ""
+#~ "Бұл тіркелгі үшін жергілікті пошта дерекқорын ашқанда қате орын алды. Бұл "
+#~ "осы бумадағы дерекқор файлының зақымдалуынан болуы мүмкін:\n"
+#~ "\n"
+#~ "%s\n"
+#~ "\n"
+#~ "Geary дерекқорды қайта құрастырып, сервермен синхрондай алады, немесе өз "
+#~ "жұмысын аяқтай алады.\n"
+#~ "\n"
+#~ "Дерекқорды қайта құрастыру барлық жергілікті пошта хаттар және "
+#~ "салынымдарын жояды. <b>Сервердегі поштаға әсері болмайды.</b>"
+
+#~ msgid "_Rebuild"
+#~ msgstr "Қа_йта құрастыру"
+
+#~ msgid "E_xit"
+#~ msgstr "_Шығу"
+
+#~ msgid "Unable to rebuild database for \"%s\""
+#~ msgstr "\"%s\" үшін дерекқорды қайта құрастыру мүмкін емес"
+
+#~ msgid ""
+#~ "Error during rebuild:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Қайта құрастыру кезіндегі қате:\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid "Unable to open local mailbox for %s"
+#~ msgstr "%s үшін жергілікті эл. пошта жәшігін ашу мүмкін емес"
+
+#~ msgid ""
+#~ "There was an error opening the local mail database for this account. This "
+#~ "is possibly due to a file permissions problem.\n"
+#~ "\n"
+#~ "Please check that you have read/write permissions for all files in this "
+#~ "directory:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Бұл тіркелгі үшін жергілікті пошта дерекқорын ашқанда қате орын алды. Бұл "
+#~ "файлға қатынау рұқсаттары мәселесінен болуы мүмкін.\n"
+#~ "\n"
+#~ "Келесі бумадағы барлық файлдарға сізде оқу/жазу рұқсаттардың барлығы бар "
+#~ "екенін тексеріңіз:\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid ""
+#~ "The version number of the local mail database is formatted for a newer "
+#~ "version of Geary. Unfortunately, the database cannot be \"rolled back\" "
+#~ "to work with this version of Geary.\n"
+#~ "\n"
+#~ "Please install the latest version of Geary and try again."
+#~ msgstr ""
+#~ "Жергілікті пошта дерекқоры нұсқасының нөмірі оның Geary қолданбасының "
+#~ "жаңалау нұсқасы үшін пішімделгенін көрсетеді. Өкінішке орай, дерекқорды "
+#~ "Geary-дың бұл нұсқасымен жұмыс істейтіндей етіп нұсқасын \"кері "
+#~ "айналдыру\" мүмкін емес.\n"
+#~ "\n"
+#~ "Geary қолданбасының соңғы нұсқасын орнатып, қайталап көріңіз."
+
+#~ msgid ""
+#~ "There was an error opening the local account. This is probably due to "
+#~ "connectivity issues.\n"
+#~ "\n"
+#~ "Please check your network connection and restart Geary."
+#~ msgstr ""
+#~ "Жергілікті тіркелгіні ашу кезінде қате орын алды. Бұл байланысу "
+#~ "мәселелері салдарынан болуы мүмкін.\n"
+#~ "\n"
+#~ "Желілік байланысыңызды тексеріп, Geary қолданбасын қайта іске қосыңыз."
+
+#~ msgid "About %s"
+#~ msgstr "%s туралы"
+
+#~ msgid "translator-credits"
+#~ msgstr ""
+#~ "Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
+#~ "\n"
+#~ "Launchpad Contributions:\n"
+#~ "  Baurzhan Muftakhidinov https://launchpad.net/~baurthefirst\n"
+#~ "  elementary Apps team https://launchpad.net/~elementary-apps"
+
+#~ msgid "Undo move (Ctrl+Z)"
+#~ msgstr "Жылжытуды болдырмау (Ctrl+Z)"
+
+#~ msgid "Are you sure you want to open \"%s\"?"
+#~ msgstr "\"%s\" ашуды шынымен қалайсыз ба?"
+
+#~ msgid ""
+#~ "Attachments may cause damage to your system if opened.  Only open files "
+#~ "from trusted sources."
+#~ msgstr ""
+#~ "Салынымдар ашылса, жүйеңіздге зақым келтіруі мүмкін. Тек сенімді "
+#~ "жіберушілерден салынымдарды ашыңыз."
+
+#~ msgid "Don't _ask me again"
+#~ msgstr "М_ені қайта сұрамау"
+
+#~ msgid "A file named \"%s\" already exists.  Do you want to replace it?"
+#~ msgstr ""
+#~ "\"%s\" деп аталатын файл бар болып тұр. Оны үстінен жазуды қалайсыз ба?"
+
+#~ msgid ""
+#~ "The file already exists in \"%s\".  Replacing it will overwrite its "
+#~ "contents."
+#~ msgstr ""
+#~ "Файл \"%s\" ішінде бар болып тұр.  Оны ауыстырсаңыз, құрамы үстінен "
+#~ "жазылады."
+
+#~ msgid "Close open draft messages?"
+#~ msgstr "Ашық шимай хаттарды жабу керек пе?"
+
+#~ msgid "Empty all email from your %s folder?"
+#~ msgstr "Барлық хаттарды сіздің %s бумаңыздан босату керек пе?"
+
+#~ msgid "This removes the email from Geary and your email server."
+#~ msgstr ""
+#~ "Бұл әрекет бұл эл. пошта хатын Geary ішінен және эл. пошта серверінен де "
+#~ "өшіреді."
+
+#~ msgid "This cannot be undone."
+#~ msgstr "Бұны болдырмау мүмкін емес болады."
+
+#~ msgid "Empty %s"
+#~ msgstr "%s босату"
+
+#~ msgid "Error emptying %s"
+#~ msgstr "%s босату сәтсіз аяқталды"
+
+#~ msgid "Undo archive (Ctrl+Z)"
+#~ msgstr "Архивтеуді болдырмау (Ctrl+Z)"
+
+#~ msgid "Undo trash (Ctrl+Z)"
+#~ msgstr "Қоқыс шелегіне тастауды болдырмау (Ctrl+Z)"
+
+#~ msgid "Undo (Ctrl+Z)"
+#~ msgstr "Болдырмау (Ctrl+Z)"
+
+#~ msgid "Start Geary with hidden main window"
+#~ msgstr "Geary қолданбасын жасырылған басты тереземен іске қосу"
+
+#~ msgid "Output debugging information"
+#~ msgstr "Жөндеу ақпаратын көрсету"
+
+#~ msgid "Log conversation monitoring"
+#~ msgstr "Сөйлесулерді бақылауды журналдау"
+
+#~ msgid "Log network deserialization"
+#~ msgstr "Желілік десериализациясын журналдау"
+
+#~ msgid "Log network activity"
+#~ msgstr "Желілік белсенділікті журналдау"
+
+#~ msgid "Log IMAP replay queue"
+#~ msgstr "IMAP қайта ойнату тізбегін журналдау"
+
+#~ msgid "Log network serialization"
+#~ msgstr "Желілік сериализациясын журналдау"
+
+#~ msgid "Log periodic activity"
+#~ msgstr "Мезгіл-мезгіл белсенділікті журналдау"
+
+#~ msgid "Log database queries (generates lots of messages)"
+#~ msgstr "Дерекқор сұранымдарын журналдау (көптеген хабарламаларды туғызады)"
+
+#~ msgid "Log folder normalization"
+#~ msgstr "Бумалар синхронизациясын журналдау"
+
+#~ msgid "Allow inspection of WebView"
+#~ msgstr "WebView бақылауды рұқсат ету"
+
+#~ msgid "Revoke all server certificates with TLS warnings"
+#~ msgstr "TLS ескертулері бар барлық сервер сертификаттарын қайта шақыру"
+
+#~ msgid "Display program version"
+#~ msgstr "Бағдарлама нұсқасын көрсету"
+
+#~ msgid "Use %s to open a new composer window"
+#~ msgstr "Жаңа хатты жазу терезесін ашу үшін %s қолданыңыз"
+
+#~ msgid "Please report comments, suggestions and bugs to:"
+#~ msgstr "Пікірлер, ұсыныстар және ақаулықтарды хабарлау жері:"
+
+#~ msgid "Failed to parse command line options: %s\n"
+#~ msgstr "Командалық жол опцияларын талдау сәтсіз аяқталды: %s\n"
+
+#~ msgid "Unrecognized command line option \"%s\"\n"
+#~ msgstr "Белгісіз командалық жол опциясы \"%s\"\n"
+
+#~ msgid "%s - New Messages"
+#~ msgstr "%s - жаңа хаттар"
+
+#~ msgid "%s, %d new message total"
+#~ msgid_plural "%s, %d new messages total"
+#~ msgstr[0] "%s, %d жалпы жаңа хат"
+
+#~ msgid ""
+#~ "%s\n"
+#~ "(%d other new message for %s)"
+#~ msgid_plural ""
+#~ "%s\n"
+#~ "(%d other new messages for %s)"
+#~ msgstr[0] ""
+#~ "%s\n"
+#~ "(%d басқа жаңа хат, %s үшін)"
+
+#~ msgid "Me"
+#~ msgstr "Мен"
+
+#~ msgid "Untrusted Connection: %s"
+#~ msgstr "Сенімсіз байланыс: %s"
+
+#~ msgid "The identity of the %s mail server at %s:%u could not be verified."
+#~ msgstr "%s пошта серверінің (адресі %s:%u) шындылығын растау мүмкін емес."
+
+#~ msgid ""
+#~ "Selecting \"Trust This Server\" or \"Always Trust This Server\" may cause "
+#~ "your username and password to be transmitted insecurely."
+#~ msgstr ""
+#~ "\"Бұл серверге сену\" немесе \"Бұл серверге  әрқашан сену\" таңдасаңыз, "
+#~ "пайдаланушы аты және пароль желі арқылы қауіпсіз емес түрде берілуі "
+#~ "мүмкін."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Geary not to access this "
+#~ "server."
+#~ msgstr ""
+#~ "\"Бұл серверге сенбеу\" таңдасаңыз, Geary бұл серверге байланыспайтын "
+#~ "болады."
+
+#~ msgid "Geary will not add or update this email account."
+#~ msgstr "Geary бұл эл. пошта тіркелгісін қоспайды не жаңартпайды."
+
+#~ msgid ""
+#~ "Selecting \"Don't Trust This Server\" will cause Geary to stop accessing "
+#~ "this account."
+#~ msgstr ""
+#~ "\"Бұл серверге сенбеу\" таңдасаңыз, Geary бұл тіркелгіге енді "
+#~ "байланыспайтын болады."
+
+#~ msgid "Geary will exit if you have no other open email accounts."
+#~ msgstr ""
+#~ "Сізде басқа ашық эл. пошта тіркелгілері жоқ болса, Geary өз жұмысын "
+#~ "аяқтайды."
+
+#~ msgid ""
+#~ "Contact your system administrator or email service provider if you have "
+#~ "any question about these issues."
+#~ msgstr ""
+#~ "Бұл мәселелер жөнінде сұрақтарыңыз бар болса, жүйелік әкімші немесе эл. "
+#~ "поштаны ұсынушыға хабарласыңыз."
+
+#~ msgid "The server's certificate is not signed by a known authority"
+#~ msgstr ""
+#~ "Сервер сертикатына қолтаңбаны қойған сертификаттау орталығы белгісіз"
+
+#~ msgid "The server's identity does not match the identity in the certificate"
+#~ msgstr ""
+#~ "Сертификат өзі алынған сайттың күтілген анықтағышына сәйкес келмейді"
+
+#~ msgid "The server's certificate has expired"
+#~ msgstr "Сервекр сертификаттың мерзімі аяқталған"
+
+#~ msgid "The server's certificate has not been activated"
+#~ msgstr "Сервер сертификаты белсендірілмеген"
+
+#~ msgid "The server's certificate has been revoked and is now invalid"
+#~ msgstr "Сервер сертификаты қайта шақырылған және қазір жарамсыз болып тұр"
+
+#~ msgid "The server's certificate is considered insecure"
+#~ msgstr "Сертификат алгоритмі қауіпсіз емес ретінде саналады"
+
+#~ msgid "An error has occurred processing the server's certificate"
+#~ msgstr "Сервер сертификатын өңдеу кезінде қате орын алды"
+
+#~ msgid "Geary requires your email password to continue"
+#~ msgstr "Geary жалғастыру үшін эл. пошта пароліңізді талап етеді"
+
+#~ msgid "Additional addresses for %s"
+#~ msgstr "%s үшін қосымша адрестер"
+
+#~ msgid "First Last"
+#~ msgstr "Аты Фамилиясы"
+
+#~ msgid "Welcome to Geary."
+#~ msgstr "Geary қолданбасына қош келдіңіз."
+
+#~ msgid "Enter your account information to get started."
+#~ msgstr "Бастау үшін тіркелгі ақпаратыңызды енгізіңіз."
+
+#~ msgid "2 weeks back"
+#~ msgstr "2 апта бұрын"
+
+#~ msgid "1 month back"
+#~ msgstr "1 ай бұрын"
+
+#~ msgid "3 months back"
+#~ msgstr "3 ай бұрын"
+
+#~ msgid "6 months back"
+#~ msgstr "6 ай бұрын"
+
+#~ msgid "1 year back"
+#~ msgstr "1 жыл бұрын"
+
+#~ msgid "2 years back"
+#~ msgstr "2 жыл бұрын"
+
+#~ msgid "4 years back"
+#~ msgstr "4 жыл бұрын"
+
+#~ msgid "Everything"
+#~ msgstr "Барлығы"
+
+#~ msgid "Edit"
+#~ msgstr "Түзету"
+
+#~ msgid "Preview"
+#~ msgstr "Алдын-ала қарау"
+
+#~ msgid "Remem_ber passwords"
+#~ msgstr "Парольдерді есте сақ_тау"
+
+#~ msgid "Remem_ber password"
+#~ msgstr "Парольді есте сақ_тау"
+
+#~ msgid "        &#8226; Invalid account nickname.\n"
+#~ msgstr "        &#8226; Тіркелгінің ник аты қате.\n"
+
+#~ msgid "        &#8226; Email address already added to Geary.\n"
+#~ msgstr "        &#8226; Эл. пошта адресі Geary-ге бұрын қосылған.\n"
+
+#~ msgid "        &#8226; IMAP connection error.\n"
+#~ msgstr "        &#8226; IMAP байланысу қатесі.\n"
+
+#~ msgid "        &#8226; IMAP username or password incorrect.\n"
+#~ msgstr "        &#8226; IMAP пайдаланушы аты не паролі қате.\n"
+
+#~ msgid "        &#8226; SMTP connection error.\n"
+#~ msgstr "        &#8226; SMTP байланысу қатесі.\n"
+
+#~ msgid "        &#8226; SMTP username or password incorrect.\n"
+#~ msgstr "        &#8226; SMTP пайдаланушы аты не паролі қате.\n"
+
+#~ msgid "        &#8226; Connection error.\n"
+#~ msgstr "        &#8226; Байланыс қатесі.\n"
+
+#~ msgid "        &#8226; Username or password incorrect.\n"
+#~ msgstr "        &#8226; Пайдаланушы аты не паролі қате.\n"
+
+#~ msgid "_Add"
+#~ msgstr "Қо_су"
+
+#~ msgid "%l:%M %P"
+#~ msgstr "%H:%M"
+
+#~ msgid "%H:%M"
+#~ msgstr "%H:%M"
+
+#~ msgctxt "Default clock format"
+#~ msgid "%l:%M %P"
+#~ msgstr "%H:%M"
+
+#~ msgid "%b %-e"
+#~ msgstr "%b %-e"
+
+#~ msgid "%x"
+#~ msgstr "%x"
+
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%B %-e, %Y %H:%M"
+
+#~ msgid "%B %-e, %Y %-H:%M"
+#~ msgstr "%B %-e, %Y %-H:%M"
+
+#~ msgctxt "Default full date"
+#~ msgid "%B %-e, %Y %-l:%M %P"
+#~ msgstr "%B %-e, %Y %H:%M"
+
+#~ msgid "Now"
+#~ msgstr "Қазір"
+
+#~ msgid "%dm ago"
+#~ msgid_plural "%dm ago"
+#~ msgstr[0] "%dмин бұрын"
+
+#~ msgid "%dh ago"
+#~ msgid_plural "%dh ago"
+#~ msgstr[0] "%dсағ бұрын"
+
+#~ msgid "Yesterday"
+#~ msgstr "Кеше"
+
+#~ msgid "%A"
+#~ msgstr "%A"
+
+#~ msgid "bytes"
+#~ msgstr "байт"
+
+#~ msgctxt "Abbreviation for terabyte"
+#~ msgid "TB"
+#~ msgstr "ТБ"
+
+#~ msgctxt "Abbreviation for gigabyte"
+#~ msgid "GB"
+#~ msgstr "ГБ"
+
+#~ msgctxt "Abbreviation for megabyte"
+#~ msgid "MB"
+#~ msgstr "МБ"
+
+#~ msgctxt "Abbreviation for kilobyte"
+#~ msgid "KB"
+#~ msgstr "КБ"
+
+#~ msgid "%s, %s"
+#~ msgstr "%s, %s"
+
+#~ msgid "Inboxes"
+#~ msgstr "Кіріс хаттар бумалары"
+
+#~ msgid "Search %s account"
+#~ msgstr "%s тіркелгісінен іздеу"
+
+#~ msgid "%d result"
+#~ msgid_plural "%d results"
+#~ msgstr[0] "%d нәтиже"
+
+#~ msgid "%u conversation selected."
+#~ msgid_plural "%u conversations selected."
+#~ msgstr[0] "%u сөйлесу таңдалды."
+
+#~ msgid "No search results found."
+#~ msgstr "Іздеу нәтижелері жоқ."
+
+#~ msgid "No conversations in folder."
+#~ msgstr "Бумада сөйлесулер жоқ."
+
+#~ msgid "Date:"
+#~ msgstr "Күні:"
+
+#~ msgid "%u read message"
+#~ msgid_plural "%u read messages"
+#~ msgstr[0] "%u оқылған хат"
+
+#~ msgid "This message was sent successfully, but could not be saved to %s."
+#~ msgstr ""
+#~ "Бұл хабарлама сәтті жіберілді, бірақ оны %s бумасына сақтау мүмкін емес."
+
+#~ msgid "_Copy"
+#~ msgstr "_Көшіру"
+
+#~ msgid "Copy _Link"
+#~ msgstr "_Сілтемені көшіріп алу"
+
+#~ msgid "Select _Message"
+#~ msgstr "_Хатты таңдау"
+
+#~ msgid "Select _All"
+#~ msgstr "Барлығын _таңдау"
+
+#~ msgid "_Inspect"
+#~ msgstr "_Бақылау"
+
+#~ msgid "This link appears to go to"
+#~ msgstr "Бұл сілтеме осы жерге көрсетіп тұрған сияқты:"
+
+#~ msgid "but actually goes to"
+#~ msgstr "бірақ, шын мәнінде мына жерге сілтейді:"
+
+#~ msgid " (Invalid?)"
+#~ msgstr " (Жарамсыз?)"
+
+#~ msgid "_Save Image As..."
+#~ msgstr "Суретті қалайша _сақтау..."
+
+#~ msgid "_Save As..."
+#~ msgstr "Қала_йша сақтау..."
+
+#~ msgid "Save All A_ttachments..."
+#~ msgstr "Барл_ық салынымдарды сақтау..."
+
+#~ msgid "Save A_ttachment..."
+#~ msgid_plural "Save All A_ttachments..."
+#~ msgstr[0] "Салы_нымдарды сақтау..."
+
+#~ msgid "Mark Unread From _Here"
+#~ msgstr "Ос_ыдан бастап оқылмаған етіп белгілеу"
+
+#~ msgid "_View Source"
+#~ msgstr "Бастапқы кодын қ_арау"
+
+#~ msgid "Failed to open default text editor."
+#~ msgstr "Үнсіз келісім бойынша мәтіндік түзеткішін ашу сәтсіз аяқталды."
+
+#~ msgid "%s - Conversation Inspector"
+#~ msgstr "%s - Сөйлесулер бақылаушысы"
+
+#~ msgid "Saved"
+#~ msgstr "Сақталды"
+
+#~ msgid "Saving"
+#~ msgstr "Сақталуда"
+
+#~ msgid "Error saving"
+#~ msgstr "Сақтау қатесі"
+
+#~ msgid "Press Backspace to delete quote"
+#~ msgstr "Дәйексөзді өшіру үшін Backspace басыңыз"
+
+#~ msgid ""
+#~ "attach|attaching|attaches|attachment|attachments|attached|enclose|"
+#~ "enclosed|enclosing|encloses|enclosure|enclosures"
+#~ msgstr ""
+#~ "салыным|салынымды|салып|салдым|салынған|қосып|attach|attaching|attaches|"
+#~ "attachment|attachments|attached|enclose|enclosed|enclosing|encloses|"
+#~ "enclosure|enclosures"
+
+#~ msgid "Do you want to discard this message?"
+#~ msgstr "Бұл хатты елемеуді қалайсыз ба?"
+
+#~ msgid "Send message with an empty subject and body?"
+#~ msgstr "Хатты бос тақырыппен және бос денесімен жіберу керек пе?"
+
+#~ msgid "Send message without an attachment?"
+#~ msgstr "Хатты салынымсыз жіберу керек пе?"
+
+#~ msgid "Cannot add attachment"
+#~ msgstr "Салынымды қосу мүмкін емес"
+
+#~ msgid "\"%s\" could not be found."
+#~ msgstr "\"%s\" табу мүмкін емес."
+
+#~ msgid "\"%s\" is a folder."
+#~ msgstr "\"%s\" бума болып тұр."
+
+#~ msgid "\"%s\" is an empty file."
+#~ msgstr "\"%s\" бос файл болып тұр."
+
+#~ msgid "\"%s\" could not be opened for reading."
+#~ msgstr "\"%s\" оқу үшін ашу мүмкін емес."
+
+#~ msgid "\"%s\" already attached for delivery."
+#~ msgstr "\"%s\" салыным ретінде белгіленіп тұр."
+
+#~ msgid "%s (%s)"
+#~ msgstr "%s (%s)"
+
+#~ msgid "To: "
+#~ msgstr "Кімге: "
+
+#~ msgid "Cc: "
+#~ msgstr "Көшірмесі: "
+
+#~ msgid "Bcc: "
+#~ msgstr "Жасырын көшірме: "
+
+#~ msgid "Reply-To: "
+#~ msgstr "Жауап беру: "
+
+#~ msgid "Select Color"
+#~ msgstr "Түсті таңдаңыз"
+
+#~ msgid "%1$s via %2$s"
+#~ msgstr "%1$s, %2$s арқылы"
+
+#~ msgid "_From:"
+#~ msgstr "_Кімнен:"
+
+#~ msgid "%s (%d)"
+#~ msgstr "%s (%d)"
+
+#~ msgid "Sending..."
+#~ msgstr "Жіберуде..."
+
+#~ msgid "%i match"
+#~ msgid_plural "%i matches"
+#~ msgstr[0] "%i сәйкестік"
+
+#~ msgid "%i match (wrapped)"
+#~ msgid_plural "%i matches (wrapped)"
+#~ msgstr[0] "%i сәйкестік (тасымалданған)"
+
+#~ msgid "not found"
+#~ msgstr "табылмады"
+
+#~ msgid "_OK"
+#~ msgstr "О_К"
+
+#~ msgid "_Cancel"
+#~ msgstr "Ба_с тарту"
+
+#~ msgid "_Discard"
+#~ msgstr "_Елемеу"
+
+#~ msgid "_Open"
+#~ msgstr "_Ашу"
+
+#~ msgid "_Print..."
+#~ msgstr "Бас_паға шығару..."
+
+#~ msgid "_Remove"
+#~ msgstr "Ө_шіру"
+
+#~ msgid "_Keep"
+#~ msgstr "Ұс_тау"
+
+#~ msgid "Search all mail in account for keywords (Ctrl+S)"
+#~ msgstr "Тіркелгінің барлық хаттарынан кілтсөзді іздеу (Ctrl+S)"
+
+#~ msgid "Indexing %s account"
+#~ msgstr "%s тіркелгісін индекстеу"
