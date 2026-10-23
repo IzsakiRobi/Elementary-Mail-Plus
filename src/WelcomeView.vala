@@ -26,7 +26,7 @@ public class Mail.WelcomeView : Gtk.Box {
         headerbar.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
 
         var welcome_icon = new Gtk.Image () {
-            icon_name = "io.elementary.mail",
+            icon_name = APPLICATION_ID,
             margin_bottom = 6,
             margin_end = 12,
             pixel_size = 64

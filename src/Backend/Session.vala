@@ -37,11 +37,11 @@ public class Mail.Backend.Session : Camel.Session {
     private Gee.LinkedList<Account> accounts;
 
     public Session () {
-        Object (user_data_dir: Path.build_filename (E.get_user_data_dir (), "mail"), user_cache_dir: Path.build_filename (E.get_user_cache_dir (), "mail"));
+        Object (user_data_dir: Path.build_filename (Environment.get_user_data_dir (), APPLICATION_ID, "mail"), user_cache_dir: Path.build_filename (Environment.get_user_cache_dir (), APPLICATION_ID, "mail"));
     }
 
     construct {
-        Camel.init (E.get_user_data_dir (), false);
+        Camel.init (Path.build_filename (Environment.get_user_data_dir (), APPLICATION_ID), false);
         accounts = new Gee.LinkedList<Account> ();
         user_alert.connect ((service, type, message) => { warning (message); });
 

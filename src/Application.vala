@@ -27,13 +27,13 @@ public class Mail.Application : Gtk.Application {
 
     public Application () {
         Object (
-            application_id: "io.elementary.mail",
+            application_id: APPLICATION_ID,
             flags: ApplicationFlags.HANDLES_COMMAND_LINE
         );
     }
 
     static construct {
-        settings = new GLib.Settings ("io.elementary.mail");
+        settings = new GLib.Settings (APPLICATION_ID);
     }
 
     construct {
@@ -44,6 +44,8 @@ public class Mail.Application : Gtk.Application {
         Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
         Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
         Intl.textdomain (GETTEXT_PACKAGE);
+
+        Environment.set_application_name (APPLICATION_ID == "io.elementary.mail" ? _("Mail") : _("Mail Plus"));
 
         add_main_option_entries (OPTIONS);
     }
@@ -278,7 +280,7 @@ public class Mail.Application : Gtk.Application {
         Xdp.Parent? parent = active_window != null ? Xdp.parent_new_gtk (active_window) : null;
 
         var command = new GenericArray<weak string> ();
-        command.add ("io.elementary.mail");
+        command.add (APPLICATION_ID);
         command.add ("--background");
 
         return yield portal.request_background (

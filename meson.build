@@ -5,6 +5,9 @@ project(
     meson_version: '>=0.58.0'
 )
 
+application_id = get_option('application-id')
+settings_path = '/' + application_id.replace('.', '/') + '/'
+
 gnome = import('gnome')
 i18n = import('i18n')
 
@@ -30,7 +33,7 @@ libportal_gtk_dep = dependency('libportal-gtk3')
 folks_dep = dependency('folks')
 m_dep = meson.get_compiler('c').find_library('m')
 
-webkit2_extension_path = join_paths(get_option('prefix'), get_option('libdir'), meson.project_name(), 'webkit2')
+webkit2_extension_path = join_paths(get_option('prefix'), get_option('libdir'), application_id, 'webkit2')
 
 dependencies = [
     glib_dep,
@@ -64,7 +67,7 @@ extension_dependencies = [
 ]
 
 add_global_arguments([
-        '-DGETTEXT_PACKAGE="@0@"'.format(meson.project_name()),
+        '-DGETTEXT_PACKAGE="@0@"'.format(application_id),
         '-DHANDY_USE_UNSTABLE_API'
     ],
     language:'c'
@@ -73,7 +76,8 @@ add_global_arguments([
 gnome.post_install(glib_compile_schemas: true)
 
 config_data = configuration_data()
-config_data.set('GETTEXT_PACKAGE', meson.project_name())
+config_data.set('GETTEXT_PACKAGE', application_id)
+config_data.set('APPLICATION_ID', application_id)
 config_data.set('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
 
 config_file = configure_file(

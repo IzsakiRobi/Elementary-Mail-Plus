@@ -9,4 +9,4 @@ override_dh_auto_test:
 
 override_dh_install:
 	dh_install
-	dh_apparmor --profile-name=io.elementary.mail -pelementary-mail-plus
+	dh_apparmor --profile-name=io.github.IzsakiRobi.Elementary-Mail-Plus -pelementary-mail-plus

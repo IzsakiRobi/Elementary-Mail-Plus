@@ -1,19 +1,18 @@
 {
-    "id": "io.elementary.mail",
+    "id": "io.github.IzsakiRobi.Elementary-Mail-Plus",
     "runtime": "io.elementary.Platform",
     "runtime-version": "9.1",
     "sdk": "io.elementary.Sdk",
-    "command": "io.elementary.mail",
+    "command": "io.github.IzsakiRobi.Elementary-Mail-Plus",
     "finish-args": [
-        "--filesystem=/tmp/io.elementary.mail:create",
-        "--env=TMPDIR=/tmp/io.elementary.mail",
         "--share=ipc",
         "--share=network",
         "--socket=fallback-x11",
         "--socket=wayland",
         "--talk-name=org.gnome.evolution.dataserver.AddressBook10",
         "--talk-name=org.gnome.evolution.dataserver.Sources5",
-        "--metadata=X-DConf=migrate-path=/io/elementary/mail/"
+        "--talk-name=org.freedesktop.secrets",
+        "--talk-name=com.canonical.Unity"
     ],
     "cleanup": [
         "/include",
@@ -142,9 +141,19 @@
             "sources": [
                 {
                     "type": "dir",
-                    "path": "."
+                    "path": ".",
+                    "skip": [
+                        ".git",
+                        ".flatpak-builder",
+                        "build",
+                        "obj-*"
+                    ]
                 }
+            ],
+            "config-opts": [
+                "-Dapplication-id=io.github.IzsakiRobi.Elementary-Mail-Plus"
             ]
         }
-    ]
+    ],
+    "branch": "stable"
 }

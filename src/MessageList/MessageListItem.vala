@@ -283,7 +283,7 @@ public class Mail.MessageListItem : Gtk.ListBoxRow {
             hexpand = true
         };
 
-        settings = new GLib.Settings ("io.elementary.mail");
+        settings = new GLib.Settings (APPLICATION_ID);
 
         calendar_info_bar = new Gtk.InfoBar () {
             margin_top = 12,

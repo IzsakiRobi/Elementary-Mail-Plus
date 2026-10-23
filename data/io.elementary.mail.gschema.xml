@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema path="/io/elementary/mail/"
-  id="io.elementary.mail">
+  <schema path="@SETTINGS_PATH@"
+  id="@APPLICATION_ID@">
     <key name="window-maximized" type="b">
       <default>false</default>
       <summary>Whether the window was maximized on last run</summary>
@@ -83,7 +83,7 @@
       <description>A list of sender addresses for which remote images will be automatically loaded</description>
     </key>
   </schema>
-  <schema id="io.elementary.mail.accounts">
+  <schema id="@APPLICATION_ID@.accounts">
     <key name="cached-folders" type="a(sssuii)">
       <default>[]</default>
       <summary>Cached folder paths, names, parents, flags and message counts</summary>

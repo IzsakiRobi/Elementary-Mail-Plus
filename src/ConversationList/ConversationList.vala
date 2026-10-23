@@ -213,7 +213,7 @@ public class Mail.ConversationList : Gtk.Box {
             }
         });
 
-        var settings = new GLib.Settings ("io.elementary.mail");
+        var settings = new GLib.Settings (APPLICATION_ID);
         settings.bind ("hide-read-conversations", hide_read_switch, "active", DEFAULT);
         settings.bind ("hide-unstarred-conversations", hide_unstarred_switch, "active", DEFAULT);
 

@@ -19,7 +19,7 @@ public class Mail.FolderList : Gtk.Box {
     private static GLib.Settings settings;
 
     static construct {
-        settings = new GLib.Settings ("io.elementary.mail");
+        settings = new GLib.Settings (APPLICATION_ID);
     }
 
     construct {

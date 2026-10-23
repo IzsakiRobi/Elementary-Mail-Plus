@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2017-2021 elementary, Inc. <contact@elementary.io> -->
 <component type="desktop-application">
-  <id>io.elementary.mail</id>
-  <launchable type="desktop-id">io.elementary.mail.desktop</launchable>
-  <translation type="gettext">io.elementary.mail</translation>
+  <id>@APPLICATION_ID@</id>
+  <launchable type="desktop-id">@APPLICATION_ID@.desktop</launchable>
+  <translation type="gettext">@APPLICATION_ID@</translation>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0</project_license>
 
-  <name>Mail</name>
+  <name>@APPLICATION_NAME@</name>
   <summary>Send and receive mail</summary>
   <description>
     <p>Mail is designed to let you manage your email quickly and effortlessly. Its interface is based on conversations, so you can read an entire discussion without having to click from message to message.</p>
@@ -56,19 +56,20 @@
     <control>touch</control>
   </supports>
 
-  <url type="homepage">https://elementary.io/</url>
-  <url type="bugtracker">https://github.com/elementary/mail/issues</url>
-  <url type="donation">https://elementary.io/get-involved#funding</url>
-  <url type="help">https://github.com/elementary/mail/discussions/categories/q-a</url>
+  <url type="homepage">https://github.com/IzsakiRobi/Elementary-Mail-Plus</url>
+  <url type="bugtracker">https://github.com/IzsakiRobi/Elementary-Mail-Plus/issues</url>
   <url type="translate">https://l10n.elementary.io/engage/mail</url>
 
-  <developer id="org.elementaryos">
-    <name>elementary, Inc.</name>
+  <developer id="io.github.IzsakiRobi">
+    <name>IzsakiRobi</name>
   </developer>
   <project_group>elementary</project_group>
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
+    <release version="0.1" date="2026-10-24">
+      <description><p>Mail Plus is available as a Flatpak with its own application ID.</p></description>
+    </release>
     <release version="8.0.1" date="2025-11-11" urgency="medium">
       <description>
         <p>Improvements:</p>
@@ -87,11 +88,11 @@
         </ul>
       </description>
       <issues>
-        <issue url="https://github.com/elementary/mail/issues/636">Email aliases</issue>
-        <issue url="https://github.com/elementary/mail/issues/743">Autocomplete recipients using known addresses</issue>
-        <issue url="https://github.com/elementary/mail/issues/950">Many mails flash to white after opening</issue>
-        <issue url="https://github.com/elementary/mail/issues/952">Make delete/backspace key work with focus on email</issue>
-        <issue url="https://github.com/elementary/mail/issues/957">Can't download attachment from email</issue>
+        <issue url="https://github.com/IzsakiRobi/Elementary-Mail-Plus/issues/636">Email aliases</issue>
+        <issue url="https://github.com/IzsakiRobi/Elementary-Mail-Plus/issues/743">Autocomplete recipients using known addresses</issue>
+        <issue url="https://github.com/IzsakiRobi/Elementary-Mail-Plus/issues/950">Many mails flash to white after opening</issue>
+        <issue url="https://github.com/IzsakiRobi/Elementary-Mail-Plus/issues/952">Make delete/backspace key work with focus on email</issue>
+        <issue url="https://github.com/IzsakiRobi/Elementary-Mail-Plus/issues/957">Can't download attachment from email</issue>
       </issues>
     </release>
 
@@ -112,19 +113,19 @@
         </ul>
       </description>
       <issues>
-        <issue url="https://github.com/elementary/mail/issues/551">Support for Multi-touch track pad gestures</issue>
-        <issue url="https://github.com/elementary/mail/issues/567">Cannot undo Archive</issue>
-        <issue url="https://github.com/elementary/mail/issues/616">Email account signature</issue>
-        <issue url="https://github.com/elementary/mail/issues/657">Move mails to trash folder instead of setting delete flag</issue>
-        <issue url="https://github.com/elementary/mail/issues/729">Include Attachments when Forwarding an E-Mail</issue>
-        <issue url="https://github.com/elementary/mail/issues/774">Missing icons</issue>
-        <issue url="https://github.com/elementary/mail/issues/800">Missing move ability</issue>
-        <issue url="https://github.com/elementary/mail/issues/822">Mail reading view displays nested scroll views</issue>
-        <issue url="https://github.com/elementary/mail/issues/880">Use the background portal</issue>
-        <issue url="https://github.com/elementary/mail/issues/896">Performance issues when trashing lots of conversations</issue>
-        <issue url="https://github.com/elementary/mail/issues/903">Show special folders at the top level of the account sidebar tree</issue>
-        <issue url="https://github.com/elementary/mail/issues/904">Search move menu</issue>
-        <issue url="https://github.com/elementary/mail/issues/913">Send button off window if quoted message text is long</issue>
+        <issue url="https://github.com/IzsakiRobi/Elementary-Mail-Plus/issues/551">Support for Multi-touch track pad gestures</issue>
+        <issue url="https://github.com/IzsakiRobi/Elementary-Mail-Plus/issues/567">Cannot undo Archive</issue>
+        <issue url="https://github.com/IzsakiRobi/Elementary-Mail-Plus/issues/616">Email account signature</issue>
+        <issue url="https://github.com/IzsakiRobi/Elementary-Mail-Plus/issues/657">Move mails to trash folder instead of setting delete flag</issue>
+        <issue url="https://github.com/IzsakiRobi/Elementary-Mail-Plus/issues/729">Include Attachments when Forwarding an E-Mail</issue>
+        <issue url="https://github.com/IzsakiRobi/Elementary-Mail-Plus/issues/774">Missing icons</issue>
+        <issue url="https://github.com/IzsakiRobi/Elementary-Mail-Plus/issues/800">Missing move ability</issue>
+        <issue url="https://github.com/IzsakiRobi/Elementary-Mail-Plus/issues/822">Mail reading view displays nested scroll views</issue>
+        <issue url="https://github.com/IzsakiRobi/Elementary-Mail-Plus/issues/880">Use the background portal</issue>
+        <issue url="https://github.com/IzsakiRobi/Elementary-Mail-Plus/issues/896">Performance issues when trashing lots of conversations</issue>
+        <issue url="https://github.com/IzsakiRobi/Elementary-Mail-Plus/issues/903">Show special folders at the top level of the account sidebar tree</issue>
+        <issue url="https://github.com/IzsakiRobi/Elementary-Mail-Plus/issues/904">Search move menu</issue>
+        <issue url="https://github.com/IzsakiRobi/Elementary-Mail-Plus/issues/913">Send button off window if quoted message text is long</issue>
       </issues>
     </release>
 
@@ -143,9 +144,9 @@
         </ul>
       </description>
       <issues>
-        <issue url="https://github.com/elementary/mail/issues/804">Suspends after click an item in the MessageListBox</issue>
-        <issue url="https://github.com/elementary/mail/issues/819">"Connect an account" interstitial briefly displayed on app launch</issue>
-        <issue url="https://github.com/elementary/mail/issues/347">Ctrl-K should create hyperlink, instead creates strikethrough</issue>
+        <issue url="https://github.com/IzsakiRobi/Elementary-Mail-Plus/issues/804">Suspends after click an item in the MessageListBox</issue>
+        <issue url="https://github.com/IzsakiRobi/Elementary-Mail-Plus/issues/819">"Connect an account" interstitial briefly displayed on app launch</issue>
+        <issue url="https://github.com/IzsakiRobi/Elementary-Mail-Plus/issues/347">Ctrl-K should create hyperlink, instead creates strikethrough</issue>
       </issues>
     </release>
 
@@ -157,8 +158,8 @@
         </ul>
       </description>
       <issues>
-        <issue url="https://github.com/elementary/mail/issues/810">Insert link doesn't allow "%" character</issue>
-        <issue url="https://github.com/elementary/mail/issues/814">The app crashes if you try to mark an email as read</issue>
+        <issue url="https://github.com/IzsakiRobi/Elementary-Mail-Plus/issues/810">Insert link doesn't allow "%" character</issue>
+        <issue url="https://github.com/IzsakiRobi/Elementary-Mail-Plus/issues/814">The app crashes if you try to mark an email as read</issue>
       </issues>
     </release>
 

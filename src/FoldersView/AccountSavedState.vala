@@ -38,7 +38,7 @@ public class Mail.AccountSavedState : GLib.Object {
     }
 
     construct {
-        settings = new GLib.Settings.with_path ("io.elementary.mail.accounts", "/io/elementary/mail/accounts/%s/".printf (account.service.uid));
+        settings = new GLib.Settings.with_path (APPLICATION_ID + ".accounts", ("/" + APPLICATION_ID.replace (".", "/") + "/accounts/%s/").printf (account.service.uid));
         items = new Gee.HashMap<string, FolderItemModel> ();
     }
 

@@ -5,5 +5,5 @@ profile @PROFILE_NAME@ @BINARY_PATH@ flags=(unconfined) {
   userns,
 
   # Site-specific additions and overrides. See local/README for details.
-  include if exists <local/io.elementary.mail>
+  include if exists <local/@PROFILE_NAME@>
 }

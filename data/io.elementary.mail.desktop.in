@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=Mail
+Name=@APPLICATION_NAME@
 Comment=Send and receive mail
-Exec=io.elementary.mail %U
-Icon=io.elementary.mail
+Exec=@APPLICATION_ID@ %U
+Icon=@APPLICATION_ID@
 Keywords=Email;E-mail;Mail;
 Terminal=false
 Type=Application
@@ -14,5 +14,5 @@ Actions=Compose;
 
 [Desktop Action Compose]
 Name=Compose Message
-Exec=io.elementary.mail mailto:
+Exec=@APPLICATION_ID@ mailto:
 Icon=mail-message-new

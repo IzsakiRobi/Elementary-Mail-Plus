@@ -47,7 +47,7 @@ vala_files = files(
 )
 
 executable(
-    meson.project_name(),
+    application_id,
     vala_files,
     config_file,
     asresources,

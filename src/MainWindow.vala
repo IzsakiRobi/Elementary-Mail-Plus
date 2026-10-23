@@ -76,7 +76,7 @@ public class Mail.MainWindow : Hdy.ApplicationWindow {
         Object (
             application: application,
             height_request: 600,
-            icon_name: "io.elementary.mail",
+            icon_name: APPLICATION_ID,
             width_request: 800,
             title: _("Mail")
         );
@@ -166,7 +166,7 @@ public class Mail.MainWindow : Hdy.ApplicationWindow {
         size_group.add_widget (conversation_list.search_header);
         size_group.add_widget (message_list.headerbar);
 
-        var settings = new GLib.Settings ("io.elementary.mail");
+        var settings = new GLib.Settings (APPLICATION_ID);
         settings.bind ("paned-start-position", paned_start, "position", SettingsBindFlags.DEFAULT);
         settings.bind ("paned-end-position", paned_end, "position", SettingsBindFlags.DEFAULT);
 

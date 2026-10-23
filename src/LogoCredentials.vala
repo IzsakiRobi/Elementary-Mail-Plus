@@ -14,7 +14,7 @@ public class Mail.LogoCredentials : Object {
     }
 
     construct {
-        schema = new Secret.Schema ("io.elementary.mail.LogoDev", Secret.SchemaFlags.NONE,
+        schema = new Secret.Schema (APPLICATION_ID + ".LogoDev", Secret.SchemaFlags.NONE,
             "service", Secret.SchemaAttributeType.STRING);
         load.begin ();
     }

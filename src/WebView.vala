@@ -41,7 +41,7 @@ public class Mail.WebView : WebKit.WebView {
 
     private const string INTERNAL_URL_BODY = "elementary-mail:body";
     private const string ARCHIVE_URL_BODY = "elementary-mail-cache:body";
-    private const string SERVER_BUS_NAME = "io.elementary.mail.WebViewServer";
+    private const string SERVER_BUS_NAME = APPLICATION_ID + ".WebViewServer";
 
     private Gee.Map<string, InputStream> internal_resources;
 

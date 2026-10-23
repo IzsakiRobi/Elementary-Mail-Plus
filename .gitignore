@@ -7,3 +7,5 @@ debian/elementary-mail-plus/
 debian/elementary-mail-plus.substvars
 debian/elementary-mail-plus.debhelper.log
 debian/files
+debian/debhelper-build-stamp
+debian/*.debhelper

@@ -185,7 +185,7 @@ public class Mail.SenderAvatar : Gtk.Bin {
         }
 
         var message = new Soup.Message ("GET", uri);
-        var cache_dir = Path.build_filename (Environment.get_user_cache_dir (), "io.elementary.mail", "avatars-v3");
+        var cache_dir = Path.build_filename (Environment.get_user_cache_dir (), APPLICATION_ID, "avatars-v3");
         var cache_file = File.new_for_path (Path.build_filename (cache_dir,
             Checksum.compute_for_string (ChecksumType.SHA256, uri) + ".png"));
         try {

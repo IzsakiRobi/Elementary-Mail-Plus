@@ -10,9 +10,6 @@ Homepage: https://github.com/IzsakiRobi/Elementary-Mail-Plus
 Package: elementary-mail-plus
 Architecture: any
 Depends: io.elementary.portals (>= 7.1.0), ${shlibs:Depends}, ${misc:Depends}, dconf-gsettings-backend | gsettings-backend, evolution-data-server, gnome-keyring
-Conflicts: io.elementary.mail, pantheon-mail
-Replaces: io.elementary.mail, pantheon-mail
-Provides: io.elementary.mail
 Description: Enhanced elementary Mail
  Elementary Mail with sender avatars, company logos, unread badges,
  trash management, preferences and bounded message caching.

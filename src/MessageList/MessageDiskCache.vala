@@ -31,7 +31,7 @@ public class Mail.MessageDiskCache : Object {
     public static MessageDiskCache get_default () {
         if (instance == null) {
             instance = new MessageDiskCache (Path.build_filename (
-                Environment.get_user_cache_dir (), "io.elementary.mail", "messages-v1"));
+                Environment.get_user_cache_dir (), APPLICATION_ID, "messages-v1"));
         }
         return instance;
     }

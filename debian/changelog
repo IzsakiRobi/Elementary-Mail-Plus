@@ -1,3 +1,10 @@
+elementary-mail-plus (0.1-2) noble; urgency=medium
+
+  * Use a separate application identity and data directories.
+  * Allow installation alongside the distribution Mail.
+
+ -- IzsakiRobi <15942662+IzsakiRobi@users.noreply.github.com>  Sat, 24 Oct 2026 00:30:00 +0200
+
 elementary-mail-plus (0.1-1) noble; urgency=medium
 
   * Initial release based on elementary Mail 8.0.1.
