@@ -30,6 +30,7 @@ public class Mail.AccountItemModel : Mail.SourceList.ExpandableItem, Mail.Source
     private Gee.HashMap<string, FolderItemModel> folder_items;
     private AccountSavedState saved_state;
     private uint save_cache_id;
+    private Gee.HashMap<Camel.Folder, ulong?> folder_changed_handlers = new Gee.HashMap<Camel.Folder, ulong?> ();
     private unowned Camel.OfflineStore offlinestore;
 
     public AccountItemModel (Mail.Backend.Account account) {
@@ -50,12 +51,51 @@ public class Mail.AccountItemModel : Mail.SourceList.ExpandableItem, Mail.Source
         offlinestore.folder_deleted.connect (folder_deleted);
         offlinestore.folder_info_stale.connect (reload_folders);
         offlinestore.folder_renamed.connect (folder_renamed);
+        offlinestore.folder_opened.connect ((folder) => {
+            Idle.add (() => {
+                watch_folder (folder);
+                return Source.REMOVE;
+            });
+        });
+        foreach (var folder in offlinestore.dup_opened_folders ()) {
+            watch_folder (folder);
+        }
     }
 
     ~AccountItemModel () {
         connect_cancellable.cancel ();
+        foreach (var entry in folder_changed_handlers.entries) {
+            entry.key.disconnect (entry.value);
+        }
+        folder_changed_handlers.clear ();
         if (save_cache_id != 0) {
             Source.remove (save_cache_id);
+        }
+    }
+
+    private void watch_folder (Camel.Folder folder) {
+        if (!folder_changed_handlers.has_key (folder)) {
+            folder_changed_handlers[folder] = folder.changed.connect (() => {
+                Idle.add (() => {
+                    update_folder_counts (folder);
+                    return Source.REMOVE;
+                });
+            });
+        }
+        update_folder_counts (folder);
+    }
+
+    private void update_folder_counts (Camel.Folder folder) {
+        var item = folder_items[folder.full_name];
+        if (item != null) {
+            item.update_counts (folder.get_unread_message_count (), folder.get_message_count ());
+            queue_save_folders ();
+        }
+    }
+
+    private void update_open_folder_counts () {
+        foreach (var folder in folder_changed_handlers.keys) {
+            update_folder_counts (folder);
         }
     }
 
@@ -71,6 +111,7 @@ public class Mail.AccountItemModel : Mail.SourceList.ExpandableItem, Mail.Source
             }
             if (folderinfo != null) {
                 show_info (folderinfo, this);
+                update_open_folder_counts ();
                 var current = new Gee.HashSet<string> ();
                 collect_folder_names (folderinfo, current);
                 foreach (var folder_item in folder_items.values.to_array ()) {
@@ -135,6 +176,7 @@ public class Mail.AccountItemModel : Mail.SourceList.ExpandableItem, Mail.Source
                 }
             }
         }
+        update_open_folder_counts ();
         queue_save_folders ();
     }
 

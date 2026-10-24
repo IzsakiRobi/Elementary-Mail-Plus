@@ -36,7 +36,6 @@ vala_files = files(
     'MessageList/FolderPopover/FolderRow.vala',
     'MessageList/MessageList.vala',
     'MessageList/MessageViewCache.vala',
-    'MessageList/MessageDiskCache.vala',
     'MessageList/MessageListItem.vala',
     'SourceList/CellRendererBadge.vala',
     'SourceList/CellRendererExpander.vala',

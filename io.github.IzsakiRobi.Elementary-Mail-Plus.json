@@ -1,7 +1,7 @@
 {
     "id": "io.github.IzsakiRobi.Elementary-Mail-Plus",
     "runtime": "io.elementary.Platform",
-    "runtime-version": "9.1",
+    "runtime-version": "9",
     "sdk": "io.elementary.Sdk",
     "command": "io.github.IzsakiRobi.Elementary-Mail-Plus",
     "finish-args": [
@@ -9,6 +9,7 @@
         "--share=network",
         "--socket=fallback-x11",
         "--socket=wayland",
+        "--device=dri",
         "--talk-name=org.gnome.evolution.dataserver.AddressBook10",
         "--talk-name=org.gnome.evolution.dataserver.Sources5",
         "--talk-name=org.freedesktop.secrets",

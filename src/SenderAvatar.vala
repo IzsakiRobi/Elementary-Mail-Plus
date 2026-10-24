@@ -180,9 +180,6 @@ public class Mail.SenderAvatar : Gtk.Bin {
         if (cache.has_key (uri)) {
             return cache[uri];
         }
-        if (missing.contains (uri) || !NetworkMonitor.get_default ().network_available) {
-            return null;
-        }
 
         var message = new Soup.Message ("GET", uri);
         var cache_dir = Path.build_filename (Environment.get_user_cache_dir (), APPLICATION_ID, "avatars-v3");
@@ -207,6 +204,9 @@ public class Mail.SenderAvatar : Gtk.Bin {
         }
 
         if (cancellable.is_cancelled ()) {
+            return null;
+        }
+        if (missing.contains (uri) || !NetworkMonitor.get_default ().network_available) {
             return null;
         }
         try {

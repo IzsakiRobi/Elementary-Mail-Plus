@@ -1,0 +1,19 @@
+<svg
+        xmlns='http://www.w3.org/2000/svg'
+        xmlns:svg='http://www.w3.org/2000/svg'
+        id='svg1'
+        width='16'
+        height='16'>
+  <path
+          id='path1'
+          font-family='sans-serif'
+          font-weight='400'
+          fill='url(#gpa:foreground) #555761'
+          fill-opacity='1'
+          fill-rule='nonzero'
+          overflow='visible'
+          d='M 6.5 1 C 3.474 1, 1 3.474, 1 6.5 C 1 9.526, 3.474 12, 6.5 12 A 5.46 5.46 0 0 0 9.612 11.025 L 13.293 14.707 A 1 1 0 1 0 14.707 13.293 L 11.026 9.611 A 5.46 5.46 0 0 0 12 6.5 C 12 3.474, 9.526 1, 6.5 1 Z M 6.5 2.25 A 4.25 4.25 0 0 1 10.75 6.5 A 4.25 4.25 0 0 1 6.5 10.75 A 4.25 4.25 0 0 1 2.25 6.5 A 4.25 4.25 0 0 1 6.5 2.25 Z'
+          class="foreground"
+          style='mix-blend-mode: normal; isolation: auto'>
+  </path>
+</svg>

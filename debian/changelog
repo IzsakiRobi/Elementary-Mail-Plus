@@ -1,3 +1,33 @@
+elementary-mail-plus (0.1-6) noble; urgency=medium
+
+  * Remove persistent message archives, body prefetch and notification withdrawal.
+  * Keep the in-memory message/list cache and existing avatar PNG cache.
+  * Read cached avatar files before checking network availability.
+
+ -- IzsakiRobi <15942662+IzsakiRobi@users.noreply.github.com>  Sat, 24 Oct 2026 16:00:00 +0200
+
+elementary-mail-plus (0.1-5) noble; urgency=medium
+
+  * Prefetch recent message bodies with bounded concurrency.
+  * Persist MIME source independently of the rendered image archive.
+  * Withdraw resolved message notifications, including after restart.
+
+ -- IzsakiRobi <15942662+IzsakiRobi@users.noreply.github.com>  Sat, 24 Oct 2026 15:00:00 +0200
+
+elementary-mail-plus (0.1-4) noble; urgency=medium
+
+  * Update folder unread counts from live Camel folder changes.
+  * Grant the Flatpak WebKit renderer access to graphics devices.
+
+ -- IzsakiRobi <15942662+IzsakiRobi@users.noreply.github.com>  Sat, 24 Oct 2026 13:20:00 +0200
+
+elementary-mail-plus (0.1-3) noble; urgency=medium
+
+  * Register the bundled icon resource path with the fork application ID.
+  * Bundle the elementary icons used by Mail Plus in an application-only theme.
+
+ -- IzsakiRobi <15942662+IzsakiRobi@users.noreply.github.com>  Sat, 24 Oct 2026 12:30:00 +0200
+
 elementary-mail-plus (0.1-2) noble; urgency=medium
 
   * Use a separate application identity and data directories.

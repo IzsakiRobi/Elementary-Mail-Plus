@@ -1,0 +1,20 @@
+<svg
+        xmlns='http://www.w3.org/2000/svg'
+        xmlns:svg='http://www.w3.org/2000/svg'
+        id='svg6'
+        width='24'
+        height='24'>
+  <path
+          id='path873-5-3'
+          opacity='1'
+          fill='url(#gpa:foreground) #555761'
+          fill-opacity='1'
+          fill-rule='nonzero'
+          stroke='none'
+          stroke-width='4'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+          d='M 13 4 C 12.446 4, 12.1343 4.46254, 12 5 L 12 9 L 4 9 C 3.446 9, 3 9.446, 3 10 L 3 13 C 3 13.554, 3.446 14, 4 14 L 12 14 L 12 18 C 12 18.554, 12.446 19, 13 19 C 13.2986 19, 13.5651 18.8703, 13.748 18.6641 L 20.7263 12.1855 C 20.8954 12.0065, 20.9997 11.7657, 20.9997 11.5 C 20.9997 11.2343, 20.8954 10.9935, 20.7263 10.8145 L 13.748 4.33594 C 13.5651 4.12975, 13.2986 4, 13 4 Z'
+          class="foreground">
+  </path>
+</svg>

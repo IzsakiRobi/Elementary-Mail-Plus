@@ -255,7 +255,8 @@ public class Mail.MessageList : Gtk.Box {
     }
 
     private static string view_key (Camel.MessageInfo info) {
-        return MessageDiskCache.key_for (info);
+        return new Variant ("(sss)", info.summary.folder.parent_store.uid,
+            info.summary.folder.full_name, info.uid).print (true);
     }
 
     private MessageListItem get_message_view (Camel.MessageInfo info) {

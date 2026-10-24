@@ -322,7 +322,6 @@ public class Mail.Backend.Session : Camel.Session {
             source.bind_property ("display-name", service, "display-name", BindingFlags.SYNC_CREATE);
             if (service is Camel.OfflineStore) {
                 var account = new Account (service);
-                MessageDiskCache.get_default ().enable_account (service.uid);
                 accounts.add (account);
                 account_added (account);
             }
@@ -332,7 +331,6 @@ public class Mail.Backend.Session : Camel.Session {
     }
 
     public override void remove_service (Camel.Service service) {
-        MessageDiskCache.get_default ().remove_account.begin (service.uid);
         base.remove_service (service);
 
         if (service is Camel.OfflineStore) {

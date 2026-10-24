@@ -26,30 +26,17 @@ public class Mail.WebView : WebKit.WebView {
     public signal void link_activated (string url);
     public signal void selection_changed ();
     public signal void load_finished ();
-    public signal void content_ready ();
     public signal void document_ready ();
-    public signal void archive_failed ();
 
     public bool bind_height_to_page_height { get; set; default = false; }
     public bool body_html_changed { get; private set; default = false; }
-    public uint content_revision { get; private set; }
-    public bool can_archive {
-        get {
-            return loaded && !page_failed;
-        }
-    }
-
     private const string INTERNAL_URL_BODY = "elementary-mail:body";
-    private const string ARCHIVE_URL_BODY = "elementary-mail-cache:body";
     private const string SERVER_BUS_NAME = APPLICATION_ID + ".WebViewServer";
 
     private Gee.Map<string, InputStream> internal_resources;
 
     private bool loaded = false;
     private bool queued_load_images = false;
-    private bool restoring_archive;
-    private uint pending_resources;
-    private bool page_failed;
     private bool images_enabled;
     private Gee.HashMap<string, string> queued_elements;
     private GLib.Cancellable cancellable;
@@ -59,7 +46,6 @@ public class Mail.WebView : WebKit.WebView {
         unowned string? webkit_extension_path_env = Environment.get_variable ("WEBKIT_EXTENSION_PATH");
         context.set_web_extensions_directory (webkit_extension_path_env ?? WEBKIT_EXTENSION_PATH);
         context.set_sandbox_enabled (true);
-        context.get_security_manager ().register_uri_scheme_as_local ("elementary-mail-cache");
 
         context.register_uri_scheme ("cid", (req) => {
             WebView? view = req.get_web_view () as WebView;
@@ -79,30 +65,6 @@ public class Mail.WebView : WebKit.WebView {
 
         decide_policy.connect (on_decide_policy);
         load_changed.connect (on_load_changed);
-        resource_load_started.connect ((resource) => {
-            content_revision++;
-            pending_resources++;
-            resource.finished.connect (() => {
-                content_revision++;
-                if (pending_resources > 0) {
-                    pending_resources--;
-                }
-                update_height ();
-                if (loaded && !page_failed) {
-                    content_ready ();
-                }
-            });
-        });
-        load_failed.connect ((event, uri, error) => {
-            page_failed = true;
-            if (restoring_archive) {
-                debug ("Cached page failed: phase %d code %d", event, error.code);
-                restoring_archive = false;
-                archive_failed ();
-            }
-            return false;
-        });
-
         key_release_event.connect (() => {
             body_html_changed = true;
         });
@@ -142,14 +104,11 @@ public class Mail.WebView : WebKit.WebView {
                 }
             }
 
-            if (queued_load_images && !restoring_archive) {
+            if (queued_load_images) {
                 load_images ();
             }
 
             load_finished ();
-            if (!page_failed) {
-                content_ready ();
-            }
         }
     }
 
@@ -173,24 +132,9 @@ public class Mail.WebView : WebKit.WebView {
     }
 
     public new void load_html (string? body) {
-        content_revision++;
         loaded = false;
-        restoring_archive = false;
-        page_failed = false;
         images_enabled = false;
         base.load_html (body, INTERNAL_URL_BODY);
-    }
-
-    public async void load_archive (Bytes archive, bool images_allowed) throws Error {
-        var message = new WebKit.UserMessage ("prepare-archive", new Variant.boolean (images_allowed));
-        yield send_message_to_page (message, cancellable);
-        content_revision++;
-        loaded = false;
-        restoring_archive = true;
-        page_failed = false;
-        images_enabled = images_allowed;
-        queued_load_images = images_allowed;
-        load_bytes (archive, "multipart/related", null, ARCHIVE_URL_BODY);
     }
 
     public void set_content_of_element (string element, string content) {
@@ -224,8 +168,7 @@ public class Mail.WebView : WebKit.WebView {
             if (nav_policy.navigation_action.get_navigation_type () == WebKit.NavigationType.LINK_CLICKED) {
                 link_activated (nav_policy.navigation_action.get_request ().uri);
             } else if (nav_policy.navigation_action.get_navigation_type () == WebKit.NavigationType.OTHER) {
-                if (nav_policy.navigation_action.get_request ().uri == INTERNAL_URL_BODY ||
-                    (restoring_archive && nav_policy.navigation_action.get_request ().uri == ARCHIVE_URL_BODY)) {
+                if (nav_policy.navigation_action.get_request ().uri == INTERNAL_URL_BODY) {
                     policy.use ();
                     return Gdk.EVENT_STOP;
                 }
@@ -241,7 +184,6 @@ public class Mail.WebView : WebKit.WebView {
     }
 
     public void load_images () {
-        content_revision++;
         queued_load_images = true;
         if (loaded) {
             if (images_enabled) {
@@ -334,14 +276,13 @@ public class Mail.WebView : WebKit.WebView {
         switch (message.name) {
             case "document-ready":
                 string uri = message.parameters.get_string ();
-                if (uri == INTERNAL_URL_BODY || uri == ARCHIVE_URL_BODY) {
+                if (uri == INTERNAL_URL_BODY) {
                     loaded = true;
-                    if (queued_load_images && !restoring_archive) {
+                    if (queued_load_images) {
                         load_images ();
                     }
                     update_height ();
                     document_ready ();
-                    content_ready ();
                 }
                 return true;
             case "image-load-blocked":

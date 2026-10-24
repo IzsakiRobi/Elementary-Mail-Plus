@@ -19,7 +19,7 @@
  */
 
 public class Mail.Page : Object {
-    private const string[] ALLOWED_SCHEMES = { "cid", "data", "about", "elementary-mail", "elementary-mail-cache" };
+    private const string[] ALLOWED_SCHEMES = { "cid", "data", "about", "elementary-mail" };
     private const string JS_EXPAND_BODY = """
         var body = document.querySelector('#elementary-message-body');
         var signature = document.querySelector('#elementary-message-signature');
@@ -85,10 +85,6 @@ public class Mail.Page : Object {
     private bool on_page_user_message_received (WebKit.WebPage page, WebKit.UserMessage message) {
         var js_context = page.get_main_frame ().get_js_context ();
         switch (message.name) {
-            case "prepare-archive":
-                show_images = message.parameters.get_boolean ();
-                message.send_reply (new WebKit.UserMessage ("archive-ready", null));
-                return true;
             case "set-content-of-element":
                 string element_selector, content;
                 message.parameters.get ("(ss)", out element_selector, out content);

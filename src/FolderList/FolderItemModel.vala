@@ -123,6 +123,21 @@ public class Mail.FolderItemModel : Mail.SourceList.ExpandableItem {
         }
     }
 
+    public void update_counts (int unread, int total) {
+        if (unread < 0) {
+            unread = folder_info.unread;
+        }
+        if (total < 0) {
+            total = folder_info.total;
+        }
+        if (folder_info.unread == unread && folder_info.total == total) {
+            return;
+        }
+        folder_info.unread = unread;
+        folder_info.total = total;
+        update_infos ();
+    }
+
     private void update_infos () {
         name = old_name = folder_info.display_name;
         badge = folder_info.unread > 0 ? "%d".printf (folder_info.unread) : null;

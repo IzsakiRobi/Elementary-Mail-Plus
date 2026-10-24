@@ -39,20 +39,15 @@ public class Mail.MessageListItem : Gtk.ListBoxRow {
     private string message_content;
     private bool message_is_html = false;
     private bool message_loaded = false;
-    private bool from_disk;
-    private bool body_started;
-    private bool images_allowed;
-    private string? disk_key;
-    private uint disk_save_id;
 
     public bool retainable {
         get {
-            return message_loaded && !loading_cancellable.is_cancelled ();
+            return loaded && !loading_cancellable.is_cancelled ();
         }
     }
 
     public bool rebind_message (Camel.MessageInfo info) {
-        if (mime_message != null && !MessageDiskCache.matches_message (info, mime_message)) {
+        if (message_info.message_id != 0 && info.message_id != 0 && message_info.message_id != info.message_id) {
             return false;
         }
         message_info = info;
@@ -331,23 +326,6 @@ public class Mail.MessageListItem : Gtk.ListBoxRow {
         web_view.document_ready.connect (() => {
             loaded = true;
         });
-        web_view.content_ready.connect (queue_disk_save);
-        web_view.archive_failed.connect (() => {
-            from_disk = false;
-            body_started = false;
-            loaded = false;
-            if (disk_key != null) {
-                MessageDiskCache.get_default ().discard.begin (disk_key);
-            }
-            if (mime_message != null && !loading_cancellable.is_cancelled ()) {
-                if (attachment_bar != null) {
-                    foreach (var child in attachment_bar.get_children ()) {
-                        child.destroy ();
-                    }
-                }
-                open_message.begin (mime_message);
-            }
-        });
 
         var secondary_box = new Gtk.Box (VERTICAL, 0);
         secondary_box.add (separator);
@@ -409,9 +387,6 @@ public class Mail.MessageListItem : Gtk.ListBoxRow {
 
         destroy.connect (() => {
             loading_cancellable.cancel ();
-            if (disk_save_id != 0) {
-                Source.remove (disk_save_id);
-            }
         });
 
         starred_button.clicked.connect (() => {
@@ -524,37 +499,8 @@ public class Mail.MessageListItem : Gtk.ListBoxRow {
     private async void get_message () {
         var folder = message_info.summary.folder;
         Camel.MimeMessage? message = null;
-        var flags = (Camel.FolderFlags) folder.get_flags ();
-        var addresses = new Camel.InternetAddress ();
-        addresses.unformat (message_info.from);
-        unowned string? sender_address;
-        addresses.get (0, null, out sender_address);
-        images_allowed = (!(Camel.FolderFlags.IS_JUNK in flags) && settings.get_boolean ("always-load-remote-images")) ||
-            sender_address in settings.get_strv ("remote-images-whitelist");
-        MessageDiskCache.Entry? cached = null;
-        if ((message_info.flags & (Camel.MessageFlags.DRAFT | Camel.MessageFlags.DELETED)) == 0) {
-            disk_key = MessageDiskCache.key_for (message_info);
-            cached = yield MessageDiskCache.get_default ().load_message (message_info, images_allowed, loading_cancellable);
-            debug ("Disk cache lookup: %s", cached != null ? "hit" : "miss");
-        }
         try {
-            if (cached != null) {
-                message = new Camel.MimeMessage ();
-                try {
-                    if (!(yield message.construct_from_input_stream (new MemoryInputStream.from_bytes (cached.source),
-                        Priority.DEFAULT, loading_cancellable)) || !MessageDiskCache.matches_message (message_info, message)) {
-                        cached = null;
-                        message = null;
-                    }
-                } catch (Error e) {
-                    debug ("Cached MIME decode failed: code %d", e.code);
-                    cached = null;
-                    message = null;
-                }
-            }
-            if (message == null) {
-                message = yield folder.get_message (message_info.uid, GLib.Priority.DEFAULT, loading_cancellable);
-            }
+            message = yield folder.get_message (message_info.uid, GLib.Priority.DEFAULT, loading_cancellable);
         } catch (Error e) {
             warning ("Could not get message. %s", e.message);
         }
@@ -566,6 +512,8 @@ public class Mail.MessageListItem : Gtk.ListBoxRow {
             message_loaded = false;
             return;
         }
+
+        var flags = (Camel.FolderFlags)folder.get_flags ();
 
         if (!(Camel.FolderFlags.IS_JUNK in flags) && settings.get_boolean ("always-load-remote-images")) {
             web_view.load_images ();
@@ -591,95 +539,13 @@ public class Mail.MessageListItem : Gtk.ListBoxRow {
                 }
 
                 web_view.load_images ();
-                images_allowed = true;
-                from_disk = false;
                 blocked_images_infobar.revealed = false;
             });
         }
 
         if (message != null) {
             mime_message = message;
-            if (cached != null) {
-                try {
-                    from_disk = true;
-                    body_started = true;
-                    yield web_view.load_archive (cached.archive, images_allowed);
-                    yield parse_mime_content (message.content, false);
-                    debug ("Message restored from disk cache");
-                    return;
-                } catch (Error e) {
-                    debug ("Cached WebKit restore failed: code %d", e.code);
-                    from_disk = false;
-                    body_started = false;
-                    yield MessageDiskCache.get_default ().discard (disk_key);
-                }
-            }
             yield open_message (message);
-        }
-    }
-
-    private void queue_disk_save () {
-        if (from_disk || !body_started || !web_view.can_archive || disk_key == null || mime_message == null || loading_cancellable.is_cancelled () ||
-            message_info.size > MessageDiskCache.MAX_SOURCE_BYTES ||
-            (message_info.flags & (Camel.MessageFlags.DRAFT | Camel.MessageFlags.DELETED)) != 0) {
-            return;
-        }
-        if (disk_save_id != 0) {
-            Source.remove (disk_save_id);
-        }
-        disk_save_id = Timeout.add (700, () => {
-            disk_save_id = 0;
-            save_to_disk.begin ();
-            return Source.REMOVE;
-        });
-    }
-
-    private async void save_to_disk () {
-        var cache = MessageDiskCache.get_default ();
-        if (disk_key == null || !web_view.can_archive || loading_cancellable.is_cancelled ()) {
-            return;
-        }
-        if (!cache.begin_save (disk_key)) {
-            if (cache.should_retry_save (disk_key)) {
-                queue_disk_save ();
-            }
-            return;
-        }
-        var revision = web_view.content_revision;
-        bool allowed = images_allowed;
-        try {
-            var stream = yield web_view.save (WebKit.SaveMode.MHTML, loading_cancellable);
-            var archive = new ByteArray ();
-            while (true) {
-                var chunk = yield stream.read_bytes_async (65536, Priority.LOW, loading_cancellable);
-                if (chunk.get_size () == 0) {
-                    break;
-                }
-                if (archive.len + chunk.get_size () > MessageDiskCache.MAX_ENTRY_BYTES) {
-                    yield stream.close_async (Priority.LOW, null);
-                    return;
-                }
-                archive.append (chunk.get_data ());
-            }
-            yield stream.close_async (Priority.LOW, loading_cancellable);
-            var source = new MemoryOutputStream.resizable ();
-            yield mime_message.write_to_output_stream (source, Priority.LOW, loading_cancellable);
-            source.close ();
-            if (revision != web_view.content_revision || allowed != images_allowed || !web_view.can_archive) {
-                return;
-            }
-            yield cache.store (disk_key, allowed, source.steal_as_bytes (),
-                ByteArray.free_to_bytes ((owned) archive), loading_cancellable);
-            debug ("Displayed message saved to disk cache");
-        } catch (Error e) {
-            if (!(e is IOError.CANCELLED)) {
-                debug ("Could not cache displayed message: %s", e.message);
-            }
-        } finally {
-            cache.end_save (disk_key);
-            if (revision != web_view.content_revision) {
-                queue_disk_save ();
-            }
         }
     }
 
@@ -689,7 +555,6 @@ public class Mail.MessageListItem : Gtk.ListBoxRow {
             return;
         }
 
-        body_started = true;
         if (message_is_html) {
             web_view.load_html (message_content);
         } else {

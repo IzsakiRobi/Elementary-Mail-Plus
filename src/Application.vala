@@ -105,10 +105,11 @@ public class Mail.Application : Gtk.Application {
         base.startup ();
 
         Hdy.init ();
+        Gtk.IconTheme.get_default ().add_resource_path ("/io/elementary/mail/icons");
 
         var granite_settings = Granite.Settings.get_default ();
         gtk_settings = Gtk.Settings.get_default ();
-        gtk_settings.gtk_icon_theme_name = "elementary";
+        gtk_settings.gtk_icon_theme_name = "MailPlus";
 
         check_theme ();
         gtk_settings.notify["gtk-theme-name"].connect (check_theme);
