@@ -1,3 +1,11 @@
+elementary-mail-plus (0.1-9) noble; urgency=medium
+
+  * Restore normal mouse focus behavior for the Preferences button.
+  * Show avatar image sources in tooltips.
+  * Clarify that clearing downloaded avatars preserves address book photos.
+
+ -- IzsakiRobi <15942662+IzsakiRobi@users.noreply.github.com>  Sat, 24 Oct 2026 23:25:00 +0200
+
 elementary-mail-plus (0.1-8) noble; urgency=medium
 
   * Make the avatar image toggle apply to contacts, cached images and remote logos.

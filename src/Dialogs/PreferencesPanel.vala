@@ -79,7 +79,7 @@ public class Mail.PreferencesPanel : Granite.Dialog {
         key_row.add (key_clear);
         form.attach (key_row, 0, 5, 2, 1);
 
-        var hint = new Gtk.Label (_("Stored in the system keyring. Clear the field and save to remove the key.")) {
+        var hint = new Gtk.Label (_("Stored in the system keyring. Clear removes the key and downloaded avatars; address book photos and Gravatar remain available.")) {
             wrap = true, max_width_chars = 48, xalign = 0
         };
         hint.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);

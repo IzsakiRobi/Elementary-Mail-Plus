@@ -5,7 +5,7 @@
 Repository: https://github.com/IzsakiRobi/Elementary-Mail-Plus
 Work on `main`. Read this file before changing code. The user communicates in Hungarian.
 The rollback baseline is commit `6072670`. The Fedora portability follow-up is now included on `main` and in the mutable `v0.1` release.
-The mutable `v0.1` tag/release contains Debian package `0.1-8` and two Flatpak bundles. Do not infer the current implementation from older Debian changelog entries.
+The mutable `v0.1` tag/release contains Debian package `0.1-9` and two Flatpak bundles. Do not infer the current implementation from older Debian changelog entries.
 
 After reinstalling the computer:
 
@@ -127,3 +127,9 @@ Both runtime 8.2 and 9 Flatpaks and the Noble .deb are built for this follow-up.
 - Every new Preferences panel refreshes the system-keyring lookup. During lookup the field is disabled with a checking placeholder; when a key exists its actual value is populated with visibility disabled, displaying dots. Keys are never logged or committed.
 - One isolated regression check exercised the actual SenderAvatar with a supplied contact icon: off blocks even contact lookup, on displays the image, off removes it again, and clear deletes a test cache entry. This used temporary schemas, the memory GSettings backend and a separate cache, without network or real mail. Real-mail behavior remains for the user to test.
 - The user authorized rebuilding and replacing all three v0.1 assets again. The .deb version is 0.1-8. Purge is not intended to erase per-user GSettings, keyring entries or caches; Clear provides explicit avatar/key cleanup.
+
+## Address-book image diagnosis and normal focus — 2026-10-24
+
+The user reported company logos still appearing with an empty key after Clear/restart. Read-only inspection found actual PHOTO entries for the Apple and OpenAI sender domains in the system's synced EDS address book, while the application's `avatars-v3` directory contained only one PNG. This establishes that those logos can come from contacts rather than a failed Logo.dev cache deletion. Do not delete contact photos or reset the user's address book as an application-cache fix. Fedora may not have the same synced contacts/photos.
+
+The requested lookup order is preserved. Avatar tooltips now identify Address book, Logo.dev or Gravatar. The Preferences hint explicitly explains that Clear deletes the key and downloaded avatar cache while contact photos and Gravatar remain available. There was no additional avatar-cache storage discovered or introduced. The user requested restoring normal Preferences button feedback, so `focus_on_click = false` was removed; GTK's normal mouse and keyboard focus behavior applies again. The user authorized main/v0.1 replacement with .deb 0.1-9 and both Flatpaks. Only package compilation/basic checks are needed for this UI clarification.

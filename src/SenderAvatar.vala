@@ -11,6 +11,7 @@ public class Mail.SenderAvatar : Gtk.Bin {
     private static uint cache_generation;
     private Cancellable? loading;
     private string? email;
+    private string? image_source;
     private ulong settings_handler;
     private ulong visibility_handler;
     private ulong contacts_handler;
@@ -75,7 +76,7 @@ public class Mail.SenderAvatar : Gtk.Bin {
         var text = name ?? address ?? _("Unknown");
         if (avatar.text != text) {
             avatar.text = text;
-            tooltip_text = text;
+            update_tooltip ();
         }
         if (email == normalized) {
             return;
@@ -85,10 +86,12 @@ public class Mail.SenderAvatar : Gtk.Bin {
         reload ();
     }
 
-    private void set_icon (LoadableIcon? icon) {
+    private void set_icon (LoadableIcon? icon, string? source = null) {
         if (icon != null && !Application.settings.get_boolean ("load-remote-avatars")) {
             return;
         }
+        image_source = icon != null ? source : null;
+        update_tooltip ();
         var current = avatar.get_loadable_icon ();
         if (current == null && icon == null) {
             return;
@@ -97,6 +100,10 @@ public class Mail.SenderAvatar : Gtk.Bin {
             return;
         }
         avatar.set_loadable_icon (icon);
+    }
+
+    private void update_tooltip () {
+        tooltip_text = image_source == null ? avatar.text : "%s\n%s".printf (avatar.text ?? "", image_source);
     }
 
     private void reload () {
@@ -125,7 +132,7 @@ public class Mail.SenderAvatar : Gtk.Bin {
                 try {
                     var image = yield new Gdk.Pixbuf.from_stream_at_scale_async (stream, 1024, 1024, true, cancellable);
                     if (!cancellable.is_cancelled ()) {
-                        set_icon (fill_icon (image));
+                        set_icon (fill_icon (image), _("Photo from your address book"));
                     }
                     return;
                 } finally {
@@ -144,6 +151,7 @@ public class Mail.SenderAvatar : Gtk.Bin {
         }
 
         BytesIcon? icon = null;
+        string? source = null;
         var domain = company_domain (address);
         if (domain != null) {
             var key = credentials.key;
@@ -152,14 +160,20 @@ public class Mail.SenderAvatar : Gtk.Bin {
                     domain, Uri.escape_string (key, null, false)
                 );
                 icon = yield fetch_icon (uri, cancellable);
+                if (icon != null) {
+                    source = _("Logo from Logo.dev");
+                }
             }
         }
         if (icon == null && !cancellable.is_cancelled ()) {
             var hash = Checksum.compute_for_string (ChecksumType.SHA256, address);
             icon = yield fetch_icon ("https://www.gravatar.com/avatar/%s?d=404&s=512&r=g".printf (hash), cancellable);
+            if (icon != null) {
+                source = _("Avatar from Gravatar");
+            }
         }
         if (!cancellable.is_cancelled ()) {
-            set_icon (icon);
+            set_icon (icon, source);
         }
     }
 
