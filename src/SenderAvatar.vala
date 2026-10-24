@@ -8,6 +8,7 @@ public class Mail.SenderAvatar : Gtk.Bin {
     private static Soup.Session session;
     private static Gee.HashMap<string, BytesIcon> cache;
     private static Gee.HashSet<string> missing;
+    private static uint cache_generation;
     private Cancellable? loading;
     private string? email;
     private ulong settings_handler;
@@ -85,6 +86,9 @@ public class Mail.SenderAvatar : Gtk.Bin {
     }
 
     private void set_icon (LoadableIcon? icon) {
+        if (icon != null && !Application.settings.get_boolean ("load-remote-avatars")) {
+            return;
+        }
         var current = avatar.get_loadable_icon ();
         if (current == null && icon == null) {
             return;
@@ -99,6 +103,10 @@ public class Mail.SenderAvatar : Gtk.Bin {
         if (loading != null) {
             loading.cancel ();
         }
+        if (!Application.settings.get_boolean ("load-remote-avatars")) {
+            set_icon (null);
+            return;
+        }
         if (!visible || email == null || !email.contains ("@")) {
             return;
         }
@@ -107,6 +115,9 @@ public class Mail.SenderAvatar : Gtk.Bin {
     }
 
     private async void load_avatar (string address, Cancellable cancellable) {
+        if (cancellable.is_cancelled () || !Application.settings.get_boolean ("load-remote-avatars")) {
+            return;
+        }
         var contact_icon = yield contacts.lookup_avatar (address);
         if (contact_icon != null && !cancellable.is_cancelled ()) {
             try {
@@ -177,6 +188,7 @@ public class Mail.SenderAvatar : Gtk.Bin {
     }
 
     private async BytesIcon? fetch_icon (string uri, Cancellable cancellable) {
+        var generation = cache_generation;
         if (cancellable.is_cancelled ()) {
             return null;
         }
@@ -199,6 +211,9 @@ public class Mail.SenderAvatar : Gtk.Bin {
                 yield cache_file.load_contents_async (cancellable, out data, null);
                 var image_stream = new MemoryInputStream.from_bytes (new Bytes (data));
                 yield new Gdk.Pixbuf.from_stream_at_scale_async (image_stream, 512, 512, true, cancellable);
+                if (cancellable.is_cancelled () || generation != cache_generation) {
+                    return null;
+                }
                 var icon = new BytesIcon (new Bytes (data));
                 remember_icon (uri, icon);
                 return icon;
@@ -251,13 +266,17 @@ public class Mail.SenderAvatar : Gtk.Bin {
             );
             var icon = fill_icon (decoded);
             var png = icon.bytes.get_data ();
-            if (cancellable.is_cancelled ()) {
+            if (cancellable.is_cancelled () || generation != cache_generation) {
                 return null;
             }
             remember_icon (uri, icon);
             try {
                 DirUtils.create_with_parents (cache_dir, 0700);
                 yield cache_file.replace_contents_async (png, null, false, FileCreateFlags.PRIVATE, cancellable, null);
+                if (generation != cache_generation) {
+                    yield cache_file.delete_async (Priority.DEFAULT, null);
+                    return null;
+                }
             } catch (Error e) {
             }
             return icon;
@@ -266,6 +285,45 @@ public class Mail.SenderAvatar : Gtk.Bin {
                 debug ("Unable to load sender avatar");
             }
             return null;
+        }
+    }
+
+    public static async void clear_cache () throws Error {
+        cache_generation++;
+        cache.clear ();
+        missing.clear ();
+        var directory = File.new_for_path (Path.build_filename (
+            Environment.get_user_cache_dir (), APPLICATION_ID, "avatars-v3"
+        ));
+        FileEnumerator enumerator;
+        try {
+            enumerator = yield directory.enumerate_children_async (
+                FileAttribute.STANDARD_NAME, FileQueryInfoFlags.NOFOLLOW_SYMLINKS, Priority.DEFAULT, null
+            );
+        } catch (IOError.NOT_FOUND e) {
+            return;
+        }
+        try {
+            while (true) {
+                var files = yield enumerator.next_files_async (32, Priority.DEFAULT, null);
+                if (files == null) {
+                    break;
+                }
+                foreach (var info in files) {
+                    if (Regex.match_simple ("^[a-f0-9]{64}\\.png$", info.get_name ())) {
+                        try {
+                            yield directory.get_child (info.get_name ()).delete_async (Priority.DEFAULT, null);
+                        } catch (IOError.NOT_FOUND e) {
+                        }
+                    }
+                }
+            }
+        } finally {
+            try {
+                enumerator.close (null);
+            } catch (Error e) {
+                debug ("Unable to close avatar cache directory");
+            }
         }
     }
 

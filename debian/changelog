@@ -1,3 +1,12 @@
+elementary-mail-plus (0.1-8) noble; urgency=medium
+
+  * Make the avatar image toggle apply to contacts, cached images and remote logos.
+  * Add Clear to remove the Logo.dev key and avatar cache.
+  * Reload the keyring value whenever Preferences opens.
+  * Prevent earlier avatar requests from repopulating a cleared cache.
+
+ -- IzsakiRobi <15942662+IzsakiRobi@users.noreply.github.com>  Sat, 24 Oct 2026 23:00:00 +0200
+
 elementary-mail-plus (0.1-7) noble; urgency=medium
 
   * Open GNOME Online Accounts outside Pantheon in Flatpak builds.

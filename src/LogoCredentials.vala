@@ -28,6 +28,15 @@ public class Mail.LogoCredentials : Object {
         disconnect (handler);
     }
 
+    public async void refresh () {
+        if (!ready) {
+            yield ensure_ready ();
+            return;
+        }
+        ready = false;
+        yield load ();
+    }
+
     private async void load () {
         try {
             key = yield Secret.password_lookup (schema, null, "service", "logo.dev");

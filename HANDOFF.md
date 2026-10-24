@@ -5,7 +5,7 @@
 Repository: https://github.com/IzsakiRobi/Elementary-Mail-Plus
 Work on `main`. Read this file before changing code. The user communicates in Hungarian.
 The rollback baseline is commit `6072670`. The Fedora portability follow-up is now included on `main` and in the mutable `v0.1` release.
-The mutable `v0.1` tag/release contains Debian package `0.1-7` and two Flatpak bundles. Do not infer the current implementation from older Debian changelog entries.
+The mutable `v0.1` tag/release contains Debian package `0.1-8` and two Flatpak bundles. Do not infer the current implementation from older Debian changelog entries.
 
 After reinstalling the computer:
 
@@ -119,3 +119,11 @@ Changes authorized for publication by the user:
 - No separate keyless company-logo provider was added. The lookup order remains address book, Logo.dev with a key, Gravatar, initials. The system keyring can survive application uninstall, independently of Flatpak data deletion. The exact source of the user's old images is unverified. Do not restore Hunter automatically.
 
 Both runtime 8.2 and 9 Flatpaks and the Noble .deb are built for this follow-up. Only compilation/basic packaging checks are performed; Fedora functional confirmation belongs to the user. The user explicitly authorized replacing main and the v0.1 release before the new functional test. No .deb or Flatpak was installed automatically on the development host.
+
+## Avatar controls follow-up — 2026-10-24
+
+- The image toggle now gates contact photos as well as remote/cached images. Off means initials only (the separate Show avatars switch still hides the entire avatar). Previously contact lookup ran before the remote-image policy check, so disabling the option could still show contact images. Non-null icon assignment also checks the policy to reject late completions.
+- Preferences has a Clear button beside the key entry. It removes/verifies the Logo.dev secret, clears the avatar RAM cache and hashed PNG files in `avatars-v3`, then refreshes avatars. It does not clear message or folder caches. A cache generation prevents older requests from saving images into the newly cleared cache.
+- Every new Preferences panel refreshes the system-keyring lookup. During lookup the field is disabled with a checking placeholder; when a key exists its actual value is populated with visibility disabled, displaying dots. Keys are never logged or committed.
+- One isolated regression check exercised the actual SenderAvatar with a supplied contact icon: off blocks even contact lookup, on displays the image, off removes it again, and clear deletes a test cache entry. This used temporary schemas, the memory GSettings backend and a separate cache, without network or real mail. Real-mail behavior remains for the user to test.
+- The user authorized rebuilding and replacing all three v0.1 assets again. The .deb version is 0.1-8. Purge is not intended to erase per-user GSettings, keyring entries or caches; Clear provides explicit avatar/key cleanup.

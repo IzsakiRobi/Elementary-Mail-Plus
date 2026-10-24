@@ -65,7 +65,7 @@
     <key name="load-remote-avatars" type="b">
       <default>true</default>
       <summary>Load sender avatars and company logos</summary>
-      <description>Use system address book photos, then Logo.dev and Gravatar. Disabling remote lookups keeps local contact photos and initials.</description>
+      <description>Use system address book photos, then Logo.dev and Gravatar. Disabling image loading shows initials instead of contact photos, cached images or remote logos.</description>
     </key>
     <key name="hide-read-conversations" type="b">
       <default>false</default>

@@ -11,6 +11,7 @@ public class Mail.PreferencesPanel : Granite.Dialog {
     private Gtk.ScrolledWindow scroller;
     private Gtk.Entry key_entry;
     private Gtk.Button key_save;
+    private Gtk.Button key_clear;
     private Gtk.Label status;
     private Gtk.Grid form;
     private LogoCredentials credentials;
@@ -62,10 +63,20 @@ public class Mail.PreferencesPanel : Granite.Dialog {
         key_save = new Gtk.Button.with_label (_("Save")) { sensitive = false };
         key_save.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
         key_save.clicked.connect (() => save.begin (false));
+        key_clear = new Gtk.Button.with_label (_("Clear")) {
+            sensitive = false,
+            tooltip_text = _("Remove the API key and clear cached avatars and logos")
+        };
+        key_clear.clicked.connect (() => {
+            key_entry.text = "";
+            key_dirty = true;
+            save.begin (false, true);
+        });
         var key_row = new Gtk.Box (HORIZONTAL, 0);
         key_row.get_style_context ().add_class (Gtk.STYLE_CLASS_LINKED);
         key_row.add (key_entry);
         key_row.add (key_save);
+        key_row.add (key_clear);
         form.attach (key_row, 0, 5, 2, 1);
 
         var hint = new Gtk.Label (_("Stored in the system keyring. Clear the field and save to remove the key.")) {
@@ -155,6 +166,7 @@ public class Mail.PreferencesPanel : Granite.Dialog {
             }
         });
         credentials_handler = credentials.notify["ready"].connect (fill_key);
+        credentials.refresh.begin ();
         fill_key ();
         destroy.connect (() => credentials.disconnect (credentials_handler));
         delete_event.connect (() => busy);
@@ -199,6 +211,9 @@ public class Mail.PreferencesPanel : Granite.Dialog {
 
     private void fill_key () {
         key_entry.sensitive = credentials.ready;
+        key_clear.sensitive = credentials.ready && !busy;
+        key_entry.placeholder_text = credentials.ready
+            ? _("Enter your pk_ publishable key") : _("Checking system keyring…");
         if (credentials.ready && !key_dirty) {
             filling_key = true;
             key_entry.text = credentials.key ?? "";
@@ -206,7 +221,7 @@ public class Mail.PreferencesPanel : Granite.Dialog {
         }
     }
 
-    private async void save (bool close_after) {
+    private async void save (bool close_after, bool clear_cache = false) {
         if (busy) {
             return;
         }
@@ -220,8 +235,12 @@ public class Mail.PreferencesPanel : Granite.Dialog {
             if (key_dirty) {
                 yield credentials.save (key_entry.text);
                 key_dirty = false;
+                if (clear_cache) {
+                    yield SenderAvatar.clear_cache ();
+                    credentials.changed ();
+                }
                 status.label = credentials.key == null
-                    ? _("API key removed from the system keyring.")
+                    ? (clear_cache ? _("API key and cached avatars cleared.") : _("API key removed from the system keyring."))
                     : _("API key saved in the system keyring.");
             }
             if (close_after) {
@@ -248,6 +267,7 @@ public class Mail.PreferencesPanel : Granite.Dialog {
         set_response_sensitive (Gtk.ResponseType.ACCEPT, true);
         set_response_sensitive (Gtk.ResponseType.CANCEL, true);
         key_save.sensitive = key_dirty && credentials.ready;
+        key_clear.sensitive = credentials.ready;
         if (succeeded && close_after) {
             destroy ();
         }
