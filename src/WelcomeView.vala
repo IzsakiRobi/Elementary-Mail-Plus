@@ -83,11 +83,7 @@ public class Mail.WelcomeView : Gtk.Box {
         show_all ();
 
         welcome_button.clicked.connect (() => {
-            try {
-                Gtk.show_uri_on_window ((Gtk.Window) get_toplevel (), "settings://accounts/online", Gdk.CURRENT_TIME);
-            } catch (Error e) {
-                critical (e.message);
-            }
+            Utils.open_account_settings.begin ((Gtk.Window) get_toplevel ());
         });
     }
 }

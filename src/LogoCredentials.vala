@@ -39,12 +39,17 @@ public class Mail.LogoCredentials : Object {
     }
 
     public async void save (string value) throws Error {
+        yield ensure_ready ();
         string normalized = value.strip ();
         if (normalized != "" && !Regex.match_simple ("^pk_[A-Za-z0-9_-]+$", normalized)) {
             throw new IOError.INVALID_ARGUMENT (_("Enter the Logo.dev publishable key beginning with pk_. The image API does not use an sk_ secret key."));
         }
         if (normalized == "") {
             yield Secret.password_clear (schema, null, "service", "logo.dev");
+            var remaining = yield Secret.password_lookup (schema, null, "service", "logo.dev");
+            if (remaining != null) {
+                throw new IOError.FAILED (_("The API key could not be removed from the keyring."));
+            }
         } else if (!yield Secret.password_store (schema, Secret.COLLECTION_DEFAULT,
             "Mail — Logo.dev API key", normalized, null, "service", "logo.dev")) {
             throw new IOError.FAILED (_("The API key could not be saved in the keyring."));

@@ -77,9 +77,12 @@ public class Mail.PreferencesPanel : Granite.Dialog {
         status = new Gtk.Label ("") { wrap = true, max_width_chars = 48, xalign = 0 };
         form.attach (status, 0, 7, 2, 1);
 
-        var links = new Gtk.Box (HORIZONTAL, 12);
-        links.add (new Gtk.LinkButton.with_label ("https://logo.dev", "Logo.dev"));
-        form.attach (links, 0, 8, 2, 1);
+        var logo_hint = new Gtk.Label (_("Create a free <a href=\"https://logo.dev\">Logo.dev</a> account for high-resolution company logos.")) {
+            use_markup = true, wrap = true, max_width_chars = 48, xalign = 0
+        };
+        logo_hint.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+        logo_hint.get_style_context ().add_class (Granite.STYLE_CLASS_SMALL_LABEL);
+        form.attach (logo_hint, 0, 8, 2, 1);
         form.attach (new Gtk.Separator (Gtk.Orientation.HORIZONTAL), 0, 9, 2, 1);
         var signatures = new Gtk.Button.with_label (_("Edit Signatures…")) {
             action_name = Application.ACTION_PREFIX + Application.ACTION_MANAGE_SIGNATURES
@@ -217,7 +220,9 @@ public class Mail.PreferencesPanel : Granite.Dialog {
             if (key_dirty) {
                 yield credentials.save (key_entry.text);
                 key_dirty = false;
-                status.label = _("API key saved in the system keyring.");
+                status.label = credentials.key == null
+                    ? _("API key removed from the system keyring.")
+                    : _("API key saved in the system keyring.");
             }
             if (close_after) {
                 if (background.active != Application.settings.get_boolean ("run-in-background")) {

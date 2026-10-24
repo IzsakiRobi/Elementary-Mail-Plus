@@ -1,3 +1,13 @@
+elementary-mail-plus (0.1-7) noble; urgency=medium
+
+  * Open GNOME Online Accounts outside Pantheon in Flatpak builds.
+  * Recognize conventional special-folder names for Flatpak presentation.
+  * Distinguish virtual folders from server folders.
+  * Verify Logo.dev key removal and refresh displayed avatars on key changes.
+  * Explain free Logo.dev registration and avoid mouse focus on Preferences.
+
+ -- IzsakiRobi <15942662+IzsakiRobi@users.noreply.github.com>  Sat, 24 Oct 2026 22:45:00 +0200
+
 elementary-mail-plus (0.1-6) noble; urgency=medium
 
   * Remove persistent message archives, body prefetch and notification withdrawal.

@@ -4,8 +4,8 @@
 
 Repository: https://github.com/IzsakiRobi/Elementary-Mail-Plus
 Work on `main`. Read this file before changing code. The user communicates in Hungarian.
-The approved application code is commit `6072670`; this handoff is a documentation-only follow-up.
-The mutable `v0.1` tag/release currently contains the approved rollback: Debian package `0.1-6` and two Flatpak bundles. Do not infer the current implementation from older Debian changelog entries.
+The rollback baseline is commit `6072670`. The Fedora portability follow-up is now included on `main` and in the mutable `v0.1` release.
+The mutable `v0.1` tag/release contains Debian package `0.1-7` and two Flatpak bundles. Do not infer the current implementation from older Debian changelog entries.
 
 After reinstalling the computer:
 
@@ -104,3 +104,18 @@ The user's separate Mutter cursor-shape backport for EOS 8.1 is a host composito
 ## Next work
 
 Start from the approved rollback and wait for the user's next request. Do not resume the abandoned disk-cache or notification-center withdrawal implementation just because older commits/changelogs mention it. If those are requested again, first isolate the actual failure with one targeted measurement; retain stable avatar and warm-view behavior. Build only the package formats the user asks for, and let them perform functional tests before publishing.
+
+## Fedora portability follow-up — 2026-10-24
+
+The user tested the released Flatpak on Fedora: message reading works, but the account-settings button opened elementary settings, some special folders showed generic icons, and fewer company logos appeared without a Logo.dev key.
+
+Changes authorized for publication by the user:
+
+- Both Flatpak manifests allow talking to `org.gnome.Settings`. Shared account-settings code opens elementary settings on Pantheon and native builds; other Flatpak desktops activate GNOME Settings' `launch-panel` action with `online-accounts` over D-Bus. Both the welcome button and preferences use this path.
+- Flatpak folder presentation falls back to a small set of conventional top-level folder names when server/EDS special-use flags are absent. Explicit type flags win. This is display-only: folder operations still use authoritative flags and configured destinations, not inferred names. Do not infer destructive operations from a folder label.
+- Camel can add virtual Trash/Junk views alongside real IMAP folders. Virtual rows are explicitly labelled `(Virtual)` with an explanatory tooltip. They are not merged or hidden; operations and message access are preserved.
+- Logo.dev key removal is checked by reading the matching secret back. Saving waits for initial credential loading, preventing that load from overwriting a later save. Displayed avatars are cleared and reloaded on key changes, cancelling older fetches. The panel reports key removal separately from saving.
+- The Logo.dev registration link is a small explanatory label. Preferences uses `focus_on_click = false` on its toolbar button; keyboard focus remains available.
+- No separate keyless company-logo provider was added. The lookup order remains address book, Logo.dev with a key, Gravatar, initials. The system keyring can survive application uninstall, independently of Flatpak data deletion. The exact source of the user's old images is unverified. Do not restore Hunter automatically.
+
+Both runtime 8.2 and 9 Flatpaks and the Noble .deb are built for this follow-up. Only compilation/basic packaging checks are performed; Fedora functional confirmation belongs to the user. The user explicitly authorized replacing main and the v0.1 release before the new functional test. No .deb or Flatpak was installed automatically on the development host.

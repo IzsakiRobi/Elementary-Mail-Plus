@@ -45,7 +45,10 @@ public class Mail.SenderAvatar : Gtk.Bin {
         contacts = ContactManager.get_default ();
         credentials = LogoCredentials.get_default ();
         contacts_handler = contacts.avatars_changed.connect (reload);
-        credentials_handler = credentials.changed.connect (reload);
+        credentials_handler = credentials.changed.connect (() => {
+            set_icon (null);
+            reload ();
+        });
         no_show_all = true;
         visible = Application.settings.get_boolean ("show-avatars");
         visibility_handler = Application.settings.changed["show-avatars"].connect (() => {

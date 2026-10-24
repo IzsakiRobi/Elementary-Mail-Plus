@@ -143,7 +143,7 @@ public class Mail.FolderItemModel : Mail.SourceList.ExpandableItem {
         badge = folder_info.unread > 0 ? "%d".printf (folder_info.unread) : null;
         is_special_folder = true;
 
-        var full_folder_info_flags = Utils.get_full_folder_info_flags (account.service, folder_info);
+        var full_folder_info_flags = Utils.get_folder_display_flags (account.service, folder_info);
         switch (full_folder_info_flags & Camel.FOLDER_TYPE_MASK) {
             case Camel.FolderInfoFlags.TYPE_INBOX:
                 icon = new ThemedIcon ("mail-inbox");
@@ -180,6 +180,15 @@ public class Mail.FolderItemModel : Mail.SourceList.ExpandableItem {
                 pos = 8;
                 is_special_folder = false;
                 break;
+        }
+
+        tooltip = null;
+        if ((folder_info.flags & Camel.FolderInfoFlags.VIRTUAL) != 0) {
+            var folder_type = full_folder_info_flags & Camel.FOLDER_TYPE_MASK;
+            if (folder_type == Camel.FolderInfoFlags.TYPE_TRASH || folder_type == Camel.FolderInfoFlags.TYPE_JUNK) {
+                name = _("%s (Virtual)").printf (folder_info.display_name);
+                tooltip = _("A virtual view of flagged messages, separate from the server folder.");
+            }
         }
 
         if (!is_special_folder && editable != true) {

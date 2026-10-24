@@ -102,6 +102,71 @@ public class Mail.Utils {
         return full_flags;
     }
 
+    public static async void open_account_settings (Gtk.Window? parent) {
+        try {
+            var desktop = (Environment.get_variable ("XDG_CURRENT_DESKTOP") ?? "").down ().split (":");
+            if (!FileUtils.test ("/.flatpak-info", FileTest.EXISTS) || "pantheon" in desktop) {
+                Gtk.show_uri_on_window (parent, "settings://accounts/online", Gdk.CURRENT_TIME);
+            } else {
+                var connection = yield Bus.get (BusType.SESSION);
+                var panel = new Variant.tuple ({
+                    new Variant.string ("online-accounts"),
+                    new Variant.array (VariantType.VARIANT, {})
+                });
+                var parameters = new Variant.tuple ({
+                    new Variant.string ("launch-panel"),
+                    new Variant.array (VariantType.VARIANT, {new Variant.variant (panel)}),
+                    new Variant.array (new VariantType ("{sv}"), {})
+                });
+                yield connection.call ("org.gnome.Settings", "/org/gnome/Settings",
+                    "org.gtk.Actions", "Activate", parameters, null,
+                    DBusCallFlags.NONE, 10000);
+            }
+        } catch (Error e) {
+            var dialog = new Granite.MessageDialog (
+                _("Unable to open System Settings"),
+                _("Open System Settings manually or install Evolution to set up online accounts."),
+                new ThemedIcon ("preferences-system")
+            ) {
+                badge_icon = new ThemedIcon ("dialog-warning"),
+                modal = true,
+                transient_for = parent
+            };
+            dialog.response.connect (dialog.destroy);
+            dialog.present ();
+        }
+    }
+
+    public static Camel.FolderInfoFlags get_folder_display_flags (Camel.Service service, Camel.FolderInfo folderinfo) {
+        var flags = get_full_folder_info_flags (service, folderinfo);
+        if (!FileUtils.test ("/.flatpak-info", FileTest.EXISTS)
+            || (flags & Camel.FOLDER_TYPE_MASK) != Camel.FolderInfoFlags.TYPE_NORMAL
+            || (flags & Camel.FolderInfoFlags.NOSELECT) != 0) {
+            return flags;
+        }
+
+        switch (folderinfo.full_name.down ()) {
+            case "drafts":
+                return flags | Camel.FolderInfoFlags.TYPE_DRAFTS;
+            case "sent":
+            case "sent messages":
+            case "sent items":
+                return flags | Camel.FolderInfoFlags.TYPE_SENT;
+            case "archive":
+                return flags | Camel.FolderInfoFlags.TYPE_ARCHIVE;
+            case "deleted messages":
+            case "deleted items":
+            case "trash":
+                return flags | Camel.FolderInfoFlags.TYPE_TRASH;
+            case "junk":
+            case "junk email":
+            case "spam":
+                return flags | Camel.FolderInfoFlags.TYPE_JUNK;
+            default:
+                return flags;
+        }
+    }
+
     public static string build_folder_uri (string service_uid, string folder_name) {
         var normed_folder_name = folder_name;
 

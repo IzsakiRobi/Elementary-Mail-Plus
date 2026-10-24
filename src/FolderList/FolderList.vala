@@ -54,6 +54,7 @@ public class Mail.FolderList : Gtk.Box {
 
         var app_menu = new Gtk.Button.from_icon_name ("open-menu-symbolic", Gtk.IconSize.SMALL_TOOLBAR) {
             tooltip_text = _("Preferences"),
+            focus_on_click = false,
             action_name = "app.preferences"
         };
 
