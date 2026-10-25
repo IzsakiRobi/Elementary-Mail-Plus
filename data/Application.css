@@ -7,6 +7,15 @@
         );
 }
 
+list row.message-list-item.card,
+list row.message-list-item.card:focus,
+list row.message-list-item.card:selected,
+list row.message-list-item.card:backdrop {
+    background-color: @theme_base_color;
+    background-image: none;
+    opacity: 1;
+}
+
 .card.collapsed {
     margin-bottom: -64px;
 }

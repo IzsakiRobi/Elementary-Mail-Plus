@@ -97,6 +97,7 @@ public class Mail.MessageListItem : Gtk.ListBoxRow {
 
         style_context = get_style_context ();
         style_context.add_class (Granite.STYLE_CLASS_CARD);
+        style_context.add_class ("message-list-item");
 
         unowned string? parsed_address;
         unowned string? parsed_name;

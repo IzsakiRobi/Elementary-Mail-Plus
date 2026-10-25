@@ -111,7 +111,7 @@ DEB_BUILD_OPTIONS=nocheck dpkg-buildpackage -b -us -uc
 
 ## Publishing
 
-Publish the approved commit to `main` and tag it `v0.2`. Create the new release with an empty body and these two assets:
+Publish approved corrections to `main`, move the mutable `v0.2` tag to the approved commit and replace these two assets on the existing release, preserving an empty body:
 
 - `elementary-mail-plus_v0.2_amd64.deb`
 - `elementary-mail-plus_v0.2_amd64.flatpak`
@@ -138,3 +138,9 @@ Reusable native build: `~/Projects/Elementary-Mail-Plus-builds/native-check`; pr
 The local WebKit executable needs its generated `.local` AppArmor profile loaded with graphical `pkexec apparmor_parser -r`; it is separate from the installed application's profile and lasts until reboot. Stop only the developer executable before replacing its build; `/proc/<pid>/exe` may have a ` (deleted)` suffix after installation.
 
 Build packages outside the source tree. Native packaging uses a clean source copy in `~/Projects/Elementary-Mail-Plus-builds/deb-source-0.2`. Flatpak cache/state: `~/Projects/Elementary-Mail-Plus-builds/state`; GNOME build/repository: `flatpak-gnome` / `repo-gnome` in that same builds directory.
+
+## Conversation card appearance fix — included in v0.2
+
+- User reported gray/translucent expanded messages and overlapping headers after repeated collapse/expand. The elementary theme's `list row:focus` rule replaces the card background with translucent gray, allowing intentionally stacked collapsed cards to show through.
+- MessageListItem now has a scoped message-list-item CSS class. Its card background stays opaque theme_base_color in focused/selected/backdrop states, preserving dark-theme adaptation and the existing collapsed stacking. No expansion logic, opacity animations on child controls or global list styling is changed.
+- User verified the fix and authorized rebuilding both packages, replacing the existing v0.2 assets/tag on main and reinstalling the resulting Debian package locally. Keep the release body empty and the existing filenames; do not create another release. Compile/package integrity checks only.
