@@ -183,7 +183,7 @@ public class Mail.FolderItemModel : Mail.SourceList.ExpandableItem {
         }
 
         tooltip = null;
-        if ((folder_info.flags & Camel.FolderInfoFlags.VIRTUAL) != 0) {
+        if (!IMAP_FOLDER_SETUP && (folder_info.flags & Camel.FolderInfoFlags.VIRTUAL) != 0) {
             var folder_type = full_folder_info_flags & Camel.FOLDER_TYPE_MASK;
             if (folder_type == Camel.FolderInfoFlags.TYPE_TRASH || folder_type == Camel.FolderInfoFlags.TYPE_JUNK) {
                 name = _("%s (Virtual)").printf (folder_info.display_name);

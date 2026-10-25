@@ -30,6 +30,7 @@ public class Mail.AccountItemModel : Mail.SourceList.ExpandableItem, Mail.Source
     private Gee.HashMap<string, FolderItemModel> folder_items;
     private AccountSavedState saved_state;
     private uint save_cache_id;
+    private bool loading;
     private Gee.HashMap<Camel.Folder, ulong?> folder_changed_handlers = new Gee.HashMap<Camel.Folder, ulong?> ();
     private unowned Camel.OfflineStore offlinestore;
 
@@ -100,8 +101,20 @@ public class Mail.AccountItemModel : Mail.SourceList.ExpandableItem, Mail.Source
     }
 
     public async void load () {
+        if (loading) {
+            return;
+        }
+        loading = true;
         debug ("Folder list load started");
         try {
+            try {
+                yield account.configure_folders (connect_cancellable);
+            } catch (Error e) {
+                if (e is IOError.CANCELLED) {
+                    throw e;
+                }
+                warning ("Unable to configure IMAP folders: %s", e.message);
+            }
             var folderinfo = yield offlinestore.get_folder_info (null,
                 Camel.StoreGetFolderInfoFlags.FAST | Camel.StoreGetFolderInfoFlags.RECURSIVE,
                 GLib.Priority.DEFAULT, connect_cancellable);
@@ -124,6 +137,8 @@ public class Mail.AccountItemModel : Mail.SourceList.ExpandableItem, Mail.Source
             debug ("Folder list ready");
         } catch (Error e) {
             critical (e.message);
+        } finally {
+            loading = false;
         }
     }
 
@@ -162,6 +177,10 @@ public class Mail.AccountItemModel : Mail.SourceList.ExpandableItem, Mail.Source
     }
 
     private async void reload_folders () {
+        if (IMAP_FOLDER_SETUP) {
+            yield load ();
+            return;
+        }
         var offlinestore = (Camel.OfflineStore) account.service;
         foreach (var folder_item in folder_items.values.to_array ()) {
             try {

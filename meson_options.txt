@@ -1,2 +1,3 @@
 option ('documentation', type : 'boolean', value : false)
 option('application-id', type: 'string', value: 'io.github.IzsakiRobi.Elementary-Mail-Plus')
+option('imap-folder-setup', type: 'boolean', value: false)

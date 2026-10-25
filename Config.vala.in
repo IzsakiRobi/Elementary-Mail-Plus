@@ -1,5 +1,6 @@
 namespace Mail {
     public const string APPLICATION_ID = "@APPLICATION_ID@";
+    public const bool IMAP_FOLDER_SETUP = @IMAP_FOLDER_SETUP@;
     private const string GETTEXT_PACKAGE = "@GETTEXT_PACKAGE@";
     private const string LOCALEDIR = "@LOCALEDIR@";
 }

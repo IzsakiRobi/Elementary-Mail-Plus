@@ -78,6 +78,7 @@ gnome.post_install(glib_compile_schemas: true)
 config_data = configuration_data()
 config_data.set('GETTEXT_PACKAGE', application_id)
 config_data.set('APPLICATION_ID', application_id)
+config_data.set('IMAP_FOLDER_SETUP', get_option('imap-folder-setup') ? 'true' : 'false')
 config_data.set('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
 
 config_file = configure_file(

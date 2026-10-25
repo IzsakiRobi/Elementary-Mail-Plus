@@ -1,8 +1,8 @@
 {
     "id": "io.github.IzsakiRobi.Elementary-Mail-Plus",
-    "runtime": "io.elementary.Platform",
-    "runtime-version": "9",
-    "sdk": "io.elementary.Sdk",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "49",
+    "sdk": "org.gnome.Sdk",
     "command": "io.github.IzsakiRobi.Elementary-Mail-Plus",
     "finish-args": [
         "--share=ipc",
@@ -138,6 +138,105 @@
             ]
         },
         {
+            "name": "granite",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Ddocumentation=false"
+            ],
+            "cleanup": [
+                "/bin/granite-demo"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/elementary/granite.git",
+                    "tag": "6.2.0",
+                    "commit": "4ab145c28bb3db6372fe519e8bd79c645edfcda3"
+                }
+            ]
+        },
+        {
+            "name": "sassc",
+            "cleanup": [
+                "*"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/sass/sassc.git",
+                    "tag": "3.6.2",
+                    "commit": "66f0ef37e7f0ad3a65d2f481eff09d09408f42d0",
+                    "disable-submodules": true
+                }
+            ],
+            "modules": [
+                {
+                    "name": "libsass",
+                    "cleanup": [
+                        "*"
+                    ],
+                    "sources": [
+                        {
+                            "type": "git",
+                            "url": "https://github.com/sass/libsass.git",
+                            "tag": "3.6.6",
+                            "commit": "7037f03fabeb2b18b5efa84403f5a6d7a990f460"
+                        }
+                    ],
+                    "buildsystem": "simple",
+                    "build-commands": [
+                        "autoreconf -fi",
+                        "./configure --prefix=/app --disable-static",
+                        "make -j2",
+                        "make install"
+                    ]
+                }
+            ],
+            "buildsystem": "simple",
+            "build-commands": [
+                "autoreconf -fi",
+                "./configure --prefix=/app --disable-static",
+                "make -j2",
+                "make install"
+            ]
+        },
+        {
+            "name": "elementary-stylesheet",
+            "buildsystem": "simple",
+            "build-commands": [
+                "for source in src/gtk-3.0/variants/*.scss; do variant=$(basename \"$source\" .scss); case \"$variant\" in *-dark) continue ;; esac; theme=\"/app/share/themes/io.elementary.stylesheet.$variant/gtk-3.0\"; install -d \"$theme\"; sassc \"$source\" \"$theme/gtk.css\"; sassc \"src/gtk-3.0/variants/$variant-dark.scss\" \"$theme/gtk-dark.css\"; cp -r src/gtk-3.0/assets \"$theme/assets\"; done",
+                "install -Dm644 COPYING /app/share/licenses/elementary-stylesheet/COPYING"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/elementary/stylesheet.git",
+                    "tag": "8.2.2",
+                    "commit": "9cfb767873d583f6ed29e96cf27728bb69fd9237"
+                }
+            ]
+        },
+        {
+            "name": "libportal",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dbackend-gtk3=enabled",
+                "-Dbackend-gtk4=disabled",
+                "-Dbackend-qt5=disabled",
+                "-Dbackend-qt6=disabled",
+                "-Ddocs=false",
+                "-Dtests=false"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/flatpak/libportal.git",
+                    "tag": "0.9.1",
+                    "commit": "8f5dc8d192f6e31dafe69e35219e3b707bde71ce"
+                }
+            ]
+        },
+        {
             "name": "mail",
             "buildsystem": "meson",
             "sources": [
@@ -154,7 +253,8 @@
                 }
             ],
             "config-opts": [
-                "-Dapplication-id=io.github.IzsakiRobi.Elementary-Mail-Plus"
+                "-Dapplication-id=io.github.IzsakiRobi.Elementary-Mail-Plus",
+                "-Dimap-folder-setup=true"
             ]
         }
     ],

@@ -1,135 +1,119 @@
-# Development handoff — 2026-10-24
+# Development handoff — 2026-10-25
 
-## Start here
+## Current state
 
 Repository: https://github.com/IzsakiRobi/Elementary-Mail-Plus
-Work on `main`. Read this file before changing code. The user communicates in Hungarian.
-The rollback baseline is commit `6072670`. The Fedora portability follow-up is now included on `main` and in the mutable `v0.1` release.
-The mutable `v0.1` tag/release contains Debian package `0.1-9` and two Flatpak bundles. Do not infer the current implementation from older Debian changelog entries.
+Local checkout: `~/Projects/Elementary-Mail-Plus`. Work on `main`.
+The user communicates in Hungarian. Source, identifiers and documentation are English.
 
-After reinstalling the computer:
+There are two supported release assets: one native `.deb` and one cross-distribution `.flatpak`.
+The mutable `v0.1` tag/release follows the approved source on `main`. Debian version remains `0.1-9`.
+The user explicitly approved publishing the current source, replacing both assets and the tag, removing the old elementary 8 Flatpak, and leaving the release description empty. No README or release notes.
 
-```sh
-git clone https://github.com/IzsakiRobi/Elementary-Mail-Plus.git ~/Projects/Elementary-Mail-Plus
-cd ~/Projects/Elementary-Mail-Plus
-```
+The user verified the current Flatpak on Fedora 45 and elementary OS 8.1: folders and message rendering work, and HiDPI text is sharp without the separate Mutter patch. The native `.deb` has worked on elementary OS 8.1 and 9. The retired elementary runtime 8.2 and 9 manifests are no longer needed.
 
-GitHub authentication, installed dependencies, accounts, API keys and local caches are not part of the repository. Authenticate again using GitHub CLI web/device authentication if needed. Never request passwords or API keys in chat.
+## Workflow
 
-## User preferences and workflow
+- Keep checks minimal: compilation, package integrity and one focused diagnostic when needed. The user performs real-mail, notification and visual tests. Do not add screenshot sweeps or extensive functional tests.
+- Preserve the original organization and formatting. Avoid explanatory comments. A short English section label such as `/* ----- Avatars ----- */` is enough when useful. Keep existing license headers.
+- No README and no release descriptions or generated release notes.
+- Install required tools when necessary. Use graphical Polkit (`pkexec`) for administrator authentication, never a terminal password prompt. Wait for the user if they are away.
+- GitHub CLI web/device authentication is available. After reinstalling, authenticate again with `gh auth login --hostname github.com --git-protocol https --web`, then `gh auth setup-git`. Never request passwords, tokens or API keys in chat.
+- Do not publish future experiments before the user's functional approval. The current replacement of `main` and `v0.1` was explicitly authorized; future work needs its own authorization.
+- Closing Mail can leave it running. Stop the actual process before testing a replacement build. Check `flatpak ps` or `/proc/<pid>/root/.flatpak-info` to distinguish Flatpak from native processes.
+- Do not erase accounts, keyring entries, contact photos or application data as a routine fix.
 
-- Only perform necessary basic checks. The user repeatedly requested no extensive tests, videos, screenshot sweeps or repeated functional testing because these consume their budget. They test real mail, notifications and appearance themselves.
-- Preserve the original code organization and formatting. Keep comments minimal; avoid explanatory comment blocks where none existed.
-- No README. Keep release descriptions short and in English, describing additions over upstream elementary Mail.
-- Install required tools when necessary. For administrator authentication, use a graphical Polkit prompt (`pkexec`), not a terminal password prompt. Wait patiently if the user is away.
-- Closing the window can leave Mail running. Stop the actual application process before interpreting a restart or retesting a new build. `killall` can also kill a Flatpak process: its executable name alone does not prove it is native. Check `flatpak ps` and `/proc/<pid>/root/.flatpak-info` when necessary.
-- Do not publish experimental changes before the user's functional approval. They authorized replacing the existing `v0.1` release/tag on `main`; do not assume that authorization applies to future experiments. A later `v0.2` was discussed for genuinely resolved future work.
+## Application
 
-## Current application
+Based on elementary Mail 8.0.1: Vala, GTK 3, Granite 6, libhandy, Camel/Evolution Data Server, WebKitGTK 4.1, libsoup 3 and libsecret.
 
-Based on elementary Mail 8.0.1, using Vala, GTK 3, Granite 6, libhandy, Camel/Evolution Data Server, WebKitGTK 4.1, libsoup 3 and libsecret.
-
-Application ID / executable: `io.github.IzsakiRobi.Elementary-Mail-Plus`.
-It has separate desktop files, icons, schema, gettext domain, AppArmor profile and backend data paths so it can coexist with distribution Mail (`io.elementary.mail`). It uses the system EDS mail accounts. Credentials remain in the system keyring; do not put them in source or release assets.
+Application ID and executable: `io.github.IzsakiRobi.Elementary-Mail-Plus`.
+Separate desktop files, icons, schema, gettext domain, AppArmor profile and backend paths allow coexistence with stock `io.elementary.mail`. Accounts come from the system EDS registry; credentials remain in the system keyring.
 
 Implemented additions:
 
 - Unread dock badge and new-mail notifications.
-- Empty Trash with confirmation and fixed five-second Undo; correct permanent deletion from Trash.
-- Avatars in the conversation list, initials fallback, star overlay, proper shadow padding and logo sizing.
-- Avatar lookup: system address book, Logo.dev, Gravatar, initials. Hunter was removed because of image quality. Logo.dev publishable `pk_` key is stored with libsecret.
-- Native preferences panel: remote images, showing avatars, remote logos, key entry, background operation/autostart, read delay and send/delete Undo controls. Signature editor remains focused above the preferences panel.
-- Hidden MainWindow reuse when background operation is enabled; persistent folder-list metadata, warm conversation list and in-memory message views. Tooltip flicker and duplicate folders were fixed.
-- Folder unread counters follow live Camel folder changes, including already opened folders.
-- A small private `MailPlus` elementary icon theme is bundled with attribution/license. The original custom resource path `/io/elementary/mail/icons` is explicitly registered. GNOME/Adwaita/MoreWaita experiments were temporary previews, not the intended appearance.
+- Empty Trash with confirmation and five-second Undo; corrected permanent deletion from Trash.
+- Conversation avatars, initials, star overlay and bounded avatar caches.
+- Preferences for images, avatars, Logo.dev key management, background operation/autostart, read delay and send/delete Undo.
+- Hidden-window reuse, persistent folder metadata, warm conversation lists and bounded in-memory message views.
+- Live folder unread counts, elementary icons and GNOME account-settings integration outside Pantheon.
 
-Important notification detail: InboxMonitor deliberately calls `get_inbox_folder()` and then `get_folder(inbox.full_name, ...)`. The second call retrieves the canonical folder from the store's object bag. Removing it previously broke shared change tracking, notifications and badges. Application retains the monitor strongly. Keep this behavior.
+### Important invariants
 
-## Approved rollback: do not reintroduce automatically
+`InboxMonitor` deliberately calls `get_inbox_folder()` and then `get_folder(inbox.full_name, ...)` to obtain the canonical folder from Camel's object bag. Keep the second call and the application's strong monitor reference; they are required for shared change tracking, notifications and badges.
 
-The latest user request was to remove the unsuccessful persistent/offline message-cache experiments. The user confirmed that the rollback fixed disappearing message content and restored normal behavior.
+Do not restore the abandoned `MessageDiskCache`, MHTML persistence, `MessagePrefetcher`, notification persistence or notification-center withdrawal experiments. Approved rollback baseline: `6072670`.
 
-Removed from current source:
+`MessageViewCache` retains only document-ready views while the application remains alive. Keys use account/folder/UID and rebind to current message objects. Limits are 64 rows, 64 MiB estimated source cost and 8 MiB per message; these are not hard limits on WebKit's total memory. No custom persistent message archive exists across full shutdown. Camel's ordinary cache is unchanged.
 
-- `MessageDiskCache`, MHTML saving/restoring and all associated WebView/extension paths.
-- `MessagePrefetcher`, body prefetch and timing instrumentation.
-- Persistent notification tracking and attempts to withdraw notifications from elementary's notification center. The desktop-panel withdrawal attempt did not work in the user's test.
+### Avatars
 
-Retained:
+Lookup order: system address book, Logo.dev with a libsecret-stored publishable key, Gravatar, initials. Do not restore Hunter automatically.
 
-- Avatar PNG disk cache (`avatars-v3`) and avatar RAM cache. Disk lookup now happens before checking network availability.
-- `MessageViewCache` for already displayed messages while the application process remains alive. It retains only views whose document became ready, not unfinished requests. Keys use account/folder/UID and rebind to current MessageInfo objects.
-- Window/list reuse and persistent folder-tree metadata. Camel's ordinary internal cache is untouched.
+The image switch gates contact, cached and remote images; Show avatars separately hides the whole avatar. Clear removes/verifies the Logo.dev secret, clears RAM and `avatars-v3` PNGs, then refreshes avatars. A generation counter rejects late cache writes. Preferences refreshes the keyring lookup and masks an existing key. Normal GTK focus behavior is intentional.
 
-The view cache defaults to 64 rows / 64 MiB estimated source cost, with an 8 MiB per-message admission limit. This is not a hard cap on WebKit's total process memory.
-There is intentionally no custom persistent message archive across full process shutdown. Do not advertise cold-start offline message/image caching as implemented. Old `messages-v1` files, if present on a previous machine, are unused. Purging packages does not necessarily remove user data; Flatpak `--delete-data` does.
+Contact photos and Gravatar remain available after Clear. Apple/OpenAI logos were previously found in actual synced address-book PHOTO entries. Do not delete contacts as an avatar-cache fix. Tooltips identify the image source. Keyring entries can survive uninstall independently of Flatpak data.
 
-The earlier measured Flatpak loads took about 0.53–0.78 seconds after expansion: roughly 0.42–0.64 seconds for MIME availability and 0.11–0.25 seconds for WebKit. These were a few user-triggered samples, not a benchmark or speed guarantee.
+### IMAP folders
 
-## Build and package
+The Flatpak enables the `imap-folder-setup` Meson option; native builds keep its default `false` and retain existing configured-folder behavior.
 
-Use Ubuntu 24.04 (Noble) for compatible `.deb` artifacts, even when developing on elementary OS 9 Preview / Ubuntu 26.04. A rootless Podman Noble container was used previously. Do not just package a binary linked against 26.04 libraries for 24.04.
-Build dependencies are declared in `debian/control`; install them plus `build-essential`. Typical commands inside a suitable build environment:
+`Backend.Account.configure_folders()` uses Camel's initial-setup suggestions to fill missing real Trash/Junk paths in the application's cloned service settings. Existing nonempty paths are preserved. System EDS sources are not written. Camel prioritizes server SPECIAL-USE attributes and provides its own conventional-name fallback.
+
+Real-folder configuration controls virtual-folder availability, folder flags, deletion destinations and Empty Trash. Do not infer destructive operations merely from a displayed folder name. Modern folder-info invalidation reloads the full tree and removes stale virtual rows from the sidebar/cache. Server folder names remain unchanged; the Flatpak adds no `(Virtual)` suffix. Virtual views remain available if no real destination is established.
+
+The user needed to remove old local installations/data before their folder test succeeded; this does not establish that caches were the only cause. Do not automate that cleanup.
+
+## Flatpak build and distribution
+
+The single manifest is `io.github.IzsakiRobi.Elementary-Mail-Plus.json`:
+
+- Runtime / SDK: `org.gnome.Platform` / `org.gnome.Sdk`, branch **49**, from Flathub.
+- Application branch: `stable`.
+- Freedesktop graphics base: **25.08**.
+- Bundled components include EDS 3.56.2, Granite 6.2.0, GTK 3 elementary stylesheet 8.2.2 with all 11 accent variants, libportal 0.9.1, folks, libhandy and the private MailPlus icon theme. Sass tools are build-only and cleaned from the result.
 
 ```sh
-meson setup build --prefix=/usr
-meson compile -C build
+flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install --user flathub org.gnome.Sdk//49
+flatpak-builder --user --force-clean --repo=../Elementary-Mail-Plus-builds/repo ../Elementary-Mail-Plus-builds/flatpak io.github.IzsakiRobi.Elementary-Mail-Plus.json
+flatpak build-bundle --runtime-repo=https://dl.flathub.org/repo/flathub.flatpakrepo ../Elementary-Mail-Plus-builds/repo elementary-mail-plus_v0.1_amd64.flatpak io.github.IzsakiRobi.Elementary-Mail-Plus stable
+```
+
+Keep build directories outside the source tree. On this machine the reusable builder state is `~/Projects/Elementary-Mail-Plus-builds/state`. SDKs are build-time dependencies, not end-user requirements.
+
+Distribute one ordinary `.flatpak`, without an installation/repair script or tar wrapper. Its runtime-repo must point to Flathub. Runtime and graphics dependencies then come from the same remote.
+
+### Graphics finding
+
+The old elementary runtime 9 required GL.default 25.08 from Flathub, while AppCenter did not provide it. Runtime 8.2 had the same issue with branch 24.08. Flatpak 1.18.4's remote related-ref lookup searches the runtime's origin remote, explaining the missed graphics dependency.
+
+Without the matching GL extension, a minimal independent WebKit view reproduced `EGL_BAD_PARAMETER` and WebProcess termination. Installing the correct extension fixed both the probe and the user's Fedora rendering. DMA-BUF/compositing overrides did not fix missing drivers and are not shipped. Do not disable WebKit's sandbox or force X11.
+
+The earlier elementary 9.1 / WebKit 2.54.0 stall is historical, not a blanket prohibition on newer WebKit. The approved GNOME build uses WebKit 2.54.1 and passed the independent HTML/Mail-extension probe and the user's Fedora/elementary tests.
+
+An empty isolated Flatpak installation resolved the finished bundle and automatically scheduled GL.default 25.08 / 25.08-extra, VAAPI, codecs, locale and GNOME Platform 49, all from Flathub. The final transaction was declined before installing. Real-mail and appearance testing belongs to the user.
+
+The separate Mutter cursor patch is a host compositor change, not part of Mail. The current Flatpak was confirmed sharp without it; do not reinstall that patch for this application.
+
+## Native Debian build
+
+Build against Ubuntu 24.04 Noble libraries for elementary OS 8.1 compatibility, even when developing on a newer OS. The current development host is elementary OS 8.1 / Noble, so a container is unnecessary here. Use a Noble container when the host is newer; do not package binaries linked against newer Ubuntu libraries for Noble.
+
+Dependencies are in `debian/control`; also install `build-essential`. Package: `elementary-mail-plus`, version `0.1-9`.
+
+```sh
 DEB_BUILD_OPTIONS=nocheck dpkg-buildpackage -b -us -uc
 ```
 
-`debian/rules` disables automatic functional tests. It also uses `dh_apparmor` to activate the application-specific profile. The Debian package name is `elementary-mail-plus`. Its EDS/GTK dependencies come from Noble; `io.elementary.portals` comes from elementary's stable Noble repository. Build/dependency resolution was checked, but fresh elementary 8.1 end-to-end testing belongs to the user.
+`debian/rules` disables automatic functional tests and activates the app-specific AppArmor profile through `dh_apparmor`. Native dependencies include system EDS/GTK and `io.elementary.portals` from elementary's Noble repository. The package is rebuilt from the same approved source as the Flatpak, using native dependency versions and default Meson options.
 
-For Flatpak install `flatpak-builder`, the AppCenter remote, and the matching SDK. Keep these manifests distinct:
+## Publishing
 
-| Manifest | Runtime / SDK branch | Application branch |
-| --- | --- | --- |
-| `io.github.IzsakiRobi.Elementary-Mail-Plus.elementary8.json` | `io.elementary.Platform` / `io.elementary.Sdk` **8.2** | `elementary8` |
-| `io.github.IzsakiRobi.Elementary-Mail-Plus.json` | same IDs, **9** | `stable` |
+Publish the approved commit to `main`, move mutable tag `v0.1` to that commit and update the existing GitHub release. Keep only:
 
-```sh
-flatpak-builder --user --force-clean --repo=repo build-flatpak io.github.IzsakiRobi.Elementary-Mail-Plus.json
-flatpak build-bundle --runtime-repo=https://flatpak.elementary.io/repo.flatpakrepo repo elementary-mail-plus.flatpak io.github.IzsakiRobi.Elementary-Mail-Plus stable
-```
+- `elementary-mail-plus_0.1-9_amd64.deb`
+- `elementary-mail-plus_v0.1_amd64.flatpak`
 
-Keep build directories outside the source tree, or exclude them from directory sources when adapting this example. For the 8.2 variant use its manifest and the `elementary8` branch in the bundle command. SDKs are build-time tools, not end-user requirements.
-
-### Critical Flatpak compatibility finding
-
-Do not casually update branch **9** to **9.1**. On the user's EOS 9 Preview system, runtime 9.1 / WebKit 2.54.0 stalled even a minimal independent HTML view. The same test binary worked with runtime 9 / WebKit 2.52.5. Runtime selection fixed the missing entire mail body. This is a finding for that environment, not a universal claim about all WebKit 2.54 systems.
-Both manifests need `--device=dri`; do not disable WebKit's sandbox or force X11 as a workaround.
-The 8.2 runtime also needed `org.freedesktop.Platform.GL.default//24.08` installed from Flathub on the development machine. That graphics branch reported EOL; 8.2 was retained at the user's request for compatibility. Prefer branch 9 where appropriate. Runtime versions are distribution-independent, not Ubuntu 24.04/26.04 platforms.
-
-The user's separate Mutter cursor-shape backport for EOS 8.1 is a host compositor patch. It is not part of this Mail repository and was not installed or bundled here. Do not assume it survives an OS reinstall.
-
-## Next work
-
-Start from the approved rollback and wait for the user's next request. Do not resume the abandoned disk-cache or notification-center withdrawal implementation just because older commits/changelogs mention it. If those are requested again, first isolate the actual failure with one targeted measurement; retain stable avatar and warm-view behavior. Build only the package formats the user asks for, and let them perform functional tests before publishing.
-
-## Fedora portability follow-up — 2026-10-24
-
-The user tested the released Flatpak on Fedora: message reading works, but the account-settings button opened elementary settings, some special folders showed generic icons, and fewer company logos appeared without a Logo.dev key.
-
-Changes authorized for publication by the user:
-
-- Both Flatpak manifests allow talking to `org.gnome.Settings`. Shared account-settings code opens elementary settings on Pantheon and native builds; other Flatpak desktops activate GNOME Settings' `launch-panel` action with `online-accounts` over D-Bus. Both the welcome button and preferences use this path.
-- Flatpak folder presentation falls back to a small set of conventional top-level folder names when server/EDS special-use flags are absent. Explicit type flags win. This is display-only: folder operations still use authoritative flags and configured destinations, not inferred names. Do not infer destructive operations from a folder label.
-- Camel can add virtual Trash/Junk views alongside real IMAP folders. Virtual rows are explicitly labelled `(Virtual)` with an explanatory tooltip. They are not merged or hidden; operations and message access are preserved.
-- Logo.dev key removal is checked by reading the matching secret back. Saving waits for initial credential loading, preventing that load from overwriting a later save. Displayed avatars are cleared and reloaded on key changes, cancelling older fetches. The panel reports key removal separately from saving.
-- The Logo.dev registration link is a small explanatory label. Preferences uses `focus_on_click = false` on its toolbar button; keyboard focus remains available.
-- No separate keyless company-logo provider was added. The lookup order remains address book, Logo.dev with a key, Gravatar, initials. The system keyring can survive application uninstall, independently of Flatpak data deletion. The exact source of the user's old images is unverified. Do not restore Hunter automatically.
-
-Both runtime 8.2 and 9 Flatpaks and the Noble .deb are built for this follow-up. Only compilation/basic packaging checks are performed; Fedora functional confirmation belongs to the user. The user explicitly authorized replacing main and the v0.1 release before the new functional test. No .deb or Flatpak was installed automatically on the development host.
-
-## Avatar controls follow-up — 2026-10-24
-
-- The image toggle now gates contact photos as well as remote/cached images. Off means initials only (the separate Show avatars switch still hides the entire avatar). Previously contact lookup ran before the remote-image policy check, so disabling the option could still show contact images. Non-null icon assignment also checks the policy to reject late completions.
-- Preferences has a Clear button beside the key entry. It removes/verifies the Logo.dev secret, clears the avatar RAM cache and hashed PNG files in `avatars-v3`, then refreshes avatars. It does not clear message or folder caches. A cache generation prevents older requests from saving images into the newly cleared cache.
-- Every new Preferences panel refreshes the system-keyring lookup. During lookup the field is disabled with a checking placeholder; when a key exists its actual value is populated with visibility disabled, displaying dots. Keys are never logged or committed.
-- One isolated regression check exercised the actual SenderAvatar with a supplied contact icon: off blocks even contact lookup, on displays the image, off removes it again, and clear deletes a test cache entry. This used temporary schemas, the memory GSettings backend and a separate cache, without network or real mail. Real-mail behavior remains for the user to test.
-- The user authorized rebuilding and replacing all three v0.1 assets again. The .deb version is 0.1-8. Purge is not intended to erase per-user GSettings, keyring entries or caches; Clear provides explicit avatar/key cleanup.
-
-## Address-book image diagnosis and normal focus — 2026-10-24
-
-The user reported company logos still appearing with an empty key after Clear/restart. Read-only inspection found actual PHOTO entries for the Apple and OpenAI sender domains in the system's synced EDS address book, while the application's `avatars-v3` directory contained only one PNG. This establishes that those logos can come from contacts rather than a failed Logo.dev cache deletion. Do not delete contact photos or reset the user's address book as an application-cache fix. Fedora may not have the same synced contacts/photos.
-
-The requested lookup order is preserved. Avatar tooltips now identify Address book, Logo.dev or Gravatar. The Preferences hint explicitly explains that Clear deletes the key and downloaded avatar cache while contact photos and Gravatar remain available. There was no additional avatar-cache storage discovered or introduced. The user requested restoring normal Preferences button feedback, so `focus_on_click = false` was removed; GTK's normal mouse and keyboard focus behavior applies again. The user authorized main/v0.1 replacement with .deb 0.1-9 and both Flatpaks. Only package compilation/basic checks are needed for this UI clarification.
+Remove the retired elementary8 and elementary9-named Flatpak assets. Clear the release body; do not generate notes. Upload the replacements before removing obsolete assets, and verify the resulting asset list and tag/main revisions. GitHub's automatically generated source archives remain available.

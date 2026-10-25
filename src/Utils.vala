@@ -157,11 +157,11 @@ public class Mail.Utils {
             case "deleted messages":
             case "deleted items":
             case "trash":
-                return flags | Camel.FolderInfoFlags.TYPE_TRASH;
+                return IMAP_FOLDER_SETUP ? flags : flags | Camel.FolderInfoFlags.TYPE_TRASH;
             case "junk":
             case "junk email":
             case "spam":
-                return flags | Camel.FolderInfoFlags.TYPE_JUNK;
+                return IMAP_FOLDER_SETUP ? flags : flags | Camel.FolderInfoFlags.TYPE_JUNK;
             default:
                 return flags;
         }
