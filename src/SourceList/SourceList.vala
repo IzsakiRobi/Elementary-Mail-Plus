@@ -878,7 +878,7 @@ public class Mail.SourceList : Gtk.Bin {
             return path.get_depth () == 1;
         }
 
-        private void resort () {
+        public void resort () {
             child_tree.set_sort_column_id (Gtk.TREE_SORTABLE_UNSORTED_SORT_COLUMN_ID, Gtk.SortType.ASCENDING);
             child_tree.set_sort_column_id (Gtk.TREE_SORTABLE_DEFAULT_SORT_COLUMN_ID, Gtk.SortType.ASCENDING);
         }
@@ -1034,6 +1034,9 @@ public class Mail.SourceList : Gtk.Bin {
         private CellRendererExpander secondary_expander_cell;
         private Gee.HashMap<int, CellRendererSpacer> spacer_cells; // cells used for left spacing
         private bool unselectable_item_clicked = false;
+        private Gtk.TreeRowReference? drop_indicator;
+        private Gtk.TreeRowReference? message_drop_target;
+        private bool drop_after;
 
         public Tree (DataModel data_model) {
             Object (data_model: data_model);
@@ -1128,6 +1131,99 @@ public class Mail.SourceList : Gtk.Bin {
 
         ~Tree () {
             disable_item_property_monitor ();
+        }
+
+        public void set_drop_indicator (Gtk.TreePath? path, bool after) {
+            var current = drop_indicator != null ? drop_indicator.get_path () : null;
+            if (path == null && current == null) {
+                return;
+            }
+            if (path != null && current != null && path.compare (current) == 0 && drop_after == after) {
+                return;
+            }
+            drop_indicator = path != null ? new Gtk.TreeRowReference (model, path) : null;
+            drop_after = after;
+            queue_draw ();
+        }
+
+        public void set_message_drop_target (Gtk.TreePath? path) {
+            var current = message_drop_target != null ? message_drop_target.get_path () : null;
+            if ((path == null && current == null)
+                || (path != null && current != null && path.compare (current) == 0)) {
+                return;
+            }
+            message_drop_target = path != null ? new Gtk.TreeRowReference (model, path) : null;
+            queue_draw ();
+        }
+
+        public override bool draw (Cairo.Context cr) {
+            cr.save ();
+            bool result = base.draw (cr);
+            cr.restore ();
+            if (!Gtk.cairo_should_draw_window (cr, get_bin_window ())) {
+                return result;
+            }
+            var context = get_style_context ();
+            Gdk.RGBA color;
+            if (!context.lookup_color ("accent_color", out color)
+                && !context.lookup_color ("theme_selected_bg_color", out color)) {
+                color.parse ("#3689e6");
+            }
+            var target = message_drop_target != null ? message_drop_target.get_path () : null;
+            if (target != null) {
+                Gdk.Rectangle bounds;
+                get_background_area (target, get_column (0), out bounds);
+                int target_x, target_y;
+                convert_bin_window_to_widget_coords (0, bounds.y, out target_x, out target_y);
+                cr.save ();
+                cr.rectangle (2, target_y + 1, int.max (0, get_allocated_width () - 4), int.max (0, bounds.height - 2));
+                cr.set_source_rgba (color.red, color.green, color.blue, 0.25);
+                cr.fill ();
+                cr.restore ();
+            }
+            if (drop_indicator == null) {
+                return result;
+            }
+            var path = drop_indicator.get_path ();
+            if (path == null || get_allocated_width () < 24) {
+                return result;
+            }
+            int indent = 16 * int.max (0, path.get_depth () - 2);
+            if (drop_after) {
+                while (is_row_expanded (path)) {
+                    Gtk.TreeIter iter;
+                    if (!model.get_iter (out iter, path)) {
+                        break;
+                    }
+                    int count = model.iter_n_children (iter);
+                    if (count == 0) {
+                        break;
+                    }
+                    path.append_index (count - 1);
+                }
+            }
+            Gdk.Rectangle area;
+            get_background_area (path, get_column (0), out area);
+            int x, y;
+            convert_bin_window_to_widget_coords (0, area.y + (drop_after ? area.height : 0), out x, out y);
+            double marker = int.min (10 + indent, get_allocated_width () - 12);
+            double end = get_allocated_width () - 8;
+            bool rtl = get_direction () == Gtk.TextDirection.RTL;
+            if (rtl) {
+                marker = get_allocated_width () - marker;
+                end = 8;
+            }
+            cr.save ();
+            Gdk.cairo_set_source_rgba (cr, color);
+            cr.set_line_width (2);
+            cr.set_line_cap (Cairo.LineCap.ROUND);
+            cr.move_to (marker + (rtl ? -3 : 3), y);
+            cr.line_to (end, y);
+            cr.stroke ();
+            cr.arc (marker, y, 3, 0, 2 * Math.PI);
+            cr.stroke ();
+            cr.restore ();
+            return result;
         }
 
         private bool on_query_tooltip (int x, int y, bool keyboard_tooltip, Gtk.Tooltip tooltip) {
@@ -1849,6 +1945,11 @@ public class Mail.SourceList : Gtk.Bin {
         get { return tree.editing; }
     }
 
+    private Item? dragged_item;
+    public signal bool reorder_requested (Item moved, Item target, bool after);
+    public signal bool messages_drop_possible (Gtk.Widget source, Item target);
+    public signal bool messages_dropped (Gtk.Widget source, Item target);
+
     private Tree tree;
     private DataModel data_model = new DataModel ();
 
@@ -1867,6 +1968,7 @@ public class Mail.SourceList : Gtk.Bin {
         child = tree;
 
         tree.item_selected.connect ((item) => item_selected (item));
+        setup_drag_and_drop ();
     }
 
     /**
@@ -1879,6 +1981,181 @@ public class Mail.SourceList : Gtk.Bin {
     public bool has_item (Item item) {
         return data_model.has_item (item);
     }
+
+    private void setup_drag_and_drop () {
+        Gtk.TargetEntry[] targets = {{"application/x-mailplus-folder-order", Gtk.TargetFlags.SAME_APP, 0}};
+        Gtk.drag_source_set (tree, Gdk.ModifierType.BUTTON1_MASK, targets, Gdk.DragAction.MOVE);
+        Gtk.TargetEntry[] destinations = {
+            {"application/x-mailplus-folder-order", Gtk.TargetFlags.SAME_APP, 0},
+            {"application/x-mailplus-conversations", Gtk.TargetFlags.SAME_APP, 1}
+        };
+        Gtk.drag_dest_set (tree, (Gtk.DestDefaults) 0, destinations, Gdk.DragAction.MOVE);
+        Gtk.drag_dest_set_track_motion (tree, true);
+        tree.drag_begin.connect ((context) => {
+            dragged_item = tree.selected_item;
+            var parent = dragged_item != null ? dragged_item.parent as SourceListSortable : null;
+            if (editing || parent == null || !parent.allow_dnd_sorting ()) {
+                dragged_item = null;
+                Gtk.drag_cancel (context);
+                return;
+            }
+            if (dragged_item.icon != null) {
+                Gtk.drag_set_icon_gicon (context, dragged_item.icon, 0, 0);
+            }
+        });
+        tree.drag_data_get.connect ((context, data, info, time) => {
+            data.set (data.get_target (), 8, "folder-order".data);
+            Signal.stop_emission_by_name (tree, "drag-data-get");
+        });
+        tree.drag_motion.connect ((context, x, y, time) => {
+            if (is_message_drag (context)) {
+                Gtk.TreePath? message_path;
+                var destination = message_target (context, x, y, out message_path);
+                tree.set_drop_indicator (null, false);
+                tree.set_message_drop_target (destination != null ? message_path : null);
+                Gdk.drag_status (context, destination != null ? Gdk.DragAction.MOVE : (Gdk.DragAction) 0, time);
+                return true;
+            }
+            tree.set_message_drop_target (null);
+            Gtk.TreePath? path;
+            bool after;
+            var target = reorder_target (context, x, y, out path, out after);
+            tree.set_drop_indicator (target != null ? path : null, after);
+            Gdk.drag_status (context, target != null ? Gdk.DragAction.MOVE : (Gdk.DragAction) 0, time);
+            return true;
+        });
+        tree.drag_drop.connect ((context, x, y, time) => {
+            if (is_message_drag (context)) {
+                Gtk.TreePath? message_path;
+                if (message_target (context, x, y, out message_path) == null) {
+                    Gtk.drag_finish (context, false, false, time);
+                } else {
+                    Gtk.drag_get_data (tree, context, Gtk.drag_dest_find_target (tree, context, null), time);
+                }
+                return true;
+            }
+            Gtk.TreePath? path;
+            bool after;
+            if (reorder_target (context, x, y, out path, out after) == null) {
+                Gtk.drag_finish (context, false, false, time);
+                return true;
+            }
+            var target = Gtk.drag_dest_find_target (tree, context, null);
+            if (target == Gdk.Atom.NONE) {
+                Gtk.drag_finish (context, false, false, time);
+            } else {
+                Gtk.drag_get_data (tree, context, target, time);
+            }
+            return true;
+        });
+        tree.drag_data_received.connect ((context, x, y, data, info, time) => {
+            if (info == 1) {
+                Gtk.TreePath? message_path;
+                var destination = message_target (context, x, y, out message_path);
+                var source = Gtk.drag_get_source_widget (context);
+                bool accepted = data.get_length () > 0
+                    && data.get_target () == Gdk.Atom.intern_static_string ("application/x-mailplus-conversations")
+                    && source != null && destination != null && messages_dropped (source, destination);
+                tree.set_message_drop_target (null);
+                Gtk.drag_finish (context, accepted, false, time);
+                Signal.stop_emission_by_name (tree, "drag-data-received");
+                return;
+            }
+            Gtk.TreePath? path;
+            bool after;
+            var target = reorder_target (context, x, y, out path, out after);
+            var moved = dragged_item;
+            bool accepted = data.get_length () > 0 && target != null && moved != null && reorder_requested (moved, target, after);
+            if (accepted) {
+                data_model.resort ();
+                tree.selected_item = moved;
+            }
+            Gtk.drag_finish (context, accepted, false, time);
+            Signal.stop_emission_by_name (tree, "drag-data-received");
+        });
+        tree.drag_leave.connect (() => {
+            tree.set_drop_indicator (null, false);
+            tree.set_message_drop_target (null);
+        });
+        tree.drag_end.connect (() => {
+            dragged_item = null;
+            tree.set_message_drop_target (null);
+            tree.set_drop_indicator (null, false);
+        });
+    }
+
+    private bool is_message_drag (Gdk.DragContext context) {
+        return Gtk.drag_dest_find_target (tree, context, null)
+            == Gdk.Atom.intern_static_string ("application/x-mailplus-conversations");
+    }
+
+    private Item? message_target (Gdk.DragContext context, int x, int y, out Gtk.TreePath? path) {
+        path = null;
+        if (editing || x < 0 || y < 0 || !is_message_drag (context)) {
+            return null;
+        }
+        int bin_x, bin_y;
+        tree.convert_widget_to_bin_window_coords (x, y, out bin_x, out bin_y);
+        if (!tree.get_path_at_pos (bin_x, bin_y, out path, null, null, null)) {
+            return null;
+        }
+        var source = Gtk.drag_get_source_widget (context);
+        var target = data_model.get_item_from_path (path);
+        if (source == null || target == null || !messages_drop_possible (source, target)) {
+            return null;
+        }
+        return target;
+    }
+
+    private Item? reorder_target (Gdk.DragContext context, int x, int y, out Gtk.TreePath? path, out bool after) {
+        path = null;
+        after = false;
+        var position = Gtk.TreeViewDropPosition.BEFORE;
+        if (x < 0 || y < 0 || dragged_item == null
+            || Gtk.drag_dest_find_target (tree, context, null) == Gdk.Atom.NONE) {
+            return null;
+        }
+        if (!tree.get_dest_row_at_pos (x, y, out path, out position)) {
+            Gtk.TreePath? start;
+            Gtk.TreePath? end;
+            if (!tree.get_visible_range (out start, out end) || end == null) {
+                return null;
+            }
+            Gdk.Rectangle bounds;
+            tree.get_background_area (end, tree.get_column (0), out bounds);
+            int bin_x, bin_y;
+            tree.convert_widget_to_bin_window_coords (x, y, out bin_x, out bin_y);
+            if (bin_y < bounds.y + bounds.height) {
+                return null;
+            }
+            path = end;
+            position = Gtk.TreeViewDropPosition.AFTER;
+        }
+        var target = data_model.get_item_from_path (path);
+        if (target == dragged_item.parent && target is ExpandableItem) {
+            Gtk.TreeIter iter;
+            if (!tree.model.get_iter (out iter, path)) {
+                return null;
+            }
+            var parent_iter = iter;
+            if (!tree.model.iter_children (out iter, parent_iter)) {
+                return null;
+            }
+            path = tree.model.get_path (iter);
+            target = data_model.get_item_from_path (path);
+            position = Gtk.TreeViewDropPosition.BEFORE;
+        }
+        if (target == null || target == dragged_item || dragged_item.parent == null || target.parent != dragged_item.parent) {
+            return null;
+        }
+        var parent = target.parent as SourceListSortable;
+        if (parent == null || !parent.allow_dnd_sorting ()) {
+            return null;
+        }
+        after = position == Gtk.TreeViewDropPosition.AFTER || position == Gtk.TreeViewDropPosition.INTO_OR_AFTER;
+        return target;
+    }
+
 
     /**
      * Sets the method used for filtering out items.

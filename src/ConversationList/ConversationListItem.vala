@@ -7,6 +7,7 @@
 
 public class Mail.ConversationListItem : VirtualizingListBoxRow {
     public signal void select ();
+    public signal void select_exclusively ();
 
     private Gtk.Overlay avatar_overlay;
     private SenderAvatar avatar;
@@ -114,7 +115,8 @@ public class Mail.ConversationListItem : VirtualizingListBoxRow {
         trash_affordance.get_style_context ().add_class ("trash");
 
         carousel = new Hdy.Carousel () {
-            allow_scroll_wheel = false
+            allow_scroll_wheel = false,
+            allow_mouse_drag = false
         };
         carousel.add (grid);
         carousel.prepend (archive_affordance);
@@ -151,7 +153,7 @@ public class Mail.ConversationListItem : VirtualizingListBoxRow {
                 return;
             }
 
-            select ();
+            select_exclusively ();
 
             var main_window = (MainWindow)get_toplevel ();
             if (index == 2) {
@@ -233,17 +235,10 @@ public class Mail.ConversationListItem : VirtualizingListBoxRow {
         var menu_model = new Menu ();
         menu_model.append ((item_model.folder_info_flags & Camel.FOLDER_TYPE_MASK) == Camel.FolderInfoFlags.TYPE_TRASH ? _("Delete Permanently") : _("Move To Trash"), MainWindow.ACTION_PREFIX + MainWindow.ACTION_MOVE_TO_TRASH);
 
-        if (!item_model.unread) {
-            menu_model.append (_("Mark As Unread"), MainWindow.ACTION_PREFIX + MainWindow.ACTION_MARK_UNREAD);
-        } else {
-            menu_model.append (_("Mark as Read"), MainWindow.ACTION_PREFIX + MainWindow.ACTION_MARK_READ);
-        }
-
-        if (!item_model.flagged) {
-            menu_model.append (_("Star"), MainWindow.ACTION_PREFIX + MainWindow.ACTION_MARK_STAR);
-        } else {
-            menu_model.append (_("Unstar"), MainWindow.ACTION_PREFIX + MainWindow.ACTION_MARK_UNSTAR);
-        }
+        menu_model.append (_("Mark as Read"), MainWindow.ACTION_PREFIX + MainWindow.ACTION_MARK_READ);
+        menu_model.append (_("Mark As Unread"), MainWindow.ACTION_PREFIX + MainWindow.ACTION_MARK_UNREAD);
+        menu_model.append (_("Star"), MainWindow.ACTION_PREFIX + MainWindow.ACTION_MARK_STAR);
+        menu_model.append (_("Unstar"), MainWindow.ACTION_PREFIX + MainWindow.ACTION_MARK_UNSTAR);
 
         menu = new Gtk.Menu.from_model (menu_model) {
             attach_widget = this

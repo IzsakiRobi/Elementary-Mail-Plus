@@ -84,7 +84,12 @@ public class Mail.ConversationListStore : ListModel, Object {
     }
 
     public void remove (ConversationItemModel data) {
-        var iter = this.data.get_iter_at_pos (get_index_of_unfiltered (data));
+        int index = get_index_of_unfiltered (data);
+        if (index < 0) {
+            return;
+        }
+        selected_rows.remove (data);
+        var iter = this.data.get_iter_at_pos (index);
         iter.remove ();
 
         last_iter = null;
@@ -92,8 +97,8 @@ public class Mail.ConversationListStore : ListModel, Object {
     }
 
     public void remove_all () {
-        data.get_begin_iter ().remove_range (data.get_end_iter ());
         unselect_all ();
+        data.get_begin_iter ().remove_range (data.get_end_iter ());
 
         last_iter = null;
         last_position = uint.MAX;
@@ -121,29 +126,17 @@ public class Mail.ConversationListStore : ListModel, Object {
 
     public Gee.ArrayList<GLib.Object> get_items_between (GLib.Object from, GLib.Object to) {
         var items = new Gee.ArrayList<GLib.Object> ();
-        var start_found = false;
-        var ignore_next_break = false;
-        var length = get_n_items ();
-        for (int i = 0; i < length; i++) {
+        int start = get_index_of (from);
+        int end = get_index_of (to);
+        if (start < 0 || end < 0) {
+            return items;
+        }
+        for (int i = int.min (start, end); i <= int.max (start, end); i++) {
             var item = get_item (i);
-            if ((item == from || item == to) && !start_found) {
-                start_found = true;
-                ignore_next_break = true;
-            } else if (!start_found) {
-                continue;
-            }
-
             if (item != null) {
                 items.add (item);
             }
-
-            if ((item == to || item == from) && !ignore_next_break) {
-                break;
-            }
-
-            ignore_next_break = false;
         }
-
         return items;
     }
 
@@ -178,36 +171,24 @@ public class Mail.ConversationListStore : ListModel, Object {
     }
 
     public int get_index_of_item_before (GLib.Object item) {
-        if (item == get_item (0)) {
-            return -1;
-        }
-
-        var length = get_n_items ();
-        for (int i = 1; i < length; i++) {
-            if (get_item (i) == item) {
-                if (get_item (i - 1) != null) {
-                    return i - 1;
-                }
+        for (int i = get_index_of (item) - 1; i >= 0; i--) {
+            if (get_item (i) != null) {
+                return i;
             }
         }
-
         return -1;
     }
 
     public int get_index_of_item_after (GLib.Object item) {
-        if (item == get_item (get_n_items () - 1)) {
+        int index = get_index_of (item);
+        if (index < 0) {
             return -1;
         }
-
-        var length = get_n_items ();
-        for (int i = 0; i < length - 1; i++) {
-            if (get_item (i) == item) {
-                if (get_item (i + 1) != null) {
-                    return i + 1;
-                }
+        for (int i = index + 1; i < get_n_items (); i++) {
+            if (get_item (i) != null) {
+                return i;
             }
         }
-
         return -1;
     }
 

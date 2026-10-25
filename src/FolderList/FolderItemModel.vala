@@ -5,8 +5,10 @@
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
-public class Mail.FolderItemModel : Mail.SourceList.ExpandableItem {
+public class Mail.FolderItemModel : Mail.SourceList.ExpandableItem, Mail.SourceListSortable {
     public signal void start_edit ();
+    public signal void new_folder_requested ();
+    public signal void trash_requested ();
 
     public Backend.Account account { get; construct; }
 
@@ -24,6 +26,9 @@ public class Mail.FolderItemModel : Mail.SourceList.ExpandableItem {
     public bool is_special_folder { get; private set; default = true; }
     public int pos { get; private set; }
 
+    public int sort_index { get; set; default = int.MAX; }
+    public bool busy { get; set; }
+
     private Cancellable cancellable;
     private string old_name;
     private bool emptying_trash;
@@ -37,6 +42,7 @@ public class Mail.FolderItemModel : Mail.SourceList.ExpandableItem {
 
     construct {
         cancellable = new GLib.Cancellable ();
+        notify["busy"].connect (update_infos);
     }
 
     ~FolderItemModel () {
@@ -59,11 +65,23 @@ public class Mail.FolderItemModel : Mail.SourceList.ExpandableItem {
             menu.add (empty_item);
         }
 
-        if (!is_special_folder) {
-            var rename_item = new Gtk.MenuItem.with_label (_("Rename folder"));
+        if ((folder_info.flags & (Camel.FolderInfoFlags.VIRTUAL | Camel.FolderInfoFlags.NOINFERIORS | Camel.FolderInfoFlags.READONLY)) == 0) {
+            var new_item = new Gtk.MenuItem.with_label (_("New subfolder…")) { sensitive = !busy };
+            new_item.activate.connect (() => new_folder_requested ());
+            menu.add (new Gtk.SeparatorMenuItem ());
+            menu.add (new_item);
+        }
+
+        if (!is_special_folder && !FolderOperations.is_protected ((Camel.Store) account.service, folder_info)) {
+            var rename_item = new Gtk.MenuItem.with_label (_("Rename folder")) { sensitive = !busy };
             rename_item.activate.connect (() => start_edit ());
             menu.add (new Gtk.SeparatorMenuItem ());
             menu.add (rename_item);
+            if (!is_in_trash ()) {
+                var trash_item = new Gtk.MenuItem.with_label (_("Move folder to Trash…")) { sensitive = !busy };
+                trash_item.activate.connect (() => trash_requested ());
+                menu.add (trash_item);
+            }
         }
 
         menu.show_all ();
@@ -78,7 +96,7 @@ public class Mail.FolderItemModel : Mail.SourceList.ExpandableItem {
 
         var dialog = new Granite.MessageDialog (
             _("Empty Trash for “%s”?").printf (account.service.display_name),
-            _("All messages in this account’s Trash will be permanently deleted. You have 5 seconds to undo."),
+            _("All folders and messages in this account’s Trash will be permanently deleted. You have 5 seconds to undo."),
             new ThemedIcon ("user-trash-full"),
             Gtk.ButtonsType.NONE
         ) {
@@ -191,13 +209,48 @@ public class Mail.FolderItemModel : Mail.SourceList.ExpandableItem {
             }
         }
 
-        if (!is_special_folder && editable != true) {
+        bool can_rename = !is_special_folder && !busy
+            && (folder_info.flags & (Camel.FolderInfoFlags.SYSTEM | Camel.FolderInfoFlags.VIRTUAL | Camel.FolderInfoFlags.READONLY)) == 0;
+        if (can_rename && editable != true) {
             editable = true;
             edited.connect (rename);
-        } else if (is_special_folder) {
+        } else if (!can_rename) {
             editable = false;
             edited.disconnect (rename);
         }
+    }
+
+    private bool is_in_trash () {
+        Mail.SourceList.Item? item = this;
+        while (item is FolderItemModel) {
+            var folder = (FolderItemModel) item;
+            if ((Utils.get_full_folder_info_flags (account.service, folder.folder_info) & Camel.FOLDER_TYPE_MASK) == Camel.FolderInfoFlags.TYPE_TRASH) {
+                return true;
+            }
+            item = item.parent;
+        }
+        return false;
+    }
+
+    public static int compare_folders (Mail.SourceList.Item a, Mail.SourceList.Item b) {
+        var first = a as FolderItemModel;
+        var second = b as FolderItemModel;
+        if (first == null || second == null) {
+            return 0;
+        }
+        if (first.sort_index != second.sort_index) {
+            return first.sort_index < second.sort_index ? -1 : 1;
+        }
+        var priority = first.pos - second.pos;
+        return priority != 0 ? priority : first.folder_info.full_name.collate (second.folder_info.full_name);
+    }
+
+    public int compare (Mail.SourceList.Item a, Mail.SourceList.Item b) {
+        return compare_folders (a, b);
+    }
+
+    public bool allow_dnd_sorting () {
+        return !busy;
     }
 
     private async void refresh () {
@@ -220,7 +273,7 @@ public class Mail.FolderItemModel : Mail.SourceList.ExpandableItem {
             return;
         }
 
-        if ("/" in new_name) {
+        if (!FolderOperations.valid_name (new_name)) {
             if (name == old_name) {
                 notify["name"].connect (cancel_rename);
             } else {
@@ -229,7 +282,7 @@ public class Mail.FolderItemModel : Mail.SourceList.ExpandableItem {
 
             MainWindow.send_error_message (
                 _("Couldn't rename “%s”").printf (name),
-                _("Folder names cannot contain “/”"),
+                _("Enter a folder name without slashes or line breaks."),
                 "folder"
             );
 

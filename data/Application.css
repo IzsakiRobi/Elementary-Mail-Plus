@@ -15,6 +15,14 @@
     box-shadow: 0 -1px 0 @menu_separator;
 }
 
+.conversation-list-item:selected,
+.conversation-list-item:selected:focus,
+.conversation-list-item:selected:backdrop {
+    background-image: none;
+    background-color: mix(@theme_base_color, @accent_color, 0.2);
+    color: mix(@theme_text_color, @accent_color, 0.6);
+}
+
 affordance {
     padding: 1em;
 }

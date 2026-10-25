@@ -10,6 +10,8 @@ public class Mail.MessageList : Gtk.Box {
     public Hdy.HeaderBar headerbar { get; private set; }
 
     private FolderPopover folder_popover;
+    private Gtk.MenuButton move_button;
+    private Gtk.Label placeholder;
     private Gee.HashMap<string, MessageListItem> messages;
     private ListStore message_list;
     private Gtk.ListBox list_box;
@@ -90,7 +92,7 @@ public class Mail.MessageList : Gtk.Box {
 
         folder_popover = new FolderPopover ();
 
-        var move_button = new Gtk.MenuButton () {
+        move_button = new Gtk.MenuButton () {
             action_name = MainWindow.ACTION_PREFIX + MainWindow.ACTION_MODIFY,
             image = new Gtk.Image.from_icon_name ("mail-move", Gtk.IconSize.LARGE_TOOLBAR),
             tooltip_text = _("Move Conversation to…"),
@@ -125,7 +127,7 @@ public class Mail.MessageList : Gtk.Box {
         headerbar.pack_end (move_button);
         headerbar.pack_end (mark_button);
 
-        var placeholder = new Gtk.Label (_("No Message Selected")) {
+        placeholder = new Gtk.Label (_("No Message Selected")) {
             visible = true
         };
 
@@ -156,6 +158,24 @@ public class Mail.MessageList : Gtk.Box {
         orientation = VERTICAL;
         add (headerbar);
         add (scrolled_window);
+    }
+
+    public void set_selection (uint count, Camel.Store? store) {
+        placeholder.label = count > 1
+            ? ngettext ("%u Conversation Selected", "%u Conversations Selected", count).printf (count)
+            : _("No Message Selected");
+        if (count != 1) {
+            can_reply (false);
+            can_move_thread (count > 0);
+        }
+        if (count > 1 || count == 0) {
+            folder_popover.set_store (store);
+        }
+        move_button.sensitive = count > 0 && store != null;
+        var window = get_toplevel () as Gtk.ApplicationWindow;
+        if (window != null && count > 1 && store == null) {
+            ((SimpleAction) window.lookup_action (MainWindow.ACTION_MOVE)).set_enabled (false);
+        }
     }
 
     public void set_conversation (Camel.FolderThreadNode? node) {

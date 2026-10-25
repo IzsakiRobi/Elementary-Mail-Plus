@@ -25,12 +25,16 @@ public class Mail.AccountItemModel : Mail.SourceList.ExpandableItem, Mail.Source
 
     public signal void loaded ();
     public signal void start_edit (Mail.SourceList.Item item);
+    public signal void selection_requested (string path);
 
     private GLib.Cancellable connect_cancellable;
     private Gee.HashMap<string, FolderItemModel> folder_items;
     private AccountSavedState saved_state;
     private uint save_cache_id;
     private bool loading;
+    private bool reload_again;
+    private uint reload_id;
+    private string? pending_selection;
     private Gee.HashMap<Camel.Folder, ulong?> folder_changed_handlers = new Gee.HashMap<Camel.Folder, ulong?> ();
     private unowned Camel.OfflineStore offlinestore;
 
@@ -65,6 +69,9 @@ public class Mail.AccountItemModel : Mail.SourceList.ExpandableItem, Mail.Source
 
     ~AccountItemModel () {
         connect_cancellable.cancel ();
+        if (reload_id != 0) {
+            Source.remove (reload_id);
+        }
         foreach (var entry in folder_changed_handlers.entries) {
             entry.key.disconnect (entry.value);
         }
@@ -102,6 +109,7 @@ public class Mail.AccountItemModel : Mail.SourceList.ExpandableItem, Mail.Source
 
     public async void load () {
         if (loading) {
+            reload_again = true;
             return;
         }
         loading = true;
@@ -139,41 +147,56 @@ public class Mail.AccountItemModel : Mail.SourceList.ExpandableItem, Mail.Source
             critical (e.message);
         } finally {
             loading = false;
+            if (reload_again) {
+                reload_again = false;
+                queue_reload ();
+            } else if (pending_selection != null && folder_items.has_key (pending_selection)) {
+                var path = pending_selection;
+                pending_selection = null;
+                selection_requested (path);
+            }
+        }
+    }
+
+    private void queue_reload () {
+        if (reload_id == 0) {
+            reload_id = Idle.add (() => {
+                reload_id = 0;
+                load.begin ();
+                return Source.REMOVE;
+            });
         }
     }
 
     private void folder_renamed (string old_name, Camel.FolderInfo folder_info) {
-        FolderItemModel item;
-        folder_items.unset (old_name, out item);
-        item.folder_info = folder_info;
-        folder_items[folder_info.full_name] = item;
-        queue_save_folders ();
+        saved_state.rename_path (old_name, folder_info.full_name);
+        var settings = Application.settings;
+        string selected_uid, selected_name;
+        settings.get ("selected-folder", "(ss)", out selected_uid, out selected_name);
+        if (selected_uid == account.service.uid && FolderOperations.is_within (selected_name, old_name)) {
+            pending_selection = folder_info.full_name + selected_name.substring (old_name.length);
+            settings.set ("selected-folder", "(ss)", selected_uid, pending_selection);
+        }
+        queue_reload ();
     }
 
     private void folder_deleted (Camel.FolderInfo folder_info) {
-        Mail.FolderItemModel? item = folder_items[folder_info.full_name];
+        var item = folder_items[folder_info.full_name];
         if (item != null) {
-            item.parent.remove (item);
+            if (item.parent != null) {
+                item.parent.remove (item);
+            }
             folder_items.unset (folder_info.full_name);
+            saved_state.forget_folder (folder_info.full_name);
             queue_save_folders ();
+            if (!loading) {
+                queue_reload ();
+            }
         }
     }
 
     private void folder_created (Camel.FolderInfo folder_info) {
-        if (folder_info.parent == null) {
-            show_info (folder_info, this);
-        } else {
-            unowned Camel.FolderInfo parent_info = (Camel.FolderInfo) folder_info.parent;
-            var parent_item = folder_items[parent_info.full_name];
-            if (parent_item == null) {
-                // Create the parent, then retry to create the children.
-                folder_created (parent_info);
-                folder_created (folder_info);
-            } else {
-                show_info (folder_info, parent_item);
-            }
-        }
-        queue_save_folders ();
+        queue_reload ();
     }
 
     private async void reload_folders () {
@@ -257,6 +280,8 @@ public class Mail.AccountItemModel : Mail.SourceList.ExpandableItem, Mail.Source
                 saved_state.bind_with_expandable_item (folder_item);
                 folder_items[folderinfo.full_name] = folder_item;
                 folder_item.start_edit.connect (() => start_edit (folder_item));
+                folder_item.new_folder_requested.connect (() => create_folder (folder_item));
+                folder_item.trash_requested.connect (() => confirm_trash (folder_item));
             } else {
                 folder_item.folder_info = folderinfo;
             }
@@ -277,28 +302,97 @@ public class Mail.AccountItemModel : Mail.SourceList.ExpandableItem, Mail.Source
         }
     }
 
-    public int compare (Mail.SourceList.Item a, Mail.SourceList.Item b) {
-        if (a is Mail.FolderItemModel && b is Mail.FolderItemModel) {
-            var folder_a = (Mail.FolderItemModel) a;
-            var folder_b = (Mail.FolderItemModel) b;
-
-            return folder_a.pos - folder_b.pos;
+    public bool reorder_folder (FolderItemModel moved, FolderItemModel target, bool after) {
+        if (moved == target || moved.parent == null || moved.parent != target.parent
+            || moved.account != account || target.account != account || moved.busy || target.busy) {
+            return false;
         }
+        var siblings = new Gee.ArrayList<FolderItemModel> ();
+        foreach (var child in moved.parent.children) {
+            if (child is FolderItemModel) {
+                siblings.add ((FolderItemModel) child);
+            }
+        }
+        siblings.sort ((a, b) => FolderItemModel.compare_folders (a, b));
+        siblings.remove (moved);
+        siblings.insert (siblings.index_of (target) + (after ? 1 : 0), moved);
+        saved_state.save_order (siblings);
+        return true;
+    }
 
-        return 0;
+    public void create_folder (FolderItemModel? parent = null) {
+        var dialog = new FolderDialog (account, parent != null ? parent.folder_info.full_name : null,
+            parent != null ? parent.name : null);
+        dialog.created.connect ((info) => {
+            pending_selection = info.full_name;
+            queue_reload ();
+        });
+        dialog.present ();
+    }
+
+    private void confirm_trash (FolderItemModel item) {
+        if (item.busy) {
+            return;
+        }
+        var dialog = new Granite.MessageDialog (
+            _("Move “%s” to Trash?").printf (item.name),
+            _("The folder, its subfolders and all their messages will be moved to this account’s Trash. You have 5 seconds to undo."),
+            new ThemedIcon ("user-trash"), Gtk.ButtonsType.NONE
+        ) {
+            transient_for = ((Gtk.Application) GLib.Application.get_default ()).active_window,
+            modal = true
+        };
+        dialog.add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
+        dialog.add_button (_("Move to Trash"), Gtk.ResponseType.ACCEPT).get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+        dialog.set_default_response (Gtk.ResponseType.CANCEL);
+        dialog.response.connect ((response) => {
+            dialog.destroy ();
+            if (response == Gtk.ResponseType.ACCEPT && !item.busy) {
+                trash_folder.begin (item);
+            }
+        });
+        dialog.present ();
+    }
+
+    private async void trash_folder (FolderItemModel item) {
+        item.busy = true;
+        var path = item.folder_info.full_name;
+        try {
+            var window = ((Gtk.Application) GLib.Application.get_default ()).active_window as MainWindow;
+            if (window == null || !yield window.offer_undo (_("Folder will be moved to Trash"), 5)) {
+                return;
+            }
+            var destination = yield FolderOperations.move_to_trash ((Camel.Store) account.service, path, connect_cancellable);
+            pending_selection = destination;
+            queue_reload ();
+        } catch (Error e) {
+            if (!(e is IOError.CANCELLED)) {
+                MainWindow.send_error_message (_("Couldn’t move folder to Trash"), e.message, "user-trash");
+            }
+        } finally {
+            item.busy = false;
+        }
+    }
+
+    public int compare (Mail.SourceList.Item a, Mail.SourceList.Item b) {
+        return FolderItemModel.compare_folders (a, b);
     }
 
     public bool allow_dnd_sorting () {
-        return false;
+        return true;
     }
 
     public override Gtk.Menu? get_context_menu () {
-        var menu = new Menu ();
-        menu.append (
-            _("Edit Aliases…"),
-            Action.print_detailed_name (FolderList.ACTION_PREFIX + FolderList.ACTION_EDIT_ALIASES, account.service.uid)
-        );
-
-        return new Gtk.Menu.from_model (menu);
+        var menu = new Gtk.Menu ();
+        var create = new Gtk.MenuItem.with_label (_("New folder…"));
+        create.activate.connect (() => create_folder ());
+        menu.add (create);
+        var aliases = new Gtk.MenuItem.with_label (_("Edit Aliases…")) {
+            action_name = FolderList.ACTION_PREFIX + FolderList.ACTION_EDIT_ALIASES,
+            action_target = new Variant.string (account.service.uid)
+        };
+        menu.add (aliases);
+        menu.show_all ();
+        return menu;
     }
 }

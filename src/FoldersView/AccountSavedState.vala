@@ -42,12 +42,60 @@ public class Mail.AccountSavedState : GLib.Object {
         items = new Gee.HashMap<string, FolderItemModel> ();
     }
 
+    public void save_order (Gee.List<FolderItemModel> siblings) {
+        var paths = new Gee.HashSet<string> ();
+        foreach (var item in siblings) {
+            paths.add (item.folder_info.full_name);
+        }
+        string[] order = {};
+        foreach (var path in settings.get_strv ("folder-order")) {
+            if (!paths.contains (path)) {
+                order += path;
+            }
+        }
+        foreach (var item in siblings) {
+            order += item.folder_info.full_name;
+        }
+        settings.set_strv ("folder-order", order);
+        foreach (var item in items.values) {
+            apply_order (item);
+        }
+    }
+
+    public void rename_path (string old_path, string new_path) {
+        foreach (var key in new string[] {"folder-order", "expanded-folders"}) {
+            var paths = settings.get_strv (key);
+            for (int i = 0; i < paths.length; i++) {
+                if (FolderOperations.is_within (paths[i], old_path)) {
+                    paths[i] = new_path + paths[i].substring (old_path.length);
+                }
+            }
+            settings.set_strv (key, paths);
+        }
+    }
+
+    public void forget_folder (string path) {
+        items.unset (path);
+    }
+
+    private void apply_order (FolderItemModel item) {
+        var order = settings.get_strv ("folder-order");
+        item.sort_index = int.MAX;
+        for (int i = 0; i < order.length; i++) {
+            if (order[i] == item.folder_info.full_name) {
+                item.sort_index = i;
+                break;
+            }
+        }
+    }
+
     public void bind_with_expandable_item (Mail.SourceList.ExpandableItem item) {
         if (item is AccountItemModel) {
             settings.bind ("expanded", item, "expanded", SettingsBindFlags.DEFAULT | SettingsBindFlags.GET_NO_CHANGES);
         } else if (item is FolderItemModel) {
             var folder_item = (FolderItemModel) item;
             items[folder_item.folder_info.full_name] = folder_item;
+            apply_order (folder_item);
             if (folder_item.folder_info.full_name in settings.get_strv ("expanded-folders")) {
                 item.expanded = true;
             }

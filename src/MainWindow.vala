@@ -172,7 +172,25 @@ public class Mail.MainWindow : Hdy.ApplicationWindow {
 
         folders_list_view.folder_selected.connect (conversation_list.load_folder);
 
+        folders_list_view.messages_drop_possible.connect (conversation_list.can_drop_messages);
+        folders_list_view.messages_dropped.connect ((source, folder) => {
+            if (!conversation_list.can_drop_messages (source, folder)) {
+                return false;
+            }
+            conversation_list.move_dragged_messages.begin (source, folder, (obj, res) => {
+                string error_message;
+                var result = conversation_list.move_dragged_messages.end (res, out error_message);
+                if (result > 0) {
+                    show_move_undo (ngettext ("Message Moved", "Messages Moved", result), 5);
+                } else if (error_message != "") {
+                    send_error_message (_("Couldn't move message"), error_message, "mail-move");
+                }
+            });
+            return true;
+        });
+
         conversation_list.conversation_selected.connect (message_list.set_conversation);
+        conversation_list.selection_changed.connect (message_list.set_selection);
 
         unowned Mail.Backend.Session session = Mail.Backend.Session.get_default ();
 

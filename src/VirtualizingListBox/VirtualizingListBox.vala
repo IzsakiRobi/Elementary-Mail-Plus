@@ -26,7 +26,7 @@ public class VirtualizingListBox : Gtk.Container, Gtk.Scrollable {
     public RowFactoryMethod factory_func;
 
     public signal void row_activated (GLib.Object row);
-    public signal void row_selected (GLib.Object row);
+    public signal void row_selected (GLib.Object? row);
     public signal void selected_rows_changed ();
 
     private Mail.ConversationListStore? _model;
@@ -108,7 +108,7 @@ public class VirtualizingListBox : Gtk.Container, Gtk.Scrollable {
     public bool activate_on_single_click { get; set; }
     public Gtk.SelectionMode selection_mode { get; set; default = Gtk.SelectionMode.SINGLE; }
     private double bin_y_diff { get; private set; }
-    public GLib.Object selected_row { get; private set; }
+    public GLib.Object? selected_row { get; private set; }
 
     private Gee.ArrayList<VirtualizingListBoxRow> current_widgets = new Gee.ArrayList<VirtualizingListBoxRow> ();
     private Gee.ArrayList<VirtualizingListBoxRow> recycled_widgets = new Gee.ArrayList<VirtualizingListBoxRow> ();
@@ -119,6 +119,12 @@ public class VirtualizingListBox : Gtk.Container, Gtk.Scrollable {
     private int last_valid_widget_height = 1;
     private VirtualizingListBoxRow? active_row;
     private Gtk.GestureMultiPress multipress;
+    private Gtk.EventControllerKey key_controller;
+    private GLib.Object? selection_anchor;
+    private GLib.Object? cursor_item;
+    private GLib.Object? active_item;
+    private GLib.Object? pressed_item;
+    private int selection_count;
 
     static construct {
         set_css_name ("list");
@@ -131,6 +137,11 @@ public class VirtualizingListBox : Gtk.Container, Gtk.Scrollable {
         multipress.button = Gdk.BUTTON_PRIMARY;
         multipress.pressed.connect (on_multipress_pressed);
         multipress.released.connect (on_multipress_released);
+        multipress.cancel.connect (clear_active_row);
+        key_controller = new Gtk.EventControllerKey (this) {
+            propagation_phase = Gtk.PropagationPhase.CAPTURE
+        };
+        key_controller.key_pressed.connect (on_key_pressed);
     }
 
     public override void realize () {
@@ -238,6 +249,7 @@ public class VirtualizingListBox : Gtk.Container, Gtk.Scrollable {
     }
 
     private void on_items_changed (uint position, uint removed, uint added) {
+        reconcile_selection ();
         if (position >= shown_to && bin_window_full) {
             if (vadjustment == null) {
                 queue_resize ();
@@ -644,122 +656,223 @@ public class VirtualizingListBox : Gtk.Container, Gtk.Scrollable {
         return null;
     }
 
-    private void on_multipress_pressed (int n_press, double x, double y) {
-        active_row = null;
-        var row = get_row_at_y ((int)y);
-        if (row != null && row.sensitive) {
-            active_row = row;
-            row.set_state_flags (Gtk.StateFlags.ACTIVE, false);
-
-            if (n_press == 2 && !activate_on_single_click) {
-                row_activated (row.model_item);
-            }
+    private void clear_active_row () {
+        if (active_row != null) {
+            active_row.unset_state_flags (Gtk.StateFlags.ACTIVE);
         }
+        active_row = null;
+        active_item = null;
+    }
+
+    private void on_multipress_pressed (int n_press, double x, double y) {
+        clear_active_row ();
+        pressed_item = null;
+        var row = get_row_at_y ((int) y);
+        if (row != null && row.sensitive && row.selectable) {
+            active_row = row;
+            active_item = row.model_item;
+            pressed_item = row.model_item;
+            row.set_state_flags (Gtk.StateFlags.ACTIVE, false);
+        }
+    }
+
+    private void selection_modifiers (Gdk.ModifierType state, out bool modify, out bool extend) {
+        var modify_mask = get_modifier_mask (Gdk.ModifierIntent.MODIFY_SELECTION);
+        var extend_mask = get_modifier_mask (Gdk.ModifierIntent.EXTEND_SELECTION);
+        if (modify_mask == 0) {
+            modify_mask = Gdk.ModifierType.CONTROL_MASK;
+        }
+        if (extend_mask == 0) {
+            extend_mask = Gdk.ModifierType.SHIFT_MASK;
+        }
+        modify = (state & modify_mask) == modify_mask;
+        extend = (state & extend_mask) == extend_mask;
     }
 
     private void get_current_selection_modifiers (out bool modify, out bool extend) {
-        Gdk.ModifierType state;
-        Gdk.ModifierType mask;
-
-        modify = false;
-        extend = false;
-
-        if (Gtk.get_current_event_state (out state)) {
-            mask = get_modifier_mask (Gdk.ModifierIntent.MODIFY_SELECTION);
-            if ((state & mask) == mask) {
-                modify = true;
-            }
-
-            mask = get_modifier_mask (Gdk.ModifierIntent.EXTEND_SELECTION);
-            if ((state & mask) == mask) {
-                extend = true;
-            }
-        }
+        Gdk.ModifierType state = 0;
+        Gtk.get_current_event_state (out state);
+        selection_modifiers (state, out modify, out extend);
     }
 
     private void on_multipress_released (int n_press, double x, double y) {
-        if (active_row != null) {
-            var focus_on_click = active_row.focus_on_click;
-            active_row.unset_state_flags (Gtk.StateFlags.ACTIVE);
-
-            if (n_press == 1 && activate_on_single_click) {
-                select_and_activate (active_row, focus_on_click);
-            } else {
-                bool modify, extend;
-                get_current_selection_modifiers (out modify, out extend);
-                var sequence = multipress.get_current_sequence ();
-                var event = multipress.get_last_event (sequence);
-                var source = event.get_source_device ().get_source ();
-
-                if (source == Gdk.InputSource.TOUCHSCREEN) {
-                    modify = !modify;
-                }
-
-                update_selection (active_row, modify, extend, focus_on_click);
-            }
+        var row = active_row;
+        var item = active_item;
+        pressed_item = null;
+        clear_active_row ();
+        if (row == null || item == null || row.model_item != item || get_row_at_y ((int) y) != row) {
+            return;
+        }
+        bool modify, extend;
+        get_current_selection_modifiers (out modify, out extend);
+        update_selection (row, modify, extend, row.focus_on_click);
+        if (!modify && !extend && model.get_selected_rows ().size == 1
+            && ((activate_on_single_click && n_press == 1) || (!activate_on_single_click && n_press == 2))) {
+            row_activated (item);
         }
     }
 
     private void update_selection (VirtualizingListBoxRow row, bool modify, bool extend, bool grab_cursor = true) {
-        update_cursor (row.model_item, grab_cursor);
-
-        if (selection_mode == Gtk.SelectionMode.NONE || !row.selectable) {
+        if (selection_mode == Gtk.SelectionMode.NONE || !row.selectable || !row.sensitive
+            || row.model_item == null || model.get_index_of (row.model_item) < 0) {
             return;
         }
-
-        if (selection_mode == Gtk.SelectionMode.BROWSE) {
-            select_row (row);
-        } else if (selection_mode == Gtk.SelectionMode.SINGLE) {
-            var was_selected = model.get_item_selected (row.model_item);
+        var previous_cursor = cursor_item;
+        cursor_item = row.model_item;
+        update_cursor (row.model_item, grab_cursor);
+        if (selection_mode == Gtk.SelectionMode.MULTIPLE) {
+            if (extend) {
+                if (selection_anchor == null || model.get_index_of (selection_anchor) < 0) {
+                    selection_anchor = previous_cursor ?? row.model_item;
+                }
+                if (!modify) {
+                    unselect_all_internal ();
+                }
+                select_all_between (selection_anchor, row.model_item);
+            } else if (modify) {
+                model.set_item_selected (row.model_item, !model.get_item_selected (row.model_item));
+                selection_anchor = row.model_item;
+            } else {
+                unselect_all_internal ();
+                model.set_item_selected (row.model_item, true);
+                selection_anchor = row.model_item;
+            }
+        } else {
+            bool select = selection_mode == Gtk.SelectionMode.BROWSE || !modify || !model.get_item_selected (row.model_item);
             unselect_all_internal ();
-            var select = modify ? !was_selected : true;
             model.set_item_selected (row.model_item, select);
-            selected_row = select ? row.model_item : null;
-            if (select) {
+            selection_anchor = row.model_item;
+        }
+        if (model.get_item_selected (row.model_item)) {
+            selected_row = row.model_item;
+        }
+        notify_selection ();
+    }
+
+    private void select_all_between (GLib.Object from, GLib.Object to) {
+        foreach (var item in model.get_items_between (from, to)) {
+            model.set_item_selected (item, true);
+        }
+    }
+
+    private void notify_selection () {
+        if (selected_row == null || !model.get_item_selected (selected_row)) {
+            selected_row = null;
+            for (uint i = 0; i < model.get_n_items (); i++) {
+                var item = model.get_object (i);
+                if (item != null && model.get_item_selected (item)) {
+                    selected_row = item;
+                    break;
+                }
+            }
+        }
+        foreach (var row in current_widgets) {
+            if (model.get_item_selected (row.model_item)) {
                 row.set_state_flags (Gtk.StateFlags.SELECTED, false);
             } else {
                 row.unset_state_flags (Gtk.StateFlags.SELECTED);
             }
+        }
+        selection_count = model.get_selected_rows ().size;
+        row_selected (selected_row);
+        selected_rows_changed ();
+    }
 
-            row_selected (selected_row);
-        } else {
-            if (extend) {
-                var selected = selected_row;
-                unselect_all_internal ();
-                if (selected == null) {
-                    select_row (row);
-                } else {
-                    select_all_between (selected, row.model_item, false);
-                }
-            } else {
-                if (modify) {
-                    var selected = model.get_item_selected (row.model_item);
-                    if (selected) {
-                        row.unset_state_flags (Gtk.StateFlags.SELECTED);
-                    } else {
-                        row.set_state_flags (Gtk.StateFlags.SELECTED, false);
-                    }
-
-                    model.set_item_selected (row.model_item, !selected);
-                } else {
-                    unselect_all_internal ();
-                    select_row (row);
-                }
+    private void reconcile_selection () {
+        bool changed = selection_count != model.get_selected_rows ().size;
+        foreach (var item in model.get_selected_rows ().to_array ()) {
+            if (model.get_index_of (item) < 0) {
+                model.set_item_selected (item, false);
+                changed = true;
             }
+        }
+        if (selection_anchor != null && model.get_index_of (selection_anchor) < 0) {
+            selection_anchor = null;
+        }
+        if (cursor_item != null && model.get_index_of (cursor_item) < 0) {
+            cursor_item = null;
+        }
+        if (changed) {
+            notify_selection ();
         }
     }
 
-    private void select_all_between (GLib.Object from, GLib.Object to, bool modify) {
-        var items = model.get_items_between (from, to);
-        foreach (var item in items) {
-            model.set_item_selected (item, true);
-        }
-
-        foreach (VirtualizingListBoxRow row in current_widgets) {
-            if (row.model_item in items) {
-                row.set_state_flags (Gtk.StateFlags.SELECTED, false);
+    private int edge_index (bool end) {
+        int count = (int) model.get_n_items ();
+        for (int i = end ? count - 1 : 0; i >= 0 && i < count; i += end ? -1 : 1) {
+            if (model.get_object (i) != null) {
+                return i;
             }
         }
+        return -1;
+    }
+
+    private bool on_key_pressed (uint keyval, uint keycode, Gdk.ModifierType state) {
+        if (model == null || selection_mode == Gtk.SelectionMode.NONE) {
+            return false;
+        }
+        bool modify, extend;
+        selection_modifiers (state, out modify, out extend);
+        if (selection_mode == Gtk.SelectionMode.MULTIPLE && modify && (keyval == Gdk.Key.a || keyval == Gdk.Key.A)) {
+            unselect_all_internal ();
+            if (!extend) {
+                for (uint i = 0; i < model.get_n_items (); i++) {
+                    var item = model.get_object (i);
+                    if (item != null) {
+                        model.set_item_selected (item, true);
+                    }
+                }
+            }
+            if (selection_anchor == null) {
+                selection_anchor = cursor_item ?? model.get_object ((uint) int.max (0, edge_index (false)));
+            }
+            notify_selection ();
+            return true;
+        }
+        int index = -1;
+        var current = cursor_item ?? selected_row;
+        switch (keyval) {
+            case Gdk.Key.Up:
+            case Gdk.Key.KP_Up:
+                index = current != null ? model.get_index_of_item_before (current) : edge_index (true);
+                break;
+            case Gdk.Key.Down:
+            case Gdk.Key.KP_Down:
+                index = current != null ? model.get_index_of_item_after (current) : edge_index (false);
+                break;
+            case Gdk.Key.Home:
+            case Gdk.Key.KP_Home:
+                index = edge_index (false);
+                break;
+            case Gdk.Key.End:
+            case Gdk.Key.KP_End:
+                index = edge_index (true);
+                break;
+            case Gdk.Key.space:
+                index = model.get_index_of (current);
+                break;
+            case Gdk.Key.Return:
+            case Gdk.Key.KP_Enter:
+                if (selected_row != null && model.get_selected_rows ().size == 1) {
+                    row_activated (selected_row);
+                }
+                return true;
+            default:
+                return false;
+        }
+        var row = ensure_index_visible (index);
+        if (row != null) {
+            if (modify && !extend && keyval != Gdk.Key.space) {
+                cursor_item = row.model_item;
+                update_cursor (cursor_item, true);
+            } else {
+                update_selection (row, modify, extend);
+                if (!modify && !extend && activate_on_single_click) {
+                    row_activated (row.model_item);
+                }
+            }
+        }
+        return true;
     }
 
     public void select_row_at_index (int index) {
@@ -838,20 +951,28 @@ public class VirtualizingListBox : Gtk.Container, Gtk.Scrollable {
     }
 
     public void select_row (VirtualizingListBoxRow row) {
-        if (model.get_item_selected (row) || selection_mode == Gtk.SelectionMode.NONE) {
-            return;
+        update_selection (row, false, false, false);
+    }
+
+    public bool prepare_drag_selection () {
+        var item = pressed_item;
+        pressed_item = null;
+        clear_active_row ();
+        if (item == null) {
+            return false;
         }
-
-        if (selection_mode != Gtk.SelectionMode.MULTIPLE) {
-            unselect_all_internal ();
+        var row = ensure_index_visible (model.get_index_of (item));
+        if (row == null || !row.selectable || !row.sensitive) {
+            return false;
         }
+        select_for_context (row);
+        return model.get_item_selected (item);
+    }
 
-        model.set_item_selected (row.model_item, true);
-        row.set_state_flags (Gtk.StateFlags.SELECTED, false);
-        selected_row = row.model_item;
-
-        row_selected (row.model_item);
-        selected_rows_changed ();
+    public void select_for_context (VirtualizingListBoxRow row) {
+        if (!model.get_item_selected (row.model_item)) {
+            select_row (row);
+        }
     }
 
     private bool unselect_all_internal () {
@@ -885,12 +1006,12 @@ public class VirtualizingListBox : Gtk.Container, Gtk.Scrollable {
             }
         } else {
             if (direction == Gtk.DirectionType.UP || direction == Gtk.DirectionType.TAB_BACKWARD) {
-                next_focus_index = model.get_index_of (focus_child.model_item);
+                next_focus_index = model.get_index_of (cursor_item ?? selected_row);
                 if (next_focus_index == -1) {
                     next_focus_index = (int)model.get_n_items () - 1;
                 }
             } else {
-                next_focus_index = model.get_index_of (focus_child);
+                next_focus_index = model.get_index_of (cursor_item ?? selected_row);
                 if (next_focus_index == -1) {
                     next_focus_index = 0;
                 }
@@ -907,7 +1028,12 @@ public class VirtualizingListBox : Gtk.Container, Gtk.Scrollable {
 
         var widget = ensure_index_visible (next_focus_index);
         if (widget != null) {
-            update_selection (widget, false, false);
+            bool modify = false;
+            bool extend = false;
+            if (direction == Gtk.DirectionType.UP || direction == Gtk.DirectionType.DOWN) {
+                get_current_selection_modifiers (out modify, out extend);
+            }
+            update_selection (widget, modify, extend);
             return true;
         }
 

@@ -1,7 +1,7 @@
 project(
     'io.elementary.mail',
     'vala', 'c',
-    version: '0.1',
+    version: '0.2',
     meson_version: '>=0.58.0'
 )
 

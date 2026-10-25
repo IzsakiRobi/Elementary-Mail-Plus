@@ -8,6 +8,7 @@
 public class Mail.FolderPopover : Gtk.Popover {
     private Gtk.SearchEntry search_entry;
     private ListStore folder_list;
+    private ListStore visible_folders;
     private Camel.Store? current_store;
     private Cancellable? folder_request;
     private ulong created_handler;
@@ -51,12 +52,15 @@ public class Mail.FolderPopover : Gtk.Popover {
         placeholder.show_all ();
 
         folder_list = new ListStore (typeof (FolderRow));
+        visible_folders = new ListStore (typeof (FolderRow));
 
         var list_box = new Gtk.ListBox () {
             activate_on_single_click = true
         };
-        list_box.bind_model (folder_list, (obj) => (FolderRow) obj);
-        list_box.set_filter_func (filter_func);
+        list_box.bind_model (visible_folders, (obj) => {
+            var folder = (FolderRow) obj;
+            return new FolderRow (folder.folder_info, folder.store);
+        });
         list_box.set_placeholder (placeholder);
 
         var scrolled_window = new Gtk.ScrolledWindow (null, null) {
@@ -77,7 +81,7 @@ public class Mail.FolderPopover : Gtk.Popover {
         width_request = 250;
         child = box;
 
-        search_entry.search_changed.connect (list_box.invalidate_filter);
+        search_entry.search_changed.connect (filter_folders);
 
         list_box.row_activated.connect ((row) => {
             if (row is FolderRow) {
@@ -104,6 +108,7 @@ public class Mail.FolderPopover : Gtk.Popover {
         }
         current_store = store;
         folder_list.remove_all ();
+        visible_folders.remove_all ();
         folders_dirty = true;
         if (store != null) {
             created_handler = store.folder_created.connect (() => folders_dirty = true);
@@ -132,6 +137,7 @@ public class Mail.FolderPopover : Gtk.Popover {
                 if (info != null) {
                     update (info, store);
                 }
+                filter_folders ();
             }
         } catch (Error e) {
             if (!request.is_cancelled ()) {
@@ -160,12 +166,14 @@ public class Mail.FolderPopover : Gtk.Popover {
         return folder_row1.pos - folder_row2.pos;
     }
 
-    private bool filter_func (Gtk.ListBoxRow row) {
-        if (row is FolderRow) {
-            var folder_row = (FolderRow)row;
-            return search_entry.text.down ().strip () in folder_row.folder_info.display_name.down ();
+    private void filter_folders () {
+        visible_folders.remove_all ();
+        var query = search_entry.text.casefold ().strip ();
+        for (uint i = 0; i < folder_list.get_n_items (); i++) {
+            var row = (FolderRow) folder_list.get_item (i);
+            if (query in row.folder_info.display_name.casefold ()) {
+                visible_folders.append (row);
+            }
         }
-
-        return true;
     }
 }

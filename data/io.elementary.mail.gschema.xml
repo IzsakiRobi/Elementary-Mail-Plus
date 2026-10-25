@@ -84,6 +84,10 @@
     </key>
   </schema>
   <schema id="@APPLICATION_ID@.accounts">
+    <key name="folder-order" type="as">
+      <default>[]</default>
+      <summary>Custom order of folders within each parent</summary>
+    </key>
     <key name="cached-folders" type="a(sssuii)">
       <default>[]</default>
       <summary>Cached folder paths, names, parents, flags and message counts</summary>

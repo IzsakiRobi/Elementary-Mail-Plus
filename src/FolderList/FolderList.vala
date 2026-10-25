@@ -8,6 +8,9 @@
 public class Mail.FolderList : Gtk.Box {
     public signal void folder_selected (Gee.Map<Backend.Account, Camel.FolderInfo?> folder_info_per_account);
 
+    public signal bool messages_drop_possible (Gtk.Widget source, FolderItemModel folder);
+    public signal bool messages_dropped (Gtk.Widget source, FolderItemModel folder);
+
     public const string ACTION_GROUP_PREFIX = "folder-list";
     public const string ACTION_PREFIX = ACTION_GROUP_PREFIX + ".";
     public const string ACTION_EDIT_ALIASES = "edit-alises";
@@ -46,6 +49,24 @@ public class Mail.FolderList : Gtk.Box {
 
         source_list = new Mail.SourceList ();
         source_list.root.add (session_source_item);
+        source_list.reorder_requested.connect ((moved, target, after) => {
+            var folder = moved as FolderItemModel;
+            var destination = target as FolderItemModel;
+            if (folder == null || destination == null) {
+                return false;
+            }
+            var account = account_item_for (folder);
+            return account != null && account.reorder_folder (folder, destination, after);
+        });
+
+        source_list.messages_drop_possible.connect ((source, target) => {
+            var folder = target as FolderItemModel;
+            return folder != null && messages_drop_possible (source, folder);
+        });
+        source_list.messages_dropped.connect ((source, target) => {
+            var folder = target as FolderItemModel;
+            return folder != null && messages_dropped (source, folder);
+        });
 
         var scrolled_window = new Gtk.ScrolledWindow (null, null) {
             child = source_list,
@@ -60,6 +81,28 @@ public class Mail.FolderList : Gtk.Box {
         var action_bar = new Gtk.ActionBar ();
         action_bar.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
         action_bar.pack_end (app_menu);
+        var new_folder = new Gtk.Button.from_icon_name ("folder-new-symbolic", Gtk.IconSize.SMALL_TOOLBAR) {
+            tooltip_text = _("New folder…")
+        };
+        new_folder.clicked.connect (() => {
+            var account = account_item_for (source_list.selected);
+            if (account != null) {
+                account.create_folder ();
+                return;
+            }
+            var menu = new Gtk.Menu ();
+            foreach (var item in source_list.root.children) {
+                if (item is AccountItemModel) {
+                    var account_item = (AccountItemModel) item;
+                    var choice = new Gtk.MenuItem.with_label (account_item.name);
+                    choice.activate.connect (() => account_item.create_folder ());
+                    menu.add (choice);
+                }
+            }
+            menu.show_all ();
+            menu.popup_at_widget (new_folder, Gdk.Gravity.NORTH_WEST, Gdk.Gravity.SOUTH_WEST, null);
+        });
+        action_bar.pack_start (new_folder);
 
         orientation = VERTICAL;
         width_request = 100;
@@ -111,6 +154,7 @@ public class Mail.FolderList : Gtk.Box {
     private void add_account (Mail.Backend.Account account) {
         var account_item = new Mail.AccountItemModel (account);
         account_item.start_edit.connect ((item) => source_list.start_editing_item (item));
+        account_item.selection_requested.connect ((path) => select_saved_folder (account_item, path));
         source_list.root.add (account_item);
         string saved_uid, saved_name;
         settings.get ("selected-folder", "(ss)", out saved_uid, out saved_name);
@@ -144,6 +188,16 @@ public class Mail.FolderList : Gtk.Box {
                 select_saved_folder (session_source_item, selected_folder_name);
             }
         });
+    }
+
+    private AccountItemModel? account_item_for (Mail.SourceList.Item? item) {
+        while (item != null) {
+            if (item is AccountItemModel) {
+                return (AccountItemModel) item;
+            }
+            item = item.parent;
+        }
+        return null;
     }
 
     private bool select_saved_folder (Mail.SourceList.ExpandableItem item, string selected_folder_name) {
