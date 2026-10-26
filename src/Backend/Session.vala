@@ -555,6 +555,36 @@ public class Mail.Backend.Session : Camel.Session {
         return null;
     }
 
+    public async void delete_draft (Camel.MessageInfo draft) throws Error {
+        if (!(Camel.MessageFlags.DRAFT in (int) draft.flags)) {
+            throw new IOError.INVALID_ARGUMENT (_("The selected message is not a draft."));
+        }
+        var summary = draft.summary;
+        var folder = summary != null ? summary.get_folder () : null;
+        if (folder == null || folder is Camel.VeeFolder) {
+            throw new IOError.NOT_FOUND (_("The original draft folder could not be found."));
+        }
+        var current = folder.get_message_info (draft.uid);
+        if (current == null) {
+            return;
+        }
+        if (!(Camel.MessageFlags.DRAFT in (int) current.flags)) {
+            throw new IOError.INVALID_ARGUMENT (_("The selected message is no longer a draft."));
+        }
+        bool was_deleted = Camel.MessageFlags.DELETED in (int) current.flags;
+        current.set_flags (Camel.MessageFlags.DELETED, Camel.MessageFlags.DELETED);
+        try {
+            if (!yield folder.synchronize (true, Priority.DEFAULT, null)) {
+                throw new IOError.FAILED (_("The draft could not be deleted."));
+            }
+        } catch (Error e) {
+            if (!was_deleted && folder.get_message_info (draft.uid) != null) {
+                current.set_flags (Camel.MessageFlags.DELETED, 0);
+            }
+            throw e;
+        }
+    }
+
     public async void save_draft (Camel.MimeMessage message, Camel.InternetAddress from, Camel.Address recipients, Camel.MessageInfo? ancestor_message_info = null) throws Error {
         var camel_store = get_camel_store_from_email (from);
         if (camel_store == null) {
@@ -582,8 +612,7 @@ public class Mail.Backend.Session : Camel.Session {
         yield drafts_folder.append_message (message, message_info, 0, null, null);
 
         if (ancestor_message_info != null && Camel.MessageFlags.DRAFT in (int) ancestor_message_info.flags) {
-            ancestor_message_info.set_flags (Camel.MessageFlags.DELETED, ~0);
-            yield drafts_folder.expunge (GLib.Priority.DEFAULT, null);
+            yield delete_draft (ancestor_message_info);
         }
     }
 

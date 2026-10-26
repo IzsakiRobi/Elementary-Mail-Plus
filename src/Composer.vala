@@ -23,6 +23,10 @@ public class Mail.Composer : Hdy.ApplicationWindow {
 
     private bool discard_draft = false;
     private bool sending;
+    private bool draft_operation_running;
+    private Granite.MessageDialog? close_dialog;
+    private string initial_headers;
+    private uint initial_attachment_count;
     private bool quote_loading;
     private Cancellable quote_cancellable = new Cancellable ();
     private Gee.ArrayList<Camel.MimePart> quoted_resources = new Gee.ArrayList<Camel.MimePart> ();
@@ -317,12 +321,9 @@ public class Mail.Composer : Hdy.ApplicationWindow {
                 }
                 return true;
             }
-            save_draft.begin ((obj, res) => {
-                if (!save_draft.end (res)) {
-                    finished ();
-                    destroy ();
-                };
-            });
+            if (!draft_operation_running && !quote_loading) {
+                request_close ();
+            }
             return true;
         });
 
@@ -440,6 +441,48 @@ public class Mail.Composer : Hdy.ApplicationWindow {
                 }
             }
         }
+        initial_headers = current_headers ();
+        initial_attachment_count = attachment_list.n_items;
+    }
+
+    private string current_headers () {
+        return new Variant ("(sssss)", from_combo.get_active_text () ?? "", to_val.text,
+            cc_val.text, bcc_val.text, subject_val.text).print (false);
+    }
+
+    private void request_close () {
+        if (discard_draft || (!web_view.body_html_changed && current_headers () == initial_headers
+            && attachment_list.n_items == initial_attachment_count)) {
+            finished ();
+            destroy ();
+            return;
+        }
+        if (close_dialog != null) {
+            close_dialog.present ();
+            return;
+        }
+        var dialog = new Granite.MessageDialog (
+            _("Save this draft?"),
+            _("Save your message to Drafts, keep editing, or permanently delete this draft."),
+            new ThemedIcon ("mail-drafts"), Gtk.ButtonsType.NONE
+        ) { transient_for = this };
+        close_dialog = dialog;
+        var cancel = dialog.add_button (_("Delete Draft"), Gtk.ResponseType.REJECT);
+        cancel.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+        dialog.add_button (_("Edit"), Gtk.ResponseType.CANCEL);
+        dialog.add_button (_("Save"), Gtk.ResponseType.ACCEPT).get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        ((Gtk.ButtonBox) dialog.get_action_area ()).set_child_secondary (cancel, true);
+        dialog.set_default_response (Gtk.ResponseType.CANCEL);
+        dialog.response.connect ((response) => {
+            close_dialog = null;
+            dialog.destroy ();
+            if (response == Gtk.ResponseType.REJECT) {
+                finish_draft.begin (true);
+            } else if (response == Gtk.ResponseType.ACCEPT) {
+                finish_draft.begin (false);
+            }
+        });
+        dialog.present ();
     }
 
     private void on_sanitize_recipient_entry (Gtk.Entry entry) {
@@ -730,6 +773,7 @@ public class Mail.Composer : Hdy.ApplicationWindow {
                 populate_quote.begin (message.content, "#elementary-message-quote", message_content, type == Type.FORWARD);
             }
         }
+        initial_headers = current_headers ();
     }
 
     private async void populate_quote (Camel.DataWrapper content, string selector, string html, bool include_attachments = false) {
@@ -744,6 +788,7 @@ public class Mail.Composer : Hdy.ApplicationWindow {
             web_view.set_content_of_element (selector, html);
             send_controls.sensitive = true;
         }
+        initial_attachment_count = attachment_list.n_items;
         quote_loading = false;
     }
 
@@ -811,6 +856,13 @@ public class Mail.Composer : Hdy.ApplicationWindow {
     }
 
     private void on_discard () {
+        if (sending || draft_operation_running || quote_loading) {
+            return;
+        }
+        if (close_dialog != null) {
+            close_dialog.present ();
+            return;
+        }
         var discard_dialog = new Granite.MessageDialog (
             _("Permanently delete this draft?"),
             _("You cannot undo this action, nor recover your draft once it has been deleted."),
@@ -821,6 +873,7 @@ public class Mail.Composer : Hdy.ApplicationWindow {
             transient_for = this
         };
 
+        close_dialog = discard_dialog;
         discard_dialog.add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
 
         var discard_anyway = discard_dialog.add_button (_("Delete Draft"), Gtk.ResponseType.ACCEPT);
@@ -828,18 +881,16 @@ public class Mail.Composer : Hdy.ApplicationWindow {
 
         discard_dialog.present ();
         discard_dialog.response.connect ((response) => {
-            if (response == Gtk.ResponseType.ACCEPT) {
-                discard_draft = true;
-                finished ();
-                destroy ();
-            }
-
+            close_dialog = null;
             discard_dialog.destroy ();
+            if (response == Gtk.ResponseType.ACCEPT) {
+                finish_draft.begin (true);
+            }
         });
     }
 
     private void on_send () {
-        if (!sending && !quote_loading) {
+        if (!sending && !draft_operation_running && !quote_loading && close_dialog == null) {
             send_message.begin ();
         }
     }
@@ -885,16 +936,7 @@ public class Mail.Composer : Hdy.ApplicationWindow {
             }
             application.hold ();
             held = true;
-            sending_window = transient_for as MainWindow;
-            if (sending_window == null) {
-                application.activate ();
-                foreach (var window in application.get_windows ()) {
-                    if (window is MainWindow) {
-                        sending_window = (MainWindow) window;
-                        break;
-                    }
-                }
-            }
+            sending_window = get_background_window ();
             if (sending_window != null) {
                 sending_window.begin_sending ();
                 background_sending = true;
@@ -1243,38 +1285,89 @@ public class Mail.Composer : Hdy.ApplicationWindow {
         }
     }
 
-    public async bool save_draft () {
-        if (discard_draft || !web_view.body_html_changed) {
-            return false;
+    private MainWindow? get_background_window () {
+        var window = transient_for as MainWindow;
+        if (window != null) {
+            return window;
         }
-
-        var body_html = yield web_view.get_body_html ();
-
-        if (body_html != null) {
-            unowned Mail.Backend.Session session = Mail.Backend.Session.get_default ();
-
-            var message = build_message (body_html);
-            var sender = build_sender (message, from_combo.get_active_text ());
-            var recipients = build_recipients (message, to_val.text, cc_val.text, bcc_val.text);
-
-            try {
-                yield session.save_draft (message, sender, recipients, ancestor_message_info);
-            } catch (Error e) {
-                var error_dialog = new Granite.MessageDialog (
-                    _("Unable to save draft"),
-                    _("There was an unexpected error while saving your draft."),
-                    new ThemedIcon ("mail-drafts"),
-                    Gtk.ButtonsType.CLOSE
-                ) {
-                    badge_icon = new ThemedIcon ("dialog-error")
-                };
-                error_dialog.show_error_details (e.message);
-                error_dialog.present ();
-                error_dialog.response.connect (() => error_dialog.destroy ());
-                return true;
+        application.activate ();
+        foreach (var candidate in application.get_windows ()) {
+            if (candidate is MainWindow) {
+                return (MainWindow) candidate;
             }
         }
+        return null;
+    }
 
-        return false;
+    private async void finish_draft (bool deleting) {
+        if (draft_operation_running || sending) {
+            return;
+        }
+        if (deleting && ancestor_message_info == null) {
+            discard_draft = true;
+            finished ();
+            destroy ();
+            return;
+        }
+        draft_operation_running = true;
+        send_controls.sensitive = false;
+        application.hold ();
+        var window = get_background_window ();
+        if (window != null) {
+            if (deleting) {
+                window.begin_deleting_draft ();
+            } else {
+                window.begin_saving_draft ();
+            }
+        }
+        hide ();
+        if (window != null) {
+            window.present ();
+        }
+        Idle.add (() => {
+            finish_draft.callback ();
+            return Source.REMOVE;
+        });
+        yield;
+        try {
+            var session = Mail.Backend.Session.get_default ();
+            if (deleting) {
+                yield session.delete_draft (ancestor_message_info);
+            } else {
+                var body_html = yield web_view.get_body_html ();
+                if (body_html == null) {
+                    throw new IOError.FAILED (_("The message content could not be read."));
+                }
+                var message = build_message (body_html);
+                var sender = build_sender (message, from_combo.get_active_text ());
+                var recipients = build_recipients (message, to_val.text, cc_val.text, bcc_val.text);
+                yield session.save_draft (message, sender, recipients, ancestor_message_info);
+            }
+            discard_draft = true;
+            finished ();
+            destroy ();
+        } catch (Error e) {
+            present ();
+            var dialog = new Granite.MessageDialog (
+                deleting ? _("Unable to delete draft") : _("Unable to save draft"),
+                deleting ? _("There was an unexpected error while deleting your draft.")
+                    : _("There was an unexpected error while saving your draft."),
+                new ThemedIcon ("mail-drafts"), Gtk.ButtonsType.CLOSE
+            ) { badge_icon = new ThemedIcon ("dialog-error"), transient_for = this, modal = true };
+            dialog.show_error_details (e.message);
+            dialog.response.connect (() => dialog.destroy ());
+            dialog.present ();
+        } finally {
+            if (window != null) {
+                if (deleting) {
+                    window.end_deleting_draft ();
+                } else {
+                    window.end_saving_draft ();
+                }
+            }
+            application.release ();
+            draft_operation_running = false;
+            send_controls.sensitive = true;
+        }
     }
 }

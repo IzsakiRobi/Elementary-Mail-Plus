@@ -173,3 +173,18 @@ Build packages outside the source tree. Native packaging uses a clean source cop
 - User confirmed background sending works and approved v0.3 publication. Native compilation/static checks only; no real message was sent by automated tests. Error/retry and Undo behavior follow the implementation described above; do not claim separate user verification of those cases.
 
 - Sending status polish: the user confirmed background sending works; its spinner now has an explicit white foreground on the dark status banner.
+
+## Draft-close flow — included in v0.3
+
+- User requested a close confirmation and background IMAP draft saving. The current button semantics are Delete Draft (discard and delete the original saved draft), Edit (continue editing), Save (save a draft). Delete Draft uses REJECT/destructive styling on the left; Edit/CANCEL and Save/ACCEPT/suggested styling are on the right. Escape and dialog close keep editing rather than discard.
+- Unchanged composers close directly. Changed body, headers or attachment count prompt; initial reply/forward headers and automatically loaded attachments establish a baseline. Repeated close requests reuse the same dialog. Send and draft-save operations cannot start together.
+- Save hides the composer, holds the application during async draft storage and shows the shared dark background-activity banner with a white spinner and Saving draft… label. Sending and draft-save counters coexist. Success closes the retained composer; error restores it with all content and a modal error. No implicit IMAP save on Delete Draft or Edit.
+- Shared main-window lookup was extracted from background send; existing sending status/Undo behavior remains. Native compile/static checks only; no automated real-mail changes. User approved the local dialog/IMAP behavior and authorized replacing the existing v0.3 packages on main. Keep the version and filenames unchanged.
+
+### Saved-draft deletion correction — included in v0.3
+
+- User found that both the composer trash confirmation and the custom close-dialog discard only destroyed the editor, leaving its saved IMAP draft untouched. Both now share finish_draft(deleting=true), which asynchronously deletes the original draft before closing. Unsaved new messages simply close without server changes.
+- Session.delete_draft validates the original and current DRAFT flags, obtains the original folder from MessageInfo.summary instead of guessing from the selected sender, marks DELETED and synchronizes with expunge. This follows Camel's folder-expunge semantics for messages already flagged DELETED; it is not a custom UID-expunge implementation. On failure the editor is restored and a newly set local DELETED flag is rolled back when the UID still exists.
+- Replacing an existing saved draft now uses the same original-folder deletion helper after the new copy is appended successfully.
+- Close dialog now says Delete Draft / Edit / Save and matches the stock trash prompt's nonmodal/transient presentation, avoiding the compositor dimming. Repeated prompts and concurrent send/save/delete operations are guarded. Background deletion uses Deleting draft… with the shared white-spinner status.
+- Native compile/static checks only; no real drafts were deleted by automated tests. User confirmed the correction works and authorized publication in the existing v0.3 release. Do not repeat real-mail tests while packaging.

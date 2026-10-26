@@ -25,9 +25,11 @@ public class Mail.MainWindow : Hdy.ApplicationWindow {
     private FolderList folders_list_view;
     private Gtk.Overlay notification_overlay;
     private UndoBanner? move_banner;
-    private Gtk.Revealer? sending_banner;
-    private Gtk.Label sending_label;
+    private Gtk.Revealer? activity_banner;
+    private Gtk.Label activity_label;
     private uint sending_count;
+    private uint draft_save_count;
+    private uint draft_delete_count;
     private Granite.Widgets.Toast error_toast;
     private ConversationList conversation_list;
     private MessageList message_list;
@@ -356,7 +358,7 @@ public class Mail.MainWindow : Hdy.ApplicationWindow {
         }
         var banner = new UndoBanner (title, seconds);
         move_banner = banner;
-        update_sending_status ();
+        update_background_status ();
         notification_overlay.add_overlay (banner);
         banner.completed.connect ((commit) => {
             if (!commit && !banner.in_destruction ()) {
@@ -364,55 +366,101 @@ public class Mail.MainWindow : Hdy.ApplicationWindow {
             }
             if (move_banner == banner) {
                 move_banner = null;
-                update_sending_status ();
+                update_background_status ();
             }
         });
     }
 
     public void begin_sending () {
         sending_count++;
-        if (sending_banner == null) {
+        ensure_activity_banner ();
+        update_background_status ();
+    }
+
+    public void begin_saving_draft () {
+        draft_save_count++;
+        ensure_activity_banner ();
+        update_background_status ();
+    }
+
+    public void end_saving_draft () {
+        if (draft_save_count > 0) {
+            draft_save_count--;
+        }
+        finish_background_activity ();
+    }
+
+    public void begin_deleting_draft () {
+        draft_delete_count++;
+        ensure_activity_banner ();
+        update_background_status ();
+    }
+
+    public void end_deleting_draft () {
+        if (draft_delete_count > 0) {
+            draft_delete_count--;
+        }
+        finish_background_activity ();
+    }
+
+    private void ensure_activity_banner () {
+        if (activity_banner == null) {
             var spinner = new Gtk.Spinner ();
             spinner.get_style_context ().add_class ("sending-spinner");
             spinner.start ();
-            sending_label = new Gtk.Label ("");
+            activity_label = new Gtk.Label ("");
             var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 12) { margin = 12 };
             box.add (spinner);
-            box.add (sending_label);
+            box.add (activity_label);
             var frame = new Gtk.Frame (null) { child = box };
             frame.get_style_context ().add_class ("app-notification");
-            sending_banner = new Gtk.Revealer () {
+            activity_banner = new Gtk.Revealer () {
                 halign = Gtk.Align.CENTER,
                 valign = Gtk.Align.END,
                 margin = 12,
                 transition_type = Gtk.RevealerTransitionType.SLIDE_UP,
                 child = frame
             };
-            notification_overlay.add_overlay (sending_banner);
-            notification_overlay.set_overlay_pass_through (sending_banner, true);
-            sending_banner.show_all ();
-            sending_banner.reveal_child = true;
+            notification_overlay.add_overlay (activity_banner);
+            notification_overlay.set_overlay_pass_through (activity_banner, true);
+            activity_banner.show_all ();
+            activity_banner.reveal_child = true;
         }
-        update_sending_status ();
     }
 
     public void end_sending () {
         if (sending_count > 0) {
             sending_count--;
         }
-        if (sending_count == 0 && sending_banner != null) {
-            sending_banner.destroy ();
-            sending_banner = null;
+        finish_background_activity ();
+    }
+
+    private void finish_background_activity () {
+        if (sending_count == 0 && draft_save_count == 0 && draft_delete_count == 0 && activity_banner != null) {
+            activity_banner.destroy ();
+            activity_banner = null;
         } else {
-            update_sending_status ();
+            update_background_status ();
         }
     }
 
-    private void update_sending_status () {
-        if (sending_banner != null) {
-            sending_label.label = sending_count == 1 ? _("Sending…")
-                : ngettext ("Sending %u message…", "Sending %u messages…", sending_count).printf (sending_count);
-            sending_banner.margin_bottom = move_banner != null ? 76 : 12;
+    private void update_background_status () {
+        if (activity_banner != null) {
+            if (draft_delete_count > 0 && (sending_count > 0 || draft_save_count > 0)) {
+                activity_label.label = _("Updating mail…");
+            } else if (draft_delete_count > 0) {
+                activity_label.label = draft_delete_count == 1 ? _("Deleting draft…")
+                    : ngettext ("Deleting %u draft…", "Deleting %u drafts…", draft_delete_count).printf (draft_delete_count);
+            } else if (sending_count > 0 && draft_save_count > 0) {
+                activity_label.label = _("Sending and saving drafts…");
+            } else if (draft_save_count > 0) {
+                activity_label.label = draft_save_count == 1 ? _("Saving draft…")
+                    : ngettext ("Saving %u draft…", "Saving %u drafts…", draft_save_count).printf (draft_save_count);
+            } else {
+                activity_label.label = sending_count == 1 ? _("Sending…")
+                    : ngettext ("Sending %u message…", "Sending %u messages…", sending_count).printf (sending_count);
+            }
+            activity_banner.margin_bottom = move_banner != null ? 76 : 12;
         }
     }
 
