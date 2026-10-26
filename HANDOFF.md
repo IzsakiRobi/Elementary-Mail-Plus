@@ -7,7 +7,7 @@ Local checkout: `~/Projects/Elementary-Mail-Plus`. Work on `main`.
 The user communicates in Hungarian. Source, identifiers and documentation are English.
 
 There are two supported release assets: one native `.deb` and one cross-distribution `.flatpak`.
-The current approved release is `v0.2` on `main`. Debian version is `0.2`. The user authorized publishing both new packages and deleting the old v0.1 release after the new release is uploaded.
+The current approved release is `v0.3` on `main`. Debian version is `0.3`. The user authorized publishing both packages, updating the installed app from the Debian package, and deleting older releases after verifying the new release.
 The user approved folder management, standard multi-selection, message drag/drop and the final visual polish as version 0.2. Keep the release description empty. No README, standalone changelog or release notes.
 
 The user verified the current Flatpak on Fedora 45 and elementary OS 8.1: folders and message rendering work, and HiDPI text is sharp without the separate Mutter patch. The native `.deb` has worked on elementary OS 8.1 and 9. The retired elementary runtime 8.2 and 9 manifests are no longer needed.
@@ -19,7 +19,7 @@ The user verified the current Flatpak on Fedora 45 and elementary OS 8.1: folder
 - No README and no release descriptions or generated release notes.
 - Install required tools when necessary. Use graphical Polkit (`pkexec`) for administrator authentication, never a terminal password prompt. Wait for the user if they are away.
 - GitHub CLI web/device authentication is available. After reinstalling, authenticate again with `gh auth login --hostname github.com --git-protocol https --web`, then `gh auth setup-git`. Never request passwords, tokens or API keys in chat.
-- Do not publish future experiments before the user's functional approval. Publishing version 0.2 on `main` is explicitly authorized; future work needs its own authorization.
+- Do not publish future experiments before the user's functional approval. Publishing version 0.3 on `main` is explicitly authorized; future work needs its own authorization.
 - Closing Mail can leave it running. Stop the actual process before testing a replacement build. Check `flatpak ps` or `/proc/<pid>/root/.flatpak-info` to distinguish Flatpak from native processes.
 - Do not erase accounts, keyring entries, contact photos or application data as a routine fix.
 
@@ -78,7 +78,7 @@ The single manifest is `io.github.IzsakiRobi.Elementary-Mail-Plus.json`:
 flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install --user flathub org.gnome.Sdk//49
 flatpak-builder --user --force-clean --repo=../Elementary-Mail-Plus-builds/repo ../Elementary-Mail-Plus-builds/flatpak io.github.IzsakiRobi.Elementary-Mail-Plus.json
-flatpak build-bundle --runtime-repo=https://dl.flathub.org/repo/flathub.flatpakrepo ../Elementary-Mail-Plus-builds/repo elementary-mail-plus_v0.2_amd64.flatpak io.github.IzsakiRobi.Elementary-Mail-Plus stable
+flatpak build-bundle --runtime-repo=https://dl.flathub.org/repo/flathub.flatpakrepo ../Elementary-Mail-Plus-builds/repo elementary-mail-plus_v0.3_amd64.flatpak io.github.IzsakiRobi.Elementary-Mail-Plus stable
 ```
 
 Keep build directories outside the source tree. On this machine the reusable builder state is `~/Projects/Elementary-Mail-Plus-builds/state`. SDKs are build-time dependencies, not end-user requirements.
@@ -101,7 +101,7 @@ The separate Mutter cursor patch is a host compositor change, not part of Mail. 
 
 Build against Ubuntu 24.04 Noble libraries for elementary OS 8.1 compatibility, even when developing on a newer OS. The current development host is elementary OS 8.1 / Noble, so a container is unnecessary here. Use a Noble container when the host is newer; do not package binaries linked against newer Ubuntu libraries for Noble.
 
-Dependencies are in `debian/control`; also install `build-essential`. Package: `elementary-mail-plus`, version `0.2`.
+Dependencies are in `debian/control`; also install `build-essential`. Package: `elementary-mail-plus`, version `0.3`.
 
 ```sh
 DEB_BUILD_OPTIONS=nocheck dpkg-buildpackage -b -us -uc
@@ -111,12 +111,12 @@ DEB_BUILD_OPTIONS=nocheck dpkg-buildpackage -b -us -uc
 
 ## Publishing
 
-Publish approved corrections to `main`, move the mutable `v0.2` tag to the approved commit and replace these two assets on the existing release, preserving an empty body:
+Publish approved source to `main` and tag `v0.3`. The release body must remain empty. Keep exactly these assets:
 
-- `elementary-mail-plus_v0.2_amd64.deb`
-- `elementary-mail-plus_v0.2_amd64.flatpak`
+- `elementary-mail-plus_v0.3_amd64.deb`
+- `elementary-mail-plus_v0.3_amd64.flatpak`
 
-Upload and verify the v0.2 assets before deleting the previous v0.1 release. Do not generate notes. Verify the final asset list and tag/main revisions. GitHub's automatically generated source archives remain available. The user also authorized updating the installed native application from the finished 0.2 Debian package, using graphical Polkit authentication.
+Upload and verify the new assets before deleting older releases. No README or release notes. Verify asset sizes/SHA256 and tag/main revisions. GitHub's automatically generated source archives remain available. Update the installed native app from the finished 0.3 Debian package using graphical Polkit. Future approved fixes may replace assets and move the current version tag rather than creating another release.
 
 ## Version 0.2 functionality
 
@@ -137,7 +137,7 @@ Reusable native build: `~/Projects/Elementary-Mail-Plus-builds/native-check`; pr
 
 The local WebKit executable needs its generated `.local` AppArmor profile loaded with graphical `pkexec apparmor_parser -r`; it is separate from the installed application's profile and lasts until reboot. Stop only the developer executable before replacing its build; `/proc/<pid>/exe` may have a ` (deleted)` suffix after installation.
 
-Build packages outside the source tree. Native packaging uses a clean source copy in `~/Projects/Elementary-Mail-Plus-builds/deb-source-0.2`. Flatpak cache/state: `~/Projects/Elementary-Mail-Plus-builds/state`; GNOME build/repository: `flatpak-gnome` / `repo-gnome` in that same builds directory.
+Build packages outside the source tree. Native packaging uses a clean source copy in `~/Projects/Elementary-Mail-Plus-builds/deb-source-0.3`. Flatpak cache/state: `~/Projects/Elementary-Mail-Plus-builds/state`; GNOME build/repository: `flatpak-gnome` / `repo-gnome` in that same builds directory.
 
 ## Conversation card appearance fix — included in v0.2
 
@@ -153,4 +153,23 @@ Build packages outside the source tree. Native packaging uses a clean source cop
 - Native compile, diff check and the actual tracker logic check passed. A synthetic notification on this elementary 8.1 system remained in the center after popup expiry and disappeared on same-process GIO withdrawal. A separate sender-exit/restart test confirmed that fresh-process GIO withdrawal does not remove the old FDO notification here; synthetic entries were cleaned afterward. No real email data was modified.
 - Installed components: io.elementary.notifications 8.1.2+r539+pkg15~ubuntu8.1, indicator 7.1.1+r986+pkg37~ubuntu8.1, GLib 2.80.0-6ubuntu3.10. Exact installed indicator source was downloaded without installation and confirms CloseNotification removes the stored entry. Actual session exposes org.freedesktop.Notifications, not org.gtk.Notifications.
 - Important limit: tracking and the native FDO string-to-server-ID mapping are in memory. This patch does not clean notifications from earlier app executions/reboots. Old UID-only notifications cannot reliably be mapped retroactively; manual one-time cleanup is appropriate. Do not claim the generic GIO restart guarantee works on this backend. Fedora/GNOME and Flatpak notification behavior still require user testing.
-- Detailed Hungarian report, source links and synthetic probe scripts/logs are in this chat's outputs/notification-research.md and work/notification-research/. Keep the published package version 0.2 and names elementary-mail-plus_v0.2_amd64.deb / elementary-mail-plus_v0.2_amd64.flatpak. Real-mail tests need not be repeated during packaging.
+- Detailed Hungarian report, source links and synthetic probe scripts/logs are in this chat's outputs/notification-research.md and work/notification-research/. Real-mail tests need not be repeated during packaging.
+
+## Reply/forward fidelity — included in v0.3
+
+- User reported missing newsletter content/images and unwanted reply indentation. Composer never enabled remote image loading, body-only DOM export lost head CSS, and source CID resources were not copied into the composer/outgoing MIME.
+- A separate get-quote-html WebKit extension command exports the complete rendered body with relevant computed presentation styles inlined, preserving head-defined formatting without leaking global source styles into the composer. Visible DOM, links, image sources, tables and existing inline styles remain. Script/style nodes are omitted after style capture; JavaScript remains disabled and WebKit sandboxing is unchanged.
+- Reply's outer cite block has explicit zero margin/padding/border, including in outgoing HTML. Existing nested original quotes retain their formatting.
+- Composer enables image requests for quoted content, decodes/registers source CID resources and retains their MIME parts for reply/forward. Outgoing inline resources use multipart/related; regular attachments use outer multipart/mixed. Forward attachment loading completes before composer send controls are restored. Loading is canceled on composer destruction.
+- Remote pictures remain remote references; this does not download/embed every external asset for offline viewing. Arbitrary HTML/CSS cannot be promised pixel-identical after editing, but no visible content truncation is introduced.
+- User approved the local reply/forward behavior and authorized inclusion in v0.3. Compile/static checks and package integrity checks only; do not repeat functional mail tests.
+
+## Background send — included in v0.3
+
+- User approved reply/forward appearance locally and requested hiding the composer during actual sending, with a subtle main-window status instead of a frozen disabled editor.
+- After optional empty-subject confirmation and the existing Undo Send delay, Composer holds the application, hides itself, presents the main window and starts an OSD-style Sending… spinner. Multiple active sends share a count; the status avoids the move-Undo banner. Transport/Sent-folder work remains asynchronous. Application hold is released when the operation finishes.
+- Failure restores the complete composer with a modal error; success destroys it. A sent-but-not-saved warning is parented to the main window and does not invite resending.
+- The WebKit clean-for-sending command now cleans a cloned DOM instead of deleting IDs/editability from the live editor, preserving retries and continued editing after canceled/failed sending.
+- User confirmed background sending works and approved v0.3 publication. Native compilation/static checks only; no real message was sent by automated tests. Error/retry and Undo behavior follow the implementation described above; do not claim separate user verification of those cases.
+
+- Sending status polish: the user confirmed background sending works; its spinner now has an explicit white foreground on the dark status banner.

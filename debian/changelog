@@ -1,4 +1,4 @@
-elementary-mail-plus (0.2) noble; urgency=medium
+elementary-mail-plus (0.3) noble; urgency=medium
 
   * Restore normal mouse focus behavior for the Preferences button.
   * Show avatar image sources in tooltips.

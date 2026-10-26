@@ -106,3 +106,8 @@ entry button:disabled label {
     box-shadow: none;
     -gtk-icon-shadow: 0 1px 1px alpha(black, 0.35);
 }
+
+spinner.sending-spinner {
+    color: white;
+    -gtk-icon-shadow: none;
+}

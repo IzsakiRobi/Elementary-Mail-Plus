@@ -255,6 +255,18 @@ public class Mail.WebView : WebKit.WebView {
         return body_html;
     }
 
+    public async string? get_quote_html () {
+        try {
+            var response = yield send_message_to_page (new WebKit.UserMessage ("get-quote-html", null), cancellable);
+            return response.parameters.get_string ();
+        } catch (Error e) {
+            if (!(e is IOError.CANCELLED)) {
+                warning ("Unable to prepare quoted message: %s", e.message);
+            }
+            return null;
+        }
+    }
+
     private void handle_cid_request (WebKit.URISchemeRequest request) {
         if (!handle_internal_response (request)) {
             request.finish_error (new FileError.NOENT ("Unknown CID"));

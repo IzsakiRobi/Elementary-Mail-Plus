@@ -23,6 +23,10 @@ public class Mail.Composer : Hdy.ApplicationWindow {
 
     private bool discard_draft = false;
     private bool sending;
+    private bool quote_loading;
+    private Cancellable quote_cancellable = new Cancellable ();
+    private Gee.ArrayList<Camel.MimePart> quoted_resources = new Gee.ArrayList<Camel.MimePart> ();
+    private Gee.HashSet<string> quoted_content_ids = new Gee.HashSet<string> ();
     private Gtk.Box send_controls;
     private Gtk.Overlay send_overlay;
     private UndoBanner? pending_send;
@@ -209,6 +213,7 @@ public class Mail.Composer : Hdy.ApplicationWindow {
             tooltip_text = _("Insert Image")
         };
 
+        destroy.connect (() => quote_cancellable.cancel ());
         web_view = new WebView ();
         try {
             var template = resources_lookup_data ("/io/elementary/mail/blank-message-template.html", ResourceLookupFlags.NONE);
@@ -644,9 +649,9 @@ public class Mail.Composer : Hdy.ApplicationWindow {
                     //We can assume the message was created using the elementary mail composer
                     //and has the necessary tags. Therefore we overwrite the blank templates
                     //whole html body
-                    web_view.set_content_of_element ("body", content_to_quote);
+                    populate_quote.begin (message.content, "body", content_to_quote);
                 } else {
-                    web_view.set_content_of_element ("#elementary-message-body", content_to_quote);
+                    populate_quote.begin (message.content, "#elementary-message-body", content_to_quote);
                 }
 
                 unowned var to = message.get_recipients (Camel.RECIPIENT_TYPE_TO);
@@ -705,7 +710,7 @@ public class Mail.Composer : Hdy.ApplicationWindow {
                     string who = Utils.escape_html_tags (message.get_from ().format ());
                     message_content += _("On %1$s, %2$s wrote:").printf (when, who);
                     message_content += "<br/>";
-                    message_content += "<blockquote type=\"cite\">%s</blockquote>".printf (content_to_quote);
+                    message_content += "<blockquote type=\"cite\" style=\"margin:0;padding:0;border:0\">%s</blockquote>".printf (content_to_quote);
                 } else if (type == Type.FORWARD) {
                     message_content += _("---------- Forwarded message ----------");
                     message_content += "<br/><br/>";
@@ -720,12 +725,56 @@ public class Mail.Composer : Hdy.ApplicationWindow {
                     message_content += "<br/><br/>";
                     message_content += content_to_quote;
 
-                    if (message.has_attachment ()) {
-                        get_attachments.begin (message.content);
-                    }
                 }
 
-                web_view.set_content_of_element ("#elementary-message-quote", message_content);
+                populate_quote.begin (message.content, "#elementary-message-quote", message_content, type == Type.FORWARD);
+            }
+        }
+    }
+
+    private async void populate_quote (Camel.DataWrapper content, string selector, string html, bool include_attachments = false) {
+        quote_loading = true;
+        send_controls.sensitive = false;
+        yield collect_quote_resources (content);
+        if (include_attachments && !quote_cancellable.is_cancelled ()) {
+            yield get_attachments (content);
+        }
+        if (!quote_cancellable.is_cancelled ()) {
+            web_view.load_images ();
+            web_view.set_content_of_element (selector, html);
+            send_controls.sensitive = true;
+        }
+        quote_loading = false;
+    }
+
+    private async void collect_quote_resources (Camel.DataWrapper content) {
+        if (!(content is Camel.Multipart)) {
+            return;
+        }
+        var multipart = (Camel.Multipart) content;
+        for (uint i = 0; i < multipart.get_number (); i++) {
+            var part = multipart.get_part (i);
+            if (part.content is Camel.Multipart) {
+                yield collect_quote_resources (part.content);
+                continue;
+            }
+            var cid = part.get_content_id ();
+            if (cid == null || quoted_content_ids.contains (cid)
+                || part.get_content_type ().is ("text", "html") || part.get_content_type ().is ("text", "plain")) {
+                continue;
+            }
+            try {
+                var output = new MemoryOutputStream.resizable ();
+                yield part.content.decode_to_output_stream (output, Priority.DEFAULT, quote_cancellable);
+                output.close ();
+                var bytes = output.steal_as_bytes ();
+                web_view.add_internal_resource ("cid:" + cid, new MemoryInputStream.from_bytes (bytes));
+                quoted_content_ids.add (cid);
+                quoted_resources.add (part);
+            } catch (Error e) {
+                if (!(e is IOError.CANCELLED)) {
+                    warning ("Unable to preserve quoted resource: %s", e.message);
+                }
             }
         }
     }
@@ -746,7 +795,8 @@ public class Mail.Composer : Hdy.ApplicationWindow {
                         var file = tmp_dir.get_child (part.get_filename ());
                         if (!file.query_exists ()) {
                             var output_stream = yield file.create_async (FileCreateFlags.NONE);
-                            yield part.content.decode_to_output_stream (output_stream, GLib.Priority.DEFAULT, null);
+                            yield part.content.decode_to_output_stream (output_stream, GLib.Priority.DEFAULT, quote_cancellable);
+                            yield output_stream.close_async (Priority.DEFAULT, quote_cancellable);
                         }
 
                         attachment_list.append (new Attachment (file, Attachment.DISPOSITION_ATTACHMENT));
@@ -789,7 +839,7 @@ public class Mail.Composer : Hdy.ApplicationWindow {
     }
 
     private void on_send () {
-        if (!sending) {
+        if (!sending && !quote_loading) {
             send_message.begin ();
         }
     }
@@ -797,6 +847,9 @@ public class Mail.Composer : Hdy.ApplicationWindow {
     private async void send_message () {
         sending = true;
         send_controls.sensitive = false;
+        MainWindow? sending_window = null;
+        bool background_sending = false;
+        bool held = false;
         try {
             if (subject_val.text == "") {
                 bool confirmed = false;
@@ -819,11 +872,6 @@ public class Mail.Composer : Hdy.ApplicationWindow {
                 }
             }
 
-            unowned var session = Mail.Backend.Session.get_default ();
-            var body_html = yield web_view.get_body_html (true);
-            var message = build_message (body_html);
-            var sender = build_sender (message, from_combo.get_active_text ());
-            var recipients = build_recipients (message, to_val.text, cc_val.text, bcc_val.text);
             uint delay = Application.settings.get_boolean ("undo-send")
                 ? (uint) Application.settings.get_int ("undo-time") : 0;
             if (delay > 0) {
@@ -835,15 +883,45 @@ public class Mail.Composer : Hdy.ApplicationWindow {
                     return;
                 }
             }
-            remember_recipients.begin (recipients);
+            application.hold ();
+            held = true;
+            sending_window = transient_for as MainWindow;
+            if (sending_window == null) {
+                application.activate ();
+                foreach (var window in application.get_windows ()) {
+                    if (window is MainWindow) {
+                        sending_window = (MainWindow) window;
+                        break;
+                    }
+                }
+            }
+            if (sending_window != null) {
+                sending_window.begin_sending ();
+                background_sending = true;
+            }
+            hide ();
+            if (sending_window != null) {
+                sending_window.present ();
+            }
+            Idle.add (() => {
+                send_message.callback ();
+                return Source.REMOVE;
+            });
+            yield;
             try {
+                unowned var session = Mail.Backend.Session.get_default ();
+                var body_html = yield web_view.get_body_html (true);
+                var message = build_message (body_html);
+                var sender = build_sender (message, from_combo.get_active_text ());
+                var recipients = build_recipients (message, to_val.text, cc_val.text, bcc_val.text);
+                remember_recipients.begin (recipients);
                 var saved = yield session.send_email (message, sender, recipients);
                 if (!saved) {
                     var warning_dialog = new Granite.MessageDialog (
                         _("Sent message was not saved"),
                         _("The message was sent, however a copy was not saved to the Sent message folder."),
                         new ThemedIcon ("mail-send"), Gtk.ButtonsType.CLOSE
-                    ) { badge_icon = new ThemedIcon ("dialog-warning") };
+                    ) { badge_icon = new ThemedIcon ("dialog-warning"), transient_for = sending_window };
                     warning_dialog.present ();
                     warning_dialog.response.connect (() => warning_dialog.destroy ());
                 }
@@ -851,16 +929,23 @@ public class Mail.Composer : Hdy.ApplicationWindow {
                 finished ();
                 destroy ();
             } catch (Error e) {
+                present ();
                 var error_dialog = new Granite.MessageDialog (
                     _("Unable to send message"),
                     _("There was an unexpected error while sending your message."),
                     new ThemedIcon ("mail-send"), Gtk.ButtonsType.CLOSE
-                ) { badge_icon = new ThemedIcon ("dialog-error") };
+                ) { badge_icon = new ThemedIcon ("dialog-error"), transient_for = this, modal = true };
                 error_dialog.show_error_details (e.message);
                 error_dialog.present ();
                 error_dialog.response.connect (() => error_dialog.destroy ());
             }
         } finally {
+            if (background_sending && sending_window != null) {
+                sending_window.end_sending ();
+            }
+            if (held) {
+                application.release ();
+            }
             sending = false;
             send_controls.sensitive = true;
         }
@@ -916,9 +1001,40 @@ public class Mail.Composer : Hdy.ApplicationWindow {
         body.set_boundary (null);
         body.add_part (part);
 
+        var inline_parts = new Gee.ArrayList<Camel.MimePart> ();
+        inline_parts.add_all (quoted_resources);
+        var attached_parts = new Gee.ArrayList<Camel.MimePart> ();
         for (int i = 0; i < attachment_list.n_items; i++) {
             var attachment = (Attachment) attachment_list.get_item (i);
-            body.add_part (attachment.get_mime_part ());
+            var attachment_part = attachment.get_mime_part ();
+            if (attachment_part == null) {
+                continue;
+            }
+            if (attachment.disposition == Attachment.DISPOSITION_INLINE) {
+                inline_parts.add (attachment_part);
+            } else {
+                attached_parts.add (attachment_part);
+            }
+        }
+        if (inline_parts.size > 0) {
+            body = new Camel.Multipart ();
+            body.set_mime_type ("multipart/related");
+            body.set_boundary (null);
+            body.add_part (part);
+            foreach (var inline_part in inline_parts) {
+                body.add_part (inline_part);
+            }
+        }
+        if (attached_parts.size > 0) {
+            var body_part = new Camel.MimePart ();
+            body_part.content = body;
+            body = new Camel.Multipart ();
+            body.set_mime_type ("multipart/mixed");
+            body.set_boundary (null);
+            body.add_part (body_part);
+            foreach (var attached_part in attached_parts) {
+                body.add_part (attached_part);
+            }
         }
 
         var message = new Camel.MimeMessage ();

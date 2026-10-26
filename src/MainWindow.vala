@@ -25,6 +25,9 @@ public class Mail.MainWindow : Hdy.ApplicationWindow {
     private FolderList folders_list_view;
     private Gtk.Overlay notification_overlay;
     private UndoBanner? move_banner;
+    private Gtk.Revealer? sending_banner;
+    private Gtk.Label sending_label;
+    private uint sending_count;
     private Granite.Widgets.Toast error_toast;
     private ConversationList conversation_list;
     private MessageList message_list;
@@ -353,6 +356,7 @@ public class Mail.MainWindow : Hdy.ApplicationWindow {
         }
         var banner = new UndoBanner (title, seconds);
         move_banner = banner;
+        update_sending_status ();
         notification_overlay.add_overlay (banner);
         banner.completed.connect ((commit) => {
             if (!commit && !banner.in_destruction ()) {
@@ -360,8 +364,56 @@ public class Mail.MainWindow : Hdy.ApplicationWindow {
             }
             if (move_banner == banner) {
                 move_banner = null;
+                update_sending_status ();
             }
         });
+    }
+
+    public void begin_sending () {
+        sending_count++;
+        if (sending_banner == null) {
+            var spinner = new Gtk.Spinner ();
+            spinner.get_style_context ().add_class ("sending-spinner");
+            spinner.start ();
+            sending_label = new Gtk.Label ("");
+            var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 12) { margin = 12 };
+            box.add (spinner);
+            box.add (sending_label);
+            var frame = new Gtk.Frame (null) { child = box };
+            frame.get_style_context ().add_class ("app-notification");
+            sending_banner = new Gtk.Revealer () {
+                halign = Gtk.Align.CENTER,
+                valign = Gtk.Align.END,
+                margin = 12,
+                transition_type = Gtk.RevealerTransitionType.SLIDE_UP,
+                child = frame
+            };
+            notification_overlay.add_overlay (sending_banner);
+            notification_overlay.set_overlay_pass_through (sending_banner, true);
+            sending_banner.show_all ();
+            sending_banner.reveal_child = true;
+        }
+        update_sending_status ();
+    }
+
+    public void end_sending () {
+        if (sending_count > 0) {
+            sending_count--;
+        }
+        if (sending_count == 0 && sending_banner != null) {
+            sending_banner.destroy ();
+            sending_banner = null;
+        } else {
+            update_sending_status ();
+        }
+    }
+
+    private void update_sending_status () {
+        if (sending_banner != null) {
+            sending_label.label = sending_count == 1 ? _("Sending…")
+                : ngettext ("Sending %u message…", "Sending %u messages…", sending_count).printf (sending_count);
+            sending_banner.margin_bottom = move_banner != null ? 76 : 12;
+        }
     }
 
     public async bool offer_undo (string title, uint seconds) {

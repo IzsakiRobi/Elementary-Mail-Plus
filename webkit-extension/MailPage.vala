@@ -32,26 +32,66 @@ public class Mail.Page : Object {
     """;
 
     private const string JS_CLEAN_HTML = """
-        var body = document.querySelector('#elementary-message-body');
-        body.removeAttribute ("contenteditable");
-        body.removeAttribute ("id");
-        body.style.height = "initial";
+        (() => {
+            const copy = document.body.cloneNode(true);
+            const body = copy.querySelector('#elementary-message-body');
+            if (body) {
+                body.removeAttribute('contenteditable');
+                body.removeAttribute('id');
+                body.style.height = 'initial';
+            }
+            for (const selector of ['#elementary-message-signature', '#elementary-message-quote']) {
+                const element = copy.querySelector(selector);
+                if (!element) continue;
+                if (element.hidden) {
+                    element.remove();
+                } else {
+                    element.removeAttribute('contenteditable');
+                    element.removeAttribute('id');
+                }
+            }
+            return copy.innerHTML;
+        })();
+    """;
 
-        var signature = document.querySelector('#elementary-message-signature');
-        if (signature.hidden) {
-            signature.remove ();
-        } else {
-            signature.removeAttribute ("contenteditable");
-            signature.removeAttribute ("id");
-        }
-
-        var quote = document.querySelector('#elementary-message-quote');
-        if (quote.hidden) {
-            quote.remove ();
-        } else {
-            quote.removeAttribute ("contenteditable");
-            quote.removeAttribute ("id");
-        }
+    private const string JS_QUOTE_HTML = """
+        (() => {
+            const properties = [
+                'display', 'visibility', 'color', 'background-color', 'background-image',
+                'background-position', 'background-repeat', 'background-size',
+                'font-family', 'font-size', 'font-weight', 'font-style', 'line-height',
+                'letter-spacing', 'text-align', 'text-decoration', 'text-transform',
+                'white-space', 'vertical-align', 'direction', 'border-collapse',
+                'border-spacing', 'table-layout', 'box-sizing', 'max-width',
+                'min-width', 'max-height', 'list-style-type'
+            ];
+            const sides = ['top', 'right', 'bottom', 'left'];
+            for (const side of sides) {
+                properties.push('margin-' + side, 'padding-' + side,
+                    'border-' + side + '-width', 'border-' + side + '-style',
+                    'border-' + side + '-color');
+            }
+            properties.push('border-radius');
+            const source = document.body;
+            const copy = source.cloneNode(true);
+            const originals = [source, ...source.querySelectorAll('*')];
+            const copies = [copy, ...copy.querySelectorAll('*')];
+            originals.forEach((element, index) => {
+                const style = getComputedStyle(element);
+                for (const property of properties) {
+                    const value = style.getPropertyValue(property);
+                    if (value && copies[index].style) copies[index].style.setProperty(property, value);
+                }
+            });
+            copy.querySelectorAll('script, style, link[rel="stylesheet"]').forEach(element => element.remove());
+            const wrapper = document.createElement('div');
+            for (const attribute of copy.attributes) wrapper.setAttribute(attribute.name, attribute.value);
+            wrapper.removeAttribute('contenteditable');
+            wrapper.removeAttribute('id');
+            wrapper.style.margin = '0';
+            while (copy.firstChild) wrapper.appendChild(copy.firstChild);
+            return wrapper.outerHTML;
+        })();
     """;
 
     private bool show_images = false;
@@ -107,11 +147,13 @@ public class Mail.Page : Object {
 
                 return true;
             case "get-body-html":
-                if (message.parameters.get_boolean ()) {
-                    js_context.evaluate (JS_CLEAN_HTML, -1);
-                }
-                JSC.Value val = js_context.evaluate ("document.querySelector('body').innerHTML;", -1);
+                JSC.Value val = js_context.evaluate (message.parameters.get_boolean ()
+                    ? JS_CLEAN_HTML : "document.body.innerHTML;", -1);
                 message.send_reply (new WebKit.UserMessage ("get-body-html", new Variant.take_string (val.to_string ())));
+                return true;
+            case "get-quote-html":
+                var quote = js_context.evaluate (JS_QUOTE_HTML, -1);
+                message.send_reply (new WebKit.UserMessage ("get-quote-html", new Variant.take_string (quote.to_string ())));
                 return true;
             case "get-page-height":
                 JSC.Value val = js_context.evaluate ("""
