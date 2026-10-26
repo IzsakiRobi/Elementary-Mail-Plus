@@ -4,6 +4,7 @@ vala_files = files(
     'EditorToolbar.vala',
     'MainWindow.vala',
     'InboxMonitor.vala',
+    'NotificationTracker.vala',
     'Utils.vala',
     'WebView.vala',
     'WelcomeView.vala',

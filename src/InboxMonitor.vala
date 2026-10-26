@@ -21,6 +21,7 @@ public class Mail.InboxMonitor : GLib.Object {
 
     private Gee.HashMap<Mail.Backend.Account, Cancellable> pending_accounts = new Gee.HashMap<Mail.Backend.Account, Cancellable> ();
     private Gee.HashMap<Mail.Backend.Account, ulong?> inbox_change_handlers = new Gee.HashMap<Mail.Backend.Account, ulong?> ();
+    private NotificationTracker notifications = new NotificationTracker ();
     private uint badge_update_id;
     private bool badge_updating;
     private bool badge_dirty;
@@ -35,6 +36,9 @@ public class Mail.InboxMonitor : GLib.Object {
 
         network_monitor = GLib.NetworkMonitor.get_default ();
         session = Mail.Backend.Session.get_default ();
+        notifications.withdrawal_requested.connect ((id) => {
+            GLib.Application.get_default ().withdraw_notification (id);
+        });
     }
 
     public async void start () {
@@ -58,6 +62,9 @@ public class Mail.InboxMonitor : GLib.Object {
         }
         lock (inbox_folders) {
             var folder = inbox_folders[account];
+            if (folder != null) {
+                notifications.clear (notification_scope (account, folder));
+            }
             if (folder != null && inbox_change_handlers.has_key (account)) {
                 SignalHandler.disconnect (folder, inbox_change_handlers[account]);
                 inbox_change_handlers.unset (account);
@@ -162,6 +169,7 @@ public class Mail.InboxMonitor : GLib.Object {
         debug ("Inbox changed: %u added, %u changed, %u removed",
             changes.get_added_uids ().length, changes.get_changed_uids ().length, changes.get_removed_uids ().length);
         queue_badge_update ();
+        withdraw_resolved_notifications (account, inbox_folder, changes);
 
         unowned var added_uids = changes.get_added_uids ();
         if (added_uids != null) {
@@ -174,7 +182,7 @@ public class Mail.InboxMonitor : GLib.Object {
                     return;
                 }
 
-                if (!(Camel.MessageFlags.SEEN in message_info.flags)) {
+                if ((message_info.flags & (Camel.MessageFlags.SEEN | Camel.MessageFlags.DELETED)) == 0) {
                     unowned string? sender_address;
                     unowned string? sender_name;
 
@@ -197,7 +205,7 @@ public class Mail.InboxMonitor : GLib.Object {
 
                 var notification = new GLib.Notification (_("%s to %s").printf (sender_names.iterator ().next_value (), inbox_folder.parent_store.display_name));
                 notification.set_body (unseen_message_info.subject);
-                GLib.Application.get_default ().send_notification (unseen_message_info.uid, notification);
+                send_inbox_notification (account, inbox_folder, unseen_message_infos, notification);
             } else if (unseen_message_infos_length > 1) {
                 GLib.Notification notification;
 
@@ -217,9 +225,42 @@ public class Mail.InboxMonitor : GLib.Object {
                     notification.set_body (ngettext ("%s from %u sender", "%s from %u senders", sender_names.length).printf (messages_count, sender_names.length));
                 }
 
-                GLib.Application.get_default ().send_notification (unseen_message_infos.nth_data (0).uid, notification);
+                send_inbox_notification (account, inbox_folder, unseen_message_infos, notification);
             }
         }
+    }
+
+    private string notification_scope (Mail.Backend.Account account, Camel.Folder folder) {
+        return new Variant ("(ss)", account.service.uid, folder.full_name).print (false);
+    }
+
+    private void send_inbox_notification (Mail.Backend.Account account, Camel.Folder folder,
+        SList<Camel.MessageInfo> messages, GLib.Notification notification) {
+        var uids = new Gee.ArrayList<string> ();
+        foreach (var message in messages) {
+            uids.add (message.uid);
+        }
+        var id = notifications.track (notification_scope (account, folder), uids.to_array ());
+        GLib.Application.get_default ().send_notification (id, notification);
+    }
+
+    private void withdraw_resolved_notifications (Mail.Backend.Account account, Camel.Folder folder,
+        Camel.FolderChangeInfo changes) {
+        var resolved = new Gee.HashSet<string> ();
+        unowned var removed = changes.get_removed_uids ();
+        if (removed != null) {
+            removed.foreach ((uid) => resolved.add (uid));
+        }
+        unowned var changed = changes.get_changed_uids ();
+        if (changed != null) {
+            changed.foreach ((uid) => {
+                var info = folder.get_message_info (uid);
+                if (info != null && (info.flags & (Camel.MessageFlags.SEEN | Camel.MessageFlags.DELETED)) != 0) {
+                    resolved.add (uid);
+                }
+            });
+        }
+        notifications.resolve (notification_scope (account, folder), resolved);
     }
 
     private void queue_badge_update () {

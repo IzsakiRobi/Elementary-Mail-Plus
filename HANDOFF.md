@@ -1,4 +1,4 @@
-# Development handoff — 2026-10-25
+# Development handoff — 2026-10-26
 
 ## Current state
 
@@ -43,7 +43,7 @@ Implemented additions:
 
 `InboxMonitor` deliberately calls `get_inbox_folder()` and then `get_folder(inbox.full_name, ...)` to obtain the canonical folder from Camel's object bag. Keep the second call and the application's strong monitor reference; they are required for shared change tracking, notifications and badges.
 
-Do not restore the abandoned `MessageDiskCache`, MHTML persistence, `MessagePrefetcher`, notification persistence or notification-center withdrawal experiments. Approved rollback baseline: `6072670`.
+Do not restore the abandoned `MessageDiskCache`, MHTML persistence, `MessagePrefetcher` or notification persistence experiments. Approved rollback baseline: `6072670`. The user explicitly authorized fresh notification-withdrawal research/code on 2026-10-25; the new in-memory implementation below does not restore the abandoned persistent designs.
 
 `MessageViewCache` retains only document-ready views while the application remains alive. Keys use account/folder/UID and rebind to current message objects. Limits are 64 rows, 64 MiB estimated source cost and 8 MiB per message; these are not hard limits on WebKit's total memory. No custom persistent message archive exists across full shutdown. Camel's ordinary cache is unchanged.
 
@@ -144,3 +144,13 @@ Build packages outside the source tree. Native packaging uses a clean source cop
 - User reported gray/translucent expanded messages and overlapping headers after repeated collapse/expand. The elementary theme's `list row:focus` rule replaces the card background with translucent gray, allowing intentionally stacked collapsed cards to show through.
 - MessageListItem now has a scoped message-list-item CSS class. Its card background stays opaque theme_base_color in focused/selected/backdrop states, preserving dark-theme adaptation and the existing collapsed stacking. No expansion logic, opacity animations on child controls or global list styling is changed.
 - User verified the fix and authorized rebuilding both packages, replacing the existing v0.2 assets/tag on main and reinstalling the resulting Debian package locally. Keep the release body empty and the existing filenames; do not create another release. Compile/package integrity checks only.
+
+## Notification withdrawal — included in v0.2
+
+- On 2026-10-26 the user tested real mail in the local developer build and confirmed that reading immediately removes the notification from the elementary notification center. They approved publishing this implementation on main and replacing the existing v0.2 Flatpak/Debian assets under the same filenames, with no new release, README or release notes.
+- InboxMonitor previously sent notifications but never withdrew them. Raw UID-only notification IDs could also collide across accounts. The new NotificationTracker records notified UID batches by account/inbox scope, generates scoped hashed IDs, and requests GIO withdrawal when all members become SEEN/DELETED or are explicitly removed. Account removal clears its tracked groups. Unknown/unread UIDs do not trigger withdrawal; marking unread again does not re-notify.
+- Grouped notifications remain until their last relevant UID is resolved, without reposting partial summaries. Existing badge logic and the canonical Camel inbox object are unchanged. No persistent notification/mail database, panel-cache edit, desktop-specific dependency or extra Flatpak permission.
+- Native compile, diff check and the actual tracker logic check passed. A synthetic notification on this elementary 8.1 system remained in the center after popup expiry and disappeared on same-process GIO withdrawal. A separate sender-exit/restart test confirmed that fresh-process GIO withdrawal does not remove the old FDO notification here; synthetic entries were cleaned afterward. No real email data was modified.
+- Installed components: io.elementary.notifications 8.1.2+r539+pkg15~ubuntu8.1, indicator 7.1.1+r986+pkg37~ubuntu8.1, GLib 2.80.0-6ubuntu3.10. Exact installed indicator source was downloaded without installation and confirms CloseNotification removes the stored entry. Actual session exposes org.freedesktop.Notifications, not org.gtk.Notifications.
+- Important limit: tracking and the native FDO string-to-server-ID mapping are in memory. This patch does not clean notifications from earlier app executions/reboots. Old UID-only notifications cannot reliably be mapped retroactively; manual one-time cleanup is appropriate. Do not claim the generic GIO restart guarantee works on this backend. Fedora/GNOME and Flatpak notification behavior still require user testing.
+- Detailed Hungarian report, source links and synthetic probe scripts/logs are in this chat's outputs/notification-research.md and work/notification-research/. Keep the published package version 0.2 and names elementary-mail-plus_v0.2_amd64.deb / elementary-mail-plus_v0.2_amd64.flatpak. Real-mail tests need not be repeated during packaging.
