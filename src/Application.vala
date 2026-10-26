@@ -5,7 +5,7 @@
 
 public class Mail.Application : Gtk.Application {
     const OptionEntry[] OPTIONS = {
-        { "background", 'b', 0, OptionArg.NONE, out run_in_background, "Run the Application in background", null},
+        { "background", 'b', 0, OptionArg.NONE, null, "Run the Application in background", null},
         { null }
     };
 
@@ -17,7 +17,6 @@ public class Mail.Application : Gtk.Application {
     public const string ACTION_MANAGE_SIGNATURES = "manage-signatures";
 
     public static GLib.Settings settings;
-    public static bool run_in_background;
     private PreferencesPanel? preferences_panel;
     private InboxMonitor inbox_monitor;
     private bool background_allowed;
@@ -51,7 +50,7 @@ public class Mail.Application : Gtk.Application {
     }
 
     public override int command_line (ApplicationCommandLine command_line) {
-        activate ();
+        activate_application (command_line.get_options_dict ().contains ("background"));
 
         string[] argv = command_line.get_arguments ();
 
@@ -174,6 +173,10 @@ public class Mail.Application : Gtk.Application {
     }
 
     public override void activate () {
+        activate_application (false);
+    }
+
+    private void activate_application (bool background) {
         if (first_activation) {
             first_activation = false;
             if (settings.get_boolean ("run-in-background")) {
@@ -182,9 +185,8 @@ public class Mail.Application : Gtk.Application {
             }
         }
 
-        if (run_in_background) {
+        if (background) {
             request_background.begin ();
-            run_in_background = false;
             return;
         }
 

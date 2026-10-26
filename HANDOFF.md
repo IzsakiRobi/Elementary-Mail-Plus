@@ -133,6 +133,12 @@ Upload and verify the new assets before deleting older releases. No README or re
 
 ## Local development
 
+### Background startup correction — included in v0.3
+
+- Two enabled login entries on the current host invoke the application with --background. The previous static OptionEntry destination only populated the launching process; a forwarded invocation reached the primary instance without its background flag and presented the main window.
+- Application now stores the parsed option in GApplication's options dictionary and reads it separately for every command-line invocation. Ordinary activation still presents the main window; repeated --background/-b invocations only request background operation. Autostart entries and user preferences are unchanged.
+- Native compilation and an isolated GLib command-line forwarding probe passed (initial background, forwarded background, short option and foreground). No automated mail or UI functional tests. The installed Debian package was updated, and the user confirmed silent login startup and authorized replacing the existing v0.3 assets on main.
+
 Reusable native build: `~/Projects/Elementary-Mail-Plus-builds/native-check`; prefix: `~/Projects/Elementary-Mail-Plus-builds/local`. Chat-output launcher sets local schema/data paths and refuses to start while another Mail Plus instance is running.
 
 The local WebKit executable needs its generated `.local` AppArmor profile loaded with graphical `pkexec apparmor_parser -r`; it is separate from the installed application's profile and lasts until reboot. Stop only the developer executable before replacing its build; `/proc/<pid>/exe` may have a ` (deleted)` suffix after installation.
